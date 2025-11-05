@@ -1,0 +1,23 @@
+new entry "MAG_Githborn_MageHandSupport_Gloves"
+type "Armor"
+using "_Hand_Magic_Metal"
+data "RootTemplate" "4be77d67-2310-44fc-bdaf-81cffb411467"
+data "ValueUUID" "c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "Telekinetic_Command_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - WIZARD REWORK-->
+
+new entry "Telekinetic_Command_Item"
+type "PassiveData"
+data "DisplayName" "772cd70f49274c7596988bf90e992ca800018;1"
+data "Description" "772cd70f49274c7596988bf90e992ca80000r;2"
+data "Icon" "PassiveFeature_RitualCaster_MemorizeSpells"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "UnlockSpell(Target_TelekineticPush);UnlockSpell(Target_TelekineticPull)"
+data "BoostConditions" "not HasPassive('Telekinetic_Command', context.Source)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

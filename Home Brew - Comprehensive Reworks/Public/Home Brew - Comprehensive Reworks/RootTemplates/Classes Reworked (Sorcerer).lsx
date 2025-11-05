@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="72c70524-de8d-4b73-90dc-c88799984387" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL1" />
+					<attribute id="LevelOverride" type="int32" value="" />
+					<attribute id="ParentTemplateId" type="FixedString" value="31083c88-f888-4972-857a-9a9f3c827856" />
+					<attribute id="SpellSet" type="FixedString" value="CommonSummonActions" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_1" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="145241087982698496" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="28e02807-1ca8-2e13-0f37-e162c0b6610c" />
+					<attribute id="Icon" type="FixedString" value="28e02807-1ca8-2e13-0f37-e162c0b6610c-_(Icon_Shadow_Hound)" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h57ad5092g40c4g447cg8a5bg2533f84b78a6" version="1" />
+					<attribute id="CanClimbLadders" type="bool" value="True" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1.2" />
+									<attribute id="Max" type="fvec3" value="0 0 0" />
+									<attribute id="Min" type="fvec3" value="0 0 0" />
+									<attribute id="Radius" type="float" value="0.249" />
+									<attribute id="Shape" type="uint8" value="2" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1.2" />
+									<attribute id="Max" type="fvec3" value="0 0 0" />
+									<attribute id="Min" type="fvec3" value="0 0 0" />
+									<attribute id="Radius" type="float" value="0.7" />
+									<attribute id="Shape" type="uint8" value="2" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1.2" />
+									<attribute id="Max" type="fvec3" value="0.1835111 1.1550578 0.73727477" />
+									<attribute id="Min" type="fvec3" value="-0.1835111 -0.0023682117 -0.9136168" />
+									<attribute id="Radius" type="float" value="0.51233435" />
+									<attribute id="Shape" type="uint8" value="2" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+							</children>
+						</node>
+						<node id="LocomotionParams">
+							<attribute id="MovementAcceleration" type="float" value="12" />
+						</node>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Target_OminousBite" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="68fbb846-4049-46f4-96de-3b8d04f3e458" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="b243e39f-1739-42fe-9b2e-4a72475fd603" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="70ec1f1f-5b6d-4e74-a952-424ea5d7b90a" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="72c70524-de8d-4b73-90dc-c88799984387" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_2" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="5166da12-ed70-4aba-95ea-d524cf1b1a3b" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="70ec1f1f-5b6d-4e74-a952-424ea5d7b90a" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_3" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="f1eb40d6-50dc-4691-8c33-e1fe089c933a" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL3_Clone" />
+					<attribute id="ParentTemplateId" type="FixedString" value="70ec1f1f-5b6d-4e74-a952-424ea5d7b90a" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_3_Clone" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ab8a816f-7346-43c0-9356-b5cfe2ad8514" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL4" />
+					<attribute id="ParentTemplateId" type="FixedString" value="5166da12-ed70-4aba-95ea-d524cf1b1a3b" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_4" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ac562120-ee3a-4c88-b12e-4df5f8b66961" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL5" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ab8a816f-7346-43c0-9356-b5cfe2ad8514" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_5" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="20bfd6e8-057c-42e2-91a7-33fdc0796c95" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL6" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ac562120-ee3a-4c88-b12e-4df5f8b66961" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_6" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="817109ac-39df-433c-98c5-efef0e3df414" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL7" />
+					<attribute id="ParentTemplateId" type="FixedString" value="20bfd6e8-057c-42e2-91a7-33fdc0796c95" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_7" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="b140bd2f-6d39-4079-9afd-f47928016ddf" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL8" />
+					<attribute id="ParentTemplateId" type="FixedString" value="817109ac-39df-433c-98c5-efef0e3df414" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_8" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="8843e21c-6ce0-449f-a904-4356aad2c099" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL9" />
+					<attribute id="ParentTemplateId" type="FixedString" value="b140bd2f-6d39-4079-9afd-f47928016ddf" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_9" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="041dc3aa-8372-46de-a1bc-c8a42d944e06" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL10" />
+					<attribute id="ParentTemplateId" type="FixedString" value="8843e21c-6ce0-449f-a904-4356aad2c099" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_10" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="34073b32-f5b1-4313-8f3b-5cd7acbfa66a" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL11" />
+					<attribute id="ParentTemplateId" type="FixedString" value="041dc3aa-8372-46de-a1bc-c8a42d944e06" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_11" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="31e066a3-e8d6-487e-b674-a41679c60389" />
+					<attribute id="Name" type="LSString" value="HoundofIllOmenCompanion_Summon_LVL12" />
+					<attribute id="ParentTemplateId" type="FixedString" value="34073b32-f5b1-4313-8f3b-5cd7acbfa66a" />
+					<attribute id="Stats" type="FixedString" value="CCompanion_HoundofIllOmen_12" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758167" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

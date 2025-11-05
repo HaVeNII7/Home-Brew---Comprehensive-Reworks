@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+<!--BARBARIAN SPECIFIC WILD MAGIC EFFECTS-->
+
+	<content contentuid="h03fbd456g6409g4aa3g8738g33e3ef05a7b9" version="1">Wild Soul: Flamebreak</content>
+	<content contentuid="h9ab25d15gc8adg48ccgbc87g9172d7157cfd" version="2">Until no longer enraged, you may cast &lt;LSTag Type="Spell" Tooltip="Target_WildMagicBarbarian_Teleport"&gt;Flamebreak&lt;/LSTag&gt; once per turn.</content>
+	<content contentuid="h50f06f15g9edeg465dg9dc5gb3de23fb4f05" version="1">Wild Soul: Flamebreak</content>
+	<content contentuid="h4312806dg7249g4c5cga4e6g5f4efa637fa0" version="2">Affected creature may cast &lt;LSTag Type="Spell" Tooltip="Target_WildMagicBarbarian_Teleport"&gt;Flamebreak&lt;/LSTag&gt; once per turn until no longer enraged.</content>
+	<content contentuid="h50835532gd7c0g476aga01dg2654ebf5657e" version="1">Wild Soul: Flamebreak</content>
+	<content contentuid="h7bfc0b37g275bg47c9gb203gb071df7f47ab" version="2">Teleport up to [1] to an unoccupied space you can see, &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt; all enemies within [2].</content>
+
+	<content contentuid="ha39ace83g417ag426bgad8dgc804212ec430" version="2">Wild Soul: Dark Tendrils</content>
+	<content contentuid="h8f96bc40gcfd6g4e0agb6fdg87d74a211d4e" version="3">Shadowy tendrils lash around you, draining the life from all enemies within [1].</content>
+	<content contentuid="hca6d7d5ag17fcg42c4g8352gdb807f22c401" version="2">Wild Soul: Dark Tendrils</content>
+	<content contentuid="he117a5efgaff7g4967g9b3fgebf7ecdf9a6b" version="2">Affected creature is surrounded by tendrils of wild shadow magic. Each turn they lash out, absorbing enemies &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; within [1].</content>
+
+	<content contentuid="h32335771g33f1g45e7g93c2g3a52ca74fc16" version="1">Wild Soul: Intangible Spirit</content>
+	<content contentuid="h244e0a17g09c7g4fd3gb1acga751270add77" version="4">Until no longer enraged, you may summon an &lt;LSTag Type="Spell" Tooltip="Target_WildMagicBarbarian_ExplodingFlumph"&gt;Intangible Spirit&lt;/LSTag&gt; each turn.</content>
+	<content contentuid="hc889a629g9001g4f9cg9147ga1f7224a39b0" version="1">Wild Soul: Intangible Spirit</content>
+	<content contentuid="hc9598c9dg9347g4329ga63cg7f4c419ae660" version="2">Affected creature can summon an &lt;LSTag Type="Spell" Tooltip="Target_WildMagicBarbarian_ExplodingFlumph"&gt;Intangible Spirit&lt;/LSTag&gt; each turn, until no longer enraged.</content>
+	<content contentuid="h3ded5753g7ddfg4fa5g8d5cg2bc3b3ea849b" version="1">Wild Soul: Intangible Spirit</content>
+	<content contentuid="he470cb8ag5a7dg48adg96a0g1bd260b38bdc" version="3">Summon a spectral flumph. The flumph explodes at the end of your turn, dealing [1] to each creature within [2].</content>
+	<content contentuid="h9a79ba3eg02f4g4508g9332ga3004c7503b9" version="1">Wild Soul: Exploding Flumph</content>
+	<content contentuid="h7486ddb6g0918g47b4gae31g7712108978c9" version="2">Affected creature will explode at the end of its turn. Each creature within [1] must succeed a Dexterity based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or take [2].</content>
+	<content contentuid="hbe2c66c2g986fg4822gbd87g8fd127d17435" version="1">Wild Soul: Flumph Explosion</content>
+	<content contentuid="hec7edd4ag3302g4fdcg8953gc331610f791d" version="3">Explode in a mess of arcane jelly.</content>
+
+	<content contentuid="ha435e8f8g8a82g45fegb178g0bae5729bec0" version="1">Wild Soul: Arcane Infusion</content>
+	<content contentuid="h3cea4c46gbdd3g4aabga40fg7def94962e10" version="4">Magic infuses your weapon. Until no longer enraged, it deals an additional [1] and gains the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; property. Additionally, if thrown, your weapon will automatically return to you.</content>
+	<content contentuid="h5a46a47fgfe44g415cga493g3ade76e6ee78" version="1">Wild Soul: Arcane Infusion</content>
+	<content contentuid="h97303850g72e7g4513g9d6ag0b0982c830b2" version="2">Affected weapon is infused with arcane magic.&lt;br&gt;&lt;br&gt;Until the wielder is no longer enraged, it deals an additional [1] and gains the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; property. Additionally, if thrown, it will automatically return its wielder.</content>
+
+	<content contentuid="h82013198g5aa2g4ce1gb282g242cf4944f6b" version="1">Wild Soul: Magic Retribution</content>
+	<content contentuid="hb892f12bg0847g49edgb652gb3751972f796" version="4">Until no longer enraged, arcane magic lashes out whenever you take damage, hitting your attackers in retaliation.</content>
+	<content contentuid="h06f6f701g9b99g43bbgbd24gabe060b10bf0" version="1">Wild Soul: Magic Retribution</content>
+	<content contentuid="hfd910ed8geb58g4995g9757g8a44b8240845" version="2">Affected creature is protected by a wild, arcane magic. Until no longer enraged, enemies that damage them take [1] in retaliation.</content>
+
+	<content contentuid="hf2c1e3ceg294bg4db3gbfadg544c154ad3aa" version="1">Wild Soul: Protective Lights</content>
+	<content contentuid="h0907b032g5ea0g4056g98bbg018a8d25b099" version="3">Until no longer enraged, protective multicoloured lights surround you and nearby allies, increasing your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 1. </content>
+	<content contentuid="hf17a99cfg595dg4107ga483g89aaa24fe0bf" version="1">Wild Soul: Protective Lights</content>
+	<content contentuid="h42720ef8gca56g4997g8d58g8462f3c305d3" version="2">Affected creature is protected by multicoloured lights. Until no longer enraged, the affected creature and any allies within [1] have a +1 bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
+	<content contentuid="h4b3588fag0ee1g4cf8gb2e8g9f340ed2beaf" version="1">Wild Soul: Protective Lights</content>
+	<content contentuid="hcef8b74agabedg4091ga4a3g8e74f0839310" version="3">Affected creature is surrounded by barbarous wild magic, and has been granted a +1 bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hd5986cc8g739ag41c1g8eb1gd00eacc9c7e7" version="1">Wild Soul: Shadow Terrain</content>
+	<content contentuid="hc105bd90g32f2g4986gaeeegbad28fab888b" version="5">Until no longer enraged, shadowy vines burrow beneath you, making the ground &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt; for anyone but you.</content>
+	<content contentuid="h66562f31g1ef9g4ea6gb7fbg147aaea8a211" version="1">Wild Soul: Shadow Terrain</content>
+	<content contentuid="h1a1575ecgc144g4498ga4d3g6f14317ddf06" version="2">Affected creature is surrounded by shadowy vines. Until no longer enraged, the ground within [1] of them becomes &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt; for everyone other than them.</content>
+
+	<content contentuid="hd26c24a0g76e8g4f02gb71agf0141da8be07" version="2">Wild Soul: Bolt of Light</content>
+	<content contentuid="h0ce40ac5g5a47g4ed8g9973g6eaf74072609" version="3">Until no longer enraged, you may fire a beam of &lt;LSTag Type="Spell" Tooltip="Projectile_WildMagicBarbarian_LightBolt"&gt;Barbaric Radiance&lt;/LSTag&gt; from your chest each turn.</content>
+	<content contentuid="hff6ae1c4gf89dg42b5gaf48g879f0076480e" version="1">Wild Soul: Light Bolt</content>
+	<content contentuid="h243fd4dfg0c4fg48f5gaa8fgd8bcc548ba66" version="2">Affected creature may fire a beam of &lt;LSTag Type="Spell" Tooltip="Projectile_WildMagicBarbarian_LightBolt"&gt;Barbaric Radiance&lt;/LSTag&gt; from their chest until no longer enraged.</content>
+	<content contentuid="ha880dba5g7d8cg4fb4gbc0bgdad880970a8e" version="2">Wild Soul: Barbaric Radiance</content>
+	<content contentuid="h54940df1gc92eg45dbg9d1cgcb4257919ffa" version="3">Fire a beam of light from your chest that &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinds&lt;/LSTag&gt; your target.</content>
+
+	<content contentuid="hd26c24a0g76e8g4f02gb71agf0ffd5d2ff48" version="2">Wild Soul: Bottomless Rage</content>
+	<content contentuid="h0ce40ac5g5a47g4ed8g9973g6sdfs5df8689" version="3">You remain enraged until the end of your current combat encounter.</content>
+	<content contentuid="hd26c24a0g76e8g4f02gb71agf0sdf12d1f52" version="2">Wild Soul: Bottomless Rage</content>
+	<content contentuid="h0ce40ac5g5a47g4ed8g9973g6sdfasdfs6d8" version="3">Affected creature will remain enraged until the end of their current combat encounter.</content>
+
+	<content contentuid="hd26c24a0g76e8g4f02gb71ags5df4sdf85df" version="2">Wild Soul: Mountainous Rampage</content>
+	<content contentuid="h0ce40ac5g5a47g4ed8g9973gs6d4fs98d787" version="3">You shockingly increase in both size and musculature, vastly improving all of your physical capabilities, causing yourself to deal an additional [1] damage with all &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; and while unarmed.</content>
+	<content contentuid="hd26c24a0g76e8g4f02gb71agf029w38rdffd" version="2">Wild Soul: Mountainous Rampage</content>
+	<content contentuid="h0ce40ac5g5a47g4ed8g9973g623498we8fde" version="3">Affected creature has shockingly increased in both size and musculature, vastly improving all of their physical capabilities and causing them to deal an additional [1] damage with all &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; and while unarmed.</content>
+
+<!--STANDARD WILD MAGIC EFFECTS-->
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00001" version="2">Sweet Silence</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000a" version="1">All enemies within [1] of you become &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00002" version="2">Speak No Evil</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000b" version="1">You and all allies within [1] of you become &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00003" version="2">You Can't See Me</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000c" version="1">You and all allies within [1] of you gain &lt;LSTag Type="Status" Tooltip="GREATER_INVISIBILITY"&gt;Greater Invisibility&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00004" version="2">See No Evil</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000d" version="1">All enemies within [1] of you gain &lt;LSTag Type="Status" Tooltip="GREATER_INVISIBILITY"&gt;Greater Invisibility&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00005" version="2">Cheesy</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000e" version="1">You and all allies within [1] of you become a block of cheese for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00006" version="2">Delicious</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000f" version="1">All enemies within [1] of you become a block of cheese for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00007" version="2">Press the Advantage</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000g" version="1">You and all allies within [1] of you gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzz7" version="2">Press the Advantage</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzg" version="1">Affected creature rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00008" version="2">Retreat!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000h" version="1">All enemies within [1] of you gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzz8" version="2">Retreat!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzh" version="1">Affected creature rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00009" version="2">Disadvantaged</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000i" version="1">You and all allies within [1] of you suffer from &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzz9" version="2">Disadvantaged</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzi" version="1">Affected creature rolls with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00010" version="2">Advance!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000j" version="1">All enemies within [1] of you suffer from &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzz10" version="2">Advance!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzj" version="1">Affected creature rolls with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00011" version="2">Selective Savior</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000k" version="1">You and all allies within [1] of you gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzz11" version="2">Selective Savior</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzk" version="1">Affected creature rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00012" version="2">Indiscriminate Savior</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000l" version="1">All enemies within [1] of you gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzz12" version="2">Indiscriminate Savior</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzl" version="1">Affected creature rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00013" version="2">Traitor</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000m" version="1">You and all allies within [1] of you suffer from &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzz13" version="2">Traitor</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzm" version="1">Affected creature rolls with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00014" version="2">Oppressor</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000n" version="1">All enemies within [1] of you suffer from &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzz14" version="2">Oppressor</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzn" version="1">Affected creature rolls with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00015" version="2">Mass Resistance</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000o" version="1">You and all allies within [1] gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzz15" version="2">Mass Resistance</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzo" version="1">You and all allies within [1] gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00016" version="2">Mass Vulnerability</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000p" version="1">You and all allies within [1] become &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerable&lt;/LSTag&gt; to all damage for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzz16" version="2">Mass Vulnerability</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzp" version="1">You and all allies within [1] become &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerable&lt;/LSTag&gt; to all damage for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00017" version="2">Hold It!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000q" version="1">All enemies within [1] of you are afflicted with &lt;LSTag Type="Status" Tooltip="HOLD_MONSTER"&gt;Hold Creature&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00018" version="2">Freeze Frame</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000r" version="1">You and all allies within [1] of you are &lt;LSTag Type="Status" Tooltip="FROZEN"&gt;Frozen&lt;/LSTag&gt; solid.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00019" version="2">Swing the Bat</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000s" version="1">For the next three turns, dealing damage will send your target flying backward by [1].</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzz19" version="2">Swing the Bat</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzs" version="1">Affected creature will send their targets flying backward by [1] upon dealing damage.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b00020" version="2">Swing and a Miss</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b0000t" version="1">For the next three turns, taking damage will send you flying backward by [1].</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzz20" version="2">Swing and a Miss</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16bzzzzt" version="1">Affected creature will be sent flying backward by [1] upon taking damage.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11101" version="2">Well Rested</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110a" version="1">You and all allies within [1] of you benefit from the effects of a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11102" version="2">Well Shit</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110b" version="1">All enemies within [1] of you benefit from the effects of a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11103" version="2">Allied Inferno</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110c" version="1">You and all allies within [1] of you erupt in a violent explosion of fire.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11104" version="2">Hot Hot Hot!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110d" version="1">Enemies within [1] of you erupt in a violent explosion of fire.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11105" version="2">Granite Grace</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110e" version="1">You and all allies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="STONESKIN"&gt;Stoneskin&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11106" version="2">Stone Opposition</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110f" version="1">Enemies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="STONESKIN"&gt;Stoneskin&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11107" version="2">Aetherial Ascent</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110g" version="1">You and all allies within [1] of you benefit can &lt;LSTag Type="Spell" Tooltip="Projectile_Fly"&gt;Fly&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11108" version="2">Skybound Folly</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110h" version="1">Enemies within [1] of you can &lt;LSTag Type="Spell" Tooltip="Projectile_Fly"&gt;Fly&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11109" version="2">Corpse Party</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110i" version="1">You summon allied zombies from all nearby corpses.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11110" version="2">Undead Rumination</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110j" version="1">You and all allies within [1] are afflicted with a &lt;LSTag Type="Status" Tooltip="CRAWLING_GNAW_SWITCH"&gt;Crawling Gnaw&lt;/LSTag&gt; until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;. No affect on Undead, Constructs, Elementals, Plants, or Ooze based creatures.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11111" version="2">Reflection of Camraderie</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110k" version="1">You and all allies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="MIRROR_IMAGE_1"&gt;Mirror Image&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11112" version="2">Reflection of Chaos</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110l" version="1">Enemies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="MIRROR_IMAGE_1"&gt;Mirror Image&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11113" version="2">BIIIIIIIG</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110m" version="1">You and all allies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="ENLARGE"&gt;Enlarge&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11114" version="2">Growth Spurt</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110n" version="1">Enemies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="ENLARGE"&gt;Enlarge&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11115" version="2">SMAAAAAAALL</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110o" version="1">You and all allies within [1] of you suffer from the effects of &lt;LSTag Type="Status" Tooltip="REDUCE"&gt;Reduced&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11116" version="2">Cut Down to Size</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110p" version="1">Enemies within [1] of you suffer from the effects of &lt;LSTag Type="Status" Tooltip="REDUCE"&gt;Reduced&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11117" version="2">Calming Clowder</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110q" version="1">Summon an allied feline familiar next to every ally within [1].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11118" version="2">Not so Calming Clowder</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110r" version="1">Summon a blazing bombadiers next to every ally within [1]. These bombadiers are hostile to all other creatures and cannot move on their own.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11119" version="2">Curse the Greedy</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110s" version="1">Characters within [1] of you take [2] damage for every 100 pieces of gold on their person.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b11120" version="2">Save the Needy</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b1110t" version="1">Characters within [1] of you regain an additional +1d12 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; when healed.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16byyy20" version="2">Save the Needy</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16byyyyt" version="1">Affected creature will regain an additional +1d12 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; when healed.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22201" version="2">Critical Success</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220a" version="1">You and all allies within [1] of you will only roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222z1" version="2">Critical Success</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222za" version="1">Affected creature will only roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22202" version="2">Critical Fail</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220b" version="1">Enemies within [1] of you will only roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222z2" version="2">Critical Fail</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222zb" version="1">Affected creature will only roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22203" version="2">Critical Miss</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220c" version="1">You and all allies within [1] of you can no longer roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222z3" version="2">Critical Miss</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222zc" version="1">Affected creature can no longer roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22204" version="2">Task Failed Successfully</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220d" version="1">Enemies within [1] of you can no longer roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222z4" version="2">Task Failed Successfully</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222zd" version="1">Affected creature can no longer roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22205" version="2">Action Adventure</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220e" version="1">You and all allies within [1] of you gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222z5" version="2">Action Adventure</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222ze" version="1">Affected creature has gained an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22206" version="2">Action Horror</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220f" version="1">Enemies within [1] of you gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222z6" version="2">Action Horror</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222zf" version="1">Affected creature has gained an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22207" version="2">Action Adventure: Bonus Clip</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220g" version="1">You and all allies within [1] of you gain an additional &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222z7" version="2">Action Adventure: Bonus Clip</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222zg" version="1">Affected creature has gained an additional &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22208" version="2">Action Horror: Bonus Clip</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220h" version="1">Enemies within [1] of you gain an additional &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222z8" version="2">Action Horror: Bonus Clip</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222zh" version="1">Affected creature has gained an additional &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22209" version="2">Curse of Bane</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220i" version="1">You and all allies within [1] of you suffer from the effects of &lt;LSTag Type="Status" Tooltip="BANE"&gt;Bane&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22210" version="2">Boon of Bane</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220j" version="1">Enemies within [1] of you suffer from the effects of &lt;LSTag Type="Status" Tooltip="BANE"&gt;Bane&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22211" version="2">Blessed Blessings</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220k" version="1">You and all allies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="BLESS"&gt;Bless&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22212" version="2">Cursed Blessings</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220l" version="1">Enemies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="BLESS"&gt;Bless&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22213" version="2">Bed of Feathers</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220m" version="1">You and all allies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="FEATHER_FALL"&gt;Featherfall&lt;/LSTag&gt; until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22214" version="2">Descend Upon You</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220n" version="1">Enemies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="FEATHER_FALL"&gt;Featherfall&lt;/LSTag&gt; until their next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22215" version="2">Speed Up!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220o" version="1">You and all allies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt; until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22216" version="2">Nowhere to Run</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220p" version="1">Enemies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt; until their next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22217" version="2">Leaps and Bounds</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220q" version="1">You and all allies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="LONG_JUMP"&gt;Enhanced Leap&lt;/LSTag&gt; until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22218" version="2">Jumping the Gun</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220r" version="1">Enemies within [1] of you benefit from the effects of &lt;LSTag Type="Status" Tooltip="LONG_JUMP"&gt;Enhanced Leap&lt;/LSTag&gt; until their next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22219" version="2">No Tav Allowed</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220s" version="1">Doors and devices you approach will inexplicably lock themselves until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22z19" version="2">No Tav Allowed</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222zs" version="1">Affected creature seems to find that doors and devices they approach will inexplicably lock themselves.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22220" version="2">Members Only</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b2220t" version="1">Enemies within [1] of you will inexplicably lock themselves out of all nearby doors and devices until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b22z20" version="2">Members Only</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b222zt" version="1">Affected creature seems to find that doors and devices they approach will inexplicably lock themselves.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33301" version="2">Schoolhouse Knock</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330a" version="1">Doors and devices you approach will inexplicably unlock themselves until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333z1" version="2">Schoolhouse Knock</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333za" version="1">Affected creature seems to find that doors and devices they approach will inexplicably unlock themselves.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33zz1" version="2">Arcane Unlock</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33zza" version="1">Affected object has been magically unlocked.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33302" version="2">Professional Thief! Very Stealthy!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330b" version="1">Locked doors and devices you approach will inexplicably explode until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333z2" version="2">Professional Thief! Very Stealthy!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333zb" version="1">Affected creature seems to find that doors and devices they approach will inexplicably unlock themselves...in a very explosive manner.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33zz2" version="2">Professional Lockpicking</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33zzb" version="1">Affected object has been magically...unlocked?</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33303" version="2">One With Nature</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330c" version="1">You and all allies within [1] of you gain the ability to converse with animals until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33304" version="2">Enemy of Sylvanus</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330d" version="1">Beasts within [1] of you erupt in flames, scorching themselves and everything around them.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33305" version="2">Necrotic Tongue</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330e" version="1">You and all allies within [1] of you gain the ability to converse with the dead.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33306" version="2">Necrotic Blowback</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330f" version="1">Corpses within [1] of you explode, dealing severe damage to any creatures nearby and sending them flying backward by [2].</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33zz6" version="2">Necrotic Blowback</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33zzf" version="1">Affected corpse has exploded, dealing severe damage to any creatures nearby and sending them flying backward by [1].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33307" version="2">Mind Reader</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330g" version="1">You and all allies within [1] of you gain the ability to read other creatures thoughts.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33308" version="2">Tongue Twister</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330h" version="1">You are no longer capable of conversing with other creatures.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333z8" version="2">Tongue Twister</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333zh" version="1">Affected creature is not capable of conversing with other creatures.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33309" version="2">Misty Boon</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330i" version="1">You and all allies within [1] of you gain &lt;LSTag Type="Spell" Tooltip="Target_MistyStep"&gt;Misty Step&lt;/LSTag&gt; and may cast it without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333z9" version="2">Misty Boon</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333zi" version="1">Affected creature has gained &lt;LSTag Type="Spell" Tooltip="Target_MistyStep"&gt;Misty Step&lt;/LSTag&gt; and may cast it without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33310" version="2">Misty Curse</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330j" version="1">Enemies within [1] of you gain &lt;LSTag Type="Spell" Tooltip="Target_MistyStep"&gt;Misty Step&lt;/LSTag&gt; and may cast it without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33z10" version="2">Misty Curse</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333zj" version="1">Affected creature has gained &lt;LSTag Type="Spell" Tooltip="Target_MistyStep"&gt;Misty Step&lt;/LSTag&gt; and may cast it without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33311" version="2">Cats and Dogs</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330k" version="1">All creatures within [1] of you polymorph into either a cat or dog.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33312" version="2">Blink And You'll Miss It</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333zl" version="1">Casting a &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; or Spell on another creature causes you to swap places with them.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33z12" version="2">Blink And You'll Miss It</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33zzl" version="1">Affected creature will swap places with their targets when casting a &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; or Spell.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33313" version="2">A Boon of Radiance</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330m" version="1">Enemies within [1] take [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33314" version="2">Blazing Curses</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330n" version="1">You and all allies within [1] &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt; until the fire is doused.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33315" version="2">Multiversal Shovel Squad!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330o" version="1">Summon three allied Quasits until the end of your next combat encounter.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33316" version="2">Explosive Healing</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330p" version="1">Being healed will ensure you never have to worry for your life again!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33z16" version="2">Explosive Healing</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333zp" version="1">Affected creature will no longer worry about their life once healed!</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33317" version="2">Field of Study</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330q" version="1">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in all &lt;LSTag Tooltip="Skill"&gt;Skills&lt;/LSTag&gt; until the next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33z17" version="2">Field of Study</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333zq" version="1">Affected creature has &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in all &lt;LSTag Tooltip="Skill"&gt;Skills&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33318" version="2">Skill Issue</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330r" version="1">Suffer from a -10 penalty in all &lt;LSTag Tooltip="Skill"&gt;Skills&lt;/LSTag&gt; until the next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33z18" version="2">Skill Issue</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b333zr" version="1">Affected creature suffers from a -10 penalty in all &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33319" version="2">Bubble Boy</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330s" version="1">Become surrounded in a &lt;LSTag Type="Status" Tooltip="RESILIENT_SPHERE"&gt;Resilent Sphere&lt;/LSTag&gt; until the end of your next turn.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b33320" version="2">Bubble Buddy</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b3330t" version="1">Enemies within [1] of you become surrounded in a &lt;LSTag Type="Status" Tooltip="RESILIENT_SPHERE"&gt;Resilent Sphere&lt;/LSTag&gt; until the end of their next turn.</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44401" version="2">Stop, Drop and Roll!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440a" version="1">A [1] flaming surface is conjured under all allies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44402" version="2">Burning Sensation</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440b" version="1">A [1] flaming surface is conjured under all enemies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44403" version="2">Slippery Caster</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440c" version="1">A [1] frozen surface is conjured under all allies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44404" version="2">Ice Cold</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440d" version="1">A [1] frozen surface is conjured under all enemies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44405" version="2">Acidic Mistake</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440e" version="1">A [1] acidic surface is conjured under all allies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44406" version="2">Melted Armour</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440f" version="1">A [1] acidic surface is conjured under all enemies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44407" version="2">Shocking Mistake</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440g" version="1">A [1] pool of electirified water is conjured under all allies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44408" version="2">Joyous Jolts</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440h" version="1">A [1] pool of electirified water is conjured under all enemies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44409" version="2">Life Alert!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440i" version="1">A [1] greasy surface is conjured under all allies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44410" version="2">Prone Zone</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440j" version="1">A [1] greasy surface is conjured under all enemies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44411" version="2">Blindingly Awful Results</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440k" version="1">A [1] cloud of magical darkness is conjured under all allies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44412" version="2">Darkest Outcome</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440l" version="1">A [1] cloud of magical darkness is conjured under all enemies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44413" version="2">Mud Buddies</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440m" version="1">A [1] muddy surface is conjured under all allies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44414" version="2">Entrenched</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440n" version="1">A [1] muddy surface is conjured under all enemies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44415" version="2">Why...</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440o" version="1">A [1] pool of waste is conjured under all allies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44416" version="2">Oh, Shit!</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440p" version="1">A [1] pool of waste is conjured under all enemies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44417" version="2">Hydrated</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440q" version="1">A [1] pool of water is conjured under all allies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44418" version="2">Splash</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440r" version="1">A [1] pool of water is conjured under all enemies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44419" version="2">Sticky Situation</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440s" version="1">A [1] web surface is conjured under all allies within [2].</content>
+
+	<content contentuid="9675816e2b2d450481089f09c7edb16b44420" version="2">Caught In My Web</content>
+	<content contentuid="9675816e2b2d450481089f09c7edb16b4440t" version="1">A [1] web surface is conjured under all enemies within [2].</content>
+
+</contentList>

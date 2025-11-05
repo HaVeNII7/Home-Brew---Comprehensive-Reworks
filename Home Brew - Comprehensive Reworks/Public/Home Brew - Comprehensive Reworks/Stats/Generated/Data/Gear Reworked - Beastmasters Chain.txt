@@ -1,0 +1,23 @@
+new entry "GOB_Pens_BeastmasterAmulet"
+type "Armor"
+using "_Amulet_Magic"
+data "RootTemplate" "01d74aea-9e8a-4d03-9b55-e43458b61163"
+data "ItemGroup" ""
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "Beastbonds_Precision_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - RANGER REWORK-->
+
+new entry "Beastbonds_Precision_Item"
+type "PassiveData"
+data "DisplayName" "791a0319eeed4e25949847ad3a0dd1d100009;2"
+data "Description" "791a0319eeed4e25949847ad3a0dd1d10000i;2"
+data "Icon" "Action_MagicItem_ProtectionFromMissiles"
+data "Properties" "Highlighted;ForceShowInCC"
+data "BoostConditions" "not HasPassive('Beastbonds_Precision', context.Source)"
+data "Boosts" "RollBonus(RangedWeaponAttack, 4);RollBonus(RangedOffHandWeaponAttack, 4)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

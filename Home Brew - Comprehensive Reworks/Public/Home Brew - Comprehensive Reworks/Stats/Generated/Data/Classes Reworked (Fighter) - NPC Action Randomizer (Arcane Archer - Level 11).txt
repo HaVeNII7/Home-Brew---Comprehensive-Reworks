@@ -1,0 +1,21 @@
+<!----------------------------------------------------------------------------------------------------ACTION RANDOMIZERS START---------------------------------------------------------------------------------------------------->
+
+new entry "ArcaneArcher_All_Arrows_NPC_11"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCombatStarted"
+data "Conditions" "Combat()"
+data "StatsFunctors" "ApplyStatus(ALL_ELEMENTALFLETCHING_ARROWS,100,-1)"
+
+<!----------------------------------------------------------------------------------------------------ACTION ADDING STATUS EFFECTS---------------------------------------------------------------------------------------------------->
+
+new entry "ALL_ELEMENTALFLETCHING_ARROWS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "HitAnimationType" "None"
+data "StackId" "ALL_ELEMENTALFLETCHING_ARROWS"
+data "StackType" "Ignore"
+data "RemoveConditions" "Player(context.Source)"
+data "RemoveEvents" "OnTurn;OnMove"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+data "Passives" "ElementalFletching_Acid;ElementalFletching_Cold;ElementalFletching_Fire;ElementalFletching_Lightning;ElementalFletching_Necrotic;ElementalFletching_Poison;ElementalFletching_Psychic;ElementalFletching_Radiant;ElementalFletching_Thunder"

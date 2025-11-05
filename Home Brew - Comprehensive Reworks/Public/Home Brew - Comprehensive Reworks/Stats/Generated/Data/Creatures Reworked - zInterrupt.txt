@@ -1,0 +1,41 @@
+<!--DRIDER-->
+
+new entry "Interrupt_SCL_Drider_PsionicVengeance"
+type "InterruptData"
+data "DisplayName" "hea8bf9adgb4f1g4d6eg9001g79dcf9bc1164;3"
+data "Description" "hca4f78e7g276eg4071g9690gb3e68de31770;6"
+data "Icon" "Action_Legendary_Offensive"
+data "InterruptContext" "OnDeath"
+data "InterruptContextScope" "Nearby"
+data "Container" "YesNoDecision"
+data "Conditions" "IsAbleToReact(context.Observer) and Ally(context.Target,context.Observer) and HasStatus('DRIDER_LEADERSHIP',context.Target)"
+data "Properties" "UseSpell(OBSERVER_SOURCE,Target_SCL_Drider_PsionicVengeance,true,true,true)"
+data "InterruptDefaultValue" "Ask;Enabled"
+data "TooltipDamageList" "DealDamage(6d12,Psychic)"
+data "TooltipAttackSave" "Intelligence"
+data "TooltipStatusApply" "ApplyStatus(SILENCED,100,3)"
+
+<!--GUARDIAN OF FAITH-->
+
+new entry "Interrupt_GuardianOfFaith_Retaliate"
+type "InterruptData"
+data "DisplayName" "h3a40f65dg6499g4e5dg9bf5gf274e7fa52c2;1"
+data "Description" "h3ec41b5bg477cg4ba2ga5edg44914afbd2ac;1"
+data "Icon" "Spell_Evocation_SacredFlame"
+data "InterruptContext" "OnCastHit"
+data "InterruptContextScope" "Nearby"
+data "Container" "YesNoDecision"
+data "Conditions" "IsAbleToReact(context.Observer) and Ally(context.Observer,context.Target) and Enemy(context.Source,context.Observer) and not DistanceToGreaterThan(context.ObserverPosition, context.SourcePosition, 3) and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and HasLastAttackTriggered()"
+data "Properties" "UseAttack(OBSERVER_SOURCE)"
+data "Cost" "ReactionActionPoint:1"
+data "InterruptDefaultValue" "Ask;Enabled"
+data "EnableCondition" "not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or Tagged('MINDFLAYER') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
+data "EnableContext" "OnStatusApplied;OnStatusRemoved"
+
+<!--OWLBEAR-->
+
+new entry "Interrupt_FOR_Owlbear_Daddy_Rage_Health"
+type "InterruptData"
+using "Interrupt_FOR_Owlbear_Daddy_Rage"
+data "InterruptContextScope" "Self"
+data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered() and not HasStatus('FOR_OWLBEAR_ENRAGE_HARDCORE') and HasHPPercentageLessThan(100, context.Observer)"

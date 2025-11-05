@@ -1,0 +1,7 @@
+function SpellSlotCheck()
+    return (HasUseCosts('SpellSlot') | HasUseCosts('WarlockSpellSlot') | HasUseCosts('SpellSlotsGroup')) & ~HasCantripSpellLevel()
+end
+
+function SpellSlotWallCheck()
+    return (HasUseCosts('SpellSlot') | HasUseCosts('WarlockSpellSlot') | HasUseCosts('SpellSlotsGroup')) & ~HasCantripSpellLevel() & ~SpellTypeIs(SpellType.Wall)
+end

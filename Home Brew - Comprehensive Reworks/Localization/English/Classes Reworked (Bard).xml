@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+<!--BARD-->
+
+	<content contentuid="h4c3e4729g5750g4cd6g8cc6g14dad43c269a" version="2">Instrument</content>
+
+	<content contentuid="hc9735187g68cag427ag8680g4eff5dkkdkf1" version="1">Power of Performance</content>
+	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f9ss6fa" version="2">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; in combat, you are able to utilize various passive effects which increase in potency each turn. Upon ending your Performance, you may start Performing again at the same level that it was dropped by expending a charge of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Upon reaching a state of &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, you gain access to a unique action depending on which Bard subclass you currently belong to.</content>
+
+	<content contentuid="hc9735187g68cag427ag8680g4eff5d800001" version="1">Performative Intro</content>
+	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f90000a" version="2">Affected creature's performance has just begun! All performance related passives are active. Taking damage will end this creature's performance.</content>
+
+	<content contentuid="hc9735187g68cag427ag8680g4eff5d800002" version="1">Performative Verse</content>
+	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f90000b" version="2">Affected creature's performance has begun to ramp up! All performance related passives have been enhanced! Taking damage will end this creature's performance.</content>
+
+	<content contentuid="hc9735187g68cag427ag8680g4eff5d800003" version="1">Performative Chorus</content>
+	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f90000c" version="2">Affected creature's performance has reached the best part! All performance related passives have been greatly enhanced! Taking damage will end this creature's performance.</content>
+
+	<content contentuid="hc9735187g68cag427ag8680g4eff5d8f55d8" version="1">Encore (Performative Verse)</content>
+	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f99d5f8" version="2">Affected creature may use one of their &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; in order to resume their performance where they left off. Should they choose to do so, they will regain their charge of Bardic Inspiration after three turns.</content>
+
+	<content contentuid="hc9735187g68cag427ag8680g4eff5d8f55d9" version="1">Encore (Performative Chorus)</content>
+	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f99d5f9" version="2">Affected creature may use one of their &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; in order to resume their performance where they left off. Should they choose to do so, they will regain their charge of Bardic Inspiration after three turns.</content>
+
+	<content contentuid="hb117050dg0016g4833g87f0g8d22d6f4d5f2" version="1">First Note</content>
+	<content contentuid="h893450deg4af3g43f4gad83g7bss6d5f4548" version="1">Affected creature will restore one charge of &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; when this status expires.</content>
+
+	<content contentuid="hb117050dg0016g4833g87f0g8d2222d3d5f4" version="1">Second Note</content>
+	<content contentuid="h893450deg4af3g43f4gad83g7bss5d4f4845" version="1">Affected creature will restore one charge of &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; when this status expires.</content>
+
+	<content contentuid="hb117050dg0016g4833g87f0g8d22d6ffs6d9" version="1">Third Note</content>
+	<content contentuid="h893450deg4af3g43f4gad83g7bss6d522d6f" version="1">Affected creature will restore one charge of &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; when this status expires.</content>
+
+	<content contentuid="hc9735187g68cag427ag8ff9d8f8dff800001" version="1">Accelerated Tempo</content>
+	<content contentuid="h843e9f50g1485g4d5dgb338f8df33d90000a" version="2">Enter the next stage of your performance early.</content>
+
+	<content contentuid="hc9735187g68cag427ag8ff9d8f8dff800002" version="1">Reduced Tempo</content>
+	<content contentuid="h843e9f50g1485g4d5dgb338f8df33d90000b" version="2">Drop to the previous stage of your performance.</content>
+
+	<content contentuid="hc9735187g68cag427ag8ff9d8f8dff800003" version="1">Outro</content>
+	<content contentuid="h843e9f50g1485g4d5dgb338f8df33d90000c" version="2">End your Encore.</content>
+
+	<content contentuid="hc9735187g68cag427ag8ff9d8f8dff800004" version="1">Outro</content>
+	<content contentuid="h843e9f50g1485g4d5dgb338f8df33d90000d" version="2">Drop to the previous stage of your Encore.</content>
+
+	<content contentuid="hc9735187g68cag427ag8ff9d8f8dff800005" version="1">Climax</content>
+	<content contentuid="h843e9f50g1485g4d5dgb338f8df33d90000e" version="2">End your performance in climactic triumph! The next Spell that you cast will not consume a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hc9735187g68cag427ag8ff9d8f8dff8000z5" version="1">Climax</content>
+	<content contentuid="h843e9f50g1485g4d5dgb338f8df33d9000ze" version="2">Affected creature may cast their next Spell without consuming a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hc9735187g68cag427ag8ff9d8f8dff800006" version="1">Climax</content>
+	<content contentuid="h843e9f50g1485g4d5dgb338f8df33d90000f" version="2">End your performance in climactic triumph! You gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+	<content contentuid="hc9735187g68cag427ag8ff9d8f8dff8000z6" version="1">Climax</content>
+	<content contentuid="h843e9f50g1485g4d5dgb338f8df33d9000zf" version="2">Affected creature has gained an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hc9735187g68cag427ag8ff9d8f8dff800007" version="1">Climax</content>
+	<content contentuid="h843e9f50g1485g4d5dgb338f8df33d90000g" version="2">End your performance in climactic triumph! Provide your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; to all allies within [1].</content>
+
+	<content contentuid="hc9735187g68cag427ag8ff9d8f66d9f25484" version="1">Climax</content>
+	<content contentuid="h843e9f50g1485g4d5dgb338f8ddd5f8e6f98" version="2">End your performance in climactic triumph! Cloak both yourself and all allies within [1] under the &lt;LSTag Type="Status" Tooltip="COVEROFCAPTIVATION"&gt;Cover of Captivation&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hc9735187g68cag427ag8680g4ec1859432dc" version="1">Bardic Attack</content>
+	<content contentuid="h843e9f50g1485g4d5dgbc14g6b21f6689a0a" version="2">Add a +[1] bonus to your &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h21b3aaeeg4994g4506gb44fg648ca1ffd977" version="1">Bardic Defence</content>
+	<content contentuid="hb23ba16cgb6e1g4202gb629gdaed9614cb1b" version="2">Add a +[1] bonus to your &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h22af06bagd2d2g4b30ga1adg8e1cdfa85c72" version="2">Bardic Roll</content>
+	<content contentuid="hd8bd4b9fg59a5g4295g9ab0g1915746c3a53" version="1">Add a +[1] bonus to your next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h14ae10b8g4dfbg4ad7g9f30gdf2a7c164a84" version="1">Song of Rest</content>
+	<content contentuid="h52a66fd1g9928g4369ga3c3gcbefefb21a98" version="1">Once per &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, provide the benefits of a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt; to yourself and nearby allies.</content>
+
+	<content contentuid="hc7c96e5bgcb0bg4c21ga2bbg41e48d1e4fa2" version="1">Improved Bardic Inspiration</content>
+	<content contentuid="h83cf5455g3702g4d14g81d6gf9c5394d3ae4" version="1">The bonuses provided from granting allies &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; increases to +[1].</content>
+
+	<content contentuid="hb117050dg0016g4833g87f0g8d614082da8d" version="2">Font of Inspiration</content>
+	<content contentuid="h893450deg4af3g43f4gad83g7b35893b360c" version="2">Upon entering combat, restore all three charges of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h88a5bdddge82eg43d4g9657gcace3c25649a" version="2">Reliable Talent</content>
+	<content contentuid="hf634a0fagca4dg4bb4g858cg5bb1ba080907" version="3">When you make an &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt; with a &lt;LSTag Tooltip="Skill"&gt;Skill&lt;/LSTag&gt; you are &lt;LSTag Tooltip="Proficiency"&gt;Proficient&lt;/LSTag&gt; in, the lowest result you can roll is [1].</content>
+
+<!--COLLEGE OF CAPTIVATION-->
+
+	<content contentuid="h79dd9125g6a8cg4291g876eg5e7d08443ad4" version="1">College of
+Captivation</content>
+	<content contentuid="h0840706bg6708g4f1eg95b9g9ce13ff77983" version="2">Under the tutelage of fey creatures, you've mastered the craft of captivation - both positive and negative. A presence that simply cannot be ignored.</content>
+
+	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef00001" version="2">Mantle of Inspiration</content>
+	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf40000a" version="1">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; in combat, you imbue allies within [1] of you with a sense of alluringly Charismatic panache, causing them to recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; each turn equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. If an ally is hit by a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; while under the effects of your &lt;LSTag Type="Status" Tooltip="MANTLEOFINSPIRATION"&gt;Mantle of Inspiration&lt;/LSTag&gt;, the attacker immediately becomes &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; for the rest of their turn.</content>
+	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef000a1" version="2">Mantle of Inspiration</content>
+	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf4000aa" version="1">Affected creature regains &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; each turn equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. If hit by a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, the attacker immediately becomes &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; for the rest of their turn.</content>
+
+	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef00002" version="2">Parade March</content>
+	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf40000b" version="1">Enemies within range of your Performance are forced to make all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; unless made against you.</content>
+
+	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef00003" version="2">Cover of Captivation</content>
+	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf40000c" version="1">When you are about to be damaged, you may spend one of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; charges in order to negate the damage you would have taken.</content>
+	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef000z3" version="2">Cover of Captivation</content>
+	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf4000zc" version="1">When you are about to be damaged, spend one of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; charges in order to negate the damage you would have taken.</content>
+	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef00zz3" version="2">Cover of Captivation</content>
+	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf400zzc" version="1">Affected creature will negate the next instance of damage taken.</content>
+
+	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef00004" version="2">Captivating Reclaim</content>
+	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf40000d" version="1">When a creature within [1] of you becomes &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;, you immediately regain one charge of &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
+
+	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef00005" version="2">Performative Shielding</content>
+	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf40000e" version="1">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt;, you become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all forms of damage.</content>
+
+	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef00006" version="2">Countenance of Stoicism</content>
+	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf40000f" version="1">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt;, your &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; cannot be broken.</content>
+
+<!--COLLEGE OF LORE-->
+
+	<content contentuid="h279a572bg826ag49e3g9223g665c354e3de1" version="1">College of
+Lore</content>
+	<content contentuid="h4d45858cg3653g4192g8076g08327ea38dc5" version="1">You pursue beauty and truth, collecting knowledge from scholarly tomes to peasants' tales, and use your gifts to hold both audiences and enemies Spellbound.</content>
+
+	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a5a8a44" version="1">The Best Kept Secrets</content>
+	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e458848" version="1">Learn two Spells from the Magical Secrets pool per level, rather than one.&lt;br&gt;&lt;br&gt;Upon reaching a state of &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, you may cast a Spell without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a53a332" version="1">Binding Vows</content>
+	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e4sdf55" version="1">Spells you cast increase their &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; by one.</content>
+
+	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a59a555" version="1">Secrets of the Lore</content>
+	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e41a354" version="1">Upon casting &lt;LSTag Type="Spell" Tooltip="Target_BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; on an ally, your next Spell will not consume a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a99a555" version="1">Secrets of the Lore</content>
+	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e22a654" version="1">Affected creature's next Spell that they cast will not consume a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a55d222" version="1">Improved Binding Vows</content>
+	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e49a998" version="1">Spells you cast increase their &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; by two.</content>
+
+	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a5adsf2" version="1">Macabre Secrets</content>
+	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e4asdf9" version="1">Upon landing a killing blow with a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; against an enemy, restore one charge of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;. This effect can trigger once per turn.</content>
+
+	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a23343d" version="1">Vow of Safety</content>
+	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e4a66d8" version="1">Roll all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+<!--COLLEGE OF SWORDS-->
+
+	<content contentuid="hc308e037g13c2g40e4g8997gfd8641745ea8" version="1">College of
+Steel</content>
+	<content contentuid="hdbbc023cg8d01g479ag895dg5b8ab719ec0a" version="2">A highly trained and skilled warrior, you use your prowess with words and weapons to fight and entertain in equal measure.</content>
+
+	<content contentuid="9b7b811b9c3043e189f945540bf9a5422aaa1" version="1">Bardic Flourishes</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf939dkkdjje" version="1">Learn two distinct bardic combat techniques.</content>
+
+	<content contentuid="h044a8a17g48efg4beeg928dgab0da805d9f8" version="4">Defensive Flourish (Melee)</content>
+	<content contentuid="h8a371d2dg2e4ag40f6ga81fgdc54201ae616" version="7">Quickly strike and assume a defensive stance, increasing your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by +[1]. </content>
+
+	<content contentuid="h1d68bdddgab35g467bgad0dg4a8e07d9d83e" version="4">Mobile Flourish (Melee)</content>
+	<content contentuid="hc329d774gdabeg476agab5eg226cc81dd318" version="4">Thrust your weapon with enough force to push your target back [1]. Afterwards, you can &lt;LSTag Type="Spell" Tooltip="Target_BladeFlourish_Mobile_FollowUp"&gt;Teleport&lt;/LSTag&gt; to an area you can see.</content>
+	<content contentuid="h6185b26agbf8ag4568g8c59ga2dc9a92bce5" version="2">Mobile Flourish: Teleport</content>
+	<content contentuid="h9c3bed2cg0b7dg4032g9cbagf7a5df33e52a" version="6">Teleport to an area you can see.</content>
+
+	<content contentuid="hd10ce415gd4b5g478dgb2a5ga762aea981dd" version="5">Slashing Flourish (Melee)</content>
+	<content contentuid="h220ea5ebg4051g43e3ga04age5adb1149822" version="4">Attack a creature, afflicting them with &lt;LSTag Type="Status" Tooltip="BLADE_FLOURISH_SLASHING_TARGET"&gt;Steel Refusal&lt;/LSTag&gt;. Afterward, you may target a second creature with another &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; as a free action.</content>
+	<content contentuid="h6185b26agbf8ag4568g8c59ga2dc95d82542" version="2">Slashing Flourish: Followup</content>
+	<content contentuid="h9c3bed2cg0b7dg4032g9cbagf7a56d9f5e84" version="6">Attack a creature who is not afflicted with &lt;LSTag Type="Status" Tooltip="BLADE_FLOURISH_SLASHING_TARGET"&gt;Steel Refusal&lt;/LSTag&gt;.</content>
+	<content contentuid="h6185b26agbf8ag4568g8c59ga2dc95d2d858" version="2">Steel Followup</content>
+	<content contentuid="h9c3bed2cg0b7dg4032g9cbagf7a56d9ff6s9" version="6">Affected creature may make an additional &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; as a free action against a creature who is not afflicted with &lt;LSTag Type="Status" Tooltip="BLADE_FLOURISH_SLASHING_TARGET"&gt;Steel Refusal&lt;/LSTag&gt;.</content>
+	<content contentuid="h6185b26agbf8ag4568g8c59ga2dc95d99d56" version="2">Steel Refusal</content>
+	<content contentuid="h9c3bed2cg0b7dg4032g9cbagf7a56d9ffd54" version="6">Affected creature may not be targeted by an enemy Bard's &lt;LSTag Type="Spell" Tooltip="Zone_BladeFlourish_Slashing_Followup"&gt;Slashing Flourish: Followup&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h9425b988gfa9fg4032g9858g68069eb341a2" version="3">Defensive Flourish (Ranged)</content>
+	<content contentuid="h13e4b442gcfacg4213g8a47gc852e5d82796" version="7">Quickly fire and assume a defensive stance, increasing your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by +[1].</content>
+
+	<content contentuid="h91b9b587gbf8ag4c6eg9702g3c00e2aaa512" version="3">Mobile Flourish (Ranged)</content>
+	<content contentuid="h10a8c9aeg528cg4e75g8eabg75a40280d77d" version="2">Shoot a target with enough force to push it back [1]. Afterwards, you can &lt;LSTag Type="Spell" Tooltip="Target_BladeFlourish_Mobile_FollowUp"&gt;Teleport&lt;/LSTag&gt; to an area you can see.</content>
+
+	<content contentuid="heb634e12g0cefg4e3eg98d1ge9640cf537ae" version="3">Slashing Flourish (Ranged)</content>
+	<content contentuid="h41a799d2gcfaag4f5cga5caga114345edb03" version="4">Attack up to two enemies from a distance.</content>
+
+	<content contentuid="he66189d8gb49cg45e6gb166ga25dc834fc5c" version="2">Defensive Flourish</content>
+	<content contentuid="hf3a82a90gedbdg47f9gbc05ga76dff48fcbf" version="4">Affected creature's &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is increased by +[1].</content>
+
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e000z2" version="1">Steelforged Flourishes</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e000zb" version="3">Gain three Steelforged Flourishes, allowing you to specialize in either melee or ranged combat.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500000" version="1">Steelforged Flourish: Melee</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000z" version="3">Gain access to three Steelforged Flourishes, allowing you to specialize in melee combat.&lt;br&gt;&lt;br&gt;Upon reaching a state of &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, you gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000z0" version="1">Steelforged Flourish: Ranged</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000zz" version="3">Gain access to three Steelforged Flourishes, allowing you to specialize in ranged combat.&lt;br&gt;&lt;br&gt;Upon reaching a state of &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, you gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f59488d" version="1">Melodic Steel</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f532lkd" version="3">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with a weapon, restore one charge of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;. This effect can trigger once per turn.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccs6d54fs6d600001" version="1">Performative Edge</content>
+	<content contentuid="439cb1c55ce44da8b8f3as5d6f4545840000a" version="3">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; in combat, weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; are rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3c8eurwueffd500002" version="1">Climactic Strikes</content>
+	<content contentuid="439cb1c55ce44da8b8f3c9a8sdf9u9f50000b" version="3">Once per turn while &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; in combat, landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with a weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will immediately put you into a state of &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;.</content>
+
+<!--COLLEGE OF VALOR-->
+
+	<content contentuid="he43c3ee1gb725g4a47g902cg6727f52d77c6" version="1">College of
+Valour</content>
+	<content contentuid="h76d3ad64g7e5cg412agac20g17c5e3cb57d0" version="1">You wander the land to witness and relate the deeds of the mighty, keeping alive the memory of heroes of the past and inspiring heroes of the future.</content>
+
+	<content contentuid="hbd0341e3g775bg4a92g84feg270e44176bdb" version="1">Refined Bardic Inspiration</content>
+	<content contentuid="hda0191b3gc731g48f8g8036gb222178522fb" version="1">Through determination and valor, you have refined your craft. You gain &lt;LSTag Type="Spell" Tooltip="Target_BardicInspiration_Combat"&gt;Refined Bardic Inspiration&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Upon reaching a state of &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, you may grant Refined Bardic Inspiration to all allies within [1].</content>
+	<content contentuid="h25beb4b1ge268g4d1dg9440g62bfc37e5266" version="1">Refined Bardic Inspiration</content>
+	<content contentuid="h69581877gf9c5g4250g8ff7g491e83e34177" version="5">Inspire an ally to add a +[1] bonus to their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;, &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;They can also choose to add a +[1] bonus to the damage their next weapon attack deals, or to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; to shield them from an attack.</content>
+	<content contentuid="h8557fe0ag566bg4478g9871g1bd710713a54" version="1">Refined Bardic Inspiration</content>
+	<content contentuid="h5e435b27gb2c2g4904g9719g41316947ed70" version="1">Affected creature can use their &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; to add a +[1] bonus to their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;, or &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;They can also choose to add a +[1] bonus to the damage their next weapon attack deals, or to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; to shield them from an attack.</content>
+
+	<content contentuid="he474b8dfgb613g418agbdf8g20c70b50e1b2" version="1">Valiant Attack</content>
+	<content contentuid="hf2343393gc9ccg4783g8f26g4b757fd65e0b" version="2">Add a +[1] bonus to your &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h7ab5fb1fg7bc8g4403gbe63g19b28d7b2bd3" version="1">Valiant Defence</content>
+	<content contentuid="h7f53adbag7148g45c1g9915g1480491df7b8" version="3">Add a +[1] bonus to your &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
+
+	<content contentuid="haa3da5c0g3bc8g4fe1g870fgd137c96c4103" version="1">Valiant Damage</content>
+	<content contentuid="h752b6036g1720g448eg85f1gd4c45a1d671b" version="2">Add +[1] bonus to your damage with a weapon attack.</content>
+
+	<content contentuid="h9e3b46a1g170ag4dcdgac5ag7218283b3961" version="2">Valiant Roll</content>
+	<content contentuid="hee79482dgd994g44d9g9701gff081730e822" version="1">Add a +[1] bonus to your next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h14ae10b8g4dfbg4ad7g9f30gdf2a7c164a85" version="1">Song of Valor</content>
+	<content contentuid="h52a66fd1g9928g4369ga3c3gcbefefb21a99" version="1">Your &lt;LSTag Type="Spell" Tooltip="Shout_SongOfRest"&gt;Song of Rest&lt;/LSTag&gt; has grown into a full blown Song of Valor! Once per &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, provide the benefits of a full Long Rest to yourself and nearby allies.</content>
+	<content contentuid="h6664033bge8b7g48c8g8fc6g18986baa0baf" version="1">Song of Valor</content>
+	<content contentuid="h004d056bga0c0g4211g864fgd0a167f0cf2e" version="4">Revitalize yourself and nearby allies as though you had taken a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h22af06bagd2d2g4b30ga1adg8e6a48155122" version="1">Valorous Camaraderie</content>
+	<content contentuid="hd8bd4b9fg59a5g4295g9ab0g199a999778dd" version="4">You may select two additional targets with your &lt;LSTag Type="Spell" Tooltip="Target_BardicInspiration_Combat"&gt;Refined Bardic Inspiration&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hb117050dg0016g4833g87f0g8d614082da8e" version="1">Font of Valor</content>
+	<content contentuid="h893450deg4af3g43f4gad83g7b35893b360d" version="1">Your Font of Inspiration now overflows with valor! In addition to fully restoring all three charges of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; at the beginning of combat, you now also restore one charge every three turns for as long as combat persists.</content>
+	<content contentuid="hb117050dg0016g4833g87f0g8d61408owioo" version="1">Font of Valor</content>
+	<content contentuid="h893450deg4af3g43f4gad83g7b358933a611" version="1">Affected creature will restore one charge of &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; when this status expires.</content>
+
+	<content contentuid="h22af06bagd2d2g4b30ga1adg8e6a4816a784" version="1">Valiance Supreme</content>
+	<content contentuid="hd8bd4b9fg59a5g4295g9ab0g199a9998a999" version="4">Targets of your &lt;LSTag Type="Spell" Tooltip="Target_BardicInspiration_Combat"&gt;Refined Bardic Inspiration&lt;/LSTag&gt; deal the maximum amount of damage possible on their next attack.</content>
+	<content contentuid="h22af06bagd2d2g4b30ga1adg8e6a4816ad25" version="1">Valiance Supreme</content>
+	<content contentuid="hd8bd4b9fg59a5g4295g9ab0g192d5s46fd45" version="4">Affected creature will deal the maximum amount of damage possible on their next attack.</content>
+
+	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a5a8a45" version="1">Reliable Valor</content>
+	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e458849" version="1">When you make an &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt; with a &lt;LSTag Tooltip="Skill"&gt;Skill&lt;/LSTag&gt; you are &lt;LSTag Tooltip="Proficiency"&gt;Proficient&lt;/LSTag&gt; in, you are no longer able to fail the roll.</content>
+
+<!--PASSIVES-->
+
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e00002" version="1">Rhythmic Empowerments</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e0000b" version="1">Songs echo across tavern walls as ovation of your acclaim.&lt;br&gt;A precursor of your tales to come.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd99999" version="1">Melody of Inspirations</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896ddzzzzz" version="1">Affected creature is benefiting from one or more effects due to the performance of a nearby ally.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd88888" version="1">Melody of Malaise</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896ddyyyyy" version="1">Affected creature is suffering from one or more adverse effects due to the performance of a nearby enemy.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00001" version="1">Aggressive Rhythm</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000a" version="1">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; in combat, emit an aura across [1] which provides a +2 bonus to allied damage rolls.&lt;br&gt;&lt;br&gt;While projecting your &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_VERSE"&gt;Performative Verse&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, this bonus increases to +3 or +4, respectively.</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000z1" version="1">Aggressive Rhythm</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000za" version="1">While in the presence of an allied Bard's performance, this creature recieves a +[1] bonus to all damage rolls.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00002" version="1">Discerning Insult</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000b" version="1">As a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;, reduce the confidence of your target, applying a -1d4 penalty to their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;, or &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="h04cd9c24g4e19g422bg983bge808593fb7c0" version="1">Cutting Words</content>
+	<content contentuid="h3ab0da6aga36dg4861g906egff10a4c63cc8" version="3">Reduce a targets &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt; or &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; by -1d4.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00003" version="1">Distracting Dissonance</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000c" version="1">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; in combat, emit an aura across [1] which reduces enemies &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 1.&lt;br&gt;&lt;br&gt;While projecting your &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_VERSE"&gt;Performative Verse&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, enemy Armour Class is reduced by -2 or -3, respectively.</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000z3" version="1">Distracting Dissonance</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000zc" version="1">While in the presence of an enemy Bard's performance, this creatures &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is decreased by [1].</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00004" version="1">Dueling Ditties</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000d" version="1">Improve your own &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; by up to an amount equal to that of your Bardic Inspiration.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00005" version="1">Echoes of Fortitude</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000e" version="1">Upon granting another creature &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;, both you and your target recovers +1d6 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000z5" version="1">Echoes of Fortitude</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000ze" version="1">Affected creature has recovered +1d6 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; multiplied by the casters &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; due to &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00006" version="1">Encouraging Momentum</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000f" version="1">Upon granting another creature &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;, both you and targets &lt;LSTag Type="Status" Tooltip="DASH"&gt;Dash&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="DISENGAGE"&gt;Disengage&lt;/LSTag&gt; for one turn.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00007" version="1">Engaging Composition</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000g" version="1">Targets of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; may make one additional attack using their &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;. In addition, you are capable of doing so at the cost of one charge of your Bardic Inspiration.</content>
+	<content contentuid="h4344309ag115dg487bgbdcbg14552d855f69" version="1">Bardic Strike</content>
+	<content contentuid="h4344309ag115dg487bgbdcbg14552d822356" version="1">Bardic Strike (Ranged)</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00008" version="1">Guided Inspiration</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000h" version="1">Dealing damage to an enemy has a 20% chance to apply your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; to allies within [1] of you.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00009" version="1">Harmonious Aura</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000i" version="1">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; in combat, emit an aura across [1] which provides a +1 bonus to allied &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;While projecting your &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_VERSE"&gt;Performative Verse&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, this bonus increases to +2 or +3, respectively.</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000z9" version="1">Harmonious Aura</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000zi" version="1">While in the presence of an allied Bard's performance, this creature gains a +[1] bonus to all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00010" version="1">Infuriating Amplification</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000j" version="1">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; in combat, emit an aura across [1] which reduces enemy &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; by -1.&lt;br&gt;&lt;br&gt;While projecting your &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_VERSE"&gt;Performative Verse&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, enemy Saving Throws are reduced by -2 or -3, respectively.</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00z10" version="1">Infuriating Amplification</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000zj" version="1">While in the presence of an enemy Bard's performance, this creatures &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; are reduced by -[1].</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00011" version="1">Inspirational Resonance</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000k" version="1">Targets of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;, emit a shockwave, forcing enemies back by [1].</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00z11" version="1">Inspirational Resonance</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000zk" version="1">Resonance of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; spills out, manifesting as a shockwave which forces enemies back by [1].</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00012" version="1">Inspiring Crescendo</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000l" version="1">Improve your own &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; by up to an amount equal to that of your Bardic Inspiration.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00013" version="1">Insufferable Curse</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000m" version="1">Upon landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on an enemy with nearby allies, you &lt;LSTag Type="Status" Tooltip="DOMINATE_PERSON"&gt;Dominate&lt;/LSTag&gt; your target for one turn.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00014" version="1">Melodic Precision</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000n" version="1">Once per turn, upon landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, restore one charge of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00015" version="1">Mobile Maestro</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000o" version="1">Swap places with targets when they gain the effects of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;. This can be toggled at any time.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00016" version="1">Mocksmith</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000p" version="1">When damaging another creature, you may potentially afflict them with &lt;LSTag Type="Status" Tooltip="VICIOUSMOCKERY"&gt;Vicious Mockery&lt;/LSTag&gt;.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00017" version="1">Silver Tongued Savant</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000q" version="1">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="Charisma"&gt;Charisma&lt;/LSTag&gt; based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00018" version="1">Soothing Words</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000r" version="1">Targets under the effects of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; regain the maximum amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; possible when healed while they are below half of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00z18" version="1">Soothing Words</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000zr" version="1">Affected creature will regain the maximum amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; possible when healed below half of their total Hit Points.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00019" version="1">Unprecedented Encore</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000s" version="1">Targets of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; will potentially experience a positive surge of &lt;LSTag Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt;.</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00z19" version="1">Unprecedented Encore</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd000zs" version="1">This creature has experienced a positive surge of &lt;LSTag Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt; due to &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
+
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd00020" version="1">Vigorously Tuned</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000t" version="1">On your first turn of any combat encounter, gain &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; equal to your level multiplied by four.</content>
+
+<!--REWARD FOR RESCUING ALFIRA IN ACT 2-->
+
+	<content contentuid="h5fe69d31gb462g4451g9ee8g1100cd000001" version="1">Bardic Companionship</content>
+	<content contentuid="h5fe69d31gb462g4451g9ee8g1100cd00000a" version="1">The tales Alfira will sing of your adventure echo within your mind. Upon taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt; or &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, gain the benefits of her &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION_D10"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
+
+</contentList>

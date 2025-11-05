@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+<!--MONK-->
+
+	<content contentuid="d03f845e0df8463295a0cc3b6d86442c6a942" version="6">Martial Arts</content>
+	<content contentuid="d03f845e0df8463295a0cc3b6d86442c6a921" version="6">Attacks with weapons which are not &lt;LSTag Tooltip="TwoHanded"&gt;Two-Handed&lt;/LSTag&gt; deal [1], unless their normal damage is higher. The damage of these attacks may scale with either your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; or your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt;. This can be toggled at any time.&lt;br&gt;&lt;br&gt;Additionally, you are able to utilize your &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; in order to make an unarmed strike.</content>
+
+	<content contentuid="h69adc5a5ge60ag4affg84a0gd14490176db0" version="1">Unarmed Strike</content>
+	<content contentuid="hefec7f3fg7e34g4a1ag97a4gc4223e9e32b4" version="2">Swiftly strike an enemy.</content>
+
+	<content contentuid="h8314a48ag5f5dg464agb684g792054ad643d" version="2">Flurry of Blows</content>
+	<content contentuid="h8ed549a4ga454g49b4gb319g7335ccf73b3a" version="6">Punch twice in rapid succession.</content>
+
+	<content contentuid="d03f845e0df8463295a0cc3b6d86442c4a452" version="6">Martial Flux</content>
+	<content contentuid="d03f845e0df8463295a0cc3b6d86442c2a354" version="6">Gain an additional &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="d03f845e0df8463295a0cc3b6d86442c6a9ed" version="6">Martial Mastery</content>
+	<content contentuid="d03f845e0df8463295a0cc3b6d86442c1a345" version="6">Gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+
+<!--WAY OF THE ARCANE-->
+
+	<content contentuid="hbe016590gb2f5g4fe9gaf36gddde7240410d" version="1">Way of the Arcane</content>
+	<content contentuid="hd7b3cc90g33b2g453aga78bgeb5db0093e19" version="1">Way of the Arcane</content>
+	<content contentuid="hb20d489bg56dfg4abfg9128gba50ebe6a4a8" version="6">This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; is considered an &lt;LSTag Tooltip="AttackRoll"&gt;Unarmed Attack Roll&lt;/LSTag&gt;. As such, it rolls using your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; or &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt;, depending on which is higher.</content>
+
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400001" version="2">Flow State</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000a" version="6">Utilize your &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; to cast Spells which require an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; or &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;, rather than &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt;. The cost of a Spell is equal to one Ki Point per level of the Spell that you cast. In addition, your unarmed based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage receive a bonus equal to your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt;. This can be toggled at any time.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400011" version="2">Flow State</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314000aa" version="6">Affected creature can utilize their &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; to cast Spells which require an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; or &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;. In addition, their unarmed based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage receive a bonus equal to their &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;. </content>
+
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400002" version="2">Essence of the Elements</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000b" version="6">Gain &lt;LSTag Type="Spell" Tooltip="Projectile_FangsOfTheFireSnake"&gt;Fangs of the Fire Snake&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_FistOfUnbrokenAir"&gt;Fist of Unbroken Air&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_ShapeTheFlowingRiver_IceBlock"&gt;Ice Block&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_WaterWhip"&gt;Water Whip&lt;/LSTag&gt;.</content>
+	<content contentuid="hb1682b67g6375g4276g965dgcd8ad9e243d8" version="2">Fangs of the Fire Snake</content>
+	<content contentuid="h6bd79379g6ec1g475eg9585g6fdbb7fe09dd" version="6">Conjure a flaming projectile and strike your foe from afar. Your next melee attacks deal an additional [1].</content>
+	<content contentuid="h60dd4652gfc75g4a9dg8256gbc9bbeb1395b" version="1">Fangs of the Fire Snake</content>
+	<content contentuid="h742a06dcg1814g432eg945dg7ccf3f55fb26" version="3">Affected creature's fists are flickering with flame. Its melee attacks deal an additional [1].</content>
+	<content contentuid="h133847b1gabedg4325gae61g968ab733a058" version="2">Fist of Unbroken Air</content>
+	<content contentuid="hb580f508g6b4cg463ega722g7b92469c17e5" version="7">Conjure a gale in the shape of a fist which crashes into targets, forcing them back by [1] should they fail a Strength based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h577c9c4eg7abbg40b5g825eg54e9b436c4f7" version="4">Ice Block</content>
+	<content contentuid="hac166b0dg75d6g44a8ga360g8ccb37bb7bd7" version="4">Conjure a climbable block of ice which you can use to block paths and traverse your surroundings. Enemies starting their turn within [1] of the block will potentially lose 50% of their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; and take [2].</content>
+	<content contentuid="h577c9c4eg7abbg40b5g825eg54e9b436s5d8" version="4">Ice Block: Freezing</content>
+	<content contentuid="hac166b0dg75d6g44a8ga360g8ccb37b2e565" version="4">Affected creature potentially takes [1] while starting their turn within [2] of the nearby &lt;LSTag Type="Spell" Tooltip="Target_ShapeTheFlowingRiver_IceBlock"&gt;Ice Block&lt;/LSTag&gt;. Upon taking damage by the Ice Block, they will lose 50% of their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; for the rest of their turn.</content>
+	<content contentuid="h577c9c4eg7abbg40b5g825eg54e9b4326533" version="4">Ice Block: Frozen</content>
+	<content contentuid="hac166b0dg75d6g44a8ga360g8ccb37b68944" version="4">Affected creature has lost 50% of their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; for the rest of their turn.</content>
+
+	<content contentuid="h7067326fg983fg480egb39cg7e48c4ecb0a9" version="2">Water Whip</content>
+	<content contentuid="h7e38ea30g1795g4b98gaca8gf6278ebb561d" version="2">Conjure a current of water with which to pull a target toward you by [1] should they fail a Strength based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+	<content contentuid="hf318c6dcg5444g4c2ag86b7g55225d458688" version="1">This action utilizes an unarmed based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; while also functioning as a &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400003" version="2">Martial Elements</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000c" version="6">When dealing damage with a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, infuse your spirit with the same element for the rest of your turn. Dealing further damage while infused will deal additional elemental damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400133" version="2">Martial Elements: Bludgeoning</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314001cc" version="6">Affected creature deals an additional +[1] Bludgeoning damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400233" version="2">Martial Elements: Slashing</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314002cc" version="6">Affected creature deals an additional +[1] Slashing damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400333" version="2">Martial Elements: Piercing</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314003cc" version="6">Affected creature deals an additional +[1] Piercing damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400433" version="2">Martial Elements: Acid</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314004cc" version="6">Affected creature deals an additional +[1] Acid damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400533" version="2">Martial Elements: Cold</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314005cc" version="6">Affected creature deals an additional +[1] Cold damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400633" version="2">Martial Elements: Fire</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314006cc" version="6">Affected creature deals an additional +[1] Fire damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400733" version="2">Martial Elements: Force</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314007cc" version="6">Affected creature deals an additional +[1] Force damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400833" version="2">Martial Elements: Lightning</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314008cc" version="6">Affected creature deals an additional +[1] Lightning damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400933" version="2">Martial Elements: Necrotic</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314009cc" version="6">Affected creature deals an additional +[1] Necrotic damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401033" version="2">Martial Elements: Poison</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314010cc" version="6">Affected creature deals an additional +[1] Poison damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401133" version="2">Martial Elements: Psychic</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314011cc" version="6">Affected creature deals an additional +[1] Psychic damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401233" version="2">Martial Elements: Radiant</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314012cc" version="6">Affected creature deals an additional +[1] Radiant damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401333" version="2">Martial Elements: Thunder</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314013cc" version="6">Affected creature deals an additional +[1] Thunder damage until the beginning of their next turn.</content>
+
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400004" version="2">Elemental Overdrive</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000d" version="6">Spells cast with &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; make their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400005" version="2">Elemental Recovery</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000e" version="6">Upon a successful killing blow on an enemy with a Spell cast using &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt;, restore one point of Ki. This effect can trigger once per turn.</content>
+
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400006" version="2">Protective Casting</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000f" version="6">When you use &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; to cast a damage dealing Spell, gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to that type of damage until the beginning of your next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400166" version="2">Protective Casting: Bludgeoning</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314001ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Bludgeoning damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400266" version="2">Protective Casting: Slashing</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314002ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Slashing damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400366" version="2">Protective Casting: Piercing</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314003ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Piercing damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400466" version="2">Protective Casting: Acid</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314004ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Acid damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400566" version="2">Protective Casting: Cold</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314005ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Cold damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400666" version="2">Protective Casting: Fire</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314006ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400766" version="2">Protective Casting: Force</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314007ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Force damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400866" version="2">Protective Casting: Lighting</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314008ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400966" version="2">Protective Casting: Necrotic</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314009ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401066" version="2">Protective Casting: Poison</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314010ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401166" version="2">Protective Casting: Psychic</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314011ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Psychic damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401266" version="2">Protective Casting: Radiant</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314012ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Radiant damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401366" version="2">Protective Casting: Thunder</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314013ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Thunder damage until the beginning of their next turn.</content>
+
+<!--WAY OF THE DRUNKEN FIST-->
+
+	<content contentuid="h392ca1c2g2438g40c6ga3e6ge2b15b83f947" version="1">Way of the Drunken Fist</content>
+	<content contentuid="hf8c35f5fg841eg4cbegaec6gf45dc0ad011e" version="1">With the unpredictable lurches of a tippler, you sway through every battle, frustrating foes with carefully executed movements concealed beneath a façade of incompetence.</content>
+
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g60811c200001" version="1">Binge Drinker</content>
+	<content contentuid="h380fd620g031cg4b8bg9e8cgf7cee590000a" version="1">You are immune to the negative effects of being &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Inebriated&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="TIPSY"&gt;Tipsy&lt;/LSTag&gt;, and all positive effects are doubled. Upon consuming alcohol, you recover one &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Point&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g60811c200002" version="1">Leaf Hurricane</content>
+	<content contentuid="h380fd620g031cg4b8bg9e8cgf7cee590000b" version="1">Upon drinking alcohol, you immediately &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Dash&lt;/LSTag&gt;. While &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Inebriated&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="TIPSY"&gt;Tipsy&lt;/LSTag&gt;, you will not provoke &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g60811c200003" version="1">Contact Buzz</content>
+	<content contentuid="h380fd620g031cg4b8bg9e8cgf7cee590000c" version="1">Dealing damage causes your target to become &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Inebriated&lt;/LSTag&gt; for three turns.</content>
+
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g60811c200004" version="1">Luck of the Drunkard</content>
+	<content contentuid="h380fd620g031cg4b8bg9e8cgf7cee590000d" version="1">While &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Inebriated&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="TIPSY"&gt;Tipsy&lt;/LSTag&gt;, you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g60811c200005" version="1">Drunken Awareness</content>
+	<content contentuid="h380fd620g031cg4b8bg9e8cgf7cee590000e" version="1">While &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Inebriated&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="TIPSY"&gt;Tipsy&lt;/LSTag&gt;, all enemies make &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against you with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g60811c200006" version="1">Eighth Gate of Saké</content>
+	<content contentuid="h380fd620g031cg4b8bg9e8cgf7cee590000f" version="1">Upon taking damage by a melee attack while &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Inebriated&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="TIPSY"&gt;Tipsy&lt;/LSTag&gt;, you immediately fall &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;. Enemies have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; when targeting you while Prone, and standing up requires no &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;. Upon standing back up, your next instance of damage will always roll as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g60811c2000z6" version="1">Eighth Gate of Saké</content>
+	<content contentuid="h380fd620g031cg4b8bg9e8cgf7cee59000zf" version="1">Affected creature will roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on their next instance of damage.</content>
+
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g6as5d4f00001" version="1">Flurry of Blows: Intoxicating</content>
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g6as5d4f0000a" version="1">While &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Inebriated&lt;/LSTag&gt;, deliver two hits in rapid succession. If your target is Inebriated, this action will potentially knock them &lt;LSTag Type="Status" Tooltip="UNCONSCIOUS"&gt;Unconscious&lt;/LSTag&gt; for one turn, removing the condition.</content>
+
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g6as5d4f00002" version="1">Slosh Toss</content>
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g6as5d4f0000b" version="1">Throw bottles of alcohol as a free action, causing all who get a taste to become &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Inebriated&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g6as5d4f00003" version="1">Breath of the Brewery</content>
+	<content contentuid="h3beda6c5g0a7bg4b59g8451g6as5d4f0000c" version="1">While &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Inebriated&lt;/LSTag&gt;, belch a breathtakingly pungent scent so debilitating that it may rob those affected of their senses, driving them &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Mad&lt;/LSTag&gt;.</content>
+
+<!--WAY OF THE OPEN HAND-->
+
+	<content contentuid="h29ded009g66f1g4448g8fceg68452f0b4c5d" version="1">You specialise in unarmed combat, using your hands and your control of ki to inflict grievous wounds.</content>
+	<content contentuid="h3cf42f71g6a06g4e7ag9c4fge283255a4bc4" version="2">You specialise in unarmed combat, using your hands and your control of ki to inflict grievous wounds.</content>
+
+	<content contentuid="h2d00c757g34b5g4b17g8557g3fd46b41ad80" version="2">Flurry of Blows: Topple</content>
+	<content contentuid="h9f56c138g8b3cg461egb39dg47b008ccfe3b" version="5">Deliver two lightning fast blows and possibly knock your target &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+	<content contentuid="h10e929cfgdb5cg4969g942ag68be7c450b46" version="2">Flurry of Blows: Stagger</content>
+	<content contentuid="h89eded93gcedcg4913g925egee98ec3341d1" version="6">Deliver two lightning fast blows and possibly &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Daze&lt;/LSTag&gt; your target.</content>
+	<content contentuid="hbe84fb72g12bag41e4ga606g8bb6420ea552" version="2">Flurry of Blows: Push</content>
+	<content contentuid="h72afe393gd62eg4d84g9429g6f67d5226e6c" version="5">Deliver two lightning fast blows and possibly push your target [1] away.</content>
+
+	<content contentuid="h451f9a42gca5ag40d5ga31ag3024c66a6sdd" version="6">Weaponized Fists</content>
+	<content contentuid="h4dc41c23g84a5g459dg80e3g0e22fb19sd98" version="6">While unarmed, you may cast the standard variant of &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttackDual"&gt;Flurry of Blows&lt;/LSTag&gt; as an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h5decdf3dgf82cg42b6gb6dega2294e952dd0" version="3">Stunning Strike (Armed)</content>
+	<content contentuid="hadda723bgfc48g48c7ga21bg586272f41179" version="1">Stunning Strike (Unarmed)</content>
+	<content contentuid="he3cec886g72b1g43ffg93cag3afdd7c6e9db" version="4">Deliver a debilitating blow to your target, possibly &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; them.</content>
+
+	<content contentuid="h451f9a42gca5ag40d5ga31ag3024casdfsdf" version="2">Manifestation of Self</content>
+	<content contentuid="h4dc41c23g84a5g459dg80e3g0e22fsdfsd66" version="5">The natural attunement you hold over your Mind, Body, and Soul strengthens your unarmed abilities. Depending on which paradigm you choose to attune to, you deal additional Psychic, Necrotic, or Radiant damage. These can be toggled at any time.</content>
+	<content contentuid="h8f86f472gfaeeg4773g9998ga47a693c83c6" version="2">Manifestation of Mind</content>
+	<content contentuid="h0149ca95gcdfag44e1g9d01gbb0011e2d10e" version="5">Your hands interrupt the flow of Ki to your enemies' minds. Your unarmed attacks deal an additional [1].</content>
+	<content contentuid="h451f9a42gca5ag40d5ga31ag3024c66fff76" version="2">Manifestation of Body</content>
+	<content contentuid="h4dc41c23g84a5g459dg80e3g0e22fb1c7e9d" version="5">Your hands sap the Ki from your enemies' bodies. Your unarmed attacks deal an additional [1].</content>
+	<content contentuid="had8f929ag3f84g4fa9gb627g703f5a219c05" version="2">Manifestation of Soul</content>
+	<content contentuid="hdaa67da7g28bcg4585gae58g5d55ddb84b7e" version="5">Your hands become infused with Ki drawn in from outside your body. Your unarmed attacks deal an additional [1].</content>
+
+	<content contentuid="h899dddabge756g4167g951agd5be8d96a14e" version="2">Ki Resonation: Punch (Action)</content>
+	<content contentuid="hfa2550aegf4b5g4723g83ebg1c5ffb1b4988" version="1">Ki Resonation: Punch (Bonus Action)</content>
+	<content contentuid="he3040900g99efg410egb082g32eb2e847245" version="3">Hit a creature with your bare fists, forcing the Ki in your targets body to &lt;LSTag Type="Status" Tooltip="KI_RESONATION"&gt;Resonate&lt;/LSTag&gt; with yours.</content>
+	<content contentuid="h7b5f0f66g2330g4167gb6fag4fa79fe81170" version="1">You can then force the Ki to explode with &lt;LSTag Type="Spell" Tooltip="Target_KiResonation_Blast"&gt;Ki Resonation: Erupt&lt;/LSTag&gt;.</content>
+	<content contentuid="h7317a576gcbf5g4f4egb751g868a7efce70b" version="2">Ki Resonation: Erupt</content>
+	<content contentuid="hfc7fe7f6ge576g4e3dg8ea2g2d421c64784d" version="3">Detonate the Ki of a creature &lt;LSTag Type="Status" Tooltip="KI_RESONATION"&gt;Resonating&lt;/LSTag&gt; with you, damaging the creature along with all enemies within [1] of it.</content>
+	<content contentuid="h3590a3c3gfaecg4f70gae28gef36ddb015eb" version="2">Ki Resonation: Erupt</content>
+	<content contentuid="h1ea4cd68g3f55g4520ga8f0g126c7e3e7d02" version="5">Detonate the Ki of a creature &lt;LSTag Type="Status" Tooltip="KI_RESONATION"&gt;Resonating&lt;/LSTag&gt; with you, damaging the creature along with all enemies within [1] of it.</content>
+	<content contentuid="hf3a73818g3b39g454dgb194g9d186c0c6423" version="3">Ki Resonation</content>
+	<content contentuid="h1e6e62c4gfeb7g4ff7g85b6ga62d3def8525" version="3">The Ki within the affected creature is resonating with a nearby Monk. The Monk can use &lt;LSTag Type="Spell" Tooltip="Target_KiResonation_Blast"&gt;Ki Resonation: Erupt&lt;/LSTag&gt; to make it explode.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3146a921" version="6">Danse Macabre</content>
+	<content contentuid="hb20d489bg56dfg4abfg9128gba50ebe2a111" version="6">Once per turn, killing an enemy will restore one of your &lt;LSTag Tooltip="Action"&gt;Actions&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Actions&lt;/LSTag&gt;.</content>
+
+<!--WAY OF THE SHADOW-->
+
+	<content contentuid="h05e1db8ag8572g4908ga042gffda9f365c57" version="1">Way of the Shadow Arts</content>
+	<content contentuid="h28328e2eg7c83g4436gae8bgdddb6d09a2bf" version="1">Way of the Shadow Arts</content>
+
+	<content contentuid="h9848c90age6f2g402cg94acg5193d31941b4" version="2">Shadow Step</content>
+	<content contentuid="he3cc38b0g238bg416dg8f89gd44c25eca125" version="5">Teleport directly to a nearby shadow and gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; until the end of your turn.</content>
+	<content contentuid="he3cc38b0g238bg416dg8f89gd44c25e6asd8" version="5">While &lt;LSTag Type="Spell" Tooltip="Shout_Hide"&gt;Hidden&lt;/LSTag&gt;, this action does not cost a &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Point&lt;/LSTag&gt;.</content>
+	<content contentuid="hcaad2a83ge8f1g464cgb44fgb55b76d28fa7" version="2">Shadow Step</content>
+	<content contentuid="h6ce2b4b7gb27bg46e4g87f3g11f1afcf915d" version="3">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+	<content contentuid="h9edc5297g58c0g4b7dg8e45g59e03f646c93" version="2">Cloak of Shadows</content>
+	<content contentuid="h89c825a7gfe72g4463g80dcg3372e0b6a924" version="3">Wrap yourself and nearby allies in shadows to become &lt;LSTag Type="Status" Tooltip="CLOAK_OF_SHADOWS_MONK"&gt;Invisible&lt;/LSTag&gt;. Allies in unobscured areas will remain visible.</content>
+	<content contentuid="ha67bd9b7g69e7g412cga360g4fa319434ef0" version="1">Cloak of Shadows</content>
+	<content contentuid="hc736973dg7fe3g4fa3ga93agfb7143a5db4a" version="2">Shadow Strike</content>
+	<content contentuid="hc736973dg7fe3g4fa3ga93agfb7143a5db4b" version="2">Shadow Strike (Unarmed)</content>
+	<content contentuid="h69aed89fg5ca1g435cg8dcfg99115146f750" version="3">Teleport to an enemy from a &lt;LSTag Type="Spell" Tooltip="Shout_Hide"&gt;Hidden&lt;/LSTag&gt; position, striking them with the psychic ferocity of the shadows themselves. </content>
+	<content contentuid="h69aed89fg5ca1g435cg8dcfg9911514asdf5" version="3">If casting this action results in a killing blow, it is considered a free action and you will remain Hidden.</content>
+
+	<content contentuid="h9edc5297g58c0g4b7dg8e45g59dsa5588d12" version="2">Void Stalker</content>
+	<content contentuid="h9edc5297g58c0g4b7dg8e45g59ads6fsdf89" version="3">While obscured in shadow, you may &lt;LSTag Type="Spell" Tooltip="HIDING"&gt;Hide&lt;/LSTag&gt; as a free action. Additionally, you can see normally in darkness, both magical and non-magical, to a distance of [1].</content>
+
+	<content contentuid="4512454c8e254628bd4dca56s45df6sd8458d" version="2">Auspicious Shadows</content>
+	<content contentuid="4512454c8e254628bd4dc6as9d8f79s8d7f58" version="3">Upon landing a killing blow with &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant"&gt;Shadow Strike&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant_Unarmed"&gt;Shadow Strike: Unarmed&lt;/LSTag&gt;, casting these actions again will always result in a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; for the rest of your turn.</content>
+	<content contentuid="4512454c8e254628bd4dca56s45df6sd2d545" version="2">Auspicious Shadows</content>
+	<content contentuid="4512454c8e254628bd4dc6as9d8f79s86698d" version="3">Affected creature will only roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; when damaging another creature with &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant"&gt;Shadow Strike&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant_Unarmed"&gt;Shadow Strike: Unarmed&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h9edc5297g58c0g4b7dg8e45as8d9f87s9d8f" version="2">Fade to Black</content>
+	<content contentuid="h9edc5297g58c0g4b7dg8e4as2dff31289898" version="3">Enemies within [1] of you have their peripheral vision severely reduced.</content>
+	<content contentuid="h9edc5297g58c0g4b7dg8e45as8d9f87asdf8" version="2">Fade to Black</content>
+	<content contentuid="h9edc5297g58c0g4b7dg8e4as2dff31afdd22" version="3">Affected creature is severely reducing nearby enemies' peripheral vision.</content>
+	<content contentuid="h9edc5297g58c0g4b7dg8e45as8d9f876ad85" version="2">Fade to Black</content>
+	<content contentuid="h9edc5297g58c0g4b7dg8e4as2dff31asdf25" version="3">Affected creature has had it's peripheral vision severely reduced.</content>
+
+	<content contentuid="h9edc5297g58c0g4b7dg8e45g5asdfasdf998" version="2">Silent Strikes</content>
+	<content contentuid="h9edc5297g58c0g4b7dg8e45gadfs3a2s1d3f" version="3">Dealing damage to another creature &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silences&lt;/LSTag&gt; them for one turn.</content>
+
+	<content contentuid="h9edc5297g58c0g4b7dg8e45g5asdf2s3d5f5" version="2">See No Evil</content>
+	<content contentuid="h9edc5297g58c0g4b7dg8e45gadfs36s5d4f8" version="3">Dealing damage to another creature &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinds&lt;/LSTag&gt; them for one turn.</content>
+
+<!--PASSIVES-->
+
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e00006" version="6">Ki Masteries</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e0000f" version="6">Feel the breadth of your experiences circulating within you.&lt;br&gt;Within every storm, serenity harmoniously waits for its moment.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000001" version="6">Counterflow</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000a" version="6">When an enemy fails to damage you with a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and a &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Point&lt;/LSTag&gt; in order to retaliate with &lt;LSTag Type="Spell" Tooltip="Target_FlurryOfBlows"&gt;Flurry of Blows&lt;/LSTag&gt;.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000z1" version="6">Counterflow</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000za" version="6">When an enemy fails to damage you with a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, retaliate with &lt;LSTag Type="Spell" Tooltip="Target_FlurryOfBlows"&gt;Flurry of Blows&lt;/LSTag&gt;.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000002" version="6">Critical Flow</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000b" version="6">When you successfully roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; against an enemy, restore one of your &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt;. This effect can trigger once per turn.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000003" version="6">Dance of Flowing Water</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000c" version="6">On any successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, gain a +1 bonus to your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; until you successfully avoid an attack. This effect can stack and will reset at the beginning of each of your turns.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000z3" version="6">Dance of Flowing Water</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zc" version="6">Affected creature will avoid damage more easily. Their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; increases by 1 for each stack of Dance of Flowing Water. This effect will reset at the beginning of each of their turns.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000004" version="6">Deflective Missiles</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000d" version="6">When a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; is made against you, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to reduce the damage by -1d12 plus your &lt;LSTag Tooltip="AbilityModifier"&gt;Dexterity Modifier&lt;/LSTag&gt; and your level. If reduced to zero, you may use a &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Point&lt;/LSTag&gt; in order to throw the projectile back at your aggressor.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000z4" version="6">Deflective Reflex</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zd" version="6">When a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; is made against you, reduce the damage by -1d12 plus your &lt;LSTag Tooltip="AbilityModifier"&gt;Dexterity Modifier&lt;/LSTag&gt; and your level.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000zz4" version="6">Deflective Redux</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000zzd" version="6">When &lt;LSTag Type="Passive" Tooltip="Interrupt_DeflectMissiles"&gt;Deflective Reflex&lt;/LSTag&gt; has reduced the damage of a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; to zero, throw the projectile back at your aggressor.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000005" version="6">Dexterous Ward</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000e" version="6">When a spell or effect would deal half damage on a successful &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, it deals no damage if you succeed, and only half damage if you fail.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000006" version="6">Fist of Crushing Rock</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000f" version="6">When a creature fails an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, gain a +1 bonus to Attack Rolls during your next turn. This effect can stack and will reset at the end of each of your turns.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000z6" version="6">Fist of Crushing Rock</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zf" version="6">Affected creature will land &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; more easily. The number required is reduced by 1 for each stack of Fist of Crushing Rock. This effect will reset at the end of each of their turns.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000007" version="6">Focused Stream</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000g" version="6">When you succeed in an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, the number you need in order to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by 1. This effect can stack and will reset at the end of each of your turns.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000z7" version="6">Focused Stream</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zg" version="6">Affected creature will roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; more easily. The number required is reduced by 1 for each stack of Focused Stream. This effect will reset at the end of each of their turns.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000008" version="6">Fortified Body and Mind</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000h" version="6">Gain status immunity to being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;, or restrained in any way.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000009" version="6">Harmonious Barrage</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000i" version="6">&lt;LSTag Type="Spell" Tooltip="Target_FlurryOfBlows"&gt;Flurry of Blows&lt;/LSTag&gt; deals additional damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000010" version="6">Harmonious Footwork</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000j" version="6">Gain an additional [1] of &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000011" version="6">Martial Empowerment</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000k" version="6">Upon a successful killing blow against an enemy, restore one of your &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt;. This effect can trigger once per turn.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000012" version="6">Mystic Strikes</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000l" version="6">When dealing damage, you ignore bludgeoning &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt;.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000013" version="6">Opportune Reversal</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000m" version="6">When an enemy fails to damage you with a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to retaliate with a swift &lt;LSTag Type="Spell" Tooltip="Target_UnarmedStrike_Monk"&gt;Unarmed Strike&lt;/LSTag&gt;.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000z13" version="6">Opportune Reversal</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zm" version="6">When an enemy fails to damage you with a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, retaliate with a swift &lt;LSTag Type="Spell" Tooltip="Target_UnarmedStrike_Monk"&gt;Unarmed Strike&lt;/LSTag&gt;.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000014" version="6">Resonance of Body</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000n" version="6">While in combat, regenerate one &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Point&lt;/LSTag&gt; every three turns.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a083iii" version="6">Resonance of Body</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a06a932" version="6">Affected creature will recover one &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Point&lt;/LSTag&gt; when this status expires.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000015" version="6">Sagacious Resilience</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000o" version="6">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="Wisdom"&gt;Wisdom&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000016" version="6">Soused Rampart</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000p" version="6">While &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Inebriated&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="TIPSY"&gt;Tipsy&lt;/LSTag&gt;, gain a +2 bonus to your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000017" version="6">Tempestuous Reprise</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000q" version="6">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally within [1], use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to retaliate with a swift burst of air pressure, dealing damage equal to an &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strike&lt;/LSTag&gt; and sending them flying [3] if they fail a &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000z17" version="6">Tempestuous Reprise</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zq" version="6">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally within [1], retaliate with a swift burst of air pressure, dealing damage equal to an &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strike&lt;/LSTag&gt; and sending them flying [3] if they fail a &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000018" version="6">Tranquil Fortitude</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000r" version="6">Gain &lt;LSTag Type="Spell" Tooltip="Shout_PatientDefense"&gt;Patient Defense&lt;/LSTag&gt;.</content>
+	<content contentuid="h7b585b3agb04eg4319gb28cg3e756e4e08ab" version="2">Patient Defence</content>
+	<content contentuid="h54ed26edg092dg4fd8g8b02g28fce1de09bd" version="5">&lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against you have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;, and you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Dexterity &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000019" version="6">Windwaker</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000s" version="6">Gain &lt;LSTag Type="Spell" Tooltip="Shout_Dash_StepOfTheWind"&gt;Step of the Wind: Dash&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Shout_Disengage_StepOfTheWind"&gt;Step of the Wind: Disengage&lt;/LSTag&gt;. These actions may be cast for free once per turn.</content>
+	<content contentuid="h1a94c127ga841g4d55g9c05g2b85ce506e91" version="2">Step of the Wind: Dash</content>
+	<content contentuid="h1edbc190gdde8g4b3bgbfa6g294167324391" version="8">Double your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;.</content>
+	<content contentuid="h4feee684g3659g46eega6cbg55cc38432e79" version="2">Step of the Wind: Disengage</content>
+	<content contentuid="h2ec77490g6d3bg4a26gb11fg38e9fb30e4cd" version="7">Retreat to safety by &lt;LSTag Type="Spell" Tooltip="Shout_Disengage"&gt;Disengaging&lt;/LSTag&gt;.</content>
+
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000020" version="6">Zen Recovery</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000t" version="6">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, you may expend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to restore your &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a000z20" version="6">Zen Recovery</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zt" version="6">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, restore your &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+
+</contentList>

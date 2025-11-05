@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+<!--ABILITY IMPROVEMENT-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00001" version="1">Ability Improvement</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000a" version="4">Select two &lt;LSTag Tooltip="Abilities"&gt;Abilities&lt;/LSTag&gt;. These abilities increase by an amount equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000a1" version="1">Strength Improvement</content>
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000a0" version="4">Increase your Strength by an amount equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000b1" version="1">Dexterity Improvement</content>
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000b0" version="4">Increase your Dexterity by an amount equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000c1" version="1">Constitution Improvement</content>
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000c0" version="4">Increase your Constitution by an amount equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000d1" version="1">Intelligence Improvement</content>
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000d0" version="4">Increase your Intelligence by an amount equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000e1" version="1">Wisdom Improvement</content>
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000e0" version="4">Increase your Wisdom by an amount equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000f1" version="1">Charisma Improvement</content>
+	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000f0" version="4">Increase your Charisma by an amount equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+<!--ACCORD OF THE ARCANE-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00002" version="1">Accord of the Arcane</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000b" version="4">Learn two &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; of your choice. Additionally, Cantrips which cost an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; may be cast as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; instead. This may be toggled at any time.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000z2" version="1">Accord of the Arcane</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000zb" version="4">Cantrips which cost an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; may be cast as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; instead. This may be toggled at any time.</content>
+
+<!--ALERT-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00003" version="1">Alert</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000c" version="3">Gain a +8 bonus to Initiative and you cannot be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;. Upon starting combat, and upon starting your turn while &lt;LSTag Type="Status" Tooltip="FLANKED"&gt;Threatened&lt;/LSTag&gt;, you immediately &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Dash&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Shout_Disengage"&gt;Disengage&lt;/LSTag&gt;.</content>
+
+<!--ATHLETICISM-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00004" version="1">Athleticism</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000d" version="7">Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance is doubled and no longer requires &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;. In addition, you gain an additional &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+
+<!--CHARGER-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00005" version="2">Charger</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000e" version="4">Gain the ability to charge toward nearby enemies as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; once per turn, &lt;LSTag Type="Spell" Tooltip="Rush_Charger_Attack&gt;Attacking&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Rush_Charger_Push"&gt;Shoving&lt;/LSTag&gt; them in the process.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00055" version="2">Charger: Attack</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000ee" version="4">Charge into nearby enemies, making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against the first you come in contact with.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00555" version="2">Charger: Shove</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00eee" version="4">Charge into nearby enemies, &lt;LSTag Type="Spell" Tooltip="Target_Shove"&gt;Shoving&lt;/LSTag&gt; the first you come in contact with.</content>
+
+<!--CLASS SPECIALIST-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00006" version="2">Class Specialist: Barbarian</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000f" version="4">Select two passives from the Barbarian passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00007" version="2">Class Specialist: Bard</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000g" version="4">Select two passives from the Bard passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00008" version="2">Class Specialist: Cleric</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000h" version="4">Select two passives from the Cleric passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00009" version="2">Class Specialist: Druid</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000i" version="4">Select two passives from the Druid passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00010" version="2">Class Specialist: Fighter</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000j" version="4">Select two passives from the Fighter passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00011" version="2">Class Specialist: Monk</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000k" version="4">Select two passives from the Monk passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00012" version="2">Class Specialist: Paladin</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000l" version="4">Select two passives from the Paladin passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00013" version="2">Class Specialist: Ranger</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000m" version="4">Select two passives from the Ranger passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00014" version="2">Class Specialist: Rogue</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000n" version="4">Select two passives from the Rogue passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00015" version="2">Class Specialist: Sorcerer</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000o" version="4">Select two passives from the Sorcerer passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00016" version="2">Class Specialist: Warlock</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000p" version="4">Select two passives from the Warlock passives list.</content>
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00017" version="2">Class Specialist: Wizard</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000q" version="4">Select two passives from the Wizard passives list.</content>
+
+<!--COMPOSED-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00018" version="2">Composed</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000r" version="4">Upon being damaged by an enemy, you may expend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to restore +1d12 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to yourself and all nearby allies. Additionally, when making a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an enemy, you may expend your Reaction to heal allies near your target, including yourself.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00z18" version="2">Regain Composure</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000zr" version="4">Upon being damaged by an enemy, restore +1d12 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to yourself and all allies within [1] of you.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0zz18" version="2">Targeted Composure</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00zzr" version="4">Upon making a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an enemy, restore +1d12 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to all allies within [1] of them, including yourself.</content>
+
+<!--DEFENSIVE DUELLIST-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00019" version="2">Defensive Duellist</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000s" version="4">When attacked, add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; as a free &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;. Then, you may use your Reaction to make an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against your aggressor. In addition, you gain an additional Reaction.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00z19" version="2">Defensive Duellist</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000zs" version="4">When attacked, add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0zz19" version="2">Defensive Riposte</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00zzs" version="4">After avoiding an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, make one of your own against your aggressor.</content>
+
+<!--DUELLISTS INSTICT-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00020" version="2">Duellist's Instinct</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000t" version="4">While dual-wielding, gain the ability to make an off-hand attack as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;, and &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt; that you make will attack with both weapons.&lt;br&gt;&lt;br&gt;In addition, you gain three &lt;LSTag Type="ActionResource" Tooltip="DualWield"&gt;Duellist Charges&lt;/LSTag&gt;. These charges can be spent to gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, or to force enemies to attack you with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;. Once per turn, landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on an enemy will restore one charge.&lt;br&gt;&lt;br&gt;Furthermore, at any time you may add your global &lt;LSTag Tooltip="AbilityModifier"&gt;Strength Modifier&lt;/LSTag&gt; to weapon damage dealt while dual-wielding at the expense of making your weapon based Attack Rolls with Disadvantage. This may be toggled at any time.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00a20" version="2">Duellist's Instinct</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00a0t" version="4">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, and force enemies to attack you with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Once per turn, the first time you deal or take damage will consume one &lt;LSTag Type="ActionResource" Tooltip="DualWield"&gt;Duellist Charge&lt;/LSTag&gt;. You may restore one Duellist Charge per turn by landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on an enemy.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa12354" version="2">Duellist's Assault</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aasdf68" version="4">Add your global &lt;LSTag Tooltip="AbilityModifier"&gt;Strength Modifier&lt;/LSTag&gt; to weapon damage dealt while dual-wielding at the expense of making your weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;. This may be toggled at any time.</content>
+
+<!--DUNESIS-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00021" version="1">Dunesis</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000u" version="1">Spells you cast and Conditions you apply have their &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; increased by 1. You may further increase this number by consuming &lt;LSTag Type="ActionResource" Tooltip="Dunesis"&gt;Dunesis Charges&lt;/LSTag&gt;. Upon casting a Spell, you generate one additional Dunesis Charge, up to a maximum of three.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aazzz21" version="1">Dunesis Charge</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aazzz0u" version="1">The amount of charges you may consume in order to increase the &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; of the next Spell you cast or Condition that you apply. Upon casting a Spell, you generate one additional Dunesis Charge, up to a maximum of three.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aakdk88" version="1">Dunesis</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aaffkd0" version="1">Consume &lt;LSTag Type="ActionResource" Tooltip="Dunesis"&gt;Dunesis Charges&lt;/LSTag&gt; in order to increase the &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; of Spell you cast or Condition that you apply.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aass6d8" version="1">Lesser Dunesis Charge</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa22d5f" version="1">Consume one &lt;LSTag Type="ActionResource" Tooltip="Dunesis"&gt;Dunesis Charge&lt;/LSTag&gt; in order to increase the &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; of Spells and Conditions by one until the end of your turn.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa22d6d" version="1">Lesser Dunesis Charge</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8assdf87" version="1">Affected creature has increased the &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; of the next Spell they cast or Condition that they apply by one.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aaasd84" version="1">Moderate Dunesis Charge</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8asd5f4s" version="1">Consume two &lt;LSTag Type="ActionResource" Tooltip="Dunesis"&gt;Dunesis Charges&lt;/LSTag&gt; in order to increase the &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; of Spells and Conditions by two until the end of your turn.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aas5df4" version="1">Moderate Dunesis Charge</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8asdf45s" version="1">Affected creature has increased the &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; of the next Spell they cast or Condition that they apply by two.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aas65d4" version="1">Greater Dunesis Charge</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa89s7d" version="1">Consume three &lt;LSTag Type="ActionResource" Tooltip="Dunesis"&gt;Dunesis Charges&lt;/LSTag&gt; in order to increase the &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; of Spells and Conditions by three until the end of your turn.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8as6df45" version="1">Greater Dunesis Charge</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8asd5f87" version="1">Affected creature has increased the &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; of the next Spell they cast or Condition that they apply by three.</content>
+
+<!--DURABLE-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00022" version="1">Durable</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000v" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of physical damage. Additionally, upon taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, your &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; are fully recovered.</content>
+
+<!--ELEMENTAL ADEPT-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00023" version="1">Elemental Adept</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000w" version="1">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to two elemental damage types of your choice. When you deal damage of your chosen types to an enemy, you deal an additional +1d4 damage of that same type.</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00001" version="2">Elemental Adept: Acid</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000a" version="4">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Acid damage. In addition, when you deal Acid damage to an enemy, you deal an additional +1d4 damage. </content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00002" version="2">Elemental Adept: Cold</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000b" version="4">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Cold damage. In addition, when you deal Cold damage to an enemy, you deal an additional +1d4 damage. </content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00003" version="2">Elemental Adept: Fire</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000c" version="4">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Fire damage. In addition, when you deal Fire damage to an enemy, you deal an additional +1d4 damage. </content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00004" version="2">Elemental Adept: Force</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000d" version="4">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Force damage. In addition, when you deal Force damage to an enemy, you deal an additional +1d4 damage. </content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00005" version="2">Elemental Adept: Lightning</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000e" version="4">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Lightning damage. In addition, when you deal Lightning damage to an enemy, you deal an additional +1d4 damage. </content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00006" version="2">Elemental Adept: Necrotic</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000f" version="4">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Necrotic damage. In addition, when you deal Necrotic damage to an enemy, you deal an additional +1d4 damage. </content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00007" version="2">Elemental Adept: Poison</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000g" version="4">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Poison damage. In addition, when you deal Poison damage to an enemy, you deal an additional +1d4 damage. </content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00008" version="2">Elemental Adept: Psychic</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000h" version="4">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Psychic damage. In addition, when you deal Psychic damage to an enemy, you deal an additional +1d4 damage. </content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00009" version="2">Elemental Adept: Radiant</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000i" version="4">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Radiant damage. In addition, when you deal Radiant damage to an enemy, you deal an additional +1d4 damage. </content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00010" version="2">Elemental Adept: Thunder</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000j" version="4">When dealing damage, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Thunder damage. In addition, when you deal Thunder damage to an enemy, you deal an additional +1d4 damage. </content>	
+
+<!--GREATER IMPACT-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00024" version="2">Greater Impact</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000x" version="2">Once per turn, when you land a killing blow with a weapon-based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, you can make another as a free action.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00z24" version="2">Greater Impact: Bonus Attack</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000zx" version="2">Affected creature may make another attack as a free action.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aazzz24" version="2">Greater Impact: Bonus Attack</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0zzzx" version="2">Make another attack as a free action.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8azzzz24" version="2">Greater Impact: Bonus Attack (Ranged)</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aazzzzx" version="2">Fire another attack as a free action.</content>
+
+<!--INTRINSIC BULWARK-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00025" version="1">Intrinsic Bulwark</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000y" version="5">While wearing Medium or Heavy Armour, your &lt;LSTag Tooltip="AbilityModifier"&gt;Constitution Modifier&lt;/LSTag&gt; also reduces elemental damage. In addition, you gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of elemental damage.</content>
+
+<!--LUCKY-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00026" version="2">Lucky</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000z" version="3">Any time that you roll a 7 or less on an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;, or &lt;LSTag Tooltip="SkillCheck"&gt;Skill Check&lt;/LSTag&gt;, the result is immediately rerolled.</content>
+
+<!--MAGE SLAYER-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00027" version="2">Mage Slayer</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000a0" version="3">When a caster casts a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, you can use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to make an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against them.&lt;br&gt;&lt;br&gt;Enemies you hit immediately lose &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; on any Spells they were maintaining and become &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; for one turn.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00z27" version="2">Mage Slayer</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00za0" version="3">When a caster casts a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, make an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against them.</content>
+
+<!--MARTIAL ADEPT-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00028" version="2">Martial Adept</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000b0" version="3">When making a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, Unarmed Attack, or &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt;, reduce the number needed to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; by 2.</content>
+
+<!--MASONRY OF CHAOS-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00029" version="1">Masonry of Chaos</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000c0" version="4">You have a chance to experience a positive surge of &lt;LSTag Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt; at the beginning and end of combat encounters, at the beginning of each of your turns, and when dealing or taking damage.</content>
+
+<!--MELEE EXPERTISE-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00030" version="2">Melee Expertise</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000d0" version="3">Melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; you make with your main-hand add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; multiplied by two when rolling for damage.</content>
+
+<!--PERFORMER-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00031" version="1">Performer</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000e0" version="5">Gain &lt;LSTag Tooltip="MusicalInstrumentProficiency"&gt;Musical Instrument Proficiency&lt;/LSTag&gt;, as well as the ability to enter into a state of performative prescence in order to buff your party, granting them a +1d4 bonus on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;, and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="h4a26bb21g4da4g479cg90b3g8df76d1402ez" version="1">Performative Prescence</content>
+	<content contentuid="h63a28f17g8421g4a5ag9680gbb433c66d8a9" version="1">Through a unique performance, establish a state of prescence in order to buff your party.</content>
+	<content contentuid="h63a28f17g8421g4a5ag9680gbb433c66d321" version="1">Affected creature has a +1d4 bonus on all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;, and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; due to a performative presence.</content>
+
+<!--RESILIENT-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00032" version="1">Resilient</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000f0" version="3">Add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to any &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; that you make. When healed, you always heal for the maximum amount possible.</content>
+
+<!--RESTRICTED TERRITORY-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00033" version="1">Restricted Territory</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000g0" version="1">Gain the ability to use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to make a melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an enemy who enters your weapons range. Additionally, landing an &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attack&lt;/LSTag&gt; will deal the maximum damage possible.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00z33" version="1">Restricted Territory</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00zg0" version="1">Make a melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an enemy who enters your range.</content>
+
+<!--SAVAGE ASSAULT-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00034" version="3">Savage Assault</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000h0" version="5">Roll all of your damage dice with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon damaging an enemy, apply one stack of &lt;LSTag Type="Status" Tooltip="WEAKENED_ARMOR"&gt;Shredded Armour&lt;/LSTag&gt;.</content>
+
+<!--SENTINEL-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00035" version="3">Sentinel</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000i0" version="7">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally, you can use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to make a Attack Roll of your own against that enemy.&lt;br&gt;&lt;br&gt;You gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;, and when you hit a creature with a melee based Opportunity Attack, it can no longer move for the rest of its turn. In addition, you gain an additional Reaction.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00z35" version="3">Sentinel</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00zi0" version="7">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally, make a Attack Roll against that enemy.</content>
+	<content contentuid="h08cbf9f9gf641g4a53gb074g16cc0f469658" version="3">Restricted Movement</content>
+	<content contentuid="h2beeba0bg1e95g411fg9077g217d1f9a9a0a" version="7">Affected creature cannot move.</content>
+
+<!--SHARPSHOOTER-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00036" version="3">Sharpshooter</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000j0" version="3">Your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; do not receive penalties from &lt;LSTag Tooltip="HighGroundRules"&gt;High Ground Rules&lt;/LSTag&gt;, and your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; is added twice when rolling for damage.</content>
+
+<!--SHIELDBEARER-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00037" version="3">Shieldbearer</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000k0" version="3">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Dexterity based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; while wielding a shield. In addition, you gain three &lt;LSTag Type="ActionResource" Tooltip="Shieldbearer"&gt;Shieldbearer Charges&lt;/LSTag&gt; which can be used to negate an instance of incoming damage. Once per turn, landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on an enemy will restore one Shieldbearer Charge.&lt;br&gt;&lt;br&gt;Furthermore, performing a &lt;LSTag Type="Spell" Tooltip="Target_ShieldBlow_Riposte"&gt;Shield Bash&lt;/LSTag&gt; allows you to reflect all projectiles until the start of your next turn.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0zz37" version="3">Shieldbearer Charge</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0zzk0" version="3">The amount of times you may utilize your Shield negate all incoming damage.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aazzz37" version="3">Armoured Fortress</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aazzzk0" version="3">Negate all incoming damage.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8zzzzz37" version="3">Shieldbearer</content>
+	<content contentuid="h893450deg4af3g43f4gad83g7b3589zzzz41" version="6">Affected creature will reflect all projectiles fired at them.</content>
+
+<!--SPELLBREAK-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00038" version="3">Spellbreak</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000l0" version="5">When casting a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, reduce the number needed to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; by 2.</content>
+
+<!--TAVERN BRAWLER-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00039" version="3">Tavern Brawler</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000m0" version="1">When making an unarmed attack or &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throw&lt;/LSTag&gt;, your &lt;LSTag Tooltip="AbilityModifier"&gt;Strength Modifier&lt;/LSTag&gt; is added to all damage rolls. Additionally, your &lt;LSTag Tooltip="AbilityModifier"&gt;Dexterity Modifier&lt;/LSTag&gt; is added to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Melee weapons you equip in your Main-Hand gain the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; property. When thrown, they will return back to you.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f55d2f5s677" version="3">Tavern Brawler</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714fyujjh569f8" version="5">Cause your Main-Hand melee weapon to gain the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; property. When thrown, it will return to you.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6s4f5duu25" version="3">Tavern Brawler</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f8888u5j844" version="5">Affected weapon has gained the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; property. When thrown, it will return to who threw it.</content>
+
+<!--TOUGH-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00040" version="3">Tough</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000n0" version="4">Increase the amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; you gain per level from 6 to 12. Additionally, any damage dealt to you that totals 2 or less is nullified.</content>
+
+<!--WAR CASTER-->
+
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00041" version="3">War Caster</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000o0" version="5">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. Additionally, you can cast &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Shocking Grasp&lt;/LSTag&gt; against an enemy who enters into melee range as a free &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;, as well as &lt;LSTag Type="Spell" Tooltip="Shout_WarCaster"&gt;Bind&lt;/LSTag&gt; your weapons.&lt;br&gt;&lt;br&gt;Furthermore, you may cast any ranged Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; as a melee Spell. This may be toggled at any time.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00z41" version="3">War Caster</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00zo0" version="3">Cast &lt;LSTag Type="Spell" Tooltip="Target_ShockingGrasp"&gt;Shocking Grasp&lt;/LSTag&gt; on a target moving into melee range as a free reaction.</content>
+	<content contentuid="ha9d1cf6eg9ea8g47b0g8941g3d48cb0cde93" version="1">War Caster</content>
+	<content contentuid="h69dfe84fgc66bg4c76g8f8ege05ab4b6c07e" version="1">Affected creature may cast any ranged Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; as a melee Spell.</content>
+	<content contentuid="h88189f48ga78cg4a13ga52fg9c789a325254" version="1">War Caster: Bind Weapon</content>
+	<content contentuid="hebb3bf5dg7eeeg44b7g9c75gd7ac6b46s858" version="6">Your melee or ranged weapons become magical, utilizing your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.&lt;br&gt;&lt;br&gt;Once per turn, upon killing another creature or landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your Bound Weapon, you restore a level one &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h88189f48ga78cg4a13ga52fg9c789a323215" version="1">War Caster: Bind Weapon (Melee)</content>
+	<content contentuid="hebb3bf5dg7eeeg44b7g9c75gd7ac6b468899" version="6">Your melee weapons become magical, utilizing your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.&lt;br&gt;&lt;br&gt;Once per turn, upon killing another creature or landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your Bound Weapon, you restore a level one &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h88189f48ga78cg4a13ga52fg9c789a321225" version="1">War Caster: Bind Weapon (Ranged)</content>
+	<content contentuid="hebb3bf5dg7eeeg44b7g9c75gd7ac6b465454" version="6">Your ranged weapons become magical, utilizing your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.&lt;br&gt;&lt;br&gt;Once per turn, upon killing another creature or landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your Bound Weapon, you restore a level one &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h20a7843cg4e70g46d8g84e4g2b11a0e22585" version="2">War Caster</content>
+	<content contentuid="h1fa80c6ag5f28g46d2gaaafg57677cc22585" version="10">Affected weapon has become magical, utilizing its owners &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.&lt;br&gt;&lt;br&gt;Once per turn, upon killing another creature or landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your Bound Weapon, you restore a level one &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+
+</contentList>

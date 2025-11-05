@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="405" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="DRUIDCOMPANIONTAGFORDRUIDOVERHAUL" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="ha585d015g08fff6s8d4f512557ff4s5d884f" version="0" />
+			<attribute id="DisplayName" type="TranslatedString" handle="ha585d015g08f6g4c58ga0cdg57ff4s5d884f" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="DRUIDCOMPANION" />
+			<attribute id="UUID" type="guid" value="34d5d006-7f39-41cf-806c-5ca7e8dfa6de" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

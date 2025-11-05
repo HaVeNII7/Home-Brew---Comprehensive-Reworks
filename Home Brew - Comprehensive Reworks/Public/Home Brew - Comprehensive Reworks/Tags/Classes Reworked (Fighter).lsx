@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="405" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="FRONTIERKNIGHTFORFIGHTEROVERHAUL" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="ha585d015g08fff6s8d4f512557225858d458" version="0" />
+			<attribute id="DisplayName" type="TranslatedString" handle="ha585d015g08f6g4c58ga0cdg57225d6d5d88" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="FRONTIER_KNIGHT" />
+			<attribute id="UUID" type="guid" value="6b7c875c-9e2f-4788-a053-fe3b9d1c1fdc" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

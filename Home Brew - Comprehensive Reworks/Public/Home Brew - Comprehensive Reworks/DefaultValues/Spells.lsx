@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="319"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_ThunderousStrike;Shout_Thaumaturgy;Target_ThunderStep"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Barbarian - Wild Soul"/>
+                    <attribute id="TableUUID" type="guid" value="7d5237b0-9ac6-4344-8171-43fa2f553e2f"/>
+                    <attribute id="UUID" type="guid" value="4bac130b-19a3-4631-8bb7-15f23f7914ae"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_Friends;Target_ViciousMockery;Target_CharmPerson"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Bard - College of Captivation"/>
+                    <attribute id="TableUUID" type="guid" value="376220ae-e871-4ca5-8521-ec46fa2cd117"/>
+                    <attribute id="UUID" type="guid" value="4c8b457a-e08c-48c2-a7d1-91b8fc18d404"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_Friends;Target_ViciousMockery;Target_NathairsMischief;Target_Antagonize"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Bard - College of Lore"/>
+                    <attribute id="TableUUID" type="guid" value="36e6ea13-317e-4e6e-ac63-fe6d50e9f014"/>
+                    <attribute id="UUID" type="guid" value="6895d347-c51e-4c7b-a29a-464eea3f550a"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_Friends;Target_ViciousMockery;Target_MagicWeapon"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Bard - College of Swords"/>
+                    <attribute id="TableUUID" type="guid" value="68f61c89-be48-41aa-acb6-2f3bd15303c7"/>
+                    <attribute id="UUID" type="guid" value="63bfa912-2283-45f5-b54e-2d10ba9e6018"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_Friends;Target_ViciousMockery;Shout_AuraOfLife"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Bard - College of Valor"/>
+                    <attribute id="TableUUID" type="guid" value="d58a305f-3ccf-440c-b069-2abd9235ac03"/>
+                    <attribute id="UUID" type="guid" value="2e8ba384-136f-462a-b0cf-09cd8c455a42"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_Guidance;Target_SacredFlame;Target_Bless;Target_Command_Container"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="64474b62-b4f5-46b3-b94a-c676c6da3116"/>
+                    <attribute id="UUID" type="guid" value="815c9bd6-538a-4460-8b9e-c94384a438ed"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_Guidance;Target_SacredFlame;Target_Bless;Target_Command_Container"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Cleric"/>
+                    <attribute id="TableUUID" type="guid" value="64474b62-b4f5-46b3-b94a-c676c6da3116"/>
+                    <attribute id="UUID" type="guid" value="2be264d4-533b-4d73-8630-32cf9baf2ee1"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_Druidcraft;Target_ThornWhip;Target_HealingSpirit;Zone_Sunbeam"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Druid"/>
+                    <attribute id="TableUUID" type="guid" value="6e7b7bad-e122-4679-8b3c-8f8987a9d466"/>
+                    <attribute id="UUID" type="guid" value="b26e698f-a8c9-4439-b757-fb88c63695f0"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_WildShape_Bear_Polar;Shout_WildShape_Cat;Shout_WildShape_Dire_Wolf"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Druid - Wildshape"/>
+                    <attribute id="TableUUID" type="guid" value="ba1f14d6-d40b-47ce-b071-91b491d87b27"/>
+                    <attribute id="UUID" type="guid" value="c7b06496-1166-491f-b93b-cd4c51175ea5"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_WildShape_Bear_Polar;Shout_WildShape_Cat;Shout_WildShape_Dire_Wolf"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Druid - Wildshape"/>
+                    <attribute id="TableUUID" type="guid" value="288c9d1e-ab18-46dd-8fa3-d4fcfa44147a"/>
+                    <attribute id="UUID" type="guid" value="c7b06496-1166-491f-b93b-cd4c51122468"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_WildShape_Bear_Polar;Shout_WildShape_Cat;Shout_WildShape_Dire_Wolf"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Druid - Wildshape"/>
+                    <attribute id="TableUUID" type="guid" value="bc4a7a99-bd26-4307-a0b9-8c183f34c55d"/>
+                    <attribute id="UUID" type="guid" value="c7b06496-1166-491f-b93b-cd4c51111245"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_BladeWard;Target_GreenFlameBlade;Shout_ArmorOfAgathys"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Fighter - Eldritch Knight"/>
+                    <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+                    <attribute id="UUID" type="guid" value="4bac130b-19a3-4631-8bb7-156a8d215458"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_Gust;Projectile_Warpstone;Target_MageArmor"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Monk - Way of the Arcane"/>
+                    <attribute id="TableUUID" type="guid" value="6c9fac23-d01a-4e0d-bfb1-28bed5581ee2"/>
+                    <attribute id="UUID" type="guid" value="4bac130b-19a3-4631-8bb7-155d211d6578"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_SacredFlame;Shout_WordOfRadiance;Target_GuardianOfFaith"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Paladin"/>
+                    <attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821"/>
+                    <attribute id="UUID" type="guid" value="9f1b648d-89d3-481c-bad2-3ac4bf804dc0"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_MudMantle;Target_TrueStrike;Shout_FlameArrows"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Ranger"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="6c77f046-e0e5-48db-ab1d-e83da19e8aca"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_Prestidigitation;Target_MinorIllusion;Target_Invisibility"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Rogue - Arcane Trickster"/>
+                    <attribute id="TableUUID" type="guid" value="7205dbe2-5eef-4cd6-ad7f-45b3dc254f78"/>
+                    <attribute id="UUID" type="guid" value="f3ecb3b4-dcf3-4f6d-bc3d-fd6d569680a2"/>
+					</node>
+				<node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_SparkSurge;Target_Torrent;Target_DominatePerson;Projectile_Fireball"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Sorcerer"/>
+                    <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
+                    <attribute id="UUID" type="guid" value="5f2dfb12-2b81-4f94-b3c1-0f4ca29ad30e"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_SparkSurge;Target_Torrent;Target_DominatePerson;Projectile_Fireball"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="SorcererSpell"/>
+                    <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
+                    <attribute id="UUID" type="guid" value="d53e45da-d34a-417c-897e-f4190e5b015e"/>
+                </node>
+				<node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_BladeSurge;Target_ChillTouch;Shout_ArmsOfHadar;Target_Bane"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Warlock"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="2712fe9a-2e97-4014-80a8-070ef9254f72"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_BladeSurge;Target_ChillTouch;Shout_ArmsOfHadar;Target_Bane"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Warlock - Wyll"/>
+                    <attribute id="OriginUUID" type="guid" value="efc9d114-0296-4a30-b701-365fc07d44fb"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="afaa83a7-a36f-475c-b320-f5cd4919cab4"/>
+					</node>
+				<node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Projectile_FireBolt;Target_MageHand;Target_Counterspell;Projectile_MagicMissile"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Wizard"/>
+                    <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="UUID" type="guid" value="09575ce9-c8b9-4b3b-85cf-b54cc6dc1dad"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Projectile_FireBolt;Target_MageHand;Target_Counterspell;Projectile_MagicMissile"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Wizard"/>
+                    <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="UUID" type="guid" value="4d02bfc1-75e6-42eb-acd9-126e65f43862"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Projectile_FireBolt;Target_MageHand;Target_Counterspell;Projectile_MagicMissile"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Wizard - Gale"/>
+                    <attribute id="OriginUUID" type="guid" value="35c3caad-5543-4593-be75-e7deba30f062"/>
+                    <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="UUID" type="guid" value="7c0e63c3-791a-43ed-92fe-aa2514b43cf9"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

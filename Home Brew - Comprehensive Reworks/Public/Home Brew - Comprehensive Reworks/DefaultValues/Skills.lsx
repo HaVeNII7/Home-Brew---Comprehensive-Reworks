@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="329"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Athletics;Intimidation;Perception;Survival"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+                    <attribute id="UUID" type="guid" value="1e1e241c-f57a-4105-b9b6-bb3138fc3c5c"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Acrobatics;Insight;Perception;Performance"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
+                    <attribute id="UUID" type="guid" value="51a8a027-658c-4cbc-80a4-9d1466c5b3d8"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Athletics;Religion;Insight;Persuasion"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="64474b62-b4f5-46b3-b94a-c676c6da3116"/>
+                    <attribute id="UUID" type="guid" value="54ede071-b803-446a-b3aa-a9dafb5d7c41"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Nature;AnimalHandling;Medicine;Survival"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6e7b7bad-e122-4679-8b3c-8f8987a9d466"/>
+                    <attribute id="UUID" type="guid" value="dd7c053a-b87a-4136-9290-77e3a453b8a5"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Athletics;Insight;Perception;Persuasion"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
+                    <attribute id="UUID" type="guid" value="2e43517e-ec0d-4539-9c49-a027aa4720bc"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Athletics;Insight;Perception;Persuasion"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="RaceUUID" type="guid" value="6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
+                    <attribute id="UUID" type="guid" value="d597c9e3-6b05-4ace-8de7-0c2f339e6038"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Acrobatics;Insight;Perception;Persuasion"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="fe1319a2-86be-469c-aab5-e3b0bd714e0e"/>
+                    <attribute id="UUID" type="guid" value="69e3a25c-1707-41a9-8809-471f4a6d746c"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Athletics;Investigation;Perception;Intimidation"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821"/>
+                    <attribute id="UUID" type="guid" value="19d704e4-4254-4dfa-9fce-1799bcba3505"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Stealth;AnimalHandling;Perception;Survival"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="c0e256e5-6e4e-41e4-94eb-aed3be68cb4d"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Stealth;AnimalHandling;Perception;Survival"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="RaceUUID" type="guid" value="78cd3bcc-1c43-4a2a-aa80-c34322c16a04"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="bd7c268b-6be9-49e3-9b3f-876d8a5f7b09"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="SleightOfHand;Stealth;Perception;Deception"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="9a44e828-92db-4d6c-acbc-a4f8ef340415"/>
+                    <attribute id="UUID" type="guid" value="37de9f2c-21a2-4272-86fe-7e190d2c5cf2"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="SleightOfHand;Stealth;Perception;Deception"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="RaceUUID" type="guid" value="78cd3bcc-1c43-4a2a-aa80-c34322c16a04"/>
+                    <attribute id="TableUUID" type="guid" value="9a44e828-92db-4d6c-acbc-a4f8ef340415"/>
+                    <attribute id="UUID" type="guid" value="ae92581d-4e67-4f08-984a-e560b4b975b9"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Arcana;Nature;Insight;Perception"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
+                    <attribute id="UUID" type="guid" value="67e98795-f2f9-4c8d-b495-ddf6050f30a9"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Arcana;History;Religion;Survival"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="2f05c7fb-4ad6-4f2e-8ecd-c8649c350551"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Arcana;History;Religion;Insight"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="UUID" type="guid" value="dff201df-6409-4233-810c-5b1f7e993922"/>
+					</node>
+            </children>
+        </node>
+    </region>
+</save>

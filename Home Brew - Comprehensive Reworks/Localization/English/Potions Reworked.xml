@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+<!--THIS ELIXIR CAN NOT BE THROWN-->
+	<content contentuid="h5cd60da9g815eg4e19gb6c2g7f0ff4aa9d25" version="4">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Psychic damage.</content>
+	<content contentuid="h5dc39112ge18eg489bg81ccg081eb03a715a" version="4">You gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage, and can no longer &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt;.</content>
+	<content contentuid="h6adb8021g3c95g425aga62eg1217829fc41b" version="4">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage.</content>
+	<content contentuid="hc4fbfb7dg4f89g46e3gadbage84d297cbffc" version="4">You gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage and can no longer be &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt;.</content>
+	<content contentuid="hd280d2d6g6781g43ebg8623gf51b8c71d436" version="4">You gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage and can no longer be &lt;LSTag Type="Status" Tooltip="SHOCKED"&gt;Shocked&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="SHOCKED_SURFACE"&gt;Electrocuted&lt;/LSTag&gt;, or &lt;LSTag Type="Status" Tooltip="MAG_CHARGED_LIGHTNING_AURA_ELECTRIFIED"&gt;Jolted&lt;/LSTag&gt;. </content>
+
+<!--HEALING POTIONS-->
+	<content contentuid="hd758f907g0b31g4e74ga4d4g4e8dc919a454" version="1">The amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; restored by potions increases along with your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="h26289dbdg9b04g4f4dgaa93g54e83767896b" version="1">The amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; restored by potions increases along with your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+<!--POTION OF ANIMAL SPEAKING-->
+	<content contentuid="hc37cbafdgfa6cg4ce7g8a12g1fd2990b8d66" version="1">Gain the ability to temporarily comprehend and verbally communicate with beasts.</content>
+
+<!--POTION OF SLEEP-->
+	<content contentuid="h6af0c0b4ga716g4077ga346gf19db8d7574c" version="1">Soporific Oil</content>
+	<content contentuid="hab1c6872g65e7g405egbfc5ge120d3a64b95" version="2">When applied to a creature, they fall into a magical slumber. Condition ends when the creature takes damage or they are &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Helped&lt;/LSTag&gt;.</content>
+
+<!--POTION OF VITALITY-->
+	<content contentuid="h32c8dbe5g463fg4394gbe02ge4d876634ecb" version="1">Cures any form of disease.</content>
+	<content contentuid="h361555aega14cg4908g9669gf45e31f111b6" version="2">Affected creature is cured of all disease.</content>
+
+<!--POTION OF SPEED-->
+	<content contentuid="h9c035a0dga908g41c0g8f99g2b7184a971a9" version="5">Gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;. On your following turn, you will lose an Action.</content>
+
+<!--REMEDIAL POTION-->
+	<content contentuid="h732b0d75g52c6g427ag9604g8c8a52aa8618" version="2">Cures all forms of &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blindness&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysis&lt;/LSTag&gt;.</content>
+	<content contentuid="hbd392c50gcba2g483ag9c27gdc1d29bc5684" version="1">Affected creature is cured of all forms of &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blindness&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysis&lt;/LSTag&gt;.</content>
+
+<!--POTION OF ANGELIC REPRIEVE-->
+	<content contentuid="h1832d529g6a51g4289g9ba1gd200debcdabb" version="5">Drink to fall into a &lt;LSTag Type="Status" Tooltip="SLEEP"&gt;Slumber&lt;/LSTag&gt; for three turns. You gain the benefits of a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.</content>
+
+<!--POTION OF ANGELIC SLUMBER-->
+	<content contentuid="h59f09350g03d7g4a05ga6aag79592cd7ed13" version="4">Drink to fall into a &lt;LSTag Type="Status" Tooltip="SLEEP"&gt;Slumber&lt;/LSTag&gt; for three turns. You gain the benefits of a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+<!--HAG LOVERS AVARICE-->
+	<content contentuid="h1413056dgcfe0g4935gb8d5ga49d5c9656d9" version="1">Affected creature's &lt;LSTag Tooltip="Wisdom"&gt;Wisdom&lt;/LSTag&gt; is indefinitely reduced by 1.</content>
+
+<!--MOTHERS LOATHING-->
+	<content contentuid="h098d641eg1360g41fbga199ge330ecc5bcae" version="2">Affected creature has gained &lt;LSTag Type="Spell" Tooltip="Target_Bite_MothersLoathing"&gt;Bite&lt;/LSTag&gt;.</content>
+
+<!--WILTED DREAMS-->
+	<content contentuid="h5bbfc21bg52e2g432dg87e4g54dee971cf15" version="2">Something waits for you to sleep...</content>
+
+<!--LOST TIME-->
+	<content contentuid="h0d3941e4gc55cg47e7ga0d5gbe16f11206e1" version="1">Affected creature's &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is reduced by 2. They cannot take &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
+
+<!--BROKEN PROMISES-->
+	<content contentuid="hc24cca3bg678dg4dc3ga6b4gd04cfc49c099" version="2">Affected creature's &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; is increased by 2.</content>
+
+<!--FALTERING WILL-->
+	<content contentuid="he027b4bfgd277g4d0cg8834g68d8d4f2b8e1" version="1">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Wisdom based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+<!--HEART OF STONE-->
+	<content contentuid="ha4f6002dg6170g4604g969eg6a018ead01f0" version="1">Affected creature is &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to poison damage.</content>
+
+<!--INSANITYS KISS-->
+	<content contentuid="hd76f0053gcf7cg4664ga8e8g1ac530af45d4" version="1">Affected creature is hostile to all other creatures.</content>
+
+<!--ELIXIR OF GIANT HILL STRENGTH-->
+	<content contentuid="hf8dbc1d6gae25g4265g99c4gcc422d88cdce" version="3">Increase your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; by 2.</content>
+	<content contentuid="h70b7c142g4172g433dg860dg05962e3aa866" version="1">Affected creature's &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; has increased by 2.</content>
+
+<!--ELIXIR OF BARKSKIN-->
+	<content contentuid="h5f5c93b3g2b39g44a5g84a8g5e9177042db6" version="6">Drink to increase your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 2. Replaces effects from other elixirs when drunk.</content>
+	<content contentuid="he8eb0806gfb86g4b02g8f28g729854046b6d" version="5">Affected creature's &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; has increased by 2.</content>
+
+<!--ELIXIR OF BLOODLUST-->
+	<content contentuid="ha7c28a23g532cg4fbfg8b0ag5a79e27210df" version="5">Drink to enter a bloodlust. Once per turn when you kill a foe, you gain [1] &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Replaces effects from other elixirs when drunk.</content>
+	<content contentuid="h0549b1c4gd837g4cc5g9848ge994d1926b62" version="5">Affected creature has entered a murderous state of bloodlust. Once per turn, when it kills an enemy, it gains  [1] &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="hc30f1d3bgf8f2g4f7cga6abg715ea6f762b6" version="1">You have entered a murderous state of bloodlust. Once per turn, when you kill an enemy, you gain  [1] &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="he5087ea3g15a6g4bf3ga3c3g095da22241de" version="3">Affected creature's has been granted &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; due to their bloodlust.</content>
+
+<!--ELIXIR OF HEROISM-->
+	<content contentuid="h02ff4011g4112g47a8g8ea2gffb18f4a1284" version="2">Elixir of Reverence</content>
+	<content contentuid="he873af54g80d9g45f7g9e67gb2b728f5df6c" version="4">Become &lt;LSTag Type="Status" Tooltip="BLESS"&gt;Blessed&lt;/LSTag&gt;. Replaces effects from other elixirs when drunk.</content>
+	<content contentuid="heb2888f4gf7cfg47b8gb302gaeac48d044ce" version="3">Elixir of Reverence</content>
+	<content contentuid="h3297dd76g7e72g436fg9ad1ge8266700ffdc" version="3">Affected creature is &lt;LSTag Type="Status" Tooltip="BLESS"&gt;Blessed&lt;/LSTag&gt;.</content>
+
+<!--ELIXIR OF PEERLESS FOCUS-->
+	<content contentuid="hd4793eccg9e67g4c2aga7ddg724fb90348b8" version="13">Drink to gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;, and against being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;. Additionally, magic can't put you to sleep. Replaces effects from other elixirs when drunk.</content>
+	<content contentuid="h5451dd44g0411g4c38gb4a1g1fe024bca3a4" version="14">Affected creature's ability to maintain its spells has increased.&lt;br&gt;&lt;br&gt;It has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; to &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; and for maintaining &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt;. Additionally, magic can't put it to sleep.</content>
+
+<!--ELIXIR OF VIGILENCE-->
+	<content contentuid="hfc2c0144gb6bdg46fag8f9fg6dd077b1c488" version="7">Drink to gain a +4 bonus to Initiative. In addition, you can't be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;. Replaces effects from other elixirs when drunk.</content>
+	<content contentuid="h99534c99gfa1cg4564g8e7ag6c09f5576335" version="7">Affected creature has a +4 bonus to Initiative and can't be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;.</content>
+
+<!--ELIXIR OF CLOUD GIANT STRENGTH-->
+	<content contentuid="h3c6eae5bg5105g40bcg855agfa0686f36ae0" version="4">Increase your &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; by 2. Replaces effects from other elixirs when drunk.</content>
+	<content contentuid="h4cc04179gb1feg40bbgb5cbg1a4601a279d3" version="1">Affected creature's &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; has increased by 2.</content>
+
+<!--ELIXIR OF GUILEFUL MOVEMENT-->
+	<content contentuid="h31ff69dcg5ac7g48b1gbae2gdf9510c96228" version="8">Increase your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; by 2. Replaces effects from other elixirs when drunk.</content>
+	<content contentuid="he142a257g3af4g4c59g92ccg50ff1902a0e6" version="1">Affected creature's &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; has increased by 2.</content>
+
+<!--SUPREME ELIXIR OF ARCANE CULTIVATION-->
+	<content contentuid="hdc8b0085gb95fg42f9g9654g3afd728daf6b" version="2">Gain an additional Level 1, 2, and 3 &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;. Replaces effects from other elixirs when drunk.</content>
+	<content contentuid="h3b8232a3g5fa0g4c90ga49ag02fc5377a372" version="3">Affected creature has an additional Level 1, 2, and 3 &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+
+<!--ELIXIR OF VIGILANCE-->
+	<content contentuid="h140cc067g2277g4761gaa1fg9f35b56415c9" version="2">Elixir of Vigilance</content>
+	<content contentuid="h99534c99gfa1cg4564g8e7ag6c09f5576335" version="7">Affected creature has a +2 bonus to Initiative and can't be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;. Replaces effects from other elixirs when drunk. </content>
+
+</contentList>

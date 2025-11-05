@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="307"/>
+    <region id="TadpolePowersTree">
+        <node id="root">
+            <children>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_IllithidPersuasion"/>
+                    <attribute id="UUID" type="guid" value="2b43bbd0-b3fc-459d-93dd-1cd1a463acee"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_PsionicOverload"/>
+                    <attribute id="UUID" type="guid" value="cd7f4863-33f3-459c-8b91-195e887b0e5c"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_PeaceBreaker"/>
+                    <attribute id="UUID" type="guid" value="912163db-fdd0-4877-940c-13551d116936"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_ForceTunnel"/>
+                    <attribute id="UUID" type="guid" value="9471096e-3a9b-4edd-9606-16d213739320"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_ConcentratedBlast"/>
+                    <attribute id="UUID" type="guid" value="323c1b03-557f-4009-91ab-5bf86dc7805f"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_TransfuseHealth"/>
+                    <attribute id="UUID" type="guid" value="5b831911-c337-4b65-89fd-34661f152eb4"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_StageFright"/>
+                    <attribute id="UUID" type="guid" value="c2d00830-7887-4da6-90b7-432f38055a56"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_DrainAbility"/>
+                    <attribute id="UUID" type="guid" value="fb6731ce-6fee-4ada-b359-fb4fe6a57dc0"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_LuckOfTheFarRealms"/>
+                    <attribute id="UUID" type="guid" value="528481ec-e767-41d0-9863-9b304ccc3dfe"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_Charm"/>
+                    <attribute id="UUID" type="guid" value="3cf98085-8809-4536-aa93-07a261c8332d"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_Displace"/>
+                    <attribute id="UUID" type="guid" value="c5a2c921-c40e-4945-ad5a-fe4b6dd0acdd"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_Repulsor"/>
+                    <attribute id="UUID" type="guid" value="7f433b3e-fdce-4fde-b829-7b5101415ae6"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_CullTheWeak"/>
+                    <attribute id="UUID" type="guid" value="75786ab3-5dbb-468a-bc85-7f56b07c5ab0"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_PsionicBacklash"/>
+                    <attribute id="UUID" type="guid" value="dd31337f-9556-4e80-b6d2-3c350558784d"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_ShieldOfThralls"/>
+                    <attribute id="UUID" type="guid" value="ee48ac86-6e3a-42c3-9e60-ba591c046287"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_PerilousStakes"/>
+                    <attribute id="UUID" type="guid" value="f09f2aca-6272-4e5a-b801-bd6b59c17595"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_BeastFlayer"/>
+                    <attribute id="NeedsHalfIllithidToUnlock" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="8dfcd0bc-567e-4cb2-b392-9ea095ec001f"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_Imperil"/>
+                    <attribute id="NeedsHalfIllithidToUnlock" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="b7d292b9-6440-48d2-a734-c05338c5e735"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_Devour"/>
+                    <attribute id="NeedsHalfIllithidToUnlock" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="b9977b87-b43f-441a-9f19-bc9d15a3711c"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_PsionicDominance"/>
+                    <attribute id="NeedsHalfIllithidToUnlock" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="8396fed0-a9eb-4c19-9315-261a8a5cece1"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_BlackHole"/>
+                    <attribute id="NeedsHalfIllithidToUnlock" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="41700356-c2dd-4f29-b6ec-305e19529183"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_Levitate"/>
+                    <attribute id="NeedsHalfIllithidToUnlock" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="fcbf91f3-665f-46ea-a5ac-ef6e3e2ec891"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_MindBlast"/>
+                    <attribute id="NeedsHalfIllithidToUnlock" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="15fa64fd-d5f3-4e15-9eb4-b059eaa5ee1e"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_MindSanctuaryUnlock"/>
+                    <attribute id="NeedsHalfIllithidToUnlock" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="bed3e4a9-e726-4213-8e11-75711f9b4d79"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_Freecast"/>
+                    <attribute id="NeedsHalfIllithidToUnlock" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="ec068267-28a0-42c6-95e9-1dbf584f6b62"/>
+                </node>
+                <node id="TadpolePowerNode">
+                    <attribute id="Name" type="FixedString" value="TAD_AbsorbIntellect"/>
+                    <attribute id="NeedsHalfIllithidToUnlock" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="20cd11f2-2d18-4384-8ca5-d3ab3aad5c06"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

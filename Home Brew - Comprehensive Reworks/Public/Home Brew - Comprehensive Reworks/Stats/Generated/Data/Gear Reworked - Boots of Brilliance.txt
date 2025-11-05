@@ -1,0 +1,21 @@
+new entry "MAG_Bard_RefreshBardicInspirationSlot_Shoes"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "a7ce200c-ab1a-4d49-bf7d-c6894b1e5b06"
+data "ValueUUID" "a229f048-70b0-4b0c-88cb-29b5c6bdb2d0"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "Encouraging_Momentum_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - BARD REWORK-->
+
+new entry "Encouraging_Momentum_Item"
+type "PassiveData"
+data "DisplayName" "171ffb649bb448399193ed1c0d6896dd00006;3"
+data "Description" "171ffb649bb448399193ed1c0d6896dd0000f;2"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Icon" "PassiveFeature_MagicInitiateBard"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

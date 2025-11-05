@@ -1,0 +1,23 @@
+new entry "LOW_OfWindrider_Amulet"
+type "Armor"
+using "_Amulet_Magic"
+data "RootTemplate" "489290fd-c517-4c26-83e8-db102d8db25b"
+data "ValueUUID" "ccaceafa-6dc1-41c7-bd43-db6d4da8a3d8"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "Unique" "1"
+data "PassivesOnEquip" "Windwaker_Item"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - MONK REWORK-->
+
+new entry "Windwaker_Item"
+type "PassiveData"
+data "DisplayName" "4512454c8e254628bd4dc62ea243a2a000019;1"
+data "Description" "4512454c8e254628bd4dc62ea243a2a00000s;2"
+data "Icon" "PassiveFeature_MartialArts_UnarmedDamage"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "UnlockSpell(Shout_Dash_StepOfTheWind);UnlockSpell(Shout_Disengage_StepOfTheWind)"
+data "BoostConditions" "not HasPassive('Windwaker', context.Source)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

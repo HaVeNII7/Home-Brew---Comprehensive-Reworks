@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="319"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Steelforged_Melee"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="68f61c89-be48-41aa-acb6-2f3bd15303c7"/>
+                    <attribute id="UUID" type="guid" value="b7df2015-a82a-487c-8ce5-c083ecd16d9f"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="PushingAttack;Proficiency_Shields"/>"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
+                    <attribute id="UUID" type="guid" value="5c753535-8d9c-4d72-b41a-216ca34231a1"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Frontier_DisarmingStrike"/>"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="69eb2e41-0317-46d7-a6b6-3593de1a5220"/>
+                    <attribute id="UUID" type="guid" value="2652b321-3466-42b4-b522-e73b449c51ba"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Smite_Thunderous;Proficiency_Mauls"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821"/>
+                    <attribute id="UUID" type="guid" value="b67b5fb0-e72c-40f3-a03d-82eea014c200"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Arrow_Fire"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="ffdb3c71-f728-488f-88df-a46fdaf17122"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Swarmkeeper_Bee"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="54ad9a98-9656-4aa5-858e-b302f83c4577"/>
+                    <attribute id="UUID" type="guid" value="fedfb315-6c0a-4be7-b137-cca33c35d601"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Metamagic_Distant;Proficiency_Glaives"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
+                    <attribute id="UUID" type="guid" value="98151b5d-3c0e-4763-9c91-11d7b37cc627"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="DraconicAncestry_Red"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="DraconicAncestry"/>
+                    <attribute id="TableUUID" type="guid" value="35aa255d-3eb7-4e93-8092-7545ced25b09"/>
+                    <attribute id="UUID" type="guid" value="9cced56d-3545-46aa-b9ab-a35d25920c07"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Dialogue_OldOne"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Patrons"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="b360e953-06c2-4573-9727-dfddbe11bd01"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Dialogue_Fiend"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Patrons"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="b360e953-06c2-4573-9727-dfddbe11bd02"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Dialogue_HexBlade"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Patrons"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="b360e953-06c2-4573-9727-dfddbe11bd03"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Dialogue_Archfey"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Patrons"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="b360e953-06c2-4573-9727-dfddbe11bd04"/>
+					</node>
+            </children>
+        </node>
+    </region>
+</save>

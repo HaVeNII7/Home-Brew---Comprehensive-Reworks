@@ -1,0 +1,376 @@
+new treasuretable "JWL_TreasureTable_TrinketCrate"
+new subtable "1,1"
+object category "I_ARM_Instrument_Violin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_ComfyBackpack",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WeaponStrap",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_EndlessMead",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_MendingRope",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_CuriousCoin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SmokingPipe",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_VaultingPole",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_QuiverBrambleheart",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookGreenArts",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookInfernalArchive",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BeltPrimalRecall",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemBeast",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BloodwellGoblin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerGoblin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolKelemvor",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolSylvanus",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BalanceHarmony",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookLostKnowledge",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TriageKit",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_Whetstone",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BeltDwarven",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_HolyCandle",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_QuiverEfficient",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_PearlPower",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WindFan",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_Hourglass",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_RubyWarmage",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_AstuteLens",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_ShieldingBrooch",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_Docent",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_ProfessorOrb",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WeaponChain",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookCelestialHealing",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_MourningsteelCoin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemDread",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BloodwellCorrupted",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WhistleBeast",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WhistleWitch",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BagTricks",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerMourningsteel",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolLolth",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolMoradin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_FlyingCarpet",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_LuckyDice",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BeltFrostGiant",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BowlCommandingWater",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_HandyHaversack",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_CharmingEyes",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WatchBadge",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_Mimir",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_IounBlue",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_IounGreen",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_IounPink",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_IounPurple",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_IounRed",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_IounYellow",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_QuiverChaos",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookManySpells",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookClearThought",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SerpentsPin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WorghideWeaponStrap",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BeltRaidLeader",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemSpirit",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BloodwellSorcerous",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SilverLycanCharm",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_ThayanFemur",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_StoneGoodLuck",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerConsecrated",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolBahamut",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolEllistrae",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolHelm",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolMeilikki",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BagHolding",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SkeletonKey",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_Shackles",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_GuardianEmblem",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_KerzinsOoze",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BlackCrystalTablet",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_OrbSkoraeus",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_CompendiumTechniques",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_OrbScrying",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_QuiverDimensional",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookArcaneCodex",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookEtherealCurrents",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_DragonhideWeaponStrap",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BeltForbiddenHarmony",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemDragon",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BloodwellDragon",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WhistleCerberus",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_GibberingBell",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_GoldenFiddle",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerInfernalPower",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolIlmater",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolCorellon",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookExaltedDeeds",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookVileDarkness",1,0,0,0,0,0,0,0
+
+new treasuretable "LOW_MusicTrader"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+
+new treasuretable "JWL_AlfiraTrade"
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+
+new treasuretable "ST_JWL_Trade_CommonTrinkets"
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_ComfyBackpack",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
+
+new treasuretable "DEN_Volo_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_LC_Cyric_FearImmunity_Amulet",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_Illithid_CharmPerson_Ring",1,0,0,0,0,0,0,0
+
+new treasuretable "DEN_Entrance_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_ST_JWL_Trade_CommonTrinkets",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolSylvanus",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookGreenArts",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemBeast",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TriageKit",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_QuiverBrambleheart",1,0,0,0,0,0,0,0
+
+new treasuretable "DEN_Thieflings_Pickpocket_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_ST_JWL_Trade_CommonTrinkets",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_EndlessMead",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_CuriousCoin",1,0,0,0,0,0,0,0
+
+new treasuretable "HAV_Thiefling_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WindFan",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_MendingRope",1,0,0,0,0,0,0,0
+
+new treasuretable "WYR_Thiefling_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_StoneGoodLuck",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemSpirit",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolHelm",1,0,0,0,0,0,0,0
+
+new treasuretable "DEN_Weaponsmith_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "T_ST_JWL_Trade_CommonTrinkets",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WeaponStrap",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_Whetstone",1,0,0,0,0,0,0,0
+
+new treasuretable "HAV_Weaponsmith_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WeaponChain",1,0,0,0,0,0,0,0
+
+new treasuretable "HAV_HarperQuarterMaster_Magic_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_QuiverEfficient",1,0,0,0,0,0,0,0
+
+new treasuretable "CRE_GithQuartermistress_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_QuiverEfficient",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_ShieldingBrooch",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_Cunning_HandCrossbow",1,0,0,0,0,0,0,0
+
+new treasuretable "LOW_SorcerousSundries_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookManySpells",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BloodwellSorcerous",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BowlCommandingWater",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BookClearThought",1,0,0,0,0,0,0,0
+
+new treasuretable "MOO_BugBearvendor_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_QuiverChaos",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_Toll_Collector_Cloak",1,0,0,0,0,0,0,0
+
+new treasuretable "LOW_SteepsTrader_Armor"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BeltRaidLeader",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_DragonhideWeaponStrap",1,0,0,0,0,0,0,0
+
+new treasuretable "LOW_Guildhall_FetchersBrat_Trade_Magic"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WatchBadge",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_LuckyDice",1,0,0,0,0,0,0,0
+
+new treasuretable "LOW_MysticCarrion_Trade_Magic"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BlackCrystalTablet",1,0,0,0,0,0,0,0
+
+new treasuretable "WYR_Circus_KoboldMerchant_Magic"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_CharmingEyes",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolMeilikki",1,0,0,0,0,0,0,0
+
+new treasuretable "LOW_StormshoreTabernacle_Guardian"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BannerConsecrated",1,0,0,0,0,0,0,0

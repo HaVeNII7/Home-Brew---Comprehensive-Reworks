@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+<!--ELF-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917910dj" version="5">Elven Enlightenment</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e91kd9" version="1">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all Wisdom based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge43291765478" version="5">Elven Haste</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341ealeod" version="1">Your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is increased by [1].</content>
+
+<!--TIEFLING-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge4329174r2uy" version="5">Breath of Nessus</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341efeuhy" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage, basic &lt;LSTag Type="Status" Tooltip="DARKVISION"&gt;Darkvision&lt;/LSTag&gt;, and the ability to cast &lt;LSTag Type="Spell" Tooltip="Projectile_ScorchingRay_AsmodeusTiefling"&gt;Scorching Ray&lt;/LSTag&gt; once per combat.</content>
+	<content contentuid="h184ab785gdae3g4b7ega249ge43291746a79" version="5">Asmodeus: Scorching Ray</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917feui3" version="5">Boon of the Archdevil</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341efuiyd" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage, basic &lt;LSTag Type="Status" Tooltip="DARKVISION"&gt;Darkvision&lt;/LSTag&gt;, and the ability to cast &lt;LSTag Type="Spell" Tooltip="Zone_BurningHands_MephistophelesTiefling"&gt;Burning Hands&lt;/LSTag&gt; once per combat.</content>
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917f789a" version="5">Mephistopheles: Burning Hands</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917fsu8s" version="5">Rage of Zariel</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341ekljnf" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage, basic &lt;LSTag Type="Status" Tooltip="DARKVISION"&gt;Darkvision&lt;/LSTag&gt;, and the ability to cast &lt;LSTag Type="Spell" Tooltip="Target_HeatMetal_ZarielTiefling"&gt;Heat Metal&lt;/LSTag&gt; once per combat.</content>
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917f2e84" version="5">Zariel: Heat Metal</content>
+
+<!--DROW-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge43291701o9d" version="5">Lolth-Sworn Faith</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e0dkd8" version="1">Gain &lt;LSTag Type="Passive" Tooltip="SuperiorDarkvision"&gt;Superior Darkvision&lt;/LSTag&gt;, the ability to see within magical darkness, and the ability to cast &lt;LSTag Type="Spell" Tooltip="Target_Silence_Lolth"&gt;Silence&lt;/LSTag&gt; once per combat. Your time in the underdark has made your eyes highly capable within the absence of light, and as such, while shrouded in total darkness you will make all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h0ea62574g0e90g491bg8054g78bf8c616a89" version="5">Lolth Sworn: Silence</content>
+
+	<content contentuid="h5ecedc36gdf68g4529g820fgfcff98dfsld9" version="5">Absolute Vision</content>
+	<content contentuid="h4290e9c1ga5abg4f18g8243sdfsd89ddf85e" version="1">Your vision has been blessed by the Absolute, nullifying your natural aversion to light.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge43291793kda" version="5">Seldarine Faith</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e01kd9" version="1">Gain &lt;LSTag Type="Passive" Tooltip="SuperiorDarkvision"&gt;Superior Darkvision&lt;/LSTag&gt;, the ability to see within magical darkness, and the ability to cast &lt;LSTag Type="Spell" Tooltip="Target_MistyStep_Seldarine"&gt;Misty Step&lt;/LSTag&gt; once per combat. Your time in the underdark has made your eyes highly capable within the absence of light, and as such, while shrouded in total darkness you will make all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h3b2b5d8agc531g4cb9g98b4g63c0e5636a97" version="5">Seldarine: Misty Step</content>
+
+<!--HUMAN-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge43291791kd7" version="5">Human Ambition</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341el10dk" version="1">Gain a +2 bonus to Initiative.</content>
+
+<!--GITHYANKI-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917ertu9" version="5">Astral Warrior</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341eiuysf" version="1">When making any &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, you add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to the roll twice.</content>
+
+<!--DWARF-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge4329170adkd" version="5">Heritage of the Arsenal</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341es0d93" version="1">Gain a +2 bonus to all damage dealt with weapons.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917akdud" version="5">Heritage of the Armoury</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e10d9d" version="1">Reduce all damage taken by 2.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917adifd" version="5">Duergar Conditioning</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e29dkd" version="1">Gain &lt;LSTag Type="Passive" Tooltip="SuperiorDarkvision"&gt;Superior Darkvision&lt;/LSTag&gt;, the ability to see within magical darkness, and the ability to cast &lt;LSTag Type="Spell" Tooltip="Shout_Enlarge_Duergar"&gt;Enlarge&lt;/LSTag&gt; once per combat. Your time in the underdark has made your eyes highly capable within the absence of light, and as such, while shrouded in total darkness you will make all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917a7e58" version="5">Duergar: Enlarge</content>
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917a7e59" version="5">Make yourself larger. Your weapon and unarmed attacks deal an additional +[1] damage. You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+<!--HALF ELF-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge4329170akd9" version="5">Half-Blood's Enlightenment</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e932lk" version="1">Gain a +1 bonus to Initiative, as well as &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all Wisdom based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917o1ldk" version="5">Half-Blood's Haste</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341ejzje9" version="1">Gain a +1 bonus to Initiative, as well as [1] of additional &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge43291763a55" version="5">Half-Blood's Faith</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341edkdlk" version="1">Gain a +1 bonus to Initiative, as well as &lt;LSTag Type="Passive" Tooltip="SuperiorDarkvision"&gt;Superior Darkvision&lt;/LSTag&gt;.</content>
+
+<!--HALFLING-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917lkadd" version="5">Lightfoot Cunning</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341ejfnms" version="1">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all Dexterity based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge43291798skd" version="5">Strength of the Strongheart</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e92099" version="1">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all Constitution based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+<!--GNOME-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917zfasd" version="5">Rock and Stone</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e13ere" version="1">Your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is increased by 2.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917fasdf" version="5">Forest Serenity</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341eadfs4" version="1">Gain the ability to &lt;LSTag Type="Status" Tooltip="PETPAL"&gt;Speak With Animals&lt;/LSTag&gt; at all times, as well as the ability to cast &lt;LSTag Type="Spell" Tooltip="Target_DominateBeast_ForestGnome"&gt;Dominate Beast&lt;/LSTag&gt; once per combat.</content>
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917lds09" version="5">Forest Gnome: Dominate Beast</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917fals8" version="5">Whispers of the Underdark</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341ea3kd9" version="1">Gain &lt;LSTag Type="Passive" Tooltip="SuperiorDarkvision"&gt;Superior Darkvision&lt;/LSTag&gt;, the ability to see within magical darkness, and the ability to cast &lt;LSTag Type="Spell" Tooltip="Target_Invisibility_DeepGnome"&gt;Invisibility&lt;/LSTag&gt; once per combat. Your time in the underdark has made your eyes highly capable within the absence of light, and as such, while shrouded in total darkness you will make all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917f4a69" version="5">Deep Gnome: Invisibility</content>
+	<content contentuid="hf30493d0g1858g4f2eg8c77ga32d9306a945" version="3">Turn yourself &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisible&lt;/LSTag&gt;.</content>
+	<content contentuid="h85ed0de6g029ag42a4ga711g2c0dk3ljls88" version="3">&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Condition ends early if you attack or cast a spell.</content>
+
+<!--DRAGONBORN-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge4329179y8ef" version="5">Draconic Ancestry: Black</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341ewer98" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Acid damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Acid"&gt;Acid Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917iuerh" version="5">Draconic Ancestry: Blue</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341esdf98" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Lightning"&gt;Lightning Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917ofdss" version="5">Draconic Ancestry: Brass</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e90reu" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Poison"&gt;Poison Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917sdf09" version="5">Draconic Ancestry: Bronze</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341efsd09" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Lightning"&gt;Lightning Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917rw409" version="5">Draconic Ancestry: Copper</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341ekzdff" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Acid damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Acid"&gt;Acid Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917dsf90" version="5">Draconic Ancestry: Gold</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341edfjss" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Fire"&gt;Fire Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917a0sd9" version="5">Draconic Ancestry: Green</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341efjksl" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Poison"&gt;Poison Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917asdif" version="5">Draconic Ancestry: Red</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341esf09d" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Fire"&gt;Fire Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917a89ss" version="5">Draconic Ancestry: Silver</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341easd89" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Cold damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Cold"&gt;Frost Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917asdf8" version="5">Draconic Ancestry: White</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e21305" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Cold damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Cold"&gt;Frost Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+
+	<content contentuid="greater85gdae3g4b7ega249ge4329179y8ef" version="5">Greater Draconic Ancestry: Black</content>
+	<content contentuid="greater00gb6c7g41c2g9d2dg8a0341ewer98" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Acid damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Acid"&gt;Greater Acid Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+
+	<content contentuid="greater85gdae3g4b7ega249ge432917iuerh" version="5">Greater Draconic Ancestry: Blue</content>
+	<content contentuid="greater00gb6c7g41c2g9d2dg8a0341esdf98" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Lightning"&gt;Greater Lightning Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+
+	<content contentuid="greater85gdae3g4b7ega249ge432917ofdss" version="5">Greater Draconic Ancestry: Brass</content>
+	<content contentuid="greater00gb6c7g41c2g9d2dg8a0341e90reu" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Poison"&gt;Greater Poison Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+
+	<content contentuid="greater85gdae3g4b7ega249ge432917sdf09" version="5">Greater Draconic Ancestry: Bronze</content>
+	<content contentuid="greater00gb6c7g41c2g9d2dg8a0341efsd09" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Lightning"&gt;Greater Lightning Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+
+	<content contentuid="greater85gdae3g4b7ega249ge432917rw409" version="5">Greater Draconic Ancestry: Copper</content>
+	<content contentuid="greater00gb6c7g41c2g9d2dg8a0341ekzdff" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Acid damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Acid"&gt;Greater Acid Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+
+	<content contentuid="greater85gdae3g4b7ega249ge432917dsf90" version="5">Greater Draconic Ancestry: Gold</content>
+	<content contentuid="greater00gb6c7g41c2g9d2dg8a0341edfjss" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Fire"&gt;Greater Fire Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+
+	<content contentuid="greater85gdae3g4b7ega249ge432917a0sd9" version="5">Greater Draconic Ancestry: Green</content>
+	<content contentuid="greater00gb6c7g41c2g9d2dg8a0341efjksl" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Poison"&gt;Greater Poison Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+
+	<content contentuid="greater85gdae3g4b7ega249ge432917asdif" version="5">Greater Draconic Ancestry: Red</content>
+	<content contentuid="greater00gb6c7g41c2g9d2dg8a0341esf09d" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Fire"&gt;Greater Fire Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+
+	<content contentuid="greater85gdae3g4b7ega249ge432917a89ss" version="5">Greater Draconic Ancestry: Silver</content>
+	<content contentuid="greater00gb6c7g41c2g9d2dg8a0341easd89" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Cold damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Cold"&gt;Greater Frost Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+
+	<content contentuid="greater85gdae3g4b7ega249ge432917asdf8" version="5">Greater Draconic Ancestry: White</content>
+	<content contentuid="greater00gb6c7g41c2g9d2dg8a0341e21305" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Cold damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Cold"&gt;Greater Frost Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+
+	<content contentuid="superior5gdae3g4b7ega249ge4329179y8ef" version="5">Superior Draconic Ancestry: Black</content>
+	<content contentuid="superior0gb6c7g41c2g9d2dg8a0341ewer98" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Acid damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Acid"&gt;Superior Acid Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="superior5gdae3g4b7ega249ge432917iuerh" version="5">Superior Draconic Ancestry: Blue</content>
+	<content contentuid="superior0gb6c7g41c2g9d2dg8a0341esdf98" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Lightning damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Lightning"&gt;Superior Lightning Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="superior5gdae3g4b7ega249ge432917ofdss" version="5">Superior Draconic Ancestry: Brass</content>
+	<content contentuid="superior0gb6c7g41c2g9d2dg8a0341e90reu" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Poison damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Poison"&gt;Superior Poison Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="superior5gdae3g4b7ega249ge432917sdf09" version="5">Superior Draconic Ancestry: Bronze</content>
+	<content contentuid="superior0gb6c7g41c2g9d2dg8a0341efsd09" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Lightning damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Lightning"&gt;Superior Lightning Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="superior5gdae3g4b7ega249ge432917rw409" version="5">Superior Draconic Ancestry: Copper</content>
+	<content contentuid="superior0gb6c7g41c2g9d2dg8a0341ekzdff" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Acid damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Acid"&gt;Superior Acid Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="superior5gdae3g4b7ega249ge432917dsf90" version="5">Superior Draconic Ancestry: Gold</content>
+	<content contentuid="superior0gb6c7g41c2g9d2dg8a0341edfjss" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Fire damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Fire"&gt;Superior Fire Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="superior5gdae3g4b7ega249ge432917a0sd9" version="5">Superior Draconic Ancestry: Green</content>
+	<content contentuid="superior0gb6c7g41c2g9d2dg8a0341efjksl" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Poison damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Poison"&gt;Superior Poison Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="superior5gdae3g4b7ega249ge432917asdif" version="5">Superior Draconic Ancestry: Red</content>
+	<content contentuid="superior0gb6c7g41c2g9d2dg8a0341esf09d" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Fire damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Fire"&gt;Superior Fire Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="superior5gdae3g4b7ega249ge432917a89ss" version="5">Superior Draconic Ancestry: Silver</content>
+	<content contentuid="superior0gb6c7g41c2g9d2dg8a0341easd89" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Cold damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Cold"&gt;Superior Frost Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="superior5gdae3g4b7ega249ge432917asdf8" version="5">Superior Draconic Ancestry: White</content>
+	<content contentuid="superior0gb6c7g41c2g9d2dg8a0341e21305" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Cold damage and the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Cold"&gt;Superior Frost Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h93cb1f78g8bedg4f61gac06ge1205greater" version="2">Greater Acid Breath</content>
+	<content contentuid="hd6876f54g0aceg44f7gb092g03dc2greater" version="2">Greater Frost Breath</content>
+	<content contentuid="h725acbf8ga49ag4d70g9775g638c5greater" version="2">Greater Fire Breath</content>
+	<content contentuid="hd36c7168g3246g43c0g9414g9b917greater" version="2">Greater Lightning Breath</content>
+	<content contentuid="hd425ed44g85e4g4f30g9078gf9f46greater" version="2">Greater Poison Breath</content>
+
+	<content contentuid="h93cb1f78g8bedg4f61gac06ge1205Superior" version="2">Superior Acid Breath</content>
+	<content contentuid="hd6876f54g0aceg44f7gb092g03dc2Superior" version="2">Superior Frost Breath</content>
+	<content contentuid="h725acbf8ga49ag4d70g9775g638c5Superior" version="2">Superior Fire Breath</content>
+	<content contentuid="hd36c7168g3246g43c0g9414g9b917Superior" version="2">Superior Lightning Breath</content>
+	<content contentuid="hd425ed44g85e4g4f30g9078gf9f46Superior" version="2">Superior Poison Breath</content>
+
+<!--HALF ORC-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge4329174a658" version="5">Half-Blood's Vigor</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e209d9" version="1">Gain a +1 bonus to Initiative, as well as &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all Strength based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+
+<!--MISC-->
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge432917jidjw" version="5">Hell's Embrace</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a03412ks8yw" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage and basic &lt;LSTag Type="Status" Tooltip="DARKVISION"&gt;Darkvision&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge4329176a987" version="5">Light Sensitivity: Unobscured</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341e32a64" version="1">Your time in the underdark has left your eyes sensitive to the light, and as such, while in unobscured areas you will suffer &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h184ab785gdae3g4b7ega249ge4ffd6f8d588" version="5">Light Sensitivity: Heavily Obscured</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8afff5s8d966" version="1">Your time in the underdark has left your eyes accustomed to the dark, and as such, while in heavily obscured areas you will make all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+<!--TAGS FOR NPC AI ASSIGNMENT-->
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg483838ss3f45" version="5">HERO</content>
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg48383822d6d5" version="1">HEROFORHEALTHSCALING</content>
+
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg4sd6f455d64f" version="5">MELEE</content>
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg483a4s6d54f6" version="1">MELEETAG</content>
+
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg482s5d2d5f68" version="5">RANGED</content>
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg48as6d45f854" version="1">RANGEDTAG</content>
+
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg48386a4s5d6f" version="5">MELEEMAGIC</content>
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg48asd6f9s8d4" version="1">MELEEMAGICTAG</content>
+
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg483asd45f984" version="5">RANGEDMAGIC</content>
+	<content contentuid="hffaccf0ag0569g4b24gb7bfas5df645d46s4" version="1">RANGEDMAGICTAG</content>
+
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg22d5f6d2e525" version="5">FIXEDSUBCLASS</content>
+	<content contentuid="hffaccf0ag0569g4b24gb7bfas8kd844443d2" version="1">FIXEDSUBCLASSTAG</content>
+
+<!--ENEMIES-->
+
+	<content contentuid="51939390dfff9dif9dff4699fafff6d900001" version="1">Dangerous Encounter</content>
+	<content contentuid="51939390dfff9dif9dff4699fafff6d90000a" version="4">This creature is considered to be far more dangerous than what you typically encounter.&lt;br&gt;&lt;br&gt;When recovering from a &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Condition&lt;/LSTag&gt;, they gain status immunity to all lockdown conditions for three turns.</content>
+
+	<content contentuid="51939390dfff9dif9dff4699fafff6d900002" version="1">Fatal Encounter</content>
+	<content contentuid="51939390dfff9dif9dff4699fafff6d90000b" version="4">This creature exudes an aura of power. Encountering them in combat can easily prove fatal.&lt;br&gt;&lt;br&gt;When recovering from a &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Condition&lt;/LSTag&gt;, they gain status immunity to all lockdown conditions for three turns.</content>
+
+	<content contentuid="51939390dfff9dif9dff4699fafff6d900003" version="1">Lockdown Immunity</content>
+	<content contentuid="51939390dfff9dif9dff4699fafff6d90000c" version="4">Affected creature has status immunity to all &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Conditions&lt;/LSTag&gt;.</content>
+	<content contentuid="51939390dfff9dif9dff4699fafff6d900004" version="1">Lockdown Conditions</content>
+	<content contentuid="51939390dfff9dif9dff4699fafff6d90000d" version="4">Lockdown conditions consist of any status effects which would prevent a creature from taking their &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="0d725d8aae6a4d4fba9768e69b7f188f00001" version="1">Constitution</content>
+	<content contentuid="0d725d8aae6a4d4fba9768e69b7f188f00002" version="1">Character Level</content>
+	<content contentuid="0d725d8aae6a4d4fba9768e69b7f188f00003" version="1">Hit Point Variance</content>
+	<content contentuid="0d725d8aae6a4d4fba9768e69b7f188f00022" version="1">Character Level</content>
+	<content contentuid="0d725d8aae6a4d4fba9768e69b7f188f00033" version="1">Hit Point Variance</content>
+	<content contentuid="0d725d8aae6a4d4fba9768e69b7f188f00222" version="1">Character Level</content>
+	<content contentuid="0d725d8aae6a4d4fba9768e69b7f188f00333" version="1">Hit Point Variance</content>
+
+<!--ENEMY PASSIVES-->
+
+	<content contentuid="hc761eaf7g4df1g4de8g8f79gcaae9s5df256" version="1">Floating</content>
+	<content contentuid="h6bcb2ab7g7c97g4746gb6begba80e5e86858" version="5">This creature is able to float effortlessly. As such, it has status immunity to any status which would restrain it. Additionally, it takes no damage when falling.</content>
+
+	<content contentuid="h2395dc03ga60dg4ca8gbf28g9cc613301043" version="1">Frightening Assault</content>
+	<content contentuid="h36f181f8g1bcag43bag8f71g69c05e02ea0c" version="2">This creature can perform a &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Cloaker"&gt;Multiattack&lt;/LSTag&gt; if their target is suffering from a fear based status effect. Upon dealing damage, they may cause their target to become &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h2395dc03ga60dg4ca8gbf28as4d4f65e254f" version="1">Scholastic Slammer</content>
+	<content contentuid="h36f181f8g1bcag43bag8f71g69c05esd8fe5" version="2">Upon dealing damage, this creature may cause their target to become &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Dazed&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h2395dc03ga60dg4ca8gbf28g9c5d6d68f54e" version="1">Draconic Majesty</content>
+	<content contentuid="h36f181f8g1bcag43bag8f71g6922585d6968" version="2">This creature has status immunity to all curses.</content>
+
+	<content contentuid="h2395dc03ga60dg4ca8gbf28g9c5d6d2d3d5f" version="1">Ethereal</content>
+	<content contentuid="h36f181f8g1bcag43bag8f71g6922585345rf" version="2">This creature is incorporeal. They may be walked through, projectiles may be shot through them, and they can not be forcibly moved.</content>
+
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200011" version="5">Show of Strength</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d3220000k" version="1">When dealing damage, create a [1] shockwave which reverberates through all targets Large or smaller, dealing [2] and potentially throwing them back by [3].</content>
+
+	<content contentuid="5118b4641cdb4145a0fb4699fafs2df5df151" version="5">Ravenous</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1def5d6f85" version="1">Upon landing a killing blow upon another creature, Gnolls erupt in a state of utter bloodlust. For three turns after, they make all damage rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="hff5da981g75e9g4858gb0d2gc9c9b5d83d43" version="5">Ravenous</content>
+	<content contentuid="hb0d4eb86gf0d4g4ddcg8749g24e61ca08075" version="1">Affected creature makes all damage rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="hbb87ab9agdd0fg427fga15egb62bbc303b67" version="5">Soul Offering</content>
+	<content contentuid="h270a3cbag5b1ag40a9g900agb9845a55a6fe" version="1">Offer a fragment of a creature's soul to Yeenoghu, preventing them from using &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Actions&lt;/LSTag&gt; or &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
+	<content contentuid="h1518b9acgbc01g400dg9597gaa9513fd4bf1" version="5">Offering to Yeenoghu</content>
+	<content contentuid="hd4588502g88a1g476ega1dbg36c19ca1db02" version="1">Affected creature cannot use &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Actions&lt;/LSTag&gt; or &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h3344d3e6gb749g4bd5ga9e9g75f0de1c9cca" version="5">Hooked on Horror</content>
+	<content contentuid="h38d3f000g4a2eg4682g9f80g949b43077930" version="2">Hook Horrors can make a &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_HookHorror"&gt;Multiattack&lt;/LSTag&gt; if their target is &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrified&lt;/LSTag&gt;. Upon dealing damage while unobscured, they potentially Terrify their target.</content>
+	<content contentuid="h7c6af9d2g4845g4bd0g88c1g9c5bc4d7a3a8" version="4">Aim two attacks at a &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrified&lt;/LSTag&gt; target and possibly make them &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleed&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h8b1e4382g54b9g4448g8ac8g0e405a387872" version="2">Brutal Leap</content>
+	<content contentuid="hf0605cb7g76fdg43b6gb5a2gfed702bd045e" version="2">Leap at a target, damaging any nearby creatures that are Large or smaller, and possibly knocking them &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h68e78850ga23bg4760g8606g87161ce51b92" version="1">Spider Queen's Wrath</content>
+	<content contentuid="h9bc3c302g3d9ag4644g9b8fge54ab43c709b" version="1">The queen is enraged! She's gained an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;!</content>
+	<content contentuid="h2395dc03ga60dg4ca8gbf28g9cc6132sd3d1" version="1">The Queen's Brood</content>
+	<content contentuid="h36f181f8g1bcag43bag8f71g69c05esdfe58" version="1">Upon being damaged, the Spider Queen will create one Phase Spiderling.</content>
+
+	<content contentuid="h2395dc03ga60dg4ca8gbf28g9cc6132sd5f4" version="5">Unstable Little Shits</content>
+	<content contentuid="h36f181f8g1bcag43bag8f71g69c05effde58" version="1">At the beginning of each of their turns, gremishka will always trigger a sudden burst of truly random Wild Magic.</content>
+
+	<content contentuid="h3344d3e6gb749g4bd5ga9e9g75f0desd5f21" version="5">Displacement</content>
+	<content contentuid="h38d3f000g4a2eg4682g9wsefe845de868545" version="1">While unubscured, Displacer Beasts may cause their targets to go &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Mad&lt;/LSTag&gt; when dealing damage to them.</content>
+
+	<content contentuid="h3344d3e6gb749g4bd5ga9e9g75f2d5f3d542" version="5">Timmask Touch</content>
+	<content contentuid="h38d3f000g4a2eg4682g9wsefe845de5d8f7e" version="1">Upon dealing damage to a creature who is not a plant, Myconid potentially implant &lt;LSTag Type="Status" Tooltip="TIMMASK_SPORES"&gt;Timmask Spores&lt;/LSTag&gt; into their target, unless they or their target are &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt;.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6enemy12" version="5">Muddened Wood</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e5enemyl" version="1">Root yourself to the ground in magically hardened &lt;LSTag Type="Status" Tooltip="MUD_MANTLE_WOODWOAD"&gt;Mud&lt;/LSTag&gt;. A [1] area of mud is created around you upon casting.</content>
+	<content contentuid="06ccff5b74f84871a26d66436d5dazenemy12" version="1">Muddened Wood</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37ezenemyl" version="1">Affected creature is covered in magically hardened mud. The creatures &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; increases by 4. Additionally, the creature cannot &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt;, and they become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to Fire damage.&lt;br&gt;&lt;br&gt;Removed if &lt;LSTag Type="Status" Tooltip="WET"&gt;Wet&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h4b7c2703ge1a8g4fb4g98c9g5a292a823ab7" version="3">Conductive Secretions</content>
+	<content contentuid="h67749803g166eg4d2bga330g5f647fc6e2b6" version="4">Upon starting it's turn, and upon being damaged, this frog will erupt in an electrical current, dealing [1] to two enemies within [2].</content>
+
+	<content contentuid="h4b7c2703ge1a8g4fb4g98c92s6d5f12e5f12" version="3">Keen Awareness</content>
+	<content contentuid="h67749803g166eg4d2bga330g5f646sd8f956" version="4">This creature gains a +8 bonus to their Initiative.</content>
+
+	<content contentuid="h4d67dd95g0b1dg4661ga76cg3d5152345a6f" version="2">Skittish</content>
+	<content contentuid="hd283c724g54a5g4e21g816fge77a790f8ccc" version="3">This creature will become &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrified&lt;/LSTag&gt; when hurt.</content>
+
+<!--OLD ENEMY PASSIVES-->
+
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200004" version="1">Worg Master</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d3220000d" version="4">Gain the ability to summon a violent Worg companion. Your companion grows in strength alongside you as you level.</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d322000z4" version="5">Worg Companion</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d322000zd" version="1">Call forth a violent Worg to tear through your enemies.</content>
+
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200005" version="1">Reckless Warcry</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d3220000e" version="4">As the leader of the pack, this creature will potentially let out a desperate, rallying &lt;LSTag Type="Status" Tooltip="GOBLINWARCRY"&gt;Warcry&lt;/LSTag&gt; when beginning their turn with no &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d322000z5" version="1">Reckless Warcry</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d322000ze" version="4">Let out a desperate, rallying &lt;LSTag Type="Status" Tooltip="GOBLINWARCRY"&gt;Warcry&lt;/LSTag&gt; to embolden you and your allies.</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200zz5" version="1">Reckless Warcry</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200zze" version="4">Affected creature has gained [1].</content>
+
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200006" version="1">Hobgoblin Brutality</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d3220000f" version="4">When dealing damage with a weapon, you deal an additional [1].</content>
+
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200007" version="1">Relentless Attacks</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d3220000g" version="4">You may make an additional weapon attack per turn, though the second attack is rolled with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200008" version="1">Fury of the Small</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d3220000h" version="4">When damaging a creature larger than you, you deal an additional [1].</content>
+
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200009" version="1">Devour Intellect</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d3220000i" version="4">Consume fragments of a creature's mind. If your targets Intelligence is below 4, it takes double the damage and is &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunned&lt;/LSTag&gt;.</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d322000z9" version="1">Devoured Mind</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d322000zi" version="4">Affected creature's Intelligence is reduced by [1].</content>
+
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200010" version="5">Obdurate Flesh</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d3220000j" version="1">Your skin is nearly indomitable to standard methods of attack, providing natural &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of physical damage.</content>
+
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200012" version="1">Beast Bones</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d3220000l" version="4">Gain the ability to summon a skeletal beast companion. Your companion grows in strength alongside you as you level.</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200z12" version="5">Beast Bones</content>
+	<content contentuid="5118b4641cdb4145a0fb4699faf1d322000zl" version="1">Call forth a skeletal beast to rip through your enemies.</content>
+
+	<content contentuid="h58d7ae56g37d3g45f1g8f3egd70ca36f0bd0" version="1">Weak Points</content>
+	<content contentuid="h58d7ae56g37d3g45f1g8f3egd70ca36zzzzz" version="4">When attacked from outside of it's view, this turret will shut down until the beginning of it's next turn.</content>
+
+	<content contentuid="h44926df3g77b8g49c7g9b84g93453a46612b" version="2">Vengeful Guardian</content>
+	<content contentuid="h09ceef7bg5fbeg4e2bgb0ddge0409423f3ff" version="2">When damaged, or upon witnessing the death of a family member, this Owlbear may become &lt;LSTag Type="Status" Tooltip="FOR_OWLBEAR_ENRAGE_HARDCORE"&gt;Enraged&lt;/LSTag&gt;.</content>
+	<content contentuid="h147d9a39ga77bg4a86g8e63ge86f55b50604" version="1">Affected creature is enraged! It has gained &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of damage and makes all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hc761eaf7g4df1g4de8g8f79gcaae9047a8f6" version="1">Shadow Veil</content>
+	<content contentuid="h6bcb2ab7g7c97g4746gb6begba800a7c6099" version="5">While Lightly or Heavily Obscured, shadow mastiffs are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to Bludgeoning, Piercing, and Slashing damage.</content>
+
+	<content contentuid="hfddddc28gc534g4b85g9a91g8e245253d7d0" version="1">Weakness to Light</content>
+	<content contentuid="hafb26127gb613g49beg9a41g527aef58500b" version="1">While in direct light, this creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h2db07054gaba4g4ff7g9884gbabb81d61c76" version="1">Ship Wrecked</content>
+	<content contentuid="h779ea992g1853g4ba6ga215g25f805b0c078" version="2">You are &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Dazed&lt;/LSTag&gt; from the crash of the nautiloid.</content>
+
+	<content contentuid="hd1077f7bg88e7g44f0ga5e9gb32b789b4106" version="2">Vengeful</content>
+	<content contentuid="h69a228a2g3139g4535g916fg1289243752da" version="2">You gain an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;. When attacked, you can use a Reaction in order to counterattack, making a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against your aggressor which deals an additional [1].</content>
+	<content contentuid="h2acfbc1eg90f9g4afaga8ccg5e21a8b131e2" version="2">Vengeful Strike</content>
+	<content contentuid="he80cb46ag72abg490cga94dg954b02d56888" version="2">Make a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against your aggressor which deals an additional [1].</content>
+
+</contentList>

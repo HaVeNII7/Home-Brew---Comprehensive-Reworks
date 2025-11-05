@@ -1,0 +1,23 @@
+new entry "MAG_PHB_ofPower_Pearl_Amulet"
+type "Armor"
+using "ARM_Amulet_Necklace_C_Bronze_A"
+data "RootTemplate" "6b8fcc06-fa6a-4a11-8318-075d90d8e909"
+data "ValueUUID" "f0e7be35-8be4-483d-afa8-dc9a104ea758"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "Unique" "1"
+data "PassivesOnEquip" "Spellblade_Item"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - WIZARD REWORK-->
+
+new entry "Spellblade_Item"
+type "PassiveData"
+data "DisplayName" "772cd70f49274c7596988bf90e992ca800014;1"
+data "Description" "772cd70f49274c7596988bf90e992ca80000n;2"
+data "Icon" "PassiveFeature_RitualCaster_MemorizeSpells"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "UnlockSpell(Shout_WeaponBond)"
+data "BoostConditions" "not HasPassive('Spellblade', context.Source)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

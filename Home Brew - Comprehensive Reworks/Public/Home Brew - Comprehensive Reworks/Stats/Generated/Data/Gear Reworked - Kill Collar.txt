@@ -1,0 +1,7 @@
+new entry "UNI_LOW_SteelWatchFoundry_ExplodingCollar"
+type "Armor"
+using "_Amulet_Magic"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" ""
+data "RootTemplate" "47af23c3-7eb0-4a49-a4a4-f2ee5ab521c0"
+data "Unique" "1"

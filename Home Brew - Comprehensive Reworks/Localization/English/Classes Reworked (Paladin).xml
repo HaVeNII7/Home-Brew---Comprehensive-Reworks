@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentList>
+
+<!--PALADIN-->
+
+	<content contentuid="9b7b811b9c3043e189f945540bf5116eff2d5" version="3">Break Oath</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf5116ess6d8" version="3">A Paladin's oath is a sacred, binding vow. Their power a manifestation of their devotion to a just cause. To rescind one's oath would be utterly unconscionable...right?</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf5116fd2d51" version="3">This action will have grave consequences.</content>
+
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e12a52" version="3">Smites</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e6a954" version="3">Oaths emboldened lay bare the path to preserve one's ideals.&lt;br&gt;A hammer of dawn to fall upon those deserving.</content>
+	
+	<content contentuid="h8cc0935fg68b5g47f8ga3b5gca464609021c" version="2">Crusader's Smite</content>
+	<content contentuid="h1839885agdd92g42a6gac45gf96f9ea0eda0" version="1">How many times you may channel the strength of your resolve into a relentless Smite.</content>
+	<content contentuid="h25d1fb0cg356dg49e4gb43bg597ee721f740" version="1">Crusader's Smite</content>
+
+	<content contentuid="h8df46bbbg30b8g491ag835dg009666a21584" version="3">Smites</content>
+	<content contentuid="hf44d4aedgce78g4700gb024gfc7d56a92315" version="3">Lay waste to your enemies.&lt;br&gt;Lay bare your conviction.</content>
+
+	<content contentuid="fe6f4159abae42539029e284001d12de6a921" version="3">Divine Crusader</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de3a697" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Divine"&gt;Divine Smite&lt;/LSTag&gt;.</content>
+	<content contentuid="h940c3156gad0fg4a92g8573gff26b0472ef2" version="1">Divine Smite</content>
+	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c987024" version="2">Smite your target with divine fury. This action always rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon damaging a target, further &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against the target are rolled with Advantage as well.</content>
+	<content contentuid="h940c3156gad0fg4a92g8573gff26b06a9522" version="1">Divine Judgement</content>
+	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c99ddff" version="2">Affected creature has been marked by a Paladin. &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against this creature roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="fe6f4159abae42539029e284001d12de11111" version="3">Oath Broken</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de22222" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Oathbroken"&gt;Oathbroken Smite&lt;/LSTag&gt;.</content>
+	<content contentuid="h940c3156gad0fg4a92g8573gff26b0433333" version="1">Oathbroken Smite</content>
+	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c944444" version="2">Bend the will of your target with necrotic wrath. This action always rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon damaging a target, they become &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt;. Your ability to Subjugate other creatures may be toggled at any time. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Subjugated.</content>
+	<content contentuid="h940c3156gad0fg4a92g8573gff26b0655555" version="1">Oathbroken Subjugation</content>
+	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c966666" version="2">Affected creature will follow and fight alongside the Paladin who subjugated them.&lt;br&gt;&lt;br&gt;If damaged by the Paladin or their allies, the subjugated creature will break free from the Paladin's control.&lt;br&gt;&lt;br&gt;A creature may only be Subjugated if one of their allies is alive and nearby.</content>
+
+	<content contentuid="fe6f4159abae42539029e284001d12de00011" version="3">Blinding Smite</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de0000k" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Blinding"&gt;Blinding Smite&lt;/LSTag&gt;.</content>
+	<content contentuid="h8a44e5a9g1396g471fgb4afgbb351beefb55" version="2">Blinding Smite</content>
+	<content contentuid="hec1e0a79g535cg42a8gb247ga676b74f3657" version="7">Evoke a heavenly flare, &lt;LSTag Type="Status" Tooltip="BLINDING_SMITE_BLINDED"&gt;Blinding&lt;/LSTag&gt; your target.</content>
+
+	<content contentuid="fe6f4159abae42539029e284001d12de00012" version="3">Branding Smite</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de0000l" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Branding"&gt;Branding Smite&lt;/LSTag&gt;.</content>
+	<content contentuid="h8df46bbbg30b8g491ag835dg009666ed95df" version="1">Branding Smite</content>
+	<content contentuid="hf44d4aedgce78g4700gb024gfc7d53df20c2" version="3">Force your target to erupt in a divine glow, preventing it from turning &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt;.</content>
+	<content contentuid="h4014f0eagc865g4cebgb21dg68127e7e1b65" version="1">Branding Smite</content>
+	<content contentuid="hf9e96185ge2c2g4f53g9fe4g6f76595c1747" version="2">Affected creature sheds light in a [1] radius, preventing it from becoming &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt;.</content>
+
+	<content contentuid="fe6f4159abae42539029e284001d12de00013" version="3">Searing Smite</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de0000m" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Searing"&gt;Searing Smite&lt;/LSTag&gt;.</content>
+	<content contentuid="h34f9400ag765dg4854ga064g934f247033b5" version="1">Searing Smite</content>
+	<content contentuid="h322c23a7g6c1ag4ad9g8b8dgd7ae4c194acf" version="4">Engulf your target in divine flame, &lt;LSTag Type="Status" Tooltip="SEARING_SMITE"&gt;Searing&lt;/LSTag&gt; them.</content>
+	<content contentuid="ha8eb8677g44ceg4252gbcc7gb4dc6fa872d9" version="1">Searing Smite</content>
+	<content contentuid="hee69a6b8gcc7dg4bebg9b40gf7a2336c41fd" version="3">Affected creature takes [1] every turn.</content>
+
+	<content contentuid="fe6f4159abae42539029e284001d12de00014" version="3">Staggering Smite</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de0000n" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_StaggeringSmite"&gt;Staggering Smite&lt;/LSTag&gt;.</content>
+	<content contentuid="hfded7aacg619dg46f2gb05ag9cb1277cf737" version="2">Staggering Smite</content>
+	<content contentuid="heebc23deg28bbg4929g8253g4c1091c49dfe" version="5">Shatter your targets resolve, &lt;LSTag Type="Status" Tooltip="STAGGERING_SMITE"&gt;Staggering&lt;/LSTag&gt; them.</content>
+	<content contentuid="h29429dfdge33fg4fbfgafb2g4df2bccf23b3" version="2">Staggering Smite</content>
+	<content contentuid="h342e4f42g1648g4482g9067gd41718d6f711" version="3">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;, and can't take &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
+
+	<content contentuid="fe6f4159abae42539029e284001d12de00015" version="3">Thunderous Smite</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de0000o" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Thunderous"&gt;Thunderous Smite&lt;/LSTag&gt;.</content>
+	<content contentuid="hc501c354g0acfg4cf2ga8a8g68a571de054a" version="1">Thunderous Smite</content>
+	<content contentuid="hb828b89bg758eg4ed1gac15g20c3efb94d9b" version="2">Push your target to the brink, forcing them back by [1] and knocking them &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+
+	<content contentuid="fe6f4159abae42539029e284001d12de00016" version="3">Wrathful Smite</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de0000p" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Wrathful"&gt;Wrathful Smite&lt;/LSTag&gt;.</content>
+	<content contentuid="h9c4f50ecg9696g4163gb993gacf6212e1d1c" version="1">Wrathful Smite</content>
+	<content contentuid="h3cc84672g37a4g48aegb70eg881a98f6231c" version="4">Destroy your targets confidence, &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightening&lt;/LSTag&gt; them.</content>
+
+	<content contentuid="fe6f4159abae42539029e28400120938489fd" version="3">Smitten</content>
+	<content contentuid="fe6f4159abae42539029e28400149r99gdf9f" version="3">When making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with one of your Smites, you make your roll with a +20 bonus.</content>
+
+<!--OATH OF THE ANCIENTS-->
+
+	<content contentuid="h7bd98082g8d1cg49b7gbdd9g5d45924e8d01" version="1">You fight on the side of light in the cosmic struggle against darkness to preserve the sanctity of life and the beauty of nature.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
+	<content contentuid="h7f1a984fgbf47g443fg904dgc1629c44d642" version="1">Committed to preserving life, you fight on the side of the light in the cosmic struggle against darkness.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
+	<content contentuid="ha8bcd3cdgf15eg4ac6gac7eg0a6307c4a189" version="2">Oath of the Ancients paladins abide by the following tenets:&lt;br&gt;&lt;br&gt;Kindle the Light. Through acts of kindness, enkindle the light of hope in the bleakest hollows of despair.&lt;br&gt;&lt;br&gt;Shelter the Light. Where love blooms, stand against the devilry that would snip its stem.&lt;br&gt;&lt;br&gt;Preserve Your Own Light. Delight in culture and small joys to preserve the light in your own heart.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8af6ad54" version="1">Ancient Judgement</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4d6asdf" version="3">When making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; or dealing damage to a Fey type creature, roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Once per turn, upon landing a killing blow on a Fey enemy, restore one &lt;LSTag Type="ActionResource" Tooltip="WarPriestActionPoint"&gt;Crusader's Smite&lt;/LSTag&gt; charge.</content>
+
+	<content contentuid="hbab5946eg8740g4466g98a2g004ef00cfba3" version="1">Healing Radiance</content>
+	<content contentuid="h7792b966gf7b8g4a36g82a7g8357ae633290" version="3">Heal yourself and all allies within [1] for [2]. Regain another [2] when the status ends.</content>
+	<content contentuid="hbab5946eg8740g4466g98a2g004ef00cfba4" version="1">Healing Radiance</content>
+	<content contentuid="h7792b966gf7b8g4a36g82a7g8357ae633291" version="3">Heal yourself and all allies within [1] for [2].</content>
+	<content contentuid="hd545e2f3g7d65g45ceg8e98g644247ca9ca2" version="1">Healing Radiance</content>
+	<content contentuid="heea9b291g431dg4608g8c6dgdf159e2b35e7" version="3">Affected creature will automatically cast &lt;LSTag Type="Spell" Tooltip="Shout_HealingRadiance"&gt;Healing Radiance&lt;/LSTag&gt; again when this status expires.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8af6a35a" version="1">Binding Radiance</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4dd5c0d" version="3">&lt;LSTag Type="Status" Tooltip="NATURES_WRATH"&gt;Restrain&lt;/LSTag&gt; an enemy. They cannot move. &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against them have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. They make all Dexterity based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
+	<content contentuid="hae3bd4a6g45c4g4239g8651g4654829d3821" version="1">Binding Radiance</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad22d3d6d584" version="1">Soothing Radiance</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1336d6668458" version="3">Your &lt;LSTag Type="Spell" Tooltip="Shout_HealingRadiance"&gt;Healing Radiance&lt;/LSTag&gt; now provides the effects of &lt;LSTag Type="Spell" Tooltip="Target_LesserRestoration"&gt;Latent Restoration&lt;/LSTag&gt;. Targets of &lt;LSTag Type="Spell" Tooltip="Target_NaturesWrath"&gt;Binding Radiance&lt;/LSTag&gt; make their &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; when attempting to resist it.</content>
+
+	<content contentuid="hdf505853g3437g496dg8732gf741d6ae1ebb" version="1">Turn the Faithless</content>
+	<content contentuid="h0c6caa26gbea1g4841g8ad9g816bac6717c7" version="2">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby Fey, potentially dealing significant damage to them in the process. They are forced to flee and cannot come close to you.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8af6a851" version="1">Extended Oath</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4dasdf5" version="3">The range of your &lt;LSTag Type="Spell" Tooltip="Shout_HealingRadiance"&gt;Healing Radiance&lt;/LSTag&gt; is doubled. Additionally, &lt;LSTag Type="Spell" Tooltip="Target_NaturesWrath"&gt;Binding Radiance&lt;/LSTag&gt; may now select up to three targets.</content>
+
+	<content contentuid="hd8ffaca7g8aa7g4e02ga546g3592286387a8" version="2">Aura of Protection</content>
+	<content contentuid="h3728832agb688g4081gad4eg7dcab2a79276" version="5">Emit an aura across [1] which grants both yourself and allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="hdfe1f27agb8e1g487cg88fdg8ca4b3c795fc" version="2">Aura of Protection</content>
+	<content contentuid="hc3749f97g4b86g46e8g9f1bg8bd2293a8de0" version="4">Affected creature is emitting an aura across [1] which grants both this creature and allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="h5d27ac75g5b53g4844gba19g9c87ff56d98a" version="2">Aura of Protection</content>
+	<content contentuid="hf20fdd4bg5dbcg4d9cg851cge25980a53bc0" version="4">Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; within [1] of the Paladin responsible for this status.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8a22d3f4" version="1">Oathbound Defender</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e422d35f" version="3">Your &lt;LSTag Type="Spell" Tooltip="Shout_HealingRadiance"&gt;Healing Radiance&lt;/LSTag&gt; now grants &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage until it is recast. When dealing damage to a target affected by your &lt;LSTag Type="Spell" Tooltip="Target_NaturesWrath"&gt;Binding Radiance&lt;/LSTag&gt;, all damage dice is rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+<!--OATH OF THE CROWN-->
+
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081e8db2" version="2">Oath of the Crowned Phoenix</content>
+	<content contentuid="hb0043457gfdd6g470agbfd6g6594b92ca488" version="2">You have sworn yourself to the ideals of civilisation and law, serving society to ensure it is reborn from the ashes of our mistakes.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
+
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100001" version="2">Crowned Judgement</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000a" version="2">When making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; or dealing damage to an Aberration type creature, roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Once per turn, upon landing a killing blow on an enemy Aberration, restore one &lt;LSTag Type="ActionResource" Tooltip="WarPriestActionPoint"&gt;Crusader's Smite&lt;/LSTag&gt; charge.</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000a1" version="2">Phoenix Landing</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000aa" version="2">Teleport to an area you can see, scorching all within a [1] area with blisteringly hot flame.</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000b1" version="2">Searing Protection</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000ba" version="2">When an ally within [1] of you is about to be damaged, take Fire damage equal to twice that of your level in order to heal them for the same amount, swapping places with them in the process.</content>
+
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100002" version="2">To the Sun</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000b" version="2">Using &lt;LSTag Type="Spell" Tooltip="Target_PhoenixLanding"&gt;Phoenix Landing&lt;/LSTag&gt; or Searing Protection grants you &lt;LSTag Type="Status" Tooltip="SUNSCORCHED"&gt;Sun Scorched&lt;/LSTag&gt; for three turns. In addition, you gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage.</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000s2" version="2">Sun Scorched</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000sb" version="2">Affected creature deals an additional [1] for every 10% of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; they are missing.</content>
+
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100003" version="2">Turn the Aberrant</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000c" version="2">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby Aberrations, potentially dealing significant damage to them in the process. They are forced to flee and cannot come close to you.</content>
+
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100004" version="2">Scorched Earth</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000d" version="2">While &lt;LSTag Type="Status" Tooltip="SUNSCORCHED"&gt;Sun Scorched&lt;/LSTag&gt; is active, you are able to &lt;LSTag Type="Spell" Tooltip="Target_Fly"&gt;Fly&lt;/LSTag&gt;, and you make &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; against &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt; creatures. In addition, you gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Fire damage.</content>
+
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100005" version="2">Aura of Cinder</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000e" version="2">All enemies within [1] of you &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt;.</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000s5" version="2">Aura of Cinder</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000se" version="2">Affected creature is causing all enemies within [1] of them &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100006" version="2">Rebirth</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000f" version="2">The first time you are &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Downed&lt;/LSTag&gt; each &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, you immediately recover all of your &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, erupting in an uncontrollable explosion and gaining &lt;LSTag Type="Status" Tooltip="SUNSCORCHED"&gt;Sun Scorched&lt;/LSTag&gt; for three turns. When you recover from being Downed in this way, you retain your &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;.</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000s6" version="2">Reborn</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000sf" version="2">Affected creature must take a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt; before they are able to self-revive again.</content>
+
+<!--OATH OF DEVOTION-->
+
+	<content contentuid="h238b6cb3gdff0g4151gbd79g2af569925479" version="1">Following the ideal of the knight in shining armour, you act with honour and virtue to protect the weak and pursue the greater good.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
+	<content contentuid="h87c4c0a8g61cag47bfg83f0ge3513c8c077b" version="1">Following the ideal of the knight in shining armour, you act with honour and virtue in the pursuit of the greater good.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
+	<content contentuid="h10176a56gc32bg4a58gbe0ag3570e2e82560" version="2">Oath of Devotion paladins abide by the following tenets:&lt;br&gt;&lt;br&gt;Courage. Stride dauntlessly into action.&lt;br&gt;&lt;br&gt;Compassion. Show clemency when prudent, and lend your arm to those in need.&lt;br&gt;&lt;br&gt;Duty. Tend your responsibilities, obey just laws, and support those entrusted to your care.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8afasdfd" version="1">Divine Judgement</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4dwerdd" version="3">When making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; or dealing damage to a Fiend type creature, roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Once per turn, upon landing a killing blow on an enemy Fiend, restore one &lt;LSTag Type="ActionResource" Tooltip="WarPriestActionPoint"&gt;Crusader's Smite&lt;/LSTag&gt; charge.</content>
+
+	<content contentuid="h98a22f43g54dag44e2g813fg114101b546c2" version="1">Holy Rebuke</content>
+	<content contentuid="h43b9bd02g20f5g4734gb8d4g27f829d90ec8" version="2">Grant yourself or an ally a vengeful aura which inflicts three stacks of &lt;LSTag Type="Status" Tooltip="MAG_RADIANT_RADIATING_ORB"&gt;Radiating Orb&lt;/LSTag&gt; to any other creature who damages them with a melee attack.</content>
+	<content contentuid="hbd2a51fag6d82g42b9g8b23g2d9f01ee3069" version="1">Holy Rebuke</content>
+	<content contentuid="h21e0c285g77d7g4573g8b55gfb72243328a1" version="1">Affected creature is protected by a vengeful aura. &lt;br&gt;&lt;br&gt;Aggressors recieve three stacks of &lt;LSTag Type="Status" Tooltip="MAG_RADIANT_RADIATING_ORB"&gt;Radiating Orb&lt;/LSTag&gt; when they damage the creature with a melee attack.</content>
+
+	<content contentuid="h15927ab8ga1f6g48dcga9abgfae62d3dff49" version="1">Sacred Weapon</content>
+	<content contentuid="ha966a6f3g23bdg4601ga9a9g19aef4128526" version="2">Illuminate your weapon with a holy radiance. It will have a higher chance of hitting, and emit a bright light across [1].</content>
+	<content contentuid="h4ac2da0fgc744g47c7gabb3gdaca2aed57cf" version="1">Sacred Weapon</content>
+	<content contentuid="h35572396g0398g4fa5g9a19ga44db89fe53f" version="1">Affected weapon adds its wielders &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt; to &lt;LSTag Tooltip="AbilityModifier"&gt;Attack Rolls&lt;/LSTag&gt;. It has become magical and emits radiant light across [1].</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gasd2f1s2df15" version="1">Sacred Oath</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dgsd4f6s4df484" version="3">Select two additional targets when casting  &lt;LSTag Type="Spell" Tooltip="Target_HolyRebuke"&gt;Holy Rebuke&lt;/LSTag&gt;. Additionally, dealing damage with your &lt;LSTag Type="Spell" Tooltip="Shout_SacredWeapon"&gt;Sacred Weapon&lt;/LSTag&gt; restores your &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;. The value restored is equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hb27de5a4g2331g490cgbbd5g86200d758e5e" version="1">Turn the Unholy</content>
+	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5d38ac39ba" version="3">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby Fiends, potentially dealing significant damage to them in the process. They are forced to flee and cannot come close to you.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8afsdfs1" version="1">Radiant Reflection</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1asdf4dasdf5" version="3">When taking damage while &lt;LSTag Type="Spell" Tooltip="Target_HolyRebuke"&gt;Holy Rebuke&lt;/LSTag&gt; is active, your aggressor takes [1]. In addition, your &lt;LSTag Type="Spell" Tooltip="Shout_SacredWeapon"&gt;Sacred Weapon&lt;/LSTag&gt; now inflicts one stack of &lt;LSTag Type="Status" Tooltip="MAG_RADIANT_RADIATING_ORB"&gt;Radiating Orb&lt;/LSTag&gt; when you deal damage.</content>
+
+	<content contentuid="ha12ebad1gfaf7g4b82g827fg125b781e62a7" version="2">Aura of Courage</content>
+	<content contentuid="h6dc7d859g0635g4fc0gabbfg80e4218d0c89" version="4">Emit an aura across [1] granting &lt;LSTag Type="Status" Tooltip="HEROISM"&gt;Heroism&lt;/LSTag&gt; to yourself and allies, as well &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to all fear based status effects.</content>
+	<content contentuid="h619c3982ga449g4c32gbd32g7259e2bdac53" version="2">Aura of Courage</content>
+	<content contentuid="h2d139c7bgeb89g44cbgaed4g688c42570f41" version="5">Affected creature is emitting an aura across [1] which grants both this creature and allies &lt;LSTag Type="Status" Tooltip="HEROISM"&gt;Heroism&lt;/LSTag&gt;, as well as &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to all fear based status effects.</content>
+	<content contentuid="hac89c8ceg3aaag4f93ga5bfg52a93dc45905" version="2">Aura of Courage</content>
+	<content contentuid="h883a2333g00cag41c3gbc95g563f6c765164" version="4">Has &lt;LSTag Type="Status" Tooltip="HEROISM"&gt;Heroism&lt;/LSTag&gt; as well as &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to all fear based status effects while within [1] of the Paladin responsible for this status.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad22d3d1f1d5" version="1">Pure Radiance</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg136s6d5f4d54" version="3">When making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against a creature afflicted with stacks of &lt;LSTag Type="Status" Tooltip="MAG_RADIANT_RADIATING_ORB"&gt;Radiating Orb&lt;/LSTag&gt;, you roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; and deal an additional [1].</content>
+
+<!--OATH OF VENGEANCE-->
+
+	<content contentuid="h573bd5d7g78ccg467cga56dg4392c97ad6ba" version="1">You have set aside even your own purity to right wrongs and deliver justice to those who have committed the most grievous sins.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
+	<content contentuid="h58aefc0egf58bg47ddg9f89g3b0fdcca9a8d" version="1">You have set aside even your own purity to right wrongs and deliver justice to those who have committed the most grievous sins.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
+	<content contentuid="h1fb86333g9cfag4f84g9d95g881b26df4b90" version="2">Oath of Vengeance paladins abide by the following tenets:&lt;br&gt;&lt;br&gt;Fight the Greater Evil. Exerting your wisdom, identify the higher morality in any given instance, and fight for it.&lt;br&gt;&lt;br&gt;No Mercy for the Wicked. Chasten those who dole out their villainy by wiping their blight from the world forever.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8afsdf98" version="1">Righteous Judgement</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4derere" version="3">When making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; or dealing damage to a Undead type creature, roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Once per turn, upon landing a killing blow on an enemy Undead, restore one &lt;LSTag Type="ActionResource" Tooltip="WarPriestActionPoint"&gt;Crusader's Smite&lt;/LSTag&gt; charge.</content>
+
+	<content contentuid="hcf1bdf5bg6399g4460g881fg174d780e68c0" version="1">Inquisitor's Might</content>
+	<content contentuid="h0f21e528gda66g4bb7g988cg9039f7eaa2a6" version="2">You or an ally's weapon attacks deal an additional [1] and can &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Daze&lt;/LSTag&gt; enemies for 1 turn.</content>
+	<content contentuid="h0af19e18g2a2dg4907ga5e0g8bb939887b84" version="1">Inquisitor's Might</content>
+	<content contentuid="h64863ad5gd1acg47eegbca9g9fe7aeac4b7f" version="1">Affected creature's weapon attacks deal an additional [1] and can &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Daze&lt;/LSTag&gt; targets for 1 turn.</content>
+
+	<content contentuid="h223d26fcg98feg43d7gbf4bg2ba7317cb6d4" version="1">Abjure Enemy</content>
+	<content contentuid="h05f4d72eg41c6g4570g8acdg4c3ec6779276" version="6">&lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frighten&lt;/LSTag&gt; an enemy.</content>
+
+	<content contentuid="hb27de5a4g2331g490cgbbd5g86sd2f5d6f58" version="1">Sanctified Commands</content>
+	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5sdf56d8f7" version="3">Once per combat encounter, you may cast &lt;LSTag Type="Spell" Tooltip="Target_AbjureEnemy"&gt;Abjure Enemy&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_InquisitorsMight"&gt;Inquisitor's Might&lt;/LSTag&gt; as a free action. Outside of combat, these actions may be cast for free.</content>
+
+	<content contentuid="hb27de5a4g2331g490cgbbd5g86200d7asdf9" version="1">Turn the Damned</content>
+	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5d38a234dd" version="3">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby Undead, potentially dealing significant damage to them in the process. They are forced to flee and cannot come close to you.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gaasdfafsdfs1" version="1">Abjure the Weak</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1sdfsddasdf5" version="3">When dealing damage to a target affected by &lt;LSTag Type="Spell" Tooltip="Target_AbjureEnemy"&gt;Abjure Enemy&lt;/LSTag&gt;, roll your damage dice with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Additionally, &lt;LSTag Type="Spell" Tooltip="Target_InquisitorsMight"&gt;Inquisitor's Might&lt;/LSTag&gt; also grants Advantage on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hce5530e4g3326g4a39ga467gf5d023c89bcd" version="2">Aura of Warding</content>
+	<content contentuid="h7b194af9ge1fbg47b4g95ebg4b5d0eebb313" version="9">Emit an aura across [1] which grants both yourself and allies &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to damage from spells.</content>
+	<content contentuid="hd2abbfe7g0d50g4bbega5bdg8d1977439ff6" version="2">Aura of Warding</content>
+	<content contentuid="hbffabd18gf3d3g40b5gbfd1gc6d5bcb7c11e" version="5">Affected creature is emitting an aura across [1] which grants both this creature and allies &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to damage from spells.</content>
+	<content contentuid="ha87fa9dbg5e60g4a75ga11bgba1fb919d196" version="2">Aura of Warding</content>
+	<content contentuid="h32aa4439g4e6eg4398gb2f1g160c7ceab346" version="6">Has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to damage from spells while within [1] of the Paladin responsible for this status.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a822d3f45" version="1">I Am Vengeance</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4ss6d85" version="3">Once per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, erupt in radiant fury. Your weapon attacks deal an additional [1] for three turns and all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; you make are rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8af00001" version="1">Visage of Vengeance</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4a0000a" version="3">Erupt in radiant fury. Your weapon attacks deal an additional [1] and all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; are made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8af000z1" version="1">Visage of Vengeance</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4a000za" version="3">Affected creature has erupted in radiant fury. Their weapon attacks deal an additional [1] and they make all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+<!--OATHBREAKER-->
+
+	<content contentuid="h86a825dagb852g4f68g847cg41fcbs5d4f69" version="1">Subjugation</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849sd8fs9d84fs987" version="3">Impose the power of your broken Oath to &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugate&lt;/LSTag&gt; other creatures. While enabled, Subjugation of enemies is possible. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Subjugated.</content>
+	<content contentuid="ha612b54dg48c5g45cegbe8fg273c791e5a41" version="1">Control Undead</content>
+	<content contentuid="h7c01bf17g01deg4907gb001g8280ca511db6" version="3">Use the newfound power of your shattered Oath to force control over an Undead creature.</content>
+	<content contentuid="hb02ee372ga5eag4cb9g98eegdf84c040f8f1" version="1">Undead Servant</content>
+	<content contentuid="hd7ff90f2gdbe7g475aga57ege03e858ceb9f" version="1">Affected Undead has been forcefully claimed by an Oathbreaker. It will follow the Paladin as an ally.</content>
+
+	<content contentuid="hbe9433acg21f7g450fg8e4dg52d76d77c680" version="1">Spiteful Suffering</content>
+	<content contentuid="hd646ac32g6ba7g4baagb3beg2ddef1a43dac" version="2">Submit your target to a malicious onslaught of spite, filling them with a sense of imposing dread. All &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them will roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h32f822f1g557fg4f77g9e90gbe3d36acc9eb" version="1">Spiteful Suffering</content>
+	<content contentuid="h058b7513g6ddcg4f92gafc7gd608373e8c13" version="1">Affected creature suffers from an imposing sense of dread. &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8afasdfs" version="1">Vicious Condemnation</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4d2398u" version="3">Upon killing a target, you inflict upon them a terrible curse, shattering their mind into fragments which become trapped within your equipped weapon and causing you to deal an additional [1]. While their mind remains trapped in your weapon, dealing damage with it may &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugate&lt;/LSTag&gt; other creatures. Your ability to Subjugate other creatures may be toggled at any time. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Subjugated.</content>
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a82422545" version="1">Vicious Condemnation</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330asd66987" version="3">Affected creature deals an additional [1] with their main-hand weapon and may &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugate&lt;/LSTag&gt; other creatures upon dealing damage.</content>
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a82415d56" version="1">Vicious Condemnation</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330asdf8584" version="3">Affected weapon deals an additional [1] and may &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugate&lt;/LSTag&gt; other creatures upon dealing damage.</content>
+
+	<content contentuid="hb27de5a4g2331g490cgbbd5g86200d79a878" version="1">Turn the Living</content>
+	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5d38aasdf5" version="3">Raise all corpses within [1] of you as Shadow servants until the end of your current combat encounter.</content>
+	<content contentuid="heb5cd4e1g2b8bg4fd7ga15bgc13cbd621245" version="1">Drain Life</content>
+	<content contentuid="hfedc0248gd215g47d3gbeaag829f4db66858" version="3">Drain the life essecnce from a target of your choice.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gaasdfafasdfa" version="1">Vicious Subjugation</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1sdfsdddfsdd" version="3">&lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; enemies deal the maximum amount of damage possible when dealing damage to another creature.</content>
+
+	<content contentuid="h927a9140g56d3g460fg9314g40fbd232b361" version="2">Aura of Hate</content>
+	<content contentuid="h0c2bc9a2g8e6bg4550ga8b9gfba7b2e8462d" version="7">Emit an aura across [1] which grants yourself, &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; creatures, and nearby Undead an additional [2] to all damage dealt.</content>
+	<content contentuid="h8aa4cdf9ga9e7g46d5gb7a1gb32901defe3c" version="2">Aura of Hate</content>
+	<content contentuid="h1b60bee0geb62g4184ga679g1e7f6de42926" version="3">Affected creature is emitting an aura across [1] which grants this creature, &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; creatures, and nearby Undead an additional [2] to all damage dealt.</content>
+	<content contentuid="hfa4ad8dfge9efg4f7fg8bc2g664c49a83964" version="2">Aura of Hate</content>
+	<content contentuid="hb90cac90gf224g4f5dg85aeg85fb08a983d9" version="3">Deals an additional [2] while within [1] of the Paladin responsible for this status.</content>
+
+	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8af1a141" version="1">Oathbreaker Supreme</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4asd141" version="3">In addition to raising Shadow servants, &lt;LSTag Type="Spell" Tooltip="Shout_TurnTheLiving"&gt;Turn the Living&lt;/LSTag&gt; now &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrifies&lt;/LSTag&gt; living creatures for one turn.</content>
+
+<!--PASSIVES-->
+
+  <content contentuid="9b7b811b9c3043e189f945540bf5116e00007" version="3">Refined Adjudications</content>
+  <content contentuid="9b7b811b9c3043e189f945540bf5116e0000g" version="3">With renewed purpose, you stand as the bulwark of conviction.&lt;br&gt;A raging darkness ever lingering beyond the precipice.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de2a621" version="3">Atonement</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de6a954" version="3">Upon expending one of your &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charges, you have a 33% chance to recover one of your &lt;LSTag Type="ActionResource" Tooltip="WarPriestActionPoint"&gt;Crusader's Smite&lt;/LSTag&gt; charges. Additionally, upon expending one of your Crusader's Smite charges, you have a 33% chance to recover one of your Channel Oath charges.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de659aa" version="3">Critical Oath</content>
+  <content contentuid="fe6f4159abae42539029e284001d12desdf64" version="3">Once per turn, upon rolling a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, immediately restore one of your &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charges.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00009" version="3">Death Sentence</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000i" version="3">Once per turn, landing a killing blow on an enemy will restore a &lt;LSTag Type="ActionResource" Tooltip="WarPriestActionPoint"&gt;Crusader's Smite&lt;/LSTag&gt; charge.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00001" version="3">Divine Health</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000a" version="3">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison and Necrotic damage. Once per turn, landing a killing blow on an enemy will restore +1d6 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00002" version="3">Divine Resurgence</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000b" version="3">While in combat, restore one &lt;LSTag Type="ActionResource" Tooltip="WarPriestActionPoint"&gt;Crusader's Smite&lt;/LSTag&gt; charge every three turns.</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de000z2" version="3">Divine Resurgence</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de000zb" version="3">Affected creature will recover one &lt;LSTag Type="ActionResource" Tooltip="WarPriestActionPoint"&gt;Crusader's Smite&lt;/LSTag&gt; charge when this status expires.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00003" version="3">Divine Sense</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000c" version="3">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against Aberrations, Fey, Fiends and Undead.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00004" version="3">Divine Shielding</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000d" version="3">Upon taking physical damage, become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to that type of physical damage until the start of your next turn.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00005" version="3">Holy Smites</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000e" version="3">Once per turn, upon damaging another creature with one of your Smites, holy energy erupts around you, healing allies within [1] of you. The amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; restored scales with the strength of your Smites.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00006" version="3">Holy Wrath</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000f" version="3">Once per turn, upon damaging another creature with one of your Smites, gain &lt;LSTag Type="Status" Tooltip="DIVINE_FAVOR"&gt;Divine Favor&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="SHIELD_OF_FAITH"&gt;Shield of Faith&lt;/LSTag&gt; for three turns.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00007" version="3">Infallible Beacon</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000g" version="3">During combat, emit an aura across [1], forcing a -1d4 penalty on enemy &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; when made against anyone but you.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00008" version="3">Lay On Hands</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000h" version="3">Use your &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charges to imbue your hands with divine power, healing a target, or curing them of any poisons and disease.</content>
+  <content contentuid="h13826709gf888g4a58gbd2eg44c87eb0a527" version="1">Lay on Hands: Healing</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00018" version="3">Oath Channeling</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000r" version="3">Expend &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charges in order to recover &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt;.</content>
+  <content contentuid="h7d59230fg2bf7g436dgb436g08e0b4e64a84" version="3">Oath Channeling</content>
+  <content contentuid="h55bbf5cbg00d0g4cc7gad26g80b943e6a848" version="3">Expend &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charges in order to recover &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt;.</content>
+  <content contentuid="h7d59230fg2bf7g436dgb436g08e0b4e64a85" version="3">Lesser Oath Channeling</content>
+  <content contentuid="h55bbf5cbg00d0g4cc7gad26g80b943e6a845" version="3">Expend one of your &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charges in order to recover a level one &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+  <content contentuid="h7d59230fg2bf7g436dgb436g08e0b4e64a86" version="3">Moderate Oath Channeling</content>
+  <content contentuid="h55bbf5cbg00d0g4cc7gad26g80b943e6a846" version="3">Expend two of your &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charges in order to recover a level two &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+  <content contentuid="h7d59230fg2bf7g436dgb436g08e0b4e64a87" version="3">Greater Oath Channeling</content>
+  <content contentuid="h55bbf5cbg00d0g4cc7gad26g80b943e6a847" version="3">Expend three of your &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charges in order to recover a level three &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de9s90s" version="3">Oathbound Renewal</content>
+  <content contentuid="fe6f4159abae42539029e284001d12deafioi" version="3">While in combat, restore one &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charge every three turns.</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de9s90f" version="3">Oathbound Renewal</content>
+  <content contentuid="fe6f4159abae42539029e284001d12deafiow" version="3">Affected creature will recover one &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charge when this status expires.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00010" version="3">Principle of Belief</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000j" version="3">On any successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against Aberrations, Fey, Fiends, or Undead, deal an additional +1d12 Radiant damage. This passive has no effect when targeting enemies with &lt;LSTag Type="Status" Tooltip="DAMAGE_SHIELD_NPC_RADIANT"&gt;Radiant Retort&lt;/LSTag&gt;.</content>
+
+  <content contentuid="h3e63e6aag19b0g400agb559g2e125483261f" version="3">Repel the Damned</content>
+  <content contentuid="h90dc6c92g4bdag440cg8119g6a95df4567cf" version="3">All enemies within [1] of you take Radiant damage at the start of their turns equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
+
+  <content contentuid="h3e63e6aag19b0g400agb559g2e125489a321" version="3">Resplendent Reverb</content>
+  <content contentuid="h90dc6c92g4bdag440cg8119g6a95df4adf44" version="3">Healing another creature with a Spell immediately causes an additional heal for yourself equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt; multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00017" version="3">Smite Makes Right</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000q" version="3">Once per turn, upon killing an enemy with a Smite, you recover one &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charge.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00019" version="3">Stalwart Eruption</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000s" version="3">Once per turn, upon killing an enemy with a Smite, automatically gain &lt;LSTag Type="Status" Tooltip="HEROISM"&gt;Heroism&lt;/LSTag&gt; for three turns.</content>
+
+  <content contentuid="9b7b811b9c3043e189f945540bf5116e2a623" version="3">Stalwart Resolve</content>
+  <content contentuid="9b7b811b9c3043e189f945540bf5116easdf9" version="3">All elemental damage taken is reduced by an amount equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
+
+  <content contentuid="fe6f4159abae42539029e284001d12de00020" version="3">Visage of Sanctity</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000t" version="3">Gain a bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
+
+</contentList>

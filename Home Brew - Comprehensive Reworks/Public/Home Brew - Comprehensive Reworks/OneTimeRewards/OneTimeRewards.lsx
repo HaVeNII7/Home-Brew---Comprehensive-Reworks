@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="OneTimeRewards">
+        <node id="root">
+            <children>
+                <node id="OneTimeReward">
+                    <attribute id="Amount" type="uint32" value="1"/>
+                    <attribute id="ItemTemplateId" type="FixedString" value="749cd080-b7e4-473d-9b99-b1fbf7c55f65"/>
+                    <attribute id="UUID" type="guid" value="0839d3a1-fc2c-40b2-bee6-ff2d5f2d5f68"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

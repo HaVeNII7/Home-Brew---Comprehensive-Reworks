@@ -1,0 +1,366 @@
+<!--BARBARIAN-->
+
+new entry "ClassProgression_Beastheart"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00011;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0001a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Berserker"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00012;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0001b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_GiantsBlood"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00013;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0001c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_WildSoul"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00014;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0001d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--BARD-->
+
+new entry "ClassProgression_Captivation"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00021;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0002a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Lore"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00022;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0002b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Steel"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00023;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0002c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Valour"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00024;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0002d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--CLERIC-->
+
+new entry "ClassProgression_Death"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00031;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0003a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Life"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00032;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0003b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Tempest"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00033;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0003c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_War"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00034;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0003d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--DRUID-->
+
+new entry "ClassProgression_Land"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00041;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0004a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Moon"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00042;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0004b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Spores"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00043;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0004c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Stars"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00044;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0004d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--FIGHTER-->
+
+new entry "ClassProgression_ArcaneArcher"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00051;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0005a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Champion"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00052;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0005b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_EldritchKnight"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00053;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0005c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_FrontierKnight"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00054;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0005d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--MONK-->
+
+new entry "ClassProgression_WayoftheArcane"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00061;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0006a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_WayoftheDrunkenFist"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00062;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0006b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_WayoftheOpenHand"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00063;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0006c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_WayoftheShadowArts"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00064;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0006d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--PALADIN-->
+
+new entry "ClassProgression_OathofAncients"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00071;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0007a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_OathoftheCrown"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00072;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0007b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_OathofDevotion"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00073;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0007c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_OathofVengeance"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00074;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0007d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Oathbreaker"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00075;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0007e;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--RANGER-->
+
+new entry "ClassProgression_Hunter"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00081;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0008a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Beastmaster"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00082;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0008b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Gloomstalker"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00083;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0008c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Swarmkeeper"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00084;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0008d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--ROGUE-->
+
+new entry "ClassProgression_ArcaneTrickster"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00091;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0009a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Assassin"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00092;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0009b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Swashbuckler"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00093;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0009c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Thief"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00094;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0009d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--SORCERER-->
+
+new entry "ClassProgression_DraconicBloodline"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00101;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0010a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_ShadeWalker"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00102;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0010b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_StormSorcery"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00103;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0010c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_WildMagic"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00104;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0010d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--WARLOCK-->
+
+new entry "ClassProgression_PactoftheBlade"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00111;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0011a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_PactoftheChain"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00112;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0011b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_PactofPenumbra"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00113;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0011c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_PactoftheTome"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00114;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0011d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+<!--WIZARD-->
+
+new entry "ClassProgression_Arcblade"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00121;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0012a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_ArcaneWarden"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00122;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0012b;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Evoker"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00123;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0012c;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
+new entry "ClassProgression_Necromancy"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00124;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f0012d;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"

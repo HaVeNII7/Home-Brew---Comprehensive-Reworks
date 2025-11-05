@@ -1,0 +1,23 @@
+new entry "MAG_HAV_Sylvan_Scimitar"
+type "Weapon"
+using "WPN_Scimitar_1"
+data "RootTemplate" "b9656931-da39-4024-92a2-f45264593b14"
+data "ValueUUID" "86e7e503-a225-4b48-819e-2e24de1f904a"
+data "PassivesOnEquip" "FreeHandling;Natures_Mercy_Item"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT);WeaponEnchantment(1)"
+data "Rarity" "Rare"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+data "Unique" "1"
+
+<!--ITEM VARIANT - DRUID REWORK-->
+
+new entry "Natures_Mercy_Item"
+type "PassiveData"
+data "DisplayName" "ba8dc90c6dd042ee918bba2f68d3491200012;1"
+data "Description" "ba8dc90c6dd042ee918bba2f68d349120000l;1"
+data "Icon" "PassiveFeature_NaturesWard"
+data "Properties" "Highlighted;ForceShowInCC"
+data "BoostConditions" "not HasPassive('Natures_Mercy', context.Source)"
+data "Boosts" "Resistance(Cold, Resistant);Resistance(Fire, Resistant);Resistance(Lightning, Resistant)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

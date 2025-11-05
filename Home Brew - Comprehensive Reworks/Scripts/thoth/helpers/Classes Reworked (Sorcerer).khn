@@ -1,0 +1,131 @@
+local __util = require 'larian.util'
+
+function DamagingSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage)
+end
+
+function CarefulSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasStringInSpellRoll('SavingThrow')
+end
+
+function DistantSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & TargetRadiusGreaterThan(1.5)
+end
+
+function DistantTouchSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & TargetRadiusGreaterThan(0) & ~TargetRadiusGreaterThan(1.5)
+end
+
+function ExtendedSpellCheck()
+	return HasSpellFlag(SpellFlags.Spell) & ((HasExtendableStatus() & HasDuration(StatsFunctorType.Status, 0)) | HasDuration(StatsFunctorType.Summon, 0) | HasDuration(StatsFunctorType.SummonInInventory, 0) | HasDuration(StatsFunctorType.CreateSurface, 0))
+end
+
+function FavoredSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll()
+end
+
+function HeightenedSpellCheck()
+    return (HasStringInSpellRoll('SavingThrow') | HasStringInFunctorConditions('SavingThrow') | HasStringInSpellRoll('SpellAutoResolveOnAlly') | HasStringInSpellRoll('SpellAutoResolveOnCharmed') | HasStringInSpellRoll('HeatMetalInitialCheck') | HasStringInSpellRoll('HeatMetalReapplyCheck')) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
+end
+
+function QuickenedSpellCheck()
+    return HasUseCosts('ActionPoint') & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
+end
+
+function QuickenedCantripCheck()
+    return IsCantrip() & QuickenedSpellCheck()
+end
+
+function RestorativeSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & ~NumberOfTargetsGreaterThan(1) & ~AreaRadiusGreaterThan(0)
+end
+
+function SeekingSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll()
+end
+
+function SubtleSpellCheck()
+    return HasSpellFlag(SpellFlags.Verbal) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
+end
+
+function TempestuousSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & HasFunctor(StatsFunctorType.DealDamage) & HasAttackRoll()
+end
+
+function TwinnedProjectileSpellCheck()
+    return ~NumberOfTargetsGreaterThan(1) & ~AreaRadiusGreaterThan(0) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities()) & SpellTypeIs(SpellType.Projectile) & ~MetamagicExclusionSpells() & ~IsSpellChildOrVariantFromContext('Projectile_WitchBolt') & ~IsSpellChildOrVariantFromContext('Projectile_ChainLightning')
+end
+
+function CustomTwinnedProjectileSpellCheck()
+    return HasSpellFlag(SpellFlags.Spell) & ~NumberOfTargetsGreaterThan(1) & ~SpellTypeIs(SpellType.Shout) & ~SpellTypeIs(SpellType.Teleportation) & ~SpellTypeIs(SpellType.Throw) & ~SpellTypeIs(SpellType.Wall) & ~SpellTypeIs(SpellType.Zone) & ~TwinnedExclusionSpells()
+end
+
+function TwinnedExclusionSpells()
+	return SpellId('Target_MinorIllusion')
+		| SpellId('Target_Resistance')
+		| SpellId('Projectile_Warpstone')
+		| SpellId('Target_ArcaneVortex')
+		| SpellId('Shout_Blink')
+		| SpellId('Target_Daylight')
+		| SpellId('Target_ElementalWeapon_Acid')
+		| SpellId('Target_ElementalWeapon_Cold')
+		| SpellId('Target_ElementalWeapon_Fire')
+		| SpellId('Target_ElementalWeapon_Lightning')
+		| SpellId('Target_ElementalWeapon_Thunder')
+		| SpellId('Target_ElementalWeapon_Acid_2')
+		| SpellId('Target_ElementalWeapon_Cold_2')
+		| SpellId('Target_ElementalWeapon_Fire_2')
+		| SpellId('Target_ElementalWeapon_Lightning_2')
+		| SpellId('Target_ElementalWeapon_Thunder_2')
+		| SpellId('Target_ElementalWeapon_Acid_3')
+		| SpellId('Target_ElementalWeapon_Cold_3')
+		| SpellId('Target_ElementalWeapon_Fire_3')
+		| SpellId('Target_ElementalWeapon_Lightning_3')
+		| SpellId('Target_ElementalWeapon_Thunder_3')
+		| SpellId('Target_ElementalWeapon_Acid_4')
+		| SpellId('Target_ElementalWeapon_Cold_4')
+		| SpellId('Target_ElementalWeapon_Fire_4')
+		| SpellId('Target_ElementalWeapon_Lightning_4')
+		| SpellId('Target_ElementalWeapon_Thunder_4')
+		| SpellId('Target_ElementalWeapon_Acid_5')
+		| SpellId('Target_ElementalWeapon_Cold_5')
+		| SpellId('Target_ElementalWeapon_Fire_5')
+		| SpellId('Target_ElementalWeapon_Lightning_5')
+		| SpellId('Target_ElementalWeapon_Thunder_5')
+		| SpellId('Target_ElementalWeapon_Acid_6')
+		| SpellId('Target_ElementalWeapon_Cold_6')
+		| SpellId('Target_ElementalWeapon_Fire_6')
+		| SpellId('Target_ElementalWeapon_Lightning_6')
+		| SpellId('Target_ElementalWeapon_Thunder_6')
+end
+
+function TwinnedTargetSpellCheck()
+    return ~NumberOfTargetsGreaterThan(1) & TargetRadiusGreaterThan(1.5) & ~AreaRadiusGreaterThan(0) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities()) & SpellTypeIs(SpellType.Target) & ~HasFunctor(StatsFunctorType.Summon) & ~MetamagicExclusionSpells()
+end
+
+function TwinnedTargetTouchSpellCheck()
+    return ~NumberOfTargetsGreaterThan(1) & TargetRadiusGreaterThan(0) & ~TargetRadiusGreaterThan(1.5) & ~AreaRadiusGreaterThan(0) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities()) & SpellTypeIs(SpellType.Target) & ~HasFunctor(StatsFunctorType.Summon) & ~MetamagicExclusionSpells()
+end
+
+function TwinnedProjectileSpellCheckReaper()
+    return TwinnedProjectileSpellCheck() & ~SpellId('Target_TollTheDead') & ~SpellId('Target_ChillTouch')
+end
+
+function TwinnedTargetSpellCheckReaper()
+    return TwinnedTargetSpellCheck() & ~SpellId('Target_TollTheDead') & ~SpellId('Target_ChillTouch')
+end
+
+function TwinnedTargetTouchSpellCheckReaper()
+    return TwinnedTargetTouchSpellCheck() & ~SpellId('Target_TollTheDead') & ~SpellId('Target_ChillTouch')
+end
+
+function CreationaryCheck()
+    return SpellId('Shout_CreateSorceryPoints_1') | SpellId('Shout_CreateSorceryPoints_2') | SpellId('Shout_CreateSorceryPoints_3')
+    | SpellId('Shout_CreateSorceryPoints_4') | SpellId('Shout_CreateSorceryPoints_5') | SpellId('Shout_CreateSorceryPoints_6')
+    | SpellId('Shout_CreateSpellSlot_1') | SpellId('Shout_CreateSpellSlot_2') | SpellId('Shout_CreateSpellSlot_3')
+	| SpellId('Shout_CreateSpellSlot_4') | SpellId('Shout_CreateSpellSlot_5') | SpellId('Shout_CreateSpellSlot_6')
+    | SpellId('Shout_CreateSorceryPointsLVL2') | SpellId('Shout_CreateSorceryPointsLVL3') | SpellId('Shout_CreateSorceryPointsLVL4')
+	| SpellId('Shout_CreateSorceryPointsLVL5') | SpellId('Shout_CreateSorceryPointsLVL6') | SpellId('Shout_CreateSpellSlotLVL2')
+    | SpellId('Shout_CreateSpellSlotLVL3') | SpellId('Shout_CreateSpellSlotLVL4') | SpellId('Shout_CreateSpellSlotLVL5')
+	| SpellId('Shout_CreateSpellSlotLVL6')
+end

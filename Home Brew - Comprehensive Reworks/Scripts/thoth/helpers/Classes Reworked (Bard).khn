@@ -1,0 +1,16 @@
+local __util = require 'larian.util'
+
+function IsPerformanceSpell()
+    return SpellId('Shout_Bard_Perform_ThePower_Whistle') | SpellId('Shout_Bard_Perform_Stargazing_Whistle') | SpellId('Shout_Bard_Perform_BardDance_Whistle')
+    | SpellId('Shout_Bard_Perform_DOS2_1_Whistle') | SpellId('Shout_Bard_Perform_DOS2_2_Whistle') | SpellId('Shout_Bard_Perform_DOS2_3_Whistle')
+    | SpellId('Shout_Bard_Perform_ThePower_Drum') | SpellId('Shout_Bard_Perform_Stargazing_Drum') | SpellId('Shout_Bard_Perform_BardDance_Drum')
+    | SpellId('Shout_Bard_Perform_DOS2_1_Drum') | SpellId('Shout_Bard_Perform_DOS2_2_Drum') | SpellId('Shout_Bard_Perform_DOS2_3_Drum')
+    | SpellId('Shout_Bard_Perform_ThePower_Flute') | SpellId('Shout_Bard_Perform_Stargazing_Flute') | SpellId('Shout_Bard_Perform_BardDance_Flute')
+    | SpellId('Shout_Bard_Perform_DOS2_1_Flute') | SpellId('Shout_Bard_Perform_DOS2_2_Flute') | SpellId('Shout_Bard_Perform_DOS2_3_Flute')
+    | SpellId('Shout_Bard_Perform_ThePower_Lute') | SpellId('Shout_Bard_Perform_Stargazing_Lute') | SpellId('Shout_Bard_Perform_BardDance_Lute')
+    | SpellId('Shout_Bard_Perform_DOS2_1_Lute') | SpellId('Shout_Bard_Perform_DOS2_2_Lute') | SpellId('Shout_Bard_Perform_DOS2_3_Lute')
+    | SpellId('Shout_Bard_Perform_ThePower_Lyre') | SpellId('Shout_Bard_Perform_Stargazing_Lyre') | SpellId('Shout_Bard_Perform_BardDance_Lyre')
+    | SpellId('Shout_Bard_Perform_DOS2_1_Lyre') | SpellId('Shout_Bard_Perform_DOS2_2_Lyre') | SpellId('Shout_Bard_Perform_DOS2_3_Lyre')
+    | SpellId('Shout_Bard_Perform_ThePower_Violin') | SpellId('Shout_Bard_Perform_Stargazing_Violin') | SpellId('Shout_Bard_Perform_BardDance_Violin')
+    | SpellId('Shout_Bard_Perform_DOS2_1_Violin') | SpellId('Shout_Bard_Perform_DOS2_2_Violin') | SpellId('Shout_Bard_Perform_DOS2_3_Violin')
+end

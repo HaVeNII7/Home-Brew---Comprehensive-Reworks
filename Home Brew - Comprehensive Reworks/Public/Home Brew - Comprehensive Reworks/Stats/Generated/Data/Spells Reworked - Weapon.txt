@@ -1,0 +1,8 @@
+new entry "WPN_Shortbow_Skeleton_AnimateDead"
+type "Weapon"
+using "WPN_Shortbow"
+data "RootTemplate" "82992370-cb61-4381-b390-891a3a9bd075"
+data "Damage" "1d12"
+data "GameSize" "Medium"
+data "DefaultBoosts" ""
+data "BoostsOnEquipMainHand" ""

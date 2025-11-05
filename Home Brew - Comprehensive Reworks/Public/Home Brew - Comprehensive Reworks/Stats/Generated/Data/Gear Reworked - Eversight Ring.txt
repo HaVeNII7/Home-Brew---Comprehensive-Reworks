@@ -1,0 +1,22 @@
+new entry "MAG_Shadow_BlindImmunity_Ring"
+type "Armor"
+using "_Ring_Magic"
+data "RootTemplate" "0661eb9b-0924-450d-923b-1e371de444ae"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "Sharp_Eyes_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - ROGUE REWORK-->
+
+new entry "Sharp_Eyes_Item"
+type "PassiveData"
+data "DisplayName" "d3e15e63749c4b62b8e7760cc707412000015;1"
+data "Description" "d3e15e63749c4b62b8e7760cc70741200000o;2"
+data "Icon" "PassiveFeature_NaturallyStealthy"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "RollBonus(SkillCheck, 20, Perception);RollBonus(SkillCheck, 20, Insight);"
+data "BoostConditions" "not HasPassive('Sharp_Eyes', context.Source)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

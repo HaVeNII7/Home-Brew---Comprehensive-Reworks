@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+<!--WARLOCK-->
+
+	<content contentuid="9b7b811b9c3043e189f945540bf56sd8552e5" version="5">Pact Binding</content>
+	<content contentuid="9b7b811b9c3043e189f945540bawes4d8e568" version="1">Pacts can forge a Warlock's soul to a creature, object, or concept. Who or what have you signed your soul to?</content>
+
+	<content contentuid="hcbb02b5238r79we8fu384983487f48f48d01" version="6">The Archfey</content>
+	<content contentuid="hcbb02b5238r79we8fu384983487f48f48d0a" version="1">Pledge yourself to an ancient fey spirit, and the sumptuous and scary qualities of their extraordinary realm.</content>
+
+	<content contentuid="hcbb02b5238r79we8fu384983487f48f48d02" version="6">The Fiend</content>
+	<content contentuid="hcbb02b5238r79we8fu384983487f48f48d0b" version="1">Pledge your soul to the Hells and their deadly arsenal of fiendish arcana.</content>
+
+	<content contentuid="hcbb02b5238r79we8fu384983487f48f48d03" version="6">The Great Old One</content>
+	<content contentuid="hcbb02b5238r79we8fu384983487f48f48d0c" version="1">Pledge your soul to something unthinkable - an unspeakably ancient entity of entropy and control.</content>
+
+	<content contentuid="hcbb02b5238r79we8fu384983487f48f48d04" version="6">The Shadow</content>
+	<content contentuid="hcbb02b5238r79we8fu384983487f48f48d0d" version="1">Pledge your soul to the Shadowfell - a force that manifests within sentient darkness.</content>
+
+	<content contentuid="hb0fbe645ge1dbg4106g99bege9cf3922358a" version="3">Conjure a beam of crackling energy.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74699dld8" version="6">Eldritch Secrets</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af59666q32d" version="1">You are privy to the indescribable horrors of the universe, and as such, are able to channel an inkling of their influence. You gain &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c7ss600001" version="5">Serrated Hematic Invocation</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5dd20000a" version="1">Sacrifice 10% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; to an Eldritch abomination in order to restore a &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;While abiding by the Pact of the Blade, you wreathe your equipped weapon in &lt;LSTag Type="Status" Tooltip="HELLFIRE"&gt;Hellfire&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c7ss600002" version="5">Chained Hematic Invocation</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5dd20000b" version="1">Sacrifice 10% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; to an Eldritch abomination in order to restore a &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;While abiding by the Pact of the Chain, you recover one use of &lt;LSTag Type="ActionResource" Tooltip="ChainedBonds"&gt;Chained Bonds&lt;/LSTag&gt; and extend the duration Greater Chained Companions may remain active by three turns.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c7ss600003" version="5">Penumbral Hematic Invocation</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5dd20000c" version="1">Sacrifice 10% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; to an Eldritch abomination in order to restore a &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;While abiding by the Pact of Penumbra, you extend your state of &lt;LSTag Type="Status" Tooltip="PENUMBRA_LIGHT"&gt;Penumbral Light&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="PENUMBRA_DARK"&gt;Penumbral Darkness&lt;/LSTag&gt; by one turn, as well as detonate nearby &lt;LSTag Type="Status" Tooltip="ELDRITCH_BOMB"&gt;Eldritch Bombs&lt;/LSTag&gt;.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c7ss600004" version="5">Eldritch Hematic Invocation</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5dd20000d" version="1">Sacrifice 10% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; to an Eldritch abomination in order to restore a &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;While abiding by the Pact of the Tome, you may cast your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; once as a free action.</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5dd222254" version="1">&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Bargaining your life in this way renders your maximum Hit Points lowered until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c7ss65d6f6" version="5">Hematic Invocation</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5dd222d64" version="1">Affected creature's maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; have been reduced by 10% per stack of Hematic Invocation.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c746993kd8" version="5">Mystic Arcanum</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596601lss" version="1">On your first turn of any combat encounter, restore one &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb76a6655d2f5" version="5">Eldritch Empowerment</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af59sdfsd88" version="1">When dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you deal an additional +1d12 damage.</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af59sd6a212" version="1">When dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you deal an additional +1d12 damage. This can be toggled at any time.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c746993kd9" version="5">Deepened Arcanum</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596601lst" version="1">On your first turn of any combat encounter, restore two &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slots&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb75a66d852ff" version="5">Improved Eldritch Empowerment</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0affsdfs99fe" version="1">When dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you deal an additional +2d12 damage.</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0affsdfdd2f5" version="1">When dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you deal an additional +2d12 damage. This can be toggled at any time.</content>
+
+	<content contentuid="h0da46890gdf01g4aafg8838g448555deb977" version="3">Eldritch Inertia</content>
+	<content contentuid="h02b7f6d6gab29g416dgbb6bge805faa146ca" version="3">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+
+<!--PACT OF THE BLADE-->
+
+	<content contentuid="h7fd64569g90e0g4b80g8709g57bc86f29fdf" version="1">Pact of
+the Blade</content>
+	<content contentuid="hea96e5bfg6fabg48e3g81b0gc950ae10556f" version="1">Pact of the Blade</content>
+
+	<content contentuid="hdaab7880g17afg4e6bg92a2gefb96ec722ca" version="1">Your Pact manifests as raw power in way of a weapon of choice, bound to your very being.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a913" version="5">Pact of the Blade</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjm" version="1">Gain the ability to &lt;LSTag Type="Spell" Tooltip="Shout_PactOfTheBlade_Bind"&gt;Bind&lt;/LSTag&gt; your equipped weapon, wreathing it in hellfire upon killing other creatures.</content>
+	<content contentuid="h3b3b7fcbg4167g4f90gb900g842334ea59c8" version="2">Pact Weapon</content>
+	<content contentuid="h65110eecgba48g4172g8b63g84426af8b77c" version="4">Your melee or ranged weapons become magical, utilizing your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.&lt;br&gt;&lt;br&gt;Upon killing another creature or landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your Pact Weapon, the weapon become wreathed in flame for three turns.</content>
+	<content contentuid="h3b3b7fcbg4167g4f90gb900g84233afsdf2d" version="2">Pact Weapon (Melee)</content>
+	<content contentuid="h65110eecgba48g4172g8b63g84426asdfa68" version="4">Your melee weapons become magical, utilizing your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.&lt;br&gt;&lt;br&gt;Upon killing another creature or landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your Pact Weapon, the weapon become wreathed in flame for three turns.</content>
+	<content contentuid="h3b3b7fcbg4167g4f90gb900g842334s33s55" version="2">Pact Weapon (Ranged)</content>
+	<content contentuid="h65110eecgba48g4172g8b63g84426s3s5881" version="4">Your ranged weapons become magical, utilizing your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.&lt;br&gt;&lt;br&gt;Upon killing another creature or landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your Pact Weapon, the weapon become wreathed in flame for three turns.</content>
+	<content contentuid="h7ac40bcag9679g46f0gb54fg093c562a9b66" version="2">Pact Weapon</content>
+	<content contentuid="hb5821feag2ff1g4781gbae9g883a69741d6a" version="10">Affected weapon has become magical, utilizing its owners &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.&lt;br&gt;&lt;br&gt;Upon killing another creature or landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, this weapon will become wreathed in flame for three turns.</content>
+	<content contentuid="h7ac40bcag9679g46f0gb54fg093c5629a784" version="3">Hellfire</content>
+	<content contentuid="hb5821feag2ff1g4781gbae9g883a6976a454" version="2">Affected creature's weapons have become wreathed in flame, and now deals additional damage.</content>
+
+	<content contentuid="hecba1ef0g88beg401bg869dg6de6ba5eba40" version="1">Dark One's Blessing</content>
+	<content contentuid="hf690b23dg039ag4befg90a1g18e279b05184" version="2">Once per turn, upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, your patron will grant you &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt; added to your level.</content>
+
+	<content contentuid="h2d527f55g3322g4492g9b6eg692418bac609" version="2">Entropic Resonation</content>
+	<content contentuid="ha736d140g3d03g4279g8386g07f2a1cd07ad" version="2">When an aggressor fails an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, they receive &lt;LSTag Type="Status" Tooltip="ENTROPIC_WARD"&gt;Entropy&lt;/LSTag&gt;. Upon landing a killing blow against a target with Entropy, all other targets within [1] must succeed a &lt;LSTag Tooltip="Wisdom"&gt;Wisdom&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, or become &lt;LSTag Type="Status" Tooltip="HOLD_MONSTER"&gt;Held&lt;/LSTag&gt; in place.</content>
+	<content contentuid="h7c9c9a8dg3a11g409bg85cbga0a0a8716fa1" version="2">Entropy</content>
+	<content contentuid="h4751a47bg2d3dg4325g927cgceb50cad6261" version="2">If killed by a Warlock possessing the Entropic Resonation passive, all enemies within [1] must succeed a Charisma based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="HOLD_MONSTER"&gt;Held&lt;/LSTag&gt; in place.</content>
+
+	<content contentuid="h0527734cgb2d7g4989ga2dfg7797774aa33e" version="2">Eldritch Inferno</content>
+	<content contentuid="h41857a35g9f0fg44f6gadaagc1a4b73a7ab1" version="3">Every three turns, you erupt in an Eldritch Inferno, dealing [1] to all enemies within [2]. Landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; reduces the time it takes to erupt by one turn.</content>
+	<content contentuid="h0527734cgb2d7g4989ga2dfg779777465452" version="2">Eldritch Inferno</content>
+	<content contentuid="h41857a35g9f0fg44f6gadaagc1a4b7dfd885" version="3">Affected creature will erupt in an Eldritch Inferno upon the expiration of this condition, dealing [1] to all enemies within [2].</content>
+
+<!--PACT OF THE CHAIN-->
+
+	<content contentuid="h77ad8d20g255bg475egbfcfgf3a5ea0dc4d0" version="1">Chained to something unknowable and fierce, your power now lies within your ability to summon and control hellish minions, from imps to undead dragons.</content>
+
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg483838d99a85" version="1">WARLOCKCOMPANION</content>
+	<content contentuid="hffaccf0ag0569g4b24gb7bfg483838da6a88" version="1">WARLOCKCOMPANIONTAGFORWARLOCKOVERHAUL</content>
+
+	<content contentuid="791a0319eeed4e25949847ad3a0d5s65d4fs5" version="4">Chained Bonds</content>
+	<content contentuid="791a0319eeed4e25949847ad3a0d9s8df879s" version="4">Utilized to summon &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt;. Using &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt; will restore one charge and extend the duration that Greater Chained Companions can remain active by one turn.</content>
+
+	<content contentuid="791a0319eeed4e25949847ad3a0dd16a95211" version="4">Chained Binding</content>
+	<content contentuid="791a0319eeed4e25949847ad3a0dd1aaa69a5" version="4">Affected creature is benefiting from one or more passives provided by its summoning Warlock.</content>
+
+	<content contentuid="66706bd4b60a4ca88b703f3a2sdf1s2fd1545" version="4">Chained Fate</content>
+	<content contentuid="66706bd4b60a4ca88b703as8d79f4s5d54854" version="4">Affected creature will die once this status expires.</content>
+
+	<content contentuid="h0caa271dg838fg43cfgbb0bg029e8f6a9522" version="1">Chained Bond</content>
+	<content contentuid="hf2d30149g1349g4008g9807g5325699a99ef" version="1">A binding pact links you and your &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt;, preventing your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; from harming them. Their stats increase for each of your Warlock levels.&lt;br&gt;&lt;br&gt;In addition, your Chained Companions will gain various passive effects depending on the passives that you receive while leveling.</content>
+
+	<content contentuid="h226b878egbd1cg4ce3g8390g1dfe09e916bc" version="1">Pact of the Chain</content>
+	<content contentuid="h452aaefagda0eg4269gb4bbg773479ca789f" version="1">Pact of the Chain</content>
+	<content contentuid="h90e380a7g9f24g4ee6gb1a1g34eac5619afa" version="1">Pact of
+the Chain</content>
+
+	<content contentuid="hb0fbe645ge1dbg4106g99bege9idkss97621" version="3">Chained Companion</content>
+
+	<content contentuid="hd5d7ec65g330cg4e29g9de6g8bdd40911245" version="1">Conjure Chained Companion</content>
+	<content contentuid="h1dafa968g4a9eg4b70g824cg440060e66d54" version="2">Summon a familiar, bound and chained to your will. Your familiars grow in strength alongside you as you level.</content>
+
+	<content contentuid="hd5d7ec65g330cg4e29g9de6g8bdd409318c2" version="1">Conjure Chained Companion: Imp</content>
+	<content contentuid="h1dafa968g4a9eg4b70g824cg440060efb16f" version="2">Summon a familiar with the form of an Imp.</content>
+
+	<content contentuid="hb5ba3466g5481g4063g9d80gd705e7009323" version="1">Conjure Chained Companion: Quasit</content>
+	<content contentuid="h010ce391gad3dg4d82g89e3g30d9938fcac6" version="3">Summon a familiar with the form of a Quasit.</content>
+
+	<content contentuid="h2a5824beg994bg4bdcg9519gad472f453a0a" version="3">Summon Cheeky Quasit</content>
+	<content contentuid="h010ce391gad3dg4d82g89e3g30d9dd5f6d8f" version="3">Summon a cheeky familiar with the form of a foul-mouthed Quasit.</content>
+
+	<content contentuid="hb5ba3466g5481g4063g9d80gd705e7022d58" version="1">Conjure Chained Companion: Hellboar</content>
+	<content contentuid="h010ce391gad3dg4d82g89e3g30d9938ffd87" version="3">Summon a familiar with the form of a Hellboar.</content>
+
+	<content contentuid="hb5ba3466g5481g4063g9d80gd73s6d5f9s78" version="1">Conjure Chained Companion: Cambion</content>
+	<content contentuid="h010ce391gad3dg4d82g89e3g302389d8fsdf" version="3">Summon a familiar with the form of a Cambion.</content>
+
+	<content contentuid="hb5ba3466g5481g4063g9d80gd73s6d4f5d84" version="1">Conjure Chained Companion: Azer</content>
+	<content contentuid="h010ce391gad3dg4d82g89e3g30kkdif9d98e" version="3">Summon a familiar with the form of a Azer.</content>
+
+	<content contentuid="hb5ba3466g5481g4063g9d80gd7ff6s9d8f55" version="1">Conjure Chained Companion: Succubus</content>
+	<content contentuid="h010ce391gad3dg4d82g89e3g30332d8f4599" version="3">Summon a familiar with the form of a Succubus.</content>
+
+	<content contentuid="hb5ba3466g5481g4063g9d80gd73s6d522588" version="1">Conjure Greater Chained Companion: Orthon</content>
+	<content contentuid="h010ce391gad3dg4d82g89e3g302389d6s999" version="3">Summon a familiar with the form of a Orthon.&lt;br&gt;&lt;br&gt;The power required to maintain such a creature is overwhelmingly intense. As such, this creature will only persist for three turns. You may extend this duration by one turn each time you cast &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt; within [1] of your Chained Companion.</content>
+	<content contentuid="h010ce391gad3dg4d82g89e3g302389d6s789" version="3">Orthon</content>
+
+	<content contentuid="hb5ba3466g5481g4063g9d80gd73s6d4ff884" version="1">Conjure Greater Chained Companion: Spectator</content>
+	<content contentuid="h010ce391gad3dg4d82g89e3g30kkdifsfsd3" version="3">Summon a familiar with the form of a Spectator.&lt;br&gt;&lt;br&gt;The power required to maintain such a creature is overwhelmingly intense. As such, this creature will only persist for three turns. You may extend this duration by one turn each time you cast &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt; within [1] of your Chained Companion.</content>
+	<content contentuid="he3c73709gd2a7g4d10g891bg171sd56f5s4d" version="1">Soporific Ray</content>
+	<content contentuid="h71c35c37g9a71g432fgbe3cg2asdf954s654" version="2">Shoot an eye ray that puts its target to &lt;LSTag Type="Status" Tooltip="SLEEP"&gt;Sleep&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hb5ba3466g5481g4063g9d80gd7ff6s93t366" version="1">Conjure Greater Chained Companion: Undead Wyrmling</content>
+	<content contentuid="h010ce391gad3dg4d82g89e3g30332d80s9ff" version="3">Summon a familiar with the form of an Undead Wyrmling.&lt;br&gt;&lt;br&gt;The power required to maintain such a creature is overwhelmingly intense. As such, this creature will only persist for three turns. You may extend this duration by one turn each time you cast &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt; within [1] of your Chained Companion.</content>
+	<content contentuid="h24144025ge24dg4b06g97dagc738147a3eb0" version="2">Frightful Presence</content>
+	<content contentuid="h712faea8g25bfg4a09gb5adg887012616ea6" version="2">Instil &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terror&lt;/LSTag&gt; in nearby foes.</content>
+	<content contentuid="h27a32ad9gba6ag4889g91ebga0357c5a3531" version="1">Hoarding Energy</content>
+	<content contentuid="h1ae6286dg90d4g40f0g820bg3b299d6e83a8" version="2">Affected creature is gathering energy while airborne and is &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all damage.</content>
+	<content contentuid="h151ce1c6gcd31g484cgb6b5geb1643f23154" version="2">Draconic Ire</content>
+
+	<content contentuid="he69665e0g0282g4cffgbcbag2d4084a13a62" version="5">Firespark</content>
+	<content contentuid="h111ae255g55f1g4a55gb958g517af226a545" version="4">Hurl a tiny spark of fire.</content>
+
+	<content contentuid="h53277800gd3a4g4984gbff6g0a1234567890" version="1">Magically bolstered due to the nature of the pact this familiar's Warlock made, this Spell does not require a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;, but may only be cast once per combat.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb700000000a1" version="5">Pact Magic: Scorching Ray</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb700000000b1" version="5">Pact Magic: Arms of Hadar</content>
+	
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb700000000a2" version="5">Pact Magic: Darkness</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb700000000b2" version="5">Pact Magic: Misty Step</content>
+	
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb700000000a3" version="5">Pact Magic: Fireball</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb700000000b3" version="5">Pact Magic: Inflict Wounds</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a910" version="5">Pact of the Chain</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjj" version="1">Gain the ability to summon &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt;, Fiends and Abberations empowered by your Eldritch abilities and bound to your command. Chained Companions grow in strength alongside you. As your power grows, you will bind even more fearsome creatures to your will.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb70000000001" version="5">Fiendish Growth I</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0a000000000a" version="1">As your pact deepens, so too does the strength of your familiars. Your &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt; have learned new abilities.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb70000000002" version="5">Broken Chains</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0a000000000b" version="1">Your &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt; roll an additional damage die when attacking with their &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;. Additionally, they have gained the &lt;LSTag Type="Passive" Tooltip="ExtraAttack"&gt;Extra Attack&lt;/LSTag&gt; passive. Upon each instance of damage, your Chained Companions will now inflict one stack of &lt;LSTag Type="Status" Tooltip="ELDRITCH_STRIKE"&gt;Eldritch Inertia&lt;/LSTag&gt;.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb700000000c2" version="5">Summoned Inertia</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0a00000000cc" version="1">When dealing damage, you apply one stack of &lt;LSTag Type="Status" Tooltip="ELDRITCH_STRIKE"&gt;Eldritch Inertia&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb70000000003" version="5">Fiendish Growth II</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0a000000000c" version="1">The strength of your pact has grown more potent, giving way to Eldritch power. Your &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt; have gained even more abilities.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb70000000004" version="5">Fiendish Frenzy</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0a000000000d" version="1">Your &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt; roll two additional damage die when attacking with their &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;. Additionally, they have gained the &lt;LSTag Type="Passive" Tooltip="ExtraAttack_2"&gt;Improved Extra Attack&lt;/LSTag&gt; passive. Upon each instance of damage, your summons will now inflict one stack of both &lt;LSTag Type="Status" Tooltip="ELDRITCH_STRIKE"&gt;Eldritch Inertia&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="CURSEOFHELLFIRE"&gt;Curse of Hellfire&lt;/LSTag&gt;.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb700000000d4" version="5">Summoned Hellfire</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0a00000000dd" version="1">When dealing damage, you apply one &lt;LSTag Type="Status" Tooltip="CURSEOFHELLFIRE"&gt;Curse of Hellfire&lt;/LSTag&gt; stack to your target. Both yourself and your summoning Warlock then make further &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; against the target.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb70000000005" version="5">Fiendish Growth III</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0a000000000e" version="1">The blood that binds you to your pact has become utterly resolute. Your &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt; have reached the peak of their potential.</content>
+
+<!--PACT OF PENUMBRA-->
+
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1adad49a" version="1">Pact of
+Penumbra</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g4854276893f2" version="1">You've pledged yourself to a maddened celestial to borrow their chaotic power. Bound to the concept itself, a penumbral blend of light and dark working as an affront in tandem.</content>
+
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00001" version="1">Pact of Penumbra</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760000a" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt;. Each turn in combat, you sway between states of &lt;LSTag Type="Status" Tooltip="PENUMBRA_LIGHT"&gt;Penumbral Light&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="PENUMBRA_DARK"&gt;Penumbral Darkness&lt;/LSTag&gt;. Each state has unique benefits which improve as you level. Casting Hematic Invocation extends the duration of either state by one turn.</content>
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad06661" version="1">Penumbral Darkness</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760666a" version="1">Affected creature has snuffed out the light from their surroundings, and their &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast_Penumbral_Container"&gt;Penumbral Eldritch Blast&lt;/LSTag&gt; deals Necrotic damage. When dealing damage, they deal an additional [1].</content>
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad09991" version="1">Penumbral Light</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760999a" version="1">Affected creature is shedding light in a [1] radius, and their &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast_Penumbral_Container"&gt;Penumbral Eldritch Blast&lt;/LSTag&gt; deals Radiant damage. When healing another creature, they recover an additional +1d4 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad000z1" version="1">Penumbral Eldritch Blast</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g4854276000za" version="1">Conjure a beam of either necrotic or radiant energy.</content>
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00az1" version="1">Necrotic Eldritch Blast</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g485427600aza" version="1">Conjure a beam of necrotic energy.</content>
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00bz1" version="1">Radiant Eldritch Blast</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g485427600bza" version="1">Conjure a beam of radiant energy.</content>
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1addark1" version="1">Penumbral Darkness</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g4854276darka" version="1">Cause your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast_Penumbral_Container"&gt;Penumbral Eldritch Blast&lt;/LSTag&gt; to deal Necrotic damage. When dealing damage, deal an additional [1].</content>
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1alight1" version="1">Penumbral Light</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g485427lighta" version="1">Shed light in a [1] radius, causing your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast_Penumbral_Container"&gt;Penumbral Eldritch Blast&lt;/LSTag&gt; to deal Radiant damage. When healing another creature, they recover an additional +1d4 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00003" version="1">Dawnbreak of the Sunsetter</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760000c" version="1">While in combat under the affects of &lt;LSTag Type="Status" Tooltip="PENUMBRA_DARK"&gt;Penumbral Darkness&lt;/LSTag&gt;, targeting a corpse with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast_Penumbral_Container"&gt;Penumbral Eldritch Blast&lt;/LSTag&gt; creates a Spectre until the end of combat. The strength of the spectre depends on the size of the enemy targeted.&lt;br&gt;&lt;br&gt;In addition, while in combat under the affects of &lt;LSTag Type="Status" Tooltip="PENUMBRA_LIGHT"&gt;Penumbral Light&lt;/LSTag&gt;, you may target your teammates in order to heal them, rather than dealing damage. Effects which increase the damage you deal will not increase the amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; you restore.</content>
+
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00002" version="1">Penumbral Guidance</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760000b" version="1">Your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast_Penumbral_Container"&gt;Penumbral Eldritch Blast&lt;/LSTag&gt; now chains itself to an additional creature within [1] of your original target.&lt;br&gt;&lt;br&gt;Projectiles created will chain differently depending on your initial target.</content>
+
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00005" version="1">Penumbral Accord</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760000e" version="1">While starting your turn under the affects of &lt;LSTag Type="Status" Tooltip="PENUMBRA_DARK"&gt;Penumbral Darkness&lt;/LSTag&gt;, you become &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisible&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;While starting your turn under the effects of &lt;LSTag Type="Status" Tooltip="PENUMBRA_LIGHT"&gt;Penumbral Light&lt;/LSTag&gt;, you create a &lt;LSTag Type="Spell" Tooltip="Target_GlobeOfInvulnerability"&gt;Globe of Resistance&lt;/LSTag&gt; where you are standing.</content>
+
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00004" version="1">Splintering Light</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760000d" version="1">Your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; can now chain itself to up to two additional creatures, rather than one.</content>
+
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00006" version="1">Forward Unto Dawn</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760000f" version="1">Your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast_Penumbral_Container"&gt;Penumbral Eldritch Blast&lt;/LSTag&gt; can now be infused with a &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt; in order to turn enemies into &lt;LSTag Type="Status" Tooltip="ELDRITCH_BOMB"&gt;Eldritch Bombs&lt;/LSTag&gt;. At the end of three turns, an afflicted enemy, and all enemies within [1] of them, will take either [2] or [3], depending on which Penumbral Eldritch Blast was used to apply the condition. Eldritch Bombs are further modified by effects which would alter your Eldritch Blast and may be immediately detonated by casting &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt;.</content>
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad000z6" version="1">Eldritch Bomb</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g4854276000zf" version="1">Affected creature, and all other creatures within [1], will take [2] once this condition has expired.</content>
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00xz6" version="1">Eldritch Bomb</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g485427600xzf" version="1">Affected creature, and all other creatures within [1], will take massive damage once this condition has expired.</content>
+	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00zz6" version="1">Forward Unto Dawn</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g485427600zzf" version="1">Infuse your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast_Penumbral_Container"&gt;Penumbral Eldritch Blast&lt;/LSTag&gt; with a &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt; in order to turn enemies into &lt;LSTag Type="Status" Tooltip="ELDRITCH_BOMB"&gt;Eldritch Bombs&lt;/LSTag&gt;. Eldritch Bombs can be immediately detonated by casting &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt;.</content>
+
+<!--PACT OF THE TOME-->
+
+	<content contentuid="h751d5f52g977fg43a0g913bg536fdb5a87f7" version="2">Erratic, eldritch power swirls within the palm of your hands, echoing out into an uncaring void, blast, after blast, after blast...</content>
+	<content contentuid="h8c57592eg4e92g4ccdgb43fgaa16b26d6ac0" version="2">Erratic, eldritch power swirls within the palm of your hands, echoing out into an uncaring void, blast, after blast, after blast...</content>
+	<content contentuid="hf27dd66eg769fg465egbad7g7efebcd30e81" version="1">Erratic, eldritch power swirls within the palm of your hands, echoing out into an uncaring void, blast, after blast, after blast...</content>
+
+	<content contentuid="h0e551ff3ga6e6g41e5g8702g272bde8f58b0" version="1">Pact of the Tome</content>
+	<content contentuid="h1ddc9804g4d3eg450fgb46cg8c10926de1cd" version="1">Pact of
+the Tome</content>
+
+	<content contentuid="ha9cadfc2g5dbcg4e6bgb410gb25e02e77263" version="1">Pact of the Tome</content>
+	<content contentuid="hc5506949g2e54g47b0gb8b6g69dffdd1ac1e" version="3">You add your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt; to the damage your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; deals, if positive. In addition, you are able to cast your Eldritch Blast with your &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;. This can be toggled at any time.</content>
+
+	<content contentuid="ha9cadfc2g5dbcg4e6bgb410gb25e02e00005" version="1">Projected Inertia</content>
+	<content contentuid="hc5506949g2e54g47b0gb8b6g69dffdd0000e" version="3">Upon dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you apply one stack of &lt;LSTag Type="Status" Tooltip="ELDRITCH_STRIKE"&gt;Eldritch Inertia&lt;/LSTag&gt;.</content>
+
+	<content contentuid="ha9cadfc2g5dbcg4e6bgb410gb25e02e00002" version="1">Eldritch Overflow</content>
+	<content contentuid="hc5506949g2e54g47b0gb8b6g69dffdd0000b" version="3">You are capable of dividing your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; into two separate beams. Each beam will deal [1]. This can be toggled at any time.</content>
+
+	<content contentuid="ha9cadfc2g5dbcg4e6bgb410gb25e02e00001" version="1">Mystic Precision</content>
+	<content contentuid="hc5506949g2e54g47b0gb8b6g69dffdd0000a" version="3">When you cast &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, the number you need in order to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by 1.</content>
+
+	<content contentuid="ha9cadfc2g5dbcg4e6bgb410gb25e02e00004" version="1">Eldritch Surge</content>
+	<content contentuid="hc5506949g2e54g47b0gb8b6g69dffdd0000d" version="3">You are capable of dividing your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; into three separate beams. Each beam will deal [1]. This can be toggled at any time.</content>
+
+	<content contentuid="ha9cadfc2g5dbcg4e6bgb410gb25e02e00003" version="1">Abyssal Desolation</content>
+	<content contentuid="hc5506949g2e54g47b0gb8b6g69dffdd0000c" version="3">When you roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you roll an additional damage die.</content>
+
+<!--PASSIVES-->
+
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e00011" version="5">Eldritch Boons</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e0000k" version="1">Pacts forged in deepest secrecies beget chaotic, eldritch power.&lt;br&gt;Contracts satiated will provide new forms of strength. </content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a953" version="5">Bane of the Pact</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjc" version="1">Dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; applies &lt;LSTag Type="Status" Tooltip="BANE"&gt;Bane&lt;/LSTag&gt; to your target for three turns. This can be toggled at any time.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a954" version="5">Binding Transposition</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjd" version="1">When you make a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against a creature that is Large or smaller with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, immediately swap places with them. This can be toggled at any time.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c7469356aa" version="5">Bound Compulsion</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5966asd66" version="1">Once per turn, upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, all enemies within [1] must succeed a Wisdom based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="COMPELLED_DUEL"&gt;Compelled&lt;/LSTag&gt; to duel you on their next turn.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a955" version="5">Bound Elements</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jje" version="1">After casting a Spell, you become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all damage for one turn.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a6a9" version="5">Bound Elements</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5966939f8" version="1">When you cast a Spell, gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage until your next turn.</content>
+	<content contentuid="h01df4ac5gf4d1g4ceegb638g85f1f4fa6822" version="5">Bound Elements</content>
+	<content contentuid="h00eb249bg343bg48bag9bb2g7cf8e5aaff48" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage until the start of its next turn.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a956" version="5">Curse of Hellfire</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjf" version="1">When you make a successful melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, you apply one &lt;LSTag Type="Status" Tooltip="CURSEOFHELLFIRE"&gt;Curse of Hellfire&lt;/LSTag&gt; stack to your target.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a852" version="5">Curse of Hellfire</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af59661a654" version="1">Affected creature is taking [1] per turn. Whomever applied this status makes their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when targeting the affected creature.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a957" version="5">Dark Retaliation</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjg" version="1">When an enemy fails an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, you may spend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to create a [1] cloud of &lt;LSTag Type="Spell" Tooltip="Target_Darkness"&gt;Darkness&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;If bound to the Pact of the Chain, your &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt; gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Attack Rolls while Heavily Obscured.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696aoao" version="5">Dark Retaliation</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af59669392i" version="1">When an enemy fails an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, create a [1] cloud of &lt;LSTag Type="Spell" Tooltip="Target_Darkness"&gt;Darkness&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a497" version="5">Eldritch Enervation</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5966939ff" version="1">Dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; heals you for a value equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c7469928ii" version="5">Eldritch Lance</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596699987" version="1">Gain the ability to fire a concentrated variant of your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, which pierces enemies and deals [1] at the cost of one &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Warlock passives which modify your Eldritch Blast also modify your &lt;LSTag Type="Spell" Tooltip="Zone_EldritchLance"&gt;Eldritch Lance&lt;/LSTag&gt;.</content>
+	<content contentuid="h5b41e534gf582g4d6bgb33cg06086s45d6f8" version="5">Eldritch Lance</content>
+	<content contentuid="hb0fbe645ge1dbg4106g99bege9w9er7d5685" version="1">Fire a concentrated variant of your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, which pierces enemies.&lt;br&gt;&lt;br&gt;Passives which modify your Eldritch Blast also modify your Eldritch Lance.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c7469212aa" version="5">Eldritch Strike</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596666799" version="1">Gain the ability to channel your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; into your main-hand weapon at the cost of one &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Upon landing a blow with Eldritch Strike, you erupt with Eldritch energy, causing you to fire a beam of your Eldritch Blast at an enemy within [1].</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74s56df2e" version="5">Eldritch Strike</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5689ed568" version="1">Channel your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; into your main-hand weapon and strike a target.&lt;br&gt;&lt;br&gt;Upon landing a blow with Eldritch Strike, you erupt with Eldritch energy, causing you to fire your Eldritch Blast at an enemy within [1].</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a699" version="5">Hellish Rebuttal</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af59669333f" version="1">When an enemy fails an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you with a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, you gain &lt;LSTag Type="Status" Tooltip="TRUE_STRIKE"&gt;True Strike&lt;/LSTag&gt; until your next instance of damage.&lt;br&gt;&lt;br&gt;If bound to the Pact of the Chain, your &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt; ignore all forms of damage &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt;.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c746969149" version="5">Hellish Rebuttal</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af59668d95f" version="1">When an enemy fails an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you with a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, cast &lt;LSTag Type="Spell" Tooltip="Target_TrueStrike"&gt;True Strike&lt;/LSTag&gt; on yourself.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a987" version="5">Hellbound Vision</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596696a9g" version="1">When dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blind&lt;/LSTag&gt; your target for one turn. This can be toggled at any time.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a958" version="5">Luck of the Devil</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjh" version="1">Once per turn, upon rolling a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on an enemy, restore one &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h43129b8dgfb5fg4dfbg897agd5399175a485" version="1">Master of Chaos</content>
+	<content contentuid="h4755962fg43abg48efg9e2fg3bcb1bc64982" version="2">When you make a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, your target may potentially experience a negative surge of &lt;LSTag Type="Passive" Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt;. If under the Pact of Penumbra, targeting an ally with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast_Penumbral_Container"&gt;Radiant Eldritch Blast&lt;/LSTag&gt; will potentially trigger a positive surge.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a959" version="5">One With Shadows</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jji" version="1">Upon killing a target or landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, become &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt; for three turns.&lt;br&gt;&lt;br&gt;If bound to the Pact of the Chain, your &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt; do so as well, if within [1] of you.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a911" version="5">Onus Hematic</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjk" version="1">Using &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt; will restore two &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slots&lt;/LSTag&gt;, rather than one.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a912" version="5">Pact Stricken</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjl" version="1">Upon a successful &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, you apply one stack of &lt;LSTag Type="Status" Tooltip="ELDRITCH_STRIKE"&gt;Eldritch Inertia&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hf6a72bdfg5022g4befg86c2g9382c643da51" version="2">Repelling Blast</content>
+	<content contentuid="h37c1bb57g04fag4e45g8953gb5bec46f0c48" version="3">When you hit a creature with &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you push the creature up to [1] away from you. This passive can be toggled at any time.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a914" version="5">Resiliant Servitude</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjn" version="1">Increase your &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; by your level multiplied by two.&lt;br&gt;&lt;br&gt;If bound to the Pact of the Chain, your &lt;LSTag Type="Spell" Tooltip="Target_PactOfTheChain_Container"&gt;Chained Companions&lt;/LSTag&gt; gain an additional +4 bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a915" version="5">Shade Walker</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596693jjo" version="1">Gain the ability to teleport short distances by casting &lt;LSTag Type="Spell" Tooltip="Target_Shadewalker"&gt;Shade Walker&lt;/LSTag&gt;.</content>
+	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74696a9a8" version="5">Shade Walker</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5966932d1" version="1">Teleport a short distance to an area that you can see.</content>
+
+<!--TOOLTIPS-->
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5dd222569" version="3">&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Only one Eldritch Boon may affect your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; at a time.</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af5dd222005" version="3">&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; may not be divided into multiple beams while &lt;LSTag Type="Passive" Tooltip="PactOfTheTome"&gt;Pact of the Tome&lt;/LSTag&gt; is active.</content>
+
+</contentList>

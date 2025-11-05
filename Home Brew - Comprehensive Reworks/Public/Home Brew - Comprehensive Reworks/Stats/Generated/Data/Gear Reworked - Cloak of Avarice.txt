@@ -1,0 +1,22 @@
+new entry "MAG_Toll_Collector_Cloak"
+type "Armor"
+using "ARM_Cloak"
+data "RootTemplate" "c7774285-21b3-44fc-bae0-0b893a6a3549"
+data "ValueUUID" "a229f048-70b0-4b0c-88cb-29b5c6bdb2d0"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "NaturalVortex_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ARM_MEDIUM_TECHNICAL;ATTUNEMENT2"
+
+<!--ITEM VARIANT - SORCERER REWORK-->
+
+new entry "NaturalVortex_Item"
+type "PassiveData"
+data "DisplayName" "7ece8b0a155648e49a0b00a7bc8644b500015;1"
+data "Description" "7ece8b0a155648e49a0b00a7bc8644b50000o;2"
+data "DescriptionParams" "Distance(18)"
+data "Icon" "PassiveFeature_MagicInitiateSorcerer"
+data "Properties" "Highlighted;ForceShowInCC"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

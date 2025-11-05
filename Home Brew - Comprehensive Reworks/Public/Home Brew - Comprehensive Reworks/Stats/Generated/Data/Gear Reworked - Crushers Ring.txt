@@ -1,0 +1,22 @@
+new entry "ARM_DrunkGoblinRing"
+type "Armor"
+using "_Ring_Magic"
+data "RootTemplate" "3023d5a5-14f0-4549-8ff2-1f34336c243c"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "Unique" "1"
+data "PassivesOnEquip" "Bounty_Hunter_Item"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - RANGER REWORK-->
+
+new entry "Bounty_Hunter_Item"
+type "PassiveData"
+data "DisplayName" "791a0319eeed4e25949847ad3a0dd1d100002;2"
+data "Description" "791a0319eeed4e25949847ad3a0dd1d10000b;2"
+data "Icon" "Action_MagicItem_ProtectionFromMissiles"
+data "Properties" "Highlighted;ForceShowInCC"
+data "BoostConditions" "not HasPassive('Bounty_Hunter', context.Source)"
+data "Boosts" "UnlockSpell(Shout_BountyHunter);IF(HasStatus('BOUNTY_SUCCESS', context.Target)):Advantage(AttackRoll)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

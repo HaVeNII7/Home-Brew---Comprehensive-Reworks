@@ -1,0 +1,22 @@
+local __util = require 'larian.util'
+
+function HasteCheck()
+    return HasUseCosts('ActionPoint', true) | HasUseCosts('BonusActionPoint', true) | HasUseCosts('ReactionActionPoint', true)
+end
+
+function HasTemporaryHPSelf(value, entity)
+    entity = entity or context.Source
+    value = value or 0
+    return ConditionResult(entity.TemporaryHP > value)
+end
+
+function TryCounterspellHigherLevelCheck(level)
+    local spellPowerLevel = SpellPowerLevelEqualOrLessThan(level)
+    if not spellPowerLevel.Result then
+        local counterspellDC = 10 + context.HitDescription.SpellPowerLevel
+        local ability = MaxAbilityForCounterspell(context.Observer)
+        local st = AbilityCheck(ability, counterspellDC, false, false, 0, context.Observer, context.Observer)
+        return ConditionResult(st.Result,{},{},st.Chance)
+    end
+    return ConditionResult(true,{},{},1.0)
+end

@@ -1,0 +1,112 @@
+﻿xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="PassiveLists">
+    <node id="root">
+      <children>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Proficiency_Battleaxes,Proficiency_Flails,Proficiency_Glaives,Proficiency_Greataxe,Proficiency_Greatswords,Proficiency_Halberds,Proficiency_Longswords,Proficiency_Mauls,Proficiency_Morningstars,Proficiency_Pikes,Proficiency_Rapiers,Proficiency_Scimitars,Proficiency_Shortswords,Proficiency_Tridents,Proficiency_Warhammers,Proficiency_Warpicks,Proficiency_HandCrossbows,Proficiency_HeavyCrossbows,Proficiency_Longbows,Proficiency_Shields,Proficiency_LightArmour,Proficiency_MediumArmour,Proficiency_HeavyArmour" />
+                    <attribute id="UUID" type="guid" value="bd718fc4-4e10-4e46-a07c-ea6b5e44a137" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="BarbarousAssault,BrutalCritical,DangerSense,DeathGlare,Faceoff,FuriousCriticals,LandsStride,OverwhelmingPower,PeakPhysicality,RageoftheMountain,RageoftheUndefeated,RagingVitality,RelentlessRage,RipandTear,RootedinAnger,TemperedRetaliation,TerrifyingBellow,UnrelentingRampage,UnarmouredBeast,UnstoppableForce" />
+                    <attribute id="UUID" type="guid" value="d8183f3c-9c62-40b7-9418-e7ad07a8204e" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="AspectoftheBear,AspectoftheEagle,AspectoftheElk,AspectoftheTiger,AspectoftheWolf" />
+                    <attribute id="UUID" type="guid" value="3525e4c5-528b-4197-acd6-47c084054b59" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Aggressive_Rhythm,Discerning_Insult,Distracting_Dissonance,Dueling_Ditties,Echoes_of_Fortitude,Encouraging_Momentum,Engaging_Composition,Guiding_Performance,Harmonious_Aura,Infuriating_Amplification,Inspirational_Resonance,Inspiring_Crescendo,Insufferable_Discord,Melodic_Precision,Mobile_Maestro,Mocksmith,Silver_Tongued_Savant,Soothing_Words,Unprecedented_Encore,Vigorously_Tuned" />
+                    <attribute id="UUID" type="guid" value="2e8c5dba-f49c-4f24-a850-05e61aefb4ef" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Steelforged_Melee,Steelforged_Ranged" />
+                    <attribute id="UUID" type="guid" value="9355b0df-9229-4a33-8d4b-30d1918388cf" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Aegis,Blessed_Resolve,BloodforBlood,Consecrative_Sacrifice,Divine_Resiliance,Divine_Restoration,Ethereal_Intuition,Flames_of_Repentance,Holy_Fortitude,Guided_Strikes,Holy_Retribution,Immaculate_Ward,Martyrdom,Paradisiacal_Gift,Sacral_Bulwark,Sanctified_Presence,Sanctifying_Aura,Stalwart,Stout_Believer,Venerational_Strikes" />
+                    <attribute id="UUID" type="guid" value="137c5bd5-c5a9-4185-aec9-70a583191f17" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Armour_of_Thorns,Combats_Harvest,Earthern_Sentinel,Feral_Precision,Feral_Resiliance,Ferocious_Stand,Instinctive_Transformation,Kindred_Instinct,WildShape_Combat,Natural_Bounty,Natural_Resurgence,Natures_Mercy,Natures_Wrath,Pack_Leader,Primal_Bloodletter,Primal_Surge,Primal_Takedown,Shapechangers_Versatility,Territorial_Dominance,Wild_Stride" />
+                    <attribute id="UUID" type="guid" value="82745b68-e0f8-49a2-a147-7ccac142b7d9" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Aspect_of_Defiance,Challengers_Call,Charge_of_the_Collective,Duellist,Full_Arsenal,Heavy_Assault,Intuitive_Warning,Ironclad,Iron_Will,Leaders_Momentum,Martial_Fortress,Martial_Reclaim,Merciless,Natural_Born_Leader,Opportunist,Proper_Form,Reckless_Abandon,Sentinels_Protection,Tactical_Retreat,Tunnel_Fighter" />
+                    <attribute id="UUID" type="guid" value="da3203d8-750a-4de1-b8eb-1eccfccddf46" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="ElementalFletching_Acid,ElementalFletching_Cold,ElementalFletching_Fire,ElementalFletching_Lightning,ElementalFletching_Necrotic,ElementalFletching_Poison,ElementalFletching_Psychic,ElementalFletching_Radiant,ElementalFletching_Thunder" />
+                    <attribute id="UUID" type="guid" value="76345169-ecc1-4571-bcad-e67afc96f87f" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="BaitAndSwitch,Brace,ChargeManeuver,ChallengersStrike,CommanderStrike_Maneuver,DisarmingAttack,DistractingStrike,EvasiveFootwork,FeintingAttack,LungingAttack,ManeuveringAttack,MenacingAttack,Parry,PrecisionAttack,PushingAttack,QuickToss,Rally,Riposte,SweepingAttack,TripAttack" />
+                    <attribute id="UUID" type="guid" value="e51a2ef5-3663-43f9-8e74-5e28520323f1" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Frontier_Backbreaker,Frontier_BraceMelee,Frontier_Cleave,Frontier_ConcussiveSmash,Frontier_DisarmingStrike,Frontier_Flourish,Frontier_Heartstopper,Frontier_Lacerate,Frontier_MaimingStrike,Frontier_PiercingStrike,Frontier_PommelStrike,Frontier_Prepare,Frontier_RushAttack,Frontier_Topple,Frontier_UnarmedStrike,Frontier_WeakeningStrike,Frontier_BraceRanged,Frontier_HamstringShot,Frontier_MobileShot,Frontier_PiercingShot" />
+                    <attribute id="UUID" type="guid" value="c3a4d60a-27d2-4a13-b3fd-fd9490bee8ce" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Counterflow,Critical_Flow,Dance_of_Flowing_Water,Deflective_Reflex,Dexterous_Ward,Fist_of_Crushing_Rock,Focused_Stream,Fortified_Psyche,Harmonious_Barrage,Harmonious_Defense,Martial_Empowerment,Mystic_Strikes,Opportune_Reversal,Resonance_of_Body,Sagacious_Resilience,Soused_Rampart,Tempestuous_Reprise,Tranquil_Fortitude,Windwaker,Zen_Accuracy" />
+                    <attribute id="UUID" type="guid" value="1cafd528-b848-477b-9a3e-adfe4a989970" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Smite_Blinding,Smite_Branding,Smite_Searing,Smite_Staggering,Smite_Thunderous,Smite_Wrathful" />
+                    <attribute id="UUID" type="guid" value="0cdf39f8-8098-4c6d-8741-66f1877e47ba" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Attonement,Critical_Oath,Death_Sentence,Divine_Health,Divine_Resurgence,Divine_Sense,Divine_Shielding,Holy_Bulwark,Holy_Wrath,Infallible_Beacon,Lay_On_Hands,Oathbound_Renewal,Oath_Channeling,Principle_of_Belief,Repel_the_Damned,Resplendent_Reverb,Smite_Makes_Right,Stalwart_Eruption,Stalwart_Resolve,Visage_of_Sanctity" />
+                    <attribute id="UUID" type="guid" value="27e37640-a012-40f0-8ced-a398640dac75" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Ambush_Breaker,Ballistic_Infusion,Beastbonds_Precision,Beastial_Foresight,Blood_Bond,Bounty_Hunter,Close_Quarters_Shooter,Escapist,Explosive_Arrowheads,Hidden_Inventory,Marksmans_Edge,Multiattack_Defense,Natural_Huntsman,Natural_Opportunity,Protective_Bond,Sniper,Superior_Technique,Sure_Shot,Two_Weapon_Fighting,Wanton_Synergy" />
+                    <attribute id="UUID" type="guid" value="fed4c4e9-fbe0-41d6-abc1-ee3dc5b80302" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Arrow_AberrationSlaying,Arrow_Acid,Arrow_Antimagic,Arrow_BeastSlaying,Arrow_ConstructSlaying,Arrow_Darkness,Arrow_ElementalSlaying,Arrow_FiendSlaying,Arrow_Fire,Arrow_HumanoidSlaying,Arrow_Ice,Arrow_WraithsEmbrace,Arrow_Lightning,Arrow_Ricochet,Arrow_MonstrositySlaying,Arrow_Piercing,Arrow_Detonation,Arrow_Dispelling,Arrow_Teleportation,Arrow_UndeadSlaying" />
+                    <attribute id="UUID" type="guid" value="20a80074-ba3e-412d-8f2d-ca3ea234cb94" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Cunning_Strikes,Cutthroat,Elusive_Retreat,Elusive_Shadow,Fast_Hands,Fatal_Manoeuvre,Grievous_Wounds,Illusory_Advantage,Light_Footwork,Low_Visibility,Manipulator,Now_You_See_Me,Quick_Reflexes,Reactive_Movement,Sharp_Eyes,CSpectre,Spectral_Hunter,Umbral_Sight,Vanishing_Act,Venomous" />
+                    <attribute id="UUID" type="guid" value="da3203d8-750a-4de1-b8eb-1eccfcc6a911" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Metamagic" />
+                    <attribute id="Passives" type="LSString" value="Metamagic_Transmuted,Metamagic_Bloodied,Metamagic_Careful,Metamagic_Expanded,Metamagic_Distant,Metamagic_Dreadful,Metamagic_Empowered,Metamagic_Extended,Metamagic_Favored,Metamagic_Heightened,Metamagic_Maximized,Metamagic_Piercing,Metamagic_Quickened,Metamagic_Regenerative,Metamagic_Restorative,Metamagic_Seeking,Metamagic_Subtle,Metamagic_Tempestuous,Metamagic_Tripled,Metamagic_Twinned" />
+                    <attribute id="UUID" type="guid" value="49704931-e47b-4ce6-abc6-dfa7ba640752" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Sorcerous Sundries" />
+                    <attribute id="Passives" type="LSString" value="ArcaneOverflow,ArcaneOppression,ArcaneReservoir,CharismaticInfusion,CharismaticShield,DormantCharge,ElementalAfterglow,EnchantingInfluence,EphemeralBarrier,EssentialEpiphany,EvasiveWarp,LatentAcuity,MistyEscape,MysticEmpowerment,NaturalVortex,ReactiveReprise,SharedCreation,SorcerousAcumen,SorcerousFocus,VeiledSynergy" />
+                    <attribute id="UUID" type="guid" value="c3506532-36eb-4d18-823e-497a537a9619" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="DraconicAncestry_Black,DraconicAncestry_Blue,DraconicAncestry_Brass,DraconicAncestry_Bronze,DraconicAncestry_Copper,DraconicAncestry_Gold,DraconicAncestry_Green,DraconicAncestry_Red,DraconicAncestry_Silver,DraconicAncestry_White" />
+                    <attribute id="UUID" type="guid" value="c69c33a2-671c-46e1-a92c-656fe64ed447" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="BaneofthePact,BindingTransposition,BoundElements,BoundCompulsion,CurseofHellfire,DarkRetaliation,CDevilsSight,EldritchEnervation,EldritchLance,EldritchStrike,HellishRebuttal,HellboundVision,LuckoftheDevil,MasterofChaos,OneWithShadows,PactProtection,PactStricken,RepellingBlast,ResiliantServitude,ShadeWalker" />
+                    <attribute id="UUID" type="guid" value="fd7736fa-5c64-475e-a4c9-f4061690d8c4" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Dialogue_Archfey,Dialogue_Fiend,Dialogue_OldOne,Dialogue_HexBlade" />
+                    <attribute id="UUID" type="guid" value="ceec377d-0888-4226-a36a-9e3fa1c91d4f" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Arcane_Interruption,Arcane_Reverb,Arcane_Shield,Boon_of_Plumes,Edict_of_Divinity,Elemental_Countercharge,Enchanted_Safeguard,Flames_Riposte,Illusory_Phantasm,Magical_Insight,Mystic_Override,Potent_Cantrips,Potent_Spells,Spellblade,Spellbound_Rebirth,Spell_Surge,Telekinetic_Command,CWarMagic,Wizards_Clarity,Woven_Precision" />
+                    <attribute id="UUID" type="guid" value="e5ab4424-e30b-4752-b280-51a5c77bc9c3" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="ASI_Strength,ASI_Dexterity,ASI_Constitution,ASI_Intelligence,ASI_Wisdom,ASI_Charisma" />
+                    <attribute id="UUID" type="guid" value="b9149c8e-52c8-46e5-9cb6-fc39301c05fe" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="ElementalAdept_Acid,ElementalAdept_Cold,ElementalAdept_Fire,ElementalAdept_Force,ElementalAdept_Lightning,ElementalAdept_Necrotic,ElementalAdept_Poison,ElementalAdept_Psychic,ElementalAdept_Radiant,ElementalAdept_Thunder" />
+                    <attribute id="UUID" type="guid" value="f6b6e71f-79b1-4ba3-8fd8-ee38a44d3d39" />
+					</node>
+      </children>
+    </node>
+  </region>
+</save>

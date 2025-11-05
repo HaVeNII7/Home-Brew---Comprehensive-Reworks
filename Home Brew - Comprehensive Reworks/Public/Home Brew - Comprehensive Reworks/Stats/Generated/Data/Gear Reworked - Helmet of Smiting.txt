@@ -1,0 +1,23 @@
+new entry "MAG_Paladin_SmiteSpellsSupport_Helmet"
+type "Armor"
+using "_Head_Magic_Metal"
+data "RootTemplate" "0ae1e62c-b36a-4dbc-97fb-e0658b454974"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "Smite_Makes_Right_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - PALADIN REWORK-->
+
+new entry "Smite_Makes_Right_Item"
+type "PassiveData"
+data "Icon" "Action_Paladin_EternalDevotion"
+data "DisplayName" "fe6f4159abae42539029e284001d12de00017;1"
+data "Description" "fe6f4159abae42539029e284001d12de0000q;2"
+data "Properties" "Highlighted;ForceShowInCC;OncePerTurn"
+data "StatsFunctorContext" "OnAttack;OnDamage"
+data "Conditions" "not HasPassive('Smite_Makes_Right', context.Source) and IsKillingBlow() and Character() and not Self() and not Ally() and SpellId('CTarget_Smite_Divine') or IsKillingBlow() and Character() and not Self() and not Ally() and SpellId('CTarget_Smite_Blinding') or IsKillingBlow() and Character() and not Self() and not Ally() and SpellId('CTarget_Smite_Branding') or IsKillingBlow() and Character() and not Self() and not Ally() and SpellId('CProjectile_Smite_Branding') or IsKillingBlow() and Character() and not Self() and not Ally() and SpellId('CTarget_Smite_Searing') or IsKillingBlow() and Character() and not Self() and not Ally() and SpellId('CTarget_StaggeringSmite') or IsKillingBlow() and Character() and not Self() and not Ally() and SpellId('CTarget_Smite_Thunderous') or IsKillingBlow() and Character() and not Self() and not Ally() and SpellId('CTarget_Smite_Wrathful') or IsKillingBlow() and Character() and not Self() and not Ally() and SpellId('CTarget_Smite_Oathbroken')"
+data "StatsFunctors" "RestoreResource(SELF,ChannelOath, 1, 0)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

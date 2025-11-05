@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Archetype" type="FixedString" value="deathShepherd" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="39c40e2e-3596-497e-e146-d998db4ceba0" />
+					<attribute id="DisplayName" type="TranslatedString" handle="he95e7a86g72aeg41c3g9168g8c6ed952834f" version="3" />
+					<attribute id="Equipment" type="FixedString" value="EQP_Greatsword_HalfPlate" />
+					<attribute id="GeneratePortrait" type="LSString" value="Icon_Skeleton_Hero" />
+					<attribute id="Icon" type="FixedString" value="39c40e2e-3596-497e-e146-d998db4ceba0-EQP_Greatsword_HalfPlate_(Icon_Skeleton_Hero)" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="6" />
+					<attribute id="MapKey" type="FixedString" value="54a69e66-3e4c-437c-97c4-66810cd383ca" />
+					<attribute id="Name" type="LSString" value="Undead_Skeleton_Giant_Myrkul" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f05367f6-78f2-4631-996e-7e21912bbb78" />
+					<attribute id="Stats" type="FixedString" value="Skeleton_Giant_Cultist_Myrkul_DeathShepherd_Atrocity" />
+					<attribute id="SwarmGroup" type="FixedString" value="SwarmAnimateDeadZombie" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<attribute id="SpellSet" type="FixedString" value="AnimateDeadZombie" />
+					<children>
+						<node id="LocomotionParams" />
+						<node id="SkillList" />
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="LOW_RISENSKELETON_MYRKULVEIL" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="LOW_RISENSKELETON_UNDEAD_PRESENCE" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

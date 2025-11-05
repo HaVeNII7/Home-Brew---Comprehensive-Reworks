@@ -1,0 +1,19 @@
+function ArcaneWardOverflow(spellCast, entity)
+    local entity = entity or context.Target
+    local AWDuration = GetStatusDuration('ARCANE_WARD', entity)
+    if spellCast then
+        return ConditionResult(AWDuration + context.HitDescription.SpellPowerLevel >= (entity.GetClassLevel('Wizard')))
+    end
+
+    return ConditionResult(AWDuration + entity.GetClassLevel('Wizard') >= (entity.GetClassLevel('Wizard')))
+end
+
+function ArcaneWardOverflowNPC(spellCast, entity)
+    local entity = entity or context.Target
+    local AWDurationNPC = GetStatusDuration('ARCANE_WARD_NPC', entity)
+    if spellCast then
+        return ConditionResult(AWDurationNPC + context.HitDescription.SpellPowerLevel >= (entity.Level))
+    end
+
+    return ConditionResult(AWDurationNPC + entity.Level >= (entity.Level))
+end

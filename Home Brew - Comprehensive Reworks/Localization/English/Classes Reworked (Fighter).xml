@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+<!--FIGHTER-->
+
+	<content contentuid="h0a9065a4gd89fg46d6g9303gbeafa0ae1c6c" version="2">Manoeuvres</content>
+	<content contentuid="hab367dbfg2f2dg46d9g992ag4633184cc635" version="1">Manoeuvres are powerful attacks that utilize your &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Dice&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000xx" version="2">Second Wind</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000xv" version="2">Once per combat encounter, upon dropping to 50% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, you restore [1] Hit Points at the end of your turn. The amount of dice rolled is equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f56a982" version="2">Second Wind</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5fs854" version="2">Affected creature will restore [1] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; at the end of their turn.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500xxx" version="2">Strategist</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500xxv" version="2">The &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; of Spells and Conditions you apply increases by 1 and scales with your levels in Fighter. This bonus is increased to 2 at level five, and 3 at level nine.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f59a644" version="2">Action Surge</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f593kdd" version="2">Once per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+
+<!--ARCANE ARCHER-->
+
+	<content contentuid="h77a3f5afg2328g47c0gb00agffee653d9a1e" version="1">Arcane Archer</content>
+	<content contentuid="h85ff75b5g7ec5g445dga8ffgf95bbb8f5cbc" version="1">You are capable of infusing the weave into your attacks, providing your archery with a supernatural quality - and your foes something to fear.</content>
+	<content contentuid="h5c182d74g17e4g41d7g8f76g94f7b210feea" version="1">Arcane Quiver</content>
+	<content contentuid="hf1b82802gb809g4e09gbb73gcb06c780034d" version="2">Through your Arcane Quiver, you tap into the weave itself, enabling you to infuse your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; with various types of magic.</content>
+
+	<content contentuid="h4336aff2gfe2dg43degba75g03c6c427c4c3" version="2">Arcane Shot: Banishing Arrow</content>
+	<content contentuid="h75544dc1g1199g4beaga7fag75d08d6ec9dc" version="2">Use Abjuration magic to &lt;LSTag Type="Status" Tooltip="BANISHED"&gt;Banish&lt;/LSTag&gt; your target for the rest of their turn. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Banished.</content>
+
+	<content contentuid="h95da6042g7f82g47edga99agb0eb777a43aa" version="2">Arcane Shot: Beguiling Arrow</content>
+	<content contentuid="h493562b3gfa2ag4cd6g8023gcd18d0c5baf0" version="1">Use Enchantment magic to deal an additional [1]. Target must succeed a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h60965778g3d4fg4b76g94b6g8a8c580326f2" version="2">Arcane Shot: Bursting Arrow</content>
+	<content contentuid="hc730bcd8g2184g4efdg8822g3483836a5a94" version="1">Use Evocation magic to make your arrow explode on impact and deal an additional [1] to targets within [2].</content>
+
+	<content contentuid="h10c0e295g2834g4139g9cd5g51e611a62f09" version="2">Arcane Shot: Enfeebling Arrow</content>
+	<content contentuid="hecc07b75geffeg4b3dgb7cfg7efa14222c95" version="1">Use Necromantic magic to deal an additional [1]. Target must succeed a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="ENFEEBLINGARROW"&gt;Feeble&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hd09a6124g3393g4a85gae8dg197743d2ab74" version="2">Arcane Shot: Grasping Arrow</content>
+	<content contentuid="hd405bdcag901dg4d23ga492ga3473a4ab1a5" version="5">Deal an additional [1]. Affected entity's &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is reduced by [3] and it will take [2] when it moves.</content>
+
+	<content contentuid="ha304cd89ge55ag4f04g8819g485c54f2900c" version="2">Arcane Shot: Seeking Arrow</content>
+	<content contentuid="hc9a863b5g02e2g432fg9bb0g197bdf9ccc92" version="3">Use Divination magic to make your arrow seek a target. The arrow deals an additional [1] and possibly applies &lt;LSTag Type="Status" Tooltip="FAERIE_FIRE"&gt;Faerie Fire&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h963781b4gd2b3g460egb6fcg8c1c48cea0cc" version="2">Arcane Shot: Shadow Arrow</content>
+	<content contentuid="h2dc96564g688ag48bbg9f3bgab00c27b3c2d" version="1">Use Illusion magic to deal an additional [1]. Target must succeed a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00001" version="1">Focused Weave</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000a" version="1">Your basic &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; no longer utilize &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;. As such, they can no longer miss your targets or roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;. While active, your basic Ranged Weapon Attack is considered to be a &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;In addition, while active, your Elemental Fletchings will fire stronger, alternative arrows. This can be toggled at any time.</content>
+	<content contentuid="h81ed88e5gbedcg4e19g820ag3c711ff33s64" version="1">Focused Weave</content>
+	<content contentuid="h94959b2fg6b0eg45c1g96d0gea9ccb255d86" version="1">Loose a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; which cannot miss or roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;. Disable &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; in order to return to standard Ranged Weapon Attacks.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00002" version="1">Elemental Fletching</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000b" version="1">Infuse the weave itself into your arcane quiver, providing &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; with various elemental effects.</content>
+	<content contentuid="9b7b811b9c3043e189f945540bfff2d45d689" version="1">Elemental Fletchings</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf445fdf8594" version="2">Mysticism guides you as you nock your next strike.&lt;br&gt;A well aimed Spell to snuff the competition.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00013" version="1">Elemental Fletching: Acidic Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210001c" version="1">Infuse magical energy into your arcane quiver, gaining the ability to fire &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Acid"&gt;Acidic Arrows&lt;/LSTag&gt; which coat the ground in &lt;LSTag Type="Status" Tooltip="ACID"&gt;Acid&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;If &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, each arrow fired will instead create puffs of acidic gas so nauseating it can prevent your target from taking &lt;LSTag Tooltip="Action"&gt;Actions&lt;/LSTag&gt;. </content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z13" version="1">Elemental Fletching: Acidic Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z1c" version="1">Loose a projectile bubbling with caustic substances, coating the ground in &lt;LSTag Type="Status" Tooltip="ACID"&gt;Acid&lt;/LSTag&gt;.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga28focused13" version="1">Focused Fletching: Nauseous Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused1c" version="1">Fire an arrow which creates puffs of acidic gas so nauseating it can prevent your target from taking &lt;LSTag Tooltip="Action"&gt;Actions&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00023" version="1">Elemental Fletching: Frost Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210002c" version="1">Infuse magical energy into your arcane quiver, gaining the ability to fire &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Cold"&gt;Frost Arrows&lt;/LSTag&gt;, which can create and stack ice blocks for you to climb.&lt;br&gt;&lt;br&gt;If &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, each arrow fired will slow enemies &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z23" version="1">Elemental Fletching: Icy Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z2c" version="1">Loose a burst of freezing energy, creating a block of ice which you can climb. Enemies starting their turn within [1] of the block will potentially lose 50% of their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; and take [2].</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga28focused23" version="1">Focused Fletching: Frost-Splinter Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused2c" version="1">Loose two beams of pure, arcane frost which slows enemies.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00033" version="1">Elemental Fletching: Searing Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210003c" version="1">Infuse magical energy into your arcane quiver, gaining the ability to fire &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Fire"&gt;Searing Arrows&lt;/LSTag&gt;, which generate three stacks of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; when dealing damage.&lt;br&gt;&lt;br&gt;If &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, each arrow fired creates an explosion of Fire, dealing damage in a [1] radius.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z33" version="1">Elemental Fletching: Searing Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z3c" version="1">Loose an arrow of searing flame, which generates three stacks of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; when dealing damage.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga28focused33" version="1">Focused Fletching: Infernal Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused3c" version="1">Loose an arrow roaring like an inferno, which creates a fiery explosion, dealing damage in a [1] radius.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00053" version="1">Elemental Fletching: Lightning Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210005c" version="1">Infuse magical energy into your arcane quiver, gaining the ability to fire &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Lightning"&gt;Lightning Arrows&lt;/LSTag&gt; - bolts then fork from your original target, dealing half damage to two other enemies within [1] of them.&lt;br&gt;&lt;br&gt;If &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, each arrow fired causes a lightning surge, damaging multiple enemies in an line.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z53" version="1">Elemental Fletching: Lightning Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z5c" version="1">Loose an arrow of intense lightning, causing lightning bolts to fork from your original target, dealing half damage to two other enemies within [1] of them.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga28focused53" version="1">Focused Fletching: Surging Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused5c" version="1">Loose an arrow housing a crackling lightning bolt, damaging multiple enemies in an line.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00063" version="1">Elemental Fletching: Lifebreak Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210006c" version="1">Infuse magical energy into your arcane quiver, gaining the ability to fire &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Necrotic"&gt;Lifebreak Arrows&lt;/LSTag&gt;, which can be used to target a suitable corpse, raising a zombie to aid you.&lt;br&gt;&lt;br&gt;If &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, your arrows will heal allies if targeted.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z63" version="1">Elemental Fletching: Necromantic Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z6c" version="1">Loose an arrow inscribed with necromantic energy at a suitable corpse, raising them as a zombie to aid you.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga28focused63" version="1">Focused Fletching: Lifebreak Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused6c" version="1">Loose an arrow of restorative magic, healing allies when targeted.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00073" version="1">Elemental Fletching: Poisonous Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210007c" version="1">Infuse magical energy into your arcane quiver, gaining the ability to fire &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Poison"&gt;Poisonous Arrows&lt;/LSTag&gt;, which stinks of a dangerous odor that can &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poison&lt;/LSTag&gt; your targets.&lt;br&gt;&lt;br&gt;If &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, each arrow fired will place a &lt;LSTag Type="Status" Tooltip="CONTAGION_FLESH_ROT_COUNTDOWN"&gt;Contagion&lt;/LSTag&gt; upon your target.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z73" version="1">Elemental Fletching: Poisonous Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z7c" version="1">Loose an arrow which stinks of a dangerous odor that can &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poison&lt;/LSTag&gt; your targets.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga28focused73" version="1">Focused Fletching: Contagious Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused7c" version="1">Loose a disastrously disease ridden arrow which places a &lt;LSTag Type="Status" Tooltip="CONTAGION_FLESH_ROT_COUNTDOWN"&gt;Contagion&lt;/LSTag&gt; upon your target.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00083" version="1">Elemental Fletching: Psychic Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210008c" version="1">Infuse magical energy into your arcane quiver, gaining the ability to fire &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Psychic"&gt;Psychic Arrows&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; creatures with less than four Intelligence.&lt;br&gt;&lt;br&gt;If &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, each arrow fired will create a cone of psychic energy.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z83" version="1">Elemental Fletching: Psychic Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z8c" version="1">Loose an arrow which fills one's mind with blistering pain, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; creatures with less than four Intelligence.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga28focused83" version="1">Focused Fletching: Psyburst Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused8c" version="1">Loose an arrow which erupts in psionic energy, creating a wave of psychic force.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00093" version="1">Elemental Fletching: Radiant Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210009c" version="1">Infuse magical energy into your arcane quiver, gaining the ability to fire &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Radiant"&gt;Radiant Arrows&lt;/LSTag&gt;, which deal double damage to Aberrations, Fey, Fiends, and Undead.&lt;br&gt;&lt;br&gt;If &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, each arrow fired at an ally will apply &lt;LSTag Type="Status" Tooltip="SANCTUARY"&gt;Sanctuary&lt;/LSTag&gt; to them for three turns.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z93" version="1">Elemental Fletching: Radiant Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z9c" version="1">Loose an arrow which glistens with radiance, dealing double damage to Aberrations, Fey, Fiends, and Undead.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga28focused93" version="1">Focused Fletching: Sanctifying Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused9c" version="1">Loose an arrow which hums with soothing energy, applying &lt;LSTag Type="Status" Tooltip="SANCTUARY"&gt;Sanctuary&lt;/LSTag&gt; to allies for three turns.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00103" version="1">Elemental Fletching: Thunderous Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210010c" version="1">Infuse magical energy into your arcane quiver, gaining the ability to fire &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Thunder"&gt;Thunderous Arrows&lt;/LSTag&gt;, pulling a target toward you by [1].&lt;br&gt;&lt;br&gt;If &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, each arrow fired will push your targets backward by [1].</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de0z103" version="1">Elemental Fletching: Booming Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210z10c" version="1">Loose an arrow which reverberates with force, pulling your target toward you by [1].</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga28focused03" version="1">Focused Fletching: Thunderous Arrow</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused0c" version="1">Loose an arrow which quakes with eruptive force, sending targets flying backward by [1].</content>
+
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100011" version="1">Elemental Fletching: Acidic Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100012" version="1">Elemental Fletching: Frost Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100013" version="1">Elemental Fletching: Searing Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100014" version="1">Elemental Fletching: Lightning Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100015" version="1">Elemental Fletching: Necrotic Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100016" version="1">Elemental Fletching: Poisonous Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100017" version="1">Elemental Fletching: Psychic Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100018" version="1">Elemental Fletching: Radiant Infusion</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100019" version="1">Elemental Fletching: Thunderous Infusion</content>
+
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100001" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_ElementalFletching_1Acid"&gt;Elemental Fletching: Acidic Infusion&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100002" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_ElementalFletching_2Cold"&gt;Elemental Fletching: Frost Infusion&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100003" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_ElementalFletching_3Fire"&gt;Elemental Fletching: Searing Infusion&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100004" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_ElementalFletching_4Lightning"&gt;Elemental Fletching: Lightning Infusion&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100005" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_ElementalFletching_5Necrotic"&gt;Elemental Fletching: Necrotic Infusion&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100006" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_ElementalFletching_6Poison"&gt;Elemental Fletching: Poisonous Infusion&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100007" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_ElementalFletching_7Psychic"&gt;Elemental Fletching: Psychic Infusion&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100008" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_ElementalFletching_8Radiant"&gt;Elemental Fletching: Radiant Infusion&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100009" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_ElementalFletching_9Thunder"&gt;Elemental Fletching: Thunderous Infusion&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00003" version="1">Arcane Finesse</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000c" version="1">Gain the ability to teleport creatures and items through use of your Arcane prowess.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00014" version="1">Arcane Finesse: Gateway</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210001d" version="1">Create two Arcane Gates, which any creature may then use to teleport between.</content>
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z14" version="1">Arcane Finesse: Gateway</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z1d" version="1">An Arcane Gateway creatures may use in order to teleport.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z24" version="1">Arcane Finesse: Quiver Port</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z2d" version="1">Teleport to a nearby location.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00x14" version="1">Arcane Finesse: Wrong Warp</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100x1d" version="1">Teleport an item to another location.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00004" version="1">Improved Fletching</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000d" version="1">Gain an additional three &lt;LSTag Type="Passive" Tooltip="ElementalFletching"&gt;Elemental Fletchings&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00005" version="1">Greater Focus</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000e" version="1">When &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, your basic shots now ricochet to two other creatures if within [1] of each other. Each ricochet deals half of the potential damage of the first hit.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00006" version="1">Eye of the Arcana</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000f" version="1">Gain an additional three &lt;LSTag Type="Passive" Tooltip="ElementalFletching"&gt;Elemental Fletchings&lt;/LSTag&gt;.</content>
+
+<!--CHAMPION-->
+
+	<content contentuid="h8df49fb1g13acg4b8fgb3dfg7d5eebc5dd34" version="3">You approach the complex problems posed by combat with one distinctly effective solution - you will take anything they can throw at you, and protect your allies while doing so.</content>
+	<content contentuid="h6bdfd618g15b3g45c9g8a0egd02cecb1fe7a" version="1">You approach the complex problems posed by combat with one distinctly effective solution - you will take anything they can throw at you, and protect your allies while doing so.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a69a454" version="1">Challenger</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a99a787" version="8">When damaging a target, you have a chance to &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; them. This can be toggled at any time.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a6a9965" version="1">Champion's Windstorm</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9a6454" version="8">Once per combat encounter, upon dropping to 50% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, you restore [1] Hit Points at the end of your turn. The amount of dice rolled is equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. In addition to this, you gain &lt;LSTag Type="Spell" Tooltip="Shout_SecondWind"&gt;Champion's Windstorm&lt;/LSTag&gt;.</content>
+	<content contentuid="h9a3262d9g1cf8g40d2gae47ga2703e761c79" version="1">Champion's Windstorm</content>
+	<content contentuid="h87c9d35ag7914g4efegb53cgf06381ff4b6e" version="8">Once per combat encounter, restore [1] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;. The amount of dice rolled is equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f578454" version="1">Challenger's Call</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f584544" version="3">Attempt to &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; a nearby enemy, as well as any additional enemies within [1] of them.</content>
+
+	<content contentuid="h86a825dagb852g4f68g847cg41fcba29a654" version="1">Challenger's Presence</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2112a35" version="9">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of physical damage. However, enemies will have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when making &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against you. This effect can be toggled at any time.</content>
+	<content contentuid="h0f5c3539g18bbg4891ga824g827151a6a688" version="2">Challenger's Presence</content>
+	<content contentuid="h93857089gb140g4c33ga0a9g26fde3fdfd58" version="7">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of physical damage. However, enemies have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when making &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against them.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a693ood" version="1">Champion's Surge</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9020dd" version="8">Once per combat encounter, gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a693ffd" version="1">Champion's Surge</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a902ffd" version="8">Gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hf222df47g5060g4a4bg918egf8dbdc6a885f" version="2">Champion's Indomitability</content>
+	<content contentuid="hd0776e74g8eeeg435fgad4eg5b7fa3aa4654" version="2">Whenever you fail a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, you can roll again, using the new result instead. In addition to this, add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+<!--ELDRITCH KNIGHT-->
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a69asd9" version="1">Call of the Old One</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9288rd" version="8">When making a melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, deal additional damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h86a825dagb852g4f68g847cg41fcba26a85d" version="1">From Beyond</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c21as6df" version="9">After using a manoeuvre, gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="h86a825dagb852g4f68g847cg41fcba2a6d22" version="1">From Beyond</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c21sdf88" version="9">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5asdff" version="1">Ex Oblivione</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f565495" version="3">Activating &lt;LSTag Type="Spell" Tooltip="Shout_ActionSurge"&gt;Action Surge&lt;/LSTag&gt; restores your &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slots&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a63iujf" version="1">Mountainous Madness</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9jifdd" version="8">After casting a Spell, you may make a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+	<content contentuid="hb5a027a4g2934g40bfga5e1g7cb9ad528a54" version="1">Mountainous Madness</content>
+	<content contentuid="h87a4cfdbg2ba1g4a61gbbe7g5403a658a966" version="2">Affected creature may make a weapon attack as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a6sd09f" version="1">Lurking Fear</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9a9sd8" version="8">When damaging a target, you have a chance to &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frighten&lt;/LSTag&gt; them.</content>
+
+	<content contentuid="hf222df47g5060g4a4bg918egf8dbdc6asd3f" version="2">Shadowed Over</content>
+	<content contentuid="h4290e9c1ga5abg4f18g8243g74225d6f9787" version="2">Killing a &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt; creature restores one &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.</content>
+
+<!--FRONTIER KNIGHT-->
+
+	<content contentuid="h7c7985f4g0ff2g4097ga2b5g220983d7561c" version="1">As a paragon of tactical superiority, you employ a wide array of combat techniques to dominate every fight.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800001" version="2">Cooldown - Frontier: Backbreaker</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000a" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_PostureBreaker_Frontier"&gt;Frontier: Backbreaker&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800002" version="2">Cooldown - Frontier: Brace (Melee)</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000b" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Shout_Steady_Frontier"&gt;Frontier: Brace (Melee)&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800003" version="2">Cooldown - Frontier: Cleave</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000c" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Zone_Cleave_Frontier"&gt;Frontier: Cleave&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800004" version="2">Cooldown - Frontier: Concussive Smash</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000d" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_ConcussiveSmash_Frontier"&gt;Frontier: Concussive Smash&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800005" version="2">Cooldown - Frontier: Disarming Strike</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000e" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_CripplingStrike_Frontier"&gt;Frontier: Disarming Strike&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800006" version="2">Cooldown - Frontier: Flourish</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000f" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_DisarmingStrike_Frontier"&gt;Frontier: Flourish&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800007" version="2">Cooldown - Frontier: Heartstopper</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000g" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_OpeningAttack_Frontier"&gt;Frontier: Heartstopper&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800008" version="2">Cooldown - Frontier: Lacerate</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000h" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_HeartStopper_Frontier"&gt;Frontier: Lacerate&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800009" version="2">Cooldown - Frontier: Maiming Strike</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000i" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_Slash_New_Frontier"&gt;Frontier: Maiming Strike&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800010" version="2">Cooldown - Frontier: Piercing Strike</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000j" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_PiercingThrust_Frontier"&gt;Frontier: Piercing Strike&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800011" version="2">Cooldown - Frontier: Pommel Strike</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000k" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_PommelStrike_Frontier"&gt;Frontier: Pommel Strike&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800012" version="2">Cooldown - Frontier: Prepare</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000l" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Shout_FullSwing_Frontier"&gt;Frontier: Prepare&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800013" version="2">Cooldown - Frontier: Rush Attack</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000m" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Rush_SpringAttack_Frontier"&gt;Frontier: Rush Attack&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800014" version="2">Cooldown - Frontier: Overwhelm</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000n" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_UnarmedStrike_Frontier"&gt;Frontier: Unarmed Strike&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800015" version="2">Cooldown - Frontier: Topple</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000o" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_Topple_Frontier"&gt;Frontier: Topple&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800016" version="2">Cooldown - Frontier: Weakening Strike</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000p" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Target_HinderingSmash_Frontier"&gt;Frontier: Weakening Strike&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800017" version="2">Cooldown - Frontier: Brace (Ranged)</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000q" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Shout_SteadyRanged_Frontier"&gt;Frontier: Brace (Ranged)&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800018" version="2">Cooldown - Frontier: Hamstring Shot</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000r" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Projectile_HamstringShot_Frontier"&gt;Frontier: Hamstring Shot&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800019" version="2">Cooldown - Frontier: Mobile Shot</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000s" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Projectile_MobileShooting_Frontier"&gt;Frontier: Mobile Shot&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e236a99800020" version="2">Cooldown - Frontier: Piercing Shot</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209980000t" version="2">Affected creature will be able to use &lt;LSTag Type="Spell" Tooltip="Projectile_PiercingShot_Frontier"&gt;Frontier: Piercing Shot&lt;/LSTag&gt; again upon the expiration of this status.</content>
+
+	<content contentuid="9b7b811b9c3043e189f945540bf5116ea9872" version="2">Combat Techniques</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf5116ea5487" version="2">Gain mastery of various combat techniques.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00001" version="2">Frontier: Backbreaker</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000a" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_PostureBreaker_Frontier"&gt;Frontier: Backbreaker&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00002" version="2">Frontier: Brace (Melee)</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000b" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Shout_Steady_Frontier"&gt;Frontier: Brace (Melee)&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00003" version="2">Frontier: Cleave</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000c" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Zone_Cleave_Frontier"&gt;Frontier: Cleave&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00004" version="2">Frontier: Concussive Smash</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000d" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_ConcussiveSmash_Frontier"&gt;Frontier: Concussive Smash&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00005" version="2">Frontier: Disarming Strike</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000e" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_DisarmingStrike_Frontier"&gt;Frontier: Disarming Strike&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00006" version="2">Frontier: Flourish</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000f" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_OpeningAttack_Frontier"&gt;Frontier: Flourish&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00007" version="2">Frontier: Heartstopper</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000g" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_HeartStopper_Frontier"&gt;Frontier: Heartstopper&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00008" version="2">Frontier: Lacerate</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000h" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_Slash_New_Frontier"&gt;Frontier: Lacerate&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00009" version="2">Frontier: Maiming Strike</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000i" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_CripplingStrike_Frontier"&gt;Frontier: Maiming Strike&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00010" version="2">Frontier: Piercing Strike</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000j" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_PiercingThrust_Frontier"&gt;Frontier: Piercing Strike&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00011" version="2">Frontier: Pommel Strike</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000k" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_PommelStrike_Frontier"&gt;Frontier: Pommel Strike&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00012" version="2">Frontier: Prepare</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000l" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Shout_FullSwing_Frontier"&gt;Frontier: Prepare&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00013" version="2">Frontier: Rush Attack</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000m" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Rush_SpringAttack_Frontier"&gt;Frontier: Rush Attack&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00015" version="2">Frontier: Topple</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000o" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_Topple_Frontier"&gt;Frontier: Topple&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00014" version="2">Frontier: Unarmed Strike</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000n" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_UnarmedStrike_Frontier"&gt;Frontier: Unarmed Strike&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00016" version="2">Frontier: Weakening Strike</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000p" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Target_HinderingSmash_Frontier"&gt;Frontier: Weakening Strike&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00017" version="2">Frontier: Brace (Ranged)</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000q" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Shout_SteadyRanged_Frontier"&gt;Frontier: Brace (Ranged)&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00018" version="2">Frontier: Hamstring Shot</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000r" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Projectile_HamstringShot_Frontier"&gt;Frontier: Hamstring Shot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00019" version="2">Frontier: Mobile Shot</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000s" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Projectile_MobileShooting_Frontier"&gt;Frontier: Mobile Shot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b00020" version="2">Frontier: Piercing Shot</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d561c66b0000t" version="2">Gain &lt;LSTag Type="Spell" Tooltip="Projectile_PiercingShot_Frontier"&gt;Frontier: Piercing Shot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d566548400001" version="2">Frontier Recovery</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d56654840000a" version="2">Rather than being restored on a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, your Combat Techniques are on individual cooldowns. Currently, your Combat Techniques refresh once every three turns.&lt;br&gt;&lt;br&gt;As a Frontier Knight, you are capable of permanently learning the unique weapon based actions of gear you come across on your travels. Upon learning an action from a piece of gear, it is immediately destroyed.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d566548400004" version="2">Steadfast Onslaught</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d56654840000d" version="2">When damaging a creature with one of your Combat Techniques, you may spend a &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Dice&lt;/LSTag&gt; in order to increase the damage dealt.</content>
+	<content contentuid="hd8a8ad84g4f65g46fdgb04dg5bff8k39dlf0" version="1">Steadfast Onslaught</content>
+	<content contentuid="h23701712ge994g40bfga729g36ff5d8f4dff" version="3">Deal an extra [1] damage to a creature when damaging them with one of your Combat Techniques.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d566548400003" version="2">Improved Frontier Recovery</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d56654840000c" version="2">Rather than being restored on a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, your Combat Techniques are on individual cooldowns. Currently, your Combat Techniques refresh once every two turns.&lt;br&gt;&lt;br&gt;As a Frontier Knight, you are capable of permanently learning the unique weapon based actions of gear you come across on your travels. Upon learning an action from a piece of gear, it is immediately destroyed.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d566548400002" version="2">Critical Breakthrough</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d56654840000b" version="2">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, all of your Combat Techniques are immediately refreshed.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d566548400005" version="2">Mastered Frontier Recovery</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d56654840000e" version="2">Rather than being restored on a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, your Combat Techniques are on individual cooldowns. Your Combat Techniques refresh every turn.&lt;br&gt;&lt;br&gt;As a Frontier Knight, you are capable of permanently learning the unique weapon based actions of gear you come across on your travels. Upon learning an action from a piece of gear, it is immediately destroyed.</content>
+
+	<content contentuid="58ff3f1bd299431ab58216d6d566548400006" version="2">Frontier Mastery</content>
+	<content contentuid="58ff3f1bd299431ab58216d6d56654840000f" version="2">All of your Combat Techniques can now be made as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;. This can be toggled at any time.</content>
+
+<!--MANEUVERS-->
+
+	<content contentuid="h635f196ag5801g4f3eg9b8fgac904df4dc3b" version="1">Bait and Switch</content>
+	<content contentuid="h47034813ga3dag4a50g82c1ga9b58b1e98f3" version="1">When you're within [1] of an ally, you can spend a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and a &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to switch places with them.</content>
+	<content contentuid="h4a9ba909g2b60g43a5ga8c0g6489bab77f0f" version="1">Bait and Switch</content>
+	<content contentuid="h799e724bg96c6g4ee7gabdfg4734880cd2b1" version="1">Swap places with a nearby ally.</content>
+
+	<content contentuid="hdb9db212gc525g459fg9ce7g2ceab5f899dc" version="1">Brace</content>
+	<content contentuid="hc58760f8ga6afg4f5fg8d54gfd32677b7063" version="1">If an enemy you can see moves close to you, you can use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and a &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; in order to make a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against that creature.</content>
+	<content contentuid="h4f9fd43eg1f44g41aegb9b8g517b17ba1d2a" version="1">Brace</content>
+	<content contentuid="hc58760f8ga6afg4f5fg8d54gfd32677b7064" version="1">Make a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against an enemy who enters your range.</content>
+
+	<content contentuid="ha78522a3g7f21g40b2g9557g2a02534f81ea" version="1">Charge</content>
+	<content contentuid="ha65dc6b2g3e0ag4046gb13fgef41dd63e539" version="1">Spend a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; in order to &lt;LSTag Type="Status" Tooltip="DASH"&gt;Dash&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="DISENGAGE"&gt;Disengage&lt;/LSTag&gt;.</content>
+	<content contentuid="ha78522a3g7f21g40b2g9557g2a02534f81eb" version="1">Charge</content>
+	<content contentuid="h13d25291gb181g4c32gb52eg950ea7035d3c" version="1">&lt;LSTag Type="Status" Tooltip="DASH"&gt;Dash&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="DISENGAGE"&gt;Disengage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="haaadff92gd9d7g41d4gab0fg6585648fa1de" version="1">Challenger's Strike</content>
+	<content contentuid="hbb883574g6910g4bc2g9b49g5fd8f123b96f" version="2">Spend an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to make an attack that attempts to &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; your target to only attack you.</content>
+	<content contentuid="hd760dcf9gaaedg4d6dg96c0g69367e28e90d" version="2">Challenger's Strike (Melee)</content>
+	<content contentuid="h09a75e02g4bddg4517gb8d7g92d176cfceb0" version="5">&lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; an enemy to attack only you. The challenged enemy will have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against anyone but you.</content>
+	<content contentuid="ha5a9a28bg1b86g4acbgafceg4ed12259aa5d" version="2">Challenger's Strike (Ranged)</content>
+	<content contentuid="h7c51b8ceg0e65g499cga16fgbf3c7b6f007c" version="5">&lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; an enemy to attack only you. The challenged enemy will have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against anyone but you.</content>
+
+	<content contentuid="ha4a1a217g472cg4bf5g8935g57822249ebc5" version="1">Commander's Strike</content>
+	<content contentuid="h3d912e65g29e8g4cc4g88b8g19b8e6610601" version="2">Spend an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to direct an ally to strike a foe. The ally may use their &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; on their next turn to make an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+	<content contentuid="h5b61a898gd4e7g4cdbg86ccgcdc0c213aeb9" version="2">Commander's Strike</content>
+	<content contentuid="hf4f7ad9bg0c50g4185g934cg870b02680df1" version="5">Direct an ally to strike a foe. The ally may use their &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; on their next turn to make an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+	<content contentuid="h465e5656g3ee8g4f55gbd78g9f2442f80aae" version="2">Commander's Strike</content>
+	<content contentuid="h5ba19729g4862g4d30ga73bg03e82b0d97ff" version="3">Affected creature can spend their &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to make a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;.</content>
+	<content contentuid="h4344309ag115dg487bgbdcbg14b10d6f58d1" version="2">Commander's Strike</content>
+	<content contentuid="h637d4cbeg01f8g44faga3deg34bde92e9f72" version="1">Directed by your ally, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to make a weapon attack.</content>
+
+	<content contentuid="ha21fd129ga099g435ag9297gc77a566a5901" version="2">Disarming Attack</content>
+	<content contentuid="hb567e7abg48f7g4b73g96e3g7750ecb59f62" version="4">Spend an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to make an attack that potentially forces the target to drop the weapons they are holding.</content>
+	<content contentuid="h256cf588g2a77g4790g9b3bg2508f0f6ffc3" version="3">Disarming Attack (Melee)</content>
+	<content contentuid="h29e8a3f7g106fg4b2bg9e32ga959590fa0c9" version="5">Focus your attack on your foe's hands and potentially force them to drop the weapons they are holding.</content>
+	<content contentuid="hb0dd11ccg7b2cg4c60g9dfbg11e63bc1d65f" version="3">Disarming Attack (Ranged)</content>
+	<content contentuid="hde9e6b33g9b80g4d33g9c37g4e9d30d00e44" version="9">Focus your attack on your foe's hands and potentially force them to drop the weapons they are holding.</content>
+
+	<content contentuid="h98e9bcd5g4fdfg4755g8b67gd50f87926f48" version="1">Distracting Strike</content>
+	<content contentuid="hf5852675g2f2dg462cg9f6eg7dd4e704580b" version="1">Spend an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to &lt;LSTag Type="Status" Tooltip="DISTRACTED"&gt;Distract&lt;/LSTag&gt; your target, giving your allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against it.</content>
+	<content contentuid="h63449380gb480g42f8g9873g0813f22f5d41" version="3">Distracting Strike (Melee)</content>
+	<content contentuid="hd4883ef9g5056g4961gaf68g0a4ba53cb1e8" version="9">&lt;LSTag Type="Status" Tooltip="DISTRACTED"&gt;Distract&lt;/LSTag&gt; your target, giving your allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against it.</content>
+	<content contentuid="hf6c17686g3c4ag4368gb1b3gf7408149c9fe" version="3">Distracting Strike (Ranged)</content>
+	<content contentuid="hf5917c34g1469g4e73g9ecdg1da4247b9162" version="7">&lt;LSTag Type="Status" Tooltip="DISTRACTED"&gt;Distract&lt;/LSTag&gt; your target, giving your allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against it.</content>
+
+	<content contentuid="h1eefbb5cg9426g4285g8f37gf85c5521a25c" version="1">Evasive Footwork</content>
+	<content contentuid="hce21d68dg123bg417fg947cg4cd6d058123c" version="1">Spend a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; in order to increase your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 2 for three turns.</content>
+	<content contentuid="h7a4e8854g1c30g453bg8c8dge384210b2c2e" version="1">Increase your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 2.</content>
+	<content contentuid="h58e930c9g8c9fg4194gb928g237c8266c019" version="1">Affected creature's &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is increased by 2.</content>
+
+	<content contentuid="hb80cd48eg3affg43a1g8ad1gc747ec5163db" version="1">Feinting Attack</content>
+	<content contentuid="h7cf1c834gd32cg486eg932fg938d289156e4" version="2">Spend an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to make a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against a target with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h8d8fd22fg9665g4831g8b72g85e36edaba28" version="2">Feinting Attack</content>
+	<content contentuid="h2025a1d6g8c3cg43a6ga1a0g3bc39be9704d" version="3">Attack your target with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hcf2c63a0g4d0cg4542ga28dgd2f3d0721588" version="1">Lunging Attack</content>
+	<content contentuid="ha919c46dg8ce9g4f94gaba7g707215b47ae9" version="1">Spend a &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to double the reach of your basic &lt;LSTag Type="Spell" Tooltip="Target_MainHandAttack"&gt;Melee Attacks&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strikes&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_OffhandAttack"&gt;Dual-Wield Melee Attacks&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="hcf2c63a0g4d0cg4542ga28dgd2f3d0721589" version="1">Lunging Attack</content>
+	<content contentuid="h9b81e5d2g1f51g4b54g9726g4f3aa7fe284b" version="1">Double the reach of your &lt;LSTag Type="Spell" Tooltip="Target_MainHandAttack"&gt;Melee Attacks&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strikes&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_OffhandAttack"&gt;Dual-Wield Melee Attacks&lt;/LSTag&gt;.</content>
+	<content contentuid="hcf2c63a0g4d0cg4542ga28dgd2f3d0721590" version="1">Lunging Attack</content>
+	<content contentuid="h9b81e5d2g1f51g4b54g9726g4f3aa7fe284c" version="1">Affected creature's &lt;LSTag Type="Spell" Tooltip="Target_MainHandAttack"&gt;Melee Attacks&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strikes&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_OffhandAttack"&gt;Dual-Wield Melee Attacks&lt;/LSTag&gt; have double the reach that they normally would.</content>
+
+	<content contentuid="h7f650588g406ag4112g86c3g9d962ce7d68a" version="1">Manoeuvring Attack</content>
+	<content contentuid="h633bfc7ag36afg4282g8654g312ee0d5f75e" version="3">Spend an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to make an attack. After a successful hit, you may select an ally to use &lt;LSTag Type="Spell" Tooltip="Target_ForcedManeuver"&gt;Forced Manoeuvre&lt;/LSTag&gt; on. The targeted ally will increase their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by 50%, and will not provoke &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;.</content>
+	<content contentuid="h17b54d4dgce27g44c6g91fdga5f377aaad37" version="3">Manoeuvring Attack (Melee)</content>
+	<content contentuid="h8a5392f7g30c6g40edgb5dfg5fb2f38ef9b8" version="4">Make an attack. On a successful hit, you may use &lt;LSTag Type="Spell" Tooltip="Target_ForcedManeuver"&gt;Forced Manoeuvre&lt;/LSTag&gt; on an ally, increasing their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by 50%, and preventing them from provoking &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;.</content>
+	<content contentuid="h7622dbcbgb62cg4486gb837gcfce72561d09" version="2">Manoeuvring Attack (Ranged)</content>
+	<content contentuid="h2bd6357eg4648g4fa0ga371g5c2ddeea615a" version="4">Make an attack. On a successful hit, you may use &lt;LSTag Type="Spell" Tooltip="Target_ForcedManeuver"&gt;Forced Manoeuvre&lt;/LSTag&gt; on an ally, increasing their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by 50%, and preventing them from provoking &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;.</content>
+	<content contentuid="h39e399b5gc548g4bc6g8d03g2247eada2f2e" version="2">Forced Manoeuvre</content>
+	<content contentuid="h3e8a541dg208ag4bb8ga683g592cdf91dd6f" version="3">Increase an ally's &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by 50%. They will not provoke &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt; when moving.</content>
+	<content contentuid="hf420e217gd99bg4a35gbcdeg8a3cd94e9cbc" version="2">Forced Manoeuvre</content>
+	<content contentuid="hb2f9fae9gf6a8g4123gb9e0g56ca5a3df4b0" version="3">Affected creature's &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; has increased by 50%. They will not provoke &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt; when moving.</content>
+
+	<content contentuid="h0fb5eb87ga21fg430fgb5d9gd335ca4aaaa6" version="2">Menacing Attack</content>
+	<content contentuid="h8085bdbbg5b96g4da1g8141g3945f0783abf" version="5">Spend an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to make an attack that potentially &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightens&lt;/LSTag&gt; your target.</content>
+	<content contentuid="h1d9f969cg3a00g4692gb889g30308b8f0520" version="1">Menacing Attack (Melee)</content>
+	<content contentuid="h2240cc00gb688g4ef8gb94dg046d991c6ac1" version="4">Make an attack which potentially &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightens&lt;/LSTag&gt; your target.</content>
+	<content contentuid="h92fb6ed3g55e6g4cdbg849agb3f931003d49" version="1">Menacing Attack (Ranged)</content>
+	<content contentuid="he232e187g96ffg4e53gb64dg7413cad43a28" version="5">Make an attack which potentially &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightens&lt;/LSTag&gt; your target.</content>
+
+	<content contentuid="h1c046e70g3edcg4ba8g9a99gbafa2c7a41b5" version="3">Parrying Stance</content>
+	<content contentuid="h81d70f61g785eg4fb6gb7edg4cb2e53f8098" version="3">Spend a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; in order to enter into a defensive stance. Your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; increases by 10 until the next time another creature makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you.</content>
+	<content contentuid="ha6f2dce6g31bcg4b5dgaecfg6b538fde6fe4" version="2">Parrying Stance</content>
+	<content contentuid="h7fe9bf34gbb35g45f0g90bdg14b43ccd6002" version="3">Enter into a defensive stance, increasing your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 10 until the next time another creature makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you.</content>
+	<content contentuid="ha6f2dce6g31bcg4b5dgaecfg6b538fde6fe6" version="2">Parrying Stance</content>
+	<content contentuid="h7fe9bf34gbb35g45f0g90bdg14b43ccd62a1" version="3">Affected creature has entered into a defensive stance. Their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; has increased by 10 until the next time another creature makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against them.</content>
+
+	<content contentuid="h435f7bacga36cg4e63gb926ga6f70f86a9b4" version="1">Precision Attacks</content>
+	<content contentuid="h847c428bg7223g469cg89c8g11794616ca2f" version="1">Spend a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to add a +2 bonus to the result of your weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="hd5070378gecd0g4aa7g9f64ge8d6f81b84ff" version="2">Precision Attacks</content>
+	<content contentuid="h48b30195gb946g4f60gac80g5af224b67906" version="3">Add a +2 bonus to the result of your weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+	<content contentuid="h9ef815d1gf06cg4a98gae74gae1ef2b4eb75" version="2">Precision Attacks</content>
+	<content contentuid="hf405e8ffgcfd2g4810gba21g23cfe16ef73f" version="3">Affected creature has a +2 bonus to the result of their weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h428d60a6gfe66g403aga7d2gec5f9f57bac9" version="1">Pushing Attack</content>
+	<content contentuid="h305ac7f7gb738g4e5cgb499g0479c1b129e7" version="4">Spend an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to make an attack that potentially pushes the target back [1].</content>
+	<content contentuid="h3b0b22efgb13bg4c18g8fabgb8d752f09bcc" version="1">Pushing Attack (Melee)</content>
+	<content contentuid="hbabe45aeg9a11g4ed4g8184g14aa6c0db9f5" version="4">Deal an additional and potentially push your target back by [1].</content>
+	<content contentuid="h216c28e7g996dg4839gb164gbabc5b2f6d8f" version="1">Pushing Attack (Ranged)</content>
+	<content contentuid="h49fe0914g5e23g493fg842bg9abc63460f28" version="4">Deal an additional and potentially push your target back by [1].</content>
+
+	<content contentuid="h8e13d812g8531g43a2ga8d6ga4c1755565eb" version="1">Quick Toss</content>
+	<content contentuid="hef0821c8gaafdg4865gb7d8g5e67edb5bb2e" version="1">Spend a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; in order to &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throw&lt;/LSTag&gt; a weapon that has the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; weapon property.</content>
+	<content contentuid="h8e13d812g8531g43a2ga8d6ga4c1755565ed" version="1">Quick Toss</content>
+	<content contentuid="hef0821c8gaafdg4865gb7d8g5e67edb5bb2q" version="1">&lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throw&lt;/LSTag&gt; a weapon that has the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; weapon property.</content>
+
+	<content contentuid="h8c3ce2c4g49dfg42e7g8a88g77013a7399bd" version="1">Rally</content>
+	<content contentuid="h44009683g4d91g4f6ag938bg3fab7be211a9" version="4">Spend a &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to grant an ally [1], bolstering their resolve.</content>
+	<content contentuid="hb5eb7498gf3e3g48aaga9f8gfafb0873b37b" version="1">Rally</content>
+	<content contentuid="h5f0d9bdegf6cbg4e3ag9898g24fa33d8d2e9" version="3">Grant an ally [1].</content>
+
+	<content contentuid="h3e7d3c00gcc62g4673g80bcg8fa56b901fb7" version="2">Riposte</content>
+	<content contentuid="hf964daddge4e5g40e0g9e6fg5ef070887bc0" version="5">When a hostile creature fails an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, spend a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to retaliate with a powerful weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+	<content contentuid="h8206f7fbg6fa5g4ceeg9411gbbb7ec7e11e8" version="1">Riposte</content>
+	<content contentuid="h29c21e7bg1694g40bbg9ffdg7de76393c235" version="3">When a hostile creature fails an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, retaliate with a powerful weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h77027701g18b2g4096gb048g86bde38ef2c0" version="1">Sweeping Attack</content>
+	<content contentuid="hb5f93e43gb5cag4e49g81aaga2b84784d714" version="2">Spend an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to swing your weapon in a wide, sweeping arc, attacking multiple enemies at once.</content>
+	<content contentuid="h4b9566d0g15d9g48f0g9e61geb15bbeac434" version="2">Sweeping Attack</content>
+	<content contentuid="hed20fdd9gdfa1g4a4bgbdb4g71b6fc44fc8b" version="3">Swing your weapon in a wide, sweeping arc to attack multiple creatures at once.</content>
+
+	<content contentuid="hf58b8659g3a88g4e55ga482gdb72775752d3" version="2">Trip Attack</content>
+	<content contentuid="h1c73b02dgad16g47bag91a2gba635e858a16" version="4">Spend an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to make an attack that potentially knocks your target &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+	<content contentuid="h5d685c2agb760g4ce6g81bfg424051f8bd14" version="2">Trip Attack (Melee)</content>
+	<content contentuid="he9168038ga0d6g4a32ga3ccgca4407ca118f" version="3">Make an attack, potentially knocking your target &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+	<content contentuid="h8b71ff76g9e62g4bb6ga9d1g30ae5a7dd6e7" version="1">Trip Attack (Ranged)</content>
+	<content contentuid="h0dbe602dgde87g4ae2gb0bcg44cffe8dfd32" version="5">Make an attack, potentially knocking your target &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+
+<!--PASSIVES-->
+
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e00005" version="2">Honed Techniques</content>
+	<content contentuid="9b7b811b9c3043e189f945540bf5116e0000e" version="2">Battle has brought you to the edge, proliferating growth once more.&lt;br&gt;A clash of steel, sparking the fires of trial within the firmament.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500001" version="1">Aspect of Defiance</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000a" version="3">When damaged below 50% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of physical damage.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000z1" version="1">Aspect of Defiance</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000za" version="3">Affected creature is &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all forms of physical damage while remaining under 50% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500002" version="1">Challenger's Call</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000b" version="3">When an ally within [1] of you is damaged while below 50% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to immediately &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; that enemy, as well as any additional enemies within [2] of the aggressor.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000z2" version="1">Challenger's Call</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000zb" version="3">When an ally within [1] is damaged while below 50% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, immediately &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; that enemy, as well as any additional enemies within [2] of the aggressor.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500zz2" version="1">Challenged</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500zzb" version="3">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; when not attacking the creature who challenged them.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e233365d85485" version="1">Challenged Immunity</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e2as6d4f85d89" version="3">Affected creature cannot be &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenged&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500003" version="1">Charge of the Collective</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000c" version="3">Upon &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Dashing&lt;/LSTag&gt;, allies within [1] do so as well.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500004" version="1">Duellist</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000d" version="3">Gain a +2 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500005" version="1">Full Arsenal</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000e" version="3">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on an enemy, restore one of your &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Dice&lt;/LSTag&gt;. This effect can trigger once per turn.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500006" version="1">Heavy Assault</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000f" version="2">While making a weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; while wielding a &lt;LSTag Tooltip="TwoHanded"&gt;Two-Handed Weapon&lt;/LSTag&gt;, your damage dice are rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500007" version="1">Intuitive Warning</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000g" version="2">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally within [1] of you, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on the attack. You must be able to see the attacker.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000z7" version="1">Intuitive Warning</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000zg" version="2">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally within [1] of you, impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on the attack. You must be able to see the attacker.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500008" version="1">Ironclad</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000h" version="3">You are unable to be forcibly moved. In addition, your &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; increases by 2.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500009" version="1">Iron Will</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000i" version="3">On your first turn of any combat encounter, and upon recovering from a &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Condition&lt;/LSTag&gt;, gain status immunity to all Lockdown Conditions for three turns.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500010" version="1">Leader's Momentum</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000j" version="3">Increase your Initiative by 2. Upon &lt;LSTag Type="Status" Tooltip="RALLY"&gt;Rallying&lt;/LSTag&gt; another creature, their Initiative is also increased by 2 until they are no longer Rallied.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500011" version="1">Martial Fortress</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000k" version="3">Once per turn, upon killing an enemy or rolling a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, receive &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; equal to your level multiplied by two.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500012" version="1">Martial Prowess</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000l" version="3">When dealing damage, you ignore Slashing &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500013" version="1">Merciless</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000m" version="3">When making a weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an enemy with less than 25% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; remaining, deal additional damage equal to your levels in Fighter multiplied by two.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500014" version="1">Natural Born Leader</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000n" version="3">Once per turn, upon rolling a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, immediately &lt;LSTag Type="Status" Tooltip="RALLY"&gt;Rally&lt;/LSTag&gt; all allies within [1].</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500015" version="1">Opportunist</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000o" version="3">When you make a successful melee based &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attack&lt;/LSTag&gt;, reduce the targeted enemies &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; to zero.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500016" version="1">Proper Form</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000p" version="3">When an enemy damages you, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction Point&lt;/LSTag&gt; to reduce the damage by -1d4 multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. You must be able to see the attacker.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500z16" version="1">Proper Form</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000zp" version="3">When an enemy damages you, reduce the damage by -1d4 multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. You must be able to see the attacker.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500017" version="1">Reckless Abandon</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000q" version="3">While in combat, restore one &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; every three turns.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f56a922" version="1">Reckless Abandon</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e232042a1550q" version="3">Affected creature will recover one &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; when this status expires.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500018" version="1">Sentinels Protection</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000r" version="1">When an enemy damages an ally within [1] of you, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction Point&lt;/LSTag&gt; to reduce the damage by -1d4 multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. You must be able to see the attacker.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500z18" version="1">Sentinels Protection</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5000zr" version="1">When an enemy damages an ally within [1] of you, reduce the damage by -1d4 multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. You must be able to see the attacker.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500019" version="1">Tactical Advantage</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000s" version="3">Increase the reach of your basic &lt;LSTag Type="Spell" Tooltip="Target_MainHandAttack"&gt;Melee Attacks&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strikes&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_OffhandAttack"&gt;Dual-Wield Melee Attacks&lt;/LSTag&gt; by 50%.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500020" version="1">Tenacious Fighter</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000t" version="1">Gain an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction Point&lt;/LSTag&gt;.</content>
+
+<!--BATTLE MASTER TO FRONTIER KNIGHT-->
+
+	<content contentuid="h1b9bb939ga573g4e5dg8c16g20dfce934df7" version="4">Learn two manoeuvres and gain a &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to fuel them. You regain expended Superiority Dice after a &lt;LSTag Tooltip="ShortRest"&gt;Short&lt;/LSTag&gt; or &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h1d06df95g7f0ag4a3eg996ag2f7c94531a0f" version="2">Superiority dice are spent to empower manoeuvres, improving efficiency in combat.</content>
+	<content contentuid="h2780bb92gd755g42bdg90e4g35ba06f48ac9" version="1">Frontier Knight</content>
+	<content contentuid="h338f766bg5761g4fd4g9715g0bb6958837dd" version="1">Frontier Knight</content>
+	<content contentuid="h7764b2fbgbbe2g4352g9868gb25f450704fe" version="1">Frontier Knights are paragons of tactical superiority, combining combat manoeuvres and experience in the field to dominate every fight.</content>
+	<content contentuid="haa5c8093g2204g476fgb145gb10d4a0f7f29" version="2">Your Superiority Dice fuel your manoeuvres and are expended upon use. You regain expended Superiority Dice after a &lt;LSTag Tooltip="ShortRest"&gt;Short&lt;/LSTag&gt; or &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+<!--REMOVE ELDRITCH KNIGHT MENTIONS FROM WEAPON BUFFS-->
+
+	<content contentuid="h0161f952g46ecg4673g82e8gd7f4f4e7ac25" version="1">This blade's magical powers only function if it is a Warlock's &lt;LSTag Type="Status" Tooltip="PACT_BLADE"&gt;Pact Weapon&lt;/LSTag&gt;.</content>
+	<content contentuid="h313a301bg3505g4718ga388g47e6f92a3d62" version="1">This blade's magical powers only function if it is a Warlock's &lt;LSTag Type="Status" Tooltip="PACT_BLADE"&gt;Pact Weapon&lt;/LSTag&gt;.</content>
+	<content contentuid="hc1a0df7bgb13ag4ad1g80d0g9a4674b857e0" version="2">This hammer's magical powers only function if it is a Warlock's &lt;LSTag Type="Status" Tooltip="PACT_BLADE"&gt;Pact Weapon&lt;/LSTag&gt;.</content>
+	<content contentuid="hd1b7e512g7c60g4cc8g9477ge1341b969de8" version="1">This blade's magical powers only function if it is a Warlock's &lt;LSTag Type="Status" Tooltip="PACT_BLADE"&gt;Pact Weapon&lt;/LSTag&gt;.</content>
+	<content contentuid="hfe7d918bgb89ag4968g9b21g4cadcbf90283" version="1">This weapon was wielded by the lionlike Eldritch Knight Cypress of the Starfeller clan, who took on challenges of the heart and mind with palpable brilliance, and fought with a skill and heated intensity that was almost solar. </content>
+
+</contentList>

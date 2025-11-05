@@ -1,0 +1,117 @@
+key "FallDamageBaseDamage","0.01"
+
+key "FallDamageMinimumDistance","3"
+
+key "FallDamageMaximumDistance","18"
+
+key "FallDamageDamageType","3"
+
+key "FallDamagePronePercent","0.25"
+
+key "FallDamageMultiplierHugeGargantuan","2"
+
+key "FallImpactPushDistance","2"
+
+key "FallImpactConstant","0.000005"
+
+key "FallImpactMinWeight","0.5"
+
+
+
+key "FleeDistance","18"
+
+
+
+key "HighGroundThreshold","2"
+
+key "LowGroundAttackRollPenalty","-4"
+
+key "HighGroundAttackRollBonus","4"
+
+key "LowGroundMeleeRange","0"
+
+key "HighGroundMeleeRange","0.5"
+
+key "HighGroundRangeMultiplier","1"
+
+
+
+key "InitiativeDie","10"
+
+
+
+key "CarryWeightBase","0"
+
+key "CarryWeightPerStr","0"
+
+key "CarryLimitMultiplier","12.5"
+
+key "EncumberedMultiplier","12.5"
+
+key "HeavilyEncumberedMultiplier","12.5"
+
+
+
+key "JoinAllyInCombatRadius","9"
+
+
+
+key "LearnSpellCostPerLevel","250"
+
+key "SavantLearnSpellCostPerLevel","250"
+
+
+
+key "PickpocketingMinimumDC","1"
+
+
+
+key "FollowDistance","90"
+
+key "SneakFollowDistance","9"
+
+
+
+key "BaseSpellDifficultyCheck","10"
+
+
+
+key "NPC max combat turn time","30"
+
+key "HintDuration","6"
+
+
+
+key "ShoveCurveConstant","65"
+
+key "ShoveDistanceMax","9"
+
+key "ShoveDistanceMin","3"
+
+key "ShoveMultiplier","12"
+
+
+
+key "ExhaustedRest_HealthPercent","0"
+
+key "ExhaustedRest_ResourcePercent","0"
+
+
+
+key "ScaleChangeSpeed","1.0"
+
+
+
+key "PerformerZoneJoinRadius","9"
+
+key "PerformerZoneSilenceRadius","0"
+
+
+
+key "PingCooldownTime","1"
+
+key "PingMarkerLifeTime","3"
+
+
+
+key "EscortStragglerDistance","9"

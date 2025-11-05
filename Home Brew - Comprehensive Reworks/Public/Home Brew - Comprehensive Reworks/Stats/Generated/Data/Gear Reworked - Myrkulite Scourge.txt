@@ -1,0 +1,6 @@
+new entry "WPN_SkullFlail_1"
+type "Weapon"
+using "WPN_Flail"
+data "RootTemplate" "05ca18da-41f4-4385-b370-0f75a989e119"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT);WeaponDamage(1d8, Necrotic)"
+data "Unique" "1"

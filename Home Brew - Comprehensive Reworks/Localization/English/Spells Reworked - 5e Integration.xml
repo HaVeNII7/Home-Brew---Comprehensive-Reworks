@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500001" version="2">Thunderous Strike</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000a" version="1">Strike a creature with your melee weapon, causing them to take another [1] should they choose to move.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt;.</content>
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d5000a1" version="2">Thunder Struck</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000aa" version="1">Affected creature will take [1] should they choose to move.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500002" version="2">Create or Extinguish Flames</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000b" version="1">Create a [1] flaming surface, or extinguish flames entirely from a creature, object, or surface.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500022" version="2">Create Flames</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000bb" version="1">Create a [1] flaming surface.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500222" version="2">Extinguish Flames</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e5900bbb" version="1">Extinguish a flaming creature, object, or surface.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500003" version="2">Create Bonfire</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000c" version="1">Create a magical bonfire which grants all within [1] of it &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage.</content>
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d5000a3" version="2">Fireside Comfort</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000ac" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage while within [1] of the nearby bonfire.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500004" version="2">Druidcraft</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000d" version="1">Attempt to &lt;LSTag Type="Status" Tooltip="ENSNARED_VINES"&gt;Entangle&lt;/LSTag&gt; another creature.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500005" version="1">Frostbite</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000e" version="1">Touch a creature, causing a numbing frost to form around them, imposing &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d5000a5" version="1">Frostbite</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000ae" version="1">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500006" version="1">Green Flame-Blade</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000f" version="1">Strike a creature with your melee weapon, causing a spark of flame to ricochet into another enemy within [1], dealing [2].&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt;.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500007" version="1">Gust Bellow</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000g" version="1">Create a [1] area of wind around yourself, removing surfaces and potentially forcing creatures back by [2].</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500008" version="1">Conjure Infestation</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000h" version="1">Conjure a swarm of tiny Spiders around your target, potentially &lt;LSTag Type="Status" Tooltip="SPIDER_INFESTATION"&gt;Infesting&lt;/LSTag&gt; them.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500009" version="1">Spark Surge</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000i" version="1">Expel a bolt of lightning from your fingertips at a creature, potentially &lt;LSTag Type="Status" Tooltip="SHOCKED"&gt;Shocking&lt;/LSTag&gt; them.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500010" version="1">Warpstone</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000j" version="1">While not &lt;LSTag Type="Status" Tooltip="FLANKED"&gt;Threatened&lt;/LSTag&gt;, throw a magical stone, immediately warping to wherever it lands.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500011" version="1">Mind Sliver</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000k" version="1">Deal Psychic damage to a creature, potentially &lt;LSTag Type="Status" Tooltip="MIND_SLIVER"&gt;Fracturing&lt;/LSTag&gt; their ability to think clearly, incurring a -1d4 penalty to their next &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500a11" version="1">Mind Fracture</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000ak" version="1">Affected creature suffers a -1d4 penalty to their next &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500012" version="1">Mud Mantle</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000l" version="1">Root yourself to the ground in magically hardened &lt;LSTag Type="Status" Tooltip="MUD_MANTLE"&gt;Mud&lt;/LSTag&gt;, perfectly contoured to the shape of your body. A [1] area of mud is created around you upon casting.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt;.</content>
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500a12" version="1">Mud Mantle</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000al" version="1">Affected creature cannot move, and is covered in magically hardened mud, perfectly countoured to the shape of their body. The creatures &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; increases by 1. Additionally, the creature cannot &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt;, and they become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to Fire damage.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500013" version="1">Prestidigitation</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000m" version="1">Create a single, illusory duplicate of yourself, forcing the next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; made against you to be rolled with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500a13" version="1">Prestidigitation</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000am" version="1">Affected creature has created a single, illusory duplicate of themselves, forcing the next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; made against them to be rolled with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500014" version="1">Primal Savagery</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000n" version="1">Channel primal magic to cause your fingernails to sharpen, allowing you to rake your claws across a target, potentially &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoning&lt;/LSTag&gt; them.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt;.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500015" version="1">Torrent</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000o" version="1">Cause a creature to become &lt;LSTag Type="Status" Tooltip="WET"&gt;Wet&lt;/LSTag&gt;.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500016" version="1">Spare the Dying</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000p" version="1">&lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Help&lt;/LSTag&gt; an ally from a distance.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500017" version="1">Blade Surge</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000q" version="1">Summon a [1] cyclone of blades around you.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500018" version="1">Thunderclap</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000r" version="1">Unleash a thunderous boom, dealing damage to any nearby creatures within [1].</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500019" version="1">Toll the Dead</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000s" version="1">Channel the ringing of a dolorous bell within your palm to fill the air around a creature. If the targeted creature is below half of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, the creature will take twice as much damage.</content>
+
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d500020" version="1">Word of Radiance</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000t" version="1">Utter a divine word, causing radiant light to erupt in a [1] area around you, dealing double damage to Aberrations, Fey, Fiends and Undead.</content>
+
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000001" version="1">Absorb Elements</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd00000a" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to an element of your choice for three turns.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000a1" version="1">Absorb Elements (Acid)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000aa" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Acid damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aa1" version="1">Absorb Elements (Acid)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aaa" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Acid damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000a2" version="1">Absorb Elements (Cold)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000ab" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Cold damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aa2" version="1">Absorb Elements (Cold)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aab" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Cold damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000a3" version="1">Absorb Elements (Fire)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000ac" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aa3" version="1">Absorb Elements (Fire)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aac" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000a4" version="1">Absorb Elements (Force)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000ad" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Force damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aa4" version="1">Absorb Elements (Force)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aad" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Force damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000a5" version="1">Absorb Elements (Lightning)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000ae" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aa5" version="1">Absorb Elements (Lightning)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aae" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000a6" version="1">Absorb Elements (Necrotic)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000af" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aa6" version="1">Absorb Elements (Necrotic)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aaf" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000a7" version="1">Absorb Elements (Poison)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000ag" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aa7" version="1">Absorb Elements (Poison)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aag" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000a8" version="1">Absorb Elements (Psychic)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000ah" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Psychic damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aa8" version="1">Absorb Elements (Psychic)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aah" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Psychic damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000a9" version="1">Absorb Elements (Radiant)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000ai" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Radiant damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aa9" version="1">Absorb Elements (Radiant)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aai" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Radiant damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000a0" version="1">Absorb Elements (Thunder)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd0000aj" version="1">Grant a creature &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Thunder damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aa0" version="1">Absorb Elements (Thunder)</content>
+	<content contentuid="a5sfd4s65d4fs645df8sd45sdfsa5sd000aaj" version="1">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Thunder damage.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00001" version="1">Beast Bond</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000a" version="1">Touch a non-hostile beast, compelling them to fight for you.</content>
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss000a1" version="1">Beast Bond</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss000aa" version="1">Affected creature is compelled to fight for the caster who applied this status.</content>
+	<content contentuid="hdbfe63deg1c7bg4cd2osidfosijd3ofjosid" version="1">Other nearby creatures may become hostile upon casting.</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00002" version="1">Cause Terror</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000b" version="1">Instill a sense of dread in a creature, potentially &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrifying&lt;/LSTag&gt; them.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Fighters&lt;br&gt;Sorcerers&lt;br&gt;Warlocks</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00003" version="1">Guiding Ceremony</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss00001" version="1">Grant yourself and all allies within [1] a +1d4 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss00002" version="1">Grant yourself and all allies within [1] a +1d6 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss00003" version="1">Grant yourself and all allies within [1] a +1d8 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss00004" version="1">Grant yourself and all allies within [1] a +1d10 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss00005" version="1">Grant yourself and all allies within [1] a +1d12 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss00006" version="1">Grant yourself and all allies within [1] a +1d20 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss000a3" version="1">Guiding Ceremony</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss000a1" version="1">Affected creature has a +1d4 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss000a2" version="1">Affected creature has a +1d6 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss000a3" version="1">Affected creature has a +1d8 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss000a4" version="1">Affected creature has a +1d10 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss000a5" version="1">Affected creature has a +1d12 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss000a6" version="1">Affected creature has a +1d20 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00004" version="1">Chaotic Orb</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000d" version="1">Hurl an orb of pure, chaotic energy at a creature, forcing them to experience a sudden surge of &lt;LSTag Type="Passive" Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt;.</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00005" version="1">Detect Evil and Good</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000e" version="1">Detect the presence of Aberrations, Celestials, Elementals, Fey, Fiends and Undead in a [1] area, preventing them from &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Hiding&lt;/LSTag&gt; or becoming &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt;.</content>
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss000a5" version="1">Detect Evil and Good</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss000ae" version="1">Affected creature can detect the presence of Aberrations, Celestials, Elementals, Fey, Fiends and Undead in a [1] area, preventing them from &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Hiding&lt;/LSTag&gt; or becoming &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt;.</content>
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00aa5" version="1">Detected</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss00aae" version="1">Affected creature cannot &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Hide&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt;.</content>
+	<content contentuid="hdbfe63degkfkdekd99498dkf99dfoffjosid" version="1">Increase the radius of detection by [1] per level.</content>
+	<content contentuid="hdbfe63degkfkdekd99498dkf99dfofupcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Increase the radius of detection by [1] per level.</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00006" version="1">Dispel Magic</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000f" version="1">Sense the magical presence of other creatures in a [1] area, &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silencing&lt;/LSTag&gt; them.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss000a6" version="1">Dispel Magic</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss000af" version="1">Affected creature can sense the magical presence of others in a [1] area, &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silencing&lt;/LSTag&gt; them.</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00007" version="1">Earth Tremor</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000g" version="1">Cause a [1] tremor within the ground around you to erupt, creating &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt; and possibly knocking creatures inside the tremor &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00008" version="1">Frost Fingers</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000h" version="1">Place your hand upon another creature, applying three stacks of &lt;LSTag Type="Status" Tooltip="MAG_INCREASED_DAMAGE_COLD"&gt;Frostbite&lt;/LSTag&gt; if they are &lt;LSTag Type="Status" Tooltip="WET"&gt;Wet&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Fighters&lt;br&gt;Rogues&lt;br&gt;Warlocks&lt;br&gt;Wizards</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00009" version="1">Ensnaring Trap</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000i" version="1">Place a trap upon the ground. If another creature steps on the trap, they are immediately &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druids&lt;br&gt;Fighters&lt;br&gt;Rangers&lt;br&gt;Warlocks</content>
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ssaaaa9" version="1">Snare Trap</content>
+	<content contentuid="54e8a2a10c964c98bdfeffda9a0ba26108896" version="1">Place an additional trap per level.</content>
+	<content contentuid="54e8a2a10c964c98bdfeffda9a0ba26upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Place an additional trap per level.</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00010" version="1">Tasha's Caustic Brew</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000j" version="1">Spew a [1] line of caustic acid, burning everything in your path.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Fighters&lt;br&gt;Rogues&lt;br&gt;Warlocks&lt;br&gt;Wizards</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00011" version="1">Unseen Servant</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000k" version="1">Summon an &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt; servant. They will be ignored by other creatures, and are capable of interacting with the environment around you.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
+	<content contentuid="h5f04604fg105cg4281g9fedg0a3ef74343d4" version="1">Unseen Servant</content>
+
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00012" version="1">Zephyr Movement</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000l" version="1">Move like the wind, allowing you to avoid provoking &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;. Until this effect ends, dealing damage to another creature will cause you to swap places with your target.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
+	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00a12" version="1">Zephyr Movement</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss00a0l" version="1">Affected creature will not provoke &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;. Until this effect ends, when this creature deals damage to another creature, they swap places with their target.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130001" version="1">Aganazzar's Scorcher</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000a" version="1">Unleash roaring flames, emanating from you in a line.</content>
+
+	<content contentuid="39f18b2938w98uef9sue9fuw989ew8ef0001" version="1">Borrowed Knowledge</content>
+	<content contentuid="39f18b2938w98uef9sue9fuw989ew8ef000a" version="1">Draw on knowledge from spirits of the past to grant yourself or another creature &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
+	<content contentuid="39f18b2938w98uef9sue9fuw989ew8efzz19" version="1">Borrowed Knowledge</content>
+	<content contentuid="39f18b2938w98uef9sue9fuw989ew8efzz0s" version="1">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt;.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130002" version="1">Frostflame Armaments</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000b" version="1">A frigid cold envelops your main-hand melee weapon. Simultaneously, a roaring flame erupts around your off-hand melee weapon.&lt;Br&gt;&lt;br&gt;Upon landing a killing blow, a Frostflame explosion occurs, dealing [1] and [2] within a [3] radius.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Fighters&lt;br&gt;Paladins&lt;br&gt;Warlocks</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zzb" version="1">The Frostflame explosion deals an additional [1] and [2] per level.</content>
+	<content contentuid="39f18b02804848b18a6s45fbf2c386upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;The Frostflame explosion deals an additional [1] and [2] per level.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzz2" version="1">Frostflame Armament (Ice)</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzzb" version="1">A frigid cold envelops this weapon. Upon landing a killing blow, a frigid explosion occurs, dealing [1] to all creatures within [2].</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613xxx2" version="1">Frostflame Armament (Fire)</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613xxxb" version="1">A roaring flame envelops this weapon. Upon landing a killing blow, a fiery explosion occurs, dealing [1] to all creatures within [2].</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130003" version="1">Arcane Vortex</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000c" version="1">Summon a [1] raging vortex of arcane energy which deals [2] per turn to any creatures within. The vortex is considered &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzz3" version="3">Arcane Vortex Aura</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzzc" version="6">Affected creature takes [1] per turn while remaining in the arcane vortex. The vortex is considered &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613xxx3" version="5">Arcane Vortex</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613xxxc" version="5">Affected creature is being dealt [1] per turn while remaining in the arcane vortex.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130004" version="1">Healing Spirit</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000d" version="1">Call forth a feline spirit to soothe the wounded in combat. While a creature is within [1] of the spirit, it can heal them for [2] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2jfkdiejfid" version="1">The feline spirit heals an additional [1] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; per level.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2jfkdupcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;The feline spirit heals an additional [1] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; per level.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2ff5d8f454f" version="1">Healing Spirit</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzz4" version="1">Soothing Sounds</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzzd" version="1">Soothe the wounds of a nearby creature, healing it.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130005" version="1">Feline Bombardment</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000e" version="1">Upon landing a killing blow, call forth a feline familiar. Upon death, the familiar will erupt in a blazing inferno, dealing [1] to all creatures within [2]. At the end of each of their turns, the familiar takes [3].&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2ff5s8d5f45" version="1">Blazing Bombadier</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613yyye" version="1">Increase the damage of the inferno by [1] per Spell Slot.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Increase the damage of the inferno by [1] per Spell Slot.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300z5" version="1">Feline Bombardment</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300ze" version="1">Affected creature will call forth a feline familiar upon landing a killing blow.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zz5" version="1">Feline Bombardment</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zze" version="1">Affected creature is taking [1] per turn. Upon death, it will erupt in a blazing inferno, scorching everything within [2] for [3].</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613yzz5" version="1">Feline Bombardment</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613yzze" version="1">Erupt in a blazing inferno.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130006" version="1">Kinetic Permeation</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000f" version="1">You and other creatures within [1] of you become &lt;LSTag Type="Status" Tooltip="KINETIC_JAUNT_WALKTHROUGH"&gt;Permeable&lt;/LSTag&gt;, allowing them to be moved through.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613ffjf" version="1">Increase the distance at which you apply &lt;LSTag Type="Status" Tooltip="KINETIC_JAUNT_WALKTHROUGH"&gt;Permeation&lt;/LSTag&gt; by [1] per Spell Slot.</content>
+	<content contentuid="39f18b02804848b18a0b8fffffc386upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Increase the distance at which you apply &lt;LSTag Type="Status" Tooltip="KINETIC_JAUNT_WALKTHROUGH"&gt;Permeation&lt;/LSTag&gt; by [1] per Spell Slot.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300z6" version="1">Kinetic Permeation</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zf" version="1">Affected creature is causing themselves and other creatures within [1] of them to become &lt;LSTag Type="Status" Tooltip="KINETIC_JAUNT_WALKTHROUGH"&gt;Permeable&lt;/LSTag&gt;, allowing them to be moved through.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zz6" version="1">Permeable</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zzf" version="1">Affected creature can be moved through.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130007" version="1">Maximilian's Earthen Grasp</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000g" version="1">Create a hand composed of soil to crush and possibly &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrain&lt;/LSTag&gt; a creature.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300z7" version="1">Maximilian's Earthen Grasp</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zg" version="1">Crush a &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt; target or &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrain&lt;/LSTag&gt; a different creature.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zz7" version="1">Maximillian's Earthen Grasp: Crush</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zzg" version="1">Crush a &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt; target.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzz7" version="1">Maximillian's Earthen Grasp: Change</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzzg" version="1">Reach for a different creature with the earthen hand, possibly &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restraining&lt;/LSTag&gt; it and freeing the previous target.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130008" version="1">Mind Spike</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000h" version="1">Speak a spike of psychic pain into the mind of another creature, lowering their &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt; by 1. This effect can stack. Upon reaching 0 Intelligence, your target will die. While &lt;LSTag Tooltip="Concentration"&gt;Concentrating&lt;/LSTag&gt;, you may drive further Mind Spikes into your target without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Fighters&lt;br&gt;Rogues&lt;br&gt;Warlocks&lt;br&gt;Wizards</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300z8" version="1">Mind Spike</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zh" version="1">Affected creature has had their &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt; reduced by 1 per remaining stack of Mind Spike. Upon reaching 0 Intelligence, your target will die.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzz8" version="1">Drive Mind Spike</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzzh" version="1">Drive the Mind Spike deeper into your targets psyche, further reducing their &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt; by 1. Upon reaching 0 Intelligence, your target will die.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130009" version="1">Nathair's Mischief</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000i" version="1">Afflict a creature with chaotic magic, causing them to experience a sudden surge of &lt;LSTag Type="Passive" Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt; at the start of their turns. Wild Magic caused by this Spell is truly random, and can be both positive or negative.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Fighters&lt;br&gt;Rogues&lt;br&gt;Warlocks&lt;br&gt;Wizards</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300z9" version="1">Nathair's Mischief</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zi" version="1">Affected creature will experience a sudden surge of &lt;LSTag Type="Passive" Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt; at the start of their turn.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130010" version="1">Rime's Binding Ice</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000j" version="1">Unleash a burst of cold energy across [1], hindering creatures with ice formations that reduce their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by half.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Fighters&lt;br&gt;Sorcerers&lt;br&gt;Warlocks</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130z10" version="1">Rime's Binding Ice</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zj" version="1">Affected creature's &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; has been reduced by half.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130011" version="1">Snilloc's Snow Storm</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000k" version="1">Summon a [1] burst of frigid cold in the area around you.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130012" version="1">Tasha's Mind Whip</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000l" version="1">Aggressively pull at a fragment of another creatures mind, preventing them from taking &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613yyyl" version="1">Pull at an additional fragment per level. The same target may be selected multiple times.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130z12" version="1">Tasha's Mind Whip</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zl" version="1">Affected creature cannot use &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130013" version="1">Transposition</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000m" version="1">Forcibly teleport another creature to an area you can see. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be transposed.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130z13" version="1">Transposition</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zm" version="1">Affected creature can be teleported at any time by the caster who applied this status.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130014" version="1">Warding Winds</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000n" version="1">Conjure a fierce wind which blows around you in a [1] radius, clearing clouds and extinguishing flames on one's person. To all other creatures, this wind is considered &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;.&lt;Br&gt;&lt;br&gt;Ranged attacks made against creatures or objects within the wind are rolled with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130z14" version="1">Warding Winds</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zn" version="1">Affected creature is centered within a fierce wind which clears clouds and extinguishes flames on one's person. To all other creatures, this wind is considered &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;.&lt;Br&gt;&lt;br&gt;Ranged attacks made against creatures or objects within the wind are rolled with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zz14" version="1">Warding Winds</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613z0zn" version="1">Affected creature is whipped by a fierce wind which clears clouds and extinguishes flames on one's person. Ranged attacks made against creatures or objects within the wind are rolled with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
+
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130015" version="1">Wither and Bloom</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000o" version="1">Invoke both life and death in a [1] area, damaging enemies and healing allies for [2] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzzo" version="1">Damage enemies for an additional [1] and heal allies for an additional [2] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; per level.</content>
+	<content contentuid="39f18b02804848b18fsfedbbf2c386upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Damage enemies for an additional [1] and heal allies for an additional [2] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; per level.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940001" version="1">Psionic Antagonism</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000a" version="1">Evoke a sense of antagonism within a [1] group of creatures, preventing them from using &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Fighters&lt;br&gt;Rogues&lt;br&gt;Warlocks&lt;br&gt;Wizards</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940zz1" version="1">Psionic Antagonism</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940zza" version="1">Affected creature cannot use &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940002" version="1">Ashardalon's Stride</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000b" version="1">Billowing dragon flames erupt from your feet in a [1] radius, granting explosive speed that allows you to &lt;LSTag Type="Status" Tooltip="DASH"&gt;Dash&lt;/LSTag&gt; without provoking &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940003" version="1">Catnap</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000c" version="1">Make a calming gesture that forces allies within [1] of you to fall asleep. Upon waking, they will have recovered their class based resources.&lt;Br&gt;&lt;br&gt;Once affected by this Spell, a creature cannot benefit from it again until it finishes a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400z3" version="1">Catnap</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zc" version="1">Affected creature has recovered their class based resources due to a quick nap.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940004" version="1">Enemies Abound</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000d" version="1">Whisper a hex unto a creature, filling them with bouts of paranoia and forcing them to see nearby friends as foes.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400z4" version="1">Enemies Abound</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zd" version="1">Affected creature is viewing nearby friends as foes.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940005" version="1">Erupting Earth</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000e" version="1">Tear the ground asunder, creating a [1] shockwave that damages anything caught in the area.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940006" version="1">Flame Arrows</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000f" version="1">Conjure [1] flaming arrows. Attacks with flaming arrows deal an additional [2]. When targeting a creature or object with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt;, one arrow will be consumed.&lt;Br&gt;&lt;br&gt;Once affected by this Spell, a creature cannot cast it again until it finishes a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;. Your arrows are restored upon taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druids&lt;br&gt;Fighters&lt;br&gt;Rangers&lt;br&gt;Warlocks</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494yyyf" version="1">Gain an additional 6 arrows per level.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Gain an additional 6 arrows per level.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400z6" version="1">Flame Arrows</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zf" version="1">Affected creature is wielding flaming arrows. These arrows deal an additional [1].</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494xxx6" version="1">Flame Arrows</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494xxxf" version="1">The amount of Flame Arrows you have remaining. &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; targeting a creature or object will consume one Flame Arrow.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494xyz6" version="1">Flame Arrows</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494xyzf" version="1">While active, your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; will fire flaming arrows that deal an additional [1]. This can be toggled at any time.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940007" version="1">Internal Fortress</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000g" version="1">Reduce all damage a creature takes by an amount equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400z7" version="1">Internal Fortress</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zg" version="1">Affected creature takes less damage from all sources by an amount equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940008" version="1">Blood Broker</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000h" version="1">Sacrifice your own life in order to resurrect a companion with all of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Fighters&lt;br&gt;Paladins&lt;br&gt;Warlocks</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940009" version="1">Barrier of Holding</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000i" version="1">Summon a [1] magical barrier, keeping everything within grounded and unable to move. At the beginning of each of their turns, all held creatures will attempt a Strength based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; to try and escape.&lt;Br&gt;&lt;br&gt;Upon a successful Saving Throw, a creature becomes immune to the effects of the barrier until the end of their turn.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400z9" version="1">Barrier of Holding</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zi" version="1">Everything within the Barrier of Holding is potentially grounded and unable to move.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940zz9" version="1">Barrier Bound</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940zzi" version="1">Affected creature is grounded and unable to move. At the beginning of each of their turns, they will attempt a Strength based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; to try and escape. Upon a successful Saving Throw, they will become immune to the effects of the barrier for one turn.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494zzz9" version="1">Barrier Immunity</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494zzzi" version="1">Affected creature is immune to the effects of &lt;LSTag Type="Spell" Tooltip="Shout_BarrierOfHolding"&gt;Barrier of Holding&lt;/LSTag&gt; for the rest of their turn.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940010" version="1">Melf's Minute Meteors</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000j" version="1">Summon a cluster of [1] meteors that can be sent hurling toward an area to explode, dealing damage in a [2] area.&lt;Br&gt;&lt;br&gt;Once affected by this Spell, a creature cannot cast it again until it finishes a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;. Your meteors are restored upon taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940z10" version="1">Melf's Minute Meteors</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zj" version="1">Affected creature can magically summon a cluster of up to [1] meteors that can be sent hurling toward an area to explode.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494zz10" version="1">Hurl Minute Meteors</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940zzj" version="1">Hurl an explosive meteor, dealing damage in a [1] area.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494zz11" version="1">Minute Meteors</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940zzk" version="1">The amount of Minute Meteors you have remaining.</content>
+	<content contentuid="h0f41f1a9g1969g3988df8df7cf082ea6d57" version="1">Create four additional meteors per level.</content>
+	<content contentuid="h0f41f1a9g1969g3988df8df7cf082upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Create four additional meteors per level.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940011" version="1">Motivational Speech</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000k" version="1">Grant another creature in the area &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Wisdom based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. If hit by an attack, the affected creature rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on its next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940z11" version="1">Motivational Speech</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zk" version="1">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Wisdom based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. If hit by an attack, the affected creature rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on its next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940012" version="1">Non-Detection</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000l" version="1">Outside of combat, touch a creature to obscure them, preventing other creatures from noticing their presence.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940z12" version="1">Non-Detectable</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zl" version="1">Affected creature cannot be perceived by others.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940013" version="1">Spiritual Shroud</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000m" version="1">Veil yourself in fallen spirits, welcoming their protection. Upon being damaged by an enemy, the spirits retaliate, dealing [1] to them.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Fighters&lt;br&gt;Paladins&lt;br&gt;Warlocks</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940z13" version="1">Spiritual Shroud</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zm" version="1">Affected creature is veiled in fallen spirits, welcoming their protection. Upon being damaged by an enemy, the spirits retaliate, dealing [1] to their aggressor.</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940014" version="1">Thunder Step</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000n" version="1">With a sudden boom, teleport yourself to another location, arriving with an intense reverberation that damages any creatures within [1] of where you land.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Fighters&lt;br&gt;Sorcerers&lt;br&gt;Warlocks</content>
+
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940015" version="1">Water Walk</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000o" version="1">Grant yourself and allied creatures within [1] of you immunity to all ground surfaces, and the ability to move through them as if they were not there.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd994940z15" version="1">Water Walk</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zo" version="1">Affected creature has immunity to all ground surfaces, and may move through them as if they were not there.</content>
+
+	<content contentuid="39f189sd0f9fosd89df9we879rw994940001" version="1">Aura of Life</content>
+	<content contentuid="39f189sd0f9fosd89df9we879rw99494000a" version="1">Envelope yourself in a soothing aura. &lt;LSTag Tooltip="Downed"&gt;Downed&lt;/LSTag&gt; allies within [1] of you regain 1 &lt;LSTag Tooltip="HitPoints"&gt;Hit Point&lt;/LSTag&gt; at the start of their turns.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="39f189sd0f9fosd89df9we879rw9949400z1" version="1">Aura of Life</content>
+	<content contentuid="39f189sd0f9fosd89df9we879rw9949400za" version="1">Affected creature is enveloped in a soothing aura. &lt;LSTag Tooltip="Downed"&gt;Downed&lt;/LSTag&gt; allies within [1] of them regain 1 &lt;LSTag Tooltip="HitPoints"&gt;Hit Point&lt;/LSTag&gt; at the start of their turns.</content>
+
+	<content contentuid="39f189sd0f9fosd89df9we879rw994940002" version="1">Charming Visage</content>
+	<content contentuid="39f189sd0f9fosd89df9we879rw99494000b" version="1">Upon being damaged, charm your aggressor into not attacking you. You also gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Charisma based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; while engaging in dialogue with them.</content>
+	<content contentuid="39f189sd0f9fosd89df9we879rw9949400z2" version="1">Charming Visage</content>
+	<content contentuid="39f189sd0f9fosd89df9we879rw9949400zb" version="1">Affected creature will charm any aggressor into not attacking them upon being damaged.</content>
+
+	<content contentuid="39f189sd0f9fosd89df9we879rw994940003" version="1">Spew Acid</content>
+	<content contentuid="39f189sd0f9fosd89df9we879rw99494000c" version="1">Spew caustic acid over all targets in a [1] area in front of you.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
+
+	<content contentuid="39f189sd0f9fosd89df9we879rw994940004" version="1">Vitriolic Touch</content>
+	<content contentuid="39f189sd0f9fosd89df9we879rw99494000d" version="1">Thrust an orb of caustic acid upon your target, lowering their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; and preventing their armour from &lt;LSTag Type="Status" Tooltip="DAMAGE_REDUCTION"&gt;Reducing Damage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Sorcerers</content>
+
+</contentList>

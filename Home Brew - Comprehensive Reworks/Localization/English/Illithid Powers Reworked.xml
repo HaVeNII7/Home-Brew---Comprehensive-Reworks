@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+<!--ILLITHID PERSUASION-->
+	<content contentuid="h86cd4e0cg5c92g43b9g885ag6fd1a719d8f9" version="1">Illithid Consequences</content>
+	<content contentuid="h1bae7591geddag4834gb73agdecd5a32839e" version="1">You may use your connection to the parasite in your brain in order to force cultists of the Absolute to obey you. However, giving in to further allure of the tadpole will take a toll on your mind. After having taken a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, any additional Illithid powers you have obtained will reduce your maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; by 2 for each power taken.</content>
+
+<!--PSIONIC OVERLOAD-->
+	<content contentuid="h2d18417cgc993g4e52g914cgf1e205a824cb" version="2">Psionic Overload</content>
+	<content contentuid="h74504e19g746bg4867gb7d5g63a74cd99dd0" version="4">When dealing damage with a weapon, deal an additional [1].</content>
+
+<!--FAVOURABLE BEGINNINGS-->
+	<content contentuid="hb3c2d634g1eb9g4b82gbd88g599b2eec1f66" version="3">Favourable Beginnings</content>
+	<content contentuid="h93fe3509ge6dag4ff6gb7d8g45e80265433e" version="5">The first &lt;LSTag Tooltip="AttackRolls"&gt;Attack Roll&lt;/LSTag&gt; or &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt; you make against a creature or object rolls with a +2 bonus.</content>
+
+<!--FORCE TUNNEL-->
+	<content contentuid="h21961550ge2aeg4ba4g8789g62319f80e3aa" version="2">Force Tunnel</content>
+	<content contentuid="h46f50667gc444g4eebg9061gdaa6ac94e770" version="4">Charge forward, pushing all objects and creatures in your path [1] away from you.</content>
+	<content contentuid="hec30052dge610g4747g9b12gb0155bc2aced" version="1">Empowered Force Tunnel</content>
+	<content contentuid="h46f50667gc444g4eebg9061gdaa6ac96a994" version="4">Charge forward, dealing damage and pushing all objects and creatures in your path [1] away from you.</content>
+
+<!--CONCENTRATED BLAST-->
+	<content contentuid="ha002841dg16b3g4217g8a6cg4bf54d1f9133" version="2">Flay Mind</content>
+	<content contentuid="hf4f5d88fg1953g43c9g8366g45e0978f1b10" version="6">Force a creature to undergo a searing pain which threatens to tear their mind asunder, driving them &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Mad&lt;/LSTag&gt;.</content>
+	<content contentuid="hbb5f1fccgcb1bg4d60ga506g2594f9cb1cee" version="1">Empowered Flay Mind</content>
+	<content contentuid="h5ad4fe5fga14ag454dg8f5dg13d0a93104f1" version="2">Force a creature to undergo a searing pain which threatens to tear their mind asunder, driving them &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Mad&lt;/LSTag&gt;. Regain &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; equal to the damage you deal.</content>
+
+<!--TRANSFUSE HEALTH-->
+	<content contentuid="haeb0741ag04eeg4d87g94b4g79d48f23ebe3" version="2">Infuse Health</content>
+	<content contentuid="hf68e80ecga22fg46c2g9435g52182b9d182e" version="4">Restore another creatures &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; by the amount that you currently have.</content>
+
+<!--STAGE FRIGHT-->
+	<content contentuid="hb9910987gcf19g423bg966egb9e7c5adce4d" version="2">Stage Fright</content>
+	<content contentuid="hc7e1c210g5d40g4079gb3d1g703c332c2b19" version="6">Force a group of creatures to make &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;. Each time they miss, they will take [1].</content>
+	<content contentuid="h18eb23a5gb5d8g453fga9a3g0e70bd4a5fd7" version="2">Stage Fright</content>
+	<content contentuid="hc4f4fe2cg40a8g4d46g8102gcc310e9cc27a" version="4">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and takes [1] each time they miss. This status is removed once the creature successfully lands an attack.</content>
+
+<!--ABILITY DRAIN-->
+	<content contentuid="h57d57defg5399g41e2g8a9aga47b5bdc6eda" version="2">Ability Drain</content>
+	<content contentuid="he0501a2eg5658g4d11g86cag54c61501320d" version="8">When you make an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against a non-allied creature, the attack reduces your targets corresponding ability to successfully roll &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="h892ed06bgeb61g4da9g94f8g37e8c0e6b7cf" version="1">Ability Drain: Strength</content>
+	<content contentuid="h1938be95ga2abg42e1g9f97ga96234b7d706" version="1">Affected creature's Strength based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; have been reduced by 1 per stack of &lt;LSTag Type="Passive" Tooltip="TAD_DrainAbility"&gt;Ability Drain&lt;/LSTag&gt;.</content>
+	<content contentuid="h106f0868gac57g44ccg9c9fge282c128e07a" version="1">Ability Drain: Dexterity</content>
+	<content contentuid="hd5f1e6a3ge0bfg4ee0g90eeg6e70362d830a" version="1">Affected creature's Dexterity based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; have been reduced by 1 per stack of &lt;LSTag Type="Passive" Tooltip="TAD_DrainAbility"&gt;Ability Drain&lt;/LSTag&gt;.</content>
+	<content contentuid="hbf856302gd1e7g460bgbd79g5f32078eecd7" version="1">Ability Drain: Intelligence</content>
+	<content contentuid="h38db98aega71ag4b3ega837g6e26fbc5ab8f" version="1">Affected creature's Intelligence based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; have been reduced by 1 per stack of &lt;LSTag Type="Passive" Tooltip="TAD_DrainAbility"&gt;Ability Drain&lt;/LSTag&gt;.</content>
+	<content contentuid="he13a29c1g8ce2g42d9gaf28g1b9040e46111" version="1">Ability Drain: Wisdom</content>
+	<content contentuid="h05db1af2ga78fg4e84g81bdg4a02d8f4bde4" version="1">Affected creature's Wisdom based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; have been reduced by 1 per stack of &lt;LSTag Type="Passive" Tooltip="TAD_DrainAbility"&gt;Ability Drain&lt;/LSTag&gt;.</content>
+	<content contentuid="h61e890d5g9a37g4ee6g8502g1155a8bb5041" version="1">Ability Drain: Charisma</content>
+	<content contentuid="hd0de5039g3c8bg412dg8ad4gc5aea4fce1da" version="1">Affected creature's Charisma based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; have been reduced by 1 per stack of &lt;LSTag Type="Passive" Tooltip="TAD_DrainAbility"&gt;Ability Drain&lt;/LSTag&gt;.</content>
+
+<!--LUCK OF THE FAR REALMS-->
+	<content contentuid="h5c714d5bgf13bg4601gb8f6ge5b039375f75" version="2">Luck of the Far Realms</content>
+	<content contentuid="he2a6d102g98a8g495bga392gf2090a4dc220" version="7">As a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;, you can change a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against a foe into a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;. This Reaction may be used once per &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="hdf4cb11egc392g4d9dg8e8agd8f1b954fb37" version="1">Luck of the Far Realms</content>
+	<content contentuid="h86788805ga459g44d5g9418g8894144ed8ad" version="2">Once per &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, change a successful &lt;LSTag Tooltip="AttackRolls"&gt;Attack Roll&lt;/LSTag&gt; into a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
+
+<!--CHARM-->
+	<content contentuid="hc0e7c142g5bc6g469cgb07ag5c5d8dd55078" version="2">Charm</content>
+	<content contentuid="hcdf85be6g6d3dg4bc5g9dcfg3f9688e97bb8" version="6">As a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;, channel the dark allure of the tadpole to &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charm&lt;/LSTag&gt; an enemy that attacks you, preventing them from attacking you until their next turn. </content>
+	<content contentuid="h64f41820g60c0g49a5g8af7ge22f6563fbea" version="1">Charm</content>
+	<content contentuid="hf75d828dg5bc2g4a77g8636g1baa0e933a30" version="2">Forcibly &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charm&lt;/LSTag&gt; an enemy that attacks you, preventing them from attacking you until their next turn. </content>
+
+<!--DISPLACE-->
+	<content contentuid="hf368aca8g11b7g4e67g9247g9d5281894a7f" version="2">Displace</content>
+	<content contentuid="hb4c205f3g696eg43a8g9029g621af4764afa" version="5">Creatures suffering falling damage because of your actions take an additional [1].</content>
+	<content contentuid="hfcae7ee4ga159g4d66g9b6fgfc08e6598fe4" version="2">Displace: Falling Damage</content>
+	<content contentuid="hf74ce2cdg109cg4ceega38eg80c841a052e8" version="3">Creatures suffering falling damage because of your actions take an additional [1].</content>
+	<content contentuid="h8a26487cg5e85g4e73ga897gcc99388233ca" version="2">Displace</content>
+	<content contentuid="he841314egb916g4777g8923gd16483742d23" version="6">Creatures suffering falling damage because of the actions of who applied this status take an additional [1].</content>
+
+<!--REPULSOR-->
+	<content contentuid="h00edf05cgb29cg4037g9f2cg780dfce80b7a" version="1">Repulsor</content>
+	<content contentuid="he21bfeceg10a6g4686ga793g852612e09d46" version="6">Push anything and anyone back by [1] with a psionic shockwave.</content>
+
+<!--CULL THE WEAK-->
+	<content contentuid="h4c2ba204g19acg477cg98e9g1d755242996e" version="2">Cull the Weak</content>
+	<content contentuid="hfd385480ga7c4g4d30gbaffg29423289561e" version="7">When you bring a creature down to fewer &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; than your number of Illithid Powers, it instantly dies.</content>
+
+<!--PSIONIC BACKLASH-->
+	<content contentuid="h065f97f5ga6ddg48bag9ba6gc090244742c5" version="2">Psionic Backlash</content>
+	<content contentuid="h51459646g1974g4fefgbfd2g42294ebe1741" version="6">When an enemy within [1] casts a spell, you can use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to inflict [2] to the caster multiplied by the Spell level cast.</content>
+	<content contentuid="hb12810d5g972bg47begaaaeg31cf77359701" version="2">Psionic Backlash</content>
+	<content contentuid="h87a18992gbeb8g471bgb5aag04a79afeb6b3" version="2">When an enemy within [1] casts a spell, inflict [2] to the caster multiplied by the Spells level cast.</content>
+	<content contentuid="heccaf960gce77g4f5ag9ba2g2b601cea85a2" version="1">Psionic Backlash</content>
+	<content contentuid="hdd03843bg80cbg40baga98cga13f3f94092d" version="1">When an enemy within [1] casts a spell, inflict [2] to the caster multiplied by the Spells level cast.</content>
+
+<!--SHIELD OF THRALLS-->
+	<content contentuid="hf667134dge956g466dg8ba4g0834c024ffd2" version="2">Shield of Thralls</content>
+	<content contentuid="hce1927d0g93e8g40b1gb53age1c909f8815c" version="7">Conjure a volatile shield around yourself or an ally, granting the target +12 &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
+	<content contentuid="h3fb319d8ge95bg4f3eg903cgf68aef23ccaa" version="2">Volatile Shield</content>
+	<content contentuid="hd7897ac2g249fg406fg9fffg07555bc94fe0" version="3">Affected creature is wreathed in a volitile shield providing &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
+	<content contentuid="h89a62919g2161g4ebbga62bg62838323dd9b" version="1">Empowered Shield of Thralls</content>
+	<content contentuid="hc713e9d7g2933g4fecg8fafg45d64d301d7e" version="1">Conjure a volatile shield around yourself or an ally, granting the target +24 &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
+
+<!--PERILOUS STAKES-->
+	<content contentuid="h97567157gea8eg43f4g942cgd98961fd7adb" version="2">Perilous Stakes</content>
+	<content contentuid="h443d376dg292ag4338g9fb4g8383b67db13b" version="3">Make a creature &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerable&lt;/LSTag&gt; to all damage. If not killed before the status is resolved, the target will immediately restore all of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="h714ed70fg1c3dg4f80g8a54g776ff1697fcb" version="2">Perilous Stakes</content>
+	<content contentuid="hbb769d0dg2061g433fga434gd0f9792a2950" version="2">Affected creature is &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerable&lt;/LSTag&gt; to all damage. If not killed before this status is resolved, the creature will immediately restore all of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="hd9f7c754g438bg4488gafcegeded1ce68a1d" version="1">Empowered Perilous Stakes</content>
+	<content contentuid="h80c4be40g2711g45b6g8ef5g73c4fb2e7293" version="7">Make a creature &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerable&lt;/LSTag&gt; to all damage for a longer period of time. If not killed before the status is resolved, the target will immediately restore all of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+
+<!--DISPLACER BEAST SHAPE-->
+	<content contentuid="h97567157gea8eg43f4g942cgd9adsfasdf11" version="2">Beast Flayer</content>
+	<content contentuid="h443d376dg292ag4338g9fb4g838sdf654845" version="3">When dealing damage to a creature with less than 10 &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt;, you deal an additional [1].</content>
+
+<!--FRACTURE PSYCHE-->
+	<content contentuid="h7bc43a8cg9c8eg4c17gbb2dgc7c7b613a5a3" version="1">Fracture Psyche</content>
+	<content contentuid="hef8f4025g2e42g4a1dg8201g9242d6757a5e" version="2">Invade a creature's mind and disrupt its defences. The creatures &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is reduced by [1].</content>
+	<content contentuid="h3a3f8d1dgcd6fg45ddga437g622470fb08b5" version="3">If the creature dies while its psyche is fractured, you can cast &lt;LSTag Type="Spell" Tooltip="Target_TAD_Imperil_Recast"&gt;Fracture Psyche&lt;/LSTag&gt; on another target.</content>
+	<content contentuid="h83af5bfdg0e93g4053g81c2g736830473d68" version="1">Fractured Psyche</content>
+	<content contentuid="h17ddba74g046fg40a2g9db8g5d14f8f3cddc" version="1">&lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; reduced by [1].</content>
+
+<!--ILLITHID EXPERTISE-->
+	<content contentuid="h342ffc0cg4abcg43e1g864eg78baa65ec337" version="2">Devour</content>
+	<content contentuid="he9f0786cg87b8g45b8ga850g86f1997713ee" version="2">Upon killing a creature with less than 10 &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt;, immediately restore +1d12 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+
+<!--PSIONIC DOMINANCE-->
+	<content contentuid="he41de5bbgb272g4762g8ebdg2e019a7d674e" version="2">Psionic Dominance</content>
+	<content contentuid="h9505afa8gf321g41cegbfbeg48626961f9a5" version="4">Once per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, when an enemy within [1] targets you with a Spell, you can use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to immediately nullify it.&lt;Br&gt;&lt;br&gt;&lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot have their Spells nullified.</content>
+	<content contentuid="hff08e0f3g51c5g4035g88a5gc62df0f40b36" version="2">Psionic Dominance</content>
+	<content contentuid="h12a36ce9g5886g4c82ga429g86007c9ef2a0" version="1">Once per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, when an enemy within [1] targets you with a Spell, immediately nullify it.&lt;Br&gt;&lt;br&gt;&lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot have their Spells nullified.</content>
+
+<!--BLACK HOLE-->
+	<content contentuid="he71b1f23gc2bdg45f0g99c1g9f476ec396b6" version="2">Black Hole</content>
+	<content contentuid="h3a37227bgeba3g476egbb82gfcbbfc2eca6e" version="7">Create a point of intense gravity that pulls in all nearby enemies and objects.</content>
+	<content contentuid="h9c0c6777g1300g4a6dga7a1ge39d448e110a" version="1">Empowered Black Hole</content>
+	<content contentuid="h9c0c6777g1300g4a6dga7a1ge36a94521d84" version="1">Create a point of intense gravity that pulls in all nearby enemies and objects, damaging them.</content>
+
+<!--MIND BLAST-->
+	<content contentuid="h27282233g52efg40b3gb198ge7b6c0ac2147" version="1">Mind Blast</content>
+	<content contentuid="hbf315656ga8a7g4c85g9da6ga8decf79a784" version="4">Spew forth a conical wave of psychic energy, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; targets within it.</content>
+
+<!--MIND SANCTUARY-->
+	<content contentuid="h3557fe72g2249g4b24ga497gb05417249e82" version="2">Mind Sanctuary</content>
+	<content contentuid="hb86adc61g8cefg4121gb8cbgfa8d79b09208" version="5">Sculpt a magical nexus that &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hastens&lt;/LSTag&gt; creatures within it.</content>
+	<content contentuid="h1eae02fagf8eeg4f63g9b3bgd031a52eb312" version="2">Mind Sanctuary Aura</content>
+	<content contentuid="hda4eb1b3gce2ag443cg93c7gdaea828b2f72" version="6">Anyone within the &lt;LSTag Type="Spell" Tooltip="Target_TAD_MindSanctuary&gt;Mind Sanctuary&lt;/LSTag&gt; becomes &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hastened&lt;/LSTag&gt;.</content>
+	<content contentuid="hfbc71a17g062dg4270gb5c9g389f726c3a12" version="3">Within the Mind Sanctuary</content>
+	<content contentuid="hca7dd49cg5965g4e11g8529g54629d864e21" version="5">Affected creature can take &lt;LSTag Tooltip="Action"&gt;Actions&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Actions&lt;/LSTag&gt; interchangeably.</content>
+
+<!--FREECAST-->
+	<content contentuid="h04d8715fg4ae1g4460g8c01gd331fb88383b" version="3">Freecast</content>
+	<content contentuid="h7ed193b2gaa50g4070g963ag322ab620cfea" version="3">Draw power deep from within your Illithid connections, causing your next action to not consume any class based resources or &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt;. Refreshes after a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
+<!--ABSORB INTELLECT-->
+	<content contentuid="h08852329g9412g4538ga181gaaf42285f6f3" version="2">Absorb Intellect</content>
+	<content contentuid="h7f91680dgf49ag4dffg98aag5e46044a504f" version="5">Devour a foe's intellect, lowering their &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt; by [1] per turn with a condition that steadily worsens, healing you as it progresses.</content>
+	<content contentuid="h1879bff7g7cf2g4398gb866gf9738b7ac823" version="1">Absorbed Intellect</content>
+	<content contentuid="h505bb60fg41c0g4d38gb610ga15d632ebdaf" version="1">Affected creature's &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt; is reduced by [1].</content>
+	<content contentuid="hc3c51cafgf599g4c0bg8bcbg7fa057d127af" version="2">Empowered Absorb Intellect</content>
+	<content contentuid="h3b6c70a6g0ec0g4fa5gad1bg6f94f61aaee3" version="6">Devour your foe's entirety, lowering all of their &lt;LSTag Tooltip="AbilityScore"&gt;Ability Scores&lt;/LSTag&gt; by [1] per turn, and healing your wounds for [2] turns.</content>
+	<content contentuid="hf2b3e5e9g649ag4d64g87c1g6c5fdf02d060" version="2">Absolute Consumption</content>
+	<content contentuid="he2ca06e9gf27eg4c46g9001gb5e30db57a72" version="1">Affected creature's &lt;LSTag Tooltip="AbilityScore"&gt;Abilities&lt;/LSTag&gt; are reduced by [1]..</content>
+
+<!--SURVIVAL INSTINCT-->
+	<content contentuid="ha5b687efgdea0g441bg9b23gea473a021ef3" version="1">Survival Instinct</content>
+	<content contentuid="hcf1ccad1gddf7g447agaf91gf473f16583a0" version="3">Infuse a creature with psionic force. If it reaches 0 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, rather than dying, it will instead be left on the brink of death.</content>
+	<content contentuid="h6ba0becag4b8eg4c90g8ae1g66ba2f854da3" version="2">Survival Instinct</content>
+	<content contentuid="hb9921e89gaba3g497dgb60fgcc2e6010a822" version="2">Affected creature is infused with psionic force. If this creature reaches 0 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, rather than dying, it will instead be left on the brink of death.</content>
+
+<!--AWAKENED-->
+	<content contentuid="h17566e31g76ddg41d8gafe5gb617ae1c8677" version="1">Awakened</content>
+	<content contentuid="h02c55962g989ag4901ga98cg8fcf76a9a120" version="1">Your resistance to the zaith'isk in the githyanki infirmary has awakened newfound resilience. Illithid Powers no longer reduce your maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+
+</contentList>

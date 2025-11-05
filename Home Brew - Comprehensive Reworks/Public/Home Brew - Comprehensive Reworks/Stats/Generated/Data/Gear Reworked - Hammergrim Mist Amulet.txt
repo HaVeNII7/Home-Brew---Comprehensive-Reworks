@@ -1,0 +1,22 @@
+new entry "MAG_Shadow_FogCloud_Amulet"
+type "Armor"
+using "_Amulet_Magic"
+data "RootTemplate" "17a817b0-ea8b-492c-8925-402ad5cd84d5"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "DarkRetaliation_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - WARLOCK REWORK-->
+
+new entry "DarkRetaliation_Item"
+type "PassiveData"
+data "DisplayName" "hcbb02b50g75d3g468fgacb6gb7c74696a957;2"
+data "Description" "h53277800gd3a4g4984gbff6g0af596693jjg;3"
+data "Icon" "PassiveFeature_PactOfTheTome"
+data "Properties" "Highlighted;ForceShowInCC;OncePerCombat"
+data "Boosts" "UnlockInterrupt(Interrupt_DarkRetaliation)"
+data "BoostConditions" "not HasPassive('DarkRetaliation', context.Source)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

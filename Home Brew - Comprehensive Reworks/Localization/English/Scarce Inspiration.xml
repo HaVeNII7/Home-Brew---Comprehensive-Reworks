@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="hf263d6cdg4a2eg4769gaf58g39fa06df6c56" version="1">When a character performs an action that's true to their Background, they gain Experience Points and receive &lt;LSTag Tooltip="Inspiration"&gt;Inspiration&lt;LSTag Type="Image" Info="Inspiration"/&gt;&lt;/LSTag&gt;. Inspiration may be spent to reroll an &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;. 
+
+You may only hold a single use of Inspiration. Once held, completing Background Goals only grants Experience.</content>
+
+</contentList>

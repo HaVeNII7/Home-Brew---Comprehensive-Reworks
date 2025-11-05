@@ -1,0 +1,23 @@
+new entry "MAG_Monk_Magic_Armor"
+type "Armor"
+using "ARM_Robe_Body_1"
+data "RootTemplate" "ab7f13b8-3b3f-49be-8708-4d52b9690e45"
+data "ValueUUID" "be545ee9-311c-4ab8-ab14-fefcc552cace"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "Zen_Accuracy_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - MONK REWORK-->
+
+new entry "Zen_Accuracy_Item"
+type "PassiveData"
+data "DisplayName" "4512454c8e254628bd4dc62ea243a2a000020;1"
+data "Description" "4512454c8e254628bd4dc62ea243a2a00000t;2"
+data "Icon" "PassiveFeature_MartialArts_UnarmedDamage"
+data "Properties" "Highlighted;ForceShowInCC"
+data "BoostConditions" "not HasPassive('Zen_Accuracy', context.Source)"
+data "Boosts" "UnlockInterrupt(Interrupt_ZenAccuracy)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

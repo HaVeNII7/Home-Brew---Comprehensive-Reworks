@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="405" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="FIXEDSUBCLASS" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hffaccf0ag0569g4b24gb7bfas8kd844443d2" version="0" />
+			<attribute id="DisplayName" type="TranslatedString" handle="hffaccf0ag0569g4b24gb7bfg22d5f6d2e525" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="FIXEDSUBCLASS" />
+			<attribute id="UUID" type="guid" value="58b1d752-3501-4d0f-85b9-79f5ac55933f" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

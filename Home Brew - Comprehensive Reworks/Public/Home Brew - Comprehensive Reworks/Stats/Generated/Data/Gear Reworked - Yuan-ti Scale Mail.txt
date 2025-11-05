@@ -1,0 +1,23 @@
+new entry "MAG_CKM_SerpenScale_Armor"
+type "Armor"
+using "ARM_ScaleMail_Body_1"
+data "RootTemplate" "14ebeea8-7d0a-47a9-ba79-b1168c21f8d4"
+data "ValueUUID" "adfdafe5-f4da-4c64-a1e6-a33d626437d2"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "ARM_Medium_Constitution;ARM_Medium_Constitution_2;Tactical_Retreat_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ARM_MEDIUM_TECHNICAL;ATTUNEMENT2"
+
+<!--ITEM VARIANT - FIGHTER REWORK-->
+
+new entry "Tactical_Retreat_Item"
+type "PassiveData"
+data "DisplayName" "439cb1c55ce44da8b8f3ccd2e23204f500019;1"
+data "Description" "439cb1c55ce44da8b8f3ccd2e23204f50000s;2"
+data "Icon" "PassiveFeature_MediumArmorMaster"
+data "Properties" "Highlighted;ForceShowInCC"
+data "BoostConditions" "not HasPassive('Tactical_Retreat', context.Source)"
+data "Boosts" "UnlockSpellVariant(MeleeCheck(),ModifyTargetRadius(Multiplicative,1.5))"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

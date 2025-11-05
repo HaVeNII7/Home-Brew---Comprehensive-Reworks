@@ -1,0 +1,23 @@
+new entry "MAG_PHB_OfThievery_Gloves"
+type "Armor"
+using "ARM_Gloves_Leather"
+data "RootTemplate" "5a2d9181-8179-46cc-a5f8-d5bae909d8e0"
+data "ValueUUID" "f0e7be35-8be4-483d-afa8-dc9a104ea758"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "Fast_Hands_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - ROGUE REWORK-->
+
+new entry "Fast_Hands_Item"
+type "PassiveData"
+data "DisplayName" "d3e15e63749c4b62b8e7760cc707412000006;1"
+data "Description" "d3e15e63749c4b62b8e7760cc70741200000f;2"
+data "Icon" "PassiveFeature_NaturallyStealthy"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "Advantage(Skill,Acrobatics);Advantage(Skill,SleightOfHand);Advantage(Skill,Stealth)"
+data "BoostConditions" "not HasPassive('Fast_Hands', context.Source)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

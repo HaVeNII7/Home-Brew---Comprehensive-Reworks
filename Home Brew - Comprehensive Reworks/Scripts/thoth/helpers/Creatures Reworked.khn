@@ -1,0 +1,4 @@
+function IsUniqueNPCSubclass(entity)
+    entity = entity or context.Source
+    return Tagged('FIXEDSUBCLASS',entity)
+end

@@ -1,0 +1,16 @@
+local __util = require 'larian.util'
+
+function LungingAttackCheck()
+	return HasStringInSpellRoll('MeleeWeaponAttack') | HasStringInSpellRoll('MeleeUnarmedAttack') & ~IsCombatManeuver()
+end
+
+function ExtraAttackSpellCheck()
+    return HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack') | SpellId('Target_CommandersStrike') | SpellId('Target_Bufotoxin_Frog_Summon') | SpellId('Projectile_ArrowOfSmokepowder') | SpellId('Projectile_ArcaneShot_SeekingArrow') | SpellId('Zone_ArcaneShot_PiercingArrow') | SpellId('Projectile_FocusedWeave') | SpellId('Projectile_ElementalFletching_Acid') | SpellId('Projectile_ElementalFletching_Cold') | SpellId('Projectile_ElementalFletching_Fire') | SpellId('Projectile_ElementalFletching_Lightning') | SpellId('Projectile_ElementalFletching_Necrotic') | SpellId('Projectile_ElementalFletching_Poison') | SpellId('Projectile_ElementalFletching_Psychic') | SpellId('Projectile_ElementalFletching_Radiant') | SpellId('Projectile_ElementalFletching_Thunder') | SpellId('Projectile_ElementalFletching_Acid_Focused') | SpellId('Projectile_ElementalFletching_Cold_Focused') | SpellId('Projectile_ElementalFletching_Fire_Focused') | SpellId('Projectile_ElementalFletching_Lightning_Focused') | SpellId('Projectile_ElementalFletching_Necrotic_Focused') | SpellId('Projectile_ElementalFletching_Poison_Focused') | SpellId('Projectile_ElementalFletching_Psychic_Focused') | SpellId('Projectile_ElementalFletching_Radiant_Focused') | SpellId('Projectile_ElementalFletching_Thunder_Focused')
+end
+
+function FocusedWeaveCheck()
+    return SpellId('Projectile_ElementalFletching_Acid_Focused') | SpellId('Projectile_ElementalFletching_Cold_Focused') | SpellId('Projectile_ElementalFletching_Fire_Focused')
+    | SpellId('Projectile_ElementalFletching_Lightning_Focused') | SpellId('Projectile_ElementalFletching_Necrotic_Focused') | SpellId('Projectile_ElementalFletching_Poison_Focused')
+    | SpellId('Projectile_ElementalFletching_Psychic_Focused') | SpellId('Projectile_ElementalFletching_Radiant_Focused') | SpellId('Projectile_ElementalFletching_Thunder_Focused')
+    | SpellId('Shout_ElementalFletching')
+end

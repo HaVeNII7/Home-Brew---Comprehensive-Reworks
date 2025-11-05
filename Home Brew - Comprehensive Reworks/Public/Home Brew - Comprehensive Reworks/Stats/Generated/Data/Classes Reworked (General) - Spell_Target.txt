@@ -1,0 +1,12 @@
+new entry "Target_AttackOfOpportunity"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MainHandAttack"
+
+new entry "Target_Sentinel_AttackOfOpportunity"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MainHandAttack"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(SENTINEL,100,1)"
+data "Icon" "PassiveFeature_Sentinel_Attack"
+data "TooltipStatusApply" "ApplyStatus(SENTINEL,100,1)"

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+	<content contentuid="hba0d4fd0ga762g43bfgb86fg1c9c8982c6b2" version="3">Action</content>
+	<content contentuid="hfcd95fc3g4707g4262g80f7gacb371aa8e92" version="3">Actions are your primary resource in combat.</content>
+
+	<content contentuid="h7a2b85d6g3761g4f1fgb6b2g53cf10b449ea" version="2">Bonus Action</content>
+	<content contentuid="he0e99cd2g0e0dg4e68ga411g1ddbb114a19b" version="3">Bonus Actions are your secondary resource in combat.</content>
+
+	<content contentuid="h43f4dbfeg0d62g49eegbecagad62630e032d" version="2">Reaction</content>
+	<content contentuid="hb8abe274g41c8g481dgbd39g8a1c1c692457" version="3">Reactions are responses you can have to events which can trigger both during and outside of your turn.</content>
+
+	<content contentuid="h9426bff1g05d0gd470g372dgbbf7cfcd0fb6" version="1">Aether Suspension</content>
+	<content contentuid="h4e31b13dgba1dg3215g0412g31583b8245c2" version="1">While enabled, this character will not participate in combat encounters. All non-participants vanish at the beginning of combat, only reappearing once combat has ended.&lt;Br&gt;&lt;Br&gt;Should all other party memberes flee combat, this character will have three turns to leave combat as well. After three turns, if they are still in combat, they will immediately die.&lt;Br&gt;&lt;Br&gt;If all members of the party have either been defeated or are non-participants, the game will immediately end.</content>
+	<content contentuid="h9426bff1g05d0gd470g372dgbbf7cfc88998" version="1">Aether Suspension: Final Stand</content>
+	<content contentuid="h4e31b13dgba1dg3215g0412g31583b8ff5d8" version="1">While enabled, this character will not initially participate in combat encounters. All non-participants vanish at the beginning of combat, only reappearing once combat has ended.&lt;Br&gt;&lt;Br&gt;Once all allied active combatants have been killed, &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Downed&lt;/LSTag&gt;, have fled combat, or are under the effects of &lt;LSTag Type="Status" Tooltip="BANISHED"&gt;Aether Suspension&lt;/LSTag&gt;, this character will rejoin the combat encounter.</content>
+	<content contentuid="h356abfd1g783eg3926g8f93g93731f596a27" version="1">Aether Suspension</content>
+	<content contentuid="hc809783ag7ad4gd6e1ge509g97c25f69ecbe" version="1">Affected creature will not participate in this combat encounter.</content>
+	<content contentuid="h356abfd1g783eg3926g8f93g93731f532352" version="1">Aether Suspension: Final Stand</content>
+	<content contentuid="hc809783ag7ad4gd6e1ge509g97c25f666687" version="1">Affected creature will not participate in this combat encounter until all allied active combatants have been killed, &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Downed&lt;/LSTag&gt;, have fled combat, or are under the effects of &lt;LSTag Type="Status" Tooltip="BANISHED"&gt;Aether Suspension&lt;/LSTag&gt;.</content>
+	<content contentuid="h9426bff1g05d0gd470g372dgbbf7cfc35654" version="1">Final Stand</content>
+	<content contentuid="h4e31b13dgba1dg3215g0412g31583b897855" version="1">Affected creature is the last line of defense! It's now or never!</content>
+	<content contentuid="h356abfd1g783eg3926g8f93g93731f6sd852" version="1">Incapacitated</content>
+	<content contentuid="hc809783ag7ad4gd6e1ge509g97c25f6s9d58" version="1">Affected creature is unable to act, and will remain &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Downed&lt;/LSTag&gt; until the end of the current combat encounter.</content>
+	<content contentuid="h356abfd1g783eg3926g8f93g93731f566968" version="1">Left for Dead</content>
+	<content contentuid="hc809783ag7ad4gd6e1ge509g97c25f65d6f8" version="1">Affected creature will die if combat has not ended when this condition expires.</content>
+
+	<content contentuid="hb6964c304cb94ecfbf9e855a44188a1ede99" version="1">Subclass Randomizer</content>
+
+	<content contentuid="hb30ed2d16f384cfeab24d003aceee0ce0744" version="1">Barbarian: Beastheart</content>
+	<content contentuid="h72cddc14e86d4ba589829b2d8c927f3d9304" version="1">Barbarian: Berserker</content>
+	<content contentuid="hda932ea0461d44f892254ee645d8550d7f6f" version="1">Barbarian: Giant's Blood</content>
+	<content contentuid="h7ee37cc71e0c41a48da2d6df19815c6529e6" version="1">Barbarian: Wild Soul</content>
+
+	<content contentuid="h64b0fa64a67f4e20bb166b95c40999270d36" version="1">Bard: College of Captivation</content>
+	<content contentuid="h55dffb99b6624d6dadaadbc793e2923400cd" version="1">Bard: College of Lore</content>
+	<content contentuid="h084ed28ed7454e629237c972eff098409040" version="1">Bard: College of Steel</content>
+	<content contentuid="h9250ba68eb664a1cb210c08a3c89e7eeg248" version="1">Bard: College of Valour</content>
+
+	<content contentuid="had7693e9874e466b8b9501021d0feb43d844" version="1">Cleric: Death Domain</content>
+	<content contentuid="h670f385de99a4f6d8641062d09cb412c8114" version="1">Cleric: Life Domain</content>
+	<content contentuid="h988e7e8d83e64ee69e0cdced053127c8e7f2" version="1">Cleric: Tempest Domain</content>
+	<content contentuid="ha4f7ddc08e144bbd89108ce54da37ab1e8ee" version="1">Cleric: War Domain</content>
+
+	<content contentuid="hce77bbc6faab4af68df9778e89b4b1c91e59" version="1">Druid: Circle of the Land</content>
+	<content contentuid="h937c303643d243128ee28e429ffc02fbdc89" version="1">Druid: Circle of the Moon</content>
+	<content contentuid="h4d4b577779a048fbb78cd244e0b84b17b85b" version="1">Druid: Circle of the Spores</content>
+	<content contentuid="ha82b54fa9f7949ce9a572079139362c3046d" version="1">Druid: Circle of the Stars</content>
+
+	<content contentuid="h9766190f1fd349f88a57bf00f99c3419fbf1" version="1">Fighter: Arcane Archer</content>
+	<content contentuid="h8e07c781f6be48bb8d11f539e1c8b49bg65b" version="1">Fighter: Champion</content>
+	<content contentuid="hc956224f7f584e9096e7a3c79458d1cc9bg3" version="1">Fighter: Eldritch Knight</content>
+	<content contentuid="hb2ff7aec766b4e64b8113c7656e78468c3a3" version="1">Fighter: Frontier Knight</content>
+
+	<content contentuid="he4b572ffeab94f5abe81a1a1cf592b3f16f8" version="1">Monk: Way of the Arcane</content>
+	<content contentuid="hd8792c892dc84db3af6522385b14d22579f5" version="1">Monk: Way of the Drunken Fist</content>
+	<content contentuid="h5a5318c3f19b4e7cb289bd094bfee3f80aa4" version="1">Monk: Way of the Open Hand</content>
+	<content contentuid="h3358a14e04844f9598c3eb0f6098f96f160d" version="1">Monk: Way of the Shadow Arts</content>
+
+	<content contentuid="h5689281b356a4051921b16eb13a486a4bea7" version="1">Paladin: Oath of the Ancients</content>
+	<content contentuid="h72389daf54ac4fad93c7dcc2f902c9e0f209" version="1">Paladin: Oath of the Crowned Phoenix</content>
+	<content contentuid="h33046c15ea574ec5a91bd4c8709dead4a46g" version="1">Paladin: Oath of Devotion</content>
+	<content contentuid="h20453170b9ff4b9c8c32d33a020357b50ac9" version="1">Paladin: Oath of Vengeance</content>
+	<content contentuid="hf4ed1f7d36d94c2abcda899d07b9e943ab47" version="1">Paladin: Oathbreaker</content>
+
+	<content contentuid="he2f1a1df896949edb5d6b3530f25289178g6" version="1">Ranger: Beast Master</content>
+	<content contentuid="hd6c7fa424e574445908ea18fb4f6d8de3b9c" version="1">Ranger: Gloom Stalker</content>
+	<content contentuid="h621dfdee398b463792b18ff7d88eb5d75127" version="1">Ranger: Hunter</content>
+	<content contentuid="h437731e40ccf4eed92b833bf3e3a7c8e2e55" version="1">Ranger: Swarmkeeper</content>
+
+	<content contentuid="h887976b614304ec78b4449ad1d3e45012f6e" version="1">Rogue: Arcane Trickster</content>
+	<content contentuid="h5ac4211b67404f48a9e8976bf17a7b077674" version="1">Rogue: Assassin</content>
+	<content contentuid="h1a147cb174bc46c59e2a8a8997501d256223" version="1">Rogue: Swashbuckler</content>
+	<content contentuid="hf3a37e1adfa04e18a9f37b5103b8aead7e76" version="1">Rogue: Thief</content>
+
+	<content contentuid="h74cb6d76f7084d1d9ccca5ba1622140f3c7d" version="1">Sorcerer: Draconic Bloodline</content>
+	<content contentuid="h73a8aafef8874258bc6950b4c4d569b0842e" version="1">Sorcerer: Shade Walker</content>
+	<content contentuid="h304a5e34541a42f098df489329c48ee49a00" version="1">Sorcerer: Storm Surge</content>
+	<content contentuid="h0c1d71fc32044f7480d64ef77b978f2d1eea" version="1">Sorcerer: Wild Magic</content>
+
+	<content contentuid="hc3c6d414533e4e019f42a85c9ef4acc7020g" version="1">Warlock: Pact of the Blade</content>
+	<content contentuid="hb462d35d35dd41e5ad91cfea37e0429dbc0b" version="1">Warlock: Pact of the Chain</content>
+	<content contentuid="hfaac57ba1de244f3abc2cb0eeedea64c5931" version="1">Warlock: Pact of Penumbra</content>
+	<content contentuid="h4eda45b1312b481bbdb967db21001156768a" version="1">Warlock: Pact of the Tome</content>
+
+	<content contentuid="h7a8fbc177eec490588472d84bb58ffdd6266" version="1">Wizard: Arcblade</content>
+	<content contentuid="h4eb2a8ec440643a49fcb8159c8ba72df4689" version="1">Wizard: Arcane Warden</content>
+	<content contentuid="he3784714c0d84b9e9326b760ead1364c71g7" version="1">Wizard: Evoker</content>
+	<content contentuid="h297875b8c2474e7ca666ffeba2832cd21893" version="1">Wizard: Necromancer</content>
+
+    <content contentuid="h4d0c77c3g56aag4077g80c4g3bk231251215" version="1">The Sound of Silence</content>
+	<content contentuid="h078069acgf62bg4c64g9322938r645686545" version="1">Through magic, you convey your &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performances&lt;/LSTag&gt; without making a sound, halving their area of effect but allowing you to act freely. While performing, you may also toggle this on in order to end your Performance.</content>
+
+	<content contentuid="h6836c376g7c23g42fbgb5ceg5b1cbf054975" version="1">Spellcasting Ability</content>
+	<content contentuid="h06a71ef5g7c5eg4b21g95dfg0cb4c47431b8" version="1">All conditions and debilitations which utilize &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; are considered to either be physical or mental. Applying a physical condition always utilizes the highest of either your Strength or Dexterity when calculating your &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt;. When applying a mental condition, this class utilizes this ability to calculate your Difficulty Class.</content>
+
+	<content contentuid="haa5dbcd2gaf52g4258g90d8g517922ac8294" version="3">Non-Lethal Attacks</content>
+	<content contentuid="hf1d4af21g03b3g406eg8b43g4b1bbbb3f0e5" version="5">Knock someone &lt;LSTag Type="Status" Tooltip="UNCONSCIOUS"&gt;Unconscious&lt;/LSTag&gt; instead of killing them. No effect on Undead or Constructs. This can be toggled at any time.</content>
+
+	<content contentuid="ha0a9d4d4gdd96g431dgb386g6a12d4545d21" version="1">Free Handling</content>
+	<content contentuid="hcc220960g681dg4db6g8cbag2c02d2f15467" version="3">With nothing equipped in your&lt;Br&gt;off-hand equipment slots, gain an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; once every three turns. In addition, you gain a +2&lt;Br&gt;bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and your Initiative.</content>
+
+	<content contentuid="ha0a9d4d4gdd96g431dgb386g6a12d4522d45" version="1">Free Handling: Action</content>
+	<content contentuid="hcc220960g681dg4db6g8cbag2c05s6d669d7" version="3">Affected creature will gain an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; upon reaching three stacks of this condition. This condition is immediately removed if in a state in which Free Handling charges cannot be accrued.</content>
+	<content contentuid="ha0a9d4d4gdd96g431dgb386g6a12d4522d54" version="1">Free Handling: Action Surge</content>
+	<content contentuid="hcc220960g681dg4db6g8cbag2c05s6dff6s8" version="3">Affected creature has gained an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; this turn. This condition is immediately removed if in a state in which Free Handling charges cannot be accrued.</content>
+	<content contentuid="ha0a9d4d4gdd96g431dgb386g6a12d4522d46" version="1">Generate Free Handling: Action</content>
+	<content contentuid="hcc220960g681dg4db6g8cbag2cdd2f5d8f45" version="1">Once per turn, upon expending an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;, you will generate one stack of &lt;LSTag Type="Status" Tooltip="FREEHANDLING_ACTION"&gt;Free Handling: Action&lt;/LSTag&gt;. This can be toggled at any time.&lt;Br&gt;&lt;br&gt;Upon generating three stacks, you will immediately receive an additional Action until the end of your turn.&lt;Br&gt;&lt;br&gt;In addition, you gain a +2 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and your Initiative. This can be toggled at any time.</content>
+
+	<content contentuid="ha0a9d4d4gdd96g431dgb386g6a12d452254d" version="1">Free Handling: Bonus Action</content>
+	<content contentuid="hcc220960g681dg4db6g8cbag2c05s6d66d98" version="3">Affected creature will gain an additional &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; upon reaching three stacks of this condition. This condition is immediately removed if in a state in which Free Handling charges cannot be accrued.</content>
+	<content contentuid="ha0a9d4d4gdd96g431dgb386g6a12d45558df" version="1">Free Handling: Bonus Action Surge</content>
+	<content contentuid="hcc220960g681dg4db6g8cbag2c05s6drrfd8" version="3">Affected creature has gained an additional &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; this turn. This condition is immediately removed if in a state in which Free Handling charges cannot be accrued.</content>
+	<content contentuid="ha0a9d4d4gdd96g431dgb386g6a666d9ff872" version="1">Generate Free Handling: Bonus Action</content>
+	<content contentuid="hcc220960g681dg4db6g8cbag2c0522d5f485" version="1">Once per turn, upon expending an &lt;LSTag Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;, you will generate one stack of &lt;LSTag Type="Status" Tooltip="FREEHANDLING_BONUSACTION"&gt;Free Handling: Bonus Action&lt;/LSTag&gt;. This can be toggled at any time.&lt;Br&gt;&lt;br&gt;Upon generating three stacks, you will immediately receive an additional Bonus Action until the end of your turn.&lt;Br&gt;&lt;br&gt;In addition, you gain a +2 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and your Initiative. This can be toggled at any time.</content>
+
+	<content contentuid="h653597fcg1942g4ce1gaefag1e225d422545" version="1">Concealed Carry</content>
+	<content contentuid="h853b555ege835g49e1g9e27g74336d966698" version="3">While &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Sneaking&lt;/LSTag&gt; and wielding a Hand Crossbow, you may make basic &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;. This can be toggled at any time.</content>
+
+	<content contentuid="efd780185cfe4411af813ecef0047f6200001" version="1">Cantrips</content>
+	<content contentuid="efd780185cfe4411af813ecef0047f620000a" version="3">Cantrips are weaker than Spells, though they do not consume &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; when cast.</content>
+
+	<content contentuid="efd780185cfe4411af813ecef0047f62zzzz1" version="1">Counter Action</content>
+	<content contentuid="efd780185cfe4411af813ecef0047f62zzzza" version="3">&lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt; which act as offensive counter actions utilize this resource in order to function properly.</content>
+
+	<content contentuid="383a69a977ec41f5982506e9d512790100001" version="1">Spells</content>
+	<content contentuid="383a69a977ec41f5982506e9d51279010000a" version="3">Spells are stronger than Cantrips, though they require &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; in order to cast.&lt;Br&gt;&lt;br&gt;You may select any Spell at levels 3, 7, and 11.</content>
+
+	<content contentuid="2308f2d16d384c75b3281d5bb3ce365d00001" version="1">Cantrips</content>
+	<content contentuid="2308f2d16d384c75b3281d5bb3ce365d0000a" version="3">Cantrips are weaker than Spells, though they do not consume &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; when cast.&lt;Br&gt;&lt;br&gt;As a Bard, you may select any Cantrip.</content>
+
+	<content contentuid="115fb28f01e84e44b3536f4741b47c3500001" version="1">Spells</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47c350000a" version="3">Spells are stronger than Cantrips, though they require &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; in order to cast.&lt;Br&gt;&lt;br&gt;As a Bard, you may select any Spell.</content>
+
+	<content contentuid="2308f2d16d384c75b3281d5bb3ce365d000a1" version="1">Cantrips</content>
+	<content contentuid="2308f2d16d384c75b3281d5bb3ce365d000aa" version="3">Cantrips are weaker than Spells, though they do not consume &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; when cast.&lt;Br&gt;&lt;br&gt;Under the Way of the Arcane, you may select any Cantrip.</content>
+
+	<content contentuid="115fb28f01e84e44b3536f4741b47c35000a1" version="1">Spells</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47c35000aa" version="3">Spells are stronger than Cantrips, though they require &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; in order to cast.&lt;Br&gt;&lt;br&gt;Under the Way of the Arcane, you may select any Spell.</content>
+
+	<content contentuid="h549cca93gf9e4g4525s98dfsudu8f88ufffd" version="1">Martial Proficiency</content>
+	<content contentuid="hfe30431cgc831g46a239489w8ef79d8ffdee" version="3">You add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with all weapons.</content>
+
+	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b39af458" version="1">Duellist Charge</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b035677" version="3">Used to gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, or force enemies to attack you with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;. Landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; or killing blow will restore one Duellist Charge.</content>
+
+	<content contentuid="h87dd56ecg2a9ag45b0ga933g10795072c609" version="1">Melee Attack</content>
+	<content contentuid="h5fafec24g30d5g425cg952cga9c53752059c" version="2">Make a melee attack with your main-hand weapon.</content>
+
+	<content contentuid="h81ed88e5gbedcg4e19g820ag3c711ffb0fc3" version="1">Ranged Attack</content>
+	<content contentuid="h94959b2fg6b0eg45c1g96d0gea9ccb23cf7a" version="7">Make a ranged attack with your main-hand weapon.</content>
+
+	<content contentuid="h3b04f82ag28deg481agb077gaacc255f4caf" version="1">Off-Hand Attack (Melee)</content>
+	<content contentuid="hb5a39b8cg5f7cg4dafg9256g9d10f6da2c8d" version="2">Make a melee attack with your off-hand weapon.</content>
+
+	<content contentuid="h68d30360g0be4g4c36ga657geb25bdbb4daa" version="2">Off-Hand Attack (Ranged)</content>
+	<content contentuid="h3cef7c68ge983g4735g979eg25c197ee9962" version="5">Make a ranged attack with your off-hand weapon.</content>
+
+	<content contentuid="h87dd56ecg2a9ag45b0ga933g10795076a454" version="1">Dual-Wield Melee Attack</content>
+	<content contentuid="h5fafec24g30d5g425cg952cga9c5375dd8f5" version="2">Make a melee attack with both of your melee weapons.</content>
+
+	<content contentuid="h87dd56ecg2a9ag45b0ga933g1079507ff9s7" version="1">Dual-Wield Ranged Attack</content>
+	<content contentuid="h5fafec24g30d5g425cg952cga9c5375aa978" version="2">Make a ranged attack with both of your ranged weapons.</content>
+
+	<content contentuid="9b7b811b9c3043e189f945540bf9288diiu8g" version="1">Additional Spells</content>
+	<content contentuid="9b7b811b9c3043e189f945540200798f7dufd" version="11">Choose additional spells from the list below. Spells within this list change depending on your choice of subclass. Spells require &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; to cast, unless a feature states otherwise.</content>
+
+	<content contentuid="haaf3959ag320eg4f68ga9c9gc143d7f64a8c" version="1">Muscles and physical power. Improves your accuracy and damage with &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee&lt;/LSTag&gt; weapons. Also applies an additional global bonus to all physical Melee damage dealt when you have no weapon in your off-hand, along with improving how far you can &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; and how much you can &lt;LSTag Tooltip="CarryWeight"&gt;Carry&lt;/LSTag&gt;.</content>
+	<content contentuid="hbf128ebdgdfffg4ea9gbf4bg1659ccefd287" version="1">Agility and balance. Improves your accuracy and damage with &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged&lt;/LSTag&gt; and &lt;LSTag Tooltip="Finesse"&gt;Finesse&lt;/LSTag&gt; weapons. Also improves your Initiative, and &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; when wearing Clothing, Light Armour, or Medium Armour.</content>
+	<content contentuid="h7a02f64dg4593g408fgbf93gb0dbabc182c9" version="1">Stamina and physical endurance. Increases the amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; you gain per level and reduces physical damage taken when wearing Medium or Heavy Armour.</content>
+	<content contentuid="h411a732ag4b4cg4094g9a5egd325fecf4645" version="1">Astuteness and memory. Improves &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting&lt;/LSTag&gt; for Rogues and Wizards, as well as their ability to apply Conditions.</content>
+	<content contentuid="h35233e68gf68ag461cgac5fgc15806be3dc7" version="1">Sense and intuition. Improves &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting&lt;/LSTag&gt; for Clerics, Druids, Monks, and Rangers, as well as their ability to apply Conditions.</content>
+	<content contentuid="h441085efge3a5g4004gba8dgf2378e8986c8" version="1">Fortitude and resilience. Improves &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting&lt;/LSTag&gt; for Barbarians, Bards, Fighters, Paladins, Sorcerers, and Warlocks, as well as their ability to apply Conditions.</content>
+	<content contentuid="hb5a027a4g2934g40bfga5e1g7c00d2f5s698" version="1">Global Strength</content>
+	<content contentuid="hb5a027a4g2934g40bfga5e1g7c225ds5f648" version="1">Full Metal</content>
+	<content contentuid="hb5a027a4g2934g40bfga5e1g7c225ds22564" version="1">While wearing Medium or Heavy Armour, physical damage suffered due to a Melee or Ranged &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, or due to a Spell, is reduced by an amount equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Constitution Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="h4333422eg15d9g4c6egbfbeg9f06915940d1" version="1">&lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; bonus from &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; limited to +2.&lt;Br&gt;&lt;LSTag Type="Status" Tooltip="DAMAGE_REDUCTION"&gt;Damage Reduction&lt;/LSTag&gt; from &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; limited to -2.</content>
+	<content contentuid="h24a49208g1912g4270g9d2dgc2986ab10ae0" version="1">&lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is unaffected by your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt;.&lt;Br&gt;&lt;LSTag Type="Status" Tooltip="DAMAGE_REDUCTION"&gt;Damage Reduction&lt;/LSTag&gt; from &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; has no limit.</content>
+	<content contentuid="h0bdd92afge500g4484g820dgbb225d655458" version="1">Damage Reduction</content>
+	<content contentuid="h65d96dbcg7697g4779g87c5g3266d9858858" version="1">When you are about to receive physical damage due to a Melee or Ranged &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, or due to a Spell, you utilize your armour to lessen the blow and reduce the damage. Damage is reduced by a value equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Constitution Modifier&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hcf90a672g10deg4b3egad4fg9094c6ac6224" version="1">Extra Attack</content>
+	<content contentuid="he37249cfg5d71g499cg82d9gc369133f2066" version="2">Once per turn, after having made an unarmed or weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, you may make an additional attack for free.</content>
+
+	<content contentuid="h3e6c622egb059g47e7gb925g7e82eae32521" version="2">Extra Attack: Martial Surge</content>
+	<content contentuid="h36aba2dbg6f37g4343ga32egcab0fd7d5f68" version="1">Gain an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; at all times.&lt;Br&gt;&lt;Br&gt;This passive acts as a replacement of &lt;LSTag Type="Passive" Tooltip="ExtraAttack"&gt;Extra Attack&lt;/LSTag&gt;.</content>
+
+	<content contentuid="hb5a027a4g2934g40bfga5e1g7cb821278a54" version="1">Extra Attack: Steel Cast</content>
+	<content contentuid="h87a4cfdbg2ba1g4a61gbbe7g540a28a9a966" version="2">Once per turn, after having made an unarmed or weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, or after having cast a Spell, you may make an additional attack for free.&lt;Br&gt;&lt;Br&gt;This passive acts as a replacement of &lt;LSTag Type="Passive" Tooltip="ExtraAttack"&gt;Extra Attack&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h3e6c622egb059g47e7gb925g7e82eae1bfda" version="2">Lunar Instinct</content>
+	<content contentuid="h36aba2dbg6f37g4343ga32egcab0fd7edcb3" version="1">While assuming the form of a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wild Shape&lt;/LSTag&gt;, you gain an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h3e6c622egb059g47e7gb925g7e82eae12525" version="2">Beastial Instinct</content>
+	<content contentuid="h36aba2dbg6f37g4343ga32egcab0fd766684" version="1">Gain an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h631e68c7g95f2g4437ga8cfg13e7449d375f" version="1">Ends the day and restores all &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; and resources.
+
+To take a Long Rest, go to camp and use &lt;LSTag Tooltip="CampSupplies"&gt;Camp Supplies&lt;/LSTag&gt;. If you don't have enough Camp Supplies, you will not regain any resources.</content>
+
+	<content contentuid="hd3e502cfgad92g4e41g9b96gcb5d2f304652" version="1">Use the campfire button to go to camp, restoring &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; and &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt;.
+
+Fully resting requires &lt;LSTag Tooltip="CampSupplies"&gt;Camp Supplies&lt;/LSTag&gt;. If you don't have enough supplies, you will not regain any resources.</content>
+
+	<content contentuid="hae826c89g4f7eg4a64g976fgf6cbebab7564" version="1">&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Warning: You will not regain any resources.</content>
+
+	<content contentuid="h046bbfd4g708cg42eag87bfg5fe550161183" version="1">&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Warning: You will not regain any resources.</content>
+
+	<content contentuid="h446e0ad1gfd15g47a2gb144ge583b8svgale" version="1">Gale's Severed Mage Hand</content>
+	<content contentuid="hd0d5c5b6g213bg4a73g984espicytiefling" version="1">Spicy</content>
+	<content contentuid="h0749c679gda4bg4fc7gaf23spicytiefling" version="1">When damaged by a melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, your aggressor takes [1].</content>
+
+</contentList>

@@ -1,0 +1,23 @@
+new entry "MAG_Critical_Force_Gloves"
+type "Armor"
+using "_Hand_Magic_Metal"
+data "RootTemplate" "556c4071-7d59-4cb7-ad84-9fa0efcd535f"
+data "ValueUUID" "a229f048-70b0-4b0c-88cb-29b5c6bdb2d0"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "Tunnel_Fighter_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - FIGHTER REWORK-->
+
+new entry "Tunnel_Fighter_Item"
+type "PassiveData"
+data "DisplayName" "439cb1c55ce44da8b8f3ccd2e23204f500020;1"
+data "Description" "439cb1c55ce44da8b8f3ccd2e23204f50000t;2"
+data "Icon" "PassiveFeature_MediumArmorMaster"
+data "Properties" "Highlighted;ForceShowInCC"
+data "BoostConditions" "not HasPassive('Tunnel_Fighter', context.Source)"
+data "Boosts" "ActionResource(ReactionActionPoint,1,0)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="405" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="MELEETAG" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hffaccf0ag0569g4b24gb7bfg483a4s6d54f6" version="0" />
+			<attribute id="DisplayName" type="TranslatedString" handle="hffaccf0ag0569g4b24gb7bfg4sd6f455d64f" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="MELEE" />
+			<attribute id="UUID" type="guid" value="270b9c92-227d-4545-988d-1097cd4d99c0" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

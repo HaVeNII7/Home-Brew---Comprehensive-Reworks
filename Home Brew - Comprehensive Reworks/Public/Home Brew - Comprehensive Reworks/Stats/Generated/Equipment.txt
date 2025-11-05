@@ -1,0 +1,886 @@
+new equipment "EQP_CC_Barbarian"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greataxe"
+add equipmentgroup
+add equipment entry "ARM_Barbarian"
+add equipmentgroup
+add equipment entry "ARM_Shoes_Barbarian"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQ_Karlach"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greataxe"
+add equipmentgroup
+add equipment entry "UNI_Karlach_StarterArmor"
+add equipmentgroup
+add equipment entry "UNI_Karlach_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Karlach"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Karlach"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Karlach"
+add equipmentgroup
+add equipment entry "DOR_BagsReforged_KarlachBag"
+
+new equipment "EQP_CC_Bard"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Rapier"
+add equipmentgroup
+add equipment entry "ARM_Bard"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather_D"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQP_CC_Cleric"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Mace"
+add equipmentgroup
+add equipment entry "ARM_Shield"
+add equipmentgroup
+add equipment entry "ARM_ChainShirt_Body"
+add equipmentgroup
+add equipment entry "ARM_Shoes_E"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQ_Shadowheart"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Mace"
+add equipmentgroup
+add equipment entry "ARM_Shield"
+add equipmentgroup
+add equipment entry "ARM_ChainShirt_Body_Shar"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Shadowheart"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Shadowheart"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Shadowheart"
+add equipmentgroup
+add equipment entry "DOR_BagsReforged_ShadowheartBag"
+
+new equipment "EQP_CC_Druid"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Spear"
+add equipmentgroup
+add equipment entry "ARM_Leather_Body_Druid"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather_Druid"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQ_Halsin"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Quarterstaff_Druid"
+add equipmentgroup
+add equipment entry "UNI_Leather_Halsin"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather_Druid"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Halsin"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Halsin"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Halsin"
+add equipmentgroup
+add equipment entry "DOR_BagsReforged_HalsinBag"
+
+new equipment "EQP_Jaheira"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Scimitar"
+add equipmentgroup
+add equipment entry "WPN_Scimitar"
+add equipmentgroup
+add equipment entry "UNI_Leather_Jaheira"
+add equipmentgroup
+add equipment entry "UNI_Jaheira_Boots"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Jaheira"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Jaheira"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Jaheira"
+add equipmentgroup
+add equipment entry "DOR_BagsReforged_JaheiraBag"
+
+new equipment "EQP_CC_Fighter"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Longsword"
+add equipmentgroup
+add equipment entry "ARM_Shield"
+add equipmentgroup
+add equipment entry "ARM_ScaleMail_Body"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather_A"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQP_CC_Fighter_ArcaneArcher"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Longsword"
+add equipmentgroup
+add equipment entry "WPN_HandCrossbow"
+add equipmentgroup
+add equipment entry "ARM_ScaleMail_Body"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather_A"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQ_Laezel"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Longsword"
+add equipmentgroup
+add equipment entry "ARM_HalfPlate_Body_Githyanki"
+add equipmentgroup
+add equipment entry "ARM_Boots_Metal_Githyanki"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Laezel"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Laezel"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Laezel"
+add equipmentgroup
+add equipment entry "DOR_BagsReforged_LaezelBag"
+
+new equipment "EQP_CC_Monk"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Quarterstaff"
+add equipmentgroup
+add equipment entry "ARM_Monk"
+add equipmentgroup
+add equipment entry "ARM_Shoes_Monk"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQP_CC_Paladin_Ancients"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greatsword"
+add equipmentgroup
+add equipment entry "ARM_ScaleMail_Body_Paladin_Ancients"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather_F"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Book_Paladin"
+
+new equipment "EQP_CC_Paladin_Crown"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greatsword"
+add equipmentgroup
+add equipment entry "ARM_ScaleMail_Body_Paladin_Crown"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Book_Paladin"
+
+new equipment "EQP_CC_Paladin_Devotion"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greatsword"
+add equipmentgroup
+add equipment entry "ARM_ScaleMail_Body_Paladin_Devotion"
+add equipmentgroup
+add equipment entry "ARM_Shoes_H"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Book_Paladin"
+
+new equipment "EQP_CC_Paladin_Vengance"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greatsword"
+add equipmentgroup
+add equipment entry "ARM_ScaleMail_Body_Paladin_Vengeance"
+add equipmentgroup
+add equipment entry "ARM_Shoes_G"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Book_Paladin"
+
+new equipment "EQP_CC_Paladin_Oathbreaker"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greatsword"
+add equipmentgroup
+add equipment entry "ARM_Breastplate_Body"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather_E"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "GOB_DrowCommander"
+add equipmentgroup
+add equipment entry "GOB_DrowCommander_Mace"
+add equipmentgroup
+add equipment entry "GOB_DrowCommander_Leather_Armor"
+add equipmentgroup
+add equipment entry "MAG_Paladin_MomentumOnConcentration_Boots"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Minthara"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Minthara"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Minthara"
+add equipmentgroup
+add equipment entry "DOR_BagsReforged_MintharaBag"
+
+new equipment "EQP_CC_Ranger"
+add initialweaponset "Ranged"
+add equipmentgroup
+add equipment entry "WPN_Longbow"
+add equipmentgroup
+add equipment entry "WPN_Shortsword"
+add equipmentgroup
+add equipment entry "ARM_StuddedLeather_Body"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather_B"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQP_Minsc"
+add initialweaponset "Ranged"
+add equipmentgroup
+add equipment entry "WPN_Longbow"
+add equipmentgroup
+add equipment entry "WPN_Shortsword"
+add equipmentgroup
+add equipment entry "ARM_Leather_Body_Minsc"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Minsc"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Minsc"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Minsc"
+add equipmentgroup
+add equipment entry "DOR_BagsReforged_MinscBag"
+
+new equipment "EQP_CC_Rogue"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Dagger"
+add equipmentgroup
+add equipment entry "WPN_Dagger"
+add equipmentgroup
+add equipment entry "ARM_Leather_Body_Rogue"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQ_Astarion"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Dagger"
+add equipmentgroup
+add equipment entry "WPN_Dagger"
+add equipmentgroup
+add equipment entry "UNI_Astarion_StarterArmor"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Astarion"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Astarion"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Astarion"
+add equipmentgroup
+add equipment entry "DOR_BagsReforged_AstarionBag"
+
+new equipment "EQP_CC_Sorcerer"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Scimitar"
+add equipmentgroup
+add equipment entry "ARM_Robe_Body_Sorcerer"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather_C"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQP_CC_Sorcerer_DraconicAncestry"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Scimitar"
+add equipmentgroup
+add equipment entry "ARM_Robe_Body_Sorcerer_DraconicAncestry"
+add equipmentgroup
+add equipment entry "ARM_Shoes_B"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQP_CC_Sorcerer_ShadowMagic"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Scimitar"
+add equipmentgroup
+add equipment entry "ARM_Robe_Body_Sorcerer_ShadowSorcery"
+add equipmentgroup
+add equipment entry "ARM_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQP_CC_Sorcerer_StormSorcery"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Scimitar"
+add equipmentgroup
+add equipment entry "ARM_Robe_Body_Sorcerer_StormSorcery"
+add equipmentgroup
+add equipment entry "ARM_Shoes_C"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQP_CC_Warlock"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Shortsword"
+add equipmentgroup
+add equipment entry "ARM_Padded_Body"
+add equipmentgroup
+add equipment entry "ARM_Shoes_F"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQ_Wyll"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Rapier"
+add equipmentgroup
+add equipment entry "ARM_Padded_Body"
+add equipmentgroup
+add equipment entry "ARM_Boots_Leather"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Wyll"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Wyll"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Wyll"
+add equipmentgroup
+add equipment entry "DOR_BagsReforged_WyllBag"
+
+new equipment "CCompanion_Azer"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Warhammer_Azer"
+add equipmentgroup
+add equipment entry "ARM_Shield_Azer"
+
+new equipment "CCompanion_Cambion"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Greatsword"
+
+new equipment "EQP_CC_Wizard"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Quarterstaff"
+add equipmentgroup
+add equipment entry "ARM_Robe_Body"
+add equipmentgroup
+add equipment entry "ARM_Shoes_D"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+
+new equipment "EQ_Gale"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Quarterstaff"
+add equipmentgroup
+add equipment entry "UNI_GaleRobe"
+add equipmentgroup
+add equipment entry "ARM_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body_Gale"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes_Gale"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Gale"
+add equipmentgroup
+add equipment entry "DOR_BagsReforged_GaleBag"

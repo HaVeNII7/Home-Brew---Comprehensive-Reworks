@@ -1,0 +1,23 @@
+new entry "MAG_TheDestroyer_Maul"
+type "Weapon"
+using "WPN_Maul_1"
+data "RootTemplate" "89eacf71-5bf6-4e7f-ac9d-e2d7d1d6bcb0"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT);WeaponEnchantment(1)"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "Overwhelm;Heavy_Assault_Item"
+data "Unique" "1"
+data "UseCosts" "ReactionActionPoint:1;Attunement:2"
+data "StatusOnEquip" "ATTUNEMENT2"
+
+<!--ITEM VARIANT - FIGHTER REWORK-->
+
+new entry "Heavy_Assault_Item"
+type "PassiveData"
+data "DisplayName" "439cb1c55ce44da8b8f3ccd2e23204f500006;1"
+data "Description" "439cb1c55ce44da8b8f3ccd2e23204f50000f;2"
+data "Icon" "PassiveFeature_MediumArmorMaster"
+data "Properties" "Highlighted;ForceShowInCC"
+data "BoostConditions" "not HasPassive('Heavy_Assault', context.Source)"
+data "Boosts" "IF(HasWeaponProperty(WeaponProperties.Twohanded, GetAttackWeapon(context.Source)) and IsMeleeAttack()):Reroll(MeleeWeaponDamage,20,false);IF(HasWeaponProperty(WeaponProperties.Twohanded, GetAttackWeapon(context.Source)) and IsRangedWeaponAttack()):Reroll(Damage,20,false)"
+data "TooltipPermanentWarnings" "8d245daf-56a0-4bba-ae80-e64f9bca8455"

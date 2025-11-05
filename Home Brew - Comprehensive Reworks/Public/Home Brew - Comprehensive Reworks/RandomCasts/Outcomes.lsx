@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="319"/>
+    <region id="Outcomes">
+        <node id="root">
+            <children>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicBarbarian"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_Teleport_Activate"/>
+                    <attribute id="UUID" type="guid" value="9f5a920d-287a-4fa1-b77d-53502d0a9058"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicBarbarian"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_ShadowyTendrils"/>
+                    <attribute id="UUID" type="guid" value="cef687cf-954a-4815-ae82-8674d7bcce64"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicBarbarian"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_ExplodingFlumph_Activate"/>
+                    <attribute id="UUID" type="guid" value="30bee187-0b7a-4d1b-aa38-bd737e632327"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicBarbarian"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_WeaponInfusion"/>
+                    <attribute id="UUID" type="guid" value="b0048ef7-e44d-4284-b0a2-a109df0a43eb"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicBarbarian"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_MagicRetribution"/>
+                    <attribute id="UUID" type="guid" value="e73add7b-3bc8-478a-a414-22c44eb5eba4"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicBarbarian"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_ProtectiveLights"/>
+                    <attribute id="UUID" type="guid" value="df6ac140-88b5-44e7-858d-b65ade1ff9c2"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicBarbarian"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_VineGrowth"/>
+                    <attribute id="UUID" type="guid" value="f6098f67-9ce8-4f4c-93da-833c515a7ec5"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicBarbarian"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_LightBolt_Activate"/>
+                    <attribute id="UUID" type="guid" value="c18084e6-7a16-4282-84b2-ecf83b62ef02"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicBarbarian"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_BottomlessRage"/>
+                    <attribute id="UUID" type="guid" value="111cd816-14fc-4a7c-8f1e-18de2ae46e3c"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicBarbarian"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_MountainousRampage"/>
+                    <attribute id="UUID" type="guid" value="6ecb0d91-831f-485c-8ad6-e84c416a7e9d"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SweetSilence"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00001"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SpeakNoEvil"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00002"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_YouCantSeeMe"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00003"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SeeNoEvil"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00004"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Cheesy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00005"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Delicious"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00006"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_PresstheAdvantage"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00007"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Retreat"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00008"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Disadvantaged"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00009"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Advance"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00010"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SelectiveSavior"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00011"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_IndiscriminateSavior"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00012"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Traitor"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00013"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Oppressor"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00014"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MassResistance"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00015"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MassVulnerability"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00016"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_HoldIt"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00017"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_FreezeFrame"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00018"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SwingtheBat"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00019"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SwingandaMiss"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00020"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_WellRested"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00021"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_WellShit"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00022"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedInferno"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00023"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_HotHotHot"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00024"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_GraniteGrace"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00025"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_StoneOpposition"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00026"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AetherialAscent"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00027"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SkyboundFolly"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00028"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CorpseParty"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00029"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_UndeadRumination"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00030"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ReflectionofCamraderie"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00031"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ReflectionofChaos"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00032"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BIIIIIIIG"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00033"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_GrowthSpurt"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00034"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SMAAAAAAALL"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00035"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CutDowntoSize"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00036"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CalmingClowder"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00037"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_NotSoCalmingClowder"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00038"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CursetheGreedy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00039"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SavetheNeedy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00040"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CriticalSuccess"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00041"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CriticalFail"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00042"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CriticalMiss"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00043"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_TaskFailedSuccessfully"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00044"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ActionAdventure"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00045"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ActionHorror"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00046"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ActionAdventureBonusClip"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00047"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ActionHorrorBonusClip"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00048"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CurseofBane"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00049"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BoonofBane"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00050"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BlessedBlessings"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00051"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CursedBlessings"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00052"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BedofFeathers"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00053"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_DescendUponYou"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00054"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SpeedUp"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00055"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_NowheretoRun"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00056"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_LeapsandBounds"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00057"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_JumpingtheGun"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00058"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_NoTavAllowed"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00059"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MembersOnly"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00060"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SchoolhouseKnock"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00061"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ProfessionalThiefVeryStealthy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00062"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_OneWithNature"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00063"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemyofSylvanus"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00064"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_NecroticTongue"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00065"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_NecroticBlowback"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00066"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MindReader"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00067"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_TongueTwister"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00068"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MistyBoon"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00069"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MistyCurse"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00070"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CatsAndDogs"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00071"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BlinkandYoullMissIt"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00072"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ABoonofRadiance"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00073"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BlazingCurses"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00074"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedQuasits"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00075"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ExplosiveHealing"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00076"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_FieldofStudy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00077"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BubbleBuddy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a00078"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SkillIssue"/>
+                    <attribute id="UUID" type="guid" value="1763d3d3-a8c6-410d-a9d6-7aefac932aca"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BubbleBoy"/>
+                    <attribute id="UUID" type="guid" value="738ebdcd-94f1-4278-aa22-e194e7cf521b"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Fire"/>
+                    <attribute id="UUID" type="guid" value="de0b3868-9e6d-4f0b-9d27-c8710e87ca00"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Fire"/>
+                    <attribute id="UUID" type="guid" value="5ad7d526-5fb6-454d-8ee7-d56766c8bc15"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Ice"/>
+                    <attribute id="UUID" type="guid" value="c95daaf4-1934-45c9-b3c4-bf869b3da676"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Ice"/>
+                    <attribute id="UUID" type="guid" value="0c8eaf8d-42ad-4cfb-ac90-3deee8c1a855"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Acid"/>
+                    <attribute id="UUID" type="guid" value="499e5fcb-0c6d-4127-b42f-b861d28cd69a"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Acid"/>
+                    <attribute id="UUID" type="guid" value="73670295-5d5b-4087-baae-c2ec64e9dcd9"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_WaterElectrified"/>
+                    <attribute id="UUID" type="guid" value="781f3731-f93b-435f-8b24-e080ecca804d"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_WaterElectrified"/>
+                    <attribute id="UUID" type="guid" value="95ed70fa-bef9-4966-b918-54789f83f06c"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Grease"/>
+                    <attribute id="UUID" type="guid" value="def728f0-5730-4d9d-aab8-37c26dd1698e"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Grease"/>
+                    <attribute id="UUID" type="guid" value="1e46e6d8-c997-4165-b5b2-b443125cc265"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Darkness"/>
+                    <attribute id="UUID" type="guid" value="3cec72ce-d053-460f-84a3-c0bf527bf2c3"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Darkness"/>
+                    <attribute id="UUID" type="guid" value="c784f735-d0da-4685-bf27-a94544079710"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Mud"/>
+                    <attribute id="UUID" type="guid" value="83de74d7-ef17-4f7b-9313-11de1a6c0158"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Mud"/>
+                    <attribute id="UUID" type="guid" value="950700ad-d5f1-409e-856b-4f27c1d66dcb"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Sewer"/>
+                    <attribute id="UUID" type="guid" value="2e417adc-af89-4f4e-adf0-08685b0e0f28"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Sewer"/>
+                    <attribute id="UUID" type="guid" value="23eb7d3f-7957-47db-817b-f2e595db94c4"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Water"/>
+                    <attribute id="UUID" type="guid" value="251645bd-541a-49c7-89c9-be69d918697c"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Water"/>
+                    <attribute id="UUID" type="guid" value="f2906ebb-563c-4cfd-9e50-3a5799023757"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Web"/>
+                    <attribute id="UUID" type="guid" value="e647e4a8-6bee-41d9-a7e2-5c59131581fe"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagic"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Web"/>
+                    <attribute id="UUID" type="guid" value="0d6df6f9-53cd-4928-80c5-1ad0a512c424"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SweetSilence"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99901"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_YouCantSeeMe"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99903"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Delicious"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99906"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_PresstheAdvantage"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99907"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Advance"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99910"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SelectiveSavior"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99911"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Oppressor"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99914"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MassResistance"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99915"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_HoldIt"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99917"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SwingtheBat"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99919"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_WellRested"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99921"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_HotHotHot"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99924"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_GraniteGrace"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99925"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AetherialAscent"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99927"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CorpseParty"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99929"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ReflectionofCamraderie"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99931"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BIIIIIIIG"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99933"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CutDowntoSize"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99936"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CalmingClowder"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99937"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SavetheNeedy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99940"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CriticalSuccess"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99941"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_TaskFailedSuccessfully"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99944"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ActionAdventure"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99945"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ActionAdventureBonusClip"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99947"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BoonofBane"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99950"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BlessedBlessings"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99951"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BedofFeathers"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99953"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SpeedUp"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99955"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_LeapsandBounds"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99957"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MembersOnly"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99960"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SchoolhouseKnock"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99961"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_OneWithNature"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99963"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_NecroticTongue"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99965"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_NecroticBlowback"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99966"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MindReader"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99967"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemyofSylvanus"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99964"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MistyBoon"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99969"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ABoonofRadiance"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99973"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedQuasits"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99975"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_FieldofStudy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99977"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BubbleBuddy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99978"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Fire"/>
+                    <attribute id="UUID" type="guid" value="5ad7d526-5fb6-454d-8ee7-d56766c8bc15"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Ice"/>
+                    <attribute id="UUID" type="guid" value="0c8eaf8d-42ad-4cfb-ac90-3deee8cff5d8"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Acid"/>
+                    <attribute id="UUID" type="guid" value="73670295-5d5b-4087-baae-c2ec64eff844"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_WaterElectrified"/>
+                    <attribute id="UUID" type="guid" value="95ed70fa-bef9-4966-b918-54789f8ff938"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Grease"/>
+                    <attribute id="UUID" type="guid" value="1e46e6d8-c997-4165-b5b2-b443125ff83d"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Darkness"/>
+                    <attribute id="UUID" type="guid" value="c784f735-d0da-4685-bf27-a945440ff93d"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Mud"/>
+                    <attribute id="UUID" type="guid" value="950700ad-d5f1-409e-856b-4f27c1dff000"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Sewer"/>
+                    <attribute id="UUID" type="guid" value="23eb7d3f-7957-47db-817b-f2e595dff111"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Water"/>
+                    <attribute id="UUID" type="guid" value="f2906ebb-563c-4cfd-9e50-3a57990ff2dd"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicPositive"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemySurface_Web"/>
+                    <attribute id="UUID" type="guid" value="0d6df6f9-53cd-4928-80c5-1ad0a51f5d85"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SpeakNoEvil"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99902"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SeeNoEvil"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99904"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Cheesy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99905"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Retreat"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99908"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Disadvantaged"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99909"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_IndiscriminateSavior"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99912"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Traitor"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99913"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MassVulnerability"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99916"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_FreezeFrame"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99918"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SwingandaMiss"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99920"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_WellShit"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99922"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedInferno"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99923"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_StoneOpposition"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99926"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SkyboundFolly"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99928"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_UndeadRumination"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99930"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ReflectionofChaos"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99932"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_GrowthSpurt"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99934"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SMAAAAAAALL"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99935"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_NotSoCalmingClowder"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99938"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CursetheGreedy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99939"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CriticalFail"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99942"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CriticalMiss"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99943"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ActionHorror"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99946"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ActionHorrorBonusClip"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99948"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CurseofBane"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99949"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CursedBlessings"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99952"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_DescendUponYou"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99954"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_NowheretoRun"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99956"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_JumpingtheGun"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99958"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_NoTavAllowed"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99959"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ProfessionalThiefVeryStealthy"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99962"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_EnemyofSylvanus"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99964"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_MistyCurse"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99970"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CatsAndDogs"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99971"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BlinkandYoullMissIt"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99972"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BlazingCurses"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99974"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ExplosiveHealing"/>
+                    <attribute id="UUID" type="guid" value="7bfc64e4-79fa-484c-b8e7-764ca5a99976"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_SkillIssue"/>
+                    <attribute id="UUID" type="guid" value="74608bc3-6ec3-413b-900f-1e6284f00046"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_BubbleBoy"/>
+                    <attribute id="UUID" type="guid" value="74608bc3-6ec3-413b-900f-1e6284f00047"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Fire"/>
+                    <attribute id="UUID" type="guid" value="74608bc3-6ec3-413b-900f-1e6284f00048"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Ice"/>
+                    <attribute id="UUID" type="guid" value="74608bc3-6ec3-413b-900f-1e6284f00049"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Acid"/>
+                    <attribute id="UUID" type="guid" value="499e5fcb-0c6d-4127-b42f-b8ff1d2cd69a"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_WaterElectrified"/>
+                    <attribute id="UUID" type="guid" value="74608bc3-6ec3-413b-900f-1e6284f00045"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Grease"/>
+                    <attribute id="UUID" type="guid" value="def728f0-5730-4d9d-aab8-ff216dd1698e"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Darkness"/>
+                    <attribute id="UUID" type="guid" value="3cec72ce-d053-460f-84a3-cff5d87bf2c3"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Mud"/>
+                    <attribute id="UUID" type="guid" value="83de74d7-ef17-4f7b-9313-11dff6d80158"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Sewer"/>
+                    <attribute id="UUID" type="guid" value="2e417adc-af89-4f4e-adf0-0868ff124f28"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Water"/>
+                    <attribute id="UUID" type="guid" value="74608bc3-6ec3-413b-900f-1e6284f00044"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="WildMagicNegative"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_AlliedSurface_Web"/>
+                    <attribute id="UUID" type="guid" value="e647e4a8-6bee-41d9-a7e2-5c59f5d681fe"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
