@@ -4,11 +4,12 @@
   <region id="CharacterCreationAppearanceMaterials">
     <node id="root">
       <children>
+      <!--DGB-->
         <node id="CharacterCreationAppearanceMaterial">
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7381001" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591001" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Amethyst_1" />
+          <attribute id="Name" type="FixedString" value="Draconic_Amethyst_DGB_1" />
           <attribute id="UIColor" type="LSString" value="#FF740A8F" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193781001" />
         </node>
@@ -16,7 +17,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7381002" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591002" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Amethyst_2" />
+          <attribute id="Name" type="FixedString" value="Draconic_Amethyst_DGB_2" />
           <attribute id="UIColor" type="LSString" value="#FFA022C9" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193781002" />
         </node>
@@ -24,7 +25,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7381003" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591003" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Amethyst_3" />
+          <attribute id="Name" type="FixedString" value="Draconic_Amethyst_DGB_3" />
           <attribute id="UIColor" type="LSString" value="#FF8B5AAF" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193781003" />
         </node>
@@ -32,7 +33,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7381004" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591004" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Amethyst_4" />
+          <attribute id="Name" type="FixedString" value="Draconic_Amethyst_DGB_4" />
           <attribute id="UIColor" type="LSString" value="#FF6A3A8E" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193781004" />
         </node>
@@ -40,7 +41,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7381005" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591005" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Amethyst_5" />
+          <attribute id="Name" type="FixedString" value="Draconic_Amethyst_DGB_5" />
           <attribute id="UIColor" type="LSString" value="#FFBA7FD6" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193781005" />
         </node>
@@ -48,7 +49,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7382001" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592001" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Crystal_1" />
+          <attribute id="Name" type="FixedString" value="Draconic_Crystal_DGB_1" />
           <attribute id="UIColor" type="LSString" value="#FFE8F4F8" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193782001" />
         </node>
@@ -56,7 +57,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7382002" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592002" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Crystal_2" />
+          <attribute id="Name" type="FixedString" value="Draconic_Crystal_DGB_2" />
           <attribute id="UIColor" type="LSString" value="#FFC5E3F0" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193782002" />
         </node>
@@ -64,7 +65,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7382003" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592003" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Crystal_3" />
+          <attribute id="Name" type="FixedString" value="Draconic_Crystal_DGB_3" />
           <attribute id="UIColor" type="LSString" value="#FFA8D5E8" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193782003" />
         </node>
@@ -72,7 +73,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7382004" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592004" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Crystal_4" />
+          <attribute id="Name" type="FixedString" value="Draconic_Crystal_DGB_4" />
           <attribute id="UIColor" type="LSString" value="#FFFFFFFF" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193782004" />
         </node>
@@ -80,7 +81,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7382005" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592005" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Crystal_5" />
+          <attribute id="Name" type="FixedString" value="Draconic_Crystal_DGB_5" />
           <attribute id="UIColor" type="LSString" value="#FFD4EEF7" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193782005" />
         </node>
@@ -88,7 +89,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7383001" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593001" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Emerald_1" />
+          <attribute id="Name" type="FixedString" value="Draconic_Emerald_DGB_1" />
           <attribute id="UIColor" type="LSString" value="#FF0F8A3E" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193783001" />
         </node>
@@ -96,7 +97,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7383002" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593002" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Emerald_2" />
+          <attribute id="Name" type="FixedString" value="Draconic_Emerald_DGB_2" />
           <attribute id="UIColor" type="LSString" value="#FF1AAF55" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193783002" />
         </node>
@@ -104,7 +105,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7383003" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593003" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Emerald_3" />
+          <attribute id="Name" type="FixedString" value="Draconic_Emerald_DGB_3" />
           <attribute id="UIColor" type="LSString" value="#FF2FD470" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193783003" />
         </node>
@@ -112,7 +113,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7383004" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593004" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Emerald_4" />
+          <attribute id="Name" type="FixedString" value="Draconic_Emerald_DGB_4" />
           <attribute id="UIColor" type="LSString" value="#FF0A6B2E" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193783004" />
         </node>
@@ -120,7 +121,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7383005" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593005" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Emerald_5" />
+          <attribute id="Name" type="FixedString" value="Draconic_Emerald_DGB_5" />
           <attribute id="UIColor" type="LSString" value="#FF50E890" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193783005" />
         </node>
@@ -128,7 +129,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7384001" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594001" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Sapphire_1" />
+          <attribute id="Name" type="FixedString" value="Draconic_Sapphire_DGB_1" />
           <attribute id="UIColor" type="LSString" value="#FF0F5BA3" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193784001" />
         </node>
@@ -136,7 +137,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7384002" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594002" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Sapphire_2" />
+          <attribute id="Name" type="FixedString" value="Draconic_Sapphire_DGB_2" />
           <attribute id="UIColor" type="LSString" value="#FF1A74CC" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193784002" />
         </node>
@@ -144,7 +145,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7384003" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594003" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Sapphire_3" />
+          <attribute id="Name" type="FixedString" value="Draconic_Sapphire_DGB_3" />
           <attribute id="UIColor" type="LSString" value="#FF2E8FE8" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193784003" />
         </node>
@@ -152,7 +153,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7384004" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594004" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Sapphire_4" />
+          <attribute id="Name" type="FixedString" value="Draconic_Sapphire_DGB_4" />
           <attribute id="UIColor" type="LSString" value="#FF0A4278" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193784004" />
         </node>
@@ -160,7 +161,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7384005" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594005" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Sapphire_5" />
+          <attribute id="Name" type="FixedString" value="Draconic_Sapphire_DGB_5" />
           <attribute id="UIColor" type="LSString" value="#FF5AABFF" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193784005" />
         </node>
@@ -168,7 +169,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7385001" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595001" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Topaz_1" />
+          <attribute id="Name" type="FixedString" value="Draconic_Topaz_DGB_1" />
           <attribute id="UIColor" type="LSString" value="#FFD4A017" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193785001" />
         </node>
@@ -176,7 +177,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7385002" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595002" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Topaz_2" />
+          <attribute id="Name" type="FixedString" value="Draconic_Topaz_DGB_2" />
           <attribute id="UIColor" type="LSString" value="#FFF5C842" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193785002" />
         </node>
@@ -184,7 +185,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7385003" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595003" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Topaz_3" />
+          <attribute id="Name" type="FixedString" value="Draconic_Topaz_DGB_3" />
           <attribute id="UIColor" type="LSString" value="#FFFFD966" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193785003" />
         </node>
@@ -192,7 +193,7 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7385004" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595004" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Topaz_4" />
+          <attribute id="Name" type="FixedString" value="Draconic_Topaz_DGB_4" />
           <attribute id="UIColor" type="LSString" value="#FFB8860B" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193785004" />
         </node>
@@ -200,10 +201,11 @@
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7385005" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595005" />
           <attribute id="MaterialType" type="FixedString" value="Passive" />
-          <attribute id="Name" type="FixedString" value="Draconic_Topaz_5" />
+          <attribute id="Name" type="FixedString" value="Draconic_Topaz_DGB_5" />
           <attribute id="UIColor" type="LSString" value="#FFFFE794" />
           <attribute id="UUID" type="guid" value="58a49f06-9f00-419d-a274-1d2193785005" />
         </node>
+        <!--OTHER RACES-->
         <node id="CharacterCreationAppearanceMaterial">
           <attribute id="DisplayName" type="TranslatedString" handle="heba5aa44355c4cbd91bef6d45ba8e7381101" version="1" />
           <attribute id="MaterialPresetUUID" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591101" />

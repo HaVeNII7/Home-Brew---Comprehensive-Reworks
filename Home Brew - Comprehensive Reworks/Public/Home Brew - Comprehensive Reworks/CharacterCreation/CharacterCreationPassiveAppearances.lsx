@@ -4,6 +4,7 @@
   <region id="CharacterCreationPassiveAppearances">
     <node id="root">
       <children>
+        <!--DGB-->
         <node id="CharacterCreationPassiveAppearance">
           <attribute id="Passive" type="FixedString" value="DraconicAncestry_Amethyst" />
           <attribute id="RaceUUID" type="guid" value="9c61a74a-20df-4119-89c5-d996956b6c66" />
@@ -15,7 +16,7 @@
             <node id="AppearanceMaterialUUIDs">
               <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
             </node>
-            
+            <!--Custom colours-->
             <node id="ColorMaterialUUIDs">
               <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781001" />
             </node>
@@ -44,7 +45,7 @@
             <node id="AppearanceMaterialUUIDs">
               <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
             </node>
-            
+            <!--Custom colours-->
             <node id="ColorMaterialUUIDs">
               <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782001" />
             </node>
@@ -73,7 +74,7 @@
             <node id="AppearanceMaterialUUIDs">
               <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
             </node>
-            
+            <!--Custom colours-->
             <node id="ColorMaterialUUIDs">
               <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783001" />
             </node>
@@ -102,7 +103,7 @@
             <node id="AppearanceMaterialUUIDs">
               <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
             </node>
-            
+            <!--Custom colours-->
             <node id="ColorMaterialUUIDs">
               <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784001" />
             </node>
@@ -131,7 +132,7 @@
             <node id="AppearanceMaterialUUIDs">
               <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
             </node>
-            
+            <!--Custom colours-->
             <node id="ColorMaterialUUIDs">
               <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785001" />
             </node>
@@ -149,6 +150,7 @@
             </node>
           </children>
         </node>
+        <!--OTHER RACES-->
         <node id="CharacterCreationPassiveAppearance">
           <attribute id="Passive" type="FixedString" value="DraconicAncestry_Amethyst" />
           <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237ef62" />
@@ -168,21 +170,21 @@
             <node id="AppearanceMaterialUUIDs">
               <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
             </node>
-            
+            <!--Custom colours-->
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591101" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781101" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591102" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781102" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591103" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781103" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591104" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781104" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591105" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781105" />
             </node>
           </children>
         </node>
@@ -205,21 +207,21 @@
             <node id="AppearanceMaterialUUIDs">
               <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
             </node>
-            
+            <!--Custom colours-->
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592101" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782101" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592102" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782102" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592103" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782103" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592104" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782104" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592105" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782105" />
             </node>
           </children>
         </node>
@@ -242,21 +244,21 @@
             <node id="AppearanceMaterialUUIDs">
               <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
             </node>
-            
+            <!--Custom colours-->
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593101" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783101" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593102" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783102" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593103" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783103" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593104" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783104" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593105" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783105" />
             </node>
           </children>
         </node>
@@ -279,21 +281,21 @@
             <node id="AppearanceMaterialUUIDs">
               <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
             </node>
-            
+            <!--Custom colours-->
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594101" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784101" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594102" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784102" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594103" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784103" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594104" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784104" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594105" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784105" />
             </node>
           </children>
         </node>
@@ -316,24 +318,25 @@
             <node id="AppearanceMaterialUUIDs">
               <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
             </node>
-            
+            <!--Custom colours-->
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595101" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785101" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595102" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785102" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595103" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785103" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595104" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785104" />
             </node>
             <node id="ColorMaterialUUIDs">
-              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595105" />
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785105" />
             </node>
           </children>
         </node>
+        
       </children>
     </node>
   </region>
