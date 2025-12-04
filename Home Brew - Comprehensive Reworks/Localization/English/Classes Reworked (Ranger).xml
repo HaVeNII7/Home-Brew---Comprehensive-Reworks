@@ -129,12 +129,12 @@
 <!--HUNTER-->
 
 	<content contentuid="h4d476cb8gfa45g4f4cga9d16a98709e9f9a2" version="2">Natural Hunter</content>
-	<content contentuid="h20b19b1bg5da3g41d4g901b12a5113fe8115" version="2">When you deal damage with a weapon, you apply one stack of &lt;LSTag Type="Status" Tooltip="HUNTED"&gt;Hunted&lt;/LSTag&gt;. Each stack of Hunted will reduce your targets &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by [1].</content>
+	<content contentuid="h20b19b1bg5da3g41d4g901b12a5113fe8115" version="2">When you deal damage with a weapon, you apply one stack of &lt;LSTag Type="Status" Tooltip="HUNTED"&gt;Hunted&lt;/LSTag&gt;. Each stack of Hunted will reduce your targets &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by [1], up to a maximum of [2].</content>
 	<content contentuid="h38ea4f90g1325g4370g88d1g28b48f722d58" version="2">Hunted</content>
-	<content contentuid="h587f4801g411bg4d92g9d70gbeef322ffss6" version="2">Affected creature is being hunted by a nearby Ranger.</content>
+	<content contentuid="h587f4801g411bg4d92g9d70gbeef322ffss6" version="2">Affected creature is being hunted by a nearby Ranger. Each stack of Hunted has reduced their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by [1].</content>
 
 	<content contentuid="h4d476cb8gfa45g4f4cga9d13a65409e9f9a2" version="2">Opportune Strike</content>
-	<content contentuid="h20b19b1bg5da3g41d4g901basdf813fe8115" version="2">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally, you may spend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to make a weapon-based Attack Roll against their aggressor.</content>
+	<content contentuid="h20b19b1bg5da3g41d4g901basdf813fe8115" version="2">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally, you may spend a charge of your &lt;LSTag Type="ActionResource" Tooltip="NaturalRecoveryPoint"&gt;Natural Focus&lt;/LSTag&gt; in order to make a weapon-based Attack Roll against their aggressor.</content>
 	<content contentuid="h4d476cb8gfa45g4f4cga9d13a65409e6a988" version="2">Opportune Strike</content>
 	<content contentuid="h20b19b1bg5da3g41d4g901basdf813f5a522" version="2">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally, make a weapon-based Attack Roll against their aggressor.</content>
 
@@ -148,7 +148,7 @@
 	<content contentuid="h8d41be71g1eecg4e2cg8d5egcbfbc41c594c" version="2">Affected creature is open to an additional, free attack from the Ranger who applied this status.</content>
 
 	<content contentuid="h4d476cb8gfa45g4f4cga9d1gd0b102a255a2" version="2">Marksman's Eye</content>
-	<content contentuid="h20b19b1bg5da3g41d4g901bgd1d616a87715" version="2">When damaging a target you are currently &lt;LSTag Type="Status" Tooltip="HUNTED"&gt;Hunting&lt;/LSTag&gt;, you gain a bonus to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; equal to the amount of stacks they have remaining.</content>
+	<content contentuid="h20b19b1bg5da3g41d4g901bgd1d616a87715" version="2">When damaging a target you are currently &lt;LSTag Type="Status" Tooltip="HUNTED"&gt;Hunting&lt;/LSTag&gt;, you gain a bonus to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; equal to the amount of stacks they have remaining.</content>
 
 	<content contentuid="h671dedb3g21bag48d5g979eg6b61817cc1e4" version="2">Volley</content>
 	<content contentuid="h671dedb3g21bag48d5g979eg6b61817cc1e5" version="5">Loose a volley of arrows within an area, making separate &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against each target. </content>
@@ -333,7 +333,7 @@
 	<content contentuid="791a0319eeed4e25949847ad3a0dd1d10000l" version="4">Making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; gives you a +2 bonus to additional Attack Rolls for the rest of your turn. This effect can stack.</content>
 
 	<content contentuid="791a0319eeed4e25949847ad3a0dd1d100013" version="4">Natural Opportunity</content>
-	<content contentuid="791a0319eeed4e25949847ad3a0dd1d10000m" version="4">Gain an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;.</content>
+	<content contentuid="791a0319eeed4e25949847ad3a0dd1d10000m" version="4">Gain an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;. In addition, &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt; that you make will attack with both weapons.</content>
 
 	<content contentuid="791a0319eeed4e25949847ad3a0dd1d100005" version="4">Protective Bond</content>
 	<content contentuid="791a0319eeed4e25949847ad3a0dd1d10000e" version="4">Your Ranger Companions receive a +2 bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>

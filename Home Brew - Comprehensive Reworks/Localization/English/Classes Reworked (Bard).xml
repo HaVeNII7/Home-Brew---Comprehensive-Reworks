@@ -120,15 +120,15 @@ Lore</content>
 	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a5a8a44" version="1">The Best Kept Secrets</content>
 	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e458848" version="1">Learn two Spells from the Magical Secrets pool per level, rather than one.&lt;br&gt;&lt;br&gt;Upon reaching a state of &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, you may cast a Spell without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
 
-	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a53a332" version="1">Binding Vows</content>
-	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e4sdf55" version="1">Spells you cast increase their &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; by one.</content>
-
 	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a59a555" version="1">Secrets of the Lore</content>
 	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e41a354" version="1">Upon casting &lt;LSTag Type="Spell" Tooltip="Target_BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; on an ally, your next Spell will not consume a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
 	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a99a555" version="1">Secrets of the Lore</content>
 	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e22a654" version="1">Affected creature's next Spell that they cast will not consume a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
 
-	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a55d222" version="1">Improved Binding Vows</content>
+	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a53a332" version="1">Mystic Echoes</content>
+	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e4sdf55" version="1">When an enemy fails a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; against one of your Spells, restore one charge of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;. This effect can trigger once per turn.</content>
+
+	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a55d222" version="1">Binding Vows</content>
 	<content contentuid="hbf18c5f4g3952g4e08gaeb6ga9228e49a998" version="1">Spells you cast increase their &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; by two.</content>
 
 	<content contentuid="he0912b6fge4b5g4b8fgbc26ge66a9a5adsf2" version="1">Macabre Secrets</content>
@@ -222,7 +222,7 @@ Valour</content>
 	<content contentuid="h004d056bga0c0g4211g864fgd0a167f0cf2e" version="4">Revitalize yourself and nearby allies as though you had taken a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h22af06bagd2d2g4b30ga1adg8e6a48155122" version="1">Valorous Camaraderie</content>
-	<content contentuid="hd8bd4b9fg59a5g4295g9ab0g199a999778dd" version="4">You may select two additional targets with your &lt;LSTag Type="Spell" Tooltip="Target_BardicInspiration_Combat"&gt;Refined Bardic Inspiration&lt;/LSTag&gt;.</content>
+	<content contentuid="hd8bd4b9fg59a5g4295g9ab0g199a999778dd" version="4">You may select two additional targets with your &lt;LSTag Type="Spell" Tooltip="Target_BardicInspiration_Combat"&gt;Refined Bardic Inspiration&lt;/LSTag&gt;. In addition, applying your Bardic Inspiration to an ally causes enemies within [1] of them to take [2].</content>
 
 	<content contentuid="hb117050dg0016g4833g87f0g8d614082da8e" version="1">Font of Valor</content>
 	<content contentuid="h893450deg4af3g43f4gad83g7b35893b360d" version="1">Your Font of Inspiration now overflows with valor! In addition to fully restoring all three charges of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; at the beginning of combat, you now also restore one charge every three turns for as long as combat persists.</content>

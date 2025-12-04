@@ -213,7 +213,7 @@ data "SpellAnimationIntentType" "Peaceful"
 data "CastEffect" "eef589d5-cb72-43a9-84b8-6e1f2aa2974b"
 data "TargetEffect" "b41de33e-7834-4d54-9326-c6fbca402b51"
 data "Sheathing" "Sheathed"
-data "TargetConditions" "Character() and not Dead()"
+data "TargetConditions" "Character() and not Dead() and not HasStatus('TAD_PERILOUS_STAKES')"
 data "SpellFlags" "IsHarmful;DisableBlood"
 data "Requirements" "Combat"
 
@@ -238,11 +238,11 @@ data "Cooldown" "OncePerRest"
 data "TargetRadius" "18"
 data "RequirementConditions" "not Tagged('TADPOLE_POWERS_BLOCKED')"
 data "SpellProperties" "ApplyStatus(TAD_IMPERIL,100,3)"
-data "TargetConditions" "not Self() and not Dead()"
+data "TargetConditions" "not Self() and not Dead() and not HasStatus('TAD_IMPERIL')"
 data "Icon" "TadpoleSuperPower_Imperil"
 data "DisplayName" "h7bc43a8cg9c8eg4c17gbb2dgc7c7b613a5a3;1"
 data "Description" "hef8f4025g2e42g4a1dg8201g9242d6757a5e;2"
-data "DescriptionParams" "2"
+data "DescriptionParams" "4"
 data "ExtraDescription" "h3a3f8d1dgcd6fg45ddga437g622470fb08b5;3"
 data "TooltipStatusApply" "ApplyStatus(TAD_IMPERIL,100,3)"
 data "CastSound" "Spell_Cast_Tadpole_SurvivalInstinct_L1to3"
@@ -363,6 +363,8 @@ data "CastEffect" "39ac9788-e5ca-46d2-899b-50289ab980be"
 data "TargetEffect" ""
 data "Sheathing" "Sheathed"
 
+<!--ABSORB INTELLECT-->
+
 new entry "Target_TAD_AbsorbIntellect"
 type "SpellData"
 data "SpellType" "Target"
@@ -374,7 +376,7 @@ data "TargetConditions" "not Self() and not HasStatus('TAD_ABSORB_INTELLECT_TECH
 data "Icon" "TadpoleSuperPower_AbsorbIntellect"
 data "DisplayName" "h08852329g9412g4538ga181gaaf42285f6f3;2"
 data "Description" "h7f91680dgf49ag4dffg98aag5e46044a504f;5"
-data "DescriptionParams" "2;3"
+data "DescriptionParams" "2"
 data "TooltipStatusApply" "ApplyStatus(TAD_ABSORB_INTELLECT_1,100,1)"
 data "PrepareSound" "Spell_Prepare_Tadpole_Buff_Gen_L1to3"
 data "PrepareLoopSound" "Spell_Loop_Tadpole_Buff_Gen_L1to3"
@@ -404,6 +406,8 @@ data "DescriptionParams" "2;3"
 data "TooltipStatusApply" "ApplyStatus(MF_ABSORB_INTELLECT_1,100,1)"
 data "SpellFlags" "IsHarmful;DisableBlood;CannotTargetItems;CannotTargetTerrain;Wildshape"
 data "Cooldown" "OncePerTurn"
+
+<!--EXTRACT BRAIN-->
 
 new entry "Target_ExtractBrain_Mindflayer"
 type "SpellData"
@@ -436,6 +440,8 @@ data "SpellSuccess" "DealDamage(6d12,Piercing);RegainHitPoints(SELF,6d6)"
 data "TargetConditions" "Character() and not Dead() and (HasStatus('SG_Stunned') or HasStatus('SG_Unconscious') or HasStatus('SG_Prone') or HasStatus('SG_Sleeping') or HasStatus('HIDEOUS_LAUGHTER'))"
 data "Description" "h7df93437g84dfg474bg962dgca6af3c091b4;2"
 data "TooltipDamageList" "DealDamage(6d12,Piercing);RegainHitPoints(6d6)"
+
+<!--SURVIVAL INSTINCT-->
 
 new entry "Target_SurvivalInstinct"
 type "SpellData"

@@ -94,7 +94,7 @@
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1336d6668458" version="3">Your &lt;LSTag Type="Spell" Tooltip="Shout_HealingRadiance"&gt;Healing Radiance&lt;/LSTag&gt; now provides the effects of &lt;LSTag Type="Spell" Tooltip="Target_LesserRestoration"&gt;Latent Restoration&lt;/LSTag&gt;. Targets of &lt;LSTag Type="Spell" Tooltip="Target_NaturesWrath"&gt;Binding Radiance&lt;/LSTag&gt; make their &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; when attempting to resist it.</content>
 
 	<content contentuid="hdf505853g3437g496dg8732gf741d6ae1ebb" version="1">Turn the Faithless</content>
-	<content contentuid="h0c6caa26gbea1g4841g8ad9g816bac6717c7" version="2">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby Fey, potentially dealing significant damage to them in the process. They are forced to flee and cannot come close to you.</content>
+	<content contentuid="h0c6caa26gbea1g4841g8ad9g816bac6717c7" version="2">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby enemies, dealing damage to them in the process. They are forced to flee and cannot come close to you. Fey creatures take twice as much damage from this action.</content>
 
 	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8af6a851" version="1">Extended Oath</content>
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4dasdf5" version="3">The range of your &lt;LSTag Type="Spell" Tooltip="Shout_HealingRadiance"&gt;Healing Radiance&lt;/LSTag&gt; is doubled. Additionally, &lt;LSTag Type="Spell" Tooltip="Target_NaturesWrath"&gt;Binding Radiance&lt;/LSTag&gt; may now select up to three targets.</content>
@@ -119,7 +119,7 @@
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000a1" version="2">Phoenix Landing</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000aa" version="2">Teleport to an area you can see, scorching all within a [1] area with blisteringly hot flame.</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000b1" version="2">Searing Protection</content>
-	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000ba" version="2">When an ally within [1] of you is about to be damaged, take Fire damage equal to twice that of your level in order to heal them for the same amount, swapping places with them in the process.</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000ba" version="2">When an ally within [1] of you is about to be damaged, take Fire damage equal to twice that of your level in order to heal them for the same amount, swapping places with them in the process. Your ally must be below half of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100002" version="2">To the Sun</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000b" version="2">Using &lt;LSTag Type="Spell" Tooltip="Target_PhoenixLanding"&gt;Phoenix Landing&lt;/LSTag&gt; or Searing Protection grants you &lt;LSTag Type="Status" Tooltip="SUNSCORCHED"&gt;Sun Scorched&lt;/LSTag&gt; for three turns. In addition, you gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage.</content>
@@ -127,7 +127,7 @@
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000sb" version="2">Affected creature deals an additional [1] for every 10% of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; they are missing.</content>
 
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100003" version="2">Turn the Aberrant</content>
-	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000c" version="2">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby Aberrations, potentially dealing significant damage to them in the process. They are forced to flee and cannot come close to you.</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000c" version="2">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby enemies, dealing damage to them in the process. They are forced to flee and cannot come close to you. Aberrations take twice as much damage from this action.</content>
 
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100004" version="2">Scorched Earth</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000d" version="2">While &lt;LSTag Type="Status" Tooltip="SUNSCORCHED"&gt;Sun Scorched&lt;/LSTag&gt; is active, you are able to &lt;LSTag Type="Spell" Tooltip="Target_Fly"&gt;Fly&lt;/LSTag&gt;, and you make &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; against &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt; creatures. In addition, you gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Fire damage.</content>
@@ -137,9 +137,9 @@
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000s5" version="2">Aura of Cinder</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000se" version="2">Affected creature is causing all enemies within [1] of them &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt;.</content>
 
-	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100006" version="2">Rebirth</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100006" version="2">Ashen One</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000f" version="2">The first time you are &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Downed&lt;/LSTag&gt; each &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, you immediately recover all of your &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, erupting in an uncontrollable explosion and gaining &lt;LSTag Type="Status" Tooltip="SUNSCORCHED"&gt;Sun Scorched&lt;/LSTag&gt; for three turns. When you recover from being Downed in this way, you retain your &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;.</content>
-	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000s6" version="2">Reborn</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000s6" version="2">Reborn of Ash</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000sf" version="2">Affected creature must take a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt; before they are able to self-revive again.</content>
 
 <!--OATH OF DEVOTION-->
@@ -165,7 +165,7 @@
 	<content contentuid="hb2400634gf3e4g46f1gb93dgsd4f6s4df484" version="3">Select two additional targets when casting  &lt;LSTag Type="Spell" Tooltip="Target_HolyRebuke"&gt;Holy Rebuke&lt;/LSTag&gt;. Additionally, dealing damage with your &lt;LSTag Type="Spell" Tooltip="Shout_SacredWeapon"&gt;Sacred Weapon&lt;/LSTag&gt; restores your &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;. The value restored is equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hb27de5a4g2331g490cgbbd5g86200d758e5e" version="1">Turn the Unholy</content>
-	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5d38ac39ba" version="3">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby Fiends, potentially dealing significant damage to them in the process. They are forced to flee and cannot come close to you.</content>
+	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5d38ac39ba" version="3">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby enemies, dealing damage to them in the process. They are forced to flee and cannot come close to you. Fiends take twice as much damage from this action.</content>
 
 	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8afsdfs1" version="1">Radiant Reflection</content>
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1asdf4dasdf5" version="3">When taking damage while &lt;LSTag Type="Spell" Tooltip="Target_HolyRebuke"&gt;Holy Rebuke&lt;/LSTag&gt; is active, your aggressor takes [1]. In addition, your &lt;LSTag Type="Spell" Tooltip="Shout_SacredWeapon"&gt;Sacred Weapon&lt;/LSTag&gt; now inflicts one stack of &lt;LSTag Type="Status" Tooltip="MAG_RADIANT_RADIATING_ORB"&gt;Radiating Orb&lt;/LSTag&gt; when you deal damage.</content>
@@ -201,7 +201,7 @@
 	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5sdf56d8f7" version="3">Once per combat encounter, you may cast &lt;LSTag Type="Spell" Tooltip="Target_AbjureEnemy"&gt;Abjure Enemy&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_InquisitorsMight"&gt;Inquisitor's Might&lt;/LSTag&gt; as a free action. Outside of combat, these actions may be cast for free.</content>
 
 	<content contentuid="hb27de5a4g2331g490cgbbd5g86200d7asdf9" version="1">Turn the Damned</content>
-	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5d38a234dd" version="3">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby Undead, potentially dealing significant damage to them in the process. They are forced to flee and cannot come close to you.</content>
+	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5d38a234dd" version="3">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby enemies, dealing damage to them in the process. They are forced to flee and cannot come close to you. Undead creatures take twice as much damage from this action.</content>
 
 	<content contentuid="h298b9a29g5657g4aa9gaad6gaasdfafsdfs1" version="1">Abjure the Weak</content>
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1sdfsddasdf5" version="3">When dealing damage to a target affected by &lt;LSTag Type="Spell" Tooltip="Target_AbjureEnemy"&gt;Abjure Enemy&lt;/LSTag&gt;, roll your damage dice with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Additionally, &lt;LSTag Type="Spell" Tooltip="Target_InquisitorsMight"&gt;Inquisitor's Might&lt;/LSTag&gt; also grants Advantage on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
@@ -317,7 +317,7 @@
   <content contentuid="fe6f4159abae42539029e284001d12deafiow" version="3">Affected creature will recover one &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charge when this status expires.</content>
 
   <content contentuid="fe6f4159abae42539029e284001d12de00010" version="3">Principle of Belief</content>
-  <content contentuid="fe6f4159abae42539029e284001d12de0000j" version="3">On any successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against Aberrations, Fey, Fiends, or Undead, deal an additional +1d12 Radiant damage. This passive has no effect when targeting enemies with &lt;LSTag Type="Status" Tooltip="DAMAGE_SHIELD_NPC_RADIANT"&gt;Radiant Retort&lt;/LSTag&gt;.</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000j" version="3">On any successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against Aberrations, Fey, Fiends, or Undead, deal an additional +1d12 Radiant damage.</content>
 
   <content contentuid="h3e63e6aag19b0g400agb559g2e125483261f" version="3">Repel the Damned</content>
   <content contentuid="h90dc6c92g4bdag440cg8119g6a95df4567cf" version="3">All enemies within [1] of you take Radiant damage at the start of their turns equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>

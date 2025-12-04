@@ -143,13 +143,6 @@
                     <attribute id="UUID" type="guid" value="a9c98304-08e7-44b5-aaf9-da2ef5a50672" />
 					</node>
         <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h5410c1e8g00fbg4694ga75eg20a1407aabcb" version="1"/>
-                    <attribute id="IsHidden" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="Interrupt_TAD_PsionicDominance_Charge"/>
-                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
-                    <attribute id="UUID" type="guid" value="d1b02f9c-9d6e-4eac-905d-ccd9e7876c7c"/>
-                    </node>
-        <node id="ActionResourceDefinition">
                     <attribute id="Description" type="TranslatedString" handle="hb5419fbag1cdeg48b2g92d1gbbbc446e2707" version="4" />
                     <attribute id="DisplayName" type="TranslatedString" handle="h401e72d2gb9d7g44f3gbd64gc95934805222" version="5" />
                     <attribute id="MaxLevel" type="uint32" value="0" />
@@ -314,6 +307,20 @@
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true" />
                     <attribute id="UUID" type="guid" value="30cca4c5-a808-4c96-bd1c-f57bbb92dc1d" />
 					</node>
+		<node id="ActionResourceDefinition">
+					<attribute id="DisplayName" type="TranslatedString" handle="hcee44ad9g4dfeg4b48ga198g4fb15ef3a263" version="1" />
+					<attribute id="IsHidden" type="bool" value="True" />
+					<attribute id="Name" type="FixedString" value="Interrupt_LuckOfTheFarRealms_Charge" />
+					<attribute id="ReplenishType" type="FixedString" value="ShortRest" />
+					<attribute id="UUID" type="guid" value="621126c6-a9f7-422c-9a0c-822503719ce4" />
+					</node>
+        <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h5410c1e8g00fbg4694ga75eg20a1407aabcb" version="1"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Interrupt_TAD_PsionicDominance_Charge"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="UUID" type="guid" value="d1b02f9c-9d6e-4eac-905d-ccd9e7876c7c"/>
+                    </node>
       </children>
     </node>
   </region>

@@ -43,3 +43,13 @@ data "StatsFunctors" "RemoveStatus(SELF, MAG_GREATER_NECROMANCY_LIFE_ESSENCE);Re
 data "ToggleOnFunctors" "ApplyStatus(MAG_GREATER_NECROMANCY_LIFE_ESSENCE_ACTIVE, 100, -1)"
 data "ToggleOffFunctors" "RemoveStatus(MAG_GREATER_NECROMANCY_LIFE_ESSENCE_ACTIVE)"
 data "ToggleOffContext" "OnCastResolved"
+
+new entry "MAG_GREATER_NECROMANCY_LIFE_ESSENCE_ACTIVE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h0940d6a4ge061g406cga072ge1ff4069aafd;2"
+data "Description" "ha8b3b258g2b80g4b7agad85gc847ae3cd258;2"
+data "Icon" "PassiveFeature_Generic_Death"
+data "StackId" "MAG_GREATER_NECROMANCY_LIFE_ESSENCE_ACTIVE"
+data "Boosts" "UnlockSpellVariant(GreaterNecromancySpellFilter(),ModifyIconGlow(),ModifyTooltipDescription(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup))"
+data "StatusPropertyFlags" "IgnoreResting;ApplyToDead"

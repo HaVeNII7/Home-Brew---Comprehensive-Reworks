@@ -16,7 +16,7 @@ data "Trajectories" "4505c63a-cb98-42bb-942b-3a739feecef8,d429d77c-33a8-a362-c38
 data "TargetConditions" "HasPassive('CaptivatingReclaim')"
 data "HitAnimationType" "None"
 
-<!--COLLEGE OF SWORDS-->
+<!--COLLEGE OF STEEL-->
 
 new entry "Projectile_BladeFlourish_Defensive"
 type "SpellData"
@@ -77,6 +77,38 @@ data "CastEffect" "27ae62db-1606-4e42-9bc9-aeb09dcc4f64"
 data "UseCosts" "ActionPoint:1;BardicInspiration:1"
 data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IgnorePreviouslyPickedEntities"
 data "AmountOfTargets" "2"
+
+<!--COLLEGE OF VALOR-->
+
+new entry "Projectile_ValorousCamaraderie"
+type "SpellData"
+data "SpellType" "Projectile"
+data "SpellRoll" "not SavingThrow(Ability.Constitution, SourceSpellDC())"
+data "SpellSuccess" "DealDamage(LevelMapValue(BardicInspiration), Thunder,Magical)"
+data "SpellFail" "DealDamage(LevelMapValue(BardicInspiration)/2, Thunder,Magical)"
+data "TargetFloor" "-1"
+data "TargetRadius" "9"
+data "TargetConditions" "not Self() and Enemy() and not Dead()"
+data "ProjectileCount" "99"
+data "Trajectories" "c7cd4b0a-2b2e-47ae-a4e8-849ad5d448f8"
+data "Icon" "PassiveFeature_BardicInspiration_Damage"
+data "DisplayName" "h22af06bagd2d2g4b30ga1adg8e6a48155122;2"
+data "Description" "hd8bd4b9fg59a5g4295g9ab0g199a999778dd;1"
+data "DescriptionParams" "Distance(9);DealDamage(LevelMapValue(BardicInspiration), Thunder)"
+data "TooltipDamageList" "DealDamage(LevelMapValue(BardicInspiration), Thunder)"
+data "PrepareSound" "Spell_Prepare_Buff_ElementalWeaponThunder_L1to3"
+data "PrepareLoopSound" "Spell_Loop_Buff_ElementalWeaponThunder_L1to3"
+data "CastSound" "Spell_Cast_Damage_Thunder_ChromaticOrbThunder_L1to3"
+data "VocalComponentSound" "Empty"
+data "CastTextEvent" "Cast"
+data "CycleConditions" "Enemy() and not Dead()"
+data "SpellAnimation" "3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;cd5e5d4a-38e1-4d4d-b346-3fbc1e4c3c90,,;141f48d9-9615-496a-8737-9240f0dba60d,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,,"
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasHighGroundRangeExtension"
+data "MemoryCost" "1"
+data "CastSound" "Spell_Cast_Damage_Thunder_ChromaticOrbThunder_L1to3"
+data "PrepareEffect" "db5705a1-824d-42a3-8d09-2352b9cd4af9"
+data "DamageType" "Thunder"
 
 <!--PASSIVES-->
 

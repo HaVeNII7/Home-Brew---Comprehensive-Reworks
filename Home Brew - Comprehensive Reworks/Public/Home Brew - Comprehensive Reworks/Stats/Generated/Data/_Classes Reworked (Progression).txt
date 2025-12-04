@@ -291,7 +291,7 @@ data "Description" "55ce1b701c9642a4a3dbf59a6810157f0010b;1"
 data "Icon" "Spell_Divination_Identify"
 data "Properties" "Highlighted;ForceShowInCC"
 
-new entry "ClassProgression_StormSorcery"
+new entry "ClassProgression_Volcanist"
 type "PassiveData"
 data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00103;1"
 data "Description" "55ce1b701c9642a4a3dbf59a6810157f0010c;1"

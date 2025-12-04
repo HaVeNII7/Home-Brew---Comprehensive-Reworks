@@ -339,7 +339,7 @@ data "RemoveConditions" "Player(context.Source)"
 data "RemoveEvents" "OnTurn;OnMove;OnCombatEnded;OnStatusRemoved"
 data "Boosts" "AiArchetypeOverride(mage_smart,1);UnlockSpell(Target_MindSliver);UnlockSpell(Target_MinorIllusion);UnlockSpell(Target_Blindness,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Projectile_Disintegrate,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_BlackTentacles,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_Eyebite,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Projectile_AcidArrow,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_Shatter,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)"
 
-new entry "CASTER_UNLOCK_STORMSURGE"
+new entry "CASTER_UNLOCK_VOLCANIST"
 type "StatusData"
 data "StatusType" "BOOST"
 data "HitAnimationType" "None"
@@ -348,7 +348,7 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndi
 data "StackType" "Ignore"
 data "RemoveConditions" "Player(context.Source)"
 data "RemoveEvents" "OnTurn;OnMove;OnCombatEnded;OnStatusRemoved"
-data "Boosts" "AiArchetypeOverride(mage_smart,1);UnlockSpell(Target_ShockingGrasp);UnlockSpell(Target_SparkSurge);UnlockSpell(Projectile_ChainLightning,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Zone_ColorSpray,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_Counterspell,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Projectile_IceKnife,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Zone_LightningBolt,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_ThunderStep,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)"
+data "Boosts" "AiArchetypeOverride(mage_smart,1);UnlockSpell(Target_CreateorExtinguishFlames);UnlockSpell(Projectile_FireBolt);UnlockSpell(Target_EruptingEarth,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Projectile_Fireball,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Shout_FireShield,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_FlamingSphere,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_FleshToStone,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Projectile_ScorchingRay,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)"
 
 new entry "CASTER_UNLOCK_WILDMAGIC"
 type "StatusData"

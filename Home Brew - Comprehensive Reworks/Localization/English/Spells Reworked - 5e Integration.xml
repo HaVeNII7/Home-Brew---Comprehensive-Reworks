@@ -23,7 +23,7 @@
 
 	<content contentuid="06ccff5b74f84871a26d66436d5da6d500005" version="1">Frostbite</content>
 	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000e" version="1">Touch a creature, causing a numbing frost to form around them, imposing &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
-	<content contentuid="06ccff5b74f84871a26d66436d5da6d5000a5" version="1">Frostbite</content>
+	<content contentuid="06ccff5b74f84871a26d66436d5da6d5000a5" version="1">Frigid</content>
 	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000ae" version="1">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
 
 	<content contentuid="06ccff5b74f84871a26d66436d5da6d500006" version="1">Green Flame-Blade</content>
@@ -165,7 +165,7 @@
 	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000g" version="1">Cause a [1] tremor within the ground around you to erupt, creating &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt; and possibly knocking creatures inside the tremor &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
 
 	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00008" version="1">Frost Fingers</content>
-	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000h" version="1">Place your hand upon another creature, applying three stacks of &lt;LSTag Type="Status" Tooltip="MAG_INCREASED_DAMAGE_COLD"&gt;Frostbite&lt;/LSTag&gt; if they are &lt;LSTag Type="Status" Tooltip="WET"&gt;Wet&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Fighters&lt;br&gt;Rogues&lt;br&gt;Warlocks&lt;br&gt;Wizards</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000h" version="1">Place your hand upon another creature, rolling an additional damage die if they are &lt;LSTag Type="Status" Tooltip="WET"&gt;Wet&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Fighters&lt;br&gt;Rogues&lt;br&gt;Warlocks&lt;br&gt;Wizards</content>
 
 	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00009" version="1">Ensnaring Trap</content>
 	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000i" version="1">Place a trap upon the ground. If another creature steps on the trap, they are immediately &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druids&lt;br&gt;Fighters&lt;br&gt;Rangers&lt;br&gt;Warlocks</content>
@@ -194,13 +194,13 @@
 	<content contentuid="39f18b2938w98uef9sue9fuw989ew8efzz0s" version="1">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt;.</content>
 
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130002" version="1">Frostflame Armaments</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000b" version="1">A frigid cold envelops your main-hand melee weapon. Simultaneously, a roaring flame erupts around your off-hand melee weapon.&lt;Br&gt;&lt;br&gt;Upon landing a killing blow, a Frostflame explosion occurs, dealing [1] and [2] within a [3] radius.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Fighters&lt;br&gt;Paladins&lt;br&gt;Warlocks</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000b" version="1">A frigid cold envelops your main-hand melee weapon. Simultaneously, a roaring flame erupts around your off-hand melee weapon.&lt;Br&gt;&lt;br&gt;Upon landing a killing blow, a Frostflame explosion occurs, dealing [1] and [2] too all enemies within a [3] radius.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Fighters&lt;br&gt;Paladins&lt;br&gt;Warlocks</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zzb" version="1">The Frostflame explosion deals an additional [1] and [2] per level.</content>
 	<content contentuid="39f18b02804848b18a6s45fbf2c386upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;The Frostflame explosion deals an additional [1] and [2] per level.</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzz2" version="1">Frostflame Armament (Ice)</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzzb" version="1">A frigid cold envelops this weapon. Upon landing a killing blow, a frigid explosion occurs, dealing [1] to all creatures within [2].</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzzb" version="1">A frigid cold envelops this weapon. Upon landing a killing blow, a frigid explosion occurs, dealing [1] to all enemies within [2].</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c38613xxx2" version="1">Frostflame Armament (Fire)</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c38613xxxb" version="1">A roaring flame envelops this weapon. Upon landing a killing blow, a fiery explosion occurs, dealing [1] to all creatures within [2].</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613xxxb" version="1">A roaring flame envelops this weapon. Upon landing a killing blow, a fiery explosion occurs, dealing [1] to all enemies within [2].</content>
 
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130003" version="1">Arcane Vortex</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000c" version="1">Summon a [1] raging vortex of arcane energy which deals [2] per turn to any creatures within. The vortex is considered &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
@@ -265,7 +265,7 @@
 	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zj" version="1">Affected creature's &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; has been reduced by half.</content>
 
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130011" version="1">Snilloc's Snow Storm</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000k" version="1">Summon a [1] burst of frigid cold in the area around you.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000k" version="1">Summon a [1] burst of frigid cold in the area around you, applying three stacks of &lt;LSTag Type="Status" Tooltip="MAG_INCREASED_DAMAGE_COLD"&gt;Frostbite&lt;/LSTag&gt; if your targets are &lt;LSTag Type="Status" Tooltip="WET"&gt;Wet&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
 
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130012" version="1">Tasha's Mind Whip</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000l" version="1">Aggressively pull at a fragment of another creatures mind, preventing them from taking &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
@@ -369,7 +369,7 @@
 	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000n" version="1">With a sudden boom, teleport yourself to another location, arriving with an intense reverberation that damages any creatures within [1] of where you land.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Fighters&lt;br&gt;Sorcerers&lt;br&gt;Warlocks</content>
 
 	<content contentuid="39f1898f9sdfosdoifsodofsofd994940015" version="1">Water Walk</content>
-	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000o" version="1">Grant yourself and allied creatures within [1] of you immunity to all ground surfaces, and the ability to move through them as if they were not there.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000o" version="1">Grant yourself and allied creatures within [1] of you immunity to all ground based surfaces and status effects, and the ability to move through them as if they were not there.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
 	<content contentuid="39f1898f9sdfosdoifsodofsofd994940z15" version="1">Water Walk</content>
 	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zo" version="1">Affected creature has immunity to all ground surfaces, and may move through them as if they were not there.</content>
 

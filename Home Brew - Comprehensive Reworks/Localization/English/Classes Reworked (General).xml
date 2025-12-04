@@ -75,7 +75,7 @@
 
 	<content contentuid="h74cb6d76f7084d1d9ccca5ba1622140f3c7d" version="1">Sorcerer: Draconic Bloodline</content>
 	<content contentuid="h73a8aafef8874258bc6950b4c4d569b0842e" version="1">Sorcerer: Shade Walker</content>
-	<content contentuid="h304a5e34541a42f098df489329c48ee49a00" version="1">Sorcerer: Storm Surge</content>
+	<content contentuid="h304a5e34541a42f098df489329c48ee49a00" version="1">Sorcerer: Volcanist</content>
 	<content contentuid="h0c1d71fc32044f7480d64ef77b978f2d1eea" version="1">Sorcerer: Wild Magic</content>
 
 	<content contentuid="hc3c6d414533e4e019f42a85c9ef4acc7020g" version="1">Warlock: Pact of the Blade</content>
@@ -98,7 +98,8 @@
 	<content contentuid="hf1d4af21g03b3g406eg8b43g4b1bbbb3f0e5" version="5">Knock someone &lt;LSTag Type="Status" Tooltip="UNCONSCIOUS"&gt;Unconscious&lt;/LSTag&gt; instead of killing them. No effect on Undead or Constructs. This can be toggled at any time.</content>
 
 	<content contentuid="ha0a9d4d4gdd96g431dgb386g6a12d4545d21" version="1">Free Handling</content>
-	<content contentuid="hcc220960g681dg4db6g8cbag2c02d2f15467" version="3">With nothing equipped in your&lt;Br&gt;off-hand equipment slots, gain an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; once every three turns. In addition, you gain a +2&lt;Br&gt;bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and your Initiative.</content>
+	<content contentuid="hcc220960g681dg4db6g8cbag2c02d2f15467" version="3">With nothing equipped in your&lt;Br&gt;off-hand equipment slots, gain an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; once every three turns. In addition, you gain a +2&lt;Br&gt;bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and your Initiative, as well as the ability to make an &lt;LSTag Type="Spell" Tooltip="Target_UnarmedStrike_Monk"&gt;Unarmed Strike&lt;/LSTag&gt; using your &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+	<content contentuid="ha0a9d4d4gdd96g431dgb386g6a12d2d5f45e" version="1">Free Handling: Strike</content>
 
 	<content contentuid="ha0a9d4d4gdd96g431dgb386g6a12d4522d45" version="1">Free Handling: Action</content>
 	<content contentuid="hcc220960g681dg4db6g8cbag2c05s6d669d7" version="3">Affected creature will gain an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; upon reaching three stacks of this condition. This condition is immediately removed if in a state in which Free Handling charges cannot be accrued.</content>

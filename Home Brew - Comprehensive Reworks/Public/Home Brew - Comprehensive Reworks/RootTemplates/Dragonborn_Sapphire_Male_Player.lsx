@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="323" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="84ac5159-a8b6-478f-864e-b6438dceddd1" />
+					<attribute id="Name" type="LSString" value="Dragonborn_Sapphire_Male_Player" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="87930b5f-a8bf-4fbf-ba7a-b1d37bd7deb0" />
+					<attribute id="Icon" type="FixedString" value="af057dec-6c50-930d-ba8c-3833f91af504-_(Icon_Dragonborn_Male)" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="0f33e5b2-e0b0-4b21-8bee-0471f312893d" />
+					<attribute id="Race" type="guid" value="6728720b-07f4-487d-59ac-2bae204eac06" />
+					<children>
+						<node id="LocomotionParams" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

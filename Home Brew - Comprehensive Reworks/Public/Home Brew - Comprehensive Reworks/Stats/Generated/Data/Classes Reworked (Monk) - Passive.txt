@@ -184,6 +184,14 @@ data "StatsFunctors" "RestoreResource(Movement, 100%, 0);ApplyStatus(PRONE_EIGHT
 
 <!--WAY OF THE OPEN HAND-->
 
+new entry "OpenHand_Unlock"
+type "PassiveData"
+data "DisplayName" "h82f6ed54g78a2g4a1fga040g44dba16sd5f8;1"
+data "Description" "hdd2d1cbbgaafdg4946gafdfgcd1cb42d5f45;2"
+data "Icon" "PassiveFeature_KiFlurryOfBlows"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "UnlockSpell(Target_OpenHandTechnique_Knock);UnlockSpell(Target_OpenHandTechnique_NoReactions);UnlockSpell(Target_OpenHandTechnique_Push);UnlockSpell(Target_UnarmedStrike_Monk)"
+
 new entry "Weaponized_Fists"
 type "PassiveData"
 data "DisplayName" "h451f9a42gca5ag40d5ga31ag3024c66a6sdd;2"
@@ -248,6 +256,14 @@ data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally()
 data "StatsFunctors" "ApplyStatus(SELF,DANCE_MACABRE,100,0)"
 
 <!--WAY OF THE SHADOW ARTS-->
+
+new entry "Shadow_Unlock"
+type "PassiveData"
+data "DisplayName" "h82f6ed54g78a2g4a1fga040g44666d8f99f8;1"
+data "Description" "hdd2d1cbbgaafdg4946gafdfgc5dffffed41e;2"
+data "Icon" "Action_Mag_Hellcrawler"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "UnlockSpell(Target_ShadowStep);UnlockSpell(Shout_CloakOfShadows_Monk);UnlockSpell(Target_ShadowStrike_Instant);UnlockSpell(Target_ShadowStrike_Instant_Unarmed)"
 
 new entry "Shadowstrike_Technical"
 type "PassiveData"
@@ -489,7 +505,7 @@ data "DisplayName" "4512454c8e254628bd4dc62ea243a2a000018;1"
 data "Description" "4512454c8e254628bd4dc62ea243a2a00000r;2"
 data "Icon" "PassiveFeature_MartialArts_UnarmedDamage"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "UnlockSpell(Shout_PatientDefense)"
+data "Boosts" "UnlockSpell(Shout_PatientDefense);ActionResource(ReactionActionPoint,1,0)"
 
 new entry "Windwaker"
 type "PassiveData"

@@ -152,6 +152,9 @@
 	<content contentuid="h29ded009g66f1g4448g8fceg68452f0b4c5d" version="1">You specialise in unarmed combat, using your hands and your control of ki to inflict grievous wounds.</content>
 	<content contentuid="h3cf42f71g6a06g4e7ag9c4fge283255a4bc4" version="2">You specialise in unarmed combat, using your hands and your control of ki to inflict grievous wounds.</content>
 
+	<content contentuid="h82f6ed54g78a2g4a1fga040g44dba16sd5f8" version="2">Open Combat</content>
+	<content contentuid="hdd2d1cbbgaafdg4946gafdfgcd1cb42d5f45" version="4">Gain &lt;LSTag Type="Spell" Tooltip="Target_OpenHandTechnique_Knock"&gt;Flurry of Blows: Topple&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_OpenHandTechnique_NoReactions"&gt;Flurry of Blows: Stagger&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_OpenHandTechnique_Push"&gt;Flurry of Blows: Push&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_UnarmedStrike_Monk"&gt;Unarmed Strike&lt;/LSTag&gt;.</content>
+
 	<content contentuid="h2d00c757g34b5g4b17g8557g3fd46b41ad80" version="2">Flurry of Blows: Topple</content>
 	<content contentuid="h9f56c138g8b3cg461egb39dg47b008ccfe3b" version="5">Deliver two lightning fast blows and possibly knock your target &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
 	<content contentuid="h10e929cfgdb5cg4969g942ag68be7c450b46" version="2">Flurry of Blows: Stagger</content>
@@ -192,6 +195,9 @@
 
 	<content contentuid="h05e1db8ag8572g4908ga042gffda9f365c57" version="1">Way of the Shadow Arts</content>
 	<content contentuid="h28328e2eg7c83g4436gae8bgdddb6d09a2bf" version="1">Way of the Shadow Arts</content>
+
+	<content contentuid="h82f6ed54g78a2g4a1fga040g44666d8f99f8" version="2">Fists of Shade</content>
+	<content contentuid="hdd2d1cbbgaafdg4946gafdfgc5dffffed41e" version="4">Gain &lt;LSTag Type="Spell" Tooltip="Target_ShadowStep"&gt;Shadow Step&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Shout_CloakOfShadows_Monk"&gt;Cloak of Shadows&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant"&gt;Shadow Strike&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant_Unarmed"&gt;Shadow Strike: Unarmed&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h9848c90age6f2g402cg94acg5193d31941b4" version="2">Shadow Step</content>
 	<content contentuid="he3cc38b0g238bg416dg8f89gd44c25eca125" version="5">Teleport directly to a nearby shadow and gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; until the end of your turn.</content>
@@ -261,9 +267,9 @@
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zf" version="6">Affected creature will land &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; more easily. The number required is reduced by 1 for each stack of Fist of Crushing Rock. This effect will reset at the end of each of their turns.</content>
 
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a000007" version="6">Focused Stream</content>
-	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000g" version="6">When you succeed in an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, the number you need in order to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by 1. This effect can stack and will reset at the end of each of your turns.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000g" version="6">When you succeed in an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, the number you need in order to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by 1. This effect can stack and will reset at the end of each of your turns, or upon rolling a Critical Hit.</content>
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000z7" version="6">Focused Stream</content>
-	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zg" version="6">Affected creature will roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; more easily. The number required is reduced by 1 for each stack of Focused Stream. This effect will reset at the end of each of their turns.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zg" version="6">Affected creature will roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; more easily. The number required is reduced by 1 for each stack of Focused Stream. This effect will reset at the end of each of their turns and when rolling a Critical Hit.</content>
 
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a000008" version="6">Fortified Body and Mind</content>
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000h" version="6">Gain status immunity to being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;, or restrained in any way.</content>
@@ -302,9 +308,9 @@
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zq" version="6">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally within [1], retaliate with a swift burst of air pressure, dealing damage equal to an &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strike&lt;/LSTag&gt; and sending them flying [3] if they fail a &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
 
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a000018" version="6">Tranquil Fortitude</content>
-	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000r" version="6">Gain &lt;LSTag Type="Spell" Tooltip="Shout_PatientDefense"&gt;Patient Defense&lt;/LSTag&gt;.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000r" version="6">Gain &lt;LSTag Type="Spell" Tooltip="Shout_PatientDefense"&gt;Patient Defense&lt;/LSTag&gt; and an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;.</content>
 	<content contentuid="h7b585b3agb04eg4319gb28cg3e756e4e08ab" version="2">Patient Defence</content>
-	<content contentuid="h54ed26edg092dg4fd8g8b02g28fce1de09bd" version="5">&lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against you have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;, and you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Dexterity &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="h54ed26edg092dg4fd8g8b02g28fce1de09bd" version="5">&lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against you have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;, and you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Dexterity based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a000019" version="6">Windwaker</content>
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000s" version="6">Gain &lt;LSTag Type="Spell" Tooltip="Shout_Dash_StepOfTheWind"&gt;Step of the Wind: Dash&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Shout_Disengage_StepOfTheWind"&gt;Step of the Wind: Disengage&lt;/LSTag&gt;. These actions may be cast for free once per turn.</content>

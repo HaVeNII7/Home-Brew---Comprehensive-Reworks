@@ -432,18 +432,18 @@
                     <attribute id="UUID" type="guid" value="8942e2b3-16d6-44b5-a4b0-d92163794a80"/>
 					</node>
         <node id="LevelMapSeries">
-                    <attribute id="Level1" type="LSString" value="1d12"/>
-                    <attribute id="Level2" type="LSString" value="1d12"/>
-                    <attribute id="Level3" type="LSString" value="2d12"/>
-                    <attribute id="Level4" type="LSString" value="2d12"/>
-                    <attribute id="Level5" type="LSString" value="3d12"/>
-                    <attribute id="Level6" type="LSString" value="3d12"/>
-                    <attribute id="Level7" type="LSString" value="4d12"/>
-                    <attribute id="Level8" type="LSString" value="4d12"/>
-                    <attribute id="Level9" type="LSString" value="5d12"/>
-                    <attribute id="Level10" type="LSString" value="5d12"/>
-                    <attribute id="Level11" type="LSString" value="6d12"/>
-                    <attribute id="Level12" type="LSString" value="6d12"/>
+                    <attribute id="Level1" type="LSString" value="1d6"/>
+                    <attribute id="Level2" type="LSString" value="1d6"/>
+                    <attribute id="Level3" type="LSString" value="2d6"/>
+                    <attribute id="Level4" type="LSString" value="2d6"/>
+                    <attribute id="Level5" type="LSString" value="3d6"/>
+                    <attribute id="Level6" type="LSString" value="3d6"/>
+                    <attribute id="Level7" type="LSString" value="4d6"/>
+                    <attribute id="Level8" type="LSString" value="4d6"/>
+                    <attribute id="Level9" type="LSString" value="5d6"/>
+                    <attribute id="Level10" type="LSString" value="5d6"/>
+                    <attribute id="Level11" type="LSString" value="6d6"/>
+                    <attribute id="Level12" type="LSString" value="6d6"/>
                     <attribute id="Name" type="FixedString" value="TurnTheX"/>
                     <attribute id="PreferredClassUUID" type="guid" value="ff4d9497-023c-434a-bd14-82fc367e991c"/>
                     <attribute id="UUID" type="guid" value="f5610a83-44a9-49a1-98cd-e845de105fd9"/>

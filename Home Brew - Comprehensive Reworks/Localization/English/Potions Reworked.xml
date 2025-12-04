@@ -24,7 +24,7 @@
 	<content contentuid="h361555aega14cg4908g9669gf45e31f111b6" version="2">Affected creature is cured of all disease.</content>
 
 <!--POTION OF SPEED-->
-	<content contentuid="h9c035a0dga908g41c0g8f99g2b7184a971a9" version="5">Gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;. On your following turn, you will lose an Action.</content>
+	<content contentuid="h9c035a0dga908g41c0g8f99g2b7184a971a9" version="5">Spike your adrenaline, granting yourself the ability to exert beyond your physical limits. While &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hastened&lt;/LSTag&gt;, you are able to make one action per turn without expending an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;, &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;, or &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;These Hastened actions generate a stack of &lt;LSTag Type="Status" Tooltip="HASTE_LETHARGY"&gt;Exhaustion&lt;/LSTag&gt;, and Exhaustion stacks are also generated when damaged. All &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against Exhausted creatures are rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;, and should you reach ten stacks of Exhaustion, you immediately fall &lt;LSTag Type="Status" Tooltip="UNCONSCIOUS"&gt;Unconscious&lt;/LSTag&gt; for three turns.</content>
 
 <!--REMEDIAL POTION-->
 	<content contentuid="h732b0d75g52c6g427ag9604g8c8a52aa8618" version="2">Cures all forms of &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blindness&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysis&lt;/LSTag&gt;.</content>
@@ -85,6 +85,7 @@
 	<content contentuid="h5451dd44g0411g4c38gb4a1g1fe024bca3a4" version="14">Affected creature's ability to maintain its spells has increased.&lt;br&gt;&lt;br&gt;It has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; to &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; and for maintaining &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt;. Additionally, magic can't put it to sleep.</content>
 
 <!--ELIXIR OF VIGILENCE-->
+	<content contentuid="h140cc067g2277g4761gaa1fg9f35b56415c9" version="2">Elixir of Vigilance</content>
 	<content contentuid="hfc2c0144gb6bdg46fag8f9fg6dd077b1c488" version="7">Drink to gain a +4 bonus to Initiative. In addition, you can't be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;. Replaces effects from other elixirs when drunk.</content>
 	<content contentuid="h99534c99gfa1cg4564g8e7ag6c09f5576335" version="7">Affected creature has a +4 bonus to Initiative and can't be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;.</content>
 
@@ -99,9 +100,5 @@
 <!--SUPREME ELIXIR OF ARCANE CULTIVATION-->
 	<content contentuid="hdc8b0085gb95fg42f9g9654g3afd728daf6b" version="2">Gain an additional Level 1, 2, and 3 &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;. Replaces effects from other elixirs when drunk.</content>
 	<content contentuid="h3b8232a3g5fa0g4c90ga49ag02fc5377a372" version="3">Affected creature has an additional Level 1, 2, and 3 &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
-
-<!--ELIXIR OF VIGILANCE-->
-	<content contentuid="h140cc067g2277g4761gaa1fg9f35b56415c9" version="2">Elixir of Vigilance</content>
-	<content contentuid="h99534c99gfa1cg4564g8e7ag6c09f5576335" version="7">Affected creature has a +2 bonus to Initiative and can't be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;. Replaces effects from other elixirs when drunk. </content>
 
 </contentList>

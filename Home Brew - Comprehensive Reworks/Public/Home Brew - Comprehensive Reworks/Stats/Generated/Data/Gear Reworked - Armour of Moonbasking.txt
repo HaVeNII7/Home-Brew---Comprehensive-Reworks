@@ -15,7 +15,7 @@ data "DisplayName" "h2cdf4116g2c4cg4a51g9c7fg1424a9ec52bd;3"
 data "Description" "h40c36acbgbe90g4d36gb648gb697cf3c08f3;5"
 data "DescriptionParams" "24;2"
 data "StatsFunctorContext" "OnCast"
-data "Conditions" "SpellId('Shout_WildShape_Badger') or SpellId('Shout_WildShape_Bear_Polar') or SpellId('Shout_WildShape_Cat') or SpellId('Shout_WildShape_DeepRothe') or SpellId('Shout_WildShape_Dilophosaurus') or SpellId('Shout_WildShape_Dire_Raven') or SpellId('Shout_WildShape_Dire_Wolf') or SpellId('Shout_WildShape_Giant_Spider') or SpellId('Shout_Wildshape_SaberTooth_Tiger') or SpellId('Shout_Wildshape_Panther') or SpellId('Shout_WildShape_Owlbear') or SpellId('Shout_WildShape_Myrmidon_Air') or SpellId('Shout_WildShape_Myrmidon_Earth') or SpellId('Shout_WildShape_Myrmidon_Fire') or SpellId('Shout_WildShape_Myrmidon_Water')"
+data "Conditions" "SpellId('Shout_DarkUrge_Slayer') or SpellId('Shout_WildShape_Badger') or SpellId('Shout_WildShape_Bear_Polar') or SpellId('Shout_WildShape_Cat') or SpellId('Shout_WildShape_DeepRothe') or SpellId('Shout_WildShape_Dilophosaurus') or SpellId('Shout_WildShape_Dire_Raven') or SpellId('Shout_WildShape_Dire_Wolf') or SpellId('Shout_WildShape_Giant_Spider') or SpellId('Shout_Wildshape_SaberTooth_Tiger') or SpellId('Shout_Wildshape_Panther') or SpellId('Shout_WildShape_Owlbear') or SpellId('Shout_WildShape_Myrmidon_Air') or SpellId('Shout_WildShape_Myrmidon_Earth') or SpellId('Shout_WildShape_Myrmidon_Fire') or SpellId('Shout_WildShape_Myrmidon_Water')"
 data "StatsFunctors" "ApplyStatus(MAG_DRUID_WILDSHAPE_MOONBASKING, 100, -1);ApplyStatus(MAG_DRUID_WILDSHAPE_TEMP_HP, 100, -1)"
 data "TooltipPermanentWarnings" "8892b93b-721f-4b99-b9b4-05ac25aadb33"
 

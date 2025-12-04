@@ -83,7 +83,7 @@
                     <attribute id="UUID" type="guid" value="c3506532-36eb-4d18-823e-497a537a9619" />
 					</node>
         <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="DraconicAncestry_Black,DraconicAncestry_Blue,DraconicAncestry_Brass,DraconicAncestry_Bronze,DraconicAncestry_Copper,DraconicAncestry_Gold,DraconicAncestry_Green,DraconicAncestry_Red,DraconicAncestry_Silver,DraconicAncestry_White" />
+                    <attribute id="Passives" type="LSString" value="DraconicAncestry_Black,DraconicAncestry_Blue,DraconicAncestry_Brass,DraconicAncestry_Bronze,DraconicAncestry_Copper,DraconicAncestry_Gold,DraconicAncestry_Green,DraconicAncestry_Red,DraconicAncestry_Silver,DraconicAncestry_White,DraconicAncestry_Amethyst,DraconicAncestry_Crystal,DraconicAncestry_Emerald,DraconicAncestry_Sapphire,DraconicAncestry_Topaz" />
                     <attribute id="UUID" type="guid" value="c69c33a2-671c-46e1-a92c-656fe64ed447" />
 					</node>
         <node id="PassiveList">

@@ -83,6 +83,21 @@
 	<content contentuid="h8cd25cb2gb122g4b9dga912gc88e44406e3f" version="2">Draconic Half-Blood: White</content>
 	<content contentuid="hc2b60bcbg6880g409fg9aecgf27a75eeb61c" version="2">Gain the ability to spew &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Cold"&gt;Frost Breath&lt;/LSTag&gt;. When you fail an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with your Draconic breath, you still deal half damage. When dealing damage with a weapon, you deal an additional [1], equal to your levels in Sorcerer.</content>
 
+	<content contentuid="h4ce8f1b2ga05eg462cg9504gadc7454daf46" version="3">Draconic Half-Blood: Amethyst</content>
+	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac5dhde" version="2">Gain the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Force"&gt;Singularity Breath&lt;/LSTag&gt;. When you fail an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with your Draconic breath, you still deal half damage. When dealing damage with a weapon, you deal an additional [1], equal to your levels in Sorcerer.</content>
+
+	<content contentuid="h4ce8f1b2ga05eg462cg9504gadc7454dadn5" version="3">Draconic Half-Blood: Crystal</content>
+	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac5d345" version="2">Gain the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Radiant"&gt;Scintillating Breath&lt;/LSTag&gt;. When you fail an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with your Draconic breath, you still deal half damage. When dealing damage with a weapon, you deal an additional [1], equal to your levels in Sorcerer.</content>
+
+	<content contentuid="h4ce8f1b2ga05eg462cg9504gadc7454da4d7" version="3">Draconic Half-Blood: Emerald</content>
+	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac5dgs0" version="2">Gain the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Psychic"&gt;Psionic Breath&lt;/LSTag&gt;. When you fail an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with your Draconic breath, you still deal half damage. When dealing damage with a weapon, you deal an additional [1], equal to your levels in Sorcerer.</content>
+
+	<content contentuid="h4ce8f1b2ga05eg462cg9504gadc7454dadns" version="3">Draconic Half-Blood: Sapphire</content>
+	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac5d678" version="2">Gain the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Thunder"&gt;Sonic Breath&lt;/LSTag&gt;. When you fail an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with your Draconic breath, you still deal half damage. When dealing damage with a weapon, you deal an additional [1], equal to your levels in Sorcerer.</content>
+
+	<content contentuid="h4ce8f1b2ga05eg462cg9504gadc7454daf59" version="3">Draconic Half-Blood: Topaz</content>
+	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac5dd73" version="2">Gain the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Necrotic"&gt;Desiccating Breath&lt;/LSTag&gt;. When you fail an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with your Draconic breath, you still deal half damage. When dealing damage with a weapon, you deal an additional [1], equal to your levels in Sorcerer.</content>
+
 	<content contentuid="hd7cec02dg22c5g4adag8503g41ec5ce22565" version="3">Draconic Weapon</content>
 	<content contentuid="h8ad73819geb3ag46e5g90b8g2d8b4af64585" version="2">Affected weapon deals an additional [1].</content>
 
@@ -98,6 +113,58 @@
 
 	<content contentuid="h5288bd8fg7e82g4c6cgae28gacd825b21215" version="3">Dragontongue</content>
 	<content contentuid="hf32ca0b3g8a45g43f6gaf4ag5f343ed66a58" version="5">When dealing damage with a Draconic Breath action, you always deal the maximum damage possible.</content>
+
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7381001" version="1">Amethyst 1</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7381002" version="1">Amethyst 2</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7381003" version="1">Amethyst 3</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7381004" version="1">Amethyst 4</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7381005" version="1">Amethyst 5</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7382001" version="1">Crystal 1</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7382002" version="1">Crystal 2</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7382003" version="1">Crystal 3</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7382004" version="1">Crystal 4</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7382005" version="1">Crystal 5</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7383001" version="1">Emerald 1</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7383002" version="1">Emerald 2</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7383003" version="1">Emerald 3</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7383004" version="1">Emerald 4</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7383005" version="1">Emerald 5</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7384001" version="1">Sapphire 1</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7384002" version="1">Sapphire 2</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7384003" version="1">Sapphire 3</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7384004" version="1">Sapphire 4</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7384005" version="1">Sapphire 5</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7385001" version="1">Topaz 1</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7385002" version="1">Topaz 2</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7385003" version="1">Topaz 3</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7385004" version="1">Topaz 4</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7385005" version="1">Topaz 5</content>
+	
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7381101" version="1">Amethyst 1</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7381102" version="1">Amethyst 2</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7381103" version="1">Amethyst 3</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7381104" version="1">Amethyst 4</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7381105" version="1">Amethyst 5</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7382101" version="1">Crystal 1</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7382102" version="1">Crystal 2</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7382103" version="1">Crystal 3</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7382104" version="1">Crystal 4</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7382105" version="1">Crystal 5</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7383101" version="1">Emerald 1</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7383102" version="1">Emerald 2</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7383103" version="1">Emerald 3</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7383104" version="1">Emerald 4</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7383105" version="1">Emerald 5</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7384101" version="1">Sapphire 1</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7384102" version="1">Sapphire 2</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7384103" version="1">Sapphire 3</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7384104" version="1">Sapphire 4</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7384105" version="1">Sapphire 5</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7385101" version="1">Topaz 1</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7385102" version="1">Topaz 2</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7385103" version="1">Topaz 3</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7385104" version="1">Topaz 4</content>
+	<content contentuid="heba5aa44355c4cbd91bef6d45ba8e7385105" version="1">Topaz 5</content>
 
 <!--SHADE WALKER-->
 
@@ -145,36 +212,41 @@
 	<content contentuid="h16312bfag01a2g42f8g943bg3fcba8e00006" version="1">Pitch Black</content>
 	<content contentuid="hec37ca35g480cg4de1gae65g3986c350000f" version="1">While &lt;LSTag Type="Status" Tooltip="SNEAKING_HEAVILY_OBSCURED"&gt;Heavily Obscured&lt;/LSTag&gt;, all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage rolls you make are rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. When your &lt;LSTag Type="Spell" Tooltip="Target_HoundOfIllOmen"&gt;Hounds of Ill Omen&lt;/LSTag&gt; clone themselves, their clones will never expire, and they can now produce further clones as well.</content>
 
-<!--STORM SORCERER-->
+<!--VOLCANIST-->
 
-	<content contentuid="ha09bcdedg1cb1g4a53ga72dgb9bf9bbb3cb0" version="1">Storm Surge</content>
-	<content contentuid="hd862715eg884cg4039ga1a6g59c36e569ddf" version="2">Storm Surge</content>
+	<content contentuid="ha09bcdedg1cb1g4a53ga72dgb9bf9bbb3cb0" version="1">Volcanist</content>
+	<content contentuid="hd862715eg884cg4039ga1a6g59c36e569ddf" version="2">Volcanist</content>
+	<content contentuid="h6cc6b6fega327g411ag9b33g098e0c8636b1" version="3">Searing heat broils within you, an ancient and irrevocable flame as unpredictable as it is uncontrollable.</content>
 
-	<content contentuid="h14011b40g647cg4560g8a71g0ddec16c4753" version="2">Tempestuous Magic</content>
-	<content contentuid="h476f70abgabb6g4b83g9c5dg0c73cbe34904" version="14">When dealing Cold, Lightning, or Thunder damage you roll your damage dice with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Additionally, after you cast a Level 1 Spell or higher you can &lt;LSTag Type="Spell" Tooltip="Projectile_Fly_TempestuousMagic"&gt;Fly&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; until the end of your turn. Moving in this way will not provoke &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;.</content>
+	<content contentuid="h14011b40g647cg4560g8a71g0ddec16c4753" version="2">Magmatic</content>
+	<content contentuid="h476f70abgabb6g4b83g9c5dg0c73cbe34904" version="14">When dealing damage, you ignore Fire based &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt;. At the start of each of your turns, and upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, you generate one stack of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt;.</content>
 
-	<content contentuid="h4ce8f1b2ga05eg462cg9504gadc745415456" version="3">Rain Dance</content>
-	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac97845" version="2">All creatures and objects within [1] of you become &lt;LSTag Type="Status" Tooltip="WET"&gt;Wet&lt;/LSTag&gt;. This can be toggled at any time.</content>
+	<content contentuid="h74aaf9a2g8faag4fb3gb244g4bb2470fb648" version="2">Pyrrhic Retort</content>
+	<content contentuid="hc277c521g31b6g4c21gb01ag7d599d569e7e" version="2">When an ally is about to be damaged, you may expend one stack of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; in order to fire a &lt;LSTag Type="Spell" Tooltip="Projectile_PyrrhicFlare"&gt;Pyrrhic Flare&lt;/LSTag&gt; at their aggressor. In addition, killing a &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="BURNING_LAVA"&gt;Melting&lt;/LSTag&gt; enemy will generate one &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Point&lt;/LSTag&gt;.</content>
+	<content contentuid="h74aaf9a2g8faag4fb3gb244g4bb247023512" version="2">Pyrrhic Retort</content>
+	<content contentuid="hc277c521g31b6g4c21gb01ag7d599d5sd6f8" version="2">When an ally is about to be damaged, expend one stack of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; in order to fire a &lt;LSTag Type="Spell" Tooltip="Projectile_PyrrhicFlare"&gt;Pyrrhic Flare&lt;/LSTag&gt; at their aggressor.</content>
+	<content contentuid="h74aaf9a2g8faag4fb3gb244g4bb24225d364" version="2">Pyrrhic Flare</content>
+	<content contentuid="hc277c521g31b6g4c21gb01ag7d599d56d8f9" version="2">A flare so hot that upon landing, one might confuse the result with a small area of magma.</content>
 
-	<content contentuid="hc580238eg0032g4f7fg9d2ag7f95874066cf" version="2">Heart of the Storm</content>
-	<content contentuid="h6fa01c82g439eg42c5g8c62g0169cf08fd50" version="3">When you cast a Spell of Level 1 or higher that deals Cold, Lightning or Thunder damage, you cause a small, local storm. All enemies within [1] of you take damage of the same type, equal to your level.</content>
-	<content contentuid="hc580238eg0032g4f7fg9d2ag7f958746a945" version="2">Heart of the Storm (Lightning)</content>
-	<content contentuid="h6fa01c82g439eg42c5g8c62g0169cf08d522" version="3">When you cast a Spell of Level 1 or higher that deals Lightning damage, you cause a small, local storm. All enemies within [1] of you take [2], equal to your level.</content>
-	<content contentuid="hc580238eg0032g4f7fg9d2ag7f95874ff8s4" version="2">Heart of the Storm (Thunder)</content>
-	<content contentuid="h6fa01c82g439eg42c5g8c62g0169cf0f6s98" version="3">When you cast a Spell of Level 1 or higher that deals Thunder damage, you cause a small, local storm. All enemies within [1] of you take [2], equal to your level.</content>
-	<content contentuid="hc580238eg0032g4f7fg9d2ag7f9587fsddf6" version="2">Heart of the Storm (Cold)</content>
-	<content contentuid="h6fa01c82g439eg42c5g8c62g0169cfdf1255" version="3">When you cast a Spell of Level 1 or higher that deals Cold damage, you cause a small, local storm. All enemies within [1] of you take [2], equal to your level.</content>
+	<content contentuid="h4ce8f1b2ga05eg462cg9504gadc745415456" version="3">Singe Song</content>
+	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac97845" version="2">You gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Fire damage. Upon dealing Fire damage while you possess stacks of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt;, you fire a &lt;LSTag Type="Spell" Tooltip="Projectile_PyrrhicFlare"&gt;Pyrrhic Flare&lt;/LSTag&gt; at another enemy within [1] of your target.&lt;br&gt;&lt;br&gt;Each Pyrrhic Flare fired will reduce your Heat stacks by 1, and each enemy may only be targeted by a Pyrrhic Flare if they are not &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="BURNING_LAVA"&gt;Melting&lt;/LSTag&gt;. This can be toggled at any time.</content>
 
-	<content contentuid="h74aaf9a2g8faag4fb3gb244g4bb2470fb648" version="2">Tenacity of the Storm</content>
-	<content contentuid="hc277c521g31b6g4c21gb01ag7d599d569e7e" version="2">You are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to Cold, Lightning and Thunder damage.</content>
+	<content contentuid="hdd253f93g3119g4c14g9dadgcd0ae3d3d655" version="1">Volcanic Eruption</content>
+	<content contentuid="h4099049ag1c50g49fegb46fg8a5919w5d888" version="1">Once per combat encounter, you may immediately erupt, creating a [1] pool of lava beneath the feet of all enemies within [2] of you.</content>
+	<content contentuid="hdd253f93g3119g4c14g9dadgcd0ae3d6f5d8" version="1">Volcanic Eruption</content>
+	<content contentuid="h4099049ag1c50g49fegb46fg8a5919w7f8d5" version="1">Erupt, creating a [1] pool of lava beneath the feet of all enemies within [2] of you.</content>
 
-	<content contentuid="hdd253f93g3119g4c14g9dadgcd0ae9982647" version="1">Storm's Fury</content>
-	<content contentuid="h4099049ag1c50g49fegb46fg8a591bece980" version="1">When damaged by a melee attack, you deal [1] to the attacker and potentially push them back by [2]. This damage is equal to your level.</content>
+	<content contentuid="h4ce8f1b2ga05eg462cg9504gadc74546a954" version="3">Melting Pot</content>
+	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac6a988" version="2">Your &lt;LSTag Type="Spell" Tooltip="Projectile_PyrrhicFlare"&gt;Pyrrhic Flares&lt;/LSTag&gt; now cause enemies to &lt;LSTag Type="Status" Tooltip="BURNING_LAVA"&gt;Melt&lt;/LSTag&gt;.</content>
 
-	<content contentuid="h4ce8f1b2ga05eg462cg9504gadc74546a954" version="3">Crackling Sorcery</content>
-	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac6a988" version="2">Killing an enemy with Cold, Lightning or Thunder damage maximizes the damage of the next Spell you cast.</content>
-	<content contentuid="hb117050dg0016g4833g0a928934uw9dfuw98" version="3">Crackling Sorcery</content>
-	<content contentuid="h893450deg4af30249350w9fdojfo92034902" version="2">Affected creature will deal the maximum amount of damage possible the next time they cast a Spell.</content>
+	<content contentuid="hc580238eg0032g4f7fg9d2ag7f95874066cf" version="2">Pyrebound</content>
+	<content contentuid="h6fa01c82g439eg42c5g8c62g0169cf08fd50" version="3">You may expend ten stacks of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; in order to cast &lt;LSTag Type="Spell" Tooltip="Target_MeteoricBurst"&gt;Meteoric Burst&lt;/LSTag&gt;.</content>
+	<content contentuid="hc580238eg0032g4f7fg9d2ag7f93d6f5df12" version="2">Meteoric Burst</content>
+	<content contentuid="h6fa01c82g439eg42c5g8c62g01696s8d5f84" version="3">Expend ten stacks of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; in order to release the latent power stored within you, destroying everything nearby.</content>
+	<content contentuid="hc580238eg0032g4f7fg9d2ag7f93d6f3sd1f" version="2">Bursting With Heat!</content>
+	<content contentuid="h6fa01c82g439eg42c5g8c62g01696s65df85" version="3">Affected creature may cast &lt;LSTag Type="Spell" Tooltip="Target_MeteoricBurst"&gt;Meteoric Burst&lt;/LSTag&gt;.</content>
+	<content contentuid="hc580238eg0032g4f7fg9d2ag7f93d6f512d5" version="2">Meteoric Burst</content>
+	<content contentuid="h6fa01c82g439eg42c5g8c62g01696s8sfsd6" version="3">Release the latent power stored within you, destroying everything nearby!</content>
 
 <!--WILD MAGIC-->
 
@@ -220,8 +292,8 @@
 
 	<content contentuid="hc4758e5dg1f1dg424agadb4gc491239fcc29" version="1">Metamagic: Careful Spell</content>
 	<content contentuid="hc60f063eg9286g4461g9781g3d6d66af7384" version="1">Careful Spell</content>
-	<content contentuid="h64f78215gd47bg4c27gb0ceg3ee5003c972e" version="3">Allies automatically succeed &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against Spells and &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; that require them.&lt;br&gt;&lt;br&gt;Costs [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Point&lt;/LSTag&gt; per cast.</content>
-	<content contentuid="h128bef82g7eb4g4ce1g9d55g5f0e816da7c5" version="1">Allies automatically succeed their &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against this Spell.</content>
+	<content contentuid="h64f78215gd47bg4c27gb0ceg3ee5003c972e" version="3">Allies will not be targeted by Spells and &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; that deal damage in an area.&lt;br&gt;&lt;br&gt;Costs [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Point&lt;/LSTag&gt; per cast.</content>
+	<content contentuid="h128bef82g7eb4g4ce1g9d55g5f0e816da7c5" version="1">Allies will not be targeted by this Spell.</content>
 
 	<content contentuid="hc4758e5dg1f1dg424agadb4gc4ffdd2ff2d5" version="1">Metamagic: Defensive Spell</content>
 	<content contentuid="h64f78215gd47bg4c27gb0ceg3efs6d8ff6d9" version="3">Spells and &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; that deal damage cause an expansion of arcane armour to form over your body, granting you &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to physical damage for three turns.&lt;br&gt;&lt;br&gt;Costs [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; per Spell.</content>
@@ -273,7 +345,7 @@
 	<content contentuid="h8a8eecf4g22ddg45f0ga601g761c17d002e0" version="2">Spells and &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Silenced&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Point&lt;/LSTag&gt; per cast.</content>
 
     <content contentuid="0c593a86-7a4a-4b72-b4a0-c3a1e191211e" version="1">Metamagic: Tempestuous Spell</content>
-    <content contentuid="b0bc6550-9678-4d3d-8530-fce9d32f77b6" version="1">Spells and &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; push your targets back by [1] and may cause them to fall &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; if they fail a Strength based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs [2] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; per cast.</content>
+    <content contentuid="b0bc6550-9678-4d3d-8530-fce9d32f77b6" version="1">Damaging Spells and &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; push your targets back by [1] and may cause them to fall &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; if they fail a Strength based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs [2] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; per cast.</content>
 	
     <content contentuid="e38654de-fd40-4f34-96c6-25a5886af1a9" version="1">Metamagic: Tripled Spell</content>
     <content contentuid="1468eac4-3b98-4861-9a24-579a9a78235e" version="1">Spells and &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; that only target one creature can now target two additional creatures.&lt;br&gt;&lt;br&gt;Costs [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; per level of &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; used. Cantrips cost 3 Sorcery Points.</content>

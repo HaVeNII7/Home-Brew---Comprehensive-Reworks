@@ -46,6 +46,16 @@ data "RemoveEvents" "OnObscurityChanged"
 data "StackType" "Ignore"
 data "Boosts" "Disadvantage(AttackRoll)"
 
+<!--DARK JUSTICIAR-->
+
+new entry "DAMAGE_SHIELD_NPC_RADIANT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hf68573edgb5f3g4027gb92cgd55a096d74b3;1"
+data "Description" "hf6737e4eg1692g42acgb65ag23edf956cbad;1"
+data "Icon" "GenericIcon_DamageType_Radiant"
+data "Passives" "DamageShield_NPC_Radiant"
+
 <!--FOREST GNOME-->
 
 new entry "PETPAL_FORESTGNOME"
@@ -116,6 +126,56 @@ data "AuraRadius" "9"
 data "AuraStatuses" "TARGET:IF(Character() and not Tagged('KOBOLD') and not (Tagged('GREMISHKA')) and not Dead()):ApplyStatus(GREMISHKA_MAGICALLERGY_INAURARANGE,100,-1)"
 data "Passives" "MagicAllergy_Unstable"
 
+<!--HARPY-->
+
+new entry "LURING_SONG_AURA_VICTIM"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "ha0731de1g1891g4e13gbcc2g73a403bee003;2"
+data "Description" "h8de31c05gb5c0g4495g9bc7g16ef9a6fedb9;4"
+data "Icon" "statIcons_LuringSong"
+data "StillAnimationPriority" "Dazed"
+data "StackId" "LURING_SONG"
+data "StackPriority" "0"
+data "TickType" "StartTurn"
+data "StatusPropertyFlags" "DisableCombatlog"
+data "OnRemoveFunctors" "RemoveStatus(SELF,LURING_SONG)"
+data "OnTickRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), AdvantageOnCharmed())"
+data "OnTickSuccess" "ApplyStatus(LURING_SONG,100,1);"
+data "OnTickFail" "ApplyStatus(LURING_SONG_RESIST,100,3);"
+data "StatusEffect" "f963a6cb-456f-44a4-a90a-5a61abae13a7"
+
+new entry "LURING_SONG"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hde9698b9gf76eg4f75g9df2g1ce018012400;3"
+data "Description" "h3a9c3870g9491g4e8eg8f73ga1f4e720897b;5"
+data "Icon" "statIcons_Lured"
+data "StillAnimationType" "Dazed"
+data "StillAnimationPriority" "Dazed"
+data "StackId" "LURING_SONG"
+data "StackPriority" "1"
+data "TickType" "EndTurn"
+data "Boosts" "CannotHarmCauseEntity(CannotHarmCharmer);Advantage(SourceDialogue,Charisma);ActionResourceBlock(ActionPoint);ActionResourceBlock(BonusActionPoint);ActionResourceBlock(ReactionActionPoint);"
+data "RemoveConditions" "SavingThrow(Ability.Wisdom, SourceSpellDC(), AdvantageOnCharmed()) and ((Tagged('ACT1_DEN_CHARMEDKID') and Combat()) or not Tagged('ACT1_DEN_CHARMEDKID'))"
+data "RemoveEvents" "OnDamage;OnTurn"
+data "TooltipSave" "Wisdom"
+data "StatusPropertyFlags" "BringIntoCombat;TickingWithSource;ForceOverhead;OverheadOnTurn;LoseControl"
+data "StatusGroups" "SG_Charmed;SG_ScriptedPeaceBehaviour"
+data "StatusEffect" "5f2c07d0-4d7e-4d6a-848d-c69ba9c2d74c"
+
+new entry "LURING_SONG_RESIST"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h1e0892f6g5a93g49e9g8b1agd2d9567213f5;2"
+data "Description" "hb02b136dg05a2g4dd6ga156gb7be1ba0fa3b;3"
+data "DescriptionParams" "3"
+data "Icon" "statIcons_ResistedTheSong"
+data "StackId" "LURING_SONG"
+data "StackPriority" "2"
+data "StatusPropertyFlags" "OverheadOnTurn"
+data "TickType" "EndTurn"
+
 <!--HOBGOBLIN-->
 
 new entry "HOBGOBLIN_LEADERSHIP_AURA_HARDCORE"
@@ -167,7 +227,6 @@ data "FormatColor" "Gold"
 data "StackId" "HOBGOBLIN_LEADERSHIP_ENEMY"
 data "StackPriority" "5"
 data "Boosts" "Advantage(AttackTarget);"
-data "StatusGroups" ""
 data "StatusEffect" "423ef553-a009-40d0-b110-1f5398b1b774"
 
 <!--INTELLECT DEVOURER-->
@@ -241,7 +300,7 @@ type "StatusData"
 data "StatusType" "BOOST"
 using "FOR_OWLBEAR_ENRAGE"
 data "Description" "h147d9a39ga77bg4a86g8e63ge86f55b50604;1"
-data "Boosts" "Advantage(AttackRoll); Tag(VFX_RAGE); BlockSpellCast(); UnlockSpell(Target_Multiattack_Owlbear); Tag(CANBECALMED); Resistance(Slashing, Resistant); Resistance(Piercing, Resistant); Resistance(Bludgeoning, Resistant); Resistance(Acid, Resistant); Resistance(Thunder, Resistant); Resistance(Necrotic, Resistant); Resistance(Fire, Resistant); Resistance(Lightning, Resistant); Resistance(Cold, Resistant); Resistance(Poison, Resistant); Resistance(Radiant, Resistant); Resistance(Force, Resistant); Resistance(Psychic, Resistant)"
+data "Boosts" "Advantage(AttackRoll); Tag(VFX_RAGE); BlockSpellCast(); UnlockSpell(Target_Multiattack_Owlbear); Tag(CANBECALMED); Resistance(Slashing, Resistant); Resistance(Piercing, Resistant); Resistance(Bludgeoning, Resistant)"
 
 <!--SHADOW MASTIFF-->
 
@@ -281,6 +340,15 @@ data "Passives" "ExtraAttack_2_Beastial"
 data "StatusPropertyFlags" "ForceOverhead"
 data "StatusGroups" "SG_Rage"
 data "StatusEffect" "54c3207a-4419-441a-86b0-30d8e4eb2c8d"
+
+<!--VAMPIRE-->
+
+new entry "GLO_CAZADOR_HARDCORE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "DIFFICULTY_GUSTAVDEV"
+data "OnApplyFunctors" "IF(not HasStatus('LOW_CAZADORSPALACE_ASCENSION_LEGENDARY_RESISTANCE')):ApplyStatus(LEGENDARY_RESISTANCE,100,-1)"
+data "OnRemoveFunctors" "RemoveStatus(LEGENDARY_RESISTANCE)"
 
 <!--WOOD WOAD-->
 

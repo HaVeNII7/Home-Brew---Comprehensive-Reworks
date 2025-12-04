@@ -996,7 +996,7 @@ data "Icon" "statIcons_HasteSpores"
 data "SoundVocalStart" "DODGE"
 data "SoundStart" "Misc_Status_HasteSpores_Enter_MO"
 data "OnRemoveFunctors" "AI_ONLY:ApplyStatus(HASTE_LETHARGY,100,0)"
-data "StatusGroups" "SG_Surface;SG_Condition"
+data "StatusGroups" "SG_Surface"
 
 new entry "Projectile_HAG_HagGrenade_PoisonCloud"
 type "SpellData"

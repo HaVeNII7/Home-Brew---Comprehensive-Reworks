@@ -254,6 +254,11 @@
                     <attribute id="Text" type="TranslatedString" handle="hf155fe40gd202g45dslkdjfiejfkfa256235" version="1"/>
                     <attribute id="UUID" type="guid" value="9be63378-034b-4532-a282-91fa3a44ffc7"/>
                 </node>
+                <node id="TooltipUpcastDescriptions">
+                    <attribute id="Name" type="FixedString" value="Cloudkill"/>
+                    <attribute id="Text" type="TranslatedString" handle="h197f62bbgd1ddg4436g90df5s5d4f6d54ef8" version="1"/>
+                    <attribute id="UUID" type="guid" value="9be63378-034b-4532-a282-91fa3a5sf4df"/>
+                </node>
             </children>
         </node>
     </region>

@@ -13,6 +13,22 @@ data "StackType" "Additive"
 data "StatusPropertyFlags" "FreezeDuration;MultiplyEffectsByDuration;ApplyToDead"
 data "StatusGroups" "SG_RemoveOnRespec"
 
+new entry "ELDRITCH_STRIKE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h0da46890gdf01g4aafg8838g448555deb977;3"
+data "Description" "h02b7f6d6gab29g416dgbb6bge805faa146ca;3"
+data "Icon" "GenericIcon_Intent_Debuff"
+data "StackId" "ELDRITCH_STRIKE"
+data "TickType" "EndTurn"
+data "Boosts" "IF(HasStatus('ELDRITCH_STRIKE', context.Target, context.Source)):Disadvantage(AllSavingThrows)"
+data "StatusGroups" "SG_Cursed"
+data "ApplyEffect" "54d3e1a2-7513-4f46-bb46-53dec4e83b8d"
+data "StatusEffect" "372f12fd-d95c-43ca-9cc6-096ecf421704"
+data "StackType" "Additive"
+data "RemoveConditions" "not SavingThrow(Ability.Charisma, SourceSpellDC())"
+data "RemoveEvents" "OnTurn"
+
 <!--PACT OF THE BLADE-->
 
 new entry "PACT_BLADE"
@@ -293,6 +309,7 @@ data "OnRemoveFunctors" "IF(Combat()):ApplyStatus(PENUMBRA_DARK,100,1);ApplyStat
 data "StatusEffect" "33b7386f-4737-49ba-a3b7-019d194ea5ad"
 data "Boosts" "GameplayLight(9,false,0.1,true)"
 data "StackId" "PENUMBRA"
+data "StatusPropertyFlags" "IgnoreResting;ApplyToDead"
 
 new entry "PENUMBRA_DARK_TECHNICAL"
 type "StatusData"
@@ -307,6 +324,7 @@ data "OnApplyFunctors" "ApplyStatus(SMART_COOLDOWN_FIX,100,1)"
 data "OnRemoveFunctors" "IF(Combat()):ApplyStatus(PENUMBRA_LIGHT,100,1);ApplyStatus(SMART_COOLDOWN_FIX,100,1)"
 data "StatusEffect" "762a66a6-bd1a-4225-b111-3ed25c09fac6"
 data "StackId" "PENUMBRA"
+data "StatusPropertyFlags" "IgnoreResting;ApplyToDead"
 
 new entry "ACCURSED_SPECTER"
 type "StatusData"
@@ -444,7 +462,7 @@ data "Boosts" "IF(ConditionResult(context.AttackWeapon.IsValid) or (context.Targ
 data "TooltipDamage" "DealDamage(1d4,Fire)"
 data "TickFunctors" "IF(not Tagged('TORCH')):DealDamage(1d4,Fire)"
 data "StatusPropertyFlags" "InitiateCombat;Burning;DisableOverhead;IgnoreResting"
-data "StatusGroups" "SG_Surface;SG_Light;SG_Cursed"
+data "StatusGroups" "SG_Cursed"
 data "StatusEffect" "a1458242-11d1-417d-b342-68eb552886e6"
 data "StackType" "Additive"
 

@@ -22,6 +22,9 @@
 	<content contentuid="hd3a156cc7fbf4a5c985eef63f0c2b99b55g3" version="1">Attunement</content>
 	<content contentuid="h98e3be41aead4b5bb8ee60104126ded4b17d" version="5">Determines your ability to equip magical items. The rarity of the item determines the amount of Attunement required to equip it, with each higher rarity costing more.&lt;br&gt;&lt;br&gt;Uncommon items require one point of Attunement.&lt;br&gt;&lt;br&gt;Rare items require two points of Attunement.&lt;br&gt;&lt;br&gt;Very Rare and Legendary items require four points of Attunement.</content>
 
+	<content contentuid="h9328bdc1gcc66g4369g91f3gf3568b1c5133" version="1">Wyvern Toxin</content>
+	<content contentuid="h057011f1g48a4g48b2g85daga04e5026f87d" version="2">Affected entity takes [1] at the end of its next turn.</content>
+
 <!--ARROWS-->
 	<content contentuid="he2f3af0ag21d0g40efg833bg12f5032eba13" version="1">Arrow of Aberration Slaying</content>
 	<content contentuid="h2f9cb0f3ge068g493egafd3g3d752f9cc7d0" version="5">Fire an arrow which rolls an additional damage die against Aberrations.</content>
@@ -361,6 +364,10 @@
 	<content contentuid="ha954c1d2g1153g4859g8aa5gfaa6970764a7" version="1">Mystra's Grace: Featherfall</content>
 	<content contentuid="h5bbabb54g39cfg4782gab48g486bb4821247" version="8">You and nearby allies gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Falling damage for three turns.</content>
 
+<!--RUPTURING BLADE-->
+	<content contentuid="h12c68a5cg0abfg4511g82f2g974c71f2a121" version="2">Searing Blood</content>
+	<content contentuid="hedaef3c9g5466g447cg9074g6c444507c85a" version="2">Cut into an enemy, dealing an additional [1] and causing them to &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt; indefinitely.</content>
+
 <!--LINEBREAKER BOOTS-->
 	<content contentuid="66706bd4b60a4ca88b703f3fc04225d68554d" version="1">Linebreaker</content>
 	<content contentuid="66706bd4b60a4ca88b703f3fc9s8df987585s" version="8">You are unable to be moved. In addition, you gain a bonus to all Athletics based &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt; equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Strength Modifier&lt;/LSTag&gt;.</content>
@@ -506,6 +513,10 @@
 <!--TRUE LOVES EMBRACE-->
 	<content contentuid="h69fb2ca9g7914g463aga589gbf6a8719a62c" version="3">Lovers Ward</content>
 	<content contentuid="h4eaf5c90gbc6cg4864g8701g15dd2fd6d8f4" version="4">Ward an ally who has the passive &lt;LSTag Type="Passive" Tooltip="TWN_BondedByLove_WifesRing_Passive"&gt;Fond Caress&lt;/LSTag&gt;. They gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage. Each time the ally takes damage, you take the same amount of damage.</content>
+
+<!--SILVER SWORD OF THE ASTRAL PLANE-->
+	<content contentuid="hac093c12g6360g4d71gbe68g3e2939c4726d" version="2">Astral Soulbreaker</content>
+	<content contentuid="haad56e8ege27eg466fgb145gb12a9bbaf8ac" version="4">Rend the enemy's body and soul, possibly &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; them.</content>
 
 <!--DIADEM OF ARCANE SYNERGY-->
 	<content contentuid="hc7a585eeg200dg4f49g8ed2gd1fefb07ef1d" version="4">Synergetic Moments</content>
@@ -1090,6 +1101,10 @@
 	<content contentuid="h161aa62ag510cg48cega0cbge37e3321c64a" version="2">Crooked Wand of Fireballs</content>
 	<content contentuid="hb90e0c55gd1b0g4ef8gbea7g8de65878bb62" version="4">A bent wand still quivering with power. You may use it to cast &lt;LSTag Type="Spell" Tooltip="Projectile_Fireball_6"&gt;Fireball&lt;/LSTag&gt;, severely damaging all (very) nearby creatures.</content>
 
+<!--THE DEATHSTALKERS MANTLE-->
+	<content contentuid="h27bf0c06g717ag4e4dgaa69g5f47eef6ed1f" version="2">The Shadow Itself</content>
+	<content contentuid="h540ed943g4bc4g4262g9258gc149f997f7f0" version="8">Once per turn when you kill an enemy, shroud yourself in primaeval darkness, benefitting from the effects of &lt;LSTag Type="Status" Tooltip="GREATER_INVISIBILITY"&gt;Greater Invisibility&lt;/LSTag&gt; for [1] turns.</content>
+
 <!--ROBE OF SUPREME DEFENCES-->
 	<content contentuid="h039b5a8fgda00g480eg8729g8909bbf04a95" version="3">Exquisite Focus</content>
 	<content contentuid="he6db4244gcff5g454bg953bg05a4bbadfd68" version="6">While &lt;LSTag Tooltip="Concentration"&gt;Concentrating&lt;/LSTag&gt;, add your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability Modifier&lt;/LSTag&gt; to your &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; and gain a +[1] bonus to your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
@@ -1311,6 +1326,9 @@
 <!--RING OF FEYWILD SPARKS-->
 	<content contentuid="h4e86dbcfg88fag48e5ga39aga053c1c1d38e" version="2">Feywild Sparks</content>
 	<content contentuid="h062a5a06g3953g449cgb106gf45f79b99c31" version="2">While in combat, regenerate one level one &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; per turn.</content>
+
+<!--FIRZUS RING OF TRADING-->
+	<content contentuid="h9d62ddf7g7853g4bc5ga2c8g1a8a7b389eb0" version="2">Once belonged to a deceptive little shit named Firzu.</content>
 
 <!--DUELLIST'S PREROGATIVE-->
 	<content contentuid="he437335bgcd18g467eg8248g73b61189295c" version="2">Challenge to Duel</content>
@@ -2077,6 +2095,8 @@
 	<content contentuid="h116fd689g69b5g4f7bg866dg4dd19537234b" version="1">Gain 9 &lt;LSTag Type="ActionResource" Tooltip="LuckPoint"&gt;Luck Points&lt;/LSTag&gt;.</content>
 	<content contentuid="h878ce15bg1a60g448fg9333gfc98b88d444a" version="1">Stone of Good Luck: Depleted</content>
 	<content contentuid="hc161ddc0g2fc8g4ccdgb52cg988c32698edf" version="1">The &lt;LSTag Type="ActionResource" Tooltip="LuckPoint"&gt;Luck Points&lt;/LSTag&gt; granted from the stone are depleted. A &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt; will restore them.</content>
+	<content contentuid="h3ae7cfafg1cf5g44b6ga4s6d48f6d45e2f54" version="1">Unlucky Consequence</content>
+	<content contentuid="hbfe99a0cgf256g495aga71fgds6d8fe58686" version="1">Affected creature is unable to utilize &lt;LSTag Type="ActionResource" Tooltip="LuckPoint"&gt;Luck Points&lt;/LSTag&gt; until their next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h3aec4dceg1826g4248gb86ege30797f806a4" version="1">Consecrated War Banner</content>
 	<content contentuid="h2bca3197gfd3dg4821gb410g67314fd05ca9" version="1">A banner dedicated to, and supposedly blessed by, the god Savras.</content>

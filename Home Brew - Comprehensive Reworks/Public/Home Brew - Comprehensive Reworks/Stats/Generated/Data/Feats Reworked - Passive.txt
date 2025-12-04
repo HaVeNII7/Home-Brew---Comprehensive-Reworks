@@ -736,3 +736,30 @@ data "Properties" "IsHidden;OncePerTurn"
 data "StatsFunctorContext" "OnDamage"
 data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally() and not IsMeleeAttack() and IsWeaponAttack() or IsCritical() and Character() and not Self() and not Ally() and not IsMeleeAttack() and IsWeaponAttack()"
 data "StatsFunctors" "RestoreResource(SELF,SpellSlot,1,1)"
+
+<!--YOKEBREAKER-->
+
+new entry "Feat_SpellSlots"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "ActionResource(SpellSlot,4,1)"
+
+new entry "Feat_SporeDruid"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "ActionResource(FungalInfestationCharge,3,0)"
+
+new entry "Feat_StarDruid"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "ActionResource(StarMapPoint,3,0)"
+
+new entry "Feat_Thief"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "ActionResource(Thief_Charge,1,0)"
+
+new entry "Feat_PactoftheChain"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "ActionResource(ChainedBonds,3,0)"

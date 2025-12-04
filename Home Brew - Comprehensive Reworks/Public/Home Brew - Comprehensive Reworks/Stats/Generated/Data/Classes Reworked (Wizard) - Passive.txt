@@ -1,19 +1,20 @@
 <!--ARCBLADE-->
 
-new entry "TheApproachingStorm"
-type "PassiveData"
-data "DisplayName" "h94981fe3g720cg4a5dga655g1191bf400001;2"
-data "Description" "hf318c6dcg5444g4c2ag86b7g55b8ad90000a;2"
-data "Icon" "Action_Bladesong_Dismiss"
-data "Properties" "Highlighted"
-
 new entry "SteelforgedArcana"
 type "PassiveData"
 data "DisplayName" "h94981fe3g720cg4a5dga655g1191bf400002;2"
 data "Description" "hf318c6dcg5444g4c2ag86b7g55b8ad90000b;2"
 data "Icon" "Action_Bladesong_Dismiss"
-data "Properties" "Highlighted"
+data "Properties" "Highlighted;ForceShowInCC"
 data "Boosts" "UnlockSpell(Target_SiphonArcana)"
+
+new entry "TheApproachingStorm"
+type "PassiveData"
+data "DisplayName" "h94981fe3g720cg4a5dga655g1191bf400001;2"
+data "Description" "hf318c6dcg5444g4c2ag86b7g55b8ad90000a;2"
+data "Icon" "Action_Bladesong_Dismiss"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "UnlockSpell(Shout_SteelWindStorm);UnlockSpell(Target_SteelWindStrike,AddChildren,e9127b70-22b7-42a1-b172-d02f828f260a);UnlockSpell(Projectile_SteelWindBeam)"
 
 new entry "ExtraAttack_Arcblade"
 type "PassiveData"

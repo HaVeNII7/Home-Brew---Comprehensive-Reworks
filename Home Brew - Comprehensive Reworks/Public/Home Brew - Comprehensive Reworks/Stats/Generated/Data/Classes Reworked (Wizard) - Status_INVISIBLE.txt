@@ -30,7 +30,7 @@ data "Boosts" "IgnoreLeaveAttackRange; Invisibility(); Advantage(AttackRoll); De
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;UnavailableInActiveRoll;ExcludeFromPortraitRendering"
 data "RemoveEvents" "OnSpellCast;OnDamage;OnEntityPickUp;OnEntityDrop;OnEntityDrag;OnLockpickingFinished;OnDisarmingFinished"
 data "RemoveConditions" "(IsStatusEvent(StatusEvent.OnSpellCast) and not HasSpellFlag(SpellFlags.Invisible)) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0)) or (not IsStatusEvent(StatusEvent.OnSpellCast) and not IsStatusEvent(StatusEvent.OnDamage))"
-data "StatusGroups" "SG_Invisible;SG_RemoveOnRespec"
+data "StatusGroups" "SG_RemoveOnRespec;SG_Invisible"
 data "StatusEffect" "d26436d4-d019-4dfc-b2f1-da0ac195575f"
 data "OnRemoveFunctors" "ApplyStatus(INTANGIBLEBREAK,100,1)"
 data "TickType" "EndTurn"

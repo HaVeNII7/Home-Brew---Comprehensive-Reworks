@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="CharacterCreationSkinColors">
+    <node id="root">
+      <children>
+        <node id="CharacterCreationSkinColor"> Amethyst
+                    <attribute id="DisplayName" type="TranslatedString" handle="h88a4da10g50e7g43a2g29bfga9fbbeac4611" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="32322554-8cc9-4c5f-a632-92a0b73c4cce" />
+                    <attribute id="Name" type="FixedString" value="Amethyst 1" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FFCE80F0" />
+                    <attribute id="UUID" type="guid" value="b73274b3-f121-4399-904a-b33dd7c14e3f" />
+                </node>
+        <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hd35cf7f3gc81cg42a9g441fgeb887bf7fedc" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="c74f8a9b-6d54-4d61-9710-79addae420c2" />
+                    <attribute id="Name" type="FixedString" value="Amethyst 2" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FFCE80F0" />
+                    <attribute id="UUID" type="guid" value="5ddab420-ddc4-4b04-ad45-545a9a3c06d5" />
+                </node>
+        <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb2d48663g80b3g4ddfg2ce9gb89603ca5dec" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="1c8a6db2-30d9-495a-9dee-9d5dfe5a6c4e" />
+                    <attribute id="Name" type="FixedString" value="Amethyst 3" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FFCE80F0" />
+                    <attribute id="UUID" type="guid" value="99441819-3674-4075-aab1-e86ef30e6670" />
+                </node>
+        <node id="CharacterCreationSkinColor"> Crystal
+                    <attribute id="DisplayName" type="TranslatedString" handle="h076672a9g4d68g418fgcda8gc2566ab101f8" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="19d38b33-e6c4-4c16-b0d6-9bb3b811be1d" />
+                    <attribute id="Name" type="FixedString" value="Crystal 1" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FF9491CA" />
+                    <attribute id="UUID" type="guid" value="d92e1004-c83b-4a26-8a80-23b2239c6bf6" />
+                </node>
+        <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h134df468g170fg4e1dgd9e3g88e5766abb58" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="1af87f47-ac2a-44c3-91f2-4e5f44cb35fd" />
+                    <attribute id="Name" type="FixedString" value="Crystal 2" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FF9491CA" />
+                    <attribute id="UUID" type="guid" value="d511153c-3f07-4d30-ac1a-3cdd033121f6" />
+                </node>
+        <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h07a6b318g1f00g4a39gadbbg0ce2ba006e1c" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="ac336540-7607-4f2f-a4db-345108b89062" />
+                    <attribute id="Name" type="FixedString" value="Crystal 3" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FF9491CA" />
+                    <attribute id="UUID" type="guid" value="eafd11c6-e784-420b-993b-104f00208f8f" />
+                </node>
+        <node id="CharacterCreationSkinColor"> Emerald
+                    <attribute id="DisplayName" type="TranslatedString" handle="h34aa9072g080bg4cdag2e3fgda17ebb7f4b1" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="f3ae22e8-c27d-40cd-a5b8-e61a819281ca" />
+                    <attribute id="Name" type="FixedString" value="Emerald 1" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FF0D8719" />
+                    <attribute id="UUID" type="guid" value="c68c7ebc-2cec-4fbe-af15-7ca9ee29d06b" />
+                </node>
+        <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h005e7d40g4e3ag4456g4ac3gf2873be343c6" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="a5b50407-38f8-4709-b892-74e0542bbeef" />
+                    <attribute id="Name" type="FixedString" value="Emerald 2" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FF0D8719" />
+                    <attribute id="UUID" type="guid" value="138b9133-f3ab-4813-a9d0-63c27e72a3e8" />
+                </node>
+        <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h12c7a0d4gb614g47abgc3feg4d732884f639" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="03e193dc-f6ed-4add-a91e-408a9c691603" />
+                    <attribute id="Name" type="FixedString" value="Emerald 3" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FF0D8719" />
+                    <attribute id="UUID" type="guid" value="ed7d0437-7ff3-494e-84ab-37ce01adc1e9" />
+                </node>
+        <node id="CharacterCreationSkinColor"> Sapphire
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb9ce3a47g4bf4g458dg3d6cg415301a5b0e4" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="b1d333cc-ec72-472d-abc1-fed14fe1d160" />
+                    <attribute id="Name" type="FixedString" value="Sapphire 1" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FF2115FF" />
+                    <attribute id="UUID" type="guid" value="245430b0-7fcc-4bdb-9ff2-970121e4fc12" />
+                </node>
+        <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb8abe1d9ga416g4590g06eagf17c0d3a0ae7" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="ace10f2e-469b-407d-90bd-2e6e2e221eec" />
+                    <attribute id="Name" type="FixedString" value="Sapphire 2" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FF2115FF" />
+                    <attribute id="UUID" type="guid" value="275ea073-efc1-49dc-b104-9cf53eb4f40d" />
+                </node>
+        <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hae8e3150g3a43g4d5agcb11gbff0d35c6e86" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="d4032455-9837-464a-a502-6dc2d79f49db" />
+                    <attribute id="Name" type="FixedString" value="Sapphire 3" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FF2115FF" />
+                    <attribute id="UUID" type="guid" value="eaf67cbc-61ce-43de-82d5-35641a9d1199" />
+                </node>
+        <node id="CharacterCreationSkinColor"> Topaz
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb667d2b5g8b53g4e12g8487g541cc38bb075" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="8a6d5277-e1cb-4437-b6a9-0f0cc46057c7" />
+                    <attribute id="Name" type="FixedString" value="Topaz 1" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FFA29B36" />
+                    <attribute id="UUID" type="guid" value="99e33566-e177-43c8-bf54-13fda5c6d6f5" />
+                </node>
+        <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0d030893gac0cg49ffgfaa4gda036359941b" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="8f5c0c0c-8dc1-443c-9104-7cdd52d5c26d" />
+                    <attribute id="Name" type="FixedString" value="Topaz 2" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FFA29B36" />
+                    <attribute id="UUID" type="guid" value="d00ea96f-ccdd-4596-88c8-02ef2d0238f7" />
+                </node>
+        <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h89706cb9gcf30g4d3cg783fg96bb2d5b6606" version="1" />
+                    <attribute id="MaterialPresetUUID" type="guid" value="9114b432-6970-4391-a0e9-95d10e608a6e" />
+                    <attribute id="Name" type="FixedString" value="Topaz 3" />
+                    <attribute id="SkinType" type="FixedString" value="Dragonborn" />
+                    <attribute id="UIColor" type="LSString" value="#FFA29B36" />
+                    <attribute id="UUID" type="guid" value="de25a61b-8582-4568-bad8-0b1b428e666e" />
+                </node>
+      </children>
+    </node>
+  </region>
+</save>

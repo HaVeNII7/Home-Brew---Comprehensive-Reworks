@@ -127,6 +127,7 @@ data "Description" "h69dfe84fgc66bg4c76g8f8ege05ab4b6c07e;1"
 data "Icon" "PassiveFeature_WarCaster_OpportunitySpell"
 data "StackId" "MAG_CQC_RANGED_SPELL"
 data "Boosts" "UnlockSpellVariant(RangedSpellAttackCheck(), ModifySpellRoll('AttackType.RangedSpellAttack','AttackType.MeleeSpellAttack'), ModifyTargetRadius(Override, 3),ModifyIconGlow(), ModifyTooltipDescription())"
+data "StatusPropertyFlags" "IgnoreResting;ApplyToDead"
 
 new entry "WARCASTER"
 type "StatusData"

@@ -15,10 +15,10 @@ new entry "TAD_PsionicOverload"
 type "PassiveData"
 data "DisplayName" "h2d18417cgc993g4e52g914cgf1e205a824cb;1"
 data "Description" "h74504e19g746bg4867gb7d5g63a74cd99dd0;1"
-data "DescriptionParams" "DealDamage(1,Psychic)"
+data "DescriptionParams" "DealDamage(1d4,Psychic)"
 data "Icon" "TadpoleSuperPower_PsionicOverload"
 data "Properties" "Highlighted"
-data "Boosts" "CharacterWeaponDamage(1,Psychic)"
+data "Boosts" "CharacterWeaponDamage(1d4,Psychic);CharacterUnarmedDamage(1d4,Psychic)"
 
 <!--FAVOURABLE BEGINNINGS-->
 
@@ -28,12 +28,7 @@ data "DisplayName" "hb3c2d634g1eb9g4b82gbd88g599b2eec1f66;3"
 data "Description" "h93fe3509ge6dag4ff6gb7d8g45e80265433e;5"
 data "Icon" "TadpoleSuperPower_PeaceBreaker"
 data "Properties" "Highlighted"
-data "BoostContext" "OnCreate;OnEquip"
-data "BoostConditions" "not Tagged('TADPOLE_POWERS_BLOCKED',context.Source)"
-data "Boosts" "IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(Attack,2);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Athletics);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Acrobatics);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,SleightOfHand);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Stealth);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Arcana);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,History);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Investigation);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Nature);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Religion);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,AnimalHandling);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Insight);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Medicine);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Perception);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Survival);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Deception);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Intimidation);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Performance);IF(not HasStatus('TAD_PEACE_BREAKER')):RollBonus(SkillCheck,2,Persuasion)"
-data "StatsFunctorContext" "OnAttack;OnAbilityCheck"
-data "Conditions" "not Tagged('TADPOLE_POWERS_BLOCKED',context.Source) and not HasStatus('TAD_PEACE_BREAKER') and (IsAttack() or not context.HasContextFlag(StatsFunctorContext.OnAttack))"
-data "StatsFunctors" "ApplyStatus(TAD_PEACE_BREAKER,100,-1);ApplyStatus(SELF,PASSIVE_PEACE_BREAKER,100,1)"
+data "Boosts" "RollBonus(SavingThrow,2);RollBonus(Attack,2);RollBonus(SkillCheck,2);RollBonus(RawAbility,2)"
 
 <!--FORCE TUNNEL-->
 
@@ -88,7 +83,7 @@ data "Icon" "TadpoleSuperPower_AbilityDrain"
 data "Properties" "Highlighted"
 data "StatsFunctorContext" "OnAttack"
 data "Conditions" "IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not Tagged('TADPOLE_POWERS_BLOCKED',context.Source) and Character() and not Ally()"
-data "StatsFunctors" "IF(AttackRollAbility(Ability.Strength) and AbilityGreaterThan('Strength',1)):ApplyStatus(TAD_DRAIN_ABILITY_STRENGTH,100,1);IF(AttackRollAbility(Ability.Dexterity) and AbilityGreaterThan('Dexterity',1)):ApplyStatus(TAD_DRAIN_ABILITY_DEXTERITY,100,1);IF(AttackRollAbility(Ability.Intelligence) and AbilityGreaterThan('Intelligence',1)):ApplyStatus(TAD_DRAIN_ABILITY_INTELLIGENCE,100,1);IF(AttackRollAbility(Ability.Wisdom) and AbilityGreaterThan('Wisdom',1)):ApplyStatus(TAD_DRAIN_ABILITY_WISDOM,100,1);IF(AttackRollAbility(Ability.Charisma) and AbilityGreaterThan('Charisma',1)):ApplyStatus(TAD_DRAIN_ABILITY_CHARISMA,100,1)"
+data "StatsFunctors" "IF(AttackRollAbility(Ability.Strength)):ApplyStatus(TAD_DRAIN_ABILITY_STRENGTH,100,1);IF(AttackRollAbility(Ability.Dexterity)):ApplyStatus(TAD_DRAIN_ABILITY_DEXTERITY,100,1);IF(AttackRollAbility(Ability.Intelligence)):ApplyStatus(TAD_DRAIN_ABILITY_INTELLIGENCE,100,1);IF(AttackRollAbility(Ability.Wisdom)):ApplyStatus(TAD_DRAIN_ABILITY_WISDOM,100,1);IF(AttackRollAbility(Ability.Charisma)):ApplyStatus(TAD_DRAIN_ABILITY_CHARISMA,100,1)"
 
 <!--LUCK OF THE FAR REALMS-->
 
@@ -196,12 +191,10 @@ new entry "TAD_BeastFlayer"
 type "PassiveData"
 data "DisplayName" "h97567157gea8eg43f4g942cgd9adsfasdf11;2"
 data "Description" "h443d376dg292ag4338g9fb4g838sdf654845;7"
-data "DescriptionParams" "DealDamage(1d12,Psychic)"
+data "DescriptionParams" "Distance(18)"
 data "Icon" "TadpoleSuperPower_DisplacerShape"
 data "Properties" "Highlighted"
-data "StatsFunctorContext" "OnDamage"
-data "Conditions" "not IntelligenceGreaterThan(9, context.Target) and not Self()"
-data "StatsFunctors" "DealDamage(1d12,Psychic,Magical)"
+data "Boosts" "AC(2);Initiative(2);DarkvisionRangeMin(18);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7)"
 
 <!--IMPERIL-->
 
@@ -209,7 +202,7 @@ new entry "TAD_Imperil"
 type "PassiveData"
 data "DisplayName" "h7bc43a8cg9c8eg4c17gbb2dgc7c7b613a5a3;1"
 data "Description" "hef8f4025g2e42g4a1dg8201g9242d6757a5e;1"
-data "DescriptionParams" "2"
+data "DescriptionParams" "4"
 data "Icon" "TadpoleSuperPower_Imperil"
 data "Properties" "IsHidden"
 data "Boosts" "UnlockSpell(Target_TAD_Imperil)"
@@ -223,7 +216,7 @@ data "Description" "he9f0786cg87b8g45b8ga850g86f1997713ee;2"
 data "Icon" "TadpoleSuperPower_IllithidExpertise"
 data "Properties" "Highlighted"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "IsKillingBlow() and not IntelligenceGreaterThan(9, context.Target)"
+data "Conditions" "IsKillingBlow()"
 data "StatsFunctors" "RegainHitPoints(SELF,1d12)"
 
 <!--PSIONIC DOMINANCE-->
@@ -251,8 +244,8 @@ data "Boosts" "UnlockSpell(Target_TAD_BlackHole)"
 
 new entry "TAD_Levitate"
 type "PassiveData"
-data "DisplayName" "hbcb4f19aga8cdg46b1g881bgd19d7bc78184;1"
-data "Description" "h5fbcf9edg1e2ag40eegbf04geb7e186d9c20;1"
+data "DisplayName" "hbcb4f19aga8cdg46b1g881bgd19d7bsd5f64;1"
+data "Description" "h5fbcf9edg1e2ag40eegbf04geb7e18sdfed8;1"
 data "Icon" "TadpoleSuperPower_Levitate"
 data "Properties" "IsHidden"
 data "Boosts" "UnlockSpell(Projectile_TAD_Levitate)"
@@ -304,7 +297,7 @@ data "StatsFunctors" "ApplyStatus(SELF,TAD_FREECAST,100,-1)"
 new entry "Freecast_Remove"
 type "PassiveData"
 data "Properties" "IsHidden"
-data "StatsFunctorContext" "OnLongRest"
+data "StatsFunctorContext" "OnShortRest"
 data "StatsFunctors" "RemoveStatus(SELF,TAD_FREECAST)"
 
 <!--ABSORB INTELLECT-->

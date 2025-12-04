@@ -94,9 +94,9 @@
 	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc05" version="1">When healing a creature, you also apply &lt;LSTag Type="Status" Tooltip="SHIELD_OF_FAITH"&gt;Shield of Faith&lt;/LSTag&gt; for three turns.</content>
 
 	<content contentuid="ha24a3a6cg38bbg4ef4g8aa3g2a84d98282e3" version="2">Dampen Elements</content>
-	<content contentuid="hd9f3cddag9dc3g44dfg965ag7134230f0a9e" version="2">When you or an ally recieves elemental damage, you can use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; to halve the damage of the attack.</content>
+	<content contentuid="hd9f3cddag9dc3g44dfg965ag7134230f0a9e" version="2">When you or an ally is about to receive elemental damage, you can use your &lt;LSTag Type="ActionResource" Tooltip="ChannelDivinity"&gt;Channel Divinity&lt;/LSTag&gt; to halve the damage of the attack.</content>
 	<content contentuid="h491d863ag5353g4536ga752gbbe43c580690" version="1">Dampen Elements</content>
-	<content contentuid="h2bcdafc9g89bfg411ega025gc4c99b623e55" version="1">When you or an ally recieves elemental damage, halve the attack's damage.</content>
+	<content contentuid="h2bcdafc9g89bfg411ega025gc4c99b623e55" version="1">When you or an ally is about to receive elemental damage, halve the attack's damage.</content>
 
 	<content contentuid="h67fe33fdg46c1g415bg95c6g20291e2c1ea8" version="1">Sanctity</content>
 	<content contentuid="hb803dc22g3235g468fgb4c5g4746de773573" version="1">When healing a creature, you also apply &lt;LSTag Type="Status" Tooltip="RESISTANCE"&gt;Resistance&lt;/LSTag&gt; for three turns.</content>
@@ -161,9 +161,9 @@
 	<content contentuid="h8ec76766gf369g4aa0g87d3gc9c74e7448c6" version="3">Grant an ally within [1] a +[2] bonus to their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h994500d0g1703g421bg8028g0f3a3106a454" version="2">Divine Faith</content>
-	<content contentuid="hf729263eg37dcg43fbg923cg24cc642987aa" version="2">After using one of your Miracles, gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on damage rolls for the rest of your turn.</content>
+	<content contentuid="hf729263eg37dcg43fbg923cg24cc642987aa" version="2">After using one of your Miracles, gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage rolls for the rest of your turn.</content>
 	<content contentuid="h994500d0g1703g421bg8028g0f3a310zzffd" version="2">Divine Faith</content>
-	<content contentuid="hf729263eg37dcg43fbg923cg24cc642zefer" version="2">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on damage rolls for the rest of their turn.</content>
+	<content contentuid="hf729263eg37dcg43fbg923cg24cc642ss699" version="2">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage for the rest of their turn.</content>
 
 	<content contentuid="h4c1f2f2dg8a14g4391gaf11g78e249692115" version="2">War Priest</content>
 	<content contentuid="h5846ba7cg19b5g475cg88dbg2ea9d3793ea6" version="3">When you make an unarmed or weapon based attack against a target, you can make an additional attack as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
@@ -177,9 +177,9 @@
 	<content contentuid="h5846ba7cg19b5g475cg88dbg2ea9d37ss6f9" version="3">Make an additional &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; or &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h994500d0g1703g421bg8028g0f3a3109a888" version="2">Deific</content>
-	<content contentuid="hf729263eg37dcg43fbg923cg24cc64212aa5" version="2">After using one of your Miracles, gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for the rest of your turn.</content>
-	<content contentuid="h994500d0g1703g421bg8028g0f3a31022d45" version="2">Divine Faith</content>
-	<content contentuid="hf729263eg37dcg43fbg923cg24cc642ss699" version="2">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage for the rest of their turn.</content>
+	<content contentuid="hf729263eg37dcg43fbg923cg24cc64212aa5" version="2">After using one of your Miracles, your next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
+	<content contentuid="h994500d0g1703g421bg8028g0f3a31adfsd8" version="2">Divine Faith</content>
+	<content contentuid="hf729263eg37dcg43fbg923cg24cc64668d59" version="2">Affected creature's next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h994500d0g1703g421bg8028g0f3a3101a644" version="2">War God's Vessel</content>
 	<content contentuid="hf729263eg37dcg43fbg923cg24cc642ieood" version="2">When you utilize your War God's Blessing in order to succeed an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, the bonus to your Attack Rolls remains active for three turns.</content>
@@ -214,10 +214,14 @@
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00006" version="1">Ethereal Intuition</content>
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000f" version="1">Permanently gain the affects of &lt;LSTag Type="Status" Tooltip="GUIDANCE"&gt;Guidance&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="RESISTANCE"&gt;Resistance&lt;/LSTag&gt;.</content>
 
-	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00007" version="1">Flames of Repentance</content>
-	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000g" version="1">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally within [1], you may use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to retaliate with &lt;LSTag Type="Spell" Tooltip="Target_SacredFlame"&gt;Sacred Flame&lt;/LSTag&gt;.</content>
-	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e000z7" version="1">Flames of Repentance</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00007" version="1">Fell Repentance</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000g" version="1">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally within [1], you may use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to retaliate with either &lt;LSTag Type="Spell" Tooltip="Target_ChillTouch"&gt;Bone Chill&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_SacredFlame"&gt;Sacred Flame&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_SparkSurge"&gt;Spark Surge&lt;/LSTag&gt;.</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00xz7" version="1">Fell Repentance: Bone Chill</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00xzg" version="1">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally within [1], retaliate with &lt;LSTag Type="Spell" Tooltip="Target_ChillTouch"&gt;Bone Chill&lt;/LSTag&gt;.</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e000z7" version="1">Fell Repentance: Sacred Flame</content>
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e000zg" version="1">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally within [1], retaliate with &lt;LSTag Type="Spell" Tooltip="Target_SacredFlame"&gt;Sacred Flame&lt;/LSTag&gt;.</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0yxz7" version="1">Fell Repentance: Spark Surge</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0yxzg" version="1">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an ally within [1], retaliate with &lt;LSTag Type="Spell" Tooltip="Target_SparkSurge"&gt;Spark Surge&lt;/LSTag&gt;.</content>
 
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00014" version="1">Guided Strikes</content>
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000n" version="1">Upon healing a creature with a Spell, you gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on your next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
@@ -229,8 +233,8 @@
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e000z8" version="1">Holy Fortitude</content>
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e000zh" version="1">Affected creature will regain the maximum amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; possible when healed.</content>
 
-	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00009" version="1">Holy Retribution</content>
-	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000i" version="1">When an enemy damages you with a melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, deal Radiant damage to them equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00009" version="1">Immaculate Retribution</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000i" version="1">When an enemy damages you with a melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, deal damage to them equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt; multiplied by two. The type of damage dealt changes depending on your choice of subclass.</content>
 
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00010" version="1">Immaculate Ward</content>
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000j" version="1">When an enemy makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, you may use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and one of your &lt;LSTag Type="ActionResource" Tooltip="ChannelDivinity"&gt;Channel Divinity&lt;/LSTag&gt; charges in order to receive &lt;LSTag Type="Status" Tooltip="BLADE_WARD_IMMACULATE"&gt;Immaculate Blade Ward&lt;/LSTag&gt; for one turn.</content>
@@ -243,7 +247,7 @@
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000k" version="1">Upon being &lt;LSTag Tooltip="Downed"&gt;Downed&lt;/LSTag&gt; or killed, erupt as a raging inferno, uncontrollably scorching everything around you.</content>
 
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00012" version="1">Paradisiacal Gift</content>
-	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000l" version="1">Once per turn, upon rolling a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; against an enemy, immediately recover one of your &lt;LSTag Type="ActionResource" Tooltip="ChannelDivinity"&gt;Channel Divinity&lt;/LSTag&gt; charges.</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000l" version="1">Once per turn, upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; against an enemy, immediately recover one of your &lt;LSTag Type="ActionResource" Tooltip="ChannelDivinity"&gt;Channel Divinity&lt;/LSTag&gt; charges.</content>
 
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00015" version="1">Sacral Touch</content>
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000o" version="1">Upon healing a creature, potentially experience an instance of &lt;LSTag Type="ActionResource" Tooltip="DivineIntervention"&gt;Divine Intervention&lt;/LSTag&gt;. This may only occur once per turn.</content>
@@ -263,6 +267,6 @@
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00020" version="1">Venerational Strikes</content>
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e0000t" version="1">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, receive &lt;LSTag Type="Status" Tooltip="VENERATION"&gt;Veneration&lt;/LSTag&gt; for three turns.</content>
 	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e00z20" version="1">Veneration</content>
-	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e000zt" version="1">Affected creature's weapon deals Radiant damage equal to their &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="6593b492919e49e9b6dffa5d2a42cb6e000zt" version="1">Affected creature's weapon deals damage equal to their &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;. The type of damage dealt changes depending on their choice of subclass.</content>
 	
 </contentList>

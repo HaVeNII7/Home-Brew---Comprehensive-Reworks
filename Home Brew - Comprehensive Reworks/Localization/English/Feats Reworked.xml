@@ -295,4 +295,69 @@
 	<content contentuid="h20a7843cg4e70g46d8g84e4g2b11a0e22585" version="2">War Caster</content>
 	<content contentuid="h1fa80c6ag5f28g46d2gaaafg57677cc22585" version="10">Affected weapon has become magical, utilizing its owners &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.&lt;br&gt;&lt;br&gt;Once per turn, upon killing another creature or landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your Bound Weapon, you restore a level one &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
 
+<!--YOKEBREAKER-->
+
+	<content contentuid="47709b48-6124-44dc-8792-5sd6f545df12" version="1">Gain the unlocks associated with levels 1 through 3 of this subclass. Class passives are not included.</content>
+	<content contentuid="hd8f1acdbg0813g4950gab51g4e2ec13d9c0b" version="1">One level in base class</content>
+
+	<content contentuid="47709b48-6124-44dc-8792-1ba94cb81915" version="1">Yokebreaker: Beastheart </content>
+	<content contentuid="4a3405a5-4735-47b1-ba4f-4b847fe16f52" version="1">Yokebreaker: Berserker </content>
+	<content contentuid="6db46327-0802-4cdd-9936-6277cba143d7" version="1">Yokebreaker: Giant's Blood </content>
+	<content contentuid="dec3cc55-896b-4bde-9f1a-7981f452ce9b" version="1">Yokebreaker: Wild Soul </content>
+	
+	<content contentuid="5f53f9c9-b42a-4e56-9fba-d45cba561f06" version="1">Yokebreaker: College of Captivation </content>
+	<content contentuid="fde3ac3a-eedd-4b43-8f27-e60d0860e923" version="1">Yokebreaker: College of Lore </content>
+	<content contentuid="3703a8f9-0db1-44ab-8766-4c5027e0a3ef" version="1">Yokebreaker: College of Steel </content>
+	<content contentuid="3ce50dbe-92b5-43e5-8d90-1102c4056cf9" version="1">Yokebreaker: College of Valour </content>
+	
+	<content contentuid="09829dfe-f2df-4dec-aa42-4f5eef04a9d4" version="1">Yokebreaker: Death Domain </content>
+	<content contentuid="462a81da-b40b-47a3-88da-303b2b548119" version="1">Yokebreaker: Life Domain </content>
+	<content contentuid="cb163eef-6fd9-49c3-95ea-6cc3582f1423" version="1">Yokebreaker: Tempest Domain </content>
+	<content contentuid="a479076a-adcc-4ee3-b608-6ad09ade3061" version="1">Yokebreaker: War Domain </content>
+	
+	<content contentuid="3edf898e-4341-4681-8ba1-a29540337ebb" version="1">Yokebreaker: Circle of the Land </content>
+	<content contentuid="9da16729-7582-4650-8eb2-d88abf644be2" version="1">Yokebreaker: Circle of the Moon </content>
+	<content contentuid="04be25f8-996d-4928-85c1-02dfa3ff73d9" version="1">Yokebreaker: Circle of the Spores </content>
+	<content contentuid="c5e31ade-84b3-4b74-856b-af58833764fa" version="1">Yokebreaker: Circle of the Cosmos </content>
+	
+	<content contentuid="f1fb71a7-7f9a-4afd-8fcc-71dda4bd71d1" version="1">Yokebreaker: Arcane Archer </content>
+	<content contentuid="d26f0798-0c95-4208-b5b2-ec4c595cd156" version="1">Yokebreaker: Champion </content>
+	<content contentuid="f64893a4-9722-48d5-aa76-90bd1c2ad3ab" version="1">Yokebreaker: Eldritch Knight </content>
+	<content contentuid="60a729fb-da09-413d-b69b-4cce00cf9c08" version="1">Yokebreaker: Frontier Knight </content>
+	
+	<content contentuid="9280d9ee-964f-4d64-bed7-4f12394c4546" version="1">Yokebreaker: Way of the Arcane </content>
+	<content contentuid="a8334ef2-a1f9-48be-95aa-603dcf047827" version="1">Yokebreaker: Way of the Drunken Fist </content>
+	<content contentuid="5af5fd0f-ef26-42ce-aeed-3c1c25507529" version="1">Yokebreaker: Way of the Open Hand </content>
+	<content contentuid="4498ba54-55e6-452d-a2db-b3d34420699f" version="1">Yokebreaker: Way of the Shadow Arts </content>
+	
+	<content contentuid="b63eed90-3cc9-4f2c-ac67-de5383244749" version="1">Yokebreaker: Oath of the Ancients </content>
+	<content contentuid="2c6ccaad-4531-4810-ac93-1f785aca9e6a" version="1">Yokebreaker: Oath of the Crown </content>
+	<content contentuid="f0a857c0-fd0d-422f-b11a-9a66b897e3db" version="1">Yokebreaker: Oath of Devotion </content>
+	<content contentuid="c09b13fa-d82c-4b47-ad5a-00a8d05a8fd6" version="1">Yokebreaker: Oath of Vengeance </content>
+	
+	<content contentuid="e63cefa5-efd4-40d4-8dad-2430d3ba04ed" version="1">Yokebreaker: Beastmaster </content>
+	<content contentuid="b39c06f9-6b73-4115-99ea-67307a8def8b" version="1">Yokebreaker: Gloomstalker </content>
+	<content contentuid="06fa774e-2936-4727-b36f-c170d4ca897f" version="1">Yokebreaker: Hunter </content>
+	<content contentuid="1b0b93e3-5a59-435e-a438-f33c487c85a8" version="1">Yokebreaker: Swarmkeeper </content>
+	
+	<content contentuid="0bfdc937-3a62-449d-8b3f-29812adf32a1" version="1">Yokebreaker: Arcane Trickster </content>
+	<content contentuid="b8521733-fde0-4025-bd90-9d73358819f9" version="1">Yokebreaker: Assassin </content>
+	<content contentuid="a05f596f-a10f-4c5e-b8f6-405ad37a146c" version="1">Yokebreaker: Swashbuckler </content>
+	<content contentuid="dca9c5f8-868a-4cd0-bdca-fc6443a9117f" version="1">Yokebreaker: Thief </content>
+	
+	<content contentuid="e4c32443-a174-4fd1-93d8-9f91148ffe30" version="1">Yokebreaker: Draconic Bloodline </content>
+	<content contentuid="bdb436c7-daf0-43d9-944f-4ddbf08befe0" version="1">Yokebreaker: Shade Walker </content>
+	<content contentuid="ba6dd9aa-f5c4-4d65-ba06-b415e0f424d4" version="1">Yokebreaker: Volcanist </content>
+	<content contentuid="9e28af48-f32a-49f4-923e-68f95eb653cd" version="1">Yokebreaker: Wild Magic </content>
+	
+	<content contentuid="ca949a0b-505e-4553-8ee3-0876f7c5c3e0" version="1">Yokebreaker: Pact of the Blade </content>
+	<content contentuid="05478564-5c49-4750-b86e-46f0fcd8fd03" version="1">Yokebreaker: Pact of the Chain </content>
+	<content contentuid="0df1b7d5-e045-4944-b1d7-54ab25513520" version="1">Yokebreaker: Pact of the Penumbra </content>
+	<content contentuid="47526eef-46d6-4976-948e-753f4790b427" version="1">Yokebreaker: Pact of the Tome </content>
+	
+	<content contentuid="f313b0ab-01ec-40a2-93ec-e053f9a23652" version="1">Yokebreaker: Arcblade </content>
+	<content contentuid="e32bb8fb-b52f-4e75-a2d5-f753713b32e6" version="1">Yokebreaker: Arcane Warden </content>
+	<content contentuid="ae030679-dbd0-414d-ab31-36c9e39ca5c7" version="1">Yokebreaker: Evoker </content>
+	<content contentuid="b982ecd5-a889-4fe9-b81f-b8c8a3580397" version="1">Yokebreaker: Necromancy </content>
+
 </contentList>

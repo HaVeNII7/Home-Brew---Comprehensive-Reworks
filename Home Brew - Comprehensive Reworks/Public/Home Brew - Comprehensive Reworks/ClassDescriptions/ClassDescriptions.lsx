@@ -857,12 +857,11 @@
 					</node>
         <node id="ClassDescription">
                     <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
-                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Sorcerer_StormSorcery" />
                     <attribute id="Description" type="TranslatedString" handle="h6cc6b6fega327g411ag9b33g098e0c8636b1" version="3" />
                     <attribute id="DisplayName" type="TranslatedString" handle="hd862715eg884cg4039ga1a6g59c36e569ddf" version="2" />
                     <attribute id="LearningStrategy" type="uint8" value="1" />
                     <attribute id="MustPrepareSpells" type="bool" value="false" />
-                    <attribute id="Name" type="FixedString" value="StormSorcery" />
+                    <attribute id="Name" type="FixedString" value="Volcanist" />
                     <attribute id="ParentGuid" type="guid" value="784001e2-c96d-4153-beb6-2adbef5abc92" />
                     <attribute id="PrimaryAbility" type="uint8" value="6" />
                     <attribute id="ProgressionTableUUID" type="guid" value="fac6ea25-a7f8-4793-b331-d884041e5adb" />
@@ -872,6 +871,7 @@
 					</node>
         <node id="ClassDescription">
                     <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Sorcerer_WildMagic" />
                     <attribute id="Description" type="TranslatedString" handle="hedfe3092ga840g4e10gb962g092566a89852" version="2" />
                     <attribute id="DisplayName" type="TranslatedString" handle="h04ded653gcf76g4ad4gaa36g523db04a9487" version="1" />
                     <attribute id="LearningStrategy" type="uint8" value="1" />

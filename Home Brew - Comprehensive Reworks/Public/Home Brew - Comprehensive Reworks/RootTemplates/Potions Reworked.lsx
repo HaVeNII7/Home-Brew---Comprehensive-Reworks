@@ -1334,7 +1334,6 @@
 					<attribute id="Name" type="LSString" value="CONS_Potion_Speed" />
 					<attribute id="OnUseDescription" type="TranslatedString" handle="h0450e8edgebafg45c4g8aa0ge91615a9f1f6" version="1" />
 					<attribute id="ParentTemplateId" type="FixedString" value="8e660fd9-489d-42ff-a762-e4392e826666" />
-					<attribute id="PermanentWarnings" type="FixedString" value="82254f30-45ab-41dd-af13-8da45a866381" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="4bdb268c-8859-e75f-7467-ec81cdfd0b22" />
 					<attribute id="Stats" type="FixedString" value="OBJ_Potion_Of_Speed" />
 					<attribute id="TechnicalDescription" type="TranslatedString" handle="h9c035a0dga908g41c0g8f99g2b7184a971a9" version="5" />
@@ -1412,7 +1411,7 @@
 											<attribute id="Conditions" type="LSString" value="" />
 											<attribute id="Consume" type="bool" value="True" />
 											<attribute id="StatsId" type="FixedString" value="HASTE" />
-											<attribute id="StatusDuration" type="int32" value="1" />
+											<attribute id="StatusDuration" type="int32" value="3" />
 										</node>
 									</children>
 								</node>

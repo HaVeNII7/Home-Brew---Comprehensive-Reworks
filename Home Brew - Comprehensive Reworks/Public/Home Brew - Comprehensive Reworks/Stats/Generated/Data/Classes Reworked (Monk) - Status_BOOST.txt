@@ -23,7 +23,7 @@ data "StackPriority" "10"
 data "TickType" "StartTurn"
 data "Boosts" "UnlockSpellVariant(SpellSlotCheck(),ModifyTooltipDescription(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,KiPoint,SpellPowerLevel,0));IF(HasStringInSpellRoll('UnarmedAttack')):RollBonus(Attack,SpellCastingAbilityModifier);IF(HasStringInSpellRoll('UnarmedAttack')):DamageBonus(SpellCastingAbilityModifier)"
 data "StatusGroups" "SG_RemoveOnRespec"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;IgnoreResting;ApplyToDead"
 data "OnApplyFunctors" "ApplyStatus(SMART_COOLDOWN_FIX,100,1)"
 data "OnRemoveFunctors" "ApplyStatus(SMART_COOLDOWN_FIX,100,1)"
 

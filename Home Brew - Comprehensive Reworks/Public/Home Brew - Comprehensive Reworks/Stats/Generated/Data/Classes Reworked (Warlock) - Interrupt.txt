@@ -47,7 +47,7 @@ data "InterruptFlags" "InterruptWhileInvisible"
 data "Container" "YesNoDecision"
 data "Conditions" "Self(context.Source,context.Observer) and not AnyEntityIsItem() and not IsCantrip() and IsSpell()"
 data "Properties" "ApplyStatus(OBSERVER_OBSERVER,BOUND_ELEMENTS,100,1)"
-data "InterruptDefaultValue" "Ask;Enabled"
+data "InterruptDefaultValue" "Enabled"
 data "Stack" "OnSelfCast"
 
 new entry "Interrupt_DarkRetaliation"

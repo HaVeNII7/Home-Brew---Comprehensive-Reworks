@@ -20,7 +20,7 @@
 
 	<content contentuid="hb0fbe645ge1dbg4106g99bege9cf3922358a" version="3">Conjure a beam of crackling energy.</content>
 	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c74699dld8" version="6">Eldritch Secrets</content>
-	<content contentuid="h53277800gd3a4g4984gbff6g0af59666q32d" version="1">You are privy to the indescribable horrors of the universe, and as such, are able to channel an inkling of their influence. You gain &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt;.</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af59666q32d" version="1">You are privy to the indescribable horrors of the universe, and as such, are able to channel an inkling of their influence. You gain &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c7ss600001" version="5">Serrated Hematic Invocation</content>
 	<content contentuid="h53277800gd3a4g4984gbff6g0af5dd20000a" version="1">Sacrifice 10% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; to an Eldritch abomination in order to restore a &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;While abiding by the Pact of the Blade, you wreathe your equipped weapon in &lt;LSTag Type="Status" Tooltip="HELLFIRE"&gt;Hellfire&lt;/LSTag&gt; for three turns.</content>
@@ -49,7 +49,7 @@
 	<content contentuid="h53277800gd3a4g4984gbff6g0affsdfdd2f5" version="1">When dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you deal an additional +2d12 damage. This can be toggled at any time.</content>
 
 	<content contentuid="h0da46890gdf01g4aafg8838g448555deb977" version="3">Eldritch Inertia</content>
-	<content contentuid="h02b7f6d6gab29g416dgbb6bge805faa146ca" version="3">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+	<content contentuid="h02b7f6d6gab29g416dgbb6bge805faa146ca" version="3">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against the Warlock who applied this condition. Each turn, the affected creature will attempt to make a Charisma based Saving Throw in order to remove the condition.</content>
 
 <!--PACT OF THE BLADE-->
 
@@ -195,7 +195,7 @@ Penumbra</content>
 	<content contentuid="h1d4478b3g7acdg450fg82d4g4854276893f2" version="1">You've pledged yourself to a maddened celestial to borrow their chaotic power. Bound to the concept itself, a penumbral blend of light and dark working as an affront in tandem.</content>
 
 	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad00001" version="1">Pact of Penumbra</content>
-	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760000a" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Shout_HematicInvocation"&gt;Hematic Invocation&lt;/LSTag&gt;. Each turn in combat, you sway between states of &lt;LSTag Type="Status" Tooltip="PENUMBRA_LIGHT"&gt;Penumbral Light&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="PENUMBRA_DARK"&gt;Penumbral Darkness&lt;/LSTag&gt;. Each state has unique benefits which improve as you level. Casting Hematic Invocation extends the duration of either state by one turn.</content>
+	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760000a" version="1">Each turn in combat, you sway between states of &lt;LSTag Type="Status" Tooltip="PENUMBRA_LIGHT"&gt;Penumbral Light&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="PENUMBRA_DARK"&gt;Penumbral Darkness&lt;/LSTag&gt;. Each state has unique benefits which improve as you level. Casting Hematic Invocation extends the duration of either state by one turn.</content>
 	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad06661" version="1">Penumbral Darkness</content>
 	<content contentuid="h1d4478b3g7acdg450fg82d4g48542760666a" version="1">Affected creature has snuffed out the light from their surroundings, and their &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast_Penumbral_Container"&gt;Penumbral Eldritch Blast&lt;/LSTag&gt; deals Necrotic damage. When dealing damage, they deal an additional [1].</content>
 	<content contentuid="hac0c681cg54a1g4a2egbeebgfa3a1ad09991" version="1">Penumbral Light</content>

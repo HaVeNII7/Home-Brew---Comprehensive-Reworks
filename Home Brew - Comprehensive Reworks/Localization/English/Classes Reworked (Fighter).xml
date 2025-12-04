@@ -23,6 +23,7 @@
 	<content contentuid="h85ff75b5g7ec5g445dga8ffgf95bbb8f5cbc" version="1">You are capable of infusing the weave into your attacks, providing your archery with a supernatural quality - and your foes something to fear.</content>
 	<content contentuid="h5c182d74g17e4g41d7g8f76g94f7b210feea" version="1">Arcane Quiver</content>
 	<content contentuid="hf1b82802gb809g4e09gbb73gcb06c780034d" version="2">Through your Arcane Quiver, you tap into the weave itself, enabling you to infuse your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; with various types of magic.</content>
+	<content contentuid="hf318c6dcg5444g4c2ag86b7g55b8ad9xyzab" version="1">This action utilizes a weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; while also functioning as a &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;. Upon missing your Attack Roll, this action will still deal half of the damage possible.</content>
 
 	<content contentuid="h4336aff2gfe2dg43degba75g03c6c427c4c3" version="2">Arcane Shot: Banishing Arrow</content>
 	<content contentuid="h75544dc1g1199g4beaga7fag75d08d6ec9dc" version="2">Use Abjuration magic to &lt;LSTag Type="Status" Tooltip="BANISHED"&gt;Banish&lt;/LSTag&gt; your target for the rest of their turn. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Banished.</content>
@@ -156,10 +157,13 @@
 	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000d" version="1">Gain an additional three &lt;LSTag Type="Passive" Tooltip="ElementalFletching"&gt;Elemental Fletchings&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00005" version="1">Greater Focus</content>
-	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000e" version="1">When &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, your basic shots now ricochet to two other creatures if within [1] of each other. Each ricochet deals half of the potential damage of the first hit.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000e" version="1">When &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, your basic shots now ricochet to two other creatures if within [1] of each other. The damage of each ricochet is no longer reduced.</content>
 
 	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00006" version="1">Eye of the Arcana</content>
 	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000f" version="1">Gain an additional three &lt;LSTag Type="Passive" Tooltip="ElementalFletching"&gt;Elemental Fletchings&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de5sd2f" version="1">Arcane Focus</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210df58" version="1">When &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, your basic shots now ricochet to all other creatures within [1] of your original target. Each ricochet now deals the full damage of the first hit.</content>
 
 <!--CHAMPION-->
 
@@ -167,25 +171,25 @@
 	<content contentuid="h6bdfd618g15b3g45c9g8a0egd02cecb1fe7a" version="1">You approach the complex problems posed by combat with one distinctly effective solution - you will take anything they can throw at you, and protect your allies while doing so.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a69a454" version="1">Challenger</content>
-	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a99a787" version="8">When damaging a target, you have a chance to &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; them. This can be toggled at any time.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a99a787" version="8">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of physical damage. However, enemies will have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when making &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against you. In addition, when damaging a target, you have a chance to &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; them. This can be toggled at any time.</content>
+	<content contentuid="h0f5c3539g18bbg4891ga824g827151a6a688" version="2">Challenger's Presence</content>
+	<content contentuid="h93857089gb140g4c33ga0a9g26fde3fdfd58" version="7">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of physical damage. However, enemies have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when making &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against them.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a6a9965" version="1">Champion's Windstorm</content>
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9a6454" version="8">Once per combat encounter, upon dropping to 50% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, you restore [1] Hit Points at the end of your turn. The amount of dice rolled is equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. In addition to this, you gain &lt;LSTag Type="Spell" Tooltip="Shout_SecondWind"&gt;Champion's Windstorm&lt;/LSTag&gt;.</content>
 	<content contentuid="h9a3262d9g1cf8g40d2gae47ga2703e761c79" version="1">Champion's Windstorm</content>
 	<content contentuid="h87c9d35ag7914g4efegb53cgf06381ff4b6e" version="8">Once per combat encounter, restore [1] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;. The amount of dice rolled is equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 
-	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f578454" version="1">Challenger's Call</content>
-	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f584544" version="3">Attempt to &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; a nearby enemy, as well as any additional enemies within [1] of them.</content>
-
 	<content contentuid="h86a825dagb852g4f68g847cg41fcba29a654" version="1">Challenger's Presence</content>
-	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2112a35" version="9">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of physical damage. However, enemies will have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when making &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against you. This effect can be toggled at any time.</content>
-	<content contentuid="h0f5c3539g18bbg4891ga824g827151a6a688" version="2">Challenger's Presence</content>
-	<content contentuid="h93857089gb140g4c33ga0a9g26fde3fdfd58" version="7">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of physical damage. However, enemies have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when making &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against them.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2112a35" version="9">Killing a &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenged&lt;/LSTag&gt; enemy refreshes the cooldown of both &lt;LSTag Type="Spell" Tooltip="Shout_SecondWind"&gt;Champion's Windstorm&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Shout_ImprovedActionSurge"&gt;Champion's Surge&lt;/LSTag&gt;.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a693ood" version="1">Champion's Surge</content>
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9020dd" version="8">Once per combat encounter, gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a693ffd" version="1">Champion's Surge</content>
-	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a902ffd" version="8">Gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a902ffd" version="8">Once per combat encounter, gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
+
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f578454" version="1">Challenger's Call</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f584544" version="3">Attempt to &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenge&lt;/LSTag&gt; a nearby enemy, as well as any additional enemies within [1] of them.</content>
 
 	<content contentuid="hf222df47g5060g4a4bg918egf8dbdc6a885f" version="2">Champion's Indomitability</content>
 	<content contentuid="hd0776e74g8eeeg435fgad4eg5b7fa3aa4654" version="2">Whenever you fail a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, you can roll again, using the new result instead. In addition to this, add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
@@ -570,7 +574,7 @@
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000s" version="3">Increase the reach of your basic &lt;LSTag Type="Spell" Tooltip="Target_MainHandAttack"&gt;Melee Attacks&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_UnarmedAttack"&gt;Unarmed Strikes&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_OffhandAttack"&gt;Dual-Wield Melee Attacks&lt;/LSTag&gt; by 50%.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500020" version="1">Tenacious Fighter</content>
-	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000t" version="1">Gain an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction Point&lt;/LSTag&gt;.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000t" version="1">Gain an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction Point&lt;/LSTag&gt;. When making an &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;, you roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
 <!--BATTLE MASTER TO FRONTIER KNIGHT-->
 

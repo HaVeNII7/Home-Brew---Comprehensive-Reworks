@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="CharacterCreationPassiveAppearances">
+    <node id="root">
+      <children>
+        <node id="CharacterCreationPassiveAppearance">
+          <attribute id="Passive" type="FixedString" value="DraconicAncestry_Amethyst" />
+          <attribute id="RaceUUID" type="guid" value="9c61a74a-20df-4119-89c5-d996956b6c66" />
+          <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237de62" />
+          <children>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="bb1b4a90-1f19-41ef-9a8b-5f7a15596d1a" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
+            </node>
+            
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781001" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781002" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781003" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781004" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193781005" />
+            </node>
+          </children>
+        </node>
+        <node id="CharacterCreationPassiveAppearance">
+          <attribute id="Passive" type="FixedString" value="DraconicAncestry_Crystal" />
+          <attribute id="RaceUUID" type="guid" value="9c61a74a-20df-4119-89c5-d996956b6c66" />
+          <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237de63" />
+          <children>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="bb1b4a90-1f19-41ef-9a8b-5f7a15596d1a" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
+            </node>
+            
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782001" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782002" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782003" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782004" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193782005" />
+            </node>
+          </children>
+        </node>
+        <node id="CharacterCreationPassiveAppearance">
+          <attribute id="Passive" type="FixedString" value="DraconicAncestry_Emerald" />
+          <attribute id="RaceUUID" type="guid" value="9c61a74a-20df-4119-89c5-d996956b6c66" />
+          <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237de64" />
+          <children>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="bb1b4a90-1f19-41ef-9a8b-5f7a15596d1a" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
+            </node>
+            
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783001" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783002" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783003" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783004" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193783005" />
+            </node>
+          </children>
+        </node>
+        <node id="CharacterCreationPassiveAppearance">
+          <attribute id="Passive" type="FixedString" value="DraconicAncestry_Sapphire" />
+          <attribute id="RaceUUID" type="guid" value="9c61a74a-20df-4119-89c5-d996956b6c66" />
+          <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237de65" />
+          <children>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="bb1b4a90-1f19-41ef-9a8b-5f7a15596d1a" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
+            </node>
+            
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784001" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784002" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784003" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784004" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193784005" />
+            </node>
+          </children>
+        </node>
+        <node id="CharacterCreationPassiveAppearance">
+          <attribute id="Passive" type="FixedString" value="DraconicAncestry_Topaz" />
+          <attribute id="RaceUUID" type="guid" value="9c61a74a-20df-4119-89c5-d996956b6c66" />
+          <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237de66" />
+          <children>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="bb1b4a90-1f19-41ef-9a8b-5f7a15596d1a" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
+            </node>
+            
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785001" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785002" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785003" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785004" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="58a49f06-9f00-419d-a274-1d2193785005" />
+            </node>
+          </children>
+        </node>
+        <node id="CharacterCreationPassiveAppearance">
+          <attribute id="Passive" type="FixedString" value="DraconicAncestry_Amethyst" />
+          <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237ef62" />
+          <children>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="2ec072c2-f2b7-4b8e-b021-4c5edd146980" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="73c8603e-69d0-449e-a330-b152747b7f47" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="1b7d9530-1f64-4163-8961-b1814e08fab4" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="70ec4180-d127-461c-9c11-802dcea8af20" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
+            </node>
+            
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591101" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591102" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591103" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591104" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47591105" />
+            </node>
+          </children>
+        </node>
+        <node id="CharacterCreationPassiveAppearance">
+          <attribute id="Passive" type="FixedString" value="DraconicAncestry_Crystal" />
+          <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237ef63" />
+          <children>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="2ec072c2-f2b7-4b8e-b021-4c5edd146980" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="73c8603e-69d0-449e-a330-b152747b7f47" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="1b7d9530-1f64-4163-8961-b1814e08fab4" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="70ec4180-d127-461c-9c11-802dcea8af20" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
+            </node>
+            
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592101" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592102" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592103" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592104" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47592105" />
+            </node>
+          </children>
+        </node>
+        <node id="CharacterCreationPassiveAppearance">
+          <attribute id="Passive" type="FixedString" value="DraconicAncestry_Emerald" />
+          <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237ef64" />
+          <children>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="2ec072c2-f2b7-4b8e-b021-4c5edd146980" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="73c8603e-69d0-449e-a330-b152747b7f47" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="1b7d9530-1f64-4163-8961-b1814e08fab4" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="70ec4180-d127-461c-9c11-802dcea8af20" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
+            </node>
+            
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593101" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593102" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593103" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593104" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47593105" />
+            </node>
+          </children>
+        </node>
+        <node id="CharacterCreationPassiveAppearance">
+          <attribute id="Passive" type="FixedString" value="DraconicAncestry_Sapphire" />
+          <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237ef65" />
+          <children>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="2ec072c2-f2b7-4b8e-b021-4c5edd146980" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="73c8603e-69d0-449e-a330-b152747b7f47" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="1b7d9530-1f64-4163-8961-b1814e08fab4" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="70ec4180-d127-461c-9c11-802dcea8af20" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
+            </node>
+            
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594101" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594102" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594103" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594104" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47594105" />
+            </node>
+          </children>
+        </node>
+        <node id="CharacterCreationPassiveAppearance">
+          <attribute id="Passive" type="FixedString" value="DraconicAncestry_Topaz" />
+          <attribute id="UUID" type="guid" value="eac6afc1-703c-402e-a759-3def0237ef66" />
+          <children>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="2ec072c2-f2b7-4b8e-b021-4c5edd146980" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="73c8603e-69d0-449e-a330-b152747b7f47" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="1b7d9530-1f64-4163-8961-b1814e08fab4" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="70ec4180-d127-461c-9c11-802dcea8af20" />
+            </node>
+            <node id="AppearanceMaterialUUIDs">
+              <attribute id="Object" type="guid" value="f03b33ae-5d47-4cb5-80bc-ea06a3c55c96" />
+            </node>
+            
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595101" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595102" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595103" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595104" />
+            </node>
+            <node id="ColorMaterialUUIDs">
+              <attribute id="Object" type="guid" value="0ee7a439-34bf-4e11-b98f-48fe47595105" />
+            </node>
+          </children>
+        </node>
+      </children>
+    </node>
+  </region>
+</save>

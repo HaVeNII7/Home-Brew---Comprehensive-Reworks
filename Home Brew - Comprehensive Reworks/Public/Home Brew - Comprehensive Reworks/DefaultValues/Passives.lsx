@@ -11,10 +11,16 @@
                     <attribute id="UUID" type="guid" value="b7df2015-a82a-487c-8ce5-c083ecd16d9f"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="PushingAttack;Proficiency_Shields"/>"/>
+                    <attribute id="Add" type="LSString" value="PushingAttack"/>"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
                     <attribute id="UUID" type="guid" value="5c753535-8d9c-4d72-b41a-216ca34231a1"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="ElementalFletching_Cold;ElementalFletching_Fire;ElementalFletching_Lightning"/>"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="537d34a9-c60d-4f1b-be41-312ab5d8c792"/>
+                    <attribute id="UUID" type="guid" value="5c753535-8d9c-4d72-b41a-5d6f8d5f4d5f"/>
 					</node>
                 <node id="DefaultValue">
                     <attribute id="Add" type="LSString" value="Frontier_DisarmingStrike"/>"/>
@@ -23,7 +29,7 @@
                     <attribute id="UUID" type="guid" value="2652b321-3466-42b4-b522-e73b449c51ba"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Smite_Thunderous;Proficiency_Mauls"/>
+                    <attribute id="Add" type="LSString" value="Smite_Thunderous"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821"/>
                     <attribute id="UUID" type="guid" value="b67b5fb0-e72c-40f3-a03d-82eea014c200"/>
@@ -41,7 +47,7 @@
                     <attribute id="UUID" type="guid" value="fedfb315-6c0a-4be7-b137-cca33c35d601"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Metamagic_Distant;Proficiency_Glaives"/>
+                    <attribute id="Add" type="LSString" value="Metamagic_Distant"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
                     <attribute id="UUID" type="guid" value="98151b5d-3c0e-4763-9c91-11d7b37cc627"/>

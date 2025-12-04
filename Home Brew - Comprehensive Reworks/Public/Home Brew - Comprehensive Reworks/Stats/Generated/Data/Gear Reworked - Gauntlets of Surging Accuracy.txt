@@ -17,7 +17,7 @@ data "DisplayName" "ha764f535g604dg4cf0g8d2eg316fc2e86b71;1"
 data "Description" "h3eeaee9cge03bg4b30g93c3g1108397f1e99;1"
 data "DescriptionParams" "1d4"
 data "StatsFunctorContext" "OnCast"
-data "Conditions" "SpellId('Shout_ActionSurge') or SpellId('Shout_ImprovedActionSurge')"
+data "Conditions" "SpellId('CShout_ActionSurge') or SpellId('Shout_ImprovedActionSurge')"
 data "StatsFunctors" "ApplyStatus(SELF, MAG_FIGHTER_ACTION_SURGE_ACCURACY, 100, 1)"
 
 new entry "MAG_FIGHTER_ACTION_SURGE_ACCURACY"

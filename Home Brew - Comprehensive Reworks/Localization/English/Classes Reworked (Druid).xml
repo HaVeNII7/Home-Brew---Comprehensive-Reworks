@@ -80,7 +80,7 @@
 <!--CIRCLE OF THE MOON-->
 
 	<content contentuid="h2b3423cfg3562g4217g9873g725ds6d2e584" version="2">Moonbreak</content>
-	<content contentuid="h9496db0cgc952g4937g90b7g666sd895e854" version="2">While assuming the form of a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wild Shape&lt;/LSTag&gt;, you are able to swap to a different form as a free action. When swapping to another Wild Shape form in this manner, you retain the same percentage of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; of the form you had swapped from.</content>
+	<content contentuid="h9496db0cgc952g4937g90b7g666sd895e854" version="2">You gain access to all &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wild Shape&lt;/LSTag&gt; forms. While assuming the form of a Wild Shape, you are able to swap to any form as a free action. When swapping to another Wild Shape form in this manner, you retain the same percentage of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; of the form you had swapped from.</content>
 
 	<content contentuid="h2b3423cfg3562g4217g9873g725ds6d22584" version="2">Wild Infusion</content>
 	<content contentuid="h9496db0cgc952g4937g90b7g666sd8964875" version="2">You are able to utilize your &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; in order to infuse your melee attacks with additional elemental damage.</content>
@@ -109,6 +109,9 @@
 
 	<content contentuid="hb78b19e9gaad1g4af7g9b15g542ff2b23e87" version="1">Fungal Symbiosis Charge</content>
 	<content contentuid="h863ad928g3591g4108g96a9g739e0858934e" version="1">Point used to cast &lt;LSTag Type="Spell" Tooltip="Shout_SymbioticEntity"&gt;Symbiotic Entity&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h58347e3dg4eb2g4ed1g9537g4f361e21fd25" version="2">Spore Riddled</content>
+	<content contentuid="h4104b247g7085g45dbgba71g873458s5s8d5" version="4">Gain &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Shout_SymbioticEntity"&gt;Symbiotic Entity&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h82f6ed54g78a2g4a1fga040g44dba16c25ca" version="2">Halo of Spores</content>
 	<content contentuid="hdd2d1cbbgaafdg4946gafdfgcd1cb47eb060" version="4">Unleash a cloud of necrotic spores upon a target.</content>

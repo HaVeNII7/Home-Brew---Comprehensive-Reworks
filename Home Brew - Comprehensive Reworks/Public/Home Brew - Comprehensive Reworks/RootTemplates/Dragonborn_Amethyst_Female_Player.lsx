@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="323" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="e8859ebf-40d4-4eee-93ac-ecfc3097c96a" />
+					<attribute id="Name" type="LSString" value="Dragonborn_Amethyst_Female_Player" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="61943f98-adab-4bfd-91e1-9c20557edc73" />
+					<attribute id="Icon" type="FixedString" value="1a268ce1-8b64-9957-b677-5c095ee858bd-_(Icon_Dragonborn_Female)" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="68f81da9-4354-4578-b774-7a1f7729cb21" />
+					<attribute id="Race" type="guid" value="4fe25c67-8198-4349-309d-97bb023f2122" />
+					<children>
+						<node id="LocomotionParams" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

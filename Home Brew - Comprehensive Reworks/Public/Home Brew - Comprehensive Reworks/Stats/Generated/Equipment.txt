@@ -730,7 +730,7 @@ add equipment entry "ARM_Camp_Body"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes"
 
-new equipment "EQP_CC_Sorcerer_StormSorcery"
+new equipment "EQP_CC_Sorcerer_WildMagic"
 add initialweaponset "Melee"
 add equipmentgroup
 add equipment entry "WPN_Scimitar"

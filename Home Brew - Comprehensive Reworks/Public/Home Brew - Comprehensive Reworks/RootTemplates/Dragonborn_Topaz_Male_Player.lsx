@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="323" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="cf5c486b-4c81-4ca5-9ef4-50c13dc9bad7" />
+					<attribute id="Name" type="LSString" value="Dragonborn_Topaz_Male_Player" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="87930b5f-a8bf-4fbf-ba7a-b1d37bd7deb0" />
+					<attribute id="Icon" type="FixedString" value="af057dec-6c50-930d-ba8c-3833f91af504-_(Icon_Dragonborn_Male)" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="ed0e87c6-472c-49a8-81a2-3ce0939ba7ae" />
+					<attribute id="Race" type="guid" value="eb88b85c-a191-40ef-3b80-7bc0eb608e47" />
+					<children>
+						<node id="LocomotionParams" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

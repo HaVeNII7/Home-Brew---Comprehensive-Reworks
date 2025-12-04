@@ -16,7 +16,7 @@ data "DisplayName" "hcbb02b50g75d3g46a0239490wdasdfs5d4f2;1"
 data "Description" "h53277800gd3a4g4984gbf20394ursdf4we64;2"
 data "Icon" "PassiveFeature_Generic_Tactical"
 data "StatsFunctorContext" "OnStatusApply"
-data "Conditions" "HasStatus('SG_Frightened',context.Target) and not HasStatus('PSYCHOSIS', context.Target)"
+data "Conditions" "(StatusId('FEARED') or StatusId('FRIGHTENED') or StatusId('INTIMIDATING_PRESENCE')) and Enemy() and not HasStatus('PSYCHOSIS', context.Target)"
 data "StatsFunctors" "ApplyStatus(PSYCHOSIS,100,-1)"
 
 new entry "PSYCHOSIS"

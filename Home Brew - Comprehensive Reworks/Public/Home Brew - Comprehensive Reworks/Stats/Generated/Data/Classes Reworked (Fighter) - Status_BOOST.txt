@@ -148,7 +148,7 @@ data "Icon" "PassiveFeature_ArcaneArcherLore"
 data "StackId" "ARCANEGATE1"
 data "StatusGroups" "SG_RemoveOnRespec"
 
-<!--CHALLENGER-->
+<!--CHAMPION-->
 
 new entry "CHALLENGERS_PRESENCE"
 type "StatusData"
@@ -162,7 +162,7 @@ data "TickType" "StartTurn"
 data "Boosts" "Resistance(Bludgeoning, Resistant);Resistance(Slashing, Resistant);Resistance(Piercing, Resistant);Advantage(AttackTarget)"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "OnRemoveFunctors" "ApplyStatus(CHALLENGERS_PRESENCE_LINGERING,100,1)"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;IgnoreResting;ApplyToDead"
 
 new entry "CHALLENGERS_PRESENCE_LINGERING"
 type "StatusData"
@@ -176,6 +176,26 @@ data "TickType" "StartTurn"
 data "Boosts" "Resistance(Bludgeoning, Resistant);Resistance(Slashing, Resistant);Resistance(Piercing, Resistant);Advantage(AttackTarget)"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
+
+new entry "SECONDWIND_BLOCKER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "TickType" "EndTurn"
+data "RemoveEvents" "OnCombatEnded"
+
+new entry "ACTIONSURGE_BLOCKER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "TickType" "EndTurn"
+data "RemoveEvents" "OnCombatEnded"
+
+new entry "ARCANEFOCUS_BLOCKER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "TickType" "EndTurn"
 
 <!--FRONTIER KNIGHT-->
 

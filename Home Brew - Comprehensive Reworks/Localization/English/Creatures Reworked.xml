@@ -44,7 +44,7 @@
 <!--GITHYANKI-->
 
 	<content contentuid="h184ab785gdae3g4b7ega249ge432917ertu9" version="5">Astral Warrior</content>
-	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341eiuysf" version="1">When making any &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, you add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to the roll twice.</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341eiuysf" version="1">Gain a +2 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
 
 <!--DWARF-->
 
@@ -197,6 +197,109 @@
 	<content contentuid="hd36c7168g3246g43c0g9414g9b917Superior" version="2">Superior Lightning Breath</content>
 	<content contentuid="hd425ed44g85e4g4f30g9078gf9f46Superior" version="2">Superior Poison Breath</content>
 
+<!--DRAGONBORN (STONE ADDITION)-->
+
+<!--RACE-->
+	<content contentuid="h4797afc7g4d10g4183ga5d9gd34a4ad674a6" version="1">Amethyst Dragonborn</content>
+	<content contentuid="h60540120gbcdfg4aadga8e1g8bded92823b7" version="1">These dragonborn share the rich purple visage and gravity-manipulating breath of amethyst dragons.</content>
+	
+	<content contentuid="ha229f980ge401g471fg5daag07599658ded1" version="1">Crystal Dragonborn</content>
+	<content contentuid="h514663dfg60beg4c1egc722g48227541bfb9" version="1">These dragonborn share the refractive white scales and shimmering breath of crystal dragons.</content>
+	
+	<content contentuid="h0410c551ga37dg499ag8488g19e7145d1674" version="1">Emerald Dragonborn</content>
+	<content contentuid="h42de1620g2921g4705g11f3g4c0486768006" version="1">These dragonborn share the vibrant veridian scales and psionic breath of emerald dragons.</content>
+	
+	<content contentuid="hf60dfc0eg868eg417cged10g1cc788849b18" version="1">Sapphire Dragonborn</content>
+	<content contentuid="h54a4928ag0ac2g4228g355cg128a1e34b213" version="1">These dragonborn share the crystalline azure scales and thundrous sonic breath of sapphire dragons.</content>
+	
+	<content contentuid="h81697f0eg5a59g43d1g7c29g1e4fa51d981c" version="1">Topaz Dragonborn</content>
+	<content contentuid="h961beb6cgea19g4d5dg4f21g2ebbc7426b3b" version="1">These dragonborn share the faceted amber scales and desiccating breath of topaz dragons.</content>
+
+<!--PASSIVES-->
+	<content contentuid="h5b2a52b7g732dg488egbd41g33c5113802e1" version="5">Draconic Ancestry: Amethyst</content>
+	<content contentuid="hfa41a21dgb640g414dg3048g43b3f6be4c8e" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Force damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Force"&gt;Singularity Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+	<content contentuid="greaterb7g732dg488egbd41g33c5113802e1" version="5">Greater Draconic Ancestry: Amethyst</content>
+	<content contentuid="greater1dgb640g414dg3048g43b3f6be4c8e" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Force damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Force"&gt;Greater Singularity Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+	<content contentuid="superior7g732dg488egbd41g33c5113802e1" version="5">Superior Draconic Ancestry: Amethyst</content>
+	<content contentuid="superiordgb640g414dg3048g43b3f6be4c8e" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Force damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Force"&gt;Superior Singularity Breath&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h5b2a52b7g732dg488egbd41g33c51138dh70" version="5">Draconic Ancestry: Crystal</content>
+	<content contentuid="hdb0ad20cgbbe9g4b3ag6ee1ga1fb5c73gv65" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Radiant damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Radiant"&gt;Scintillating Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+	<content contentuid="greaterb7g732dg488egbd41g33c51138dh70" version="5">Greater Draconic Ancestry: Crystal</content>
+	<content contentuid="greater0cgbbe9g4b3ag6ee1ga1fb5c73gv65" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Radiant damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Radiant"&gt;Greater Scintillating Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+	<content contentuid="superior7g732dg488egbd41g33c51138dh70" version="5">Superior Draconic Ancestry: Crystal</content>
+	<content contentuid="superiorcgbbe9g4b3ag6ee1ga1fb5c73gv65" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Radiant damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Radiant"&gt;Superior Scintillating Breath&lt;/LSTag&gt;.</content>
+  
+	<content contentuid="h5b2a52b7g732dg488egbd41g33c51138swad" version="5">Draconic Ancestry: Emerald</content>
+	<content contentuid="h7894f0bfg25a2g46d7gc488gd31e5b9csda6" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Psychic damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Psychic"&gt;Psionic Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+	<content contentuid="greaterb7g732dg488egbd41g33c51138swad" version="5">Greater Draconic Ancestry: Emerald</content>
+	<content contentuid="greaterbfg25a2g46d7gc488gd31e5b9csda6" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Psychic damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Psychic"&gt;Greater Psionic Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+	<content contentuid="superior7g732dg488egbd41g33c51138swad" version="5">Superior Draconic Ancestry: Emerald</content>
+	<content contentuid="superiorfg25a2g46d7gc488gd31e5b9csda6" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Psychic damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Psychic"&gt;Superior Psionic Breath&lt;/LSTag&gt;.</content>
+  
+	<content contentuid="h5b2a52b7g732dg488egbd41g33c511384ndx" version="5">Draconic Ancestry: Sapphire</content>
+	<content contentuid="h26f30b81g2c95g44eegf37fgfb807812ae4e" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Thunder damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Thunder"&gt;Sonic Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+	<content contentuid="greaterb7g732dg488egbd41g33c511384ndx" version="5">Greater Draconic Ancestry: Sapphire</content>
+	<content contentuid="greater81g2c95g44eegf37fgfb807812ae4e" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Thunder damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Thunder"&gt;Greater Sonic Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+	<content contentuid="superior7g732dg488egbd41g33c511384ndx" version="5">Superior Draconic Ancestry: Sapphire</content>
+	<content contentuid="superior1g2c95g44eegf37fgfb807812ae4e" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Thunder damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Thunder"&gt;Superior Sonic Breath&lt;/LSTag&gt;.</content>
+  
+	<content contentuid="h5b2a52b7g732dg488egbd41g33c51138c36h" version="5">Draconic Ancestry: Topaz</content>
+	<content contentuid="hafa21eefgf5c3g4c66g7b8bg84ed7f609dc9" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Necrotic"&gt;Desiccating Breath&lt;/LSTag&gt;. At levels 5 and 9, the strength of your Draconic Ancestry grows.</content>
+	<content contentuid="greaterb7g732dg488egbd41g33c51138c36h" version="5">Greater Draconic Ancestry: Topaz</content>
+	<content contentuid="greaterefgf5c3g4c66g7b8bg84ed7f609dc9" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Greater_Necrotic"&gt;Greater Desiccating Breath&lt;/LSTag&gt;. At level 9, the strength of your Draconic Ancestry will reach its full potential.</content>
+	<content contentuid="superior7g732dg488egbd41g33c51138c36h" version="5">Superior Draconic Ancestry: Topaz</content>
+	<content contentuid="superiorfgf5c3g4c66g7b8bg84ed7f609dc9" version="1">Gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Necrotic damage and the ability to use &lt;LSTag Type="Spell" Tooltip="Zone_BreathWeapon_Superior_Necrotic"&gt;Superior Desiccating Breath&lt;/LSTag&gt;.</content>
+
+<!--BREATH WEAPONS-->
+	<content contentuid="hf3ddeaccg8965g4584gc714ge78b84e128a6" version="1">Singularity Breath</content>
+	<content contentuid="greaterccg8965g4584gc714ge78b84e128a6" version="1">Greater Singularity Breath</content>
+	<content contentuid="superiorcg8965g4584gc714ge78b84e128a6" version="1">Superior Singularity Breath</content>
+	<content contentuid="hc5ef0bffg3b96g42degf97ag1ddac7ff4407" version="1">Unleash a pulse of gravitational force.</content>
+	
+	<content contentuid="ha2f4c8e7ge668g41d7g65deg424d79bdafc2" version="1">Scintillating Breath</content>
+	<content contentuid="greatere7ge668g41d7g65deg424d79bdafc2" version="1">Greater Scintillating Breath</content>
+	<content contentuid="superior7ge668g41d7g65deg424d79bdafc2" version="1">Superior Scintillating Breath</content>
+	<content contentuid="h1b2e9a25gd484g4d83g4bd5ge3335d7d0eb3" version="1">Unleash a flash of radiant energy.</content>
+	
+	<content contentuid="hde3eba02g01e9g4569g8119gece7e27830c1" version="1">Psionic Breath</content>
+	<content contentuid="greater02g01e9g4569g8119gece7e27830c1" version="1">Greater Psionic Breath</content>
+	<content contentuid="superior2g01e9g4569g8119gece7e27830c1" version="1">Superior Psionic Breath</content>
+	<content contentuid="h9986c0f8g3579g495eg4efbg289fbde39b02" version="1">Exhale a wave of psychic dissonance.</content>
+	
+	<content contentuid="hbce666a8ga45bg492bg4920ged89a712b554" version="1">Sonic Breath</content>
+	<content contentuid="greatera8ga45bg492bg4920ged89a712b554" version="1">Greater Sonic Breath</content>
+	<content contentuid="superior8ga45bg492bg4920ged89a712b554" version="1">Superior Sonic Breath</content>
+	<content contentuid="haa81511bgc29fg4bf4g7cb7g0ea71e008f30" version="1">Unleash a burst of sonic energy.</content>
+	
+	<content contentuid="h76d60c01g8159g4548gc347ge5bead8bf933" version="1">Desiccating Breath</content>
+	<content contentuid="greater01g8159g4548gc347ge5bead8bf933" version="1">Greater Desiccating Breath</content>
+	<content contentuid="superior1g8159g4548gc347ge5bead8bf933" version="1">Superior Desiccating Breath</content>
+	<content contentuid="hc236a5cdgec6eg466age0bage5ebe56f9ecb" version="1">Exhale a cloud of necrotic fumes.</content>
+
+<!--SKINS-->
+	<content contentuid="h88a4da10g50e7g43a2g29bfga9fbbeac4611" version="1">Amethyst 1</content>
+	<content contentuid="hd35cf7f3gc81cg42a9g441fgeb887bf7fedc" version="1">Amethyst 2</content>
+	<content contentuid="hb2d48663g80b3g4ddfg2ce9gb89603ca5dec" version="1">Amethyst 3</content>
+	<content contentuid="h076672a9g4d68g418fgcda8gc2566ab101f8" version="1">Crystal 1</content>
+	<content contentuid="h134df468g170fg4e1dgd9e3g88e5766abb58" version="1">Crystal 2</content>
+	<content contentuid="h07a6b318g1f00g4a39gadbbg0ce2ba006e1c" version="1">Crystal 3</content>
+	<content contentuid="h34aa9072g080bg4cdag2e3fgda17ebb7f4b1" version="1">Emerald 1</content>
+	<content contentuid="h005e7d40g4e3ag4456g4ac3gf2873be343c6" version="1">Emerald 2</content>
+	<content contentuid="h12c7a0d4gb614g47abgc3feg4d732884f639" version="1">Emerald 3</content>
+	<content contentuid="hb9ce3a47g4bf4g458dg3d6cg415301a5b0e4" version="1">Sapphire 1</content>
+	<content contentuid="hb8abe1d9ga416g4590g06eagf17c0d3a0ae7" version="1">Sapphire 2</content>
+	<content contentuid="hae8e3150g3a43g4d5agcb11gbff0d35c6e86" version="1">Sapphire 3</content>
+	<content contentuid="hb667d2b5g8b53g4e12g8487g541cc38bb075" version="1">Topaz 1</content>
+	<content contentuid="h0d030893gac0cg49ffgfaa4gda036359941b" version="1">Topaz 2</content>
+	<content contentuid="h89706cb9gcf30g4d3cg783fg96bb2d5b6606" version="1">Topaz 3</content>
+	
+	<content contentuid="h3f87da5agadc1g4d73gd099gf3e1d77d67fa" version="1">Amethyst</content>
+	<content contentuid="h46eb5a13g802dg4755g74cbgeb26bdbb5cc8" version="1">Crystal</content>
+	<content contentuid="h99ab364eg5332g4505gb60bg63ad16ce41d2" version="1">Emerald</content>
+	<content contentuid="hbb627349g7365g41c3g5297g8319cb4d25a7" version="1">Sapphire</content>
+	<content contentuid="h4abbcd9bg68cag425cg7bdfg3acbb790d35f" version="1">Topaz</content>
+
 <!--HALF ORC-->
 
 	<content contentuid="h184ab785gdae3g4b7ega249ge4329174a658" version="5">Half-Blood's Vigor</content>
@@ -256,7 +359,7 @@
 <!--ENEMY PASSIVES-->
 
 	<content contentuid="hc761eaf7g4df1g4de8g8f79gcaae9s5df256" version="1">Floating</content>
-	<content contentuid="h6bcb2ab7g7c97g4746gb6begba80e5e86858" version="5">This creature is able to float effortlessly. As such, it has status immunity to any status which would restrain it. Additionally, it takes no damage when falling.</content>
+	<content contentuid="h6bcb2ab7g7c97g4746gb6begba80e5e86858" version="5">This creature is able to float effortlessly. As such, it is unaffected by &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt; and takes no damage when falling.</content>
 
 	<content contentuid="h2395dc03ga60dg4ca8gbf28g9cc613301043" version="1">Frightening Assault</content>
 	<content contentuid="h36f181f8g1bcag43bag8f71g69c05e02ea0c" version="2">This creature can perform a &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Cloaker"&gt;Multiattack&lt;/LSTag&gt; if their target is suffering from a fear based status effect. Upon dealing damage, they may cause their target to become &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;.</content>
@@ -268,7 +371,7 @@
 	<content contentuid="h36f181f8g1bcag43bag8f71g6922585d6968" version="2">This creature has status immunity to all curses.</content>
 
 	<content contentuid="h2395dc03ga60dg4ca8gbf28g9c5d6d2d3d5f" version="1">Ethereal</content>
-	<content contentuid="h36f181f8g1bcag43bag8f71g6922585345rf" version="2">This creature is incorporeal. They may be walked through, projectiles may be shot through them, and they can not be forcibly moved.</content>
+	<content contentuid="h36f181f8g1bcag43bag8f71g6922585345rf" version="2">This creature is incorporeal. They may be walked through, projectiles may be shot through them, and they can not be forcibly moved. Additionally, attacks of opportunity may not be made against them.</content>
 
 	<content contentuid="5118b4641cdb4145a0fb4699faf1d32200011" version="5">Show of Strength</content>
 	<content contentuid="5118b4641cdb4145a0fb4699faf1d3220000k" version="1">When dealing damage, create a [1] shockwave which reverberates through all targets Large or smaller, dealing [2] and potentially throwing them back by [3].</content>
@@ -316,6 +419,16 @@
 
 	<content contentuid="h4d67dd95g0b1dg4661ga76cg3d5152345a6f" version="2">Skittish</content>
 	<content contentuid="hd283c724g54a5g4e21g816fge77a790f8ccc" version="3">This creature will become &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrified&lt;/LSTag&gt; when hurt.</content>
+
+	<content contentuid="ha0731de1g1891g4e13gbcc2g73a403bee003" version="2">Luring Song</content>
+	<content contentuid="h8de31c05gb5c0g4495g9bc7g16ef9a6fedb9" version="4">Affected creature must succeed a Wisdom based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; every turn or be &lt;LSTag Type="Status" Tooltip="LURING_SONG"&gt;Lured&lt;/LSTag&gt; by the nearby Harpy's song.</content>
+	<content contentuid="hde9698b9gf76eg4f75g9df2g1ce018012400" version="3">Lured</content>
+	<content contentuid="h3a9c3870g9491g4e8eg8f73ga1f4e720897b" version="5">Affected creature has been attracted to a nearby harpy's luring melody. &lt;br&gt;&lt;Br&gt;The affected creature will use their turn to move closer to the harpy, allowing her to make multiple attacks each turn!</content>
+	<content contentuid="h1e0892f6g5a93g49e9g8b1agd2d9567213f5" version="2">Resisted the Song</content>
+	<content contentuid="hb02b136dg05a2g4dd6ga156gb7be1ba0fa3b" version="3">Affected creature has succeeded a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; against the nearby harpy's &lt;LSTag Type="Spell" Tooltip="Shout_LuringSong_Harpy"&gt;Luring Song&lt;/LSTag&gt; and is immune to its effects for [1] turns.</content>
+
+	<content contentuid="ba8dc90c6dd042ee918bba2s2d1f6s5f168fd" version="2">Offering to Bhaal</content>
+	<content contentuid="ba8dc90c6dd042ew65e4fs68fe4d5e2f8ff58" version="3">Upon starting their first turn in combat, Ghislev will begin chanting, offering you as a sacrifice to Bhaal.</content>
 
 <!--OLD ENEMY PASSIVES-->
 
@@ -373,5 +486,8 @@
 	<content contentuid="h69a228a2g3139g4535g916fg1289243752da" version="2">You gain an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;. When attacked, you can use a Reaction in order to counterattack, making a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against your aggressor which deals an additional [1].</content>
 	<content contentuid="h2acfbc1eg90f9g4afaga8ccg5e21a8b131e2" version="2">Vengeful Strike</content>
 	<content contentuid="he80cb46ag72abg490cga94dg954b02d56888" version="2">Make a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against your aggressor which deals an additional [1].</content>
+
+	<content contentuid="hf68573edgb5f3g4027gb92cgd55a096d74b3" version="1">Radiant Retort</content>
+	<content contentuid="hf6737e4eg1692g42acgb65ag23edf956cbad" version="1">While obscured in darkness, you reflect all Radiant damage back at your attacker twofold as Force damage.</content>
 
 </contentList>
