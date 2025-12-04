@@ -267,7 +267,7 @@ data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnDamage"
 data "StatsFunctors" "IF(HasHPPercentageWithoutTemporaryHPLessThan(20, context.Target)):Kill()"
 
-<!--SWASHBUCKLER-->
+<!--MERCENARY-->
 
 new entry "Swash_Unlock"
 type "PassiveData"
@@ -506,7 +506,10 @@ data "DisplayName" "d3e15e63749c4b62b8e7760cc707412000013;2"
 data "Description" "d3e15e63749c4b62b8e7760cc70741200000m;2"
 data "Icon" "PassiveFeature_NaturallyStealthy"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "ActionResource(ReactionActionPoint,1,0);IF(IsReactionAttack()):ApplyStatus(HAG_STILLBORN,100,3)"
+data "Boosts" "ActionResource(ReactionActionPoint,1,0)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsReactionAttack()"
+data "StatsFunctors" "ApplyStatus(HEMORRHAGED,100,3)"
 
 new entry "Reactive_Movement"
 type "PassiveData"
@@ -567,10 +570,10 @@ type "PassiveData"
 data "DisplayName" "d3e15e63749c4b62b8e7760cc707412000020;1"
 data "Description" "d3e15e63749c4b62b8e7760cc70741200000t;2"
 data "Icon" "PassiveFeature_NaturallyStealthy"
-data "Properties" "Highlighted;ForceShowInCC;OncePerTurn"
-data "StatsFunctorContext" "OnStatusApplied"
-data "Conditions" "StatusId('SNEAKING') or HasAnyStatus({'SG_Invisible'})"
-data "StatsFunctors" "IF(not HasStatus('TOXIN_WYVERN', context.Source)):ApplyStatus(TOXIN_WYVERN,100,1)"
+data "Properties" "Highlighted;ForceShowInCC"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsWeaponAttack() and not HasStatus('ALCH_TOXIN_WYVERN_CONDITION', context.Target)"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(ALCH_TOXIN_WYVERN_CONDITION,100,3, AdvantageOnPoisoned())"
 
 <!--NPC SPECIFIC-->
 

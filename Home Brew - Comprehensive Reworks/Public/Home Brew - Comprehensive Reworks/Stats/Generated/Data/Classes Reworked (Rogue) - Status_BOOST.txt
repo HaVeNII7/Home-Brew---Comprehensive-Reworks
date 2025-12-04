@@ -121,7 +121,7 @@ data "Icon" "Action_InfiltrationExpertise"
 data "TickType" "EndTurn"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;TickingWithSource"
 
-<!--SWASHBUCKLER-->
+<!--MERCENARY-->
 
 new entry "SWASHBUCKLER_ADV"
 type "StatusData"
@@ -215,8 +215,6 @@ data "StackId" "FREEDOM_OF_MOVEMENT"
 data "Boosts" "StatusImmunity(SG_Paralyzed);StatusImmunity(SG_Restrained);StatusImmunity(SG_DifficultTerrain);ActionResourcePreventReduction(Movement)"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "TickType" "EndTurn"
-data "RemoveConditions" "not HasStatus('SNEAKING', context.Source) and not HasStatus('SG_Invisible', context.Source)"
-data "RemoveEvents" "OnStatusRemoved"
 
 new entry "GRIEVOUS_WOUNDS"
 type "StatusData"

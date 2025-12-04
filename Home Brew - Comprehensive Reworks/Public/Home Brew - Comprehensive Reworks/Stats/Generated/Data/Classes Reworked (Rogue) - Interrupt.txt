@@ -86,7 +86,7 @@ data "EnableCondition" "not HasStatus('SG_Blinded')"
 data "EnableContext" "OnStatusRemoved;OnStatusApplied"
 data "Stack" "SelfAboutBeHit"
 
-<!--SWASHBUCKLER-->
+<!--MERCENARY-->
 
 new entry "CInterrupt_SneakAttack_Rakish"
 type "InterruptData"

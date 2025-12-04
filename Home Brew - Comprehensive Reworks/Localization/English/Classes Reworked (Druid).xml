@@ -42,7 +42,7 @@
 	<content contentuid="791a0319eeed4es54d6f4sd8f8sd7f85df445" version="4">Affected creature is benefiting from one or more passives provided by its summoning Druid.</content>
 
 	<content contentuid="f5ecae2702864415841fa77f95dedab000001" version="1">Conjure Dryad</content>
-	<content contentuid="35222cb96ba542f2bffc5d681a0331cf0000a" version="1">Summon a woodland Dryad. The Dryad grows in strength alongside you as you level.</content>
+	<content contentuid="35222cb96ba542f2bffc5d681a0331cf0000a" version="1">Summon a woodland Dryad. The Dryad grows in strength alongside you as you level within the Circle of the Land.</content>
 
 	<content contentuid="b84b364eea3d414a8c9b99e2be62857500001" version="1">Ensnaring Presence</content>
 	<content contentuid="b84b364eea3d414a8c9b99e2be6285750000a" version="1">Creatures that you damage must succeed a Strength based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="ENSNARED_VINES"&gt;Entangled&lt;/LSTag&gt;.</content>

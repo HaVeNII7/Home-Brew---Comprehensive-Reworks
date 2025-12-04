@@ -321,6 +321,13 @@
                     <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
                     <attribute id="UUID" type="guid" value="d1b02f9c-9d6e-4eac-905d-ccd9e7876c7c"/>
                     </node>
+        <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h065f97f5ga6ddg48bag9ba6gc090244742c5" version="1"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Interrupt_PsionicBacklash_Charge"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="876a366e-8788-4861-b902-2689353c3b48"/>
+                    </node>
       </children>
     </node>
   </region>

@@ -11171,7 +11171,119 @@
 								</node>
 							</children>
 						</node>
-					</children>				</node>
+					</children>				
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanFight" type="bool" value="True" />
+					<attribute id="ConstellationConfigName" type="FixedString" value="" />
+					<attribute id="Description" type="TranslatedString" handle="hb78c4bb2g2944g442fgb393ge129ac1847fa" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h61317e69g18efg4afdg98fbgd601cf52f005" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_WPN_Grenade_Orthon_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="29d32b36-390f-4fe8-b27b-931393d76c2a" />
+					<attribute id="Name" type="LSString" value="GRN_Bomb_Orthon" />
+					<attribute id="ParentTemplateId" type="FixedString" value="278271f9-3fbc-4cf7-a5dc-b36527f521b2" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="33ada20d-bdd9-475f-f7e3-5c6138823bf2" />
+					<attribute id="Stats" type="FixedString" value="OBJ_Bomb_Orthon" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="53309f8b-56fd-05f2-e5af-f29687ff60c2" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115209550692652" />
+					<children>
+						<node id="ConstellationConfigGlobalParameters">
+							<children>
+								<node id="ConstellationConfigParameter">
+									<attribute id="Name" type="LSString" value="Projectile" />
+									<children>
+										<node id="Value">
+											<children>
+												<node id="Scalar">
+													<children>
+														<node id="Scalar">
+															<children>
+																<node id="String">
+																	<attribute id="String" type="LSString" value="Projectile_Bomb" />
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnDestroyActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="4" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="ExternalCauseAsSurfaceOwner" type="bool" value="True" />
+											<attribute id="LifeTime" type="float" value="0" />
+											<attribute id="Radius" type="float" value="4" />
+											<attribute id="SurfaceType" type="FixedString" value="" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="5" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="ExplodeFX" type="FixedString" value="db3a0bcd-c53c-a1bc-f769-273d107b1c1b" />
+											<attribute id="FadeOutDelay" type="float" value="0" />
+											<attribute id="FadeOutFX" type="FixedString" value="" />
+											<attribute id="SnapToGround" type="bool" value="True" />
+											<attribute id="TargetItemState" type="uint8" value="0" />
+											<attribute id="VisualWithDynamicPhysics" type="FixedString" value="" />
+											<attribute id="templateAfterDestruction" type="FixedString" value="" />
+											<attribute id="visualDestruction" type="FixedString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="FixedString" value="91327f5f-966b-fabe-15fd-07d7a7dcc7b5" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="HardcoreOnly" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="LifeTime" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="ProjectileSpell" />
+													<attribute id="Type" type="int32" value="9" />
+													<attribute id="Value" type="LSString" value="Projectile_MineExplosion_Orthon" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="ef5d1184-dd1c-4988-bef9-ad19471aadba" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

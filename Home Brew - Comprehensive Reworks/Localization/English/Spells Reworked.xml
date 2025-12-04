@@ -121,7 +121,7 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 	<content contentuid="h6a2b41c8g2af1g4021g959fgad60a1ab524d" version="5">Affected creature is distracted. The next attack made against the creature from within [1] is guaranteed to be a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h08166cc8g5846g432cgbdbfg289f214ce12a" version="2">Frightened</content>
-	<content contentuid="hdd315742g68c2g470bga2eagab6d1a97ebf6" version="7">Affected creature rolls with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Removed if &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Helped&lt;/LSTag&gt;.</content>
+	<content contentuid="hdd315742g68c2g470bga2eagab6d1a97ebf6" version="7">Affected creature rolls with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;. In addition, their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is halved.&lt;br&gt;&lt;br&gt;Removed if &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Helped&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hd9375252g63aeg4e35g9aacgf2bbaa5fced4" version="2">Frostbite</content>
 	<content contentuid="h82aaebebgdeb0g45b1g9667g73823af73796" version="4">Affected creature has a -1 penalty to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for each remaining stack of Frostbite.</content>

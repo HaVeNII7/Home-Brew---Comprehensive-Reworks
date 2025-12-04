@@ -166,6 +166,7 @@ data "Properties" "Highlighted;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHot
 data "StatsFunctorContext" "OnDamage"
 data "Conditions" "Enemy() and not HasStatus('CHALLENGERS_CALL',context.Target) and not HasStatus('CHALLENGERS_CALL_FAILURE',context.Target)"
 data "StatsFunctors" "IF(not SavingThrow(Ability.Wisdom, SourceSpellDC())):ApplyStatus(CHALLENGERS_CALL,100,3)"
+data "Boosts" "Resistance(Bludgeoning, Resistant);Resistance(Slashing, Resistant);Resistance(Piercing, Resistant);Advantage(AttackTarget)"
 data "ToggleOnFunctors" "ApplyStatus(CHALLENGERS_PRESENCE,100,-1)"
 data "ToggleOffFunctors" "RemoveStatus(CHALLENGERS_PRESENCE)"
 data "ToggleGroup" "Challengers_Presence"

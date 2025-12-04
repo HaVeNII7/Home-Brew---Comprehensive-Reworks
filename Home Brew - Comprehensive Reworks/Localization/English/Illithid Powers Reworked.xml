@@ -79,11 +79,11 @@
 
 <!--PSIONIC BACKLASH-->
 	<content contentuid="h065f97f5ga6ddg48bag9ba6gc090244742c5" version="2">Psionic Backlash</content>
-	<content contentuid="h51459646g1974g4fefgbfd2g42294ebe1741" version="6">When an enemy within [1] casts a spell, you may choose to inflict [2] to the caster multiplied by the level of the Spell cast.</content>
+	<content contentuid="h51459646g1974g4fefgbfd2g42294ebe1741" version="6">Once per turn, when an enemy within [1] casts a spell, you may choose to inflict [2] to the caster multiplied by the level of the Spell cast.</content>
 	<content contentuid="hb12810d5g972bg47begaaaeg31cf77359701" version="2">Psionic Backlash</content>
-	<content contentuid="h87a18992gbeb8g471bgb5aag04a79afeb6b3" version="2">When an enemy within [1] casts a spell, inflict [2] to the caster multiplied by the Spells level cast.</content>
+	<content contentuid="h87a18992gbeb8g471bgb5aag04a79afeb6b3" version="2">Once per turn, when an enemy within [1] casts a spell, inflict [2] to the caster multiplied by the Spells level cast.</content>
 	<content contentuid="heccaf960gce77g4f5ag9ba2g2b601cea85a2" version="1">Psionic Backlash</content>
-	<content contentuid="hdd03843bg80cbg40baga98cga13f3f94092d" version="1">When an enemy within [1] casts a spell, inflict [2] to the caster multiplied by the Spells level cast.</content>
+	<content contentuid="hdd03843bg80cbg40baga98cga13f3f94092d" version="1">Once per turn, when an enemy within [1] casts a spell, inflict [2] to the caster multiplied by the Spells level cast.</content>
 
 <!--SHIELD OF THRALLS-->
 	<content contentuid="hf667134dge956g466dg8ba4g0834c024ffd2" version="2">Shield of Thralls</content>

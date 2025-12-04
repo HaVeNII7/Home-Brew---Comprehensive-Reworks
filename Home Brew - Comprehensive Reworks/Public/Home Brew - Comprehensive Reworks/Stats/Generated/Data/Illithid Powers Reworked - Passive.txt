@@ -162,7 +162,7 @@ data "Description" "h51459646g1974g4fefgbfd2g42294ebe1741;6"
 data "DescriptionParams" "Distance(18);DealDamage(1d12, Psychic)"
 data "Icon" "TadpoleSuperPower_PsionicBacklash"
 data "Properties" "IsHidden"
-data "Boosts" "UnlockInterrupt(Interrupt_TAD_PsionicBacklash)"
+data "Boosts" "UnlockInterrupt(Interrupt_TAD_PsionicBacklash);ActionResource(Interrupt_PsionicBacklash_Charge,1,0)"
 
 <!--SHIELD OF THE THRALLS-->
 
