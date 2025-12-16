@@ -128,7 +128,7 @@
 	<content contentuid="h882cb4d7g2c6ag47d3g998dgaca2f619e3e7" version="2">Amidst depraved conjurations, you walk comfortably within the shadow of death, making your home there in spite of the living.</content>
 
 	<content contentuid="h89c2a75ag2f4fg4d83g9e66g81575b95f1c4" version="2">Necromantic Apprentice</content>
-	<content contentuid="h699f408ag3943g45bcga13cg10548238165a" version="2">Dealing damage will apply &lt;LSTag Type="Status" Tooltip="CRAWLING_GNAW_SWITCH"&gt;Crawling Gnaw&lt;/LSTag&gt; to your target for one turn.</content>
+	<content contentuid="h699f408ag3943g45bcga13cg10548238165a" version="2">Dealing damage will permanently apply &lt;LSTag Type="Status" Tooltip="CRAWLING_GNAW_SWITCH"&gt;Crawling Gnaw&lt;/LSTag&gt; to your target.</content>
 
 	<content contentuid="h2f479431gb8d1g41e5g890dg59ddd0becf9c" version="2">Lifedrinker</content>
 	<content contentuid="he6ee1384geb80g45fbg8d56gbf7262d63153" version="1">When you deal damage with a Spell, you recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; equal to half of the total damage dealt.</content>

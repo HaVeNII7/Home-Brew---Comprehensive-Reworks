@@ -170,4 +170,8 @@
 	<content contentuid="h17566e31g76ddg41d8gafe5gb617ae1c8677" version="1">Awakened</content>
 	<content contentuid="h02c55962g989ag4901ga98cg8fcf76a9a120" version="1">Your resistance to the zaith'isk in the githyanki infirmary has awakened newfound resilience. Illithid Powers no longer reduce your maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
 
+	<content contentuid="h202dc139g4871g4a2ega932g075704cbbcbc" version="3">Your &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; has been reduced by 2 by the Zaith'isk. The githyanki device failed to harm your illithid parasite, and has instead permanently taken something from you.</content>
+	<content contentuid="h55e0fc7dgcd0ag4bb7g8d6cgb1d093ce452b" version="3">Your &lt;LSTag Tooltip="Wisdom"&gt;Wisdom&lt;/LSTag&gt; has been reduced by 2 by the Zaith'isk. The githyanki device failed to harm your illithid parasite, and has instead permanently taken something from you.</content>
+	<content contentuid="hc71486d7geedcg4fcag9ba2g198152d38cb5" version="3">Your &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt; has been reduced by 2 by the Zaith'isk. The githyanki device failed to harm your illithid parasite, and has instead permanently taken something from you.</content>
+
 </contentList>

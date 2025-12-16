@@ -143,7 +143,7 @@
 	<content contentuid="hc74dcac4g87bfg4800g8ae4geacc03afffd8" version="1">When an enemy damages you within a range of [1], retaliate with a frigid cold that deals damage equal to your level.</content>
 
 	<content contentuid="hb5fba35fga2b2g42e8gb6cfg843475bddc78" version="2">Storm Strike</content>
-	<content contentuid="h7f986d84g57d9g4522gae69gcbde1c64747b" version="2">When you deal Cold, Lightning or Thunder damage to a creature that is Large or smaller, you also push it away from where you stand by [1]. This effect can be toggled at any time.</content>
+	<content contentuid="h7f986d84g57d9g4522gae69gcbde1c64747b" version="2">When you deal Cold, Lightning or Thunder damage to an enemy that is Large or smaller, you also push it away from where you stand by [1]. This effect can be toggled at any time.</content>
 
 	<content contentuid="hb5fba35fga2b2g42e8gb6cfg843475b6a988" version="2">Static Shock</content>
 	<content contentuid="h7f986d84g57d9g4522gae69gcbde1c6123a4" version="2">When you deal Cold, Lightning or Thunder damage, your target must succeed a Constitution based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunned&lt;/LSTag&gt;.</content>
@@ -178,7 +178,7 @@
 
 	<content contentuid="h994500d0g1703g421bg8028g0f3a3109a888" version="2">Deific</content>
 	<content contentuid="hf729263eg37dcg43fbg923cg24cc64212aa5" version="2">After using one of your Miracles, your next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
-	<content contentuid="h994500d0g1703g421bg8028g0f3a31adfsd8" version="2">Divine Faith</content>
+	<content contentuid="h994500d0g1703g421bg8028g0f3a31adfsd8" version="2">Deific</content>
 	<content contentuid="hf729263eg37dcg43fbg923cg24cc64668d59" version="2">Affected creature's next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h994500d0g1703g421bg8028g0f3a3101a644" version="2">War God's Vessel</content>

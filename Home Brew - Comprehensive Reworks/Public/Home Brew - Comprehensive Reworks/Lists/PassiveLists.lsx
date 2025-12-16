@@ -13,6 +13,10 @@
                     <attribute id="UUID" type="guid" value="cf44a7c1-3fcb-4fb6-8624-45dd433c11b1" />
 					</node>
         <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="CT_None,CT_AdrenalineSurge,CT_BlindEmotions,CT_BloodyResults,CT_BorrowedTime,CT_BreatheDeep,CT_ConfidentlyIncorrect,CT_CriticalLoss,CT_Crybaby,CT_DelusionsintheDark,CT_Gambler,CT_GentleGiant,CT_GildedPilfer,CT_GlassCannon,CT_HandsofCalamity,CT_HastyReflexes,CT_Haymaker,CT_HealthyChills,CT_HeavyHanded,CT_Hyperfixation,CT_Ironbourne,CT_ImmovableBoulder,CT_Lefty,CT_LetMeSoloThem,CT_LoneWolf,CT_Narcoleptic,CT_NaturalMedium,CT_Overcharged,CT_OverlyDifficult,CT_Packing,CT_PlanarSkipping,CT_ReactiveLoss,CT_Reckless,CT_SlowRoller,CT_Stinky,CT_SplitFocus,CT_SunlightAversion,CT_Unhinged,CT_UnstableSource,CT_WaningImmortality,CT_Wretch" />
+                    <attribute id="UUID" type="guid" value="15eff335-46df-4268-9eea-aabcb6c13025" />
+					</node>
+        <node id="PassiveList">
                     <attribute id="Passives" type="LSString" value="BarbarousAssault,BrutalCritical,DangerSense,DeathGlare,Faceoff,FuriousCriticals,LandsStride,OverwhelmingPower,PeakPhysicality,RageoftheMountain,RageoftheUndefeated,RagingVitality,RelentlessRage,RipandTear,RootedinAnger,TemperedRetaliation,TerrifyingBellow,UnrelentingRampage,UnarmouredBeast,UnstoppableForce" />
                     <attribute id="UUID" type="guid" value="d8183f3c-9c62-40b7-9418-e7ad07a8204e" />
 					</node>

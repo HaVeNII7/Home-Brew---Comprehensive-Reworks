@@ -395,7 +395,7 @@
                 </node>
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="RangerBeastmaster"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CompanionsBond;ShieldoftheWildfront;BeastialExpertise;BeastialExpertise_RangerDash;BeastialExpertise_RangerDisengage"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CompanionsBond;ShieldoftheWildfront;WoodlandSynergy"/>
                     <attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Ranger&apos;)"/>
                     <attribute id="UUID" type="guid" value="d8db4bce-a761-4c74-aaf6-ce62ffd7576a"/>
                 </node>

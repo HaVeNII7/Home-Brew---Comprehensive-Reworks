@@ -5,73 +5,73 @@
         <node id="root">
             <children>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
                     <attribute id="UUID" type="guid" value="3aecacbf-72d6-496d-8099-2fb43fc238b8"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
-                    <attribute id="UUID" type="guid" value="eb0b7a86-ce53-44f8-8293-56f3fa8b08ce"/>
+                    <attribute id="UUID" type="guid" value="eb0b7a86-ce53-44f8-8293-56f3fa8b0801"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="64474b62-b4f5-46b3-b94a-c676c6da3116"/>
                     <attribute id="UUID" type="guid" value="658b9b62-83c4-479e-b310-e827bccd1d63"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="6e7b7bad-e122-4679-8b3c-8f8987a9d466"/>
                     <attribute id="UUID" type="guid" value="26c5c3f5-c7a2-4b97-8abc-6bfd300df90a"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
                     <attribute id="UUID" type="guid" value="c823b42b-4c47-4fd0-a4c7-2ac76e2c3162"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="fe1319a2-86be-469c-aab5-e3b0bd714e0e"/>
                     <attribute id="UUID" type="guid" value="606196cb-7f7a-48f3-afba-c982bbdc2683"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821"/>
                     <attribute id="UUID" type="guid" value="621d9c7c-81f2-420e-be93-6b5c736d8091"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
                     <attribute id="UUID" type="guid" value="734462a6-8e2b-45f8-afd3-c4dac5555937"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="9a44e828-92db-4d6c-acbc-a4f8ef340415"/>
                     <attribute id="UUID" type="guid" value="7dbfdc8d-43a7-4922-8d39-35526a70c40f"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
                     <attribute id="UUID" type="guid" value="ba3ca0bd-6ff9-4512-b317-6a428883570f"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
                     <attribute id="UUID" type="guid" value="2bce5583-2523-4b91-84d8-39906141778f"/>
 					</node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Personality_None"/>
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
                     <attribute id="UUID" type="guid" value="f07e93cd-ad50-41cc-b7a0-97b92b7417ba"/>

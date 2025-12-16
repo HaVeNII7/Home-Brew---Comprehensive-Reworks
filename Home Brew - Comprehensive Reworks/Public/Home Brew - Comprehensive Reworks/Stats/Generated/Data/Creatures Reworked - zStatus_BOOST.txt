@@ -302,6 +302,21 @@ using "FOR_OWLBEAR_ENRAGE"
 data "Description" "h147d9a39ga77bg4a86g8e63ge86f55b50604;1"
 data "Boosts" "Advantage(AttackRoll); Tag(VFX_RAGE); BlockSpellCast(); UnlockSpell(Target_Multiattack_Owlbear); Tag(CANBECALMED); Resistance(Slashing, Resistant); Resistance(Piercing, Resistant); Resistance(Bludgeoning, Resistant)"
 
+<!--SHADOW-->
+
+new entry "LIFE_DRAIN"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h06f58ab0g490dg4e3ag94b5gdbfe0f14baf6;1"
+data "Description" "hf29a30b7gc592g4228g95c6g112e9c5f4127;3"
+data "Icon" "GenericIcon_Intent_Debuff"
+data "FormatColor" "Red"
+data "SoundVocalStart" "WEAK"
+data "Boosts" "IncreaseMaxHP(-8)"
+data "StatusGroups" "SG_Cursed"
+data "ApplyEffect" "3a780cca-ca36-475d-9245-e6831f47fba9"
+data "StatusPropertyFlags" "ForceOverhead;FreezeDuration;MultiplyEffectsByDuration"
+
 <!--SHADOW MASTIFF-->
 
 new entry "SHADOWVEIL_MASTIFF"

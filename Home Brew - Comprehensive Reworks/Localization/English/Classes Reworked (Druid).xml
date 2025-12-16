@@ -123,9 +123,9 @@
 	<content contentuid="h8de4539cgd476g4fb8gacf6g2b527fae71b5" version="2">Fungal Infestation</content>
 	<content contentuid="h80325cdfg4edbg4234g8040gae24be066587" version="2">Raise a mildewed, mold-encrusted zombie from a corpse.</content>
 	<content contentuid="hcf4a0bb2g9d26g4d3bg97bcg8b9a79d67cd6" version="2">Animating Spores</content>
-	<content contentuid="ha60a7c3ag8b2fg4216gb9edgd84feab37c59" version="2">Release concentrated spores at a corpse to magically reanimate it as a fungal servant. Animated creatures cannot be directly controlled, but retain all capabilities they had in life. Fungal Spores are uniquely capable of reanimating any corpse, provided they are still intact.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes may only be reanimated by the most powerful within your Circle.</content>
+	<content contentuid="ha60a7c3ag8b2fg4216gb9edgd84feab37c59" version="2">Release concentrated spores at a corpse to magically reanimate it as a fungal servant. Animated creatures cannot be directly controlled, but retain all capabilities they had in life. Animating Spores are uniquely capable of reanimating most corpses, provided they are still intact.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; foes may only be reanimated by the most powerful within your Circle.</content>
 	<content contentuid="h964b0121g6ec3g4dbcg88ccg635496b676f0" version="1">Spore Servant</content>
-	<content contentuid="hf0d94f66g95beg412eg9a10g8c9d8c368a4e" version="1">Affected creature has been reanimated by spores, their body completely infested and puppeteered. They are &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerable&lt;/LSTag&gt; to Fire and cannot speak.</content>
+	<content contentuid="hf0d94f66g95beg412eg9a10g8c9d8c368a4e" version="1">Affected creature has been reanimated by spores, their body completely infested and puppeteered. They are &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerable&lt;/LSTag&gt; to Fire.</content>
 
 	<content contentuid="h580791fcg0d77g485bg8f6eg4a8d56e93090" version="2">Spreading Spores</content>
 	<content contentuid="hab01f6f3gbe5ag482ag9399g6e2c8b740383" version="3">While &lt;LSTag Type="Spell" Tooltip="Shout_SymbioticEntity"&gt;Symbiotic Entity&lt;/LSTag&gt; is active, you may create a pocket of &lt;LSTag Type="Spell" Tooltip="Target_SpreadingSpores"&gt;Spreading Spores&lt;/LSTag&gt;.</content>
@@ -137,15 +137,17 @@
 	<content contentuid="hfcfe3c0fgdeebg4a96gbf4cg7b890c02fe44" version="3">Affected creature is inhaling dry, throat-closing spores that deal [1] per turn.</content>
 
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d939396a454" version="2">Necromantic Spores</content>
-	<content contentuid="ba8dc90c6dd042ee918bba2f68d939d2987aa" version="2">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, you create a pocket of &lt;LSTag Type="Spell" Tooltip="Target_SpreadingSpores"&gt;Spreading Spores&lt;/LSTag&gt;.</content>
+	<content contentuid="ba8dc90c6dd042ee918bba2f68d939d2987aa" version="2">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, you create a pocket of &lt;LSTag Type="Spell" Tooltip="Target_SpreadingSpores"&gt;Spreading Spores&lt;/LSTag&gt;. In addition, You are now capable of animating &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; foes through &lt;LSTag Type="Spell" Tooltip="Target_AnimatingSporesPlayer7"&gt;Sovereign Spores&lt;/LSTag&gt;.</content>
+	<content contentuid="hcf4a0bb2g9d26g4d3bg97bcg8b9aenhanced" version="2">Sovereign Spores</content>
+	<content contentuid="ha60a7c3ag8b2fg4216gb9edgd84fenhanced" version="2">Release concentrated spores at a corpse to magically reanimate it as a fungal servant. Animated creatures cannot be directly controlled, but retain all capabilities they had in life. Sovereign Spores are uniquely capable of reanimating nearly any corpse, provided they are still intact.&lt;br&gt;&lt;br&gt;Sovereign Spores are capable of reanimating &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; foes, but there is talk of those within your Circle who may be able to reanimate the strongest creatures imaginable...</content>
 
 	<content contentuid="h580791fcg0d77g485bg8f6eg4aasdfasd658" version="2">Perfect Symbiosis</content>
 	<content contentuid="hab01f6f3gbe5ag3sd2f6s54df8ds87df8584" version="2">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, you gain &lt;LSTag Type="Status" Tooltip="SYMBIOTIC_ENTITY"&gt;Symbiotic Entity&lt;/LSTag&gt;.</content>
 
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d93939a9995" version="2">Fungal Fleshbringer</content>
-	<content contentuid="ba8dc90c6dd042ee918bba2f68d939d6a6644" version="2">You are now capable of animating &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes through &lt;LSTag Type="Spell" Tooltip="Target_AnimatingSporesPlayer11"&gt;Sovereign Spores&lt;/LSTag&gt;.</content>
-	<content contentuid="hcf4a0bb2g9d26g4d3bg97bcg8b9aenhanced" version="2">Sovereign Spores</content>
-	<content contentuid="ha60a7c3ag8b2fg4216gb9edgd84fenhanced" version="2">Release concentrated spores at a corpse to magically reanimate it as a fungal servant. Animated creatures cannot be directly controlled, but retain all capabilities they had in life. Fungal Spores are uniquely capable of reanimating any corpse, provided they are still intact.&lt;br&gt;&lt;br&gt;Sovereign Spores are capable of reanimating &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes.</content>
+	<content contentuid="ba8dc90c6dd042ee918bba2f68d939d6a6644" version="2">You are now capable of animating &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes through &lt;LSTag Type="Spell" Tooltip="Target_AnimatingSporesPlayer11"&gt;Ascended Spores&lt;/LSTag&gt;.</content>
+	<content contentuid="hcf4a0bb2g9d26g4d3bg97bcg8b9aascended" version="2">Ascended Spores</content>
+	<content contentuid="ha60a7c3ag8b2fg4216gb9edgd84fascended" version="2">Release concentrated spores at any corpse to magically reanimate it as a fungal servant. Animated creatures cannot be directly controlled, but retain all capabilities they had in life.&lt;br&gt;&lt;br&gt;Ascended Spores are uniquely capable of reanimating any corpse, provided they are still intact.</content>
 
 <!--CIRCLE OF THE STARS-->
 
@@ -254,10 +256,10 @@
 	<content contentuid="h003495c7g82d0g4aa9g851bgb4afc573d55c" version="2">Take the shape of a dilophosaurus whose &lt;LSTag Type="Spell" Tooltip="Projectile_CorrosiveSpit_Dilophosaurus"&gt;Corrosive Spit&lt;/LSTag&gt; can dissolve a target's &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
 	<content contentuid="h683ebb58gc713g4bc4gb9c2gbcab4ac5552b" version="2">Corrosive Spit</content>
 	<content contentuid="h18fd8438g2488g41bfga7aeg93470229d95d" version="4">Spray a target with corrosive fluids that slowly melt away its &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
-	<content contentuid="h46408244gf01dg4accgb982gfd22021efa24" version="4">Corrosive Spit: Dissolving</content>
-	<content contentuid="hbf8ed102g5fbeg416dg8712gc27f00e7191e" version="8">Affected creature is covered in a corrosive fluid, reducing their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by [1]. The spit will keep eating away at its defences, further reducing its Armour Class, unless it is washed away with water.</content>
-	<content contentuid="h3429c982g747ag4ce8gbbc2g89dacd1b54b9" version="2">Affected creature is covered in a corrosive fluid, reducing their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by [1]. The spit can be washed away with water.</content>
-	<content contentuid="h42eafd44gfe7cg4e24ga220g76236dd6370c" version="2">The target's Armour Class decreases by [1] per turn, up to a maximum penalty of -[2]. Water removes the spit and its effects.</content>
+	<content contentuid="h46408244gf01dg4accgb982gfd22021efa24" version="4">Corrosion</content>
+	<content contentuid="hbf8ed102g5fbeg416dg8712gc27f00e7191e" version="8">Affected creature is covered in a corrosive fluid, reducing their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by [1]. The fluid will keep eating away at its defences, further reducing its Armour Class, unless it is washed away with water.</content>
+	<content contentuid="h3429c982g747ag4ce8gbbc2g89dacd1b54b9" version="2">Affected creature is covered in a corrosive fluid, reducing their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by [1]. The fluid can be washed away with water.</content>
+	<content contentuid="h42eafd44gfe7cg4e24ga220g76236dd6370c" version="2">The target's Armour Class decreases by [1] per turn, up to a maximum penalty of -[2]. Water removes the fluid and its effects.</content>
 	<content contentuid="h0e46ea98g5c80g450aga9b5g9269179a7848" version="1">Clever Girls</content>
 	<content contentuid="h2ca5b313g0e08g4b0ega14bg01a0fea64458" version="2">When attacking a target under the affects of your &lt;LSTag Type="Spell" Tooltip="Projectile_CorrosiveSpit_Dilophosaurus"&gt;Corrosive Spit&lt;/LSTag&gt;, you attack with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 

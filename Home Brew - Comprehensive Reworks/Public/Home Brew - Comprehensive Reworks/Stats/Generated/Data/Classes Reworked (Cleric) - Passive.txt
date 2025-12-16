@@ -287,7 +287,7 @@ data "DescriptionParams" "Distance(9)"
 data "Icon" "PassiveFeature_ThunderboltStrike"
 data "Properties" "Highlighted;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "(HasDamageDoneForType(DamageType.Cold,context.Target) or HasDamageDoneForType(DamageType.Lightning,context.Target) or HasDamageDoneForType(DamageType.Thunder,context.Target)) and TargetSizeEqualOrSmaller(Size.Large) and not Self()"
+data "Conditions" "(HasDamageDoneForType(DamageType.Cold,context.Target) or HasDamageDoneForType(DamageType.Lightning,context.Target) or HasDamageDoneForType(DamageType.Thunder,context.Target)) and TargetSizeEqualOrSmaller(Size.Large) and not Self() and Enemy()"
 data "StatsFunctors" "Force(9, OriginToTarget);ApplyStatus(THUNDERBOLT_STRIKE,100,1)"
 
 new entry "StaticShock"

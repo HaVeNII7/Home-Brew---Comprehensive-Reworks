@@ -476,6 +476,11 @@
 	<content contentuid="hc761eaf7g4df1g4de8g8f79gcaae9047a8f6" version="1">Shadow Veil</content>
 	<content contentuid="h6bcb2ab7g7c97g4746gb6begba800a7c6099" version="5">While Lightly or Heavily Obscured, shadow mastiffs are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to Bludgeoning, Piercing, and Slashing damage.</content>
 
+	<content contentuid="h2ee34512gc3f5g4d94ga18bgd6643da1df2b" version="1">Life Drain</content>
+	<content contentuid="h375db52dg77cbg466cg9479ge283edebf6c4" version="6">Possibly drain a creature's &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; by 8. The creature dies if their Hit Points are reduced to 0.</content>
+	<content contentuid="h06f58ab0g490dg4e3ag94b5gdbfe0f14baf6" version="1">Life Drain</content>
+	<content contentuid="hf29a30b7gc592g4228g95c6g112e9c5f4127" version="3">Affected creature's maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; have been reduced by 8 per stack of this condition. They will die if their maximum Hit Points are reduced to 0.</content>
+
 	<content contentuid="hfddddc28gc534g4b85g9a91g8e245253d7d0" version="1">Weakness to Light</content>
 	<content contentuid="hafb26127gb613g49beg9a41g527aef58500b" version="1">While in direct light, this creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 

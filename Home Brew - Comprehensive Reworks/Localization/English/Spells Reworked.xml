@@ -804,6 +804,8 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 
 	<content contentuid="h297f1716g8822g481fgb2bcg6c7a0f6f757c" version="2">Fireball</content>
 	<content contentuid="hf6dae528gfd1eg426dg9776g4fff66e4734f" version="6">Shoot a bright flame from your fingers that explodes upon contact, &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt; everything within [1].&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
+	<content contentuid="h297f1716g8822g481fgb2bcg6c22d6f5d848" version="2">Explosion</content>
+	<content contentuid="hf6dae528gfd1eg426dg9776g4f6d9f7d8f78" version="6">A violent explosion which &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burns&lt;/LSTag&gt; everything within [1].</content>
 
 	<content contentuid="hf774105fgf2cbg4efdgb3c7gf1b924357c86" version="1">Fit of Terror</content>
 	<content contentuid="h60a3f0acgf217g4e21gb1bdg25d53e49b4a6" version="4">Force creatures in a [1] area in front of you to lose themselves in a fit of &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terror&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Fighters&lt;br&gt;Sorcerers&lt;br&gt;Warlocks</content>
@@ -1044,6 +1046,8 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 
 	<content contentuid="h8d7a5f70g7c75g4068ga0ebgbb23a097075a" version="1">Hold Creature</content>
 	<content contentuid="h2fa3f550ga856g47efgb138g117758b2224b" version="6">&lt;LSTag Type="Status" Tooltip="HOLD_PERSON"&gt;Hold&lt;/LSTag&gt; a creature perfectly still, unable to act. Attacks made against them will always result in a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Sorcerers</content>
+	<content contentuid="h3f38a5afg839cg41eagb34bgc40e7ccdde7a" version="1">Hold Creature</content>
+	<content contentuid="hcd87bb08g774ag4881g8194g3aac50e64f70" version="6">&lt;LSTag Type="Status" Tooltip="HOLD_PERSON"&gt;Hold&lt;/LSTag&gt; a creature perfectly still, unable to act. Attacks made against them will always result in a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Sorcerers</content>
 	<content contentuid="hdce3600agd747g457bg9513ge64cabdd2235" version="2">Hold Creature</content>
 	<content contentuid="hb2f2f0b8g7734g4059g9da8g05deedf13ec5" version="3">Affected creature is paralyzed, unable to act until damaged. Attacks made against them will always result in a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Removed if &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Helped&lt;/LSTag&gt;.</content>
 

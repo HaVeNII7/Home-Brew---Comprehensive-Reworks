@@ -190,7 +190,7 @@ data "Boosts" "IF(IsMeleeAttack()):Advantage(AttackRoll);IF(IsRangedUnarmedAttac
 data "StatusGroups" "SG_RemoveOnRespec"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
 
-<!--WILD HEART-->
+<!--BEAST HEART-->
 
 new entry "RAGE_TOTEM_BEAR"
 type "StatusData"
@@ -458,6 +458,18 @@ data "Boosts" "Resistance(Slashing, Resistant); Resistance(Piercing, Resistant);
 data "AuraRadius" "3"
 data "AuraStatuses" "TARGET:IF(Enemy()):ApplyStatus(RAGE_TOTEM_WOLF_AURA_STATUS)"
 data "StackType" "Ignore"
+
+new entry "BEASTHEART_FREE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "66706bd4b60a4ca88b703f3fc04bfaf800015;1"
+data "Description" "66706bd4b60a4ca88b703f3fc04bfaf80000o;2"
+data "Icon" "PassiveFeature_RelentlessRage"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead"
+data "Boosts" "UnlockSpellVariant(SpellId('Shout_Rage_Totem_Bear'),ModifyUseCosts(Replace,BonusActionPoint,0,-1,BonusActionPoint),ModifyUseCosts(Replace,Rage,0,-1,Rage));UnlockSpellVariant(SpellId('Shout_Rage_Totem_Eagle'),ModifyUseCosts(Replace,BonusActionPoint,0,-1,BonusActionPoint),ModifyUseCosts(Replace,Rage,0,-1,Rage));UnlockSpellVariant(SpellId('Shout_Rage_Totem_Elk'),ModifyUseCosts(Replace,BonusActionPoint,0,-1,BonusActionPoint),ModifyUseCosts(Replace,Rage,0,-1,Rage));UnlockSpellVariant(SpellId('Shout_Rage_Totem_Tiger'),ModifyUseCosts(Replace,BonusActionPoint,0,-1,BonusActionPoint),ModifyUseCosts(Replace,Rage,0,-1,Rage));UnlockSpellVariant(SpellId('Shout_Rage_Totem_Wolf'),ModifyUseCosts(Replace,BonusActionPoint,0,-1,BonusActionPoint),ModifyUseCosts(Replace,Rage,0,-1,Rage))"
+data "RemoveConditions" "SpellId('Shout_Rage_Totem_Eagle') or SpellId('Shout_Rage_Totem_Elk') or SpellId('Shout_Rage_Totem_Tiger') or SpellId('Shout_Rage_Totem_Wolf')"
+data "RemoveEvents" "OnSpellCast;OnCombatEnded"
+data "TickType" "EndTurn"
 
 <!--BERSERKER-->
 

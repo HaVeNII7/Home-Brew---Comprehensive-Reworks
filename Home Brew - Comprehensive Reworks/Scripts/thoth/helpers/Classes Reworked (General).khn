@@ -21,3 +21,48 @@ end
 function MeleeCheck()
 	return HasStringInSpellRoll('MeleeWeaponAttack') | HasStringInSpellRoll('MeleeUnarmedAttack')
 end
+
+function CT_WeaponAttackCheck()
+	return HasStringInSpellRoll('MeleeWeaponAttack') | HasStringInSpellRoll('RangedWeaponAttack')
+end
+
+function HasMultipleAlliesWithinRange(exclusionStatus, distance, tag, NumberOfAllies, target, source)
+    -- Defaults: 18m (~60ft), and "1 ally permitted nearby" => trigger at 2+
+    distance = distance or 18.0
+    NumberOfAllies = NumberOfAllies or 2
+
+    target = target or context.Target
+    source = source or context.Source
+
+    local errorTrue = {ConditionError("HasAllyWithinRange", {ConditionErrorData.MakeFromNumber(distance, EErrorDataType.Distance)})}
+    local errorFalse = {ConditionError("HasNotAllyWithinRange", {ConditionErrorData.MakeFromNumber(distance, EErrorDataType.Distance)})}
+
+    -- Center the search on YOU (source), not the target
+    local allies = GetAlliesWithinRange(distance, source, source)
+    if allies ~= nil then
+        local count = 0
+
+        for _, entity in ipairs(allies.Allies) do
+            -- ensure entity does not have the excluded status
+            local noExcludedStatus = ConditionResult(exclusionStatus == nil)
+            if exclusionStatus then
+                noExcludedStatus = ~HasStatus(exclusionStatus, entity)
+            end
+
+            -- filter by tag if provided
+            local hasTag = ConditionResult(tag == nil)
+            if tag then
+                hasTag = Tagged(tag, entity)
+            end
+
+            if noExcludedStatus.Result and hasTag.Result then
+                count = count + 1
+                if count >= NumberOfAllies then
+                    return ConditionResult(true, errorFalse, errorTrue)
+                end
+            end
+        end
+    end
+
+    return ConditionResult(false, errorFalse, errorTrue)
+end

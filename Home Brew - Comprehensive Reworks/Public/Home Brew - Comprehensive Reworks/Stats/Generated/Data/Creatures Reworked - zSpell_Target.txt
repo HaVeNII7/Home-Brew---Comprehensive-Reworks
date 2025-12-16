@@ -949,6 +949,25 @@ data "CastEffect" "169aaaf6-1dba-4392-af39-598acca9ef22"
 data "HitEffect" "870ccdb6-38cd-44f7-a578-3e3067d2a0e0"
 data "Cooldown" "OncePerTurn"
 
+<!--SHADOW-->
+
+new entry "Target_LifeDrain_Wraith"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Claws"
+data "SpellSuccess" "DealDamage(2d8+UnarmedMeleeAbilityModifier,Necrotic,Magical);IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(LIFE_DRAIN,100,-1)"
+data "TargetConditions" "not Self() and not Dead() and Enemy() and Character()"
+data "Icon" "PassiveFeature_Generic_Death"
+data "DisplayName" "h2ee34512gc3f5g4d94ga18bgd6643da1df2b;1"
+data "Description" "h375db52dg77cbg466cg9479ge283edebf6c4;6"
+data "DescriptionParams" "DealDamage(2d8+UnarmedMeleeAbilityModifier,Necrotic)"
+data "TooltipDamageList" "DealDamage(2d8+UnarmedMeleeAbilityModifier,Necrotic)"
+data "TooltipAttackSave" "MeleeWeaponAttack;Constitution"
+data "TooltipStatusApply" "ApplyStatus(LIFE_DRAIN,100,-1)"
+data "HitAnimationType" "MagicalDamage_Internal"
+data "SpellAnimationIntentType" "Aggressive"
+data "Sheathing" "DontChange"
+
 <!--SPECTATOR-->
 
 new entry "Target_Bite_Spectator"

@@ -82,6 +82,16 @@ add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "ARM_Instrument_Lute"
+add equipmentgroup
+add equipment entry "ARM_Instrument_Flute"
+add equipmentgroup
+add equipment entry "ARM_Instrument_Drum"
+add equipmentgroup
+add equipment entry "ARM_Instrument_Lyre"
+add equipmentgroup
+add equipment entry "ARM_Instrument_Violin"
 
 new equipment "EQP_CC_Cleric"
 add initialweaponset "Melee"

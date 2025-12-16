@@ -112,7 +112,7 @@
 					<attribute id="Name" type="LSString" value="Barbarian" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Barbarian;RecklessAttack_Technical;RecklessAttack_Toggle" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1)" />
 					<attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de" />
 					<attribute id="UUID" type="guid" value="a2198ee9-ea4c-468e-b6b4-22b32d37806e" />
 						<children>
@@ -872,7 +872,7 @@
 					<attribute id="Name" type="LSString" value="Bard" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Bard;BardSpellcasting;SongofRest;Mute_Songs" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectEquipment(aab8c5b5-eacf-4867-8e5f-bd4de3a9132e,1,BardInstrument)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1)" />
 					<attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7" />
 					<attribute id="UUID" type="guid" value="374c3aae-828b-44d8-b4e3-51ba802977dd" />
 						<children>
@@ -1675,7 +1675,7 @@
 					<attribute id="Name" type="LSString" value="Cleric" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Cleric;Belief_and_Bestowment" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(4b265732-e303-449a-9c39-dc941811b06e,2,0,Cantrips);SelectSpells(63c89951-2cc1-4597-9d4b-b80d90b56803,2,0,Spells)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(4b265732-e303-449a-9c39-dc941811b06e,2,0,Cantrips);SelectSpells(63c89951-2cc1-4597-9d4b-b80d90b56803,2,0,Spells)" />
 					<attribute id="TableUUID" type="guid" value="64474b62-b4f5-46b3-b94a-c676c6da3116" />
 					<attribute id="UUID" type="guid" value="1dbce574-fff1-49be-b7da-704f9b73cad9" />
 						<children>
@@ -2448,7 +2448,7 @@
 					<attribute id="Name" type="LSString" value="Druid" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Druid;Beastcraft;Wildshape_Removal" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(10a49db5-0f8f-4e19-9e7c-3d4f92f9a8bd,2,0,Cantrips);SelectSpells(4174e244-89fb-46f8-a953-c73cad0a8c56,2,0,Spells);AddSpells(ae3ce10b-d32c-44df-91b9-ebf74476a9d8)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(10a49db5-0f8f-4e19-9e7c-3d4f92f9a8bd,2,0,Cantrips);SelectSpells(4174e244-89fb-46f8-a953-c73cad0a8c56,2,0,Spells);AddSpells(ae3ce10b-d32c-44df-91b9-ebf74476a9d8)" />
 					<attribute id="TableUUID" type="guid" value="6e7b7bad-e122-4679-8b3c-8f8987a9d466" />
 					<attribute id="UUID" type="guid" value="b499258c-2823-42f1-b8ca-0a5ee8455e11" />
 						<children>
@@ -3080,7 +3080,8 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="7" />
 					<attribute id="Name" type="LSString" value="CircleOfTheSpores" />
-					<attribute id="PassivesAdded" type="LSString" value="NecromanticSpores" />
+					<attribute id="PassivesAdded" type="LSString" value="NecromanticSpores;NecromanticSpores_Unlock" />
+					<attribute id="PassivesRemoved" type="LSString" value="AnimatingSpores" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="TableUUID" type="guid" value="288c9d1e-ab18-46dd-8fa3-d4fcfa44147a" />
 					<attribute id="UUID" type="guid" value="5d57552e-acac-47c2-9753-5abd8bb845a0" />
@@ -3112,7 +3113,7 @@
 					<attribute id="Level" type="uint8" value="11" />
 					<attribute id="Name" type="LSString" value="CircleOfTheSpores" />
 					<attribute id="PassivesAdded" type="LSString" value="FungalFleshbringer" />
-					<attribute id="PassivesRemoved" type="LSString" value="AnimatingSpores" />
+					<attribute id="PassivesRemoved" type="LSString" value="NecromanticSpores_Unlock" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="TableUUID" type="guid" value="288c9d1e-ab18-46dd-8fa3-d4fcfa44147a" />
 					<attribute id="UUID" type="guid" value="58c86e0b-c86f-4cfb-b383-104b905672ea" />
@@ -3393,7 +3394,7 @@
 					<attribute id="Name" type="LSString" value="Fighter" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Fighter;SecondWind" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectPassives(e51a2ef5-3663-43f9-8e74-5e28520323f1,1,Maneuvers)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectPassives(e51a2ef5-3663-43f9-8e74-5e28520323f1,1,Maneuvers)" />
 					<attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971" />
 					<attribute id="UUID" type="guid" value="dfb2fd83-9849-4c2d-be84-adedb81a867a" />
 						<children>
@@ -4202,7 +4203,7 @@
 					<attribute id="Name" type="LSString" value="Monk" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Monk;MartialArts_Display;MartialArts_UnarmedDamage;Monk_SoundSwitch" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1)" />
 					<attribute id="TableUUID" type="guid" value="fe1319a2-86be-469c-aab5-e3b0bd714e0e" />
 					<attribute id="UUID" type="guid" value="c091d27e-009b-4841-8bde-5e63e5ca8f4e" />
 						<children>
@@ -4968,7 +4969,7 @@
 					<attribute id="Name" type="LSString" value="Paladin" />
 					<attribute id="PassivesAdded" type="LSString" value="Smite_Divine" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(4b265732-e303-449a-9c39-dc941811b06e,2,0,Cantrips);SelectSpells(63c89951-2cc1-4597-9d4b-b80d90b56803,1,0,Spells);SelectPassives(0cdf39f8-8098-4c6d-8741-66f1877e47ba,1,Smites)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(4b265732-e303-449a-9c39-dc941811b06e,2,0,Cantrips);SelectSpells(63c89951-2cc1-4597-9d4b-b80d90b56803,1,0,Spells);SelectPassives(0cdf39f8-8098-4c6d-8741-66f1877e47ba,1,Smites)" />
 					<attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821" />
 					<attribute id="UUID" type="guid" value="b60618d1-c262-42b5-9fdd-2c0f7aa5e5af" />
 						<children>
@@ -5908,7 +5909,7 @@
 					<attribute id="Name" type="LSString" value="Ranger" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Ranger;CompanionsBond;Nimble_Movement_Ranger;Ranger_ArrowContainer" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(10a49db5-0f8f-4e19-9e7c-3d4f92f9a8bd,2,0,Cantrips);SelectSpells(4174e244-89fb-46f8-a953-c73cad0a8c56,1,0,Spells);SelectPassives(20a80074-ba3e-412d-8f2d-ca3ea234cb94,1,FrontierBallistics)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(10a49db5-0f8f-4e19-9e7c-3d4f92f9a8bd,2,0,Cantrips);SelectSpells(4174e244-89fb-46f8-a953-c73cad0a8c56,1,0,Spells);SelectPassives(20a80074-ba3e-412d-8f2d-ca3ea234cb94,1,FrontierBallistics)" />
 					<attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c" />
 					<attribute id="UUID" type="guid" value="ad1084b1-b99f-6720-cfdd-cf82ad44345b" />
 						<children>
@@ -6310,7 +6311,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="3" />
 					<attribute id="Name" type="LSString" value="BeastMaster" />
-					<attribute id="PassivesAdded" type="LSString" value="BeastialExpertise;BeastialExpertise_RangerDash;BeastialExpertise_RangerDisengage" />
+					<attribute id="PassivesAdded" type="LSString" value="WoodlandSynergy" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="TableUUID" type="guid" value="1ba04e99-e329-471d-a656-bbd5a363d7c8" />
 					<attribute id="UUID" type="guid" value="8272e6af-c9e4-433a-ac1c-9fab6e1db55c" />
@@ -6370,7 +6371,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="11" />
 					<attribute id="Name" type="LSString" value="BeastMaster" />
-					<attribute id="PassivesAdded" type="LSString" value="WoodlandSynergy" />
+					<attribute id="PassivesAdded" type="LSString" value="LeaderofthePack" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="TableUUID" type="guid" value="1ba04e99-e329-471d-a656-bbd5a363d7c8" />
 					<attribute id="UUID" type="guid" value="7eb63ebb-0a7d-4836-a9da-54fade479ff8" />
@@ -6684,7 +6685,7 @@
 					<attribute id="Name" type="LSString" value="Rogue" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Rogue;Lucky_Rogue_AttackRolls;Lucky_Rogue_Attack_Fixer;Lucky_Rogue_Attacked_Fixer;Lucky_Rogue_Abilities;Nimble_Movement" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1)" />
 					<attribute id="TableUUID" type="guid" value="9a44e828-92db-4d6c-acbc-a4f8ef340415" />
 					<attribute id="UUID" type="guid" value="16f00e7f-12f6-4cff-b610-4ee738b02d62" />
 						<children>
@@ -7446,7 +7447,7 @@
 					<attribute id="Name" type="LSString" value="Sorcerer" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Sorcerer;CreationaryText;CreationaryLVL2" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(2bb484e2-1d3a-4177-84b4-2894f25ab2b1,2,0,Cantrips);SelectSpells(a3c79518-7d3b-416c-8c78-470fb1a23c28,2,0,Spells);SelectPassives(49704931-e47b-4ce6-abc6-dfa7ba640752,1,Metamagic)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(2bb484e2-1d3a-4177-84b4-2894f25ab2b1,2,0,Cantrips);SelectSpells(a3c79518-7d3b-416c-8c78-470fb1a23c28,2,0,Spells);SelectPassives(49704931-e47b-4ce6-abc6-dfa7ba640752,1,Metamagic)" />
 					<attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d" />
 					<attribute id="UUID" type="guid" value="42af9bda-9ac0-4564-920b-f9ca1588d6ee" />
 						<children>
@@ -8222,7 +8223,7 @@
 					<attribute id="Name" type="LSString" value="Warlock" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Warlock" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(2db3752d-c3da-435a-aaea-a3b2ceafeb44,2,0,Cantrips);SelectSpells(f33b1b19-43c6-4f61-a001-cd55e516791c,2,0,Spells,,e9127b70-22b7-42a1-b172-d02f828f260a);SelectPassives(ceec377d-0888-4226-a36a-9e3fa1c91d4f,1,Patrons)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(2db3752d-c3da-435a-aaea-a3b2ceafeb44,2,0,Cantrips);SelectSpells(f33b1b19-43c6-4f61-a001-cd55e516791c,2,0,Spells,,e9127b70-22b7-42a1-b172-d02f828f260a);SelectPassives(ceec377d-0888-4226-a36a-9e3fa1c91d4f,1,Patrons)" />
 					<attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377" />
 					<attribute id="UUID" type="guid" value="a7767dc5-e6ab-4e05-96fd-f0424256121c" />
 						<children>
@@ -9007,7 +9008,7 @@
 					<attribute id="Name" type="LSString" value="Wizard" />
 					<attribute id="PassivesAdded" type="LSString" value="Personality_Wizard;Scholarly_Acumen" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(c0aaf09a-fbb5-4480-aae0-f196b7fa33d5,2,0,Cantrips);SelectSpells(8e57e7e8-af23-4621-a64a-3cf34b57676c,2,0,Spells);AddSpells(34c3321d-75ab-4b50-a44d-cbac8705a360)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1);SelectSpells(c0aaf09a-fbb5-4480-aae0-f196b7fa33d5,2,0,Cantrips);SelectSpells(8e57e7e8-af23-4621-a64a-3cf34b57676c,2,0,Spells);AddSpells(34c3321d-75ab-4b50-a44d-cbac8705a360)" />
 					<attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479" />
 					<attribute id="UUID" type="guid" value="c201c736-3717-4c3c-9e36-2ae7387597a3" />
 						<children>
@@ -10467,6 +10468,7 @@
 					<attribute id="UUID" type="guid" value="e557c3b8-7cc1-43f8-bd8a-6838ff01e009" />
 					</node>
         <node id="Progression">
+					<attribute id="Boosts" type="LSString" value="Tag(REALLY_DRAGONBORN)" />
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="AmethystDragonborn" />
                     <attribute id="PassivesAdded" type="LSString" value="DragonbornAmethyst" />
@@ -10493,6 +10495,7 @@
                     <attribute id="UUID" type="guid" value="68ebe0af-1ce9-416f-9b4f-73483e55f009" />
                 </node>
         <node id="Progression">
+					<attribute id="Boosts" type="LSString" value="Tag(REALLY_DRAGONBORN)" />
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="CrystalDragonborn" />
                     <attribute id="PassivesAdded" type="LSString" value="DragonbornCrystal" />
@@ -10519,6 +10522,7 @@
                     <attribute id="UUID" type="guid" value="ccce1850-17d6-416f-a2aa-88047dc9f009" />
                 </node>
         <node id="Progression">
+					<attribute id="Boosts" type="LSString" value="Tag(REALLY_DRAGONBORN)" />
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="EmeraldDragonborn" />
                     <attribute id="PassivesAdded" type="LSString" value="DragonbornEmerald" />
@@ -10545,6 +10549,7 @@
                     <attribute id="UUID" type="guid" value="1f57fb95-6522-478e-8e98-06950155bd09" />
                 </node>
         <node id="Progression">
+					<attribute id="Boosts" type="LSString" value="Tag(REALLY_DRAGONBORN)" />
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="SapphireDragonborn" />
                     <attribute id="PassivesAdded" type="LSString" value="DragonbornSapphire" />
@@ -10571,6 +10576,7 @@
                     <attribute id="UUID" type="guid" value="ffeb1fef-7e29-49cc-9778-af9bd7159009" />
                 </node>
         <node id="Progression">
+					<attribute id="Boosts" type="LSString" value="Tag(REALLY_DRAGONBORN)" />
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="TopazDragonborn" />
                     <attribute id="PassivesAdded" type="LSString" value="DragonbornTopaz" />
