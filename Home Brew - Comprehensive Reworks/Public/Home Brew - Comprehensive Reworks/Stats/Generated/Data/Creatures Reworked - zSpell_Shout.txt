@@ -33,6 +33,33 @@ data "UseCosts" "BonusActionPoint:1"
 data "Cooldown" "OncePerCombat"
 data "SpellStyleGroup" "Class"
 
+<!--DAME AYLIN-->
+
+new entry "Shout_MOO_Nightsong_RadiantConsumption"
+type "SpellData"
+data "SpellType" "Shout"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "SpellProperties" "ApplyStatus(SELF,MOO_NIGHTSONG_MOONBEAM,100,3);AI_ONLY:ApplyStatus(SELF,AI_HELPER_BUFF,100,0);IF(not Player(context.Source)):ApplyStatus(SELF,BUFF_BLOCKER,100,3)"
+data "Icon" "GenericIcon_DamageType_Radiant"
+data "DisplayName" "hf8723df2g1884g46aagb114g523ea75da964;4"
+data "Description" "h9705bf5dg6a89g4205g9a88gaf5c5aecb5db;2"
+data "AreaRadius" "3"
+data "AoEConditions" "Self()"
+data "TooltipStatusApply" "ApplyStatus(MOO_NIGHTSONG_MOONBEAM,100,3)"
+data "CastSound" "CrSpell_Cast_Nightsong_LunarBlessing"
+data "TargetSound" "CrSpell_Impact_Nightsong_LunarBlessing"
+data "CastTextEvent" "Cast"
+data "UseCosts" "BonusActionPoint:1"
+data "SpellAnimation" "3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,,"
+data "SpellFlags" "HasSomaticComponent;IsSpell"
+data "HitAnimationType" "MagicalDamage_External"
+data "SpellAnimationIntentType" "Aggressive"
+data "PrepareEffect" "3044bca0-7b0e-4d65-9b15-f586f5d58388"
+data "CastEffect" "2b656a6d-9180-484f-8a75-c37afb857d97"
+data "Sheathing" "DontChange"
+data "RequirementConditions" "not HasStatus('BUFF_BLOCKER')"
+
 <!--DRAGON-->
 
 new entry "Shout_FrightfulPresence_Dragon_Skeletal"

@@ -216,9 +216,9 @@
 	<content contentuid="h9edc5297g58c0g4b7dg8e45g59ads6fsdf89" version="3">While obscured in shadow, you may &lt;LSTag Type="Spell" Tooltip="HIDING"&gt;Hide&lt;/LSTag&gt; as a free action. Additionally, you can see normally in darkness, both magical and non-magical, to a distance of [1].</content>
 
 	<content contentuid="4512454c8e254628bd4dca56s45df6sd8458d" version="2">Auspicious Shadows</content>
-	<content contentuid="4512454c8e254628bd4dc6as9d8f79s8d7f58" version="3">Upon landing a killing blow with &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant"&gt;Shadow Strike&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant_Unarmed"&gt;Shadow Strike: Unarmed&lt;/LSTag&gt;, casting these actions again will always result in a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; for the rest of your turn.</content>
+	<content contentuid="4512454c8e254628bd4dc6as9d8f79s8d7f58" version="3">Upon landing a killing blow with &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant"&gt;Shadow Strike&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant_Unarmed"&gt;Shadow Strike: Unarmed&lt;/LSTag&gt;, all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will always result in a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; for the rest of your turn.</content>
 	<content contentuid="4512454c8e254628bd4dca56s45df6sd2d545" version="2">Auspicious Shadows</content>
-	<content contentuid="4512454c8e254628bd4dc6as9d8f79s86698d" version="3">Affected creature will only roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; when damaging another creature with &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant"&gt;Shadow Strike&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_ShadowStrike_Instant_Unarmed"&gt;Shadow Strike: Unarmed&lt;/LSTag&gt;.</content>
+	<content contentuid="4512454c8e254628bd4dc6as9d8f79s86698d" version="3">Affected creature will only roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; when damaging another creature.</content>
 
 	<content contentuid="h9edc5297g58c0g4b7dg8e45as8d9f87s9d8f" version="2">Fade to Black</content>
 	<content contentuid="h9edc5297g58c0g4b7dg8e4as2dff31289898" version="3">Enemies within [1] of you have their peripheral vision severely reduced.</content>

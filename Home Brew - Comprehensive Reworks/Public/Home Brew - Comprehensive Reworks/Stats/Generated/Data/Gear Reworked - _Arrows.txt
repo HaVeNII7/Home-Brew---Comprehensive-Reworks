@@ -152,6 +152,7 @@ data "Boosts" "BlockRegainHP()"
 data "ApplyEffect" "23598d25-0da7-4d65-b097-b4c6da23d439"
 data "RemoveConditions" "HasStatus('DOWNED')"
 data "RemoveEvents" "OnStatusApplied"
+data "StatusGroups" "SG_Magical;SG_Cursed"
 
 <!--ARROW OF LIGHTNING-->
 

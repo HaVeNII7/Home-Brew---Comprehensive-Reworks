@@ -101,4 +101,8 @@
 	<content contentuid="hdc8b0085gb95fg42f9g9654g3afd728daf6b" version="2">Gain an additional Level 1, 2, and 3 &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;. Replaces effects from other elixirs when drunk.</content>
 	<content contentuid="h3b8232a3g5fa0g4c90ga49ag02fc5377a372" version="3">Affected creature has an additional Level 1, 2, and 3 &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
 
+<!--ELIXIR OF DARKVISION-->
+	<content contentuid="hd66e0762g5ee9g4d66ga85bg6175c15f0fe6" version="2">Elixir of Darkvision</content>
+	<content contentuid="h6313fb91gb2bdg432agbce6g9cfdabbe402f" version="2">Affected creature can see in the dark, magical or otherwise, for up to [1].</content>
+
 </contentList>

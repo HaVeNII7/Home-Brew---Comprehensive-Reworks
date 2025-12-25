@@ -46,6 +46,22 @@ data "RemoveEvents" "OnObscurityChanged"
 data "StackType" "Ignore"
 data "Boosts" "Disadvantage(AttackRoll)"
 
+<!--DAME AYLIN-->
+
+new entry "MOO_NIGHTSONG_MOONBEAM"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h47fbac5dgda23g402bg9bcdg2cae3cc38820;1"
+data "Description" "h6e20f892gecf1g434aga880g3c2e3166302e;1"
+data "DescriptionParams" "DealDamage(1d12,Radiant);Distance(3)"
+data "Icon" "Spell_Evocation_Moonbeam"
+data "StackId" "MOO_NIGHTSONG_MOONBEAM"
+data "AuraRadius" "3"
+data "AuraStatuses" "TARGET:IF(not HasStatus('SITOUT_ONCOMBATSTART_APPLIER_TECHNICAL',context.Source) and not HasStatus('SITOUT_ONCOMBATSTART_DOONCE_TECHNICAL',context.Source) and not HasStatus('BANISHED',context.Source) and not HasStatus('BANISHED_FINALSTAND',context.Source) and Enemy() and not Dead()):ApplyStatus(BURNING_HOLY,100,-1)"
+data "Boosts" "GameplayLight(3,false,0.1)"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;InitiateCombat;BringIntoCombat"
+data "StatusEffect" "dd02e9e1-8ab7-4da0-9097-26fd886c06d4"
+
 <!--DARK JUSTICIAR-->
 
 new entry "DAMAGE_SHIELD_NPC_RADIANT"

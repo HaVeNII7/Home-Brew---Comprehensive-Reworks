@@ -30,9 +30,9 @@
 	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b06a922" version="3">You may utilize your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; two times per turn.</content>
 
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b396a921" version="1">Uncanny Dodge</content>
-	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b03a621" version="3">When an enemy makes a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to take only half the damage.</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b03a621" version="3">When an enemy makes a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to force the attack to &lt;LSTag Type="Status" Tooltip="OFF_BALANCED_CRITICAL_MISS"&gt;Critically Miss&lt;/LSTag&gt;.</content>
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b396a366" version="1">Uncanny Dodge</content>
-	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b03a219" version="3">When an enemy makes a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, take only half of the damage.</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b03a219" version="3">When an enemy makes a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, force the attack to &lt;LSTag Type="Status" Tooltip="OFF_BALANCED_CRITICAL_MISS"&gt;Critically Miss&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b3938989" version="1">Superior Sneak Attack</content>
 	<content contentuid="h098941ccgc4ecg49f2gb22agabed0blopoi7" version="3">You may utilize your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; three times per turn.</content>
@@ -232,7 +232,7 @@
 	<content contentuid="d3e15e63749c4b62b8e7760cc70741200000q" version="3">Upon &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Sneaking&lt;/LSTag&gt; or becoming &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt;, or upon starting your turn while Sneaking or Invisible, all enemies within [1] of you are afflicted with &lt;LSTag Type="Status" Tooltip="HUNTERS_MARK"&gt;Hunter's Mark&lt;/LSTag&gt;.</content>
 
 	<content contentuid="d3e15e63749c4b62b8e7760cc707412000018" version="1">Umbral Sight</content>
-	<content contentuid="d3e15e63749c4b62b8e7760cc70741200000r" version="3">Gain &lt;LSTag Type="Passive" Tooltip="SuperiorDarkvision"&gt;Superior Darkvision&lt;/LSTag&gt; and the ability to see within magical darkness.</content>
+	<content contentuid="d3e15e63749c4b62b8e7760cc70741200000r" version="3">Gain the ability to see normally in darkness, both magical and non-magical, to a distance of [1].</content>
 
 	<content contentuid="d3e15e63749c4b62b8e7760cc707412000019" version="1">Vanishing Act</content>
 	<content contentuid="d3e15e63749c4b62b8e7760cc70741200000s" version="3">When an enemy fails an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, you may spend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to become &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt; until the end of your next turn.</content>

@@ -8,7 +8,7 @@ data "ToggleOnFunctors" "IF(NoInstrumentEquipped()):ApplyStatus(DRUM_DICE_ROLL,1
 new entry "Bard_Weapon_Add_NPC"
 type "PassiveData"
 data "Properties" "IsHidden;IsToggled;ToggledDefaultOn"
-data "ToggleOnFunctors" "ApplyStatus(LONGSWORD_DICE_ROLL,100,-1)"
+data "ToggleOnFunctors" "IF(NoMeleeWeaponEquipped()):ApplyStatus(LONGSWORD_DICE_ROLL,100,-1)"
 
 <!----------------------------------------------------------------------------------------------------GEAR RANDOMIZERS ACTUAL---------------------------------------------------------------------------------------------------->
 

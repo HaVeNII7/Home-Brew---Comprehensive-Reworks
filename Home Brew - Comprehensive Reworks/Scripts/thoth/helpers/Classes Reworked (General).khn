@@ -66,3 +66,31 @@ function HasMultipleAlliesWithinRange(exclusionStatus, distance, tag, NumberOfAl
 
     return ConditionResult(false, errorFalse, errorTrue)
 end
+
+function HasMeleeWeaponEquipped()
+    result = WieldingWeapon('Melee')
+    return ConditionResult(result.Result, {ConditionError("HasNotWeaponInMainHand")}, {ConditionError("HasWeaponInMainHand")})
+end
+
+function HasRangedWeaponEquipped()
+    result = WieldingWeapon('Ammunition')
+    return ConditionResult(result.Result, {ConditionError("HasNotWeaponInMainHand")}, {ConditionError("HasWeaponInMainHand")})
+end
+
+function NoMeleeWeaponEquipped(entity)
+    local entity = entity or context.Source
+    if (GetItemInEquipmentSlot(EquipmentSlot.MainHand, entity).IsValid) then
+        return ConditionResult(false)
+    end
+
+    return ConditionResult(true)
+end
+
+function NoRangedWeaponEquipped(entity)
+    local entity = entity or context.Source
+    if (GetItemInEquipmentSlot(EquipmentSlot.RangedMainHand, entity).IsValid) then
+        return ConditionResult(false)
+    end
+
+    return ConditionResult(true)
+end

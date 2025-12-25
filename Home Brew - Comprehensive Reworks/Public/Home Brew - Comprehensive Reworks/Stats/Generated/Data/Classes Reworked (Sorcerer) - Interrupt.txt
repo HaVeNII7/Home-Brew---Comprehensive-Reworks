@@ -61,21 +61,6 @@ data "Cost" "CounterAction:1"
 data "InterruptDefaultValue" "Ask;Enabled"
 data "Stack" "OnAllyDamaged"
 
-new entry "Interrupt_Pyrebound"
-type "InterruptData"
-data "DisplayName" "hc580238eg0032g4f7fg9d2ag7f93d6f5df12;2"
-data "Description" "h6fa01c82g439eg42c5g8c62g01696s8d5f84;1"
-data "Icon" "Action_EndGame_RolanArtillery"
-data "InterruptContext" "OnStatusApplied"
-data "InterruptContextScope" "Self"
-data "Container" "YesNoDecision"
-data "Conditions" "StatusGroupDurationEqualOrMoreThan(context.Observer,'MAG_FIRE_HEAT',10)"
-data "Properties" "ApplyStatus(OBSERVER_OBSERVER,METEORIC_BURST,100,1)"
-data "Cost" ""
-data "InterruptDefaultValue" "Enabled"
-data "InterruptDefaultValue" "Ask;Enabled"
-data "Stack" "OnStatusApplied"
-
 <!--WILD MAGIC-->
 
 new entry "Interrupt_TidesOfChaos"

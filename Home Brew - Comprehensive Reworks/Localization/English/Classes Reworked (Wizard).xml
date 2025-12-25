@@ -137,13 +137,13 @@
 	<content contentuid="h2ad29575gfd7cg4566g8445g7594ca37780e" version="1">All allied Undead within [1] gain a bonus to their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h9aee3403g58c0g4c53g8ca6g380393800072" version="6">Preemptive Atrocity</content>
-	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c6s6d50007b" version="6">On your first turn of any combat encounter, you immediately summon a Death Shepherd.</content>
+	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c6s6d50007b" version="6">At the beginning of any combat encounter, you immediately summon a Death Shepherd.</content>
 
 	<content contentuid="h9aee3403g58c0g4c53g8ca6g3803922d6f45" version="6">Dominion Over Death</content>
 	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c6s6ddd69f8" version="6">Your summoned Undead are immune to the effects of &lt;LSTag Type="Status" Tooltip="ZOMBIE_DECAY"&gt;Decay&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h9aee3403g58c0g4c53g8ca6g380393800071" version="6">Raise Hell</content>
-	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c6s6d50007a" version="6">On your first turn of any combat encounter, all suitable corpses within [1] are raised as Undead.</content>
+	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c6s6d50007a" version="6">At the beginning of any combat encounter, all suitable corpses within [1] are raised as Undead.</content>
 
 <!--SCHOLARLY ACUMEN-->
 
@@ -225,7 +225,7 @@
 	<content contentuid="772cd70f49274c7596988bf90e992ca8000zh" version="6">When an enemy fails an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, retaliate with &lt;LSTag Type="Spell" Tooltip="Projectile_FireBolt"&gt;Firebolt&lt;/LSTag&gt;.</content>
 
 	<content contentuid="772cd70f49274c7596988bf90e992ca800009" version="6">Illusory Phantasm</content>
-	<content contentuid="772cd70f49274c7596988bf90e992ca80000i" version="6">On your first turn of any combat encounter, immediately receive the effects of &lt;LSTag Type="Status" Tooltip="MIRROR_IMAGE_1"&gt;Mirror Image&lt;/LSTag&gt;.</content>
+	<content contentuid="772cd70f49274c7596988bf90e992ca80000i" version="6">At the beginning of any combat encounter, immediately receive the effects of &lt;LSTag Type="Status" Tooltip="MIRROR_IMAGE_1"&gt;Mirror Image&lt;/LSTag&gt;.</content>
 
 	<content contentuid="772cd70f49274c7596988bf90e992ca800010" version="6">Magical Insight</content>
 	<content contentuid="772cd70f49274c7596988bf90e992ca80000j" version="6">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt; based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. Additionally, you add your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt; to all Charisma based &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt;.</content>

@@ -35,14 +35,14 @@
 	<content contentuid="h53277800gd3a4g4984gbff6g0af5dd222d64" version="1">Affected creature's maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; have been reduced by 10% per stack of Hematic Invocation.</content>
 
 	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c746993kd8" version="5">Mystic Arcanum</content>
-	<content contentuid="h53277800gd3a4g4984gbff6g0af596601lss" version="1">On your first turn of any combat encounter, restore one &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596601lss" version="1">At the beginning of any combat encounter, restore one &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slot&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hcbb02b50g75d3g468fgacb6gb76a6655d2f5" version="5">Eldritch Empowerment</content>
 	<content contentuid="h53277800gd3a4g4984gbff6g0af59sdfsd88" version="1">When dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you deal an additional +1d12 damage.</content>
 	<content contentuid="h53277800gd3a4g4984gbff6g0af59sd6a212" version="1">When dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you deal an additional +1d12 damage. This can be toggled at any time.</content>
 
 	<content contentuid="hcbb02b50g75d3g468fgacb6gb7c746993kd9" version="5">Deepened Arcanum</content>
-	<content contentuid="h53277800gd3a4g4984gbff6g0af596601lst" version="1">On your first turn of any combat encounter, restore two &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slots&lt;/LSTag&gt;.</content>
+	<content contentuid="h53277800gd3a4g4984gbff6g0af596601lst" version="1">At the beginning of any combat encounter, restore two &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slots&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hcbb02b50g75d3g468fgacb6gb75a66d852ff" version="5">Improved Eldritch Empowerment</content>
 	<content contentuid="h53277800gd3a4g4984gbff6g0affsdfs99fe" version="1">When dealing damage with your &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you deal an additional +2d12 damage.</content>

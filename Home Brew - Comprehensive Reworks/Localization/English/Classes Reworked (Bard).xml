@@ -9,13 +9,13 @@
 	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f9ss6fa" version="2">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; in combat, you are able to utilize various passive effects which increase in potency each turn. Upon ending your Performance, you may start Performing again at the same level that it was dropped by expending a charge of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Upon reaching a state of &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, you gain access to a unique action depending on which Bard subclass you currently belong to.</content>
 
 	<content contentuid="hc9735187g68cag427ag8680g4eff5d800001" version="1">Performative Intro</content>
-	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f90000a" version="2">Affected creature's performance has just begun! All performance related passives are active. Taking damage will end this creature's performance.</content>
+	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f90000a" version="2">Affected creature's performance has just begun! All performance related passives are active. Taking damage can end this creature's performance.</content>
 
 	<content contentuid="hc9735187g68cag427ag8680g4eff5d800002" version="1">Performative Verse</content>
-	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f90000b" version="2">Affected creature's performance has begun to ramp up! All performance related passives have been enhanced! Taking damage will end this creature's performance.</content>
+	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f90000b" version="2">Affected creature's performance has begun to ramp up! All performance related passives have been enhanced! Taking damage can end this creature's performance.</content>
 
 	<content contentuid="hc9735187g68cag427ag8680g4eff5d800003" version="1">Performative Chorus</content>
-	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f90000c" version="2">Affected creature's performance has reached the best part! All performance related passives have been greatly enhanced! Taking damage will end this creature's performance.</content>
+	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f90000c" version="2">Affected creature's performance has reached the best part! All performance related passives have been greatly enhanced! Taking damage can end this creature's performance.</content>
 
 	<content contentuid="hc9735187g68cag427ag8680g4eff5d8f55d8" version="1">Encore (Performative Verse)</content>
 	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f99d5f8" version="2">Affected creature may use one of their &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; in order to resume their performance where they left off. Should they choose to do so, they will regain their charge of Bardic Inspiration after three turns.</content>
@@ -76,7 +76,7 @@
 	<content contentuid="h83cf5455g3702g4d14g81d6gf9c5394d3ae4" version="1">The bonuses provided from granting allies &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt; increases to +[1].</content>
 
 	<content contentuid="hb117050dg0016g4833g87f0g8d614082da8d" version="2">Font of Inspiration</content>
-	<content contentuid="h893450deg4af3g43f4gad83g7b35893b360c" version="2">Upon entering combat, restore all three charges of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
+	<content contentuid="h893450deg4af3g43f4gad83g7b35893b360c" version="2">At the beginning of any combat encounter, restore all three charges of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h88a5bdddge82eg43d4g9657gcace3c25649a" version="2">Reliable Talent</content>
 	<content contentuid="hf634a0fagca4dg4bb4g858cg5bb1ba080907" version="3">When you make an &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt; with a &lt;LSTag Tooltip="Skill"&gt;Skill&lt;/LSTag&gt; you are &lt;LSTag Tooltip="Proficiency"&gt;Proficient&lt;/LSTag&gt; in, the lowest result you can roll is [1].</content>
@@ -326,7 +326,7 @@ Valour</content>
 	<content contentuid="171ffb649bb448399193ed1c0d6896dd000zs" version="1">This creature has experienced a positive surge of &lt;LSTag Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt; due to &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
 
 	<content contentuid="171ffb649bb448399193ed1c0d6896dd00020" version="1">Vigorously Tuned</content>
-	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000t" version="1">On your first turn of any combat encounter, gain &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; equal to your level multiplied by four.</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000t" version="1">At the beginning of any combat encounter, gain &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; equal to your level multiplied by four.</content>
 
 <!--REWARD FOR RESCUING ALFIRA IN ACT 2-->
 

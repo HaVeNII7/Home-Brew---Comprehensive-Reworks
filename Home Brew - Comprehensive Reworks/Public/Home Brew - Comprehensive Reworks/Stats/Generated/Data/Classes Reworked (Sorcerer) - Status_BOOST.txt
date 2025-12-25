@@ -519,23 +519,6 @@ data "StatusType" "BOOST"
 data "StackId" "PYRRHICFLARE_BLOCKER"
 data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
 
-new entry "METEORIC_BURST"
-type "StatusData"
-data "StatusType" "BOOST"
-data "DisplayName" "hc580238eg0032g4f7fg9d2ag7f93d6f3sd1f;1"
-data "Description" "h6fa01c82g439eg42c5g8c62g01696s65df85;3"
-data "Icon" "Action_EndGame_RolanArtillery"
-data "SoundStart" "Misc_Status_Heat_Convergence_Enter_MO"
-data "SoundLoop" "Misc_Status_Heat_Convergence_MO"
-data "SoundStop" "Misc_Status_Heat_Convergence_MO_Stop"
-data "StackId" "METEORIC_BURST"
-data "TickType" "EndTurn"
-data "OnApplyFunctors" "RemoveStatus(MAG_FIRE_HEAT)
-data "Boosts" "UnlockSpell(Target_MeteoricBurst)"
-data "StatusGroups" "SG_RemoveOnRespec"
-data "ApplyEffect" "96f3a781-7e09-423a-a937-c1afc659b01a"
-data "StatusEffect" "60794bbe-4627-488c-813d-33afa2df5b53"
-
 <!--WILD MAGIC-->
 
 new entry "TIDES_OF_CHAOS"

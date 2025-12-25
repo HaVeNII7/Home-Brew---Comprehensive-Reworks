@@ -475,7 +475,7 @@ data "ExtraDescription" "h197f62bbgd1ddg4436g90df5s6s5d4f56f45"
 data "Icon" "PassiveFeature_RelentlessRage"
 data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnTurn"
-data "Conditions" "HasStatus('SG_Rage', context.Source) and not HasStatus('DOWNED', context.Source)"
+data "Conditions" "HasStatus('SG_Rage', context.Source) and not HasStatus('DOWNED')"
 data "StatsFunctors" "RegainHitPoints(SELF,1d6)"
 
 new entry "RelentlessRage"

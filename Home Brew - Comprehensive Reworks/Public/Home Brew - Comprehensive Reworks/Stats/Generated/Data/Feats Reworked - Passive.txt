@@ -736,6 +736,163 @@ data "StatsFunctorContext" "OnDamage"
 data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally() and not IsMeleeAttack() and IsWeaponAttack() or IsCritical() and Character() and not Self() and not Ally() and not IsMeleeAttack() and IsWeaponAttack()"
 data "StatsFunctors" "RestoreResource(SELF,SpellSlot,1,1)"
 
+<!--ALCHEMIST-->
+
+new entry "Alchemist"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d01;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250a;2"
+data "DescriptionParams" "Distance(3)"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "IF(context.HasContextFlag(StatsFunctorContext.OnConsumed) and Tagged('HEALING_POTION')):MaximizeHealing(Incoming)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "Tagged('GRENADE')"
+data "StatsFunctors" "IF(not CharacterLevelGreaterThan(2)):CreateExplosion(Projectile_Explosion);IF(CharacterLevelGreaterThan(2) and not CharacterLevelGreaterThan(4)):CreateExplosion(Projectile_Explosion_2);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(6)):CreateExplosion(Projectile_Explosion_3);IF(CharacterLevelGreaterThan(6) and not CharacterLevelGreaterThan(8)):CreateExplosion(Projectile_Explosion_4);IF(CharacterLevelGreaterThan(8) and not CharacterLevelGreaterThan(10)):CreateExplosion(Projectile_Explosion_5);IF(CharacterLevelGreaterThan(10)):CreateExplosion(Projectile_Explosion_6)"
+
+<!--ANCHORED FOCUS-->
+
+new entry "AnchoredFocus"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d02;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250b;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "Highlighted;ForceShowInCC;OncePerCombat"
+data "StatsFunctorContext" "OnCombatStarted;OnTurn"
+data "StatsFunctors" "ApplyStatus(SELF,ANCHOREDFOCUS,100,3)"
+
+new entry "AnchoredFocus_Extender"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally() or IsCritical() and Character() and not Self() and not Ally()"
+data "StatsFunctors" "ApplyStatus(SELF,ANCHOREDFOCUS_DURATION,100,0)"
+
+<!--ARCANE ECHOES-->
+
+new entry "ArcaneEchoes"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d03;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250c;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "Highlighted;ForceShowInCC"
+data "StatsFunctorContext" "OnTurn"
+data "StatsFunctors" "RestoreResource(SpellSlot,1,1)"
+
+<!--BLESSINGS OF THE MOON-->
+
+new entry "BlessingsoftheMoon"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d04;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250d;2"
+data "DescriptionParams" "Distance(3)"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "UnlockSpell(CShout_MOO_Nightsong_RadiantConsumption);UnlockSpell(CProjectile_MOO_Nightsong_GuidingBolt);UnlockSpell(CTarget_MOO_Nightsong_SearingSmite)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "Character() and not Self() and Enemy()"
+data "StatsFunctors" "CreateExplosion(SELF,Projectile_BlessingsoftheMoon)"
+
+<!--COMBAT MEDIC-->
+
+new entry "CombatMedic"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d05;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250e;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "Highlighted;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar"
+data "Boosts" "UnlockSpellVariant(SpellId('Target_Help'),ModifyUseCosts(Replace,ActionPoint,0,-1,ActionPoint),ModifyUseCosts(Add,ReactionActionPoint,1,0))"
+data "StatsFunctorContext" "OnAttack"
+data "Conditions" "SpellId('Target_Help')"
+data "StatsFunctors" "TARGET:RegainHitPoints(CurrentHP)"
+
+<!--GALVANIZED STORMSOUL-->
+
+new entry "GalvanizedStormsoul"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d06;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250f;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "Resistance(Lightning, Immune);Resistance(Thunder, Immune)"
+data "StatsFunctorContext" "OnDamage"
+data "StatsFunctors" "IF(not HasStatus('MAG_CHARGED_LIGHTNING', context.Source)):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_LIGHTNING_DAMAGE_ONCE_TECHNICAL,100, 0);IF(Character()):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_GENERATE_CHARGE_FX, 100, 0);IF(Character() and not IsDischargingLightning(context.Source)):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING,100, 1);ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_DURATION_TECHNICAL, 100, 1)"
+
+new entry "GalvanizedStormsoul_Damaged"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d06;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250f;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnDamaged"
+data "StatsFunctors" "IF(not HasStatus('MAG_CHARGED_LIGHTNING', context.Target)):ApplyStatus(MAG_CHARGED_LIGHTNING_LIGHTNING_DAMAGE_ONCE_TECHNICAL,100, 0);IF(Character()):ApplyStatus(MAG_CHARGED_LIGHTNING_GENERATE_CHARGE_FX, 100, 0);IF(Character() and not IsDischargingLightning(context.Target)):ApplyStatus(MAG_CHARGED_LIGHTNING,100, 1);ApplyStatus(MAG_CHARGED_LIGHTNING_DURATION_TECHNICAL, 100, 1)"
+
+<!--PSIONIC DOMINANCE-->
+
+new entry "PsionicDominance"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d08;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250h;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "DamageBonus(1d4,Psychic);StatusImmunity(HP_REDUCTION)"
+data "StatsFunctorContext" "OnDamage"
+data "StatsFunctors" "ApplyStatus(MAG_PSYCHIC_MENTAL_FATIGUE, 100, 1);ApplyStatus(MAG_PSYCHIC_MENTAL_FATIGUE_DURATION_TECHNICAL, 100, 1)"
+
+<!--REACTIVE ASSAULT-->
+
+new entry "ReactiveAssault"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d09;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250i;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "Highlighted;ForceShowInCC"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsCritical() and Character() and not Self() and not Ally()"
+data "StatsFunctors" "ApplyStatus(SELF,REACTIVEASSAULT,100,1)"
+
+<!--TOGETHER IN TORMENT-->
+
+new entry "TogetherInTorment"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d10;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250j;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "Highlighted;ForceShowInCC"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "Character() and not Self() and not Ally() and not SpellId('Projectile_TogetherInTorment')"
+data "StatsFunctors" "ApplyStatus(SELF,TORMENTOR,100,1);ApplyStatus(TORMENTED,100,3)"
+
+new entry "TogetherInTorment_Damaged"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d10;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250j;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "HasPassive('TogetherInTorment', context.Source) and not SpellId('Projectile_TogetherInTorment')"
+data "StatsFunctors" "CreateExplosion(Projectile_TogetherInTorment)"
+
+new entry "TogetherInTorment_Kill"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d10;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250j;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally()"
+data "StatsFunctors" "RemoveStatus(SELF,TORMENTOR)"
+
+<!--VISAGE OF REFLECTION-->
+
+new entry "VisageofReflection"
+type "PassiveData"
+data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d11;2"
+data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250k;2"
+data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "RedirectDamage(0.5,Force,Physical,true)"
+
 <!--YOKEBREAKER-->
 
 new entry "Feat_SpellSlots"

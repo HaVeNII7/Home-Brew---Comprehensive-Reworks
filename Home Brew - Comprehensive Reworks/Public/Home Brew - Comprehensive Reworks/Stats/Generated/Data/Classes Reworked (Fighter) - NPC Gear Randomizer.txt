@@ -3,7 +3,7 @@
 new entry "Ranged_Weapon_Add_NPC"
 type "PassiveData"
 data "Properties" "IsHidden;IsToggled;ToggledDefaultOn"
-data "ToggleOnFunctors" "ApplyStatus(SHORTBOW_DICE_ROLL,100,-1)"
+data "ToggleOnFunctors" "IF(NoRangedWeaponEquipped()):ApplyStatus(SHORTBOW_DICE_ROLL,100,-1)"
 data "Boosts" "AiArchetypeOverride(ranged_smart,1)"
 
 <!----------------------------------------------------------------------------------------------------GEAR RANDOMIZERS ACTUAL---------------------------------------------------------------------------------------------------->

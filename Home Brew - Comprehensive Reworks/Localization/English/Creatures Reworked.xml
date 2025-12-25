@@ -316,6 +316,15 @@
 	<content contentuid="h184ab785gdae3g4b7ega249ge4ffd6f8d588" version="5">Light Sensitivity: Heavily Obscured</content>
 	<content contentuid="h63415200gb6c7g41c2g9d2dg8afff5s8d966" version="1">Your time in the underdark has left your eyes accustomed to the dark, and as such, while in heavily obscured areas you will make all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
+	<content contentuid="h450bd7d6g3391g496dga596gc83fc4563afe" version="1">Darkvision</content>
+	<content contentuid="h1bde91c2g3406g4552gafb0g6e21436db1d3" version="4">You can see normally in darkness, both magical and non-magical, to a distance of [1].</content>
+
+	<content contentuid="hde9be91agb67fg4351g8c4aga5a5febb90b6" version="2">Superior Darkvision</content>
+	<content contentuid="hae3d7f66g3a4ag43d8g8103g4fcf9ec4f584" version="2">You can see normally in darkness, both magical and non-magical, to a distance of [1].</content>
+
+	<content contentuid="h5ecedc36gdf68g4529g820fgfc9269eb9f52" version="2">Devil's Sight</content>
+	<content contentuid="h4290e9c1ga5abg4f18g8243g7410a1457f60" version="2">You can see normally in darkness, both magical and non-magical, to a distance of [1].</content>
+
 <!--TAGS FOR NPC AI ASSIGNMENT-->
 	<content contentuid="hffaccf0ag0569g4b24gb7bfg483838ss3f45" version="5">HERO</content>
 	<content contentuid="hffaccf0ag0569g4b24gb7bfg48383822d6d5" version="1">HEROFORHEALTHSCALING</content>
@@ -494,5 +503,16 @@
 
 	<content contentuid="hf68573edgb5f3g4027gb92cgd55a096d74b3" version="1">Radiant Retort</content>
 	<content contentuid="hf6737e4eg1692g42acgb65ag23edf956cbad" version="1">While obscured in darkness, you reflect all Radiant damage back at your attacker twofold as Force damage.</content>
+
+	<content contentuid="hf8723df2g1884g46aagb114g523ea75da964" version="4">Blessing of Moonfire</content>
+	<content contentuid="h9705bf5dg6a89g4205g9a88gaf5c5aecb5db" version="2">Surround yourself in a pillar of Selûne's light, afflicting nearby foes with &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>
+	<content contentuid="h47fbac5dgda23g402bg9bcdg2cae3cc38820" version="1">Moonfire</content>
+	<content contentuid="h6e20f892gecf1g434aga880g3c2e3166302e" version="1">Affected creature is blessed by moonlight. Enemies within [1] of them be afflicted with &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h7ad12a2bg9d88g4593g8c32g46a12174403d" version="2">Lunar Flare</content>
+	<content contentuid="hc2fdc7cdgba8fg48e4gb0a8gcfc98e3d358b" version="2">Fire a mote of moonlight that spills roiling &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Fire&lt;/LSTag&gt; in a [1] radius where it impacts.</content>
+
+	<content contentuid="h4d353f31g6d0bg480fg9f83gf19c75e1217b" version="2">Lunar Strike</content>
+	<content contentuid="h90e2ebe0g1948g4e17g8f0fg70121c9fd858" version="2">Engulf your weapon in Selûne's light, dealing additional Radiant damage and surrounding your target in &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>
 
 </contentList>

@@ -3,7 +3,7 @@
 new entry "Arcblade_Weapon_add_NPC"
 type "PassiveData"
 data "Properties" "IsHidden;IsToggled;ToggledDefaultOn"
-data "ToggleOnFunctors" "ApplyStatus(GREATSWORD_DICE_ROLL,100,-1)"
+data "ToggleOnFunctors" "IF(NoMeleeWeaponEquipped()):ApplyStatus(GREATSWORD_DICE_ROLL,100,-1)"
 
 <!----------------------------------------------------------------------------------------------------GEAR RANDOMIZERS ACTUAL---------------------------------------------------------------------------------------------------->
 

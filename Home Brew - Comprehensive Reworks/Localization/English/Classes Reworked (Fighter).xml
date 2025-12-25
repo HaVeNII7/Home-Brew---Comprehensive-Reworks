@@ -514,7 +514,7 @@
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000h" version="3">You are unable to be forcibly moved. In addition, your &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; increases by 2.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500009" version="1">Iron Will</content>
-	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000i" version="3">On your first turn of any combat encounter, and upon recovering from a &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Condition&lt;/LSTag&gt;, gain status immunity to all Lockdown Conditions for three turns.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000i" version="3">At the beginning of any combat encounter, and upon recovering from a &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Condition&lt;/LSTag&gt;, gain status immunity to all Lockdown Conditions for three turns.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500010" version="1">Leader's Momentum</content>
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000j" version="3">Increase your Initiative by 2. Upon &lt;LSTag Type="Status" Tooltip="RALLY"&gt;Rallying&lt;/LSTag&gt; another creature, their Initiative is also increased by 2 until they are no longer Rallied.</content>

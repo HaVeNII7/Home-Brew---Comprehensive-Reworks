@@ -395,7 +395,7 @@ data "Icon" "Skill_Druid_FlamingSphere_Move"
 data "Properties" "Highlighted;ForceShowInCC"
 data "Boosts" "UnlockInterrupt(Interrupt_PyrrhicRetort)"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "(HasStatus('BURNING',context.Target) or HasStatus('BURNING_LAVA',context.Target)) and IsKillingBlow()"
+data "Conditions" "(HasStatus('BURNING',context.Target) or HasStatus('BURNING_LAVA',context.Target)) and IsKillingBlow() and Character() and not Self() and not Ally()"
 data "StatsFunctors" "ApplyStatus(SELF,SORCERYPOINTS_1,100,-1)"
 
 new entry "SingeSong"
@@ -440,7 +440,6 @@ data "DisplayName" "hc580238eg0032g4f7fg9d2ag7f95874066cf;2"
 data "Description" "h6fa01c82g439eg42c5g8c62g0169cf08fd50;3"
 data "Icon" "Skill_Druid_FlamingSphere_Move"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "UnlockInterrupt(Interrupt_Pyrebound)"
 
 <!--WILD MAGIC-->
 

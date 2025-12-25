@@ -172,7 +172,7 @@
 	<content contentuid="hec37ca35g480cg4de1gae65g3986c3592aa7" version="1">You siphon your powers from the Shadowfell itself, the light in your soul snuffed out by an unsettling darkness.</content>
 
 	<content contentuid="h16312bfag01a2g42f8g943bg3fcba8e00001" version="1">Release the Hounds</content>
-	<content contentuid="hec37ca35g480cg4de1gae65g3986c350000a" version="1">Gain the ability to create clouds of &lt;LSTag Type="Spell" Tooltip="Target_Darkness_Free"&gt;Darkness&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;, as well as the ability to summon a &lt;LSTag Type="Spell" Tooltip="Target_HoundOfIllOmen"&gt;Hound of Ill Omen&lt;/LSTag&gt;. Your Hound is capable of cloning itself upon being hit, and grows in strength alongside you as you level. In addition, you gain the effects of &lt;LSTag Type="Passive" Tooltip="DevilsSight"&gt;Devils Sight&lt;/LSTag&gt;.</content>
+	<content contentuid="hec37ca35g480cg4de1gae65g3986c350000a" version="1">Gain the ability to create clouds of &lt;LSTag Type="Spell" Tooltip="Target_Darkness_Free"&gt;Darkness&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;, as well as the ability to summon a &lt;LSTag Type="Spell" Tooltip="Target_HoundOfIllOmen"&gt;Hound of Ill Omen&lt;/LSTag&gt;. Your Hound is capable of cloning itself upon being hit, and grows in strength alongside you as you level. In addition, you gain the ability to see normally in darkness, both magical and non-magical, to a distance of [1].</content>
 	<content contentuid="h57ad5092g40c4g447cg8a5bg2533f84b78a6" version="1">Hound of Ill Omen</content>
 	<content contentuid="hbb7f4a56g0fe4g48e6gb9e9gb82aab1da9a9" version="1">Hound of Ill Omen</content>
 	<content contentuid="hc6666f16g18f9g48edg9f11g640ba54f6291" version="1">Summon forth a hound of darkness.</content>
@@ -240,11 +240,7 @@
 	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac6a988" version="2">Your &lt;LSTag Type="Spell" Tooltip="Projectile_PyrrhicFlare"&gt;Pyrrhic Flares&lt;/LSTag&gt; now cause enemies to &lt;LSTag Type="Status" Tooltip="BURNING_LAVA"&gt;Melt&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hc580238eg0032g4f7fg9d2ag7f95874066cf" version="2">Pyrebound</content>
-	<content contentuid="h6fa01c82g439eg42c5g8c62g0169cf08fd50" version="3">You may expend ten stacks of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; in order to cast &lt;LSTag Type="Spell" Tooltip="Target_MeteoricBurst"&gt;Meteoric Burst&lt;/LSTag&gt;.</content>
-	<content contentuid="hc580238eg0032g4f7fg9d2ag7f93d6f5df12" version="2">Meteoric Burst</content>
-	<content contentuid="h6fa01c82g439eg42c5g8c62g01696s8d5f84" version="3">Expend ten stacks of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; in order to release the latent power stored within you, destroying everything nearby.</content>
-	<content contentuid="hc580238eg0032g4f7fg9d2ag7f93d6f3sd1f" version="2">Bursting With Heat!</content>
-	<content contentuid="h6fa01c82g439eg42c5g8c62g01696s65df85" version="3">Affected creature may cast &lt;LSTag Type="Spell" Tooltip="Target_MeteoricBurst"&gt;Meteoric Burst&lt;/LSTag&gt;.</content>
+	<content contentuid="h6fa01c82g439eg42c5g8c62g0169cf08fd50" version="3">Upon activating &lt;LSTag Type="Passive" Tooltip="MAG_Fire_Heat_Convergence_Passive"&gt;Heat Convergence&lt;/LSTag&gt;, you may expend ten stacks of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; in order to cast &lt;LSTag Type="Spell" Tooltip="Target_MeteoricBurst"&gt;Meteoric Burst&lt;/LSTag&gt;.</content>
 	<content contentuid="hc580238eg0032g4f7fg9d2ag7f93d6f512d5" version="2">Meteoric Burst</content>
 	<content contentuid="h6fa01c82g439eg42c5g8c62g01696s8sfsd6" version="3">Release the latent power stored within you, destroying everything nearby!</content>
 
@@ -321,7 +317,7 @@
 	<content contentuid="hc6d29819g33d5g4ca7g9957gb8c47d823262" version="1">Heightened Spell</content>
 	<content contentuid="h73917ce3gc827g49e4ga954g8a5f696de6f7" version="4">Targets of Spells or &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; that require &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; make their Saving Throw with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Costs [1] &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; per cast.</content>
 
-    <content contentuid="0287fd8d-84da-4799-a59f-a6b5d75aa7f0" version="1">Metamagic: Maximized Spell</content>
+    <content contentuid="0287fd8d-84da-4799-a59f-a6b5d75aa7f0" version="1">Metamagic: Maximized Cantrip</content>
     <content contentuid="f29e1f76-9c88-4dee-9923-81e924388937" version="1">&lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; that deal damage deal the maximum amount of damage possible.&lt;br&gt;&lt;br&gt;Costs 2 &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; per cast.</content>
 	
     <content contentuid="689cae2f-e4ff-44cc-84ce-180aa6727a03" version="1">Metamagic: Piercing Spell</content>

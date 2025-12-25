@@ -189,7 +189,7 @@
 	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000a" version="1">Unleash roaring flames, emanating from you in a line.</content>
 
 	<content contentuid="39f18b2938w98uef9sue9fuw989ew8ef0001" version="1">Borrowed Knowledge</content>
-	<content contentuid="39f18b2938w98uef9sue9fuw989ew8ef000a" version="1">Draw on knowledge from spirits of the past to grant yourself or another creature &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
+	<content contentuid="39f18b2938w98uef9sue9fuw989ew8ef000a" version="1">Draw on knowledge from spirits of the past to grant yourself or another allied creature &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Rogues&lt;br&gt;Wizards</content>
 	<content contentuid="39f18b2938w98uef9sue9fuw989ew8efzz19" version="1">Borrowed Knowledge</content>
 	<content contentuid="39f18b2938w98uef9sue9fuw989ew8efzz0s" version="1">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt;.</content>
 

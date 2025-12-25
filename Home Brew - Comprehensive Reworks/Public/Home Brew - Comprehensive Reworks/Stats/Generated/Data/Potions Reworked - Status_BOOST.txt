@@ -421,7 +421,7 @@ data "DescriptionParams" "Distance(9)"
 data "Icon" "Spell_Evocation_Darkvision"
 data "StackId" "ALCH_ELIXIR"
 data "StackType" "Overwrite"
-data "Boosts" "DarkvisionRangeMin(9);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7);StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud)"
+data "Boosts" "DarkvisionRangeMin(9);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud)"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "TickType" "EndTurn"
 

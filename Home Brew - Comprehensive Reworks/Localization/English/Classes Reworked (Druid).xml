@@ -379,7 +379,7 @@
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d349120000a" version="1">When a creature damages you with a melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, deal Piercing damage to them equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;.</content>
 
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d3491200002" version="1">Combat's Harvest</content>
-	<content contentuid="ba8dc90c6dd042ee918bba2f68d349120000b" version="1">On your first turn of any combat encounter, cast &lt;LSTag Type="Spell" Tooltip="Target_Goodberry"&gt;Goodberry&lt;/LSTag&gt;.</content>
+	<content contentuid="ba8dc90c6dd042ee918bba2f68d349120000b" version="1">At the beginning of any combat encounter, cast &lt;LSTag Type="Spell" Tooltip="Target_Goodberry"&gt;Goodberry&lt;/LSTag&gt;.</content>
 
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d3491200003" version="1">Earthern Sentinel</content>
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d349120000c" version="1">When you roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with a Spell, &lt;LSTag Type="Status" Tooltip="PETRIFIED"&gt;Petrify&lt;/LSTag&gt; your target for one turn.</content>

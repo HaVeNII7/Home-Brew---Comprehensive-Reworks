@@ -1,0 +1,321 @@
+{
+  "SchemaVersion": 1,
+  "ModName": "Home Brew",
+  "Tabs": [
+    {
+      "TabId": "npc_hit_points",
+      "TabName": "NPC Hit Points",
+      "Sections": [
+        {
+          "SectionId": "npc_hp_normal_encounters",
+          "SectionName": "Normal Encounters",
+          "IsCollapsible": true,
+          "IsCollapsedByDefault": true,
+          "Settings": [
+            {
+              "Id": "hb_hp_mode_normal",
+              "Name": "Difficulty",
+              "Type": "enum",
+              "Default": "Normal",
+              "Tooltip": "Select the Hit Point scaling curve for normal NPCs.",
+              "Description": "Hit Point Scaling:\nEasy: (Level*6-6) + (Level*CON*2) + 2d4\nNormal: (Level*12-12) + (Level*CON*3) + 3d6\nHard: (Level*18-18) + (Level*CON*4) + 4d8\nVery Hard: (Level*24-24) + (Level*CON*5) + 5d10\nNightmare: (Level*30-30) + (Level*CON*6) + 6d12",
+              "Options": {
+                "Choices": [
+                  "Easy",
+                  "Normal",
+                  "Hard",
+                  "Very Hard",
+                  "Nightmare"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "SectionId": "npc_hp_dangerous_encounters",
+          "SectionName": "Dangerous Encounters",
+          "IsCollapsible": true,
+          "IsCollapsedByDefault": true,
+          "Settings": [
+            {
+              "Id": "hb_hp_mode_dangerous",
+              "Name": "Difficulty",
+              "Type": "enum",
+              "Default": "Normal",
+              "Tooltip": "Select the Hit Point scaling curve for Dangerous NPCs.",
+              "Description": "Hit Point Scaling:\nEasy: (Level*12-12) + (Level*CON*4) + 4d4\nNormal: (Level*24-24) + (Level*CON*5) + 6d6\nHard: (Level*36-36) + (Level*CON*6) + 8d8\nVery Hard: (Level*48-48) + (Level*CON*7) + 10d10\nNightmare: (Level*60-60) + (Level*CON*8) + 12d12",
+              "Options": {
+                "Choices": [
+                  "Easy",
+                  "Normal",
+                  "Hard",
+                  "Very Hard",
+                  "Nightmare"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "SectionId": "npc_hp_fatal_encounters",
+          "SectionName": "Fatal Encounters",
+          "IsCollapsible": true,
+          "IsCollapsedByDefault": true,
+          "Settings": [
+            {
+              "Id": "hb_hp_mode_fatal",
+              "Name": "Difficulty",
+              "Type": "enum",
+              "Default": "Normal",
+              "Tooltip": "Select the Hit Point scaling curve for Fatal NPCs.",
+              "Description": "Hit Point Scaling:\nEasy: (Level*24-24) + (Level*CON*8) + 8d4\nNormal: (Level*48-48) + (Level*CON*9) + 12d6\nHard: (Level*72-72) + (Level*CON*10) + 16d8\nVery Hard: (Level*96-96) + (Level*CON*11) + 20d10\nNightmare: (Level*120-120) + (Level*CON*12) + 24d12",
+              "Options": {
+                "Choices": [
+                  "Easy",
+                  "Normal",
+                  "Hard",
+                  "Very Hard",
+                  "Nightmare"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TabId": "npc_rolls",
+      "TabName": "NPC Stats",
+      "Sections": [
+        {
+          "SectionId": "npc_rolls_normal_encounters",
+          "SectionName": "Normal Encounters",
+          "IsCollapsible": true,
+          "IsCollapsedByDefault": true,
+          "Settings": [
+            {
+              "Id": "hb_stats_AC",
+              "Name": "Armour Class",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Normal Encounter Armour Class Scaling",
+              "Description": "Normal NPCs will gain a bonus to their Armour Class equal to their Proficiency Bonus."
+            },
+            {
+              "Id": "hb_stats_Attack",
+              "Name": "Attack Rolls",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Normal Encounter Attack Roll Scaling",
+              "Description": "Normal NPCs will gain a bonus to their Attack Rolls equal to their Proficiency Bonus."
+            },
+            {
+              "Id": "hb_stats_Saves",
+              "Name": "Saving Throws",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Normal Encounter Saving Throw Scaling",
+              "Description": "Normal NPCs will gain a bonus to their Saving Throws equal to their Proficiency Bonus."
+            },
+            {
+              "Id": "hb_stats_SaveDC",
+              "Name": "Spell Save DC",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Normal Encounter Spell Save DC Scaling",
+              "Description": "Normal NPCs will gain a bonus to their Spell Save DC equal to their Proficiency Bonus."
+            }
+          ]
+        },
+        {
+          "SectionId": "npc_rolls_dangerous_encounters",
+          "SectionName": "Dangerous Encounters",
+          "IsCollapsible": true,
+          "IsCollapsedByDefault": true,
+          "Settings": [
+            {
+              "Id": "hb_stats_dangerous_AC",
+              "Name": "Armour Class",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Dangerous Encounter Armour Class Scaling",
+              "Description": "Dangerous NPCs will gain a bonus to their Armour Class equal to their Proficiency Bonus."
+            },
+            {
+              "Id": "hb_stats_dangerous_Attack",
+              "Name": "Attack Rolls",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Dangerous Encounter Attack Roll Scaling",
+              "Description": "Dangerous NPCs will gain a bonus to their Attack Rolls equal to their Proficiency Bonus."
+            },
+            {
+              "Id": "hb_stats_dangerous_Saves",
+              "Name": "Saving Throws",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Dangerous Encounter Saving Throw Scaling",
+              "Description": "Dangerous NPCs will gain a bonus to their Saving Throws equal to their Proficiency Bonus."
+            },
+            {
+              "Id": "hb_stats_dangerous_SaveDC",
+              "Name": "Spell Save DC",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Dangerous Encounter Spell Save DC Scaling",
+              "Description": "Dangerous NPCs will gain a bonus to their Spell Save DC equal to their Proficiency Bonus."
+            }
+          ]
+        },
+        {
+          "SectionId": "npc_rolls_fatal_encounters",
+          "SectionName": "Fatal Encounters",
+          "IsCollapsible": true,
+          "IsCollapsedByDefault": true,
+          "Settings": [
+            {
+              "Id": "hb_stats_fatal_AC",
+              "Name": "Armour Class",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Fatal Encounter Armour Class Scaling",
+              "Description": "Fatal NPCs will gain a bonus to their Armour Class equal to their Proficiency Bonus."
+            },
+            {
+              "Id": "hb_stats_fatal_Attack",
+              "Name": "Attack Rolls",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Fatal Encounter Attack Roll Scaling",
+              "Description": "Fatal NPCs will gain a bonus to their Attack Rolls equal to their Proficiency Bonus."
+            },
+            {
+              "Id": "hb_stats_fatal_Saves",
+              "Name": "Saving Throws",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Fatal Encounter Saving Throw Scaling",
+              "Description": "Fatal NPCs will gain a bonus to their Saving Throws equal to their Proficiency Bonus."
+            },
+            {
+              "Id": "hb_stats_fatal_SaveDC",
+              "Name": "Spell Save DC",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable Fatal Encounter Spell Save DC Scaling",
+              "Description": "Fatal NPCs will gain a bonus to their Spell Save DC equal to their Proficiency Bonus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TabId": "npc_resources",
+      "TabName": "NPC Resources",
+      "Sections": [
+        {
+          "SectionId": "npc_resources_normal_encounters",
+          "SectionName": "Normal Encounters",
+          "Settings": [
+            {
+              "Id": "hb_res_normal_actions",
+              "Name": "Action Points",
+              "Type": "slider_int",
+              "Default": 0,
+              "Tooltip": "Set how many additional Actions normal NPCs have.",
+              "Description": "Higher values grant additional Actions to normal NPCs.",
+              "Options": { "Min": 0, "Max": 3 }
+            },
+            {
+              "Id": "hb_res_normal_bonusactions",
+              "Name": "Bonus Action Points",
+              "Type": "slider_int",
+              "Default": 0,
+              "Tooltip": "Set how many additional Bonus Actions normal NPCs have.",
+              "Description": "Higher values grant additional Bonus Actions to normal NPCs.",
+              "Options": { "Min": 0, "Max": 3 }
+            },
+            {
+              "Id": "hb_res_normal_reactions",
+              "Name": "Reaction Points",
+              "Type": "slider_int",
+              "Default": 0,
+              "Tooltip": "Set how many additional Reactions normal NPCs have.",
+              "Description": "Higher values grant additional Reactions to normal NPCs.",
+              "Options": { "Min": 0, "Max": 3 }
+            }
+          ],
+          "Options": { "IsCollapsible": true }
+        },
+        {
+          "SectionId": "npc_resources_dangerous_encounters",
+          "SectionName": "Dangerous Encounters",
+          "Settings": [
+            {
+              "Id": "hb_res_dangerous_actions",
+              "Name": "Action Points",
+              "Type": "slider_int",
+              "Default": 0,
+              "Tooltip": "Set how many additional Actions Dangerous NPCs have.",
+              "Description": "Higher values grant additional Actions to Dangerous NPCs.",
+              "Options": { "Min": 0, "Max": 3 }
+            },
+            {
+              "Id": "hb_res_dangerous_bonusactions",
+              "Name": "Bonus Action Points",
+              "Type": "slider_int",
+              "Default": 0,
+              "Tooltip": "Set how many additional Bonus Actions Dangerous NPCs have.",
+              "Description": "Higher values grant additional Bonus Actions to Dangerous NPCs.",
+              "Options": { "Min": 0, "Max": 3 }
+            },
+            {
+              "Id": "hb_res_dangerous_reactions",
+              "Name": "Reaction Points",
+              "Type": "slider_int",
+              "Default": 0,
+              "Tooltip": "Set how many additional Reactions Dangerous NPCs have.",
+              "Description": "Higher values grant additional Reactions to Dangerous NPCs.",
+              "Options": { "Min": 0, "Max": 3 }
+            }
+          ],
+          "Options": { "IsCollapsible": true }
+        },
+        {
+          "SectionId": "npc_resources_fatal_encounters",
+          "SectionName": "Fatal Encounters",
+          "Settings": [
+            {
+              "Id": "hb_res_fatal_actions",
+              "Name": "Action Points",
+              "Type": "slider_int",
+              "Default": 0,
+              "Tooltip": "Set how many additional Actions Fatal NPCs have.",
+              "Description": "Higher values grant additional Actions to Fatal NPCs.",
+              "Options": { "Min": 0, "Max": 3 }
+            },
+            {
+              "Id": "hb_res_fatal_bonusactions",
+              "Name": "Bonus Action Points",
+              "Type": "slider_int",
+              "Default": 0,
+              "Tooltip": "Set how many additional Bonus Actions Fatal NPCs have.",
+              "Description": "Higher values grant additional Bonus Actions to Fatal NPCs.",
+              "Options": { "Min": 0, "Max": 3 }
+            },
+            {
+              "Id": "hb_res_fatal_reactions",
+              "Name": "Reaction Points",
+              "Type": "slider_int",
+              "Default": 0,
+              "Tooltip": "Set how many additional Reactions Fatal NPCs have.",
+              "Description": "Higher values grant additional Reactions to Fatal NPCs.",
+              "Options": { "Min": 0, "Max": 3 }
+            }
+          ],
+          "Options": { "IsCollapsible": true }
+        }
+      ]
+    }
+  ]
+}
