@@ -15,7 +15,7 @@ local MOD_UUID = "486d1526-3505-4b09-9790-0f6a60f5ac0f"
 local PASSIVE_DANGEROUS = "Dangerous_Encounter"
 local PASSIVE_FATAL     = "Fatal_Encounter"
 
--- Main party marker passive (per your guarantee)
+-- Main party marker passive
 local PASSIVE_NONLETHAL = "NonLethal"
 
 local STATUS_UNSUMMONABLE = "UNSUMMON_ABLE"
@@ -178,7 +178,7 @@ end
 
 local function ShouldApplyDifficulty(guid)
     -- Never scale party (NonLethal)
-    if HasPassive(guid, PASSIVE_NONLETHAL) then
+    if HasPassive(guid, PASSIVE_NONLETHAL) and Osi.IsPlayer(guid) == 1 then
         return false
     end
 
@@ -346,15 +346,9 @@ end
 -- EVENT HOOKS
 -- =========================================================
 
-Ext.Osiris.RegisterListener("TurnStarted", 1, "after", function(guid)
-    if checked[guid] then return end
-    checked[guid] = true
-    ApplyAllSystems(guid)
-end)
-
 Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(guid)
     -- Rule 1: remove ONLY if they have NonLethal
-    if HasPassive(guid, PASSIVE_NONLETHAL) then
+    if HasPassive(guid, PASSIVE_NONLETHAL) and Osi.IsPlayer(guid) == 1 then
         RemoveStatuses(guid, ALL_HP_STATUSES)
         RemoveStatuses(guid, ALL_STAT_STATUSES)
         RemoveStatuses(guid, ALL_RESOURCE_STATUSES)

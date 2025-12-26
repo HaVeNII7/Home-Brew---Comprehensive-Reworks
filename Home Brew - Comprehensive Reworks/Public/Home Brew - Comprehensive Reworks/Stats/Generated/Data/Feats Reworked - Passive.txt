@@ -891,7 +891,7 @@ data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf68878d11;2"
 data "Description" "8a87461fd8dd4f5b9098ded714f60d1fd250k;2"
 data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "RedirectDamage(0.5,Force,Physical,true)"
+data "Boosts" "IF(not Self()):RedirectDamage(0.5,Force,Bludgeoning,true);IF(not Self()):RedirectDamage(0.5,Force,Piercing,true);IF(not Self()):RedirectDamage(0.5,Force,Slashing,true)"
 
 <!--YOKEBREAKER-->
 

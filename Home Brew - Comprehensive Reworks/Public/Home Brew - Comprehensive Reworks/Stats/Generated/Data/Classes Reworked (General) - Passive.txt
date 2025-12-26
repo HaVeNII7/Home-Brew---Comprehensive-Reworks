@@ -221,7 +221,7 @@ data "DescriptionParams" "Distance(3)"
 data "Icon" "PassiveFeature_IronMind"
 data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnAttack"
-data "Conditions" "IsSpell()"
+data "Conditions" "IsSpell() and not IsCantrip()"
 data "StatsFunctors" "IF(RollDieAgainstDC(DiceType.d10,10) and not CharacterLevelGreaterThan(2, context.Target)):CreateExplosion(Projectile_Explosion);IF(RollDieAgainstDC(DiceType.d10,10) and CharacterLevelGreaterThan(2, context.Target) and not CharacterLevelGreaterThan(4, context.Target)):CreateExplosion(Projectile_Explosion_2);IF(RollDieAgainstDC(DiceType.d10,10) and CharacterLevelGreaterThan(4, context.Target) and not CharacterLevelGreaterThan(6, context.Target)):CreateExplosion(Projectile_Explosion_3);IF(RollDieAgainstDC(DiceType.d10,10) and CharacterLevelGreaterThan(6, context.Target) and not CharacterLevelGreaterThan(8, context.Target)):CreateExplosion(Projectile_Explosion_4);IF(RollDieAgainstDC(DiceType.d10,10) and CharacterLevelGreaterThan(8, context.Target) and not CharacterLevelGreaterThan(10, context.Target)):CreateExplosion(Projectile_Explosion_5);IF(RollDieAgainstDC(DiceType.d10,10) and CharacterLevelGreaterThan(10, context.Target)):CreateExplosion(Projectile_Explosion_6)"
 
 new entry "CT_CriticalLoss"

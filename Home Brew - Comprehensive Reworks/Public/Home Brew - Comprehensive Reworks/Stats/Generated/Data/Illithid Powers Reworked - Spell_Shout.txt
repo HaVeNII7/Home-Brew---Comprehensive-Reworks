@@ -23,7 +23,7 @@ data "SpellAnimation" "f94542d9-a79c-478a-92de-573cead9260e,,;78650553-ef5a-4284
 data "SpellFlags" "AddFallDamageOnLand;IsHarmful"
 data "SpellAnimationIntentType" "Aggressive"
 data "Requirements" ""
-data "RequirementConditions" "not Tagged('TADPOLE_POWERS_BLOCKED')"
+data "RequirementConditions" ""
 data "PrepareEffect" "54d12e90-23ce-4f2b-af51-c50be6e9c6a9"
 data "CastEffect" "9fdf9456-fcbb-4558-b2a2-df13a06c69f2"
 data "TargetEffect" "12d3e0a2-cc79-4707-aead-ed5f9da4417e"

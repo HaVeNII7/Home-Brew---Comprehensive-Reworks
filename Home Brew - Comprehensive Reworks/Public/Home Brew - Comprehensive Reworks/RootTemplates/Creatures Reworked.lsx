@@ -3476,6 +3476,80 @@
 						</node>
 					</children>
 				</node>
+				<node id="GameObjects">
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="DevComment" type="LSString" value="The Hag's human form (disguised with illusion, so mechanically still a hag)" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h58aa8142g0882g4eb9gb7adg4f56c62ca964" version="1" />
+					<attribute id="Faction" type="guid" value="e8b3c7e9-ab59-734c-6626-777fc6e7aef7" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="GeneratePortrait" type="LSString" value="Icon_Human_Female" />
+					<attribute id="Icon" type="FixedString" value="c0807a07-7e67-6f66-31d8-437c234a42e9-_(Icon_Human_Female)" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LightID" type="FixedString" value="3faa1c66-5d35-4e87-868e-d124168b660f" />
+					<attribute id="MapKey" type="FixedString" value="2ec6e2a6-2b93-4f7d-899c-bad10d93ea38" />
+					<attribute id="Name" type="LSString" value="Humans_Female_HagDouble" />
+					<attribute id="ParentTemplateId" type="FixedString" value="089690db-6614-4d1a-a4b4-c9205e88ca02" />
+					<attribute id="Stats" type="FixedString" value="HAG_AuntieEthel" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="VisualTemplate" type="FixedString" value="4b8ff439-0a98-6e6c-ad48-c695c1c29b27" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241410" />
+					<children>
+						<node id="LocomotionParams" />
+						<node id="OnDeathActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="10" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="CellAtGrow" type="int32" value="10" />
+											<attribute id="ExternalCauseAsSurfaceOwner" type="bool" value="True" />
+											<attribute id="GrowTimer" type="float" value="0.02" />
+											<attribute id="LifeTime" type="float" value="60" />
+											<attribute id="SurfaceType" type="FixedString" value="SurfaceBlood" />
+											<attribute id="Timeout" type="float" value="0" />
+											<attribute id="TotalCells" type="int32" value="15" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="4bdd9996-42f7-47dc-9a2b-1d9bfa2e738f" />
+								</node>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="8f730d40-11a5-4e4e-923a-d98c6e61c70a" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="fe8308ce-d51c-4f41-a986-217a9c6dac5f" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="3806477c-65a7-4100-9f92-be4c12c4fa4f" />
+								</node>
+							</children>
+						</node>
+						<node id="TradeTreasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="Empty" />
+								</node>
+							</children>
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="Empty" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>
