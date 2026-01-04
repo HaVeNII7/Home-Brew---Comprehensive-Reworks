@@ -508,6 +508,8 @@ data "Boosts" "UnlockSpellVariant(SpellSlotCheck(),ModifyIconGlow(),ModifyToolti
 data "StatusGroups" "SG_RemoveOnRespec"
 data "RemoveConditions" "IsSpell() and not IsCantrip()"
 data "RemoveEvents" "OnSpellCast;OnCombatEnded"
+data "StackId" "CRITICALSECRETS"
+data "StackType" "Ignore"
 
 new entry "MACABRESECRETS"
 type "StatusData"

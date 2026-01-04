@@ -209,7 +209,7 @@ data "EnabledConditions" "HasActionResource('AssassinsMark', 1, 0, false, false,
 data "EnabledContext" "OnLongRest;OnActionResourcesChanged;OnStatusApplied;OnStatusRemoved"
 data "ToggleOnEffect" "VFX_Spells_Cast_Sorcerer_TidesOfChaos_BodyFX_01:Dummy_BodyFX:;VFX_Spells_Cast_Sorcerer_Shout_EyeFX_01:Dummy_EyeFX_01:;VFX_Spells_Cast_Sorcerer_Shout_EyeFX_02:Dummy_EyeFX_02:;"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "not HasStatus('ASSASSINATE_BLOCK', context.Target) and not Self() and not Ally()"
+data "Conditions" "not HasStatus('ASSASSINATE_BLOCK', context.Target) and not Self() and not Ally() and IsWeaponAttack() and (HasDamageDoneForType(DamageType.Bludgeoning,context.Target) or HasDamageDoneForType(DamageType.Piercing,context.Target) or HasDamageDoneForType(DamageType.Slashing,context.Target))"
 data "StatsFunctors" "DealDamage((Level*6), MainMeleeWeaponDamageType,,,0,,true);ApplyStatus(ASSASSINATE_BLOCK,100,1);RemoveStatus(SELF,ASSASSINS_FOCUS)"
 
 new entry "AssassinsQuarry_Attack_Fixer"
@@ -219,7 +219,8 @@ data "Description" "h098941ccgc4ecg49f2gb22agabed0b093kff;4"
 data "Icon" "Action_InfiltrationExpertise"
 data "Properties" "IsHidden;OncePerTurn"
 data "StatsFunctorContext" "OnDamage"
-data "StatsFunctors" "IF(HasPassive('AssassinsQuarry', context.Source) and not IsKillingBlow()):UseActionResource(SELF,AssassinsMark,1,0);IF(HasPassive('AssassinsQuarry', context.Source) and not IsKillingBlow()):RemoveStatus(SELF,ASSASSINATION)"
+data "Conditions" "HasPassive('AssassinsQuarry', context.Source) and not Self() and not Ally() and IsWeaponAttack() and (HasDamageDoneForType(DamageType.Bludgeoning,context.Target) or HasDamageDoneForType(DamageType.Piercing,context.Target) or HasDamageDoneForType(DamageType.Slashing,context.Target)) and not IsKillingBlow()"
+data "StatsFunctors" "UseActionResource(SELF,AssassinsMark,1,0);RemoveStatus(SELF,ASSASSINATION)"
 
 new entry "AssassinsQuarry_CombatEnd_Fixer"
 type "PassiveData"

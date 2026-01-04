@@ -843,7 +843,7 @@ data "Icon" "PassiveFeature_IronMind"
 data "Properties" "Highlighted;ForceShowInCC"
 data "Boosts" "IncreaseMaxHP(100%)"
 data "StatsFunctorContext" "OnDamaged"
-data "Conditions" "IsKillingBlow()"
+data "Conditions" "IsKillingBlow() and not HasStatus('SG_Polymorph_BeastShape', context.Target)"
 data "StatsFunctors" "ApplyStatus(CT_WANINGIMMORTALITY,100,1)"
 
 new entry "CT_WANINGIMMORTALITY"

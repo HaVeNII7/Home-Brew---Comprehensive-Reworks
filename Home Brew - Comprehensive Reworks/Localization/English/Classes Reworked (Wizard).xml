@@ -237,7 +237,7 @@
 	<content contentuid="772cd70f49274c7596988bf90e992ca80000l" version="6">When dealing damage with a &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, deal additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; multiplied by two.</content>
 
 	<content contentuid="772cd70f49274c7596988bf90e992ca800013" version="6">Potent Spells</content>
-	<content contentuid="772cd70f49274c7596988bf90e992ca80000m" version="6">Spells you cast gain a damage bonus equal to 4 multiplied by the level of &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; used.</content>
+	<content contentuid="772cd70f49274c7596988bf90e992ca80000m" version="6">Spells you cast gain a damage bonus equal to 4 multiplied by the level of &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; used. When targeting a creature with more than one projectile, only the first projectile will receive the additional damage.</content>
 
 	<content contentuid="772cd70f49274c7596988bf90e992ca800014" version="6">Spellblade</content>
 	<content contentuid="772cd70f49274c7596988bf90e992ca80000n" version="6">Gain the ability to create an &lt;LSTag Type="Spell" Tooltip="Shout_WeaponBond"&gt;Arcane Bond&lt;/LSTag&gt; between you and your weapons, restoring one charge of &lt;LSTag Type="ActionResource" Tooltip="ArcaneRecoveryPoint"&gt;Arcane Recovery&lt;/LSTag&gt; on every killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>

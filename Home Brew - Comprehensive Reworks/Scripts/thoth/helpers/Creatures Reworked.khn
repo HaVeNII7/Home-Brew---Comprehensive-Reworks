@@ -2,3 +2,8 @@ function IsUniqueNPCSubclass(entity)
     entity = entity or context.Source
     return Tagged('FIXEDSUBCLASS',entity)
 end
+
+function IsCrowdControlled(entity)
+    local entity = entity or context.Target
+	return HasAnyStatus({'SG_Fleeing','SG_Incapacitated','SG_Stunned','SG_Unconscious'}, {}, {}, entity)
+end

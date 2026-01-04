@@ -136,7 +136,7 @@
 	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000d" version="1">Gain an additional three &lt;LSTag Type="Passive" Tooltip="ElementalFletching"&gt;Elemental Fletchings&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00005" version="1">Greater Focus</content>
-	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000e" version="1">When &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, your basic shots now ricochet to two other creatures if within [1] of each other. The damage of each ricochet is no longer reduced.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000e" version="1">When &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, your basic shots now ricochet to two other creatures if within [1] of each other.</content>
 
 	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00006" version="1">Eye of the Arcana</content>
 	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000f" version="1">Gain an additional three &lt;LSTag Type="Passive" Tooltip="ElementalFletching"&gt;Elemental Fletchings&lt;/LSTag&gt;.</content>

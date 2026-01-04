@@ -1,68 +1,184 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-  <version major="4" minor="0" revision="9" build="328" />
+  <version major="4" minor="0" revision="9" build="328"/>
   <region id="Origins">
     <node id="root">
       <children>
-        <node id="Origin">
-					<attribute id="AppearanceLocked" type="bool" value="true" />
-                    <attribute id="AvailableInCharacterCreation" type="uint8" value="1" />
-                    <attribute id="BackgroundUUID" type="guid" value="633aa4be-365f-4358-ba56-e2b85f9a88ec" />
-                    <attribute id="BodyShape" type="uint8" value="0" />
-                    <attribute id="BodyType" type="uint8" value="1" />
-                    <attribute id="ClassEquipmentOverride" type="FixedString" value="EQ_Shadowheart" />
-                    <attribute id="ClassUUID" type="guid" value="114e7aee-d1d4-4371-8d90-8a2080592faf" />
-                    <attribute id="Description" type="TranslatedString" handle="hc0d76119g0103g4d75gb746ge22a36ab95ff" version="2" />
-                    <attribute id="DisplayName" type="TranslatedString" handle="h11b1603bgd34fg4c1dgbd20gcce32c2ac8d9" version="1" />
-                    <attribute id="GlobalTemplate" type="guid" value="3ed74f06-3c60-42dc-83f6-f034cb47c679" />
-                    <attribute id="GodUUID" type="guid" value="2eb3557f-7ada-41d6-a892-e02def72ef77" />
-                    <attribute id="IntroDialogUUID" type="guid" value="9e2f1b19-cfac-b601-a1a8-8b901679826a" />
-                    <attribute id="LockBody" type="bool" value="true" />
-                    <attribute id="LockClass" type="bool" value="true" />
-                    <attribute id="LockRace" type="bool" value="true" />
-                    <attribute id="Name" type="FixedString" value="Shadowheart" />
-                    <attribute id="Passives" type="LSString" value="DeathSavingThrows" />
-                    <attribute id="RaceUUID" type="guid" value="45f4ac10-3c89-4fb2-b37d-f973bb9110c0" />
-                    <attribute id="SubClassUUID" type="guid" value="4b5da2f5-b999-4623-8bff-a63df5560fb3" />
-                    <attribute id="SubRaceUUID" type="guid" value="30fafb0b-7c8b-4917-bd2a-536233b35d3c" />
-                    <attribute id="UUID" type="guid" value="2bb39cf2-4649-4238-8d0c-44f62b5a3dfd" />
-                    <attribute id="Unique" type="bool" value="true" />
-                    <attribute id="VoiceTableUUID" type="guid" value="e9c6707b-a0d5-49b2-8966-a617d75f04eb" />
+                <node id="Origin">
+                    <attribute id="AppearanceLocked" type="bool" value="true"/>
+                    <attribute id="AvailableInCharacterCreation" type="uint8" value="1"/>
+                    <attribute id="BackgroundUUID" type="guid" value="76925f0b-3ec8-4f42-86a9-cd4f745af2ac"/>
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+                    <attribute id="BodyType" type="uint8" value="0"/>
+                    <attribute id="ClassEquipmentOverride" type="FixedString" value="EQ_Astarion"/>
+                    <attribute id="ClassUUID" type="guid" value="e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a"/>
+                    <attribute id="CloseUpA" type="LSString" value="ELF_M_Camera_Closeup_A"/>
+                    <attribute id="CloseUpB" type="LSString" value="ELF_M_Camera_Closeup_B"/>
+                    <attribute id="Description" type="TranslatedString" handle="h6ebd6173g6640g4856ga90cg5afebf44e7af" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hba26c950g76eag405fg922bg60cff984f41c" version="1"/>
+                    <attribute id="GlobalTemplate" type="guid" value="c7c13742-bacd-460a-8f65-f864fe41f255"/>
+                    <attribute id="IntroDialogUUID" type="guid" value="0985c3fd-2506-7d59-1146-bff949492a88"/>
+                    <attribute id="LockBody" type="bool" value="true"/>
+                    <attribute id="LockClass" type="bool" value="false"/>
+                    <attribute id="LockRace" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Astarion"/>
+                    <attribute id="Passives" type="LSString" value="DeathSavingThrows"/>
+                    <attribute id="RaceUUID" type="guid" value="6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a"/>
+                    <attribute id="SubClassUUID" type="guid" value="ede4778e-7602-440f-9075-b4bc8dc31cea"/>
+                    <attribute id="SubRaceUUID" type="guid" value="f4792c5f-8740-4f22-b77d-5df1e5753c46"/>
+                    <attribute id="UUID" type="guid" value="3780c689-d903-41c2-bf64-1e6ec6a8e1e5"/>
+                    <attribute id="Unique" type="bool" value="true"/>
+                    <attribute id="VoiceTableUUID" type="guid" value="9270997a-8af5-4fb1-9cf3-26c515878d4b"/>
                     <children>
                         <node id="ReallyTags">
-                            <attribute id="Object" type="guid" value="642d2aee-e3df-47e3-9f47-bbcd441bb9e0" />
+                            <attribute id="Object" type="guid" value="ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3"/>
                         </node>
                     </children>
-					</node>
-        <node id="Origin">
-                    <attribute id="AppearanceLocked" type="bool" value="true" />
-                    <attribute id="AvailableInCharacterCreation" type="uint8" value="1" />
-                    <attribute id="BackgroundUUID" type="guid" value="efcb0b57-5d5a-4a54-a7b3-a618829fe379" />
-                    <attribute id="BodyShape" type="uint8" value="0" />
-                    <attribute id="BodyType" type="uint8" value="0" />
-                    <attribute id="ClassEquipmentOverride" type="FixedString" value="EQ_Wyll" />
-                    <attribute id="ClassUUID" type="guid" value="b4225a4b-4bbe-4d97-9e3c-4719dbd1487c" />
-                    <attribute id="Description" type="TranslatedString" handle="h69c8c7f4g3aafg4e06gb74bg37756f7921c3" version="4" />
-                    <attribute id="DisplayName" type="TranslatedString" handle="h5e2f781agcb73g41eaga3dag05faab1040e7" version="1" />
-                    <attribute id="ExcludesOriginUUID" type="guid" value="b8b4a974-b045-45f6-9516-b457b8773abd" />
-                    <attribute id="GlobalTemplate" type="guid" value="c774d764-4a17-48dc-b470-32ace9ce447d" />
-                    <attribute id="IntroDialogUUID" type="guid" value="22e1f2cd-17ab-0c1b-e679-015faa6456dd" />
-                    <attribute id="LockBody" type="bool" value="true" />
-                    <attribute id="LockClass" type="bool" value="true" />
-                    <attribute id="LockRace" type="bool" value="true" />
-                    <attribute id="Name" type="FixedString" value="Wyll" />
-                    <attribute id="Passives" type="LSString" value="DeathSavingThrows;BladeOfFrontiers" />
-                    <attribute id="RaceUUID" type="guid" value="0eb594cb-8820-4be6-a58d-8be7a1a98fba" />
-                    <attribute id="SubClassUUID" type="guid" value="e1e4a21f-9405-46ec-81a0-ccc8d58d9736" />
-                    <attribute id="UUID" type="guid" value="efc9d114-0296-4a30-b701-365fc07d44fb" />
-                    <attribute id="Unique" type="bool" value="true" />
-                    <attribute id="VoiceTableUUID" type="guid" value="8f789c31-e514-49a2-847a-1d2895e10734" />
+                </node>
+                <node id="Origin">
+                    <attribute id="AppearanceLocked" type="bool" value="true"/>
+                    <attribute id="AvailableInCharacterCreation" type="uint8" value="1"/>
+                    <attribute id="BackgroundUUID" type="guid" value="1252a86e-9baa-4ccb-b8ce-2378ae006f0b"/>
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+                    <attribute id="BodyType" type="uint8" value="1"/>
+                    <attribute id="ClassEquipmentOverride" type="FixedString" value="EQ_Laezel"/>
+                    <attribute id="ClassUUID" type="guid" value="721dfac3-92d4-41f5-b773-b7072a86232f"/>
+                    <attribute id="Description" type="TranslatedString" handle="h56e998e4g7c45g4e2cgb8adg41833aa6af7d" version="4"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h8e9c39cdga83dg4526g816dg4db38902b1fe" version="1"/>
+                    <attribute id="GlobalTemplate" type="guid" value="58a69333-40bf-8358-1d17-fff240d7fb12"/>
+                    <attribute id="IntroDialogUUID" type="guid" value="c1794155-017b-d953-171f-93e3499dc545"/>
+                    <attribute id="LockBody" type="bool" value="true"/>
+                    <attribute id="LockClass" type="bool" value="false"/>
+                    <attribute id="LockRace" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Laezel"/>
+                    <attribute id="Passives" type="LSString" value="DeathSavingThrows"/>
+                    <attribute id="RaceUUID" type="guid" value="bdf9b779-002c-4077-b377-8ea7c1faa795"/>
+                    <attribute id="SubClassUUID" type="guid" value="e668c6f1-5149-4b10-ab7e-3637ed444066"/>
+                    <attribute id="UUID" type="guid" value="fb3bc4c3-49eb-4944-b714-d0cb357bb635"/>
+                    <attribute id="Unique" type="bool" value="true"/>
+                    <attribute id="VoiceTableUUID" type="guid" value="46069209-0879-403f-85c7-fd23aab0a56f"/>
                     <children>
                         <node id="ReallyTags">
-                            <attribute id="Object" type="guid" value="5f40def5-d3ec-4698-a367-01a339888956" />
+                            <attribute id="Object" type="guid" value="b5682d1d-c395-489c-9675-1f9b0c328ea5"/>
                         </node>
                     </children>
-					</node>
+                </node>
+                <node id="Origin">
+                    <attribute id="AppearanceLocked" type="bool" value="true"/>
+                    <attribute id="AvailableInCharacterCreation" type="uint8" value="1"/>
+                    <attribute id="BackgroundUUID" type="guid" value="8807a6c6-d8cf-494b-aec2-cc01d7517a56"/>
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+                    <attribute id="BodyType" type="uint8" value="0"/>
+                    <attribute id="ClassEquipmentOverride" type="FixedString" value="EQ_Gale"/>
+                    <attribute id="ClassUUID" type="guid" value="a865965f-501b-46e9-9eaa-7748e8c04d09"/>
+                    <attribute id="Description" type="TranslatedString" handle="hfc878580g669fg47b4ga236g8fc561332dd3" version="4"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h216a9660g729dg4422gaa28gce125e518b92" version="1"/>
+                    <attribute id="GlobalTemplate" type="guid" value="ad9af97d-75da-406a-ae13-7071c563f604"/>
+                    <attribute id="IntroDialogUUID" type="guid" value="6202aa53-97d7-86a6-4eac-d39d43e367d4"/>
+                    <attribute id="LockBody" type="bool" value="true"/>
+                    <attribute id="LockClass" type="bool" value="false"/>
+                    <attribute id="LockRace" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Gale"/>
+                    <attribute id="Passives" type="LSString" value="DeathSavingThrows"/>
+                    <attribute id="RaceUUID" type="guid" value="0eb594cb-8820-4be6-a58d-8be7a1a98fba"/>
+                    <attribute id="SubClassUUID" type="guid" value="c059dca1-c17d-4dce-8260-83ede5070eac"/>
+                    <attribute id="UUID" type="guid" value="35c3caad-5543-4593-be75-e7deba30f062"/>
+                    <attribute id="Unique" type="bool" value="true"/>
+                    <attribute id="VoiceTableUUID" type="guid" value="14c454f3-a6ac-4a01-9abb-9207f7b84210"/>
+                    <children>
+                        <node id="ReallyTags">
+                            <attribute id="Object" type="guid" value="9b0354c0-56d9-4723-8034-918ac9abab19"/>
+                        </node>
+                    </children>
+                </node>
+				<node id="Origin">
+					<attribute id="AppearanceLocked" type="bool" value="true"/>
+                    <attribute id="AvailableInCharacterCreation" type="uint8" value="1"/>
+                    <attribute id="BackgroundUUID" type="guid" value="633aa4be-365f-4358-ba56-e2b85f9a88ec"/>
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+                    <attribute id="BodyType" type="uint8" value="1"/>
+                    <attribute id="ClassEquipmentOverride" type="FixedString" value="EQ_Shadowheart"/>
+                    <attribute id="ClassUUID" type="guid" value="114e7aee-d1d4-4371-8d90-8a2080592faf"/>
+                    <attribute id="Description" type="TranslatedString" handle="hc0d76119g0103g4d75gb746ge22a36ab95ff" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h11b1603bgd34fg4c1dgbd20gcce32c2ac8d9" version="1"/>
+                    <attribute id="GlobalTemplate" type="guid" value="3ed74f06-3c60-42dc-83f6-f034cb47c679"/>
+                    <attribute id="GodUUID" type="guid" value="2eb3557f-7ada-41d6-a892-e02def72ef77"/>
+                    <attribute id="IntroDialogUUID" type="guid" value="9e2f1b19-cfac-b601-a1a8-8b901679826a"/>
+                    <attribute id="LockBody" type="bool" value="true"/>
+                    <attribute id="LockClass" type="bool" value="false"/>
+                    <attribute id="LockRace" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Shadowheart"/>
+                    <attribute id="Passives" type="LSString" value="DeathSavingThrows"/>
+                    <attribute id="RaceUUID" type="guid" value="45f4ac10-3c89-4fb2-b37d-f973bb9110c0"/>
+                    <attribute id="SubClassUUID" type="guid" value="4b5da2f5-b999-4623-8bff-a63df5560fb3"/>
+                    <attribute id="SubRaceUUID" type="guid" value="30fafb0b-7c8b-4917-bd2a-536233b35d3c"/>
+                    <attribute id="UUID" type="guid" value="2bb39cf2-4649-4238-8d0c-44f62b5a3dfd"/>
+                    <attribute id="Unique" type="bool" value="true"/>
+                    <attribute id="VoiceTableUUID" type="guid" value="e9c6707b-a0d5-49b2-8966-a617d75f04eb"/>
+                    <children>
+                        <node id="ReallyTags">
+                            <attribute id="Object" type="guid" value="642d2aee-e3df-47e3-9f47-bbcd441bb9e0"/>
+                        </node>
+                    </children>
+				</node>
+				<node id="Origin">
+                    <attribute id="AppearanceLocked" type="bool" value="true"/>
+                    <attribute id="AvailableInCharacterCreation" type="uint8" value="1"/>
+                    <attribute id="BackgroundUUID" type="guid" value="efcb0b57-5d5a-4a54-a7b3-a618829fe379"/>
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+                    <attribute id="BodyType" type="uint8" value="0"/>
+                    <attribute id="ClassEquipmentOverride" type="FixedString" value="EQ_Wyll"/>
+                    <attribute id="ClassUUID" type="guid" value="b4225a4b-4bbe-4d97-9e3c-4719dbd1487c"/>
+                    <attribute id="Description" type="TranslatedString" handle="h69c8c7f4g3aafg4e06gb74bg37756f7921c3" version="4"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h5e2f781agcb73g41eaga3dag05faab1040e7" version="1"/>
+                    <attribute id="ExcludesOriginUUID" type="guid" value="b8b4a974-b045-45f6-9516-b457b8773abd"/>
+                    <attribute id="GlobalTemplate" type="guid" value="c774d764-4a17-48dc-b470-32ace9ce447d"/>
+                    <attribute id="IntroDialogUUID" type="guid" value="22e1f2cd-17ab-0c1b-e679-015faa6456dd"/>
+                    <attribute id="LockBody" type="bool" value="true"/>
+                    <attribute id="LockClass" type="bool" value="false"/>
+                    <attribute id="LockRace" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Wyll"/>
+                    <attribute id="Passives" type="LSString" value="DeathSavingThrows;BladeOfFrontiers"/>
+                    <attribute id="RaceUUID" type="guid" value="0eb594cb-8820-4be6-a58d-8be7a1a98fba"/>
+                    <attribute id="SubClassUUID" type="guid" value="e1e4a21f-9405-46ec-81a0-ccc8d58d9736"/>
+                    <attribute id="UUID" type="guid" value="efc9d114-0296-4a30-b701-365fc07d44fb"/>
+                    <attribute id="Unique" type="bool" value="true"/>
+                    <attribute id="VoiceTableUUID" type="guid" value="8f789c31-e514-49a2-847a-1d2895e10734"/>
+                    <children>
+                        <node id="ReallyTags">
+                            <attribute id="Object" type="guid" value="5f40def5-d3ec-4698-a367-01a339888956"/>
+                        </node>
+                    </children>
+				</node>
+                <node id="Origin">
+                    <attribute id="AppearanceLocked" type="bool" value="true"/>
+                    <attribute id="AvailableInCharacterCreation" type="uint8" value="1"/>
+                    <attribute id="BackgroundUUID" type="guid" value="5b1e726f-52bf-4e93-a798-9f93c067ee7f"/>
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+                    <attribute id="BodyType" type="uint8" value="1"/>
+                    <attribute id="ClassEquipmentOverride" type="FixedString" value="EQ_Karlach"/>
+                    <attribute id="ClassUUID" type="guid" value="d8cadb42-0ff9-4049-afaf-e5d78d06a399"/>
+                    <attribute id="Description" type="TranslatedString" handle="hde808ae2g00f3g4658g8c1eg5c2dea714159" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="he1a02cb6gb6eeg49d5ga854gff0a2b328c15" version="1"/>
+                    <attribute id="ExcludesOriginUUID" type="guid" value="efc9d114-0296-4a30-b701-365fc07d44fb"/>
+                    <attribute id="GlobalTemplate" type="guid" value="2c76687d-93a2-477b-8b18-8a14b549304c"/>
+                    <attribute id="IntroDialogUUID" type="guid" value="efee0c73-4b51-f0e7-0cbd-32e12be6efdd"/>
+                    <attribute id="LockBody" type="bool" value="true"/>
+                    <attribute id="LockClass" type="bool" value="false"/>
+                    <attribute id="LockRace" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Karlach"/>
+                    <attribute id="Passives" type="LSString" value="DeathSavingThrows"/>
+                    <attribute id="RaceUUID" type="guid" value="b6dccbed-30f3-424b-a181-c4540cf38197"/>
+                    <attribute id="SubRaceUUID" type="guid" value="88d0d219-9dcb-462b-aab6-ccf31eeee2e3"/>
+                    <attribute id="UUID" type="guid" value="b8b4a974-b045-45f6-9516-b457b8773abd"/>
+                    <attribute id="Unique" type="bool" value="true"/>
+                    <attribute id="VoiceTableUUID" type="guid" value="d7f1f43f-840f-44ca-90f4-ba80c0f31d19"/>
+                    <children>
+                        <node id="ReallyTags">
+                            <attribute id="Object" type="guid" value="1a2f70d6-8ead-4eb5-a824-79ee1971764a"/>
+                        </node>
+                    </children>
+                </node>
       </children>
     </node>
   </region>

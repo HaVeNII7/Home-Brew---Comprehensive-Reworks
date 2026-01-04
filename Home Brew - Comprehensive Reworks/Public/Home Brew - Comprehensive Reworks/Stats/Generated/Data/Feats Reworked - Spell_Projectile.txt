@@ -148,6 +148,7 @@ data "PrepareEffect" "05e14f13-5fbc-4c89-9d8a-e4be7e111b06"
 data "CastEffect" "c78d3929-46b2-48a2-bf60-ce0bd1eec54a"
 data "DamageType" "Radiant"
 data "Sheathing" "Melee"
+data "WeaponTypes" "Melee"
 
 <!--GREATER IMPACT-->
 

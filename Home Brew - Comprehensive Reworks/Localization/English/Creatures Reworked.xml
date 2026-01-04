@@ -424,7 +424,7 @@
 	<content contentuid="h67749803g166eg4d2bga330g5f647fc6e2b6" version="4">Upon starting it's turn, this little frog will erupt in an electrical current, dealing [1] to two enemies within [2].</content>
 
 	<content contentuid="h4b7c2703ge1a8g4fb4g98c92s6d5f12e5f12" version="3">Keen Awareness</content>
-	<content contentuid="h67749803g166eg4d2bga330g5f646sd8f956" version="4">This creature gains a +8 bonus to their Initiative.</content>
+	<content contentuid="h67749803g166eg4d2bga330g5f646sd8f956" version="4">This creature rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all Dexterity based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h4d67dd95g0b1dg4661ga76cg3d5152345a6f" version="2">Skittish</content>
 	<content contentuid="hd283c724g54a5g4e21g816fge77a790f8ccc" version="3">This creature will become &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrified&lt;/LSTag&gt; when hurt.</content>
@@ -505,9 +505,9 @@
 	<content contentuid="hf6737e4eg1692g42acgb65ag23edf956cbad" version="1">While obscured in darkness, you reflect all Radiant damage back at your attacker twofold as Force damage.</content>
 
 	<content contentuid="hf8723df2g1884g46aagb114g523ea75da964" version="4">Blessing of Moonfire</content>
-	<content contentuid="h9705bf5dg6a89g4205g9a88gaf5c5aecb5db" version="2">Surround yourself in a pillar of Selûne's light, afflicting nearby foes with &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>
+	<content contentuid="h9705bf5dg6a89g4205g9a88gaf5c5aecb5db" version="2">Surround yourself in a pillar of Selûne's light, dealing damage to and afflicting nearby foes with &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>
 	<content contentuid="h47fbac5dgda23g402bg9bcdg2cae3cc38820" version="1">Moonfire</content>
-	<content contentuid="h6e20f892gecf1g434aga880g3c2e3166302e" version="1">Affected creature is blessed by moonlight. Enemies within [1] of them be afflicted with &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>
+	<content contentuid="h6e20f892gecf1g434aga880g3c2e3166302e" version="1">Affected creature is blessed by moonlight. Enemies within [1] of them will be afflicted with &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h7ad12a2bg9d88g4593g8c32g46a12174403d" version="2">Lunar Flare</content>
 	<content contentuid="hc2fdc7cdgba8fg48e4gb0a8gcfc98e3d358b" version="2">Fire a mote of moonlight that spills roiling &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Fire&lt;/LSTag&gt; in a [1] radius where it impacts.</content>

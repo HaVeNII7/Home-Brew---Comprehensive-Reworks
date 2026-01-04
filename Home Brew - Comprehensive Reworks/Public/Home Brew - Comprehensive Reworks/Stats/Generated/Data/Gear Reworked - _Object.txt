@@ -1,3 +1,11 @@
+<!--HALL OF FAME-->
+
+new entry "HALLOFFAME"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "0db35759-02d5-4b30-96b0-f3f58cf698c9"
+data "Rarity" "Legendary"
+
 <!--ALCHEMY-->
 
 new entry "BASE_ALCH_Ingredient"

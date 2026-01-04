@@ -48,6 +48,7 @@
 
 	<content contentuid="h978e1507gf90eg49b5ga5f8g5b1c0548d77f" version="1">Burning</content>
 	<content contentuid="h749103c1g241dg4d07g923eg977717a2d981" version="4">Affected creature takes [1] at the beginning of each of their turns.&lt;br&gt;&lt;br&gt;Removed if &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Helped&lt;/LSTag&gt;.</content>
+	<content contentuid="h8696a024g7942g464bg8f97geb0ba0900378" version="1">Deals 1d4 Radiant damage per turn.</content>
 
 	<content contentuid="h6b5fc06cga008g4daaga6bcgf0001f71a482" version="1">Buthir's Wrath</content>
 	<content contentuid="he4f084d0g0bbcg4b59g8d01g38e0786dff09" version="1">Buthir unleashes her wrath! Her &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; has increased by 4!</content>
@@ -1122,8 +1123,8 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 	<content contentuid="h3259a3ecg2809g470cgb8deg14caa6f8c1a6" version="2">Mage Armour</content>
 	<content contentuid="h5f4b441dga4b2g4dd4ga617g4e3ff0b4003e" version="6">Affected creature's base &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is increased by [1].</content>
 
-	<content contentuid="h6d2c0287g9bf5g447dgace4g112975feaa66" version="1">Magic Mistletoe</content>
-	<content contentuid="h2c2809afg17f9g4dc1g9424g75bc6cf60c69" version="4">Happy holidays! Thank you for the all the support!&lt;br&gt;&lt;br&gt;With love,&lt;br&gt;HaVeNII7.&lt;br&gt;&lt;br&gt;Shoot 3 magical darts, each dealing [1]. The darts can change direction mid flight, allowing them to target any nearby creature so long as they are within range. They will always hit their target.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
+	<content contentuid="h6d2c0287g9bf5g447dgace4g112975feaa66" version="1">Magic Missile</content>
+	<content contentuid="h2c2809afg17f9g4dc1g9424g75bc6cf60c69" version="4">Shoot 3 magical darts, each dealing [1]. The darts can change direction mid flight, allowing them to target any nearby creature so long as they are within range. They will always hit their target.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
 	<content contentuid="h0dde4b3fg70abg483egadfdg450c483e1255" version="1">Strategic Curriculum</content>
 	<content contentuid="h7ad7b586gfabbg4bdag973dgdb210a8eebb2" version="4">Call upon the spirits of 6 long dead warriors and strategists whose master techniques were recorded in the Curriculum.</content>
 

@@ -661,7 +661,7 @@ data "DisplayName" "h4b7c2703ge1a8g4fb4g98c92s6d5f12e5f12;1"
 data "Description" "h67749803g166eg4d2bga330g5f646sd8f956;2"
 data "Icon" "Action_Monster_Banite_AuraOfTerror"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "Initiative(8)"
+data "Boosts" "Advantage(SavingThrow, Dexterity)"
 
 new entry "CreaturePassive_Book"
 type "PassiveData"

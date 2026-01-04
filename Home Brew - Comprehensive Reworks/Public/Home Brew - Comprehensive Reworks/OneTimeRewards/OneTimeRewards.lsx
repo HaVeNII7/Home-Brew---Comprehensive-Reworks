@@ -9,6 +9,11 @@
                     <attribute id="ItemTemplateId" type="FixedString" value="749cd080-b7e4-473d-9b99-b1fbf7c55f65"/>
                     <attribute id="UUID" type="guid" value="0839d3a1-fc2c-40b2-bee6-ff2d5f2d5f68"/>
                 </node>
+                <node id="OneTimeReward">
+                    <attribute id="Amount" type="uint32" value="1"/>
+                    <attribute id="ItemTemplateId" type="FixedString" value="0db35759-02d5-4b30-96b0-f3f58cf698c9"/>
+                    <attribute id="UUID" type="guid" value="de5b69fd-fc4b-41a5-bf36-b54cd6a88ff7"/>
+                </node>
             </children>
         </node>
     </region>

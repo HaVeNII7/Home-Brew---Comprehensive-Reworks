@@ -334,7 +334,7 @@
 
 <!--PSIONIC DOMINANCE-->
 
-	<content contentuid="8a87461fd8dd4f5b9098ded714sdf68878d08" version="2">Psionic Dominance</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714sdf68878d08" version="2">Psionic Overcharge</content>
 	<content contentuid="8a87461fd8dd4f5b9098ded714f60d1fd250h" version="3">When dealing damage, you deal an additional 1d4 Psychic damage and inflict one stack of &lt;LSTag Type="Status" Tooltip="MAG_PSYCHIC_MENTAL_FATIGUE"&gt;Mental Fatigue&lt;/LSTag&gt;. In addition, Illithid Powers no longer reduce your maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
 
 <!--REACTIVE ASSAULT-->

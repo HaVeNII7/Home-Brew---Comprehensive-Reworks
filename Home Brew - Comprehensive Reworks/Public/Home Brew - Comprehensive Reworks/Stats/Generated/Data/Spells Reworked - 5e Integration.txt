@@ -4017,7 +4017,7 @@ data "TickType" "EndTurn"
 data "TickFunctors" "IF(not Tagged('TORCH')):DealDamage(1d4,Fire)"
 data "StatusPropertyFlags" "InitiateCombat;Burning;DisableOverhead;IgnoreResting"
 data "StatusEffect" "2156dd48-f83b-4060-9a4e-cab994da8857"
-data "OnRemoveFunctors" "IF(Combat(context.Source)):CreateExplosion(Projectile_FlamingFrenzy)"
+data "OnRemoveFunctors" "IF(Combat(context.Source) and not HasStatus('WET', context.Source)):CreateExplosion(Projectile_FlamingFrenzy)"
 data "Boosts" "UnlockSpell(Shout_Distract_Cat_Explosion)"
 
 new entry "Projectile_FlamingFrenzy"

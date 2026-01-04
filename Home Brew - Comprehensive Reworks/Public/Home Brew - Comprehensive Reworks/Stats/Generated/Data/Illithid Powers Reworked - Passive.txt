@@ -18,7 +18,7 @@ data "Description" "h74504e19g746bg4867gb7d5g63a74cd99dd0;1"
 data "DescriptionParams" "DealDamage(1d4,Psychic)"
 data "Icon" "TadpoleSuperPower_PsionicOverload"
 data "Properties" "Highlighted"
-data "Boosts" "CharacterWeaponDamage(1d4,Psychic);CharacterUnarmedDamage(1d4,Psychic)"
+data "Boosts" "CharacterWeaponDamage(1d4,Psychic);CharacterUnarmedDamage(1d4,Psychic);IF(HasStatus('SG_Polymorph_BeastShape', context.Source)):DamageBonus(1d4, Psychic)"
 
 <!--FAVOURABLE BEGINNINGS-->
 
@@ -39,7 +39,7 @@ data "Description" "h46f50667gc444g4eebg9061gdaa6ac94e770;1"
 data "DescriptionParams" "Distance(9)"
 data "Icon" "TadpoleSuperPower_ForceTunnel"
 data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Rush_ForceTunnel)"
+data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Rush_ForceTunnel)"
 
 <!--CONCENTRATED BLAST-->
 
@@ -49,7 +49,7 @@ data "DisplayName" "ha002841dg16b3g4217g8a6cg4bf54d1f9133;1"
 data "Description" "hf4f5d88fg1953g43c9g8366g45e0978f1b10;1"
 data "Icon" "TadpoleSuperPower_ConcentratedBlast"
 data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Target_TAD_ConcentratedBlast)"
+data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Target_TAD_ConcentratedBlast)"
 
 <!--TRANSFUSE HEALTH-->
 
@@ -173,7 +173,7 @@ data "Description" "hce1927d0g93e8g40b1gb53age1c909f8815c;1"
 data "DescriptionParams" "Distance(3)"
 data "Icon" "TadpoleSuperPower_ShieldOfThralls"
 data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Target_TAD_ShieldOfThralls)"
+data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Target_TAD_ShieldOfThralls)"
 
 <!--PERILOUS STAKES-->
 
@@ -183,7 +183,7 @@ data "DisplayName" "h97567157gea8eg43f4g942cgd98961fd7adb;1"
 data "Description" "h443d376dg292ag4338g9fb4g8383b67db13b;1"
 data "Icon" "TadpoleSuperPower_PerilousStakes"
 data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Target_TAD_PerilousStakes)"
+data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Target_TAD_PerilousStakes)"
 
 <!--BEAST FLAYER-->
 
@@ -194,7 +194,7 @@ data "Description" "h443d376dg292ag4338g9fb4g838sdf654845;7"
 data "DescriptionParams" "Distance(18)"
 data "Icon" "TadpoleSuperPower_DisplacerShape"
 data "Properties" "Highlighted"
-data "Boosts" "AC(2);Initiative(2);DarkvisionRangeMin(18);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7)"
+data "Boosts" "AC(2);Initiative(2);DarkvisionRangeMin(18);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7);StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud)"
 
 <!--IMPERIL-->
 
@@ -238,7 +238,7 @@ data "DisplayName" "he71b1f23gc2bdg45f0g99c1g9f476ec396b6;1"
 data "Description" "h3a37227bgeba3g476egbb82gfcbbfc2eca6e;1"
 data "Icon" "TadpoleSuperPower_BlackHole"
 data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Target_TAD_BlackHole)"
+data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Target_TAD_BlackHole)"
 
 <!--LEVITATE-->
 
@@ -309,7 +309,7 @@ data "Description" "h7f91680dgf49ag4dffg98aag5e46044a504f;1"
 data "DescriptionParams" "2"
 data "Icon" "TadpoleSuperPower_AbsorbIntellect"
 data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Target_TAD_AbsorbIntellect)"
+data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Target_TAD_AbsorbIntellect)"
 
 <!--AWAKENED-->
 

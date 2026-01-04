@@ -5,7 +5,12 @@
 --   Tab 2: NPC Rolls (independent toggles per encounter type)
 --   Tab 3: NPC Resources (sliders 0–3 per encounter type; 0 = none)
 --
--- UPDATED PARTY-JOIN BEHAVIOR:
+-- UPDATED BEHAVIOR (2026-01-03):
+--  - "Missing-only" refresh: only applies a system if the creature is missing that system's status.
+--  - "Force" refresh (MCM changes / difficulty swaps): removes relevant statuses then reapplies.
+--  - CombatStarted triggers a missing-only refresh (useful for combat start without thrash).
+--
+-- PARTY-JOIN BEHAVIOR (kept from your file):
 --  - Difficulty statuses are ONLY REMOVED when a creature joins the party IF it has the NonLethal passive.
 --  - When a creature joins the party IF it does NOT have NonLethal, difficulty statuses are applied.
 
@@ -19,6 +24,9 @@ local PASSIVE_FATAL     = "Fatal_Encounter"
 local PASSIVE_NONLETHAL = "NonLethal"
 
 local STATUS_UNSUMMONABLE = "UNSUMMON_ABLE"
+
+-- Queue for combat joiners (reinforcements / late spawns)
+local pendingEnteredCombat = {}
 
 -- =========================================================
 -- MCM SETTING IDS
@@ -108,7 +116,7 @@ local ALL_HP_STATUSES = {
     HP_STATUS_FATAL.easy, HP_STATUS_FATAL.normal, HP_STATUS_FATAL.hard, HP_STATUS_FATAL.veryhard, HP_STATUS_FATAL.nightmare,
 }
 
--- Stat scaling statuses (edit if your names differ)
+-- Stat scaling statuses
 local STAT_STATUS = {
     AC     = "STATBOOST_AC",
     Attack = "STATBOOST_ATTACK",
@@ -173,16 +181,14 @@ local function HasPassive(guid, passive)
 end
 
 -- Scaling target rule:
---  - If NonLethal: NEVER apply scaling (main party)
+--  - If NonLethal AND IsPlayer: NEVER apply scaling (main party)
 --  - Otherwise: OK to apply scaling (enemies + temp companions like Us/Nightsong)
-
 local function ShouldApplyDifficulty(guid)
-    -- Never scale party (NonLethal)
     if HasPassive(guid, PASSIVE_NONLETHAL) and Osi.IsPlayer(guid) == 1 then
         return false
     end
 
-    -- Never scale summons
+    -- Never scale summons (your existing behavior)
     if HasStatus(guid, STATUS_UNSUMMONABLE) then
         return false
     end
@@ -222,13 +228,11 @@ end
 
 -- Accepts either:
 --   "easy"/"normal"/"hard"/"veryhard"/"nightmare"
--- OR the display strings:
+-- OR display strings:
 --   "Easy"/"Normal"/"Hard"/"Very Hard"/"Nightmare"
 local function NormalizeHPMode(value)
     if not value then return "normal" end
     local v = tostring(value)
-
-    -- Trim + lowercase
     v = v:gsub("^%s+", ""):gsub("%s+$", ""):lower()
 
     if v == "easy" then return "easy" end
@@ -237,8 +241,6 @@ local function NormalizeHPMode(value)
     if v == "very hard" then return "veryhard" end
     if v == "veryhard" then return "veryhard" end
     if v == "nightmare" then return "nightmare" end
-
-    -- Fallback safeguard
     return "normal"
 end
 
@@ -253,24 +255,47 @@ local function HPStatusFor(encType, mode)
 end
 
 -- =========================================================
--- APPLY SYSTEMS
+-- "MISSING" DETECTION (for non-destructive refresh)
 -- =========================================================
 
-local function ApplyHP(guid)
+local function HasAnyHPBoost(guid)
+    for _, s in ipairs(ALL_HP_STATUSES) do
+        if HasStatus(guid, s) then return true end
+    end
+    return false
+end
+
+local function HasAnyRollBoost(guid)
+    -- If any of the 4 stat statuses are present, we treat "stats system" as present
+    return HasStatus(guid, STAT_STATUS.AC)
+        or HasStatus(guid, STAT_STATUS.Attack)
+        or HasStatus(guid, STAT_STATUS.Saves)
+        or HasStatus(guid, STAT_STATUS.SaveDC)
+end
+
+local function HasAnyResBoost(guid)
+    for _, s in ipairs(ALL_RESOURCE_STATUSES) do
+        if HasStatus(guid, s) then return true end
+    end
+    return false
+end
+
+-- =========================================================
+-- APPLY SYSTEMS (force vs missing-only)
+-- =========================================================
+
+-- FORCE HP: remove all HP statuses then apply exactly one matching current MCM.
+local function ApplyHP_Force(guid)
     if not ShouldApplyDifficulty(guid) then
-        -- optional: ensure nothing lingers if something applied earlier
         RemoveStatuses(guid, ALL_HP_STATUSES)
         return
     end
 
     local encType = EncounterType(guid)
-
-    -- Read dropdown enum from MCM
     local settingId = HP_MODE[encType] or HP_MODE.normal
     local raw = GetString(settingId, "normal")
     local mode = NormalizeHPMode(raw)
 
-    -- Always keep exactly one HP status per target (based on dropdown)
     RemoveStatuses(guid, ALL_HP_STATUSES)
 
     local status = HPStatusFor(encType, mode)
@@ -279,6 +304,16 @@ local function ApplyHP(guid)
     end
 end
 
+-- MISSING-ONLY HP: only apply if no HP boost is present at all.
+local function ApplyHP_MissingOnly(guid)
+    if not ShouldApplyDifficulty(guid) then return end
+    if HasAnyHPBoost(guid) then return end
+    -- Safe to call force (it won't thrash because we're missing)
+    ApplyHP_Force(guid)
+end
+
+-- Stats apply already toggles per setting (it removes per-stat when disabled).
+-- For missing-only, we only run it if no statboost exists at all.
 local function ApplyStats(guid)
     if not ShouldApplyDifficulty(guid) then
         return
@@ -296,7 +331,14 @@ local function ApplyStats(guid)
     end
 end
 
-local function ApplyResources(guid)
+local function ApplyStats_MissingOnly(guid)
+    if not ShouldApplyDifficulty(guid) then return end
+    if HasAnyRollBoost(guid) then return end
+    ApplyStats(guid)
+end
+
+-- Resources: always removes + reapplies based on slider.
+local function ApplyResources_Force(guid)
     if not ShouldApplyDifficulty(guid) then
         return
     end
@@ -304,7 +346,6 @@ local function ApplyResources(guid)
     local encType = EncounterType(guid)
     local settings = (encType == "fatal" and RES_FATAL) or (encType == "dangerous" and RES_DANGEROUS) or RES_NORMAL
 
-    -- Sliders are 0–3 (0 = none)
     local a = math.max(0, math.min(3, GetInt(settings.actions, 0)))
     local b = math.max(0, math.min(3, GetInt(settings.bonusactions, 0)))
     local r = math.max(0, math.min(3, GetInt(settings.reactions, 0)))
@@ -316,17 +357,29 @@ local function ApplyResources(guid)
     if r > 0 then ApplyStatusPermanent(guid, REACT_STATUS[r]) end
 end
 
-local function ApplyAllSystems(guid)
+local function ApplyResources_MissingOnly(guid)
+    if not ShouldApplyDifficulty(guid) then return end
+    if HasAnyResBoost(guid) then return end
+    ApplyResources_Force(guid)
+end
+
+local function ApplyAllSystems(guid, force)
     if not guid or guid == "" or Osi.IsCharacter(guid) ~= 1 then
         return
     end
 
-    ApplyHP(guid)
-    ApplyStats(guid)
-    ApplyResources(guid)
+    if force then
+        ApplyHP_Force(guid)
+        ApplyStats(guid)            -- per-setting adds/removes; force is fine here
+        ApplyResources_Force(guid)
+    else
+        ApplyHP_MissingOnly(guid)
+        ApplyStats_MissingOnly(guid)
+        ApplyResources_MissingOnly(guid)
+    end
 end
 
-local function RefreshAllLoaded(reason)
+local function RefreshAllLoaded(reason, force)
     local seen = 0
     local difficultyCandidates = 0
 
@@ -335,11 +388,11 @@ local function RefreshAllLoaded(reason)
         if guid and guid ~= "" then
             seen = seen + 1
             if ShouldApplyDifficulty(guid) then difficultyCandidates = difficultyCandidates + 1 end
-            ApplyAllSystems(guid)
+            ApplyAllSystems(guid, force == true)
         end
     end
 
-    Log(string.format("%s refresh: seen=%d difficultyCandidates=%d", reason, seen, difficultyCandidates))
+    Log(string.format("%s refresh(force=%s): seen=%d difficultyCandidates=%d", tostring(reason), tostring(force == true), seen, difficultyCandidates))
 end
 
 -- =========================================================
@@ -347,7 +400,7 @@ end
 -- =========================================================
 
 Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(guid)
-    -- Rule 1: remove ONLY if they have NonLethal
+    -- Rule 1: remove ONLY if they have NonLethal (becoming party)
     if HasPassive(guid, PASSIVE_NONLETHAL) and Osi.IsPlayer(guid) == 1 then
         RemoveStatuses(guid, ALL_HP_STATUSES)
         RemoveStatuses(guid, ALL_STAT_STATUSES)
@@ -355,13 +408,13 @@ Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(guid)
         return
     end
 
-    -- Rule 2: otherwise APPLY when they join (temp companions)
-    ApplyAllSystems(guid)
+    -- Rule 2: otherwise apply (missing-only) when they join (temp companions)
+    ApplyAllSystems(guid, false)
 end)
 
 Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function()
     checked = {}
-    RefreshAllLoaded("Level start")
+	RefreshAllLoaded("Level start", false) -- missing-only on load: preserves existing HP/statuses
 end)
 
 Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
@@ -370,15 +423,49 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function(payload)
     end
 
     checked = {}
-    RefreshAllLoaded("MCM changed")
+    RefreshAllLoaded("MCM changed", true) -- force when settings change (difficulty swap)
 end)
 
+-- CombatStarted: missing-only refresh to catch combat start without stripping/reapplying everyone
+Ext.Osiris.RegisterListener("CombatStarted", 1, "after", function(a)
+    Ext.Utils.Print("[HarderDifficulty] CombatStarted(1) fired: " .. tostring(a))
+    RefreshAllLoaded("CombatStarted(1)", false)
+end)
+
+Ext.Osiris.RegisterListener("CombatStarted", 2, "after", function(a, b)
+    Ext.Utils.Print("[HarderDifficulty] CombatStarted(2) fired: " .. tostring(a) .. " / " .. tostring(b))
+    RefreshAllLoaded("CombatStarted(2)", false)
+end)
+
+-- EnteredCombat: apply missing-only to JUST the joining character (reinforcements / late spawns)
+-- We defer a couple ticks so the entity is fully initialized (passives/statuses/template ready)
+Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(guid, combatGuid)
+    if guid and guid ~= "" and Osi.IsCharacter(guid) == 1 then
+        pendingEnteredCombat[guid] = 2
+    end
+end)
+
+-- Initial refresh once MCM is available: force so the initial world state matches MCM exactly
 Ext.Events.Tick:Subscribe(function()
-    if didInitialRefresh then return end
-    if not (MCM and MCM.Get) then return end
+    -- existing initial refresh
+    if not didInitialRefresh and (MCM and MCM.Get) then
+		RefreshAllLoaded("Initial", false)
+        didInitialRefresh = true
+    end
 
-    RefreshAllLoaded("Initial")
-    didInitialRefresh = true
+    -- NEW: process queued combat joiners
+    if next(pendingEnteredCombat) ~= nil then
+        for guid, ticks in pairs(pendingEnteredCombat) do
+            ticks = ticks - 1
+            if ticks <= 0 then
+                pendingEnteredCombat[guid] = nil
+                -- missing-only apply for this one character
+                ApplyAllSystems(guid, false)
+            else
+                pendingEnteredCombat[guid] = ticks
+            end
+        end
+    end
 end)
 
-Log("Loaded (HP + Rolls + Resources systems active; party-join NonLethal removal + non-NonLethal apply enabled).")
+Log("Loaded (HP + Rolls + Resources systems active; missing-only refresh + forced refresh on MCM/level start; CombatStarted missing-only).")

@@ -1116,8 +1116,10 @@
 	<content contentuid="hd183668eg67fcg448eg8fceg8989ff53fbca" version="1">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Insight and Investigation based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
 
 <!--BOOTS OF VERY FAST BLINKING-->
-	<content contentuid="hea441ee4g3de5g4c0agabb9g56f023c1496f" version="3">Disrobing Blinkstep</content>
-	<content contentuid="h34008d25gabccg47b0g8516g54c5b22b6134" version="2">You teleport to an unoccupied space you can see. However, your clothes do not teleport with you.</content>
+	<content contentuid="hea441ee4g3de5g4c0agabb9g56f023c1496f" version="3">Petey's Blinkstep</content>
+	<content contentuid="h34008d25gabccg47b0g8516g54c5b22b6134" version="2">Teleport to an unoccupied space you can see.</content>
+	<content contentuid="h5b29deb8ge8b0g4616g837dgf4552abec91a" version="2">Worn by the accurately monikered 'Petey No-Pants', who was always on time to work, but could never hold a job.</content>
+	<content contentuid="hb6283702g11cag44cfga0dag8d27f2d3ef87" version="1">Worn by the accurately monikered 'Petey No-Pants', who was always on time to work, but could never hold a job.</content>
 
 <!--BAND OF THE MYSTIC SCOUNDREL-->
 	<content contentuid="h114939dbg26e6g4852g9444g0de8a00a150a" version="2">Illusory Quickening</content>

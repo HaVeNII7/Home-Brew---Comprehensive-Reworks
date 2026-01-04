@@ -1,6 +1,6 @@
 new entry "ORI_Wyll_Infernal_Robe"
 type "Armor"
-using "ARM_Robe_Body_1"
+using "ARM_Robe_Body_2"
 data "RootTemplate" "b2de6dee-50c1-45b9-b35d-7d5e8d53135f"
 data "ValueUUID" "adfdafe5-f4da-4c64-a1e6-a33d626437d2"
 data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT)"

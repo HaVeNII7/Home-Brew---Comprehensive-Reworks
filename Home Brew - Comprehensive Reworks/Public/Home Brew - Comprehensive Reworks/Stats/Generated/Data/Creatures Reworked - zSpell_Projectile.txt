@@ -307,6 +307,15 @@ data "CastEffect" "516519af-84bf-4a97-bdb3-afa14522156a"
 data "DisplayName" "hbcb4f19aga8cdg46b1g881bgd19d7bc78184;2"
 data "Description" "h5fbcf9edg1e2ag40eegbf04geb7e186d9c20;1"
 
+new entry "Projectile_END_Emperor_ChainLightning"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_ChainLightning_6"
+data "UseCosts" "ActionPoint:1"
+data "RootSpellID" ""
+data "PowerLevel" ""
+data "Cooldown" "OncePerShortRest"
+
 <!--MINOTAUR-->
 
 new entry "Projectile_Jump_Minotaur"

@@ -30,9 +30,9 @@
 	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b06a922" version="3">You may utilize your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; two times per turn.</content>
 
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b396a921" version="1">Uncanny Dodge</content>
-	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b03a621" version="3">When an enemy makes a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to force the attack to &lt;LSTag Type="Status" Tooltip="OFF_BALANCED_CRITICAL_MISS"&gt;Critically Miss&lt;/LSTag&gt;.</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b03a621" version="3">When an enemy makes a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, use your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to force the attack to &lt;LSTag Type="Status" Tooltip="OFF_BALANCED_CRITICAL_MISS"&gt;Critically Miss&lt;/LSTag&gt;. This Reaction may not be used if your enemy rolls a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b396a366" version="1">Uncanny Dodge</content>
-	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b03a219" version="3">When an enemy makes a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, force the attack to &lt;LSTag Type="Status" Tooltip="OFF_BALANCED_CRITICAL_MISS"&gt;Critically Miss&lt;/LSTag&gt;.</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b03a219" version="3">When an enemy makes a successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you, force the attack to &lt;LSTag Type="Status" Tooltip="OFF_BALANCED_CRITICAL_MISS"&gt;Critically Miss&lt;/LSTag&gt;. Cannot be used if your enemy rolls a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b3938989" version="1">Superior Sneak Attack</content>
 	<content contentuid="h098941ccgc4ecg49f2gb22agabed0blopoi7" version="3">You may utilize your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; three times per turn.</content>
@@ -77,7 +77,7 @@
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b3922d54" version="1">Assassin's Focus</content>
 	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b066d45" version="3">Affected creature will gain an &lt;LSTag Type="ActionResource" Tooltip="AssassinsMark"&gt;Assassin's Mark&lt;/LSTag&gt; upon accruing three stacks of this condition.</content>
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b3922d64" version="1">Assassination</content>
-	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b0dd898" version="3">Affected creature may trigger &lt;LSTag Type="Passive" Tooltip="Assassinate"&gt;Assassinate&lt;/LSTag&gt; when dealing damage.</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b0dd898" version="3">Affected creature may trigger &lt;LSTag Type="Passive" Tooltip="Assassinate"&gt;Assassinate&lt;/LSTag&gt; when dealing damage with a weapon.</content>
 
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b322d5f4" version="1">Assassin's Quarry</content>
 	<content contentuid="h098941ccgc4ecg49f2gb22agabed0bss6f45" version="3">Each turn while in combat, you have a 33% chance to gain an &lt;LSTag Type="ActionResource" Tooltip="AssassinsMark"&gt;Assassin's Mark&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Expend an Assassin's Mark to trigger &lt;LSTag Type="Passive" Tooltip="Assassinate"&gt;Assassinate&lt;/LSTag&gt; on your next instance of damage. This effect can be toggled at any time.</content>
