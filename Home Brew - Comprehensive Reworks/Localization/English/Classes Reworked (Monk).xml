@@ -79,39 +79,39 @@
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314013cc" version="6">Affected creature deals an additional +[1] Thunder damage until the beginning of their next turn.</content>
 
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400004" version="2">Elemental Overdrive</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000d" version="6">Spells cast with &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; make their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000d" version="6">Spells cast with &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; make their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400005" version="2">Elemental Recovery</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000e" version="6">Upon a successful killing blow on an enemy with a Spell cast using &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt;, restore one point of Ki. This effect can trigger once per turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000e" version="6">Upon a successful killing blow on an enemy with a Spell cast using &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt;, you refund the Ki Points spent in order to cast. This effect can trigger once per turn.</content>
 
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400006" version="2">Protective Casting</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000f" version="6">When you use &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; to cast a damage dealing Spell, gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to that type of damage until the beginning of your next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000f" version="6">When you use &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; to cast a damage dealing Spell, gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to that type of damage until cast again.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400166" version="2">Protective Casting: Bludgeoning</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314001ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Bludgeoning damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314001ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Bludgeoning damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400266" version="2">Protective Casting: Slashing</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314002ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Slashing damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314002ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Slashing damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400366" version="2">Protective Casting: Piercing</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314003ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Piercing damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314003ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Piercing damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400466" version="2">Protective Casting: Acid</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314004ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Acid damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314004ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Acid damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400566" version="2">Protective Casting: Cold</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314005ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Cold damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314005ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Cold damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400666" version="2">Protective Casting: Fire</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314006ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314006ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Fire damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400766" version="2">Protective Casting: Force</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314007ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Force damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314007ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Force damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400866" version="2">Protective Casting: Lighting</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314008ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314008ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Lightning damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400966" version="2">Protective Casting: Necrotic</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314009ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314009ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Necrotic damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401066" version="2">Protective Casting: Poison</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314010ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314010ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Poison damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401166" version="2">Protective Casting: Psychic</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314011ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Psychic damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314011ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Psychic damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401266" version="2">Protective Casting: Radiant</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314012ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Radiant damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314012ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Radiant damage.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401366" version="2">Protective Casting: Thunder</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314013ff" version="6">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Thunder damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314013ff" version="6">Affected creature has &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Thunder damage.</content>
 
 <!--WAY OF THE DRUNKEN FIST-->
 

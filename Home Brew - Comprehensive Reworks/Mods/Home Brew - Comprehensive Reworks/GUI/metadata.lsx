@@ -227,6 +227,86 @@
 							</children>
 						</node>
 						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/ClassIcons/hotbar/Crushwoven.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="140" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="140" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/ClassIcons/Crushwoven.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="300" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="300" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/ClassIcons/hotbar/HellsBreaker.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="140" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="140" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/ClassIcons/HellsBreaker.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="300" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="300" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/ClassIcons/hotbar/PathofFerocity.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="140" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="140" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/ClassIcons/PathofFerocity.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="300" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="300" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/ClassIcons/hotbar/Stonebreaker.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="140" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="140" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/ClassIcons/Stonebreaker.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="300" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="300" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
 							<attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/ChainedBonds.png" />
 							<children>
 								<node id="entries">

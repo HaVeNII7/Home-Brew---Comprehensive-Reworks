@@ -724,7 +724,7 @@ data "Description" "h1bde91c2g3406g4552gafb0g6e21436db1d3;4"
 data "DescriptionParams" " Distance(9)"
 data "Icon" "PassiveFeature_Darkvision"
 data "Properties" "Highlighted"
-data "Boosts" "DarkvisionRangeMin(9);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud)"
+data "Boosts" "DarkvisionRangeMin(9);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989)"
 
 new entry "DevilsSight"
 type "PassiveData"
@@ -756,7 +756,7 @@ data "Boosts" "StatusImmunity(SLEEP);StatusImmunity(POISON_DROW_CONDITION);Tag(C
 new entry "Hidden_DarkVision"
 type "PassiveData"
 data "Properties" "IsHidden"
-data "Boosts" "DarkvisionRangeMin(9);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud)"
+data "Boosts" "DarkvisionRangeMin(9);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989)"
 
 new entry "Hidden_SuperiorDarkVision"
 type "PassiveData"

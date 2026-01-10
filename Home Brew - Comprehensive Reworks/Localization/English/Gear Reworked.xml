@@ -403,7 +403,7 @@
 
 <!--SUNWALKERS GIFT-->
 	<content contentuid="h77c4eb77g5774g46b9g8d45g161228afa469" version="1">Sunwalker's Gift</content>
-	<content contentuid="hef9b2b79gbc58g4987ga831gc64bfd4f470a" version="3">The wearer can see in the dark up to [1].</content>
+	<content contentuid="hef9b2b79gbc58g4987ga831gc64bfd4f470a" version="3">The wearer can see in basic darkness up to [1].</content>
 
 <!--CINDER SHOES-->
 	<content contentuid="hae9157c9g33ddg4408g8f3dgf17a474d7fe7" version="2">Cinders</content>
@@ -528,7 +528,7 @@
 
 <!--THE BLOOD OF LATHANDER-->
 	<content contentuid="habe46d08g7762g41c0g9cefgeb22e36285c7" version="2">Lathander's Blessing</content>
-	<content contentuid="h9424896dg6e9bg4f8dg8cc3g21e4740ff830" version="3">Once per &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, when your &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; are reduced to 0, you regain [1]. All allies within [2] also regain [3].</content>
+	<content contentuid="h9424896dg6e9bg4f8dg8cc3g21e4740ff830" version="3">Once per &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, when your &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; are reduced to 0, you and all allies within [1] regain [2].</content>
 
 <!--AMULET OF SYLVANUS-->
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f593888" version="2">Sylvanus' Blessing</content>
@@ -1742,7 +1742,7 @@
 
 <!--IDOL OF SHAR-->
 	<content contentuid="da064a39b0974e78af15ca44211c8ccd00002" version="2">Lady of Loss' Vision</content>
-	<content contentuid="da064a39b0974e78af15ca44211c8ccd0000b" version="6">Affected creature is capable of seeing clearly within any form of darkness.</content>
+	<content contentuid="da064a39b0974e78af15ca44211c8ccd0000b" version="6">Affected creature is able to see normally in darkness, both magical and non-magical, to a distance of [1].</content>
 	<content contentuid="haf055d2fgf19ag4982g99afg62dbbd988027" version="3">Carved from black marble, this effigy is as terrible and perfect as the Lady of Loss herself. Just holding this statue seems to give one feelins of ease within darkness...</content>
 
 <!--IDOL OF SYLVANUS-->

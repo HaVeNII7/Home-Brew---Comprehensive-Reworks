@@ -28,7 +28,7 @@
 	<content contentuid="he513824dg20e8g477cg8189g49da00b66d97" version="11">The warpath of your god marches ever forward around you, bathing all nearby enemies in wanton, war-driven radiance.</content>
 
 	<content contentuid="h58ed0f65g01d6g4f03gbca7g9be2bf755d64" version="1">Divine Miracles: Deific Necrosis</content>
-	<content contentuid="he513824dg20e8g477cg8189g49da00bss5d8" version="11">The anger of your god seeps out from within you, rotting all nearby enemies in putrid necrosis. Any within the area of effect already suffering from a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Plague of Rot&lt;/LSTag&gt; will receive an additional stack.</content>
+	<content contentuid="he513824dg20e8g477cg8189g49da00bss5d8" version="11">The anger of your god seeps out from within you, rotting all nearby enemies in putrid necrosis. Any within the area of effect already suffering from a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt; will receive an additional stack.</content>
 
 	<content contentuid="h76f56723ga6f8g4367gb633gedb92535ed8a" version="1">Divine Miracles: Holy Restoration</content>
 	<content contentuid="h42bef7a1g483bg4c43g9616g7cb1951d42a1" version="11">Feelings of soothing mercy flow from within, restoring the &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; of all nearby allies.</content>
@@ -51,11 +51,11 @@
 	<content contentuid="h3063c312g64f5g4715g9339g241ee234d585" version="1">You nourish your faith on forces that make dealings in death, giving rise to desolate plague and putrid necrosis alike.</content>
 	
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00001" version="2">Corpse Party</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a670000a" version="2">Gain the ability to detonate nearby corpses, dealing Necrotic damage to all creatures in a [1] radius. This action may also target Undead creatures.&lt;br&gt;&lt;br&gt;When damaging a creature, this action will always apply one stack of &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Plague of Rot&lt;/LSTag&gt;.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a670000a" version="2">Gain the ability to detonate nearby corpses, dealing Necrotic damage to all creatures in a [1] radius. This action may also target Undead creatures.&lt;br&gt;&lt;br&gt;When damaging a creature, this action will always apply one stack of &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt;.</content>
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c000z1" version="2">Bursting Sinew</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a67000za" version="2">Detonate a nearby corpse, dealing Necrotic damage to all creatures in a [1] radius. This action may also target Undead creatures.&lt;br&gt;&lt;br&gt;When damaging a creature, this action will always apply one stack of &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Plague of Rot&lt;/LSTag&gt;.</content>
-	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00zz2" version="1">Plague of Rot</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a6700zzb" version="2">Affected creature takes [1] at the beginning of each of their turns for each stack of Plague of Rot they have. At the end of each of their turns, they receive one additional stack.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a67000za" version="2">Detonate a nearby corpse, dealing Necrotic damage to all creatures in a [1] radius. This action may also target Undead creatures.&lt;br&gt;&lt;br&gt;When damaging a creature, this action will always apply one stack of &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt;.</content>
+	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00zz2" version="1">Curse of Rot</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a6700zzb" version="2">Affected creature takes [1] at the beginning of each of their turns for each stack of Curse of Rot they have. At the end of each of their turns, they receive one additional stack.</content>
 
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00002" version="2">Channel Divinity: Curse of Undeath</content>
 	<content contentuid="heec87dfbg454fg4550g8622gb200a670000b" version="2">Gain the ability to use a &lt;LSTag Type="ActionResource" Tooltip="ChannelDivinity"&gt;Channel Divinity&lt;/LSTag&gt; charge to place a &lt;LSTag Type="Status" Tooltip="CURSEOFUNDEATH"&gt;Curse of Undeath&lt;/LSTag&gt; upon a creature.</content>
@@ -65,17 +65,17 @@
 	<content contentuid="heec87dfbg454fg4550g8622gb200a6700ssb" version="2">Affected creature is considered to be Undead. They have &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Necrotic and Poison damage.</content>
 
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00003" version="1">Harvest</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a670000c" version="1">While within [1] of a corpse, they radiate a necrotic aura, dealing [2] to all enemies within [3] at the start of each of their turns and preventing them from recovering &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;When damaging a creature suffering from a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Plague of Rot&lt;/LSTag&gt;, they receive one additional stack as well. This can be toggled at any time.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a670000c" version="1">While within [1] of a corpse, they radiate a necrotic aura, dealing [2] to all enemies within [3] at the start of each of their turns and preventing them from recovering &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;When damaging a creature suffering from a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt;, they receive one additional stack as well. This can be toggled at any time.</content>
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c000z3" version="1">Fresh Harvest</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a67000zc" version="1">Affected corpse is radiating a necrotic aura, dealing [1] to all enemies within [2] at the start of each of their turns and preventing them from recovering &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;When damaging a creature suffering from a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Plague of Rot&lt;/LSTag&gt;, they receive one additional stack as well.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a67000zc" version="1">Affected corpse is radiating a necrotic aura, dealing [1] to all enemies within [2] at the start of each of their turns and preventing them from recovering &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;When damaging a creature suffering from a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt;, they receive one additional stack as well.</content>
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00zz3" version="1">Harvest's Yield</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a6700zzc" version="1">Affected creature is taking [1] at the start of each of their turns and cannot recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;If the affected creature is also suffering from a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Plague of Rot&lt;/LSTag&gt;, they receive one additional stack per turn as well.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a6700zzc" version="1">Affected creature is taking [1] at the start of each of their turns and cannot recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;If the affected creature is also suffering from a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt;, they receive one additional stack per turn as well.</content>
 	
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00004" version="2">Insurmountable Suffering</content>
 	<content contentuid="heec87dfbg454fg4550g8622gb200a670000d" version="2">When damaging enemies you ignore all forms of &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Necrotic damage.</content>
 
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00005" version="2">True Pestilence</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a670000e" version="2">At the beginning of each of their turns, creatures with a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Plague of Rot&lt;/LSTag&gt; spread it to their allies within [1] of them.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a670000e" version="2">At the beginning of each of their turns, creatures with a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt; spread it to their allies within [1] of them.</content>
 
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00006" version="2">Death of the Firstborns</content>
 	<content contentuid="heec87dfbg454fg4550g8622gb200a670000f" version="2">The first instance of Necrotic damage you deal in a combat encounter causes your targets to become &lt;LSTag Tooltip="Vulnerable"&gt;Vulnerable&lt;/LSTag&gt; to all damage for one turn.</content>
@@ -85,7 +85,7 @@
 <!--LIFE DOMAIN-->
 
 	<content contentuid="h67fe33fdg46c1g415bg95c6g20291e26lc01" version="1">Virtuous Touch</content>
-	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc01" version="1">When healing a creature, the target regains additional &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; equal to your level.</content>
+	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc01" version="1">The first time you heal a creature each turn, the target regains additional &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; equal to your level.</content>
 
 	<content contentuid="h58347e3dg4eb2g4ed1g9537g4f361e1644db" version="1">Preserve Life</content>
 	<content contentuid="h4104b247g7085g45dbgba71g8734585d95cf" version="7">Evoke a healing radiance which restores your or an allies &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; by your level multiplied by four.</content>

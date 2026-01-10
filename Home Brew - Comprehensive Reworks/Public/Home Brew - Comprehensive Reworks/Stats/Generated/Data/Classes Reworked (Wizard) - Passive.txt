@@ -34,7 +34,7 @@ data "Icon" "Action_Bladesong_Dismiss"
 data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnDamage"
 data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally() or IsCritical() and Character() and not Self() and not Ally()"
-data "StatsFunctors" "GROUND:IF(HasStatus('STEELWIND_STORM', context.Source)):Summon(dcb87672-84d5-4d18-9f1d-30ee66a69cc3, 3,Projectile_AiHelper_Summon_Weak,,,SPIRITUAL_WEAPON,SHADOWCURSE_SUMMON_CHECK,SUMMON_LOSECONTROL,UNSUMMON_ABLE)"
+data "StatsFunctors" "ApplyStatus(SELF,WINDSOFTHEARCBLADE,100,-1)"
 
 new entry "SteelCast_Arcblade"
 type "PassiveData"

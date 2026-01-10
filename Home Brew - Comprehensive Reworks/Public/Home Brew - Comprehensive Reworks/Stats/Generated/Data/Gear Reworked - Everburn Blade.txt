@@ -12,7 +12,7 @@ data "Weapon Properties" "Twohanded;Heavy;Melee"
 data "UseCosts" "ReactionActionPoint:1;Attunement:1"
 data "StatusOnEquip" "ATTUNEMENT1"
 data "WeaponFunctors" "ApplyStatus(BURNING,100,1)"
-data "PassivesOnEquip" "Overwhelm;MAG_Fire_Passive_Everburn"
+data "PassivesOnEquip" "MAG_Fire_Passive_Everburn"
 
 new entry "MAG_Fire_Passive_Everburn"
 type "PassiveData"

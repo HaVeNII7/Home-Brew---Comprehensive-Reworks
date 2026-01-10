@@ -90,6 +90,20 @@ data "RequirementConditions" "not HasStatus('RAGE_FRENZY') and not HasStatus('CA
 data "PrepareEffect" "63816502-951b-4242-a9a2-fa8b5228f18a"
 data "CastEffect" "d314aed0-4fb5-44dc-98c4-614297017694"
 
+<!--CRUSHWOVEN-->
+
+new entry "Action_Barbarian_Rage_Bifrost"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage"
+data "SpellProperties" "ApplyStatus(RAGE_BIFROST,100,3);AI_ONLY:IF(HasActionResource('BonusActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,0);ApplyStatus(SELF,AI_HELPER_BUFF,100,0);IF(not Player(context.Source)):ApplyStatus(SELF,BUFF_BLOCKER,100,3)"
+data "Icon" "Action_Barbarian_Rage_Bifrost"
+data "DisplayName" "h40aa7e41g978dg4da6as54df84sd55f45001;1"
+data "Description" "hc526s54df84ef6s84d68f4s2e4f6s6d8f00a;3"
+data "TooltipStatusApply" "ApplyStatus(RAGE_BIFROST,100,3)"
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS') and not HasStatus('BUFF_BLOCKER')"
+data "CastEffect" "ccdad0c8-5c0f-4a89-8bb6-94573c5fe73b"
+
 <!--WILD HEART-->
 
 new entry "Shout_Rage_Totem_Container"

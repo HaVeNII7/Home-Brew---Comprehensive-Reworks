@@ -239,10 +239,21 @@ type "PassiveData"
 data "DisplayName" "66706bd4b60a4ca88b703f3fc04bfaf83a335;1"
 data "Description" "66706bd4b60a4ca88b703f3fc04bfaf8asdf8;2"
 data "Icon" "Action_Barbarian_Frenzy"
-data "Properties" "Highlighted;ForceShowInCC"
+data "Properties" "Highlighted;ForceShowInCC;OncePerTurn"
+data "Boosts" "IF(SpellId('Target_FrenziedStrike') and not HasStatus('LETITRIP', context.Source)):MinimumRollResult(Damage,20)"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "Character() and not Self()"
-data "StatsFunctors" "IF(IsDamageTypeBludgeoning()):ApplyStatus(WEAKENED_ARMOR,100,1);IF(IsDamageTypePiercing()):ApplyStatus(WEAKENED_ARMOR,100,1);IF(IsDamageTypeSlashing()):ApplyStatus(WEAKENED_ARMOR,100,1)"
+data "Conditions" "Character() and not Self() and SpellId('Target_FrenziedStrike')"
+data "StatsFunctors" "ApplyStatus(SELF,LETITRIP,100,1)"
+
+<!--CRUSHWOVEN-->
+
+new entry "Bifrost_Rage"
+type "PassiveData"
+data "DisplayName" "h40aa7e41g978dg4da6as54df84sd55f45001;1"
+data "Description" "hc526s54df84ef6s84d68f4s2e4f6s6d8f00a;2"
+data "Icon" "Action_Barbarian_Rage_Bifrost"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "UnlockSpell(Action_Barbarian_Rage_Bifrost)"
 
 <!--WILD SOUL-->
 

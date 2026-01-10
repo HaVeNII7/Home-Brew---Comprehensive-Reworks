@@ -103,6 +103,6 @@
 
 <!--ELIXIR OF DARKVISION-->
 	<content contentuid="hd66e0762g5ee9g4d66ga85bg6175c15f0fe6" version="2">Elixir of Darkvision</content>
-	<content contentuid="h6313fb91gb2bdg432agbce6g9cfdabbe402f" version="2">Affected creature can see in the dark, magical or otherwise, for up to [1].</content>
+	<content contentuid="h6313fb91gb2bdg432agbce6g9cfdabbe402f" version="2">Affected creature can see in the dark, magical or otherwise, up to [1].</content>
 
 </contentList>

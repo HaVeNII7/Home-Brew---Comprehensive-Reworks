@@ -111,7 +111,7 @@ data "DisplayName" "085a4081649142fd8a4b962645b40ef900001;1"
 data "Description" "354df869b11c4ef6be4ade30a4608aaa0000a;7"
 data "DescriptionParams" "Distance(3)"
 data "Icon" "PassiveFeature_Land_Coast"
-data "Properties" "Highlighted;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar"
+data "Properties" "Highlighted;IsToggled;ToggledDefaultAddToHotbar"
 data "StatsFunctorContext" "OnTurn"
 data "StatsFunctors" "GROUND:CreateSurface(3,3,Vines,true)"
 

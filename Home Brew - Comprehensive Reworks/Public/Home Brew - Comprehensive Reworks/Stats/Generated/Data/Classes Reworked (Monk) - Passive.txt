@@ -81,7 +81,7 @@ data "DisplayName" "h5dbeb57bg6089g4fccgb4b1ga71c31400004;1"
 data "Description" "h5dbeb57bg6089g4fccgb4b1ga71c3140000d;1"
 data "Icon" "Skill_Druid_NaturalRecovery"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "IF(IsSpell() and not IsCantrip() and HasStatus('FLOW_STATE', context.Source)):Advantage(AttackRoll)"
+data "Boosts" "IF(IsSpell() and not IsCantrip() and HasStatus('FLOW_STATE', context.Source)):Advantage(AttackRoll);IF(IsSpell() and not IsCantrip() and HasStatus('FLOW_STATE', context.Source)):Reroll(Damage,20,false)"
 
 new entry "Elemental_Recovery"
 type "PassiveData"
@@ -90,8 +90,8 @@ data "Description" "h5dbeb57bg6089g4fccgb4b1ga71c3140000e;2"
 data "Icon" "Skill_Druid_NaturalRecovery"
 data "Properties" "Highlighted;ForceShowInCC;OncePerTurn"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally() and HasStatus('FLOW_STATE', context.Source)"
-data "StatsFunctors" "IF(IsSpell() and not IsCantrip()):ApplyStatus(SELF,ELEMENTAL_RECOVERY,100,0)"
+data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally() and HasStatus('FLOW_STATE', context.Source) or IsCritical() and Character() and not Self() and not Ally() and HasStatus('FLOW_STATE', context.Source)"
+data "StatsFunctors" "IF(IsSpell() and not IsCantrip() and SpellPowerLevelEqualTo(1)):ApplyStatus(SELF,ELEMENTAL_RECOVERY_1,100,0);IF(IsSpell() and not IsCantrip() and SpellPowerLevelEqualTo(2)):ApplyStatus(SELF,ELEMENTAL_RECOVERY_2,100,0);IF(IsSpell() and not IsCantrip() and SpellPowerLevelEqualTo(3)):ApplyStatus(SELF,ELEMENTAL_RECOVERY_3,100,0);IF(IsSpell() and not IsCantrip() and SpellPowerLevelEqualTo(4)):ApplyStatus(SELF,ELEMENTAL_RECOVERY_4,100,0);IF(IsSpell() and not IsCantrip() and SpellPowerLevelEqualTo(5)):ApplyStatus(SELF,ELEMENTAL_RECOVERY_5,100,0);IF(IsSpell() and not IsCantrip() and SpellPowerLevelEqualTo(6)):ApplyStatus(SELF,ELEMENTAL_RECOVERY_6,100,0)"
 
 new entry "Protective_Casting"
 type "PassiveData"
@@ -101,7 +101,7 @@ data "Icon" "Skill_Druid_NaturalRecovery"
 data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnDamage"
 data "Conditions" "HasStatus('FLOW_STATE', context.Source) and IsSpell() and not IsCantrip()"
-data "StatsFunctors" "IF(IsDamageTypeBludgeoning()):ApplyStatus(SELF,PROTECTIVE_CASTING_BLUDGEONING,100,1);IF(IsDamageTypeSlashing()):ApplyStatus(SELF,PROTECTIVE_CASTING_SLASHING,100,1);IF(IsDamageTypePiercing()):ApplyStatus(SELF,PROTECTIVE_CASTING_PIERCING,100,1);IF(IsDamageTypeAcid()):ApplyStatus(SELF,PROTECTIVE_CASTING_ACID,100,1);IF(IsDamageTypeCold()):ApplyStatus(SELF,PROTECTIVE_CASTING_COLD,100,1);IF(IsDamageTypeFire()):ApplyStatus(SELF,PROTECTIVE_CASTING_FIRE,100,1);IF(IsDamageTypeForce()):ApplyStatus(SELF,PROTECTIVE_CASTING_FORCE,100,1);IF(IsDamageTypeLightning()):ApplyStatus(SELF,PROTECTIVE_CASTING_LIGHTNING,100,1);IF(IsDamageTypeNecrotic()):ApplyStatus(SELF,PROTECTIVE_CASTING_NECROTIC,100,1);IF(IsDamageTypePoison()):ApplyStatus(SELF,PROTECTIVE_CASTING_POISON,100,1);IF(IsDamageTypePsychic()):ApplyStatus(SELF,PROTECTIVE_CASTING_PSYCHIC,100,1);IF(IsDamageTypeRadiant()):ApplyStatus(SELF,PROTECTIVE_CASTING_RADIANT,100,1);IF(IsDamageTypeThunder()):ApplyStatus(SELF,PROTECTIVE_CASTING_THUNDER,100,1)"
+data "StatsFunctors" "IF(IsDamageTypeBludgeoning()):ApplyStatus(SELF,PROTECTIVE_CASTING_BLUDGEONING,100,-1);IF(IsDamageTypeSlashing()):ApplyStatus(SELF,PROTECTIVE_CASTING_SLASHING,100,-1);IF(IsDamageTypePiercing()):ApplyStatus(SELF,PROTECTIVE_CASTING_PIERCING,100,-1);IF(IsDamageTypeAcid()):ApplyStatus(SELF,PROTECTIVE_CASTING_ACID,100,-1);IF(IsDamageTypeCold()):ApplyStatus(SELF,PROTECTIVE_CASTING_COLD,100,-1);IF(IsDamageTypeFire()):ApplyStatus(SELF,PROTECTIVE_CASTING_FIRE,100,-1);IF(IsDamageTypeForce()):ApplyStatus(SELF,PROTECTIVE_CASTING_FORCE,100,-1);IF(IsDamageTypeLightning()):ApplyStatus(SELF,PROTECTIVE_CASTING_LIGHTNING,100,-1);IF(IsDamageTypeNecrotic()):ApplyStatus(SELF,PROTECTIVE_CASTING_NECROTIC,100,-1);IF(IsDamageTypePoison()):ApplyStatus(SELF,PROTECTIVE_CASTING_POISON,100,-1);IF(IsDamageTypePsychic()):ApplyStatus(SELF,PROTECTIVE_CASTING_PSYCHIC,100,-1);IF(IsDamageTypeRadiant()):ApplyStatus(SELF,PROTECTIVE_CASTING_RADIANT,100,-1);IF(IsDamageTypeThunder()):ApplyStatus(SELF,PROTECTIVE_CASTING_THUNDER,100,-1)"
 
 <!--WAY OF THE DRUNKEN FIST-->
 

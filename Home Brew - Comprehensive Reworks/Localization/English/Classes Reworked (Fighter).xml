@@ -133,16 +133,16 @@
 	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100x1d" version="1">Teleport an item to another location.</content>
 
 	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00004" version="1">Improved Fletching</content>
-	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000d" version="1">Gain an additional three &lt;LSTag Type="Passive" Tooltip="ElementalFletching"&gt;Elemental Fletchings&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000d" version="1">&lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; which cost an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt; may now be cast using your &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;. This may be toggled at any time.</content>
 
 	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00005" version="1">Greater Focus</content>
 	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000e" version="1">When &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, your basic shots now ricochet to two other creatures if within [1] of each other.</content>
 
 	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00006" version="1">Eye of the Arcana</content>
-	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000f" version="1">Gain an additional three &lt;LSTag Type="Passive" Tooltip="ElementalFletching"&gt;Elemental Fletchings&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210000f" version="1">When casting a &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, reduce the number needed to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; by 2.</content>
 
 	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de5sd2f" version="1">Arcane Focus</content>
-	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210df58" version="1">When &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, your basic shots now ricochet to all other creatures within [1] of your original target. Each ricochet now deals the full damage of the first hit.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210df58" version="1">When &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, your basic shots now ricochet to all other creatures within [1] of your original target.</content>
 
 <!--CHAMPION-->
 
@@ -448,9 +448,9 @@
 	<content contentuid="h49fe0914g5e23g493fg842bg9abc63460f28" version="4">Deal an additional and potentially push your target back by [1].</content>
 
 	<content contentuid="h8e13d812g8531g43a2ga8d6ga4c1755565eb" version="1">Quick Toss</content>
-	<content contentuid="hef0821c8gaafdg4865gb7d8g5e67edb5bb2e" version="1">Spend a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; in order to &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throw&lt;/LSTag&gt; a weapon that has the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; weapon property.</content>
+	<content contentuid="hef0821c8gaafdg4865gb7d8g5e67edb5bb2e" version="1">Spend a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; in order to &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throw&lt;/LSTag&gt; a grenade or weapon that has the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; weapon property.</content>
 	<content contentuid="h8e13d812g8531g43a2ga8d6ga4c1755565ed" version="1">Quick Toss</content>
-	<content contentuid="hef0821c8gaafdg4865gb7d8g5e67edb5bb2q" version="1">&lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throw&lt;/LSTag&gt; a weapon that has the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; weapon property.</content>
+	<content contentuid="hef0821c8gaafdg4865gb7d8g5e67edb5bb2q" version="1">&lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throw&lt;/LSTag&gt; a grenade or weapon that has the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; weapon property.</content>
 
 	<content contentuid="h8c3ce2c4g49dfg42e7g8a88g77013a7399bd" version="1">Rally</content>
 	<content contentuid="h44009683g4d91g4f6ag938bg3fab7be211a9" version="4">Spend a &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to grant an ally [1], bolstering their resolve.</content>

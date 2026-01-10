@@ -109,7 +109,7 @@
 	<content contentuid="h6948c0efg778bg41d3g88e4g9f4c658120a4" version="2">Elemental Affinity: Resistance</content>
 	<content contentuid="hc7a73dbbg61a2g446ag9514g3b03426dee75" version="3">You have become &lt;LSTag Tooltip="Immune"&gt;Immune&lt;/LSTag&gt; to the type of damage associated with your Draconic Ancestry.</content>
 	<content contentuid="h5288bd8fg7e82g4c6cgae28gacd825b1f8e9" version="3">Elemental Affinity: Damage</content>
-	<content contentuid="hf32ca0b3g8a45g43f6gaf4ag5f343ed8eaa6" version="5">When you cast a Spell that deals damage of the type associated with your draconic ancestry, you add your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt; to the damage.</content>
+	<content contentuid="hf32ca0b3g8a45g43f6gaf4ag5f343ed8eaa6" version="5">When you deal the type of damage associated with your Draconic Ancestry, you add your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt; to the damage total.</content>
 
 	<content contentuid="h5288bd8fg7e82g4c6cgae28gacd825b21215" version="3">Dragontongue</content>
 	<content contentuid="hf32ca0b3g8a45g43f6gaf4ag5f343ed66a58" version="5">When dealing damage with a Draconic Breath action, you always deal the maximum damage possible.</content>

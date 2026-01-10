@@ -103,7 +103,7 @@
 
 <!--DISPLACER BEAST SHAPE-->
 	<content contentuid="h97567157gea8eg43f4g942cgd9adsfasdf11" version="2">Hivemind</content>
-	<content contentuid="h443d376dg292ag4338g9fb4g838sdf654845" version="3">Gain a +2 bonus to your Initiative and &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;. In addition, you gain the ability to see within magical darkness up to a distance of [2].</content>
+	<content contentuid="h443d376dg292ag4338g9fb4g838sdf654845" version="3">Gain a +2 bonus to your Initiative and &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;. In addition, you gain the ability to see normally in darkness, both magical and non-magical, to a distance of [2].</content>
 
 <!--FRACTURE PSYCHE-->
 	<content contentuid="h7bc43a8cg9c8eg4c17gbb2dgc7c7b613a5a3" version="1">Fracture Psyche</content>

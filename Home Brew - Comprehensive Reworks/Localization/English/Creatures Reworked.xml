@@ -317,13 +317,13 @@
 	<content contentuid="h63415200gb6c7g41c2g9d2dg8afff5s8d966" version="1">Your time in the underdark has left your eyes accustomed to the dark, and as such, while in heavily obscured areas you will make all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h450bd7d6g3391g496dga596gc83fc4563afe" version="1">Darkvision</content>
-	<content contentuid="h1bde91c2g3406g4552gafb0g6e21436db1d3" version="4">You can see normally in darkness, both magical and non-magical, to a distance of [1].</content>
+	<content contentuid="h1bde91c2g3406g4552gafb0g6e21436db1d3" version="4">Gain the ability to see normally in darkness up to a distance of [1].</content>
 
 	<content contentuid="hde9be91agb67fg4351g8c4aga5a5febb90b6" version="2">Superior Darkvision</content>
-	<content contentuid="hae3d7f66g3a4ag43d8g8103g4fcf9ec4f584" version="2">You can see normally in darkness, both magical and non-magical, to a distance of [1].</content>
+	<content contentuid="hae3d7f66g3a4ag43d8g8103g4fcf9ec4f584" version="2">Gain the ability to see normally in darkness, both magical and non-magical, to a distance of [1].</content>
 
 	<content contentuid="h5ecedc36gdf68g4529g820fgfc9269eb9f52" version="2">Devil's Sight</content>
-	<content contentuid="h4290e9c1ga5abg4f18g8243g7410a1457f60" version="2">You can see normally in darkness, both magical and non-magical, to a distance of [1].</content>
+	<content contentuid="h4290e9c1ga5abg4f18g8243g7410a1457f60" version="2">Gain the ability to see normally in darkness, both magical and non-magical, to a distance of [1].</content>
 
 <!--TAGS FOR NPC AI ASSIGNMENT-->
 	<content contentuid="hffaccf0ag0569g4b24gb7bfg483838ss3f45" version="5">HERO</content>
@@ -393,6 +393,8 @@
 	<content contentuid="h270a3cbag5b1ag40a9g900agb9845a55a6fe" version="1">Offer a fragment of a creature's soul to Yeenoghu, preventing them from using &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Actions&lt;/LSTag&gt; or &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
 	<content contentuid="h1518b9acgbc01g400dg9597gaa9513fd4bf1" version="5">Offering to Yeenoghu</content>
 	<content contentuid="hd4588502g88a1g476ega1dbg36c19ca1db02" version="1">Affected creature cannot use &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Actions&lt;/LSTag&gt; or &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
+	<content contentuid="he178b3c5gf349g4a29gbd9cg862ce1549bef" version="1">Bloodfest</content>
+	<content contentuid="h84e6c72bgc32bg4ecbgb9b1g0f50f039191f" version="3">Gorge on a corpse of the fallen to regain &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h3344d3e6gb749g4bd5ga9e9g75f0de1c9cca" version="5">Hooked on Horror</content>
 	<content contentuid="h38d3f000g4a2eg4682g9f80g949b43077930" version="2">Hook Horrors can make a &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_HookHorror"&gt;Multiattack&lt;/LSTag&gt; if their target is &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrified&lt;/LSTag&gt;. Upon dealing damage while unobscured, they potentially Terrify their target.</content>

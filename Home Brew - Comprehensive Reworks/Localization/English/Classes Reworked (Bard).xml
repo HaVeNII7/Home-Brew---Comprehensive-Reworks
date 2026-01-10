@@ -267,7 +267,7 @@ Valour</content>
 	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000d" version="1">Improve your own &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; by up to an amount equal to that of your Bardic Inspiration.</content>
 
 	<content contentuid="171ffb649bb448399193ed1c0d6896dd00005" version="1">Echoes of Fortitude</content>
-	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000e" version="1">Upon granting another creature &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;, both you and your target recovers +1d6 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="171ffb649bb448399193ed1c0d6896dd0000e" version="1">Once per turn, upon granting another creature &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;, both you and your target recovers +1d6 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 	<content contentuid="171ffb649bb448399193ed1c0d6896dd000z5" version="1">Echoes of Fortitude</content>
 	<content contentuid="171ffb649bb448399193ed1c0d6896dd000ze" version="1">Affected creature has recovered +1d6 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; multiplied by the casters &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; due to &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
 

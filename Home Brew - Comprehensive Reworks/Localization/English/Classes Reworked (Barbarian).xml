@@ -154,7 +154,17 @@
 	<content contentuid="66706bd4b60a4ca88b703f3fc04bfaf80000r" version="2">Upon landing a killing blow while &lt;LSTag Type="Status" Tooltip="RAGE_FRENZY"&gt;Frenzied&lt;/LSTag&gt;, immediately restore your &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
 
 	<content contentuid="66706bd4b60a4ca88b703f3fc04bfaf83a335" version="1">Let It Rip</content>
-	<content contentuid="66706bd4b60a4ca88b703f3fc04bfaf8asdf8" version="2">Dealing physical damage to another creature leaves your target with &lt;LSTag Type="Status" Tooltip="WEAKENED_ARMOR"&gt;Shredded Armour&lt;/LSTag&gt; until the end of their next turn.</content>
+	<content contentuid="66706bd4b60a4ca88b703f3fc04bfaf8asdf8" version="2">Once per turn, your &lt;LSTag Type="Spell" Tooltip="Target_FrenziedStrike"&gt;Frenzied Strike&lt;/LSTag&gt; will deal the maximum damage possible. This effect is reset upon triggering &lt;LSTag Type="Passive" Tooltip="ThrilloftheKill"&gt;Thrill of the Kill&lt;/LSTag&gt;.</content>
+
+<!--CRUSHWOVEN-->
+
+	<content contentuid="h40aa7e41g978dg4da6as54df84sd5f4ef803" version="1">Crushwoven</content>
+	<content contentuid="hc526s54df84ef6s84d68f4s2e4f8d5f4880c" version="2">Amidst frigid hilltops and the glacial peaks, you have honed your rage, now controlled and enduring.</content>
+
+	<content contentuid="h40aa7e41g978dg4da6as54df84sd55f45001" version="1">Rage: Bifrost</content>
+	<content contentuid="hc526s54df84ef6s84d68f4s2e4f6s6d8f00a" version="2">Enrage, wreathing yourself in the frigid air where you once tempered your animosity.</content>
+	<content contentuid="h40aa7e41g978dg4da6as54df84sd55f450z1" version="1">Rage: Bifrost</content>
+	<content contentuid="hc526s54df84ef6s84d68f4s2e4f6s6d8f0za" version="2">Affected creature deals an additional [1] with &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Throw_ImprovisedWeapon"&gt;Improvised Weapons&lt;/LSTag&gt;, and when &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throwing&lt;/LSTag&gt; objects or creatures.&lt;br&gt;&lt;br&gt;Additionally, this creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to physical damage, &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Cold damage, and &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 
 <!--GIANTS BLOOD-->
 
@@ -193,7 +203,22 @@
 	<content contentuid="h108ff3ccga8e3g43f1gbeb5g194e4990000e" version="2">While enraged, all damage rolls are made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; against creatures that are Large or smaller.</content>
 
 	<content contentuid="h108ff3ccga8e3g43f1gbeb5g194e49900006" version="1">Titanic Strength</content>
-	<content contentuid="h108ff3ccga8e3g43f1gbeb5g194e4990000f" version="2">While enraged, dealing damage to another creature will always knock them &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+	<content contentuid="h108ff3ccga8e3g43f1gbeb5g194e4990000f" version="2">While enraged, dealing damage to another creature will always knock them &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;. In addition, your &lt;LSTag Tooltip="TwoHanded"&gt;Two-Handed Weapons&lt;/LSTag&gt; are now considered to be &lt;LSTag Tooltip="Versatile"&gt;Versatile&lt;/LSTag&gt;, allowing you to dual-wield them.</content>
+
+<!--HELLSLAYER-->
+
+	<content contentuid="h40aa7e41g978dg4da6as54df84sd5f4ef801" version="1">Hellslayer</content>
+	<content contentuid="hc526s54df84ef6s84d68f4s2e4f8d5f4880a" version="2">The heat of the Hells roils within you, ready to make itself known in sudden bursts of anger.</content>
+
+<!--PATH OF FEROCITY-->
+
+	<content contentuid="h40aa7e41g978dg4da6as54df84sd5f4ef802" version="1">Path of Ferocity</content>
+	<content contentuid="hc526s54df84ef6s84d68f4s2e4f8d5f4880b" version="2">You exist as a thing of nightmares - lopsided heaps of entrails thrown indescriminately marking your passing.</content>
+
+<!--STONEBREAKER-->
+
+	<content contentuid="h40aa7e41g978dg4da6as54df84sd5f4ef804" version="1">Stonebreaker</content>
+	<content contentuid="hc526s54df84ef6s84d68f4s2e4f8d5f4880d" version="2">Able to crush stone between your mere fingers, you've shouldered your rage as an insurmountable source of strength and resilience.</content>
 
 <!--WILD SOUL-->
 

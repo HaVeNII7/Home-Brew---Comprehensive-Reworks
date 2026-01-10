@@ -97,7 +97,7 @@
 <!--GLOOM STALKER-->
 
 	<content contentuid="hfad5bf4eg0236g4af2g970agfdc9c73a5452" version="2">Gloom Stalker's Initiative</content>
-	<content contentuid="hafc743f7g5d89g4175g80bfg869c346a9889" version="9">Gain a +[1] bonus to Initiative. In addition, you are able to see in the dark up to [2].</content>
+	<content contentuid="hafc743f7g5d89g4175g80bfg869c346a9889" version="9">Gain a +[1] bonus to Initiative. In addition, you are able to see in the dark, both magical and non-magical, up to [2].</content>
 
 	<content contentuid="hfad5bf4eg0236g4af2g970agfdc9c7d219e1" version="2">Dread Shot</content>
 	<content contentuid="hafc743f7g5d89g4175g80bfg869c348717ec" version="9">Once per combat, you may make a weapon attack which will always roll as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
