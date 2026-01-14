@@ -188,7 +188,6 @@ data "PrepareEffect" "cc478d8f-d3eb-46dc-844c-203ae2ec7df5"
 data "CastEffect" "6c5aecc7-c5a0-4fda-9f9b-24afe3e1f76a"
 data "TargetEffect" "b4d2ce64-af72-45a2-8146-6a9c3b71f1a6"
 data "SpellSoundMagnitude" "Big"
-data "Autocast" "Yes"
 
 new entry "Shout_Climax_CollegeofLore"
 type "SpellData"
