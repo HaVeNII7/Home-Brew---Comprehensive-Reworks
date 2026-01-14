@@ -940,7 +940,7 @@ data "Description" "h38d3f000g4a2eg4682g9f80g949b43077930;2"
 data "Icon" "Action_Monster_Banite_AuraOfTerror"
 data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "Character() and not Self() and not HasObscuredState(ObscuredState.Clear,context.Source)"
+data "Conditions" "Character() and not Self() and not HasStatus('LOCKDOWN_CONDITION', context.Target) and not HasObscuredState(ObscuredState.Clear,context.Source)"
 data "StatsFunctors" "IF(not SavingThrow(Ability.Wisdom, SourceSpellDC())):ApplyStatus(FEARED,100,1)"
 
 <!--------------------------------------------------DRIDER--------------------------------------------------->
