@@ -322,6 +322,7 @@ data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
 data "TickType" "StartTurn"
 data "Boosts" "UnlockSpellVariant(IsPerformanceSpell(),ModifySpellFlags(IsConcentration,0))"
+data "Passives" "Force_Perform_Player"
 
 new entry "PERFORM_POSITIVE_THEPOWER_MUTED"
 type "StatusData"

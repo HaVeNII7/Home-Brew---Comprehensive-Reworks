@@ -18,7 +18,7 @@ data "DisplayName" "h4b496ebfgc174g4dc0gb462gaf6e61397cb9;1"
 data "Description" "h31e8b0c3ge5bfg47a3g9e18ge4640829c3e7;2"
 data "DescriptionParams" "GainTemporaryHitPoints(48)"
 data "StatsFunctorContext" "OnCast"
-data "Conditions" "SpellId('Shout_Rage') or SpellId('Shout_Rage_Frenzy') or SpellId('Shout_Rage_Totem_Bear') or SpellId('Shout_Rage_Totem_Eagle') or SpellId('Shout_Rage_Totem_Elk') or SpellId('Shout_Rage_Totem_Tiger') or SpellId('Shout_Rage_Totem_Wolf') or SpellId('Shout_Rage_WildMagic')"
+data "Conditions" "SpellId('Shout_Rage') or SpellId('Shout_Rage_Frenzy') or SpellId('Shout_Rage_Totem_Bear') or SpellId('Shout_Rage_Totem_Eagle') or SpellId('Shout_Rage_Totem_Elk') or SpellId('Shout_Rage_Totem_Tiger') or SpellId('Shout_Rage_Totem_Wolf') or SpellId('Shout_Rage_WildMagic') or SpellId('Shout_Rage_Giant') or SpellId('Action_Barbarian_Rage_Bifrost')"
 data "StatsFunctors" "ApplyStatus(SELF, MAG_TEMPORARY_HP_48, 100, -1)"
 
 new entry "MAG_TEMPORARY_HP_48"

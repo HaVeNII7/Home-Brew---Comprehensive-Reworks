@@ -165,6 +165,9 @@
 											<attribute id="Object" type="guid" value="32eee7d8-1b2f-4de5-b9ee-78fbd286c6ef" />
 										</node>
 										<node id="SubClass">
+											<attribute id="Object" type="guid" value="8dba1187-44aa-42e7-b9e4-9594781a3aa6"/>
+										</node>
+										<node id="SubClass">
 											<attribute id="Object" type="guid" value="07234f31-c239-4a57-aeb4-868f3e1a318e"/>
 										</node>
 										<node id="SubClass">
@@ -672,12 +675,12 @@
 					<attribute id="UUID" type="guid" value="2f8ed980-f024-449f-9e72-5f6fa4f0d42e" />
 					</node>
 
-<!--BARBARIAN (CRUSHWOVEN)-->
+<!--BARBARIAN (FROSTWOVEN)-->
 
         <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Crushwoven"/>
-					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_Crushwoven;Bifrost_Rage" />
+					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_Frostwoven;Bifrost_Rage" />
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="bbd7bc0a-867a-4cdc-b3a6-d735509602d4"/>
                     <attribute id="UUID" type="guid" value="d6f25e38-2603-4093-98b0-e833c76e0101"/>
@@ -2821,6 +2824,9 @@
 							<node id="SubClasses">
 								<children>
 										<node id="SubClass">
+											<attribute id="Object" type="guid" value="1320651e-30c6-4959-a0c1-0222834800b5" />
+										</node>
+										<node id="SubClass">
 											<attribute id="Object" type="guid" value="7458da78-34b7-4150-a42f-37197ab04510" />
 										</node>
 										<node id="SubClass">
@@ -2849,6 +2855,9 @@
 						<children>
 							<node id="SubClasses">
 								<children>
+										<node id="SubClass">
+											<attribute id="Object" type="guid" value="1320651e-30c6-4959-a0c1-0222834800b5" />
+										</node>
 										<node id="SubClass">
 											<attribute id="Object" type="guid" value="7458da78-34b7-4150-a42f-37197ab04510" />
 										</node>
@@ -3201,6 +3210,102 @@
 					<attribute id="ProgressionType" type="uint8" value="0" />
 					<attribute id="TableUUID" type="guid" value="7e76da16-650c-4a6e-85b0-f9e23a7f5a60" />
 					<attribute id="UUID" type="guid" value="1177580a-a0e4-4da2-928b-f0151ad87339" />
+					</node>
+
+<!--DRUID (CIRCLE OF ELEMENTS)-->
+
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="1" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_Elements;PASSIVE_NAME" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="Selectors" type="LSString" value="SelectSpells(11c23a6f-6f53-47bc-ad35-9cb7ed0c2b2e,3,0,Wildshape)" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="562e0f44-7e0c-479a-b6ab-696f3955a7d8" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="2" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="5252b4df-15a0-4a29-bc29-d3cbf2b69eaf" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="3" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="PassivesAdded" type="LSString" value="PASSIVE_NAME" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="087b16eb-9aa0-46b9-bced-43a259289652" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="4" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="abfb3670-d702-4bc9-b2ed-0dacd4583512" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="5" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="PassivesAdded" type="LSString" value="PASSIVE_NAME" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="Selectors" type="LSString" value="SelectSpells(11c23a6f-6f53-47bc-ad35-9cb7ed0c2b2e,3,0,Wildshape)" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="58636060-5efd-479a-9917-881d02ee1fc7" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="6" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="5dd05827-bd82-4d85-abaa-4aac693417f6" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="7" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="PassivesAdded" type="LSString" value="PASSIVE_NAME" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="17769954-7aba-4ee2-a845-423a20ac5e54" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="8" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="d21652b1-5629-40c7-a0a9-391f3d48e9e9" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="9" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="PassivesAdded" type="LSString" value="PASSIVE_NAME" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="Selectors" type="LSString" value="SelectSpells(11c23a6f-6f53-47bc-ad35-9cb7ed0c2b2e,3,0,Wildshape)" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="46ced7d7-c20d-49b2-8214-4c140128d22c" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="10" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="78483ea2-32c0-44fa-924c-7a5858ec44a9" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="11" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="PassivesAdded" type="LSString" value="PASSIVE_NAME" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="035742e6-8f01-40ab-a86b-e54d2c3a0edf" />
+					</node>
+        <node id="Progression">
+					<attribute id="Level" type="uint8" value="12" />
+					<attribute id="Name" type="LSString" value="CircleOfElements" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+					<attribute id="UUID" type="guid" value="72f5e75f-3e48-4384-a29c-dfbae748e46a" />
 					</node>
 					
 <!--DRUID (CIRCLE OF THE LAND)-->

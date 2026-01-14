@@ -136,10 +136,10 @@
 	<content contentuid="h8612a65dg446cg427bga712g6sd8f89000ab" version="3">Spells you cast increase their &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; by two. However, you make all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h6eb72b35g6633g4642gaf97gc5sd4fd00029" version="3">Packing</content>
-	<content contentuid="h8612a65dg446cg427bga712g6sd8f89000ac" version="3">Double your &lt;LSTag Tooltip="CarryWeight"&gt;Carrying Capacity&lt;/LSTag&gt;. However, your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is reduced by [1].</content>
+	<content contentuid="h8612a65dg446cg427bga712g6sd8f89000ac" version="3">Double your &lt;LSTag Tooltip="CarryWeight"&gt;Carrying Capacity&lt;/LSTag&gt;. However, each turn you have a 5% chance to become &lt;LSTag Type="Status" Tooltip="OFF_BALANCED"&gt;Off Balanced&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h6eb72b35g6633g4642gaf97gc5sd4fd00030" version="3">Planar Skipping</content>
-	<content contentuid="h8612a65dg446cg427bga712g6sd8f89000ad" version="3">Each turn, you may teleport up to [1] as a free action. However, you also have a 33% chance upon doing so to be suddenly &lt;LSTag Type="Status" Tooltip="BANISHED_SPELL"&gt;Banished&lt;/LSTag&gt;.</content>
+	<content contentuid="h8612a65dg446cg427bga712g6sd8f89000ad" version="3">Each turn, you may teleport up to [1] as a free action. However, you also have a 33% chance upon doing so to be suddenly &lt;LSTag Type="Status" Tooltip="BANISHED_SPELL"&gt;Banished&lt;/LSTag&gt; when doing so, and your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is reduced by [2].</content>
 	<content contentuid="h6eb72b35g6633g4642gaf97gc5sd4fd00z30" version="3">Planar Skip</content>
 	<content contentuid="h8612a65dg446cg427bga712g6sd8f8900zad" version="3">Teleport up to [1] as a free action. However, you also have a 33% chance to be suddenly &lt;LSTag Type="Status" Tooltip="BANISHED_SPELL"&gt;Banished&lt;/LSTag&gt;.</content>
 
@@ -213,6 +213,7 @@
 
 	<content contentuid="hb30ed2d16f384cfeab24d003aceee0ce0744" version="1">Barbarian: Beastheart</content>
 	<content contentuid="h72cddc14e86d4ba589829b2d8c927f3d9304" version="1">Barbarian: Berserker</content>
+	<content contentuid="h72cddc14e86d4ba589829b2d8c95sdf8f454" version="1">Barbarian: Frostbreaker</content>
 	<content contentuid="hda932ea0461d44f892254ee645d8550d7f6f" version="1">Barbarian: Giant's Blood</content>
 	<content contentuid="h7ee37cc71e0c41a48da2d6df19815c6529e6" version="1">Barbarian: Wild Soul</content>
 

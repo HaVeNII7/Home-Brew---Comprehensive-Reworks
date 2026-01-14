@@ -28,6 +28,11 @@
 	<content contentuid="hc14fc8efge9b7g4609gb276g44dd5f8d55ff" version="1">Return to Form</content>
 	<content contentuid="hfa6d8951gc8eag4be9g846bgffffgtg556d9" version="1">At the end of combat, immediately return to your natural form and refund one &lt;LSTag Type="ActionResource" Tooltip="WildShape"&gt;Wild Shape&lt;/LSTag&gt; charge. This can be toggled at any time.</content>
 
+<!--CIRCLE OF THE ELEMENTS-->
+
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff0001" version="2">Circle of the Elements</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff000a" version="2">You attune yourself to nature through four distinct elements - air, earth, fire, and water. Through their balance, you draw strength and fortitude.</content>
+
 <!--CIRCLE OF THE LAND-->
 
 	<content contentuid="ha585d015g08f6g4c58ga0cdg57ff4s5d884f" version="2">DRUIDCOMPANION</content>

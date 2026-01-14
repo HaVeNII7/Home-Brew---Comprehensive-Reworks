@@ -1305,8 +1305,8 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 	<content contentuid="h181466e9gba32g4178gbb91g3b89d720124f" version="3">Put creatures within [1] of you into a magical slumber.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druid&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
 
 	<content contentuid="h09ad858fg9670g4654g919ag4238ea4dbd81" version="2">Sleet Storm</content>
-	<content contentuid="hc2724c73ga423g41ebg884bgfb512195f1b0" version="4">Call forth a storm that disrupts the &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; of Spellcasters and douses fires.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druid&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
-	<content contentuid="h6ceb3602gab8bg4369gae8bgdae6b708aa1a" version="1">Douses fires and disrupts the &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; of Spellcasters.</content>
+	<content contentuid="hc2724c73ga423g41ebg884bgfb512195f1b0" version="4">Call forth a storm that rains magical hail, dealing damage over time, disrupting the &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; of Spellcasters, and dousing fires.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druid&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+	<content contentuid="h6ceb3602gab8bg4369gae8bgdae6b708aa1a" version="1">Deals damage over time, disrupts the &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; of Spellcasters, and douses fires.</content>
 
 	<content contentuid="hbdc68d9egad97g44d3g80afg87dcae289616" version="1">Speak with Animals</content>
 	<content contentuid="had32d4f9g2911g4d57gbfd7g81661a2709ee" version="6">Grant yourself the ability to comprehend and communicate with beasts.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Druid&lt;br&gt;Fighters&lt;br&gt;Rangers&lt;br&gt;Warlocks</content>
