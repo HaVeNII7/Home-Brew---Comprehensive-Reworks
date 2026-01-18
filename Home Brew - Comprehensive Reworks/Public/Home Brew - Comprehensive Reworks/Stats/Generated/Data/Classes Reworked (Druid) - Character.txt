@@ -33,7 +33,7 @@ data "DarkvisionRange" "9"
 data "FallingHitEffect" "VFX_Combat_Bludgeoning_Damage_Blood_01"
 data "FallingLandEffect" "VFX_Combat_Force_Land_01"
 data "DifficultyStatuses" "STATUS_EASY:PLAYER_BONUSES_EASYMODE"
-data "PersonalStatusImmunities" "DIFFICULT_TERRAIN_VINES;ENSNARED_VINE_IMMUNE;ENSNARED_VINES"
+data "PersonalStatusImmunities" "DIFFICULT_TERRAIN_VINES;DIFFICULT_TERRAIN_OVERGROWTH;ENSNARED_VINE_IMMUNE;ENSNARED_VINES"
 
 new entry "ConjureDryad_2"
 data "Level" "2"

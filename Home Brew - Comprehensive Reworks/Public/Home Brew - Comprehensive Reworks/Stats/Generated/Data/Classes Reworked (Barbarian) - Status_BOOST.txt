@@ -72,7 +72,7 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndi
 new entry "RAGE_RESET_GRAVITY"
 type "StatusData"
 data "StatusType" "BOOST"
-data "OnRemoveFunctors" "IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE', context.Source)):ApplyStatus(SWAP,RAGE_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_TOTEM_BEAR', context.Source)):ApplyStatus(SWAP,RAGE_TOTEM_BEAR_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_TOTEM_EAGLE', context.Source)):ApplyStatus(SWAP,RAGE_TOTEM_EAGLE_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_TOTEM_ELK', context.Source)):ApplyStatus(SWAP,RAGE_TOTEM_ELK_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_TOTEM_TIGER', context.Source)):ApplyStatus(SWAP,RAGE_TOTEM_TIGER_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_TOTEM_WOLF', context.Source)):ApplyStatus(SWAP,RAGE_TOTEM_WOLF_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_FRENZY', context.Source)):ApplyStatus(SWAP,RAGE_FRENZY_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_MAGIC', context.Source)):ApplyStatus(SWAP,RAGE_MAGIC_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_GIANT', context.Source)):ApplyStatus(SWAP,RAGE_GIANT_DURATION,100,0);"
+data "OnRemoveFunctors" "IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE', context.Source)):ApplyStatus(SWAP,RAGE_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_TOTEM_BEAR', context.Source)):ApplyStatus(SWAP,RAGE_TOTEM_BEAR_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_TOTEM_EAGLE', context.Source)):ApplyStatus(SWAP,RAGE_TOTEM_EAGLE_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_TOTEM_ELK', context.Source)):ApplyStatus(SWAP,RAGE_TOTEM_ELK_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_TOTEM_TIGER', context.Source)):ApplyStatus(SWAP,RAGE_TOTEM_TIGER_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_TOTEM_WOLF', context.Source)):ApplyStatus(SWAP,RAGE_TOTEM_WOLF_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_FRENZY', context.Source)):ApplyStatus(SWAP,RAGE_FRENZY_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_MAGIC', context.Source)):ApplyStatus(SWAP,RAGE_MAGIC_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_GIANT', context.Source)):ApplyStatus(SWAP,RAGE_GIANT_DURATION,100,0);IF(not RemoveCause(StatusRemoveCause.TimeOut) and HasStatus('RAGE_BIFROST', context.Source)):ApplyStatus(SWAP,RAGE_BIFROST_DURATION,100,0)"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
 <!--BARBARIAN-->
@@ -535,10 +535,16 @@ data "Icon" "Action_Barbarian_Rage_Bifrost"
 data "StackId" "RAGE"
 data "StackPriority" "1"
 data "Boosts" "Tag(VFX_RAGE);Tag(CANBECALMED);BlockSpellCast();UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones); Resistance(Slashing, Resistant); Resistance(Piercing, Resistant); Resistance(Bludgeoning, Resistant);Resistance(Cold, Immune); IF(IsAttackType(AttackType.MeleeWeaponAttack)): CharacterWeaponDamage(LevelMapValue(RageDamage, Cold));IF(IsAttackType(AttackType.MeleeOffHandWeaponAttack)):CharacterWeaponDamage(LevelMapValue(RageDamage, Cold));CharacterUnarmedDamage(LevelMapValue(RageDamage, Cold))"
-data "Passives" "Rage_Rage_Boosts;Rage_Extender_Bifrost;Rage_Extender_Gravity"
+data "Passives" "Rage_Rage_Boosts_Bifrost;Rage_Extender_Bifrost;Rage_Extender_Gravity"
 data "OnRemoveFunctors" "RemoveStatus(RAGE_MUTE);IF(RemoveCause(StatusRemoveCause.TimeOut) or RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(RAGE_ENDED,100,1);IF(RemoveCause(StatusRemoveCause.TimeOut) or RemoveCause(StatusRemoveCause.Condition)):UseSpell(Shout_EndRage,true,true,true);IF(HasPassive('RootedinAnger', context.Source) and not Combat(context.Source)):RestoreResource(SELF,Rage,1,0)"
 data "StatusEffect" "e92003cd-6622-4a82-a3c7-69d6222f0ba0"
 data "StatusGroups" "SG_RemoveOnRespec;SG_Rage"
+
+new entry "FRIGIDOMEN_BLOCKER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "TickType" "StartTurn"
 
 new entry "GLACIALBELLOW"
 type "StatusData"

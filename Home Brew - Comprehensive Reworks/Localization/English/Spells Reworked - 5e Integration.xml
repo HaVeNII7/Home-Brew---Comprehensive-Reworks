@@ -127,7 +127,7 @@
 	<content contentuid="hdbfe63deg1c7bg4cd2osidfosijd3ofjosid" version="1">Other nearby creatures may become hostile upon casting.</content>
 
 	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00002" version="1">Cause Terror</content>
-	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000b" version="1">Instill a sense of dread in a creature, potentially &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrifying&lt;/LSTag&gt; them.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Fighters&lt;br&gt;Sorcerers&lt;br&gt;Warlocks</content>
+	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss0000b" version="1">Instill a sense of dread in a creature, potentially &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrifying&lt;/LSTag&gt; them. On a successful &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, they will instead become &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt; for one turn.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Fighters&lt;br&gt;Sorcerers&lt;br&gt;Warlocks</content>
 
 	<content contentuid="a5sfd4s65asd5fsdf1d45sdfsa5sd0ss00003" version="1">Guiding Ceremony</content>
 	<content contentuid="a5sfd4df9s89fd9s8fd45sdfsa5sd0ss00001" version="1">Grant yourself and all allies within [1] a +1d4 bonus to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druids&lt;br&gt;Paladins&lt;br&gt;Rangers</content>

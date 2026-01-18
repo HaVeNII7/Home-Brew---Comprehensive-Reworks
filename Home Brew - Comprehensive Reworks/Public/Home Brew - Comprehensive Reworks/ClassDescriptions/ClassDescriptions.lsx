@@ -338,6 +338,20 @@
 					</node>
         <node id="ClassDescription">
                     <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+                    <attribute id="Description" type="TranslatedString" handle="ha585d015g08f6g4c52s1d6f54s6d54ff000a" version="2" />
+                    <attribute id="DisplayName" type="TranslatedString" handle="ha585d015g08f6g4c52s1d6f54s6d54ff0001" version="2" />
+                    <attribute id="LearningStrategy" type="uint8" value="1" />
+                    <attribute id="MustPrepareSpells" type="bool" value="false" />
+                    <attribute id="Name" type="FixedString" value="CircleOfElements" />
+                    <attribute id="ParentGuid" type="guid" value="457d0a6e-9da8-4f95-a225-18382f0e94b5" />
+                    <attribute id="PrimaryAbility" type="uint8" value="5" />
+                    <attribute id="ProgressionTableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
+                    <attribute id="SoundClassType" type="FixedString" value="Druid" />
+                    <attribute id="SpellCastingAbility" type="uint8" value="5" />
+                    <attribute id="UUID" type="guid" value="1320651e-30c6-4959-a0c1-0222834800b5" />
+					</node>
+        <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
                     <attribute id="Description" type="TranslatedString" handle="h8b9c3fa4g3e32g4913gbbe9g0c33b209865f" version="2" />
                     <attribute id="DisplayName" type="TranslatedString" handle="ha9c297f0g9d10g4342gbc1eg39233f659d37" version="2" />
                     <attribute id="LearningStrategy" type="uint8" value="1" />

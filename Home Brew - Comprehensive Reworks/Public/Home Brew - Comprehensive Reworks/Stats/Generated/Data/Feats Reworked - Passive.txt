@@ -861,7 +861,7 @@ data "Icon" "PassiveFeature_Banite_TacticalDiscipline"
 data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnDamage"
 data "Conditions" "Character() and not Self() and not Ally() and not SpellId('Projectile_TogetherInTorment')"
-data "StatsFunctors" "ApplyStatus(SELF,TORMENTOR,100,1);ApplyStatus(TORMENTED,100,3)"
+data "StatsFunctors" "ApplyStatus(SELF,TORMENTOR,100,1);ApplyStatus(SELF,TORMENTOR_DURATION_TECHNICAL,100,1);ApplyStatus(TORMENTED,100,3)"
 
 new entry "TogetherInTorment_Damaged"
 type "PassiveData"
