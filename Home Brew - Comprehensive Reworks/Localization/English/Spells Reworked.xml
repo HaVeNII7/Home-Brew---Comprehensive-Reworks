@@ -629,9 +629,9 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 	<content contentuid="he5aa806dg40feg44bfg9c9bgc2a92ac66d97" version="1">Blasphemous Mantle</content>
 	<content contentuid="h907ce69agfbe1g4ce9gb7fegb8e2b1111d25" version="3">Radiate a twisted power from within which emboldens your resolve, causing all damage you deal to deal an additional [1].&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druid&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
 	<content contentuid="h614c6e20gddcfg4e2fgb3c6g436212ea6f85" version="2">Holy Mantle</content>
-	<content contentuid="h922e4665g6424g4d03gafffgd2c1ea37c374" version="2">Affected creature's deals an additional [1].</content>
+	<content contentuid="h922e4665g6424g4d03gafffgd2c1ea37c374" version="2">Affected creature deals an additional [1].</content>
 	<content contentuid="h614c6e20gddcfg4e2fgb3c6g436212e66a45" version="2">Blasphemous Mantle</content>
-	<content contentuid="h922e4665g6424g4d03gafffgd2c1ea322d12" version="2">Affected creature's deals an additional [1].</content>
+	<content contentuid="h922e4665g6424g4d03gafffgd2c1ea322d12" version="2">Affected creature deals an additional [1].</content>
 
 	<content contentuid="h9ba64edbge50ag4346gaf0egae2bfd63c7ac" version="1">Cure Wounds</content>
 	<content contentuid="h2f60bd3fg2adbg49e8gae4bgd6758a67a547" version="3">Heal a creature that you can touch.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druid&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
