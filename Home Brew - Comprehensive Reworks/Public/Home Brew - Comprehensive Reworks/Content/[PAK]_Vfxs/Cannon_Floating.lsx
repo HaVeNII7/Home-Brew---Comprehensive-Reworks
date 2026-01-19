@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="CharacterVisualBank">
+		<node id="CharacterVisualBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="44039326-8dc6-e301-6116-944a959124f4" />
+					<attribute id="Name" type="LSString" value="BLD_GEN_Arcane_Turret_A_Floating_A_a7ae5b16-c35e-4179-bc60-d8dd364dcd40_000" />
+					<attribute id="BodySetVisual" type="FixedString" value="043b91dc-7ff7-4228-96a3-75b5a980c6bb" />
+					<attribute id="ShowEquipmentVisuals" type="bool" value="False" />
+					<attribute id="BaseVisual" type="FixedString" value="8be6b7d6-589e-998d-5fa0-36f3f2d92936" />
+					<children>
+						<node id="Slots">
+							<attribute id="Slot" type="FixedString" value="Unassigned" />
+							<attribute id="VisualResource" type="FixedString" value="043b91dc-7ff7-4228-96a3-75b5a980c6bb" />
+							<attribute id="Bone" type="FixedString" value="" />
+						</node>
+						<node id="MaterialOverrides">
+							<attribute id="MaterialResource" type="FixedString" value="" />
+							<children>
+								<node id="MaterialPresets" />
+							</children>
+						</node>
+						<node id="RealMaterialOverrides" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

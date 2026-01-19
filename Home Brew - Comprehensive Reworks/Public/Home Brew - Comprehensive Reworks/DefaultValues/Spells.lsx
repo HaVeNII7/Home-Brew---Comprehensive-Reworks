@@ -5,6 +5,13 @@
         <node id="root">
             <children>
                 <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_Light;Shout_Shillelagh;Target_MagicWeapon;Target_MistyStep"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Arcanist"/>
+                    <attribute id="TableUUID" type="guid" value="229dfad5-31e0-41b6-aad9-41a55c2f8354"/>
+                    <attribute id="UUID" type="guid" value="d4c5ab02-e4cf-41d8-ac7b-ec7047d72f14"/>
+					</node>
+                <node id="DefaultValue">
                     <attribute id="Add" type="LSString" value="Target_ThunderousStrike;Shout_Thaumaturgy;Target_ThunderStep"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="SelectorId" type="LSString" value="Barbarian - Wild Soul"/>

@@ -23,7 +23,7 @@ function MeleeCheck()
 end
 
 function CT_WeaponAttackCheck()
-	return HasStringInSpellRoll('MeleeWeaponAttack') | HasStringInSpellRoll('RangedWeaponAttack')
+	return HasStringInSpellRoll('MeleeWeaponAttack') & ~NumberOfTargetsGreaterThan(1) | HasStringInSpellRoll('RangedWeaponAttack') & ~NumberOfTargetsGreaterThan(1)
 end
 
 function HasMultipleAlliesWithinRange(exclusionStatus, distance, tag, NumberOfAllies, target, source)

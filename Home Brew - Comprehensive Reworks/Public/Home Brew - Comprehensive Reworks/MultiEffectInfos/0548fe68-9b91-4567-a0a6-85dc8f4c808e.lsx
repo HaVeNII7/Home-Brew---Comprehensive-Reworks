@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="4" minor="0" revision="9" build="320" />
+	<version major="4" minor="0" revision="9" build="320" lslib_meta="v1,bswap_guids" />
 	<region id="MultiEffectInfos">
 		<node id="MultiEffectInfos">
 			<attribute id="Name" type="LSString" value="BreathWeapon_Radiant_CastEffect" />
-			<attribute id="UUID" type="guid" value="0548fe68-9b91-4567-a6a0-dc854c8f8e80" />
+			<attribute id="UUID" type="guid" value="0548fe68-9b91-4567-a0a6-85dc8f4c808e" />
 			<children>
 				<node id="EffectInfo">
-					<attribute id="UUID" type="guid" value="0ffcd76b-f185-4d13-b8d8-aa02dfe6d5f1" />
-					<attribute id="EffectResourceGuid" type="guid" value="9203dcef-5d43-de53-41c1-164c44f7c727" />
+					<attribute id="UUID" type="guid" value="0ffcd76b-f185-4d13-d8b8-02aae6dff1d5" />
+					<attribute id="EffectResourceGuid" type="guid" value="9203dcef-5d43-de53-c141-4c16f74427c7" />
 					<attribute id="DetachSource" type="bool" value="False" />
 					<attribute id="DetachTarget" type="bool" value="True" />
 					<attribute id="KeepRotation" type="bool" value="False" />

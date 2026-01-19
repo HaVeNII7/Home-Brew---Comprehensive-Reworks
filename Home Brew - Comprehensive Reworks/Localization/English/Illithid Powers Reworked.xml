@@ -91,7 +91,7 @@
 	<content contentuid="h3fb319d8ge95bg4f3eg903cgf68aef23ccaa" version="2">Volatile Shield</content>
 	<content contentuid="hd7897ac2g249fg406fg9fffg07555bc94fe0" version="3">Affected creature is wreathed in a volitile shield providing &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
 	<content contentuid="h89a62919g2161g4ebbga62bg62838323dd9b" version="1">Empowered Shield of Thralls</content>
-	<content contentuid="hc713e9d7g2933g4fecg8fafg45d64d301d7e" version="1">Conjure a volatile shield around yourself or an ally, granting the target +24 &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
+	<content contentuid="hc713e9d7g2933g4fecg8fafg45d64d301d7e" version="1">Conjure a volatile shield around yourself or an ally, granting the target 24 &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
 
 <!--PERILOUS STAKES-->
 	<content contentuid="h97567157gea8eg43f4g942cgd98961fd7adb" version="2">Perilous Stakes</content>

@@ -5,6 +5,30 @@
     <node id="root">
       <children>
         <node id="ProgressionDescription">
+				<attribute id="DisplayName" type="TranslatedString" handle="115fb28f01e84e44b3536f475sd5f4ef2f001" version="2" />
+				<attribute id="Description" type="TranslatedString" handle="115fb28f01e84e44b3536f4741b47sdfe5d0a" version="1" />
+				<attribute id="SelectorId" type="FixedString" value="ArtificerSpells" />
+				<attribute id="UUID" type="guid" value="19e2fdf1-3fe2-444c-b817-3c5f77be8fab" />
+				</node>
+        <node id="ProgressionDescription">
+				<attribute id="DisplayName" type="TranslatedString" handle="115fb28f01e84e44b3536f475sd5f4ef2f123" version="2" />
+				<attribute id="Description" type="TranslatedString" handle="115fb28f01e84e44b3536f4741b47sdfe5zzz" version="1" />
+				<attribute id="SelectorId" type="FixedString" value="ArcaneInfusions" />
+				<attribute id="UUID" type="guid" value="ea463b64-a247-448f-b0fc-74f5d30abb10" />
+				</node>
+        <node id="ProgressionDescription">
+				<attribute id="DisplayName" type="TranslatedString" handle="88523fb3deaa2d5f5ef6304e0911fbc400000" version="2" />
+				<attribute id="Description" type="TranslatedString" handle="99523fb3deaasdf5e8f6304e0911fbc400000" version="1" />
+				<attribute id="SelectorId" type="FixedString" value="OptimizationMatrix" />
+				<attribute id="UUID" type="guid" value="9f2677de-e032-4e45-bd56-a74abf8fac9f" />
+				</node>
+        <node id="ProgressionDescription">
+				<attribute id="DisplayName" type="TranslatedString" handle="88523fb3deaa2d5f5ef6304e0911fbc40z000" version="2" />
+				<attribute id="Description" type="TranslatedString" handle="99523fb3deaasdf5e8f6304e0911fbc40z000" version="1" />
+				<attribute id="SelectorId" type="FixedString" value="SabatogeMatrix" />
+				<attribute id="UUID" type="guid" value="04da228b-20d7-4d6f-bb7e-6a52a8b7ed32" />
+				</node>
+        <node id="ProgressionDescription">
 				<attribute id="DisplayName" type="TranslatedString" handle="h6eb72b35g6633g4642gaf97gcpersonality" version="2" />
 				<attribute id="Description" type="TranslatedString" handle="h8612a65dg446cg427bga712g7personality" version="1" />
 				<attribute id="SelectorId" type="FixedString" value="Personality" />

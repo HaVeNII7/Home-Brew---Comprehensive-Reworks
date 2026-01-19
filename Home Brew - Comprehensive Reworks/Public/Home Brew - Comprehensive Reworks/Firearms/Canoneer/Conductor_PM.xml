@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings source="($SOURCE)\Canoneer\Conductor_PM.DDS">
+  <TextureSettings>
+    <Scale>Full</Scale>
+    <TextureShape>Default</TextureShape>
+    <sRGB>false</sRGB>
+    <FilterFlags>FANT</FilterFlags>
+    <DitherFlags>DEFAULT</DitherFlags>
+    <CompressionSettingsKey type="PhysicalMap" channels="3" />
+    <Mip isGenerating="true">
+      <PreserveCoverage alphaCoverage="0.75">false</PreserveCoverage>
+    </Mip>
+  </TextureSettings>
+</Settings>

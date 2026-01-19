@@ -732,7 +732,7 @@ data "DarkvisionRange" "0"
 data "FallingHitEffect" "VFX_Combat_Bludgeoning_Damage_Blood_01"
 data "FallingLandEffect" "VFX_Combat_Force_Land_01"
 data "DifficultyStatuses" ""
-data "Progressions" "9efb7794-dc6f-45f3-8cf9-74ad5286c792;44bdbc5e-a003-4d61-87f0-5ced20d3804e"
+data "Progressions" "9efb7794-dc6f-45f3-8cf9-74ad5286c792;d951b92f-acb5-44a6-b642-962cc4c30c17"
 
 new entry "DEN_Druids_HalfElf_Caster"
 type "Character"

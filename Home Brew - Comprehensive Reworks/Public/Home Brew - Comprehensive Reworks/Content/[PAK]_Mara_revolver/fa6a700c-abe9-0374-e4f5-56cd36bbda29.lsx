@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="TextureBank">
+		<node id="TextureBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="fa6a700c-abe9-0374-e4f5-56cd36bbda29" />
+					<attribute id="Name" type="LSString" value="austrian_musket_low_lambert1_BaseColor" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Firearms/Musket/austrian_musket_low_lambert1_BaseColor.DDS" />
+					<attribute id="Template" type="FixedString" value="austrian_musket_low_lambert1_BaseColor" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="SRGB" type="bool" value="True" />
+					<attribute id="Width" type="int32" value="256" />
+					<attribute id="Height" type="int32" value="256" />
+					<attribute id="Depth" type="int32" value="1" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

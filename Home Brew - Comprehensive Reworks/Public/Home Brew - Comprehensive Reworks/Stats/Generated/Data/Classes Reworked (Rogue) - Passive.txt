@@ -403,7 +403,7 @@ data "DisplayName" "d3e15e63749c4b62b8e7760cc707412000001;1"
 data "Description" "d3e15e63749c4b62b8e7760cc70741200000a;2"
 data "Icon" "PassiveFeature_NaturallyStealthy"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "UnlockSpell(Projectile_CunningFangs)"
+data "Boosts" "UnlockSpell(Projectile_CunningFangs);IF(IsAttackType(AttackType.RangedUnarmedAttack)):RollBonus(Attack,DexterityModifier)"
 
 new entry "Cutthroat"
 type "PassiveData"

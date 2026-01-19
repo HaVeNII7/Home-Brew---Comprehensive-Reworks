@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Acceleration" type="float" value="80" />
+					<attribute id="CameraOffset" type="fvec3" value="0 0 0" />
+					<attribute id="CastBone" type="FixedString" value="Dummy_FX" />
+					<attribute id="DestroyTrailFXOnImpact" type="bool" value="True" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="GroundImpactFX" type="LSString" value="VFX_Spells_Cast_Tadpole_Projectile_Ricochet_Impact_01" />
+					<attribute id="GroupID" type="uint32" value="0" />
+					<attribute id="HasGameplayValue" type="bool" value="False" />
+					<attribute id="ImpactFX" type="FixedString" value="Mara_Blunderbuss_Impact_fake" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="30ce4289-8655-4b55-93a2-c1034631489c" />
+					<attribute id="Name" type="LSString" value="Mara_Projectile_BB" />
+					<attribute id="NeedsImpactSFX" type="bool" value="True" />
+					<attribute id="OffsetMin_Bezier3" type="fvec2" value="0 1" />
+					<attribute id="ParentTemplateId" type="FixedString" value="" />
+					<attribute id="PhysicsOpenTemplate" type="FixedString" value="" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="" />
+					<attribute id="PreviewPathImpactFX" type="FixedString" value="VFX_UI_DestinationBeam_Projectile_01" />
+					<attribute id="PreviewPathMaterial" type="FixedString" value="312a1494-a0e2-c215-cf51-bda58a6b2341" />
+					<attribute id="ShiftBMax_Bezier4" type="float" value="0.25" />
+					<attribute id="ShiftBMin_Bezier4" type="float" value="0.25" />
+					<attribute id="TrailFX" type="FixedString" value="Mara_Projectile_BB_Bullet" />
+					<attribute id="Type" type="FixedString" value="projectile" />
+					<attribute id="VelocityMode" type="uint8" value="1" />
+					<attribute id="InitialSpeed" type="float" value="100" />
+					<attribute id="VisualTemplate" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209012" />
+					<children>
+						<node id="Bounds" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Acceleration" type="float" value="80" />
+					<attribute id="CameraOffset" type="fvec3" value="0 0 0" />
+					<attribute id="CastBone" type="FixedString" value="Dummy_FX" />
+					<attribute id="DestroyTrailFXOnImpact" type="bool" value="True" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="GroundImpactFX" type="LSString" value="VFX_Spells_Cast_Tadpole_Projectile_Ricochet_Impact_01" />
+					<attribute id="GroupID" type="uint32" value="0" />
+					<attribute id="HasGameplayValue" type="bool" value="False" />
+					<attribute id="ImpactFX" type="FixedString" value="Mara_Firearm_ImpactFX" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="b0fcb1e1-72a7-47f5-a930-1991bd6d0ceb" />
+					<attribute id="Name" type="LSString" value="Mara_Projectile_Musk" />
+					<attribute id="NeedsImpactSFX" type="bool" value="True" />
+					<attribute id="OffsetMin_Bezier3" type="fvec2" value="0 1" />
+					<attribute id="ParentTemplateId" type="FixedString" value="" />
+					<attribute id="PhysicsOpenTemplate" type="FixedString" value="" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="" />
+					<attribute id="PreviewPathImpactFX" type="FixedString" value="VFX_UI_DestinationBeam_Projectile_01" />
+					<attribute id="PreviewPathMaterial" type="FixedString" value="312a1494-a0e2-c215-cf51-bda58a6b2341" />
+					<attribute id="ShiftBMax_Bezier4" type="float" value="0.25" />
+					<attribute id="ShiftBMin_Bezier4" type="float" value="0.25" />
+					<attribute id="TrailFX" type="FixedString" value="Mara_Projectile_HC_Bullet" />
+					<attribute id="Type" type="FixedString" value="projectile" />
+					<attribute id="VelocityMode" type="uint8" value="1" />
+					<attribute id="InitialSpeed" type="float" value="100" />
+					<attribute id="VisualTemplate" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209012" />
+					<children>
+						<node id="Bounds" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Acceleration" type="float" value="80" />
+					<attribute id="CameraOffset" type="fvec3" value="0 0 0" />
+					<attribute id="CastBone" type="FixedString" value="Dummy_FX" />
+					<attribute id="DestroyTrailFXOnImpact" type="bool" value="True" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="GroundImpactFX" type="LSString" value="VFX_Spells_Cast_Tadpole_Projectile_Ricochet_Impact_01" />
+					<attribute id="GroupID" type="uint32" value="0" />
+					<attribute id="HasGameplayValue" type="bool" value="False" />
+					<attribute id="ImpactFX" type="FixedString" value="Mara_Firearm_ImpactFX" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="86eee229-1268-4808-b67f-4530b8fdd36d" />
+					<attribute id="Name" type="LSString" value="Mara_Projectile_Medium" />
+					<attribute id="NeedsImpactSFX" type="bool" value="True" />
+					<attribute id="OffsetMin_Bezier3" type="fvec2" value="0 1" />
+					<attribute id="BeamFX" type="FixedString" value="Mara_Flintlock_CastFX" />
+					<attribute id="ParentTemplateId" type="FixedString" value="" />
+					<attribute id="PhysicsOpenTemplate" type="FixedString" value="" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="" />
+					<attribute id="PreviewPathImpactFX" type="FixedString" value="VFX_UI_DestinationBeam_Projectile_01" />
+					<attribute id="PreviewPathMaterial" type="FixedString" value="312a1494-a0e2-c215-cf51-bda58a6b2341" />
+					<attribute id="ShiftBMax_Bezier4" type="float" value="0.25" />
+					<attribute id="ShiftBMin_Bezier4" type="float" value="0.25" />
+					<attribute id="TrailFX" type="FixedString" value="Mara_Projectile_HC_Bullet" />
+					<attribute id="Type" type="FixedString" value="projectile" />
+					<attribute id="VelocityMode" type="uint8" value="1" />
+					<attribute id="InitialSpeed" type="float" value="100" />
+					<attribute id="VisualTemplate" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209012" />
+					<children>
+						<node id="Bounds" />
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBePickedUp" type="bool" value="True" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hf180b3c3b984470a98b16721ee33d3bd888c" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hf7ade17af6e1465ea6fb6829f80523fb9979" version="1" />
+					<attribute id="EquipmentTypeID" type="guid" value="edda8fbb-6456-4514-b3cc-36a2bc674c31" />
+					<attribute id="Icon" type="FixedString" value="Musket_1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="483cd7a3-e311-4fa8-9fc1-f867aa1cac99" />
+					<attribute id="Name" type="LSString" value="WPN_MARA_Musket_1" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f44c9c6f-bc71-42ad-9cad-2dae306e750e" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="792ace2b-cadf-6248-0a85-9953e3595263" />
+					<attribute id="Stats" type="FixedString" value="WPN_MARA_Musket_1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="0f6c8b8f-6867-498d-8592-efadaaa1fa60" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="57ad3ec5-045b-4523-91ef-00179b2e1aad" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="FIREARM_MUSK_STATUS" />
+								</node>
+							</children>
+						</node>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.16519448" />
+									<attribute id="Max" type="fvec3" value="0.33114842 0.16387014 0.57309884" />
+									<attribute id="Min" type="fvec3" value="-0.33114836 -0.0013243407 -0.3419698" />
+									<attribute id="Radius" type="float" value="0.28540286" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.16519448" />
+									<attribute id="Max" type="fvec3" value="0.16557421 0.16387014 0.28654942" />
+									<attribute id="Min" type="fvec3" value="-0.16557418 -0.0013243407 -0.1709849" />
+									<attribute id="Radius" type="float" value="0.14270143" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.16519448" />
+									<attribute id="Max" type="fvec3" value="0.33114842 0.16387014 0.57309884" />
+									<attribute id="Min" type="fvec3" value="-0.33114836 -0.0013243407 -0.3419698" />
+									<attribute id="Radius" type="float" value="0.28540286" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBePickedUp" type="bool" value="True" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h16eb2966208447609f43970d0c8d3c879d25" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hf7ade17af6e1465ea6fb6829f80523fb9979" version="1" />
+					<attribute id="EquipmentTypeID" type="guid" value="edda8fbb-6456-4514-b3cc-36a2bc674c31" />
+					<attribute id="Icon" type="FixedString" value="Musket_2" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="e693f25f-cab4-42fe-802c-03c9eb0c3293" />
+					<attribute id="Name" type="LSString" value="WPN_MARA_Musket_2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f44c9c6f-bc71-42ad-9cad-2dae306e750e" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="792ace2b-cadf-6248-0a85-9953e3595263" />
+					<attribute id="Stats" type="FixedString" value="WPN_MARA_Musket_2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="43516918-7108-410b-bf0b-562c3ef602ba" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="57ad3ec5-045b-4523-91ef-00179b2e1aad" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="FIREARM_MUSK_STATUS" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBePickedUp" type="bool" value="True" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h457e4699e73c45129ead27f35b301d53ga5d" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="ha3237193e51b498b8e683f155f1a09b3c42c" version="1" />
+					<attribute id="EquipmentTypeID" type="guid" value="edda8fbb-6456-4514-b3cc-36a2bc674c31" />
+					<attribute id="Icon" type="FixedString" value="Musket_LEG" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="97d03899-d677-4864-b21c-77ad2c99e4b2" />
+					<attribute id="Name" type="LSString" value="WPN_MARA_Musket_3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f44c9c6f-bc71-42ad-9cad-2dae306e750e" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="792ace2b-cadf-6248-0a85-9953e3595263" />
+					<attribute id="Stats" type="FixedString" value="WPN_MARA_Musket_3" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="8938d411-3850-441e-9ae6-c107bf29e1bb" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="57ad3ec5-045b-4523-91ef-00179b2e1aad" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="FIREARM_MUSK_STATUS" />
+								</node>
+							</children>
+						</node>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.16519448" />
+									<attribute id="Max" type="fvec3" value="0.33114842 0.16387014 0.57309884" />
+									<attribute id="Min" type="fvec3" value="-0.33114836 -0.0013243407 -0.3419698" />
+									<attribute id="Radius" type="float" value="0.28540286" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.16519448" />
+									<attribute id="Max" type="fvec3" value="0.16557421 0.16387014 0.28654942" />
+									<attribute id="Min" type="fvec3" value="-0.16557418 -0.0013243407 -0.1709849" />
+									<attribute id="Radius" type="float" value="0.14270143" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.16519448" />
+									<attribute id="Max" type="fvec3" value="0.33114842 0.16387014 0.57309884" />
+									<attribute id="Min" type="fvec3" value="-0.33114836 -0.0013243407 -0.3419698" />
+									<attribute id="Radius" type="float" value="0.28540286" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBePickedUp" type="bool" value="True" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h4eb05b30f89b4d3fa9ea58a29dc17fb78c6g" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hc20cdb98d4cf407d8686bc7af76360a75181" version="1" />
+					<attribute id="EquipmentTypeID" type="guid" value="06eaa846-439a-45ca-a6b6-549dd6ecd01a" />
+					<attribute id="Icon" type="FixedString" value="BB_1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="c628e791-f7f0-4c5e-957d-a9eb74987bfd" />
+					<attribute id="Name" type="LSString" value="WPN_MARA_Blunderbuss_1" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f44c9c6f-bc71-42ad-9cad-2dae306e750e" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="792ace2b-cadf-6248-0a85-9953e3595263" />
+					<attribute id="Stats" type="FixedString" value="WPN_MARA_Blunderbuss_1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="45f0afc8-ea9b-4f21-ba29-6c551718011e" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="23d56fd7-05e5-4e6a-9ede-6af8bb786ee3" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="FIREARM_BB_STATUS" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBePickedUp" type="bool" value="True" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h19b1e375f56847abba0b91fe963663a025ab" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hc20cdb98d4cf407d8686bc7af76360a75181" version="1" />
+					<attribute id="EquipmentTypeID" type="guid" value="06eaa846-439a-45ca-a6b6-549dd6ecd01a" />
+					<attribute id="Icon" type="FixedString" value="BB_1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="cde8ddb3-8fbd-4139-8bff-5fafc9d4a66e" />
+					<attribute id="Name" type="LSString" value="WPN_MARA_Blunderbuss_2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f44c9c6f-bc71-42ad-9cad-2dae306e750e" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="792ace2b-cadf-6248-0a85-9953e3595263" />
+					<attribute id="Stats" type="FixedString" value="WPN_MARA_Blunderbuss_2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="45f0afc8-ea9b-4f21-ba29-6c551718011e" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="23d56fd7-05e5-4e6a-9ede-6af8bb786ee3" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="FIREARM_BB_STATUS" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanBePickedUp" type="bool" value="True" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h1138118bce9b41628c10a095c9fbbb6b4776" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hca108b480557468da68c781a54085093a5be" version="1" />
+					<attribute id="EquipmentTypeID" type="guid" value="06eaa846-439a-45ca-a6b6-549dd6ecd01a" />
+					<attribute id="Icon" type="FixedString" value="BB_LEG" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="431a09c9-139a-410c-8fca-d41c76be5b55" />
+					<attribute id="Name" type="LSString" value="WPN_MARA_Blunderbuss_3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f44c9c6f-bc71-42ad-9cad-2dae306e750e" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="792ace2b-cadf-6248-0a85-9953e3595263" />
+					<attribute id="Stats" type="FixedString" value="WPN_MARA_Blunderbuss_3" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="9f5ec2b0-f8c9-4284-96af-489a83f25fea" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="23d56fd7-05e5-4e6a-9ede-6af8bb786ee3" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="FIREARM_BB_STATUS" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MAG_THROWING_RETURN_TO_OWNER" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h5bd072ff8e674f1c9c4d544b43ba51123gf5" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h8b48e08f01fb4bb49b3fdae19cf0afb7de55" version="1" />
+					<attribute id="EquipmentTypeID" type="guid" value="fc8fcf85-e042-4374-8264-2d0192c13611" />
+					<attribute id="Icon" type="FixedString" value="Flintlock_1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="08c5480a-b7a5-481c-8d3d-61dbfe19bbb0" />
+					<attribute id="Name" type="LSString" value="WPN_MARA_Flintlock_1" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f44c9c6f-bc71-42ad-9cad-2dae306e750e" />
+					<attribute id="Stats" type="FixedString" value="WPN_MARA_Flintlock_1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="fb75d626-f642-48e3-ab8c-4773af1e7501" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725059" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="fc5bdf19-e4d3-4db5-ad79-b5162f7560eb" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="FIREARM_SMALL_STATUS" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h79c3ecdb17104a25a3ed85df12dfebb98ff9" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h8b48e08f01fb4bb49b3fdae19cf0afb7de55" version="1" />
+					<attribute id="EquipmentTypeID" type="guid" value="fc8fcf85-e042-4374-8264-2d0192c13611" />
+					<attribute id="Icon" type="FixedString" value="Flintlock_1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="e0ada0a5-5b06-4c88-bb35-c04231d4a67e" />
+					<attribute id="Name" type="LSString" value="WPN_MARA_Flintlock_2" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f44c9c6f-bc71-42ad-9cad-2dae306e750e" />
+					<attribute id="Stats" type="FixedString" value="WPN_MARA_Flintlock_2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="fb75d626-f642-48e3-ab8c-4773af1e7501" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725059" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="fc5bdf19-e4d3-4db5-ad79-b5162f7560eb" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="FIREARM_SMALL_STATUS" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="Description" type="TranslatedString" handle="he2ae4e8474454e85aa176094ba32b84c5a5d" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h641e9744362f43f3a9813d49fed8be0c4396" version="1" />
+					<attribute id="EquipmentTypeID" type="guid" value="fc8fcf85-e042-4374-8264-2d0192c13611" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="Icon" type="FixedString" value="Flintlock_LEG" />
+					<attribute id="IsInspector" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="-1" />
+					<attribute id="MapKey" type="FixedString" value="632f26b5-b571-4029-9795-4384a291a2a2" />
+					<attribute id="Name" type="LSString" value="WPN_MARA_Flintlock_3" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f44c9c6f-bc71-42ad-9cad-2dae306e750e" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="0f5b541a-5aa4-56e3-b4b9-9426f6b6989b" />
+					<attribute id="Race" type="int8" value="0" />
+					<attribute id="ReadinessFlags" type="uint32" value="144" />
+					<attribute id="Stats" type="FixedString" value="WPN_MARA_Flintlock_3" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="c4f21fbe-ebc1-4a3a-a2d4-aae2134e33ef" />
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855919" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="fc5bdf19-e4d3-4db5-ad79-b5162f7560eb" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="FIREARM_SMALL_STATUS" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

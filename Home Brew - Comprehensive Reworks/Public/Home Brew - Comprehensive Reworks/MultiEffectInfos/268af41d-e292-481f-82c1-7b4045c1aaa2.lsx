@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="4" minor="0" revision="9" build="320" />
+	<version major="4" minor="0" revision="9" build="320" lslib_meta="v1,bswap_guids" />
 	<region id="MultiEffectInfos">
 		<node id="MultiEffectInfos">
 			<attribute id="Name" type="LSString" value="BreathWeapon_Force_CastEffect" />
-			<attribute id="UUID" type="guid" value="268af41d-e292-481f-c182-407bc145a2aa" />
+			<attribute id="UUID" type="guid" value="268af41d-e292-481f-82c1-7b4045c1aaa2" />
 			<children>
 				<node id="EffectInfo">
-					<attribute id="UUID" type="guid" value="d461b4fe-fd8d-466e-b1bb-775fcdeb86af" />
-					<attribute id="EffectResourceGuid" type="guid" value="84d69331-fa98-987f-484d-6f9f081125af" />
+					<attribute id="UUID" type="guid" value="d461b4fe-fd8d-466e-bbb1-5f77ebcdaf86" />
+					<attribute id="EffectResourceGuid" type="guid" value="84d69331-fa98-987f-4d48-9f6f1108af25" />
 					<attribute id="DetachSource" type="bool" value="True" />
 					<attribute id="DetachTarget" type="bool" value="True" />
 					<attribute id="KeepRotation" type="bool" value="False" />
@@ -34,8 +34,8 @@
 					</children>
 				</node>
 				<node id="EffectInfo">
-					<attribute id="UUID" type="guid" value="776b3f56-ca2a-4e9d-a695-eb03691dd1be" />
-					<attribute id="EffectResourceGuid" type="guid" value="58c943ea-9f81-9a1e-e1d8-713cb3827ec8" />
+					<attribute id="UUID" type="guid" value="776b3f56-ca2a-4e9d-95a6-03eb1d69bed1" />
+					<attribute id="EffectResourceGuid" type="guid" value="58c943ea-9f81-9a1e-d8e1-3c7182b3c87e" />
 					<attribute id="DetachSource" type="bool" value="True" />
 					<attribute id="DetachTarget" type="bool" value="True" />
 					<attribute id="KeepRotation" type="bool" value="False" />

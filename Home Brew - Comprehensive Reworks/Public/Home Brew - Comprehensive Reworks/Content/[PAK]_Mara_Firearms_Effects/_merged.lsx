@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="6c90f797-a0e6-79c1-7568-dbe4f0ee11d0" />
+					<attribute id="Name" type="LSString" value="Mara_Flintlock_CastFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Flintlock_CastFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Flintlock_CastFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.7320509 -1.7320509 -1.7320509" />
+					<attribute id="BoundsMax" type="fvec3" value="1.7320509 1.7320509 1.7320509" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1.5" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b4c92036-3733-5b15-f86d-1a02855d0144" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="30e17083-9341-c17f-1993-4301d74f2152" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5ac88639-11d3-a296-fcba-42885c5bb314" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a0998003-12c2-93ef-c686-797451ed2d9b" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="22a65f57-d15f-7d5e-8cb3-6a3d5b50b0a3" />
+					<attribute id="Name" type="LSString" value="Mara_Projectile_Blunderbuss" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Projectile_Blunderbuss.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Projectile_Blunderbuss" />
+					<attribute id="BoundsMin" type="fvec3" value="-3 -3 -3" />
+					<attribute id="BoundsMax" type="fvec3" value="3 3 3" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1.5" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1a4969a8-ff10-036f-27c7-1ae3db53d98b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b4c92036-3733-5b15-f86d-1a02855d0144" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="30e17083-9341-c17f-1993-4301d74f2152" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="aee9eae0-36b5-ffb7-e186-cd52a24cfc50" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ad218661-33e1-44a3-ab60-6e1e6a7dd7c0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5ac88639-11d3-a296-fcba-42885c5bb314" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a0998003-12c2-93ef-c686-797451ed2d9b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ce4da591-8b0e-c359-9bca-f965a3500d25" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="aae24fe7-726d-abfe-e8f1-79f08a73a191" />
+					<attribute id="Name" type="LSString" value="Mara_Projectile_Musk_CastFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Projectile_Musk_CastFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Projectile_Musk_CastFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.7320509 -1.7320509 -1.7320509" />
+					<attribute id="BoundsMax" type="fvec3" value="1.7320509 1.7320509 1.7320509" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1.5" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b4c92036-3733-5b15-f86d-1a02855d0144" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="30e17083-9341-c17f-1993-4301d74f2152" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5ac88639-11d3-a296-fcba-42885c5bb314" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="aee9eae0-36b5-ffb7-e186-cd52a24cfc50" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ad218661-33e1-44a3-ab60-6e1e6a7dd7c0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a0998003-12c2-93ef-c686-797451ed2d9b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f12c073f-f9e9-067d-1ecc-33308473470d" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="02d9d0e9-d64d-0ce1-c904-25336ab81a1f" />
+					<attribute id="Name" type="LSString" value="Mara_Projectile_Flintlock_Impact_FX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Projectile_Flintlock_Impact_FX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Projectile_Flintlock_Impact_FX" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.4433757 -1.4433757 -1.4433757" />
+					<attribute id="BoundsMax" type="fvec3" value="1.4433757 1.4433757 1.4433757" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="3" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8ef0a066-96a0-e76b-c711-bc9c1f312f08" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f812d39c-7d2b-e112-931a-9265f910dbc0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="921d5006-7f64-8885-21cc-e1204e041d02" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="09507f13-8b48-c991-2f7e-46e2958f3344" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2368fcb2-a312-b925-0580-b2e062ea5634" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="97b12629-982f-c7b4-7807-1ca4cd35e0aa" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0d70be42-56f8-4fdf-3431-11a1cc9ae7a3" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="eba81512-baff-6eb9-c2ff-5d14403efb55" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="71705a3f-8cea-2fda-f97c-fb247891a951" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="8b723a10-1a79-f338-c693-aa8a96ec1b92" />
+					<attribute id="Name" type="LSString" value="Mara_Projectile_HC_Bullet" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Projectile_HC_Bullet.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Projectile_HC_Bullet" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.7320509 -1.7320509 -1.7320509" />
+					<attribute id="BoundsMax" type="fvec3" value="1.7320509 1.7320509 1.7320509" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5a8e5258-1eee-7b9f-61e5-4ee536aaea90" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="efb46a1d-ca8a-166f-5c48-ca99cb75b197" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="06bd03ef-c70f-e2d2-5386-bffa50ab0194" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5e1b3b30-8ca9-ea66-5346-d2a89dbf79fc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="921d5006-7f64-8885-21cc-e1204e041d02" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b4c92036-3733-5b15-f86d-1a02855d0144" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="67bd1204-2e64-4e08-a1f4-65eefa66f705" />
+					<attribute id="Name" type="LSString" value="Mara_Projectile_BB_Bullet" />
+					<attribute id="SourceFile" type="LSString" value="" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Projectile_BB_Bullet" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.7320509 -1.7320509 -1.7320509" />
+					<attribute id="BoundsMax" type="fvec3" value="1.7320509 1.7320509 1.7320509" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5a8e5258-1eee-7b9f-61e5-4ee536aaea90" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="efb46a1d-ca8a-166f-5c48-ca99cb75b197" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="06bd03ef-c70f-e2d2-5386-bffa50ab0194" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5e1b3b30-8ca9-ea66-5346-d2a89dbf79fc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="921d5006-7f64-8885-21cc-e1204e041d02" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b4c92036-3733-5b15-f86d-1a02855d0144" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="06691576-7713-74d4-9e61-05e9ab9c6d7e" />
+					<attribute id="Name" type="LSString" value="Mara_Projectile_Musk_ImpactFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Projectile_Musk_ImpactFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Projectile_Musk_ImpactFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.7320509 -1.7320509 -1.7320509" />
+					<attribute id="BoundsMax" type="fvec3" value="1.7320509 1.7320509 1.7320509" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="5" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="97b12629-982f-c7b4-7807-1ca4cd35e0aa" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="71705a3f-8cea-2fda-f97c-fb247891a951" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2e178130-580f-cb43-bb34-5dc520b572e8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5e1b3b30-8ca9-ea66-5346-d2a89dbf79fc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8ef0a066-96a0-e76b-c711-bc9c1f312f08" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f812d39c-7d2b-e112-931a-9265f910dbc0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="921d5006-7f64-8885-21cc-e1204e041d02" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2368fcb2-a312-b925-0580-b2e062ea5634" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="09507f13-8b48-c991-2f7e-46e2958f3344" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="cbd2bc37-fa3a-9051-d7ef-0363b0b05639" />
+					<attribute id="Name" type="LSString" value="Mara_Blunderbuss_ImpactFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Blunderbuss_ImpactFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Blunderbuss_ImpactFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.7320509 -1.7320509 -1.7320509" />
+					<attribute id="BoundsMax" type="fvec3" value="1.7320509 1.7320509 1.7320509" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="5" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="97b12629-982f-c7b4-7807-1ca4cd35e0aa" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="71705a3f-8cea-2fda-f97c-fb247891a951" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2e178130-580f-cb43-bb34-5dc520b572e8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1a4969a8-ff10-036f-27c7-1ae3db53d98b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5e1b3b30-8ca9-ea66-5346-d2a89dbf79fc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8ef0a066-96a0-e76b-c711-bc9c1f312f08" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f812d39c-7d2b-e112-931a-9265f910dbc0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="921d5006-7f64-8885-21cc-e1204e041d02" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2368fcb2-a312-b925-0580-b2e062ea5634" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="09507f13-8b48-c991-2f7e-46e2958f3344" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="02f8c888-af70-34f3-f61d-5c9a93732c19" />
+					<attribute id="Name" type="LSString" value="Mara_Cast_Weapon_Reload_DummyFX_01" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Cast_Weapon_Reload_DummyFX_01.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Cast_Weapon_Reload_DummyFX_01" />
+					<attribute id="BoundsMin" type="fvec3" value="-2.8867514 -2.8867514 -2.8867514" />
+					<attribute id="BoundsMax" type="fvec3" value="2.8867514 2.8867514 2.8867514" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1.503361" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="9c15f129-f070-7a2b-e66d-d728aaea2383" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b4c92036-3733-5b15-f86d-1a02855d0144" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a68bd18b-838f-b43e-4398-c9504a47f6ef" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="41d84227-8cc6-0991-a0f2-ff4e06f73d60" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="abb66e3f-69f7-94c0-e020-1f118c61d372" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="46cb3b8a-b75d-7dd3-0acb-3a0ca010f37f" />
+					<attribute id="Name" type="LSString" value="Mara_Blunderbuss_ImpactFX_2" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Blunderbuss_ImpactFX_2.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Blunderbuss_ImpactFX_2" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.7320509 -1.7320509 -1.7320509" />
+					<attribute id="BoundsMax" type="fvec3" value="1.7320509 1.7320509 1.7320509" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="5" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="97b12629-982f-c7b4-7807-1ca4cd35e0aa" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f60bc7b0-6a4b-862d-4940-ea4dafaa7317" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2e178130-580f-cb43-bb34-5dc520b572e8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="09507f13-8b48-c991-2f7e-46e2958f3344" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1a4969a8-ff10-036f-27c7-1ae3db53d98b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5e1b3b30-8ca9-ea66-5346-d2a89dbf79fc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8ef0a066-96a0-e76b-c711-bc9c1f312f08" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f812d39c-7d2b-e112-931a-9265f910dbc0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="921d5006-7f64-8885-21cc-e1204e041d02" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="0712c33d-4c1f-fb49-b2ea-8f3759dff6a4" />
+					<attribute id="Name" type="LSString" value="Mara_Firearm_ImpactFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Firearm_ImpactFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Firearm_ImpactFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.7320509 -1.7320509 -1.7320509" />
+					<attribute id="BoundsMax" type="fvec3" value="1.7320509 1.7320509 1.7320509" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="5" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="97b12629-982f-c7b4-7807-1ca4cd35e0aa" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2e178130-580f-cb43-bb34-5dc520b572e8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="09507f13-8b48-c991-2f7e-46e2958f3344" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f60bc7b0-6a4b-862d-4940-ea4dafaa7317" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5e1b3b30-8ca9-ea66-5346-d2a89dbf79fc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8ef0a066-96a0-e76b-c711-bc9c1f312f08" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f812d39c-7d2b-e112-931a-9265f910dbc0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="921d5006-7f64-8885-21cc-e1204e041d02" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="eacdbad8-3e8b-7ed8-c494-7d1c12c3bf85" />
+					<attribute id="Name" type="LSString" value="Mara_GortashOverheat_Weapon_STATUSFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Overheat_Weapon_STATUSFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Overheat_Weapon_STATUSFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.57735026 -0.57735026 -0.57735026" />
+					<attribute id="BoundsMax" type="fvec3" value="0.57735026 0.57735026 0.57735026" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1.78" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="888a4d99-fa71-5642-a8e0-42d616f35fbd" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="87bcdd1a-e000-4bed-8371-aaf6d1ee7d8b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="4f5b525d-cdf7-1d04-2db5-d1f6e28c013b" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="1 1 1" />
+					<attribute id="BoundsMin" type="fvec3" value="-1 -1 -1" />
+					<attribute id="Center" type="fvec3" value="0 0 0" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Malfunction_StatusFX" />
+					<attribute id="ID" type="FixedString" value="2fe9e9e8-d193-411f-bfc6-974e518df368" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="Name" type="LSString" value="Mara_Malfunction_StatusFX" />
+					<attribute id="Radius" type="float" value="1" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Malfunction_StatusFX.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241814" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="45790b17-1791-4e62-98b4-2cf28c6f0f1d" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2ec77517-7a5a-f53b-4809-9b909d6c5328" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="0df1f663-1631-d616-7eb2-dca3d464c82c" />
+					<attribute id="Name" type="LSString" value="Mara_Cannoneer_Floating_StatusFX_02" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Cannoneer_Floating_StatusFX_02.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Cannoneer_Floating_StatusFX_02" />
+					<attribute id="BoundsMin" type="fvec3" value="-2.309401 -0.54940104 -2.309401" />
+					<attribute id="BoundsMax" type="fvec3" value="2.309401 4.069401 2.309401" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="2" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f41b46c1-a2f5-7dd9-383b-c2e037536866" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a81ddf67-e243-0150-2a9a-fc184c1dff51" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0c5ef267-581e-3d1e-6645-20626faa15ab" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d5f87828-7bd2-2ad0-f056-a4bed753c649" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b5dd8d98-46ef-79bb-478f-612b8f47c8ca" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="140f157b-a206-533f-d951-841df0d277f6" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e7c42b6d-ff37-4e67-8517-00fe73a08e53" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="abbd079d-3047-3663-619f-f5ac80089db7" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6d4cec0f-db2c-8612-f20d-e231fdd799cb" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="a7587f53-7bca-5816-a7d1-299ad9fbf802" />
+					<attribute id="Name" type="LSString" value="Mara_Cannoneer_Floating_Shot_CastFX_Root_01" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Cannoneer_Floating_Shot_CastFX_Root_01.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Cannoneer_Floating_Shot_CastFX_Root_01" />
+					<attribute id="BoundsMin" type="fvec3" value="-2.309401 -0.54940104 -2.309401" />
+					<attribute id="BoundsMax" type="fvec3" value="2.309401 4.069401 2.309401" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="492f143d-6e4b-91a0-6463-4681751b89ed" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="06bd03ef-c70f-e2d2-5386-bffa50ab0194" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="81702ab6-394c-591b-b3dd-448850232d4f" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="371e6e5f-c3d0-2452-f6a6-a62f6efd0bbe" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="97b12629-982f-c7b4-7807-1ca4cd35e0aa" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d923eddd-85a7-6a22-5099-a36be46e463a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8ef0a066-96a0-e76b-c711-bc9c1f312f08" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="89443358-057e-bd06-0102-4627fd59fc07" />
+					<attribute id="Name" type="LSString" value="Mara_Cannoneer_Floating_PrepareFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Cannoneer_Floating_PrepareFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Cannoneer_Floating_PrepareFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-2.309401 -0.54940104 -2.309401" />
+					<attribute id="BoundsMax" type="fvec3" value="2.309401 4.069401 2.309401" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="2.47016" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="fb21ca3c-3b37-b5b8-86cd-c7feaead109d" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="13ac34f6-4524-fbea-de1f-a9352c04de6f" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d052cb31-21d2-f32f-3178-041b589007db" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f7fc084b-d098-0d9a-8033-1cb61c3beb37" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6d1997f3-03c7-a813-7efa-7f7e1edac10b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="09507f13-8b48-c991-2f7e-46e2958f3344" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a81ddf67-e243-0150-2a9a-fc184c1dff51" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b2c001e7-33c3-af2b-2479-8bcd55bd86da" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1e42e346-3907-4e54-acd4-64bb482489f6" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="248b411d-3b4e-4b8a-bd40-88d03982cb2d" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="4de06f07-9375-4181-9597-d413e428df01" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="280355c2-debb-4357-8a74-96196a811da4" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="0ae6757d-ba01-4d97-d060-b2c6458a5060" />
+					<attribute id="Name" type="LSString" value="Mara_Cannoneer_Projectile" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Cannoneer_Projectile.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Cannoneer_Projectile" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.7320509 -1.7320509 -1.7320509" />
+					<attribute id="BoundsMax" type="fvec3" value="1.7320509 1.7320509 1.7320509" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="3" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="72a19c48-148f-c5d4-2370-03d8b5866150" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8b853a92-bcdf-bd5e-3f0a-a3c7893567bc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d923eddd-85a7-6a22-5099-a36be46e463a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="9c15f129-f070-7a2b-e66d-d728aaea2383" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b4c92036-3733-5b15-f86d-1a02855d0144" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5e1b3b30-8ca9-ea66-5346-d2a89dbf79fc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6bad8040-ad37-9f61-6ae3-d69b0bb2e34b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="42b61d2b-42fe-13ff-82c3-7e6ab1edfe5b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="bc2a5dfa-e85e-3f96-e41f-947fc00d184c" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="bbcf74f3-ca25-08e8-250e-1b30acddc629" />
+					<attribute id="Name" type="LSString" value="Mara_Cannoneer_Shot_Impact_01" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Cannoneer_Shot_Impact_01.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Cannoneer_Shot_Impact_01" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.7320509 -1.7320509 -1.7320509" />
+					<attribute id="BoundsMax" type="fvec3" value="1.7320509 1.7320509 1.7320509" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="3.01" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c48c04a0-0f5b-da7b-8a81-3ab40773086b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5956f5b1-693f-8770-65d0-bf96713f4ed5" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="97b12629-982f-c7b4-7807-1ca4cd35e0aa" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="97ae239c-85b6-cc5a-cd23-7e0753c1ed3d" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="9c15f129-f070-7a2b-e66d-d728aaea2383" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="58623f9b-7fba-65c8-8b84-646e6e5496b1" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1c4d5525-fe20-e52b-57d0-0aecc3c300df" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="7d91ca07-e60a-ab4e-8205-1eb2513c63ca" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8ef0a066-96a0-e76b-c711-bc9c1f312f08" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e27cda12-eef4-45b8-927c-655d62f267a6" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="093af71e-c405-38d2-9a8c-8ae430a9f984" />
+					<attribute id="Name" type="LSString" value="Mara_Cannoneer_Flame_StatusFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Cannoneer_Flame_StatusFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Cannoneer_Flame_StatusFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-2.309401 -0.54940104 -2.309401" />
+					<attribute id="BoundsMax" type="fvec3" value="2.309401 4.069401 2.309401" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="2.001686" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0c5ef267-581e-3d1e-6645-20626faa15ab" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e7b55705-01cd-edbd-7a8d-25321c31904d" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ca9ebf9e-60bd-79b1-b14e-3aa4c5f163b1" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="9ad13db0-8864-996f-4551-18fbab3b3737" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b5dd8d98-46ef-79bb-478f-612b8f47c8ca" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="140f157b-a206-533f-d951-841df0d277f6" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e7c42b6d-ff37-4e67-8517-00fe73a08e53" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ae062e4f-07b3-4e64-b7ba-48816d03da43" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ac9fd11d-9322-4dbe-bf94-b6c16cd5e929" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="abbd079d-3047-3663-619f-f5ac80089db7" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6d4cec0f-db2c-8612-f20d-e231fdd799cb" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d1dca510-8210-0055-2d9d-eaeb8642f3d4" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="616a337d-352c-9fff-633a-8d58730d6506" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="532beaa4-9e21-d87d-49b9-1614211cf309" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="2f1d229f-a13d-2716-3d6a-4f3d6ca7de6d" />
+					<attribute id="Name" type="LSString" value="Mara_Cannoneer_Floating_StatusFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Assets/Effects/Effects_Banks/Mara_Cannoneer_Floating_StatusFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Mara_Cannoneer_Floating_StatusFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-2.309401 -0.54940104 -2.309401" />
+					<attribute id="BoundsMax" type="fvec3" value="2.309401 4.069401 2.309401" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="2" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f41b46c1-a2f5-7dd9-383b-c2e037536866" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a81ddf67-e243-0150-2a9a-fc184c1dff51" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0c5ef267-581e-3d1e-6645-20626faa15ab" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d5f87828-7bd2-2ad0-f056-a4bed753c649" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b5dd8d98-46ef-79bb-478f-612b8f47c8ca" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="140f157b-a206-533f-d951-841df0d277f6" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e7c42b6d-ff37-4e67-8517-00fe73a08e53" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="66de0133-90cc-1dac-1690-d62a2561409f" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="abbd079d-3047-3663-619f-f5ac80089db7" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6d4cec0f-db2c-8612-f20d-e231fdd799cb" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

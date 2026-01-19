@@ -7,6 +7,12 @@
                 <node id="DefaultValue">
                     <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
                     <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6b701f1f-c477-43f0-9afe-0e169f65fc7a"/>
+                    <attribute id="UUID" type="guid" value="539cf0ee-a98f-45ba-9cee-855b4dba6e15"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Personality_None;CT_None"/>
+                    <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
                     <attribute id="UUID" type="guid" value="3aecacbf-72d6-496d-8099-2fb43fc238b8"/>
 					</node>
@@ -75,6 +81,12 @@
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
                     <attribute id="UUID" type="guid" value="f07e93cd-ad50-41cc-b7a0-97b92b7417ba"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="PredictiveTargetingModule;TargetingDisruption"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="d72245fb-3565-49ab-86f8-2964920d41c7"/>
+                    <attribute id="UUID" type="guid" value="f9e96f76-6413-4dbe-bfa9-32edf7184a8e"/>
 					</node>
                 <node id="DefaultValue">
                     <attribute id="Add" type="LSString" value="Steelforged_Melee"/>

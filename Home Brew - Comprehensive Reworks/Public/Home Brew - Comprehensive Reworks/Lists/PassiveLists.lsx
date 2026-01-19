@@ -17,6 +17,18 @@
                     <attribute id="UUID" type="guid" value="15eff335-46df-4268-9eea-aabcb6c13025" />
 					</node>
         <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="AdaptivePlating,ArcaneCalibrationMatrix,AutomatedArcaneSuppression,CastleDefense,DeadZoneCalibration,ElementalPayload,EmergencyPowerCell,FailsafeInjection,IncendiaryRounds,KineticFeedbackLoop,LikeClockwork,ModularAugmentation,NaniteDispersionField,Overclocked,PrecisionRifling,RecoilCompensation,Safeguard,SpeedLoader,SyntheticActionEconomy,VitalAim" />
+                    <attribute id="UUID" type="guid" value="a8257cf3-7c6b-4627-a77c-760a064fc201" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="AdaptiveShielding,ArmourReinforcement,CalmingSubroutine,ConcentrationLock,CriticalDampener,DamageAmplifier,DefensiveCalibration,EmergencyPlating,EvasiveProtocol,HealingOverride,KineticRepulsorField,MaximumYield,OutputContingency,PrecisionBoost,PredictiveTargetingModule,ReactiveOverload,ResistanceOverride,SpellCalibrationSequence,SpellSlotBypass,StabilityMatrix" />
+                    <attribute id="UUID" type="guid" value="3069a836-a0fd-467d-afaf-555ab1192d24" />
+					</node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="ArmourCompromise,ConcentrationBreach,CriticalLockout,CyberneticPsychosis,DefensiveDegredation,DirectSystemDamage,ExposedSystemInfo,GraviticVortex,HealingLockout,MinimumYield,MobilityLock,OutputLimiter,PrecisionDegredation,ReactionSuppression,SaveDestabilization,ShieldCollapse,SignalSilence,SpellInterference,TargetingDisruption,WeaponDampening" />
+                    <attribute id="UUID" type="guid" value="842b6948-adb0-4ce1-a55e-436eacd8693c" />
+					</node>
+        <node id="PassiveList">
                     <attribute id="Passives" type="LSString" value="BarbarousAssault,BrutalCritical,DangerSense,DeathGlare,Faceoff,FuriousCriticals,LandsStride,OverwhelmingPower,PeakPhysicality,RageoftheMountain,RageoftheUndefeated,RagingVitality,RelentlessRage,RipandTear,RootedinAnger,TemperedRetaliation,TerrifyingBellow,UnrelentingRampage,UnarmouredBeast,UnstoppableForce" />
                     <attribute id="UUID" type="guid" value="d8183f3c-9c62-40b7-9418-e7ad07a8204e" />
 					</node>

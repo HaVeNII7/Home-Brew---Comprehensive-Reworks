@@ -68,7 +68,7 @@
 	<content contentuid="hf318c6dcg5444g4c2ag86b7g55b8ad900zzb" version="1">Affected weapon deals an additional [1].</content>
 
 	<content contentuid="h94981fe3g720cg4a5dga655g1191bf400004" version="1">Winds of the Arcblade</content>
-	<content contentuid="hf318c6dcg5444g4c2ag86b7g55b8ad90000d" version="1">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, you may cast &lt;LSTag Type="Spell" Tooltip="Target_SteelWindStrike"&gt;Steel-Wind Strike&lt;/LSTag&gt; as a free action.</content>
+	<content contentuid="hf318c6dcg5444g4c2ag86b7g55b8ad90000d" version="1">Once per turn, upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, you may cast &lt;LSTag Type="Spell" Tooltip="Target_SteelWindStrike"&gt;Steel-Wind Strike&lt;/LSTag&gt; as a free action.</content>
 	<content contentuid="h94981fe3g720cg4a5dga655g1191bf4000z4" version="1">Winds of the Arcblade</content>
 	<content contentuid="hf318c6dcg5444g4c2ag86b7g55b8ad9000zd" version="1">Affected creature may cast &lt;LSTag Type="Spell" Tooltip="Target_SteelWindStrike"&gt;Steel-Wind Strike&lt;/LSTag&gt; as a free action.</content>
 

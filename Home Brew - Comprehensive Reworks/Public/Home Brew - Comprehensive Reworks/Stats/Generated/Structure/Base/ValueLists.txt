@@ -52,3 +52,4 @@ value "HB_Rogue" : 109
 value "HB_Sorcerer" : 110
 value "HB_Warlock" : 111
 value "HB_Wizard" : 112
+value "HB_Artificer" : 114

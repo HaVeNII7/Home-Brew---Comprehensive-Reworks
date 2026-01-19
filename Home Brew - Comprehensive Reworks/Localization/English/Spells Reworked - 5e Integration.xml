@@ -316,11 +316,11 @@
 	<content contentuid="39f1898f9sdfosdoifsodofsofd99494yyyf" version="1">Gain an additional 6 arrows per level.</content>
 	<content contentuid="39f1898f9sdfosdoifsodofsofd994upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Gain an additional 6 arrows per level.</content>
 	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400z6" version="1">Flame Arrows</content>
-	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zf" version="1">Affected creature is wielding flaming arrows. These arrows deal an additional [1].</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zf" version="1">Affected creature is wielding flaming arrows. These arrows deal an additional [1] and cause targets to &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt; for three turns.</content>
 	<content contentuid="39f1898f9sdfosdoifsodofsofd99494xxx6" version="1">Flame Arrows</content>
 	<content contentuid="39f1898f9sdfosdoifsodofsofd99494xxxf" version="1">The amount of Flame Arrows you have remaining. &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; targeting a creature or object will consume one Flame Arrow.</content>
 	<content contentuid="39f1898f9sdfosdoifsodofsofd99494xyz6" version="1">Flame Arrows</content>
-	<content contentuid="39f1898f9sdfosdoifsodofsofd99494xyzf" version="1">While active, your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; will fire flaming arrows that deal an additional [1]. This can be toggled at any time.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494xyzf" version="1">While active, your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; will fire flaming arrows that deal an additional [1] and cause your targets to &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt; for three turns. This can be toggled at any time.</content>
 
 	<content contentuid="39f1898f9sdfosdoifsodofsofd994940007" version="1">Internal Fortress</content>
 	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000g" version="1">Reduce all damage a creature takes by an amount equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>

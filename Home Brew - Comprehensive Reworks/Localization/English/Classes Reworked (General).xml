@@ -211,6 +211,11 @@
 
 	<content contentuid="hb6964c304cb94ecfbf9e855a44188a1ede99" version="1">Subclass Randomizer</content>
 
+	<content contentuid="hb30ed2d16f384cfeab24d003aceee0c00001" version="1">Artificer: Arcanist</content>
+	<content contentuid="h72cddc14e86d4ba589829b2d8c927f300002" version="1">Artificer: Artillerist</content>
+	<content contentuid="h72cddc14e86d4ba589829b2d8c95sdf00003" version="1">Artificer: Battle Synthetic</content>
+	<content contentuid="hda932ea0461d44f892254ee645d855000004" version="1">Artificer: Infused Arcsmith</content>
+
 	<content contentuid="hb30ed2d16f384cfeab24d003aceee0ce0744" version="1">Barbarian: Beastheart</content>
 	<content contentuid="h72cddc14e86d4ba589829b2d8c927f3d9304" version="1">Barbarian: Berserker</content>
 	<content contentuid="h72cddc14e86d4ba589829b2d8c95sdf8f454" version="1">Barbarian: Frostbreaker</content>
@@ -313,13 +318,16 @@
 	<content contentuid="383a69a977ec41f5982506e9d51279010000a" version="3">Spells are stronger than Cantrips, though they require &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; in order to cast.&lt;Br&gt;&lt;br&gt;You may select any Spell at levels 3, 7, and 11.</content>
 
 	<content contentuid="2308f2d16d384c75b3281d5bb3ce365d00001" version="1">Cantrips</content>
-	<content contentuid="2308f2d16d384c75b3281d5bb3ce365d0000a" version="3">Cantrips are weaker than Spells, though they do not consume &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; when cast.&lt;Br&gt;&lt;br&gt;As a Bard, you may select any Cantrip.</content>
+	<content contentuid="2308f2d16d384c75b3281d5bb3ce365d0000a" version="3">Cantrips are weaker than Spells, though they do not consume &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; when cast.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f4741b47c3500001" version="1">Spells</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47c350000a" version="3">Spells are stronger than Cantrips, though they require &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; in order to cast.&lt;Br&gt;&lt;br&gt;As a Bard, you may select any Spell.</content>
 
+	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f001" version="1">Spells</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5d0a" version="3">Spells are stronger than Cantrips, though they require &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; in order to cast.&lt;Br&gt;&lt;br&gt;As an Artificer, you may select any Spell.</content>
+
 	<content contentuid="2308f2d16d384c75b3281d5bb3ce365d000a1" version="1">Cantrips</content>
-	<content contentuid="2308f2d16d384c75b3281d5bb3ce365d000aa" version="3">Cantrips are weaker than Spells, though they do not consume &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; when cast.&lt;Br&gt;&lt;br&gt;Under the Way of the Arcane, you may select any Cantrip.</content>
+	<content contentuid="2308f2d16d384c75b3281d5bb3ce365d000aa" version="3">Cantrips are weaker than Spells, though they do not consume &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; when cast.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f4741b47c35000a1" version="1">Spells</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47c35000aa" version="3">Spells are stronger than Cantrips, though they require &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; in order to cast.&lt;Br&gt;&lt;br&gt;Under the Way of the Arcane, you may select any Spell.</content>

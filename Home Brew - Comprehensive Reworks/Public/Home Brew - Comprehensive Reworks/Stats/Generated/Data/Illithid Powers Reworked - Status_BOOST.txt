@@ -174,7 +174,7 @@ data "StatusEffect" "7e5f93b6-515a-4525-a1b5-4439d0f0229c"
 
 <!--SHIELD OF THRALLS-->
 
-new entry "TAD_SHIELD_OF_THRALLS"
+new entry "TAD_SHIELD_OF_THRALLS_TEMPHP"
 type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "h3fb319d8ge95bg4f3eg903cgf68aef23ccaa;2"
@@ -184,16 +184,25 @@ data "Icon" "TadpoleSuperPower_ShieldOfThralls"
 data "StackId" "TEMPORARY_HP"
 data "StackPriority" "24"
 data "Boosts" "TemporaryHP(24)"
+
+new entry "MF_SHIELD_OF_THRALLS_TEMPHP"
+type "StatusData"
+data "StatusType" "BOOST"
+using "TAD_SHIELD_OF_THRALLS_TEMPHP"
+data "StackPriority" "24"
+data "Boosts" "TemporaryHP(24)"
+
+new entry "TAD_SHIELD_OF_THRALLS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h3fb319d8ge95bg4f3eg903cgf68aef23ccaa;2"
+data "Description" "hd7897ac2g249fg406fg9fffg07555bc94fe0;3"
+data "DescriptionParams" "Distance(3)"
+data "Icon" "TadpoleSuperPower_ShieldOfThralls"
+data "StackId" "TAD_SHIELD_OF_THRALLS"
 data "RemoveConditions" "not HasTemporaryHP()"
 data "RemoveEvents" "OnDamage"
 data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Condition)):CreateExplosion(Projectile_TAD_ShieldOfThralls_Explosion)"
-
-new entry "MF_SHIELD_OF_THRALLS"
-type "StatusData"
-data "StatusType" "BOOST"
-using "TAD_SHIELD_OF_THRALLS"
-data "StackPriority" "24"
-data "Boosts" "TemporaryHP(24)"
 
 <!--PERILOUS STAKES-->
 

@@ -12,3 +12,7 @@ add spell "Projectile_Fly"
 
 new spellset "CommonSummonActions_Flying_Dragon"
 add spell "Target_Fly_Dragon_Skeletal_Player"
+
+new spellset "CommonSummonActions_Grym"
+add spell "Shout_Dash_LilG"
+add spell "Shout_Disengage_LilG"

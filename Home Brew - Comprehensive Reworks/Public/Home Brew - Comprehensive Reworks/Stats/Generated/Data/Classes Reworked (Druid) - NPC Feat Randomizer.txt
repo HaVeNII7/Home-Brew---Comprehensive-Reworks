@@ -454,7 +454,7 @@ data "RemoveEvents" "OnTurn;OnMove"
 data "StackId" "PASSIVE9"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
 data "StackType" "Ignore"
-data "Passives" "Tough_Display;Tough"
+data "Passives" "VisageofReflection"
 data "OnApplyFunctors" "ApplyStatus(PASSIVE9_DRUIDFEAT_LIMIT,100,-1)"
 
 new entry "PASSIVE10_DRUIDFEAT"

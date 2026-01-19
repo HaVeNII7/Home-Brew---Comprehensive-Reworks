@@ -5951,9 +5951,9 @@ data "DescriptionParams" "DealDamage(1d4,Fire)"
 data "Properties" "IsToggled;ToggledDefaultOn;Temporary"
 data "StatsFunctorContext" "OnAttack"
 data "Conditions" "IsWeaponAttack() and IsRangedAttack()"
-data "StatsFunctors" "UseActionResource(SELF,FlameArrows,1,0);IF(HasDamageEffectFlag(DamageFlags.Hit)):DealDamage(1d4,Fire,Magical)"
+data "StatsFunctors" "UseActionResource(SELF,FlameArrows,1,0);IF(HasDamageEffectFlag(DamageFlags.Hit)):DealDamage(1d4,Fire,Magical);IF(HasDamageEffectFlag(DamageFlags.Hit)):ApplyStatus(BURNING,100,3)"
 data "ToggleGroup" "S5E_FlameArrows"
-data "EnabledConditions" "HasActionResource('FlameArrows', 1, 0, false, false, context.Source)"
+data "EnabledConditions" "HasActionResource('FlameArrows', 1, 0, false, false, context.Source) and not (HasPassive('LowRange_Firearm_Passive', context.Source) or HasPassive('MidRange_Firearm_Passive', context.Source) or HasPassive('HighRange_Firearm_Passive', context.Source))"
 data "EnabledContext" "OnLongRest;OnActionResourcesChanged;OnStatusApplied;OnStatusRemoved"
 
 <!--INTELLECT FORTRESS-->

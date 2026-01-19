@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="TextureBank">
+		<node id="TextureBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="274278fb-b9ab-47a3-9433-5d0f9a3a5b6d" />
+					<attribute id="Name" type="LSString" value="low_PM" />
+					<attribute id="SourceFile" type="LSString" value="Public/Home Brew - Comprehensive Reworks/Firearms/Musket_2/low_PM.DDS" />
+					<attribute id="Template" type="FixedString" value="low_PM" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="Width" type="int32" value="256" />
+					<attribute id="Height" type="int32" value="256" />
+					<attribute id="Depth" type="int32" value="1" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

@@ -5,6 +5,12 @@
         <node id="root">
             <children>
                 <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Arcana;Investigation;Perception;Persuasion"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6b701f1f-c477-43f0-9afe-0e169f65fc7a"/>
+                    <attribute id="UUID" type="guid" value="89235598-e0d3-4660-80e7-e3d02346e2bc"/>
+					</node>
+                <node id="DefaultValue">
                     <attribute id="Add" type="LSString" value="Athletics;Intimidation;Perception;Survival"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>

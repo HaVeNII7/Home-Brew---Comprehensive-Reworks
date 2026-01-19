@@ -68,7 +68,7 @@
 	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341ejzje9" version="1">Gain a +1 bonus to Initiative, as well as [1] of additional &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h184ab785gdae3g4b7ega249ge43291763a55" version="5">Half-Blood's Faith</content>
-	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341edkdlk" version="1">Gain a +1 bonus to Initiative, as well as &lt;LSTag Type="Passive" Tooltip="SuperiorDarkvision"&gt;Superior Darkvision&lt;/LSTag&gt;.</content>
+	<content contentuid="h63415200gb6c7g41c2g9d2dg8a0341edkdlk" version="1">Gain a +1 bonus to Initiative, as well as &lt;LSTag Type="Passive" Tooltip="Darkvision"&gt;Darkvision&lt;/LSTag&gt;.</content>
 
 <!--HALFLING-->
 
@@ -376,6 +376,9 @@
 	<content contentuid="h2395dc03ga60dg4ca8gbf28as4d4f65e254f" version="1">Scholastic Slammer</content>
 	<content contentuid="h36f181f8g1bcag43bag8f71g69c05esd8fe5" version="2">Upon dealing damage, this creature may cause their target to become &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Dazed&lt;/LSTag&gt;.</content>
 
+	<content contentuid="h4b7c2703ge1a8g4fb4g98c92s6d5f5sd2f54" version="1">Colossal Visage</content>
+	<content contentuid="h67749803g166eg4d2bga330g5f64wefs4d68" version="2">This creature's march is unstoppable. They have status immunity to anything which would restrain them or reduce their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;.</content>
+
 	<content contentuid="h2395dc03ga60dg4ca8gbf28g9c5d6d68f54e" version="1">Draconic Majesty</content>
 	<content contentuid="h36f181f8g1bcag43bag8f71g6922585d6968" version="2">This creature has status immunity to all curses.</content>
 
@@ -440,6 +443,10 @@
 
 	<content contentuid="ba8dc90c6dd042ee918bba2s2d1f6s5f168fd" version="2">Offering to Bhaal</content>
 	<content contentuid="ba8dc90c6dd042ew65e4fs68fe4d5e2f8ff58" version="3">Upon starting their first turn in combat, Ghislev will begin chanting, offering you as a sacrifice to Bhaal.</content>
+
+	<content contentuid="hafc11d71g6c18g45f7g8d29g3a0d44aebe4a" version="4">Affected creature is preparing to &lt;LSTag Type="Spell" Tooltip="Projectile_SteelWatcher_Biped_SelfDestructExplosion"&gt;Self-Detonate&lt;/LSTag&gt;.</content>
+	<content contentuid="hf76f314fg3191g45b9g8850g5b978c824349" version="4">Affected creature is preparing to &lt;LSTag Type="Spell" Tooltip="Projectile_SteelWatcher_Quadruped_SelfDestructExplosion"&gt;Self-Detonate&lt;/LSTag&gt;.</content>
+	<content contentuid="h5c988176gb298g40edg8748g438d3b4f08f3" version="2">Affected creature can only be harmed by an attack dealing at least [1] damage.</content>
 
 <!--OLD ENEMY PASSIVES-->
 

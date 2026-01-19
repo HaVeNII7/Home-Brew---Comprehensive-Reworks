@@ -370,7 +370,7 @@ data "RemoveEvents" "OnTurn;OnMove"
 data "StackId" "PASSIVE2"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
 data "StackType" "Ignore"
-data "Passives" "Alert;Alert_Start"
+data "Passives" "ArcaneEchoes"
 data "OnApplyFunctors" "ApplyStatus(PASSIVE2_BARDFEAT_LIMIT,100,-1)"
 
 new entry "PASSIVE3_BARDFEAT"

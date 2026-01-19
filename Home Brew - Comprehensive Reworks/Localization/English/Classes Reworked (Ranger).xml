@@ -107,6 +107,7 @@
 	<content contentuid="hd200815fge088g41d7g9179ga61be33d8d78" version="3">Ambush a target with an additional swift and precise weapon attack. This attack will always roll as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 	<content contentuid="h38398cbag8289g448bg92f7g74f83f0c1de6" version="2">Dread Shot (Ranged)</content>
 	<content contentuid="h6a71465dgecf3g4923g977fgb042eba92178" version="3">Ambush a target with an additional swift and precise weapon attack. This attack will always roll as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
+	<content contentuid="h38398cbag8289g448bg92f7g74f83f0c1de7" version="2">Dread Shot (Firearm)</content>
 
 	<content contentuid="hae000758g2c53g402cgb846g1e5a4c39d397" version="2">Gloom Stalker's Deceit</content>
 	<content contentuid="hb8bf311cg5a03g46a9g888bgceed226284f5" version="2">Upon failing an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, you may spend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; in order to turn it into a success.</content>
@@ -142,14 +143,21 @@
 	<content contentuid="h4a5c145dgd1adg4034ga26bg8781dcb9fbd4" version="3">Target two creatures standing close to each other. Attack the first creature and then gain the ability to make an additional &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against the second as a free action.</content>
 	<content contentuid="h75a771c9g1465g4ad8gb033gb5152ef8b463" version="1">Horde Breaker (Ranged)</content>
 	<content contentuid="h73ac8ed9g617cg427fgbd38g5c006d21b6c7" version="4">Target two creatures standing close to each other. Attack the first creature and then gain the ability to make an additional &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against the second as a free action.</content>
+	<content contentuid="h75a771c9g1465g4ad8gb033gb5152ef8b464" version="1">Horde Breaker (Firearm)</content>
+	<content contentuid="h73ac8ed9g617cg427fgbd38g5c006d21b6c8" version="4">Target two creatures standing close to each other. Attack the first creature and then gain the ability to make an additional &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against the second as a free action.</content>
+	<content contentuid="ha95b80e6gfab1g47d2gb2d6g32be2f4e5f49" version="1">Horde Breaker Follow-Up (Firearm)</content>
 	<content contentuid="h8ec4fb9cg49deg4e8ag9f7agd6e44bf66b9f" version="1">Horde Breaker</content>
 	<content contentuid="h8d41be71g1eecg4e2cg8d5egcbfbc41c594c" version="2">Affected creature is open to an additional, free attack from the Ranger who applied this status.</content>
 
 	<content contentuid="h4d476cb8gfa45g4f4cga9d1gd0b102a255a2" version="2">Marksman's Eye</content>
 	<content contentuid="h20b19b1bg5da3g41d4g901bgd1d616a87715" version="2">When damaging a target you are currently &lt;LSTag Type="Status" Tooltip="HUNTED"&gt;Hunting&lt;/LSTag&gt;, you gain a bonus to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; equal to the amount of stacks they have remaining.</content>
 
+	<content contentuid="h671dedb3g21bag48d5g97998w23eyr9wyu9f" version="2">Helmsplitter</content>
+	<content contentuid="h671dedb3g21bag48d5g979eg623089r97d8f" version="5">Gain the ability to target entire groups of enemies with your weapons.</content>
 	<content contentuid="h671dedb3g21bag48d5g979eg6b61817cc1e4" version="2">Volley</content>
 	<content contentuid="h671dedb3g21bag48d5g979eg6b61817cc1e5" version="5">Loose a volley of arrows within an area, making separate &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against each target. </content>
+	<content contentuid="h671dedb3g21bag48d5g979eg6b61817cc1e9" version="2">Rain Storm</content>
+	<content contentuid="h671dedb3g21bag48d5g979eg6b61817cc1e8" version="5">Loose a volley of bullets within an area, making separate &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against each target. </content>
 	<content contentuid="ha320b97dg0f62g46a8gbf6bg983046bdc3e1" version="2">Whirlwind</content>
 	<content contentuid="h06746addg056dg43f1gada6g851e17ef5b22" version="5">Strike out at all nearby foes, making separate &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against each target. </content>
 
@@ -281,9 +289,9 @@
 	<content contentuid="791a0319eeed4e25949847ad3a0dd1d10000a" version="4">Gain a +2 bonus to your Initiative. You can no longer be &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt;.</content>
 
 	<content contentuid="791a0319eeed4e25949847ad3a0dd1d100015" version="4">Ballistic Infusion</content>
-	<content contentuid="791a0319eeed4e25949847ad3a0dd1d10000o" version="4">You are capable of upcasting your Frontier Ballistics using your &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt;, causing them to deal an additional [1] per Spell Slot spent.</content>
+	<content contentuid="791a0319eeed4e25949847ad3a0dd1d10000o" version="4">You are capable of upcasting your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; using your &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt;, causing them to deal an additional [1] per Spell Slot spent.</content>
 	<content contentuid="791a0319eeed4e25949847ad3a0dd1d100z15" version="4">Ballistic Infusion</content>
-	<content contentuid="791a0319eeed4e25949847ad3a0dd1d1000zo" version="4">Infuse your Frontier Ballistics with &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; to cause empower them, causing them to deal an additional [1] per Spell Slot spent.</content>
+	<content contentuid="791a0319eeed4e25949847ad3a0dd1d1000zo" version="4">Infuse your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; with &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt;, causing them to deal an additional [1] per Spell Slot spent.</content>
 
 	<content contentuid="791a0319eeed4e25949847ad3a0dd1d100002" version="4">Bounty Hunter</content>
 	<content contentuid="791a0319eeed4e25949847ad3a0dd1d10000b" version="4">Throughout your journey, creatures you encounter may be marked as bounty targets by forces unknown. Killing a bounty target will award you 100 gold. Upon killing a &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; creature, you are awarded 500 gold. Upon killing a &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; creature, you are awarded 1,000 gold.&lt;br&gt;&lt;br&gt;All &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; you make against targets with bounties on their heads are rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>

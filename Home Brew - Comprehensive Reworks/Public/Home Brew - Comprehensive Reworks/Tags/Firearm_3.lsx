@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="0" build="58" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="Firearm HIGH range" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h409da1e44d994836b7fb8289f44fb9b182fb" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="hf180b3c3b984470a98b16721ee33d3bd888c" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="HighRangeFirearm" />
+			<attribute id="UUID" type="guid" value="57ad3ec5-045b-4523-91ef-00179b2e1aad" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

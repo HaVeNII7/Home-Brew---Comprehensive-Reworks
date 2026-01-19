@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="4" minor="0" revision="8" build="301" />
+	<version major="4" minor="0" revision="8" build="301" lslib_meta="v1,bswap_guids" />
 	<region id="MultiEffectInfos">
 		<node id="MultiEffectInfos">
 			<attribute id="Name" type="LSString" value="BreathWeapon_Thunder_BeamEffect" />
-			<attribute id="UUID" type="guid" value="e6d533cc-8ce3-42d9-a3a7-c31499fd7f5a" />
+			<attribute id="UUID" type="guid" value="e6d533cc-8ce3-42d9-a7a3-14c3fd995a7f" />
 			<children>
 				<node id="EffectInfo">
 					<attribute id="BindSourceTo" type="FixedString" value="SourceEntity" />
@@ -12,7 +12,7 @@
 					<attribute id="DamageType" type="uint32" value="0" />
 					<attribute id="DetachSource" type="bool" value="True" />
 					<attribute id="DetachTarget" type="bool" value="True" />
-					<attribute id="EffectResourceGuid" type="guid" value="4e538d58-c5f1-539f-01a1-6f16c2e2002d" />
+					<attribute id="EffectResourceGuid" type="guid" value="4e538d58-c5f1-539f-a101-166fe2c22d00" />
 					<attribute id="Enabled" type="bool" value="True" />
 					<attribute id="KeepRotation" type="bool" value="False" />
 					<attribute id="KeepScale" type="bool" value="False" />
@@ -22,7 +22,7 @@
 					<attribute id="OffHand" type="bool" value="False" />
 					<attribute id="Pivot" type="FixedString" value="Source" />
 					<attribute id="StartTextKey" type="LSString" value="Cast" />
-					<attribute id="UUID" type="guid" value="0ac8565c-eff6-464c-9b40-26515e4a2a22" />
+					<attribute id="UUID" type="guid" value="0ac8565c-eff6-464c-409b-51264a5e222a" />
 					<attribute id="UseDistance" type="bool" value="True" />
 					<attribute id="UseOrientDirection" type="bool" value="False" />
 					<attribute id="UseScaleOverride" type="bool" value="False" />
@@ -42,7 +42,7 @@
 					<attribute id="DamageType" type="uint32" value="0" />
 					<attribute id="DetachSource" type="bool" value="True" />
 					<attribute id="DetachTarget" type="bool" value="True" />
-					<attribute id="EffectResourceGuid" type="guid" value="4190ea5b-713d-2012-3f64-e6ef2b592c1f" />
+					<attribute id="EffectResourceGuid" type="guid" value="4190ea5b-713d-2012-643f-efe6592b1f2c" />
 					<attribute id="Enabled" type="bool" value="True" />
 					<attribute id="KeepRotation" type="bool" value="False" />
 					<attribute id="KeepScale" type="bool" value="False" />
@@ -52,7 +52,7 @@
 					<attribute id="OffHand" type="bool" value="False" />
 					<attribute id="Pivot" type="FixedString" value="Source" />
 					<attribute id="StartTextKey" type="LSString" value="Cast" />
-					<attribute id="UUID" type="guid" value="5be2d0e3-ff5e-4824-9af2-da88cdf28c39" />
+					<attribute id="UUID" type="guid" value="5be2d0e3-ff5e-4824-f29a-88daf2cd398c" />
 					<attribute id="UseDistance" type="bool" value="True" />
 					<attribute id="UseOrientDirection" type="bool" value="False" />
 					<attribute id="UseScaleOverride" type="bool" value="False" />
@@ -72,7 +72,7 @@
 					<attribute id="DamageType" type="uint32" value="0" />
 					<attribute id="DetachSource" type="bool" value="True" />
 					<attribute id="DetachTarget" type="bool" value="True" />
-					<attribute id="EffectResourceGuid" type="guid" value="4e1618d3-99fb-79dd-589a-81cb85d4aab4" />
+					<attribute id="EffectResourceGuid" type="guid" value="4e1618d3-99fb-79dd-9a58-cb81d485b4aa" />
 					<attribute id="Enabled" type="bool" value="False" />
 					<attribute id="KeepRotation" type="bool" value="False" />
 					<attribute id="KeepScale" type="bool" value="True" />
@@ -82,7 +82,7 @@
 					<attribute id="OffHand" type="bool" value="False" />
 					<attribute id="Pivot" type="FixedString" value="Target" />
 					<attribute id="StartTextKey" type="LSString" value="Cast" />
-					<attribute id="UUID" type="guid" value="71c42839-dd82-44cf-858d-d4a9e7ff7763" />
+					<attribute id="UUID" type="guid" value="71c42839-dd82-44cf-8d85-a9d4ffe76377" />
 					<attribute id="UseDistance" type="bool" value="False" />
 					<attribute id="UseOrientDirection" type="bool" value="False" />
 					<attribute id="UseScaleOverride" type="bool" value="False" />

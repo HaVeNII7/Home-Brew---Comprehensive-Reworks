@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings source="($SOURCE)\Canoneer\Cannon_BM.DDS">
+  <TextureSettings>
+    <Scale>Full</Scale>
+    <TextureShape>Default</TextureShape>
+    <sRGB>true</sRGB>
+    <FilterFlags>FANT</FilterFlags>
+    <DitherFlags>DEFAULT</DitherFlags>
+    <CompressionSettingsKey type="BaseMap" channels="3" />
+    <Mip isGenerating="true">
+      <PreserveCoverage alphaCoverage="0.75">false</PreserveCoverage>
+    </Mip>
+  </TextureSettings>
+</Settings>

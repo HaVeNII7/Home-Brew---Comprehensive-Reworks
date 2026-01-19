@@ -24,6 +24,7 @@ data "PrepareEffect" "f5269188-8099-49b1-8515-b549bd8b61b9"
 data "CastEffect" "3b4c35ad-4d0a-4889-8408-46181439be42"
 data "SpellSoundMagnitude" "Big"
 data "Sheathing" "DontChange"
+data "Requirements" "Combat"
 
 new entry "Shout_Rage_Ogre"
 type "SpellData"
@@ -92,7 +93,7 @@ data "CastEffect" "d314aed0-4fb5-44dc-98c4-614297017694"
 
 <!--FROSTWOVEN-->
 
-new entry "Action_Barbarian_Rage_Bifrost"
+new entry "Shout_Rage_Bifrost"
 type "SpellData"
 data "SpellType" "Shout"
 using "Shout_Rage"

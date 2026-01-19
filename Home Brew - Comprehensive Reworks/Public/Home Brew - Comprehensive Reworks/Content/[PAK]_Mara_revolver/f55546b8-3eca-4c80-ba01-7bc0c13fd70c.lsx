@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids" />
+	<region id="VisualBank">
+		<node id="VisualBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="f55546b8-3eca-4c80-ba01-7bc0c13fd70c" />
+					<attribute id="Name" type="LSString" value="Collection" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Home Brew - Comprehensive Reworks/Skull/Collection.GR2" />
+					<attribute id="Slot" type="FixedString" value="Unassigned" />
+					<attribute id="RemapperSlotId" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/Home Brew - Comprehensive Reworks/Skull/Collection.Dummy_Root.0" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<attribute id="SkeletonResource" type="FixedString" value="" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+					<attribute id="HairType" type="uint8" value="0" />
+					<attribute id="BoundsMin" type="fvec3" value="0 0 0" />
+					<attribute id="BoundsMax" type="fvec3" value="0 0 0" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<children>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Collection.meshId5_name.0" />
+							<attribute id="MaterialID" type="FixedString" value="ea17cb29-ecc6-5738-8c8f-238a304c317c" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Collection.meshId6_name.1" />
+							<attribute id="MaterialID" type="FixedString" value="ea17cb29-ecc6-5738-8c8f-238a304c317c" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Collection.meshId3_name.2" />
+							<attribute id="MaterialID" type="FixedString" value="ea17cb29-ecc6-5738-8c8f-238a304c317c" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Collection.meshId2_name.3" />
+							<attribute id="MaterialID" type="FixedString" value="ea17cb29-ecc6-5738-8c8f-238a304c317c" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Collection.meshId1_name.4" />
+							<attribute id="MaterialID" type="FixedString" value="ea17cb29-ecc6-5738-8c8f-238a304c317c" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Collection.meshId0_name.5" />
+							<attribute id="MaterialID" type="FixedString" value="ea17cb29-ecc6-5738-8c8f-238a304c317c" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Collection.meshId4_name.6" />
+							<attribute id="MaterialID" type="FixedString" value="ea17cb29-ecc6-5738-8c8f-238a304c317c" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node>
+						<node id="ClothProxyMapping" />
+						<node id="Base" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

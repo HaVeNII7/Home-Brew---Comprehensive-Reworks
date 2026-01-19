@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="4" minor="0" revision="8" build="402" />
+	<version major="4" minor="0" revision="8" build="402" lslib_meta="v1,bswap_guids" />
 	<region id="MultiEffectInfos">
 		<node id="MultiEffectInfos">
 			<attribute id="Name" type="LSString" value="BreathWeapon_Psychic_PrepareEffect" />
-			<attribute id="UUID" type="guid" value="b544c05e-81bd-4256-789f-bf6969286a2d" />
+			<attribute id="UUID" type="guid" value="b544c05e-81bd-4256-9f78-69bf28692d6a" />
 			<children>
 				<node id="EffectInfo">
 					<attribute id="BindSourceTo" type="FixedString" value="SourceEntity" />
@@ -12,7 +12,7 @@
 					<attribute id="DamageType" type="uint32" value="0" />
 					<attribute id="DetachSource" type="bool" value="False" />
 					<attribute id="DetachTarget" type="bool" value="False" />
-					<attribute id="EffectResourceGuid" type="guid" value="c35c3de1-96aa-3cd0-1fb9-59cb77984bf2" />
+					<attribute id="EffectResourceGuid" type="guid" value="c35c3de1-96aa-3cd0-b91f-cb599877f24b" />
 					<attribute id="Enabled" type="bool" value="True" />
 					<attribute id="KeepRotation" type="bool" value="False" />
 					<attribute id="KeepScale" type="bool" value="True" />
@@ -21,7 +21,7 @@
 					<attribute id="MinDistance" type="float" value="0" />
 					<attribute id="OffHand" type="bool" value="False" />
 					<attribute id="Pivot" type="FixedString" value="Target" />
-					<attribute id="UUID" type="guid" value="87602d58-6cde-4393-b499-e070aaa4eaa3" />
+					<attribute id="UUID" type="guid" value="87602d58-6cde-4393-99b4-70e0a4aaa3ea" />
 					<attribute id="UseDistance" type="bool" value="False" />
 					<attribute id="UseOrientDirection" type="bool" value="False" />
 					<attribute id="UseScaleOverride" type="bool" value="False" />
@@ -38,7 +38,7 @@
 					<attribute id="DamageType" type="uint32" value="0" />
 					<attribute id="DetachSource" type="bool" value="False" />
 					<attribute id="DetachTarget" type="bool" value="False" />
-					<attribute id="EffectResourceGuid" type="guid" value="e1fceb90-d55e-6035-d178-b2bcd70f02f8" />
+					<attribute id="EffectResourceGuid" type="guid" value="e1fceb90-d55e-6035-78d1-bcb20fd7f802" />
 					<attribute id="Enabled" type="bool" value="True" />
 					<attribute id="KeepRotation" type="bool" value="False" />
 					<attribute id="KeepScale" type="bool" value="True" />
@@ -48,7 +48,7 @@
 					<attribute id="OffHand" type="bool" value="False" />
 					<attribute id="Pivot" type="FixedString" value="Target" />
 					<attribute id="StartTextKey" type="LSString" value="VFX_Prepare_01" />
-					<attribute id="UUID" type="guid" value="2bb3b476-7126-45cb-a0bb-60f378f4ff8e" />
+					<attribute id="UUID" type="guid" value="2bb3b476-7126-45cb-bba0-f360f4788eff" />
 					<attribute id="UseDistance" type="bool" value="False" />
 					<attribute id="UseOrientDirection" type="bool" value="False" />
 					<attribute id="UseScaleOverride" type="bool" value="False" />

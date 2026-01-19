@@ -220,6 +220,9 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 	<content contentuid="h74a7782bge5b7g4aafg82ffg8c46850e8b31" version="2">Poisonous Fumes</content>
 	<content contentuid="hd48eb365g0586g46eag800ag9ff2237a0281" version="1">Affected creature takes [1] at the beginning of each of their turns.</content>
 
+	<content contentuid="hcd8eb54eg19dag411egbaebg2b9340e7f3e4" version="2">Power Word: Kill</content>
+	<content contentuid="hfa292292g1345g4692g9f2fg9db6c87bdce6" version="1">Kill a creature of your choice.</content>
+
 	<content contentuid="hf436e702gfa14g45aagabaeg6fa3d54c1061" version="1">Prone</content>
 	<content contentuid="hfe0869e3g3954g4eb1g915agd39ade42ecde" version="3">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on Strength and Dexterity based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. Attacks within [1] of the affected creature have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when targeting it.&lt;br&gt;&lt;br&gt;A Prone creature will spend half of its &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; to stand up, immediately removing this status.&lt;br&gt;&lt;br&gt;Removed if &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Helped&lt;/LSTag&gt;.</content>
 

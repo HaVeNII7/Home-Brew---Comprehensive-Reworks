@@ -39,7 +39,7 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndi
 new entry "RAGE_FRENZY_DURATION"
 type "StatusData"
 data "StatusType" "BOOST"
-data "OnApplyFunctors" "SetStatusDuration(RAGE_FRENZY, 3, ForceSet);RemoveStatus(FRENZIEDSTRIKE_BLOCKER)"
+data "OnApplyFunctors" "SetStatusDuration(RAGE_FRENZY, 3, ForceSet)"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
 new entry "RAGE_BIFROST_DURATION"
@@ -502,6 +502,8 @@ data "StackId" "RAGE_FRENZY_BURNOUT"
 data "StackType" "Additive"
 data "Boosts" "RollBonus(Attack,-1)"
 data "StatusPropertyFlags" "FreezeDuration;MultiplyEffectsByDuration"
+data "RemoveConditions" "not HasStatus('SG_Rage', context.Source)"
+data "RemoveEvents" "OnCombatEnded;OnStatusRemoved"
 
 new entry "DASH_BARBARIAN"
 type "StatusData"
