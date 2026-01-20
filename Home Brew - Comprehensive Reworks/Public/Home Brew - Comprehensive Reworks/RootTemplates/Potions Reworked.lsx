@@ -93,7 +93,7 @@
 											<attribute id="Conditions" type="LSString" value="" />
 											<attribute id="Consume" type="bool" value="True" />
 											<attribute id="StatsId" type="FixedString" value="POTION_OF_HEALING" />
-											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="StatusDuration" type="int32" value="3" />
 										</node>
 									</children>
 								</node>
@@ -201,7 +201,7 @@
 											<attribute id="Conditions" type="LSString" value="" />
 											<attribute id="Consume" type="bool" value="True" />
 											<attribute id="StatsId" type="FixedString" value="POTION_OF_HEALING_GREATER" />
-											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="StatusDuration" type="int32" value="3" />
 										</node>
 									</children>
 								</node>
@@ -309,7 +309,7 @@
 											<attribute id="Conditions" type="LSString" value="" />
 											<attribute id="Consume" type="bool" value="True" />
 											<attribute id="StatsId" type="FixedString" value="POTION_OF_HEALING_SUPERIOR" />
-											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="StatusDuration" type="int32" value="3" />
 										</node>
 									</children>
 								</node>
@@ -417,7 +417,7 @@
 											<attribute id="Conditions" type="LSString" value="" />
 											<attribute id="Consume" type="bool" value="True" />
 											<attribute id="StatsId" type="FixedString" value="POTION_OF_HEALING_SUPREME" />
-											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="StatusDuration" type="int32" value="3" />
 										</node>
 									</children>
 								</node>

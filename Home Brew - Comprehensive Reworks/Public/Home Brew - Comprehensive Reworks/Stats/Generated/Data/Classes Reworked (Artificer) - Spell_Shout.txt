@@ -21,6 +21,7 @@ data "SpellFlags" "IsDefaultWeaponAction;IgnoreSilence;Stealth;Invisible"
 data "PrepareEffect" "49dd385f-fd25-4372-8628-30b775af7c79"
 data "CastEffect" "2550e2bb-c9f9-4440-9cd4-146a03f2e9bc"
 data "Sheathing" "Ranged"
+data "Cooldown" "OncePerTurn"
 
 <!--BATTLE SYNTHETIC-->
 

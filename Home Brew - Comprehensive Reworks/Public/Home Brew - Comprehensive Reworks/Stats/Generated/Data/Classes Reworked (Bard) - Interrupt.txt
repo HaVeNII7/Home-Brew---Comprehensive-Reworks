@@ -117,7 +117,7 @@ data "StatusGroups" "SG_RemoveOnRespec"
 data "StatusEffect" "f8d8cc2f-fca8-448f-bb92-0c80054c3f10"
 data "ManagedStatusEffectType" "Positive"
 data "ManagedStatusEffectGroup" "6435c10a-c67d-4f79-8813-b84b0762f92b"
-data "RemoveConditions" "not IsMiss() and not IsCriticalMiss()"
+data "RemoveConditions" "not IsMiss() and not IsCriticalMiss() and HasDamageEffectFlag(DamageFlags.Hit)"
 data "RemoveEvents" "OnAttacked"
 data "HitAnimationType" "None"
 

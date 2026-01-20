@@ -19,7 +19,7 @@ data "ToggleOnEffect" "VFX_Spells_Cast_Sorcerer_TidesOfChaos_BodyFX_01:Dummy_Bod
 
 new entry "Force_Perform_Player"
 type "PassiveData"
-data "Properties" "IsHidden"
+data "Properties" "IsHidden;OncePerCombat"
 data "StatsFunctorContext" "OnCombatStarted;OnTurn"
 data "StatsFunctors" "IF(Combat() and not HasStatus('SILENCED') and not HasStatus('SG_Polymorph') and not (HasStatus('CPERFORM_POSITIVE') or HasStatus('PERFORMATIVE_VERSE') or HasStatus('PERFORMATIVE_CHORUS'))):UseSpell(Shout_Bard_Perform_ThePower_Whistle,true,true,true)"
 

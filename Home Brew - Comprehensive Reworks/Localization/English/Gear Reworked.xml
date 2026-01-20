@@ -506,6 +506,10 @@
 	<content contentuid="he4a130abgff41g4523gb29eg783ddfb71769" version="2">Tippler's Rage</content>
 	<content contentuid="hfdf2280cg5e74g422cgb439g1155468d7a18" version="2">While you are &lt;LSTag Type="Status" Tooltip="DRUNK"&gt;Drunk&lt;/LSTag&gt;, you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;. You also create a thunderous blast with each attack, dealing [1] to all within [2].</content>
 
+<!--POO SCRAPER-->
+	<content contentuid="hdd33f0f8g13d0g4791g9f63g2d165sd54f54" version="2">Holy Shit</content>
+	<content contentuid="he8570ff2gec84g4da0g8d6bg69s65df4e845" version="2">This once divine weapon is certain to cause some traumatic damage once your target realizes where it's been!</content>
+
 <!--THE WATERSPARKERS-->
 	<content contentuid="h4e602986gf231g4d72g9a88g2648d2125ce0" version="3">Sparking Surfaces</content>
 	<content contentuid="h27f55615g490fg4048g9c2bg2d48e238f4da" version="6">The wearer becomes immune to the effects of walking through electrified surfaces. Stepping in water immediately electrifies it. If the wearer starts their turn on an electrified surface, they gain [1] &lt;LSTag Type="Status" Tooltip="MAG_CHARGED_LIGHTNING"&gt;Lightning Charge&lt;/LSTag&gt;.</content>

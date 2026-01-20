@@ -658,7 +658,7 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 	<content contentuid="h084bb401g2e3ag4e78g9f2ag2355b1963907" version="3">Affected creature can see in the dark, magical or otherwise, out to a range of [1].</content>
 
 	<content contentuid="h635fd469g1961g498bg9c10g8b824732d7f4" version="2">Daylight</content>
-	<content contentuid="h17b14a9bg9cb5g4667ga676gb128a690d2fa" version="1">Summon a sphere of pure sunlight, warding off all darkness, magical or otherwise, within a [1] radius. Upon casting, and each turn after, all darkness within the radius will be removed.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druid&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
+	<content contentuid="h17b14a9bg9cb5g4667ga676gb128a690d2fa" version="1">Summon a sphere of pure sunlight, warding off all darkness, magical or otherwise, within a [1] radius. Upon casting, and each turn after, all darkness within the radius will be removed. Additionally, this light cannot be snuffed out.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Clerics&lt;br&gt;Druid&lt;br&gt;Paladins&lt;br&gt;Rangers</content>
 	<content contentuid="h005e7cb7gfe99g4409gbd31gcbaf0f0a6835" version="2">Daylight</content>
 	<content contentuid="h91c678acga0c9g44dfg9445g3cdc0aa0d588" version="2">Affected area is shining with the light of the sun, warding off all darkness, magical or otherwise, within a [1] radius. Each turn, all darkness within the radius will be removed.</content>
 
@@ -1070,7 +1070,7 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 	<content contentuid="h587f4801g411bg4d92g9d70gbeef3222364d" version="3">Damage dice are rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; against the affected creature when attacked by the Spellcaster who applied this status.</content>
 
 	<content contentuid="had1ccd22g91e2g4935g9bedg54c2336f9d5d" version="1">Hypnotic Pattern</content>
-	<content contentuid="h9823ea25g2440g449bgb758g21fdce376f00" version="6">Capture an enemies gaze within a hypnotic pattern, preventing them from moving or noticing your presence.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
+	<content contentuid="h9823ea25g2440g449bgb758g21fdce376f00" version="6">Capture an enemies gaze within a hypnotic pattern, preventing them from moving or noticing your presence. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Hypnotized.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
 	<content contentuid="h794977bag3041g49b7g9c5aga289b65b3008" version="1">Hypnotised</content>
 	<content contentuid="h34f65483g62f8g40a7gabd2g70930c633161" version="2">Affected creature cannot move. It will not notice any other creatures presence.&lt;br&gt;&lt;br&gt;Removed by taking damage or if &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Helped&lt;/LSTag&gt;.</content>
 	<content contentuid="h6fab8b92ge690g42e7g9e88g79ca9d7e6518" version="1">Hypnotic Gaze</content>
@@ -1527,7 +1527,7 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 	<content contentuid="hda2aa6aeg7b6cg4c74gb82ag14d462d8f358" version="6">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all melee damage rolls for the rest of your turn.</content>
 
 	<content contentuid="h2111e0a4g5c6ag4dfaga296g7d1cea2edb55" version="1">Cleave</content>
-	<content contentuid="he4b11b90gfe70g4bc6ga15eg0edd36a31652" version="8">Swing your weapon in a large arc to attack multiple enemies in front of you.</content>
+	<content contentuid="he4b11b90gfe70g4bc6ga15eg0edd36a31652" version="8">Swing your weapon in a large arc to attack multiple creatures in front of you.</content>
 
 	<content contentuid="hea5b28c1gbeb4g4879gb80dgc9bd4b784efc" version="2">Concussive Smash</content>
 	<content contentuid="h90a1c9eegce5eg4a7dgb13agd067d29b812f" version="7">Possibly &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Daze&lt;/LSTag&gt; your target.</content>
@@ -1700,7 +1700,7 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 	<content contentuid="9d15b31f-c471-45a9-ac98-8f6cd6fe9f95" version="1">Scroll of Inflict Wounds</content>
 	<content contentuid="1868114f-7177-4e05-9999-e29eee66ae44" version="1">Scroll of Insect Plague</content>
 	<content contentuid="f7d2fb59-70d0-4578-9719-6c9e06c43c2c" version="1">Scroll of Latent Restoration</content>
-	<content contentuid="92261bc7-4bcc-4188-8518-006b7d40a054" version="1">Scroll of Light</content>
+	<content contentuid="92261bc7-4bcc-4188-8518-006b7d40a054" version="1">Scroll of Guiding Moonlight</content>
 	<content contentuid="cb6e3bc5-aefe-4c45-9e02-0ddc1d84e4f8" version="1">Scroll of Lightning Arrow</content>
 	<content contentuid="5094226c-bfd0-490d-832e-45a5dc607111" version="1">Scroll of Poison Spray</content>
 	<content contentuid="22428211-b311-49e2-a212-12ed720c0bde" version="1">Scroll of Mage Hand</content>

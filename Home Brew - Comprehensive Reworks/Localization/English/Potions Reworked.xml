@@ -11,6 +11,7 @@
 <!--HEALING POTIONS-->
 	<content contentuid="hd758f907g0b31g4e74ga4d4g4e8dc919a454" version="1">The amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; restored by potions increases along with your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 	<content contentuid="h26289dbdg9b04g4f4dgaa93g54e83767896b" version="1">The amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; restored by potions increases along with your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="h26289dbdg9b04g4f4dgaa95sd4f58e4f8458" version="1">Affected creature's consumed potion will restore additional &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; once this status has expired.&lt;br&gt;&lt;br&gt;No effect if &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Downed&lt;/LSTag&gt;. Consuming another potion will reset the duration of this status.</content>
 
 <!--POTION OF ANIMAL SPEAKING-->
 	<content contentuid="hc37cbafdgfa6cg4ce7g8a12g1fd2990b8d66" version="1">Gain the ability to temporarily comprehend and verbally communicate with beasts.</content>

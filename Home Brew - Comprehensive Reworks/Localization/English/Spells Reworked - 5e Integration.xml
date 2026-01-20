@@ -24,7 +24,7 @@
 	<content contentuid="06ccff5b74f84871a26d66436d5da6d500005" version="1">Frostbite</content>
 	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000e" version="1">Touch a creature, causing a numbing frost to form around them, imposing &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
 	<content contentuid="06ccff5b74f84871a26d66436d5da6d5000a5" version="1">Frigid</content>
-	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000ae" version="1">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on their next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000ae" version="1">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;. Removed upon dealing damage.</content>
 
 	<content contentuid="06ccff5b74f84871a26d66436d5da6d500006" version="1">Green Flame-Blade</content>
 	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000f" version="1">Strike a creature with your melee weapon, causing a spark of flame to ricochet into another enemy within [1], dealing [2].&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt;.</content>

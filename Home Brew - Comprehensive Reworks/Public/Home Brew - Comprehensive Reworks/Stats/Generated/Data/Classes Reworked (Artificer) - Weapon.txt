@@ -65,7 +65,7 @@ data "PassivesOnEquip" "LowRange_Firearm_Passive;Firearm_Missfire;CloseRangeBrui
 
 new entry "WPN_MARA_Blunderbuss_3"
 type "Weapon"
-using "WPN_HeavyCrossbow"
+using "WPN_MARA_Blunderbuss_1"
 data "RootTemplate" "431a09c9-139a-410c-8fca-d41c76be5b55"
 data "DefaultBoosts" "Attribute(InventoryBound);WeaponEnchantment(3)" 
 data "Rarity" "Legendary"
