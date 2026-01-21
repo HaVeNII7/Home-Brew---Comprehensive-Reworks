@@ -23,9 +23,9 @@
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000x1" version="1">Close-Range Bruiser</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000xa" version="2">While firing at multiple enemies within [1] of each other, this weapon rolls all damage dealt with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000y1" version="1">Splattershot</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000ya" version="2">upon landing a Killing Blow with this weapon, your target explodes, dealing [1] to all enemies within [2] of them.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000ya" version="2">Upon landing a Killing Blow with this weapon, your target explodes, dealing [1] to all enemies within [2] of them.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000z1" version="1">Double-Barrel</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000za" version="2">Dealing damage with this weapons basic attack twice within a turn will always roll the second shot as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000za" version="2">Dealing damage with this weapon twice to the same enemy within a turn will always roll the second hit as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f00zz1" version="1">Double-Barreled Over</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f00zza" version="2">Affected creature will be &lt;LSTag Tooltip="CriticalHit"&gt;Critically Hit&lt;/LSTag&gt; if damaged by a blunderbuss.</content>
 
@@ -152,12 +152,12 @@
 	<content contentuid="99523fb3deaa14de1766304e0911fbc49ae99" version="2">Used in order to infuse allies and enemies.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00001" version="1">Infusion Matrix</content>
-	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000a" version="2">Gain the ability to infuse allies and enemies in order to apply powerful buffs and debuffs. In addition, &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt; your firearms will restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Infusion Charge&lt;/LSTag&gt;.</content>
+	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000a" version="2">Gain the ability to infuse allies and enemies in order to apply powerful buffs and debuffs. In addition, &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt; your firearms will restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f000z1" version="1">Infuse Creature</content>
 	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s000za" version="2">Infuse enemies or allies in order to provide a variety of different effects. Enemies currently under &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Immunity&lt;/LSTag&gt; can not be Infused.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00002" version="1">Adaptive Intervention</content>
-	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000b" version="2">You may expend one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Infusion Charge&lt;/LSTag&gt; in order to grant an ally &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;. Additionally, when an ally or enemy is about to be damaged, you may expend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and an Infusion Charge to immediately &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; them.</content>
+	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000b" version="2">You may expend one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt; in order to grant an ally &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;. Additionally, when an ally or enemy is about to be damaged, you may expend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and a &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt; to immediately &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; them.</content>
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f000z2" version="1">Adaptive Intervention</content>
 	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s000zb" version="2">Grant an ally &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f000y2" version="1">Adaptive Intervention</content>
@@ -171,7 +171,7 @@
 	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000c" version="2">You may now &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; two creatures at once.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00004" version="1">Wanton Processing</content>
-	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000d" version="2">Once per turn, upon landing a Killing Blow or a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;, you restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Infusion Charge&lt;/LSTag&gt;.</content>
+	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000d" version="2">Once per turn, upon landing a Killing Blow or a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;, you restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00005" version="1">Overclocked Subroutine</content>
 	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000e" version="2">You may now &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; three creatures at once.</content>
