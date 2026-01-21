@@ -73,16 +73,16 @@
 	<content contentuid="h853b555ege835g49e1g9e27g74680e24aef5" version="4">You immediately restore your &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; at the beginning of combat and have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when attacking targets who have not taken a turn yet.&lt;br&gt;&lt;br&gt;Outside of combat, while &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Sneaking&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt;, any successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; you make deals an additonal 6 damage multiplied by your level. The type of damage dealt is the same as your main-hand melee weapon.</content>
 
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b394a584" version="1">Assassin's Focus</content>
-	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b093kff" version="3">Every three turns while in combat, you gain an &lt;LSTag Type="ActionResource" Tooltip="AssassinsMark"&gt;Assassin's Mark&lt;/LSTag&gt;. You may use these to trigger &lt;LSTag Type="Passive" Tooltip="Assassinate"&gt;Assassinate&lt;/LSTag&gt; while in combat. Killing an enemy with this passive active will not expend your Assassin's Mark. This effect can be toggled at any time.</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b093kff" version="3">Every three turns while in combat, you gain an &lt;LSTag Type="ActionResource" Tooltip="AssassinsMark"&gt;Assassin's Mark&lt;/LSTag&gt;. You may use these to trigger &lt;LSTag Type="Status" Tooltip="Tooltip_Assassinate"&gt;Assassinate&lt;/LSTag&gt; while in combat. Killing an enemy with this passive active will not expend your Assassin's Mark. This effect can be toggled at any time.</content>
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b3922d54" version="1">Assassin's Focus</content>
 	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b066d45" version="3">Affected creature will gain an &lt;LSTag Type="ActionResource" Tooltip="AssassinsMark"&gt;Assassin's Mark&lt;/LSTag&gt; upon accruing three stacks of this condition.</content>
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b3922d64" version="1">Assassination</content>
-	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b0dd898" version="3">Affected creature may trigger &lt;LSTag Type="Passive" Tooltip="Assassinate"&gt;Assassinate&lt;/LSTag&gt; when dealing damage with a weapon.</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b0dd898" version="3">Affected creature may trigger &lt;LSTag Type="Status" Tooltip="Tooltip_Assassinate"&gt;Assassinate&lt;/LSTag&gt; when dealing damage with a weapon.</content>
 
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b322d5f4" version="1">Assassin's Quarry</content>
-	<content contentuid="h098941ccgc4ecg49f2gb22agabed0bss6f45" version="3">Each turn while in combat, you have a 33% chance to gain an &lt;LSTag Type="ActionResource" Tooltip="AssassinsMark"&gt;Assassin's Mark&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Expend an Assassin's Mark to trigger &lt;LSTag Type="Passive" Tooltip="Assassinate"&gt;Assassinate&lt;/LSTag&gt; on your next instance of damage. This effect can be toggled at any time.</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22agabed0bss6f45" version="3">Each turn while in combat, you have a 33% chance to gain an &lt;LSTag Type="ActionResource" Tooltip="AssassinsMark"&gt;Assassin's Mark&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Expend an Assassin's Mark to trigger &lt;LSTag Type="Status" Tooltip="Tooltip_Assassinate"&gt;Assassinate&lt;/LSTag&gt; on your next instance of damage. This effect can be toggled at any time.</content>
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b3966d54" version="1">Assassin's Mark</content>
-	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b0dd5f8" version="3">Used to trigger &lt;LSTag Type="Passive" Tooltip="Assassinate"&gt;Assassinate&lt;/LSTag&gt; when dealing damage.</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b0dd5f8" version="3">Used to trigger &lt;LSTag Type="Status" Tooltip="Tooltip_Assassinate"&gt;Assassinate&lt;/LSTag&gt; when dealing damage.</content>
 
 	<content contentuid="hc4558204g2c77g4b58ga69870ba6b394a584" version="1">Critical Shock</content>
 	<content contentuid="h098941ccgc4ecg49f2dfsd68abed0b093kff" version="3">All successful &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against &lt;LSTag Type="Status" Tooltip="SURPRISED"&gt;Surprised&lt;/LSTag&gt; targets are considered &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
@@ -129,7 +129,7 @@
 	<content contentuid="hba8f1eeeg12c1g43dag9a43g15d42b30000c" version="5">Throw a grenade at a target.</content>
 
 	<content contentuid="h34233a5agb50eg4820g9f10g3e21aa000005" version="1">Specialist</content>
-	<content contentuid="hba8f1eeeg12c1g43dag9a43g15d42b30000e" version="2">Each of your Mercenary abilities are are improved, allowing you to target an additional creature. &lt;LSTag Type="Spell" Tooltip="Target_DirtyTrick_Panache"&gt;Panache&lt;/LSTag&gt; now affects all humanoids in a [1] radius.</content>
+	<content contentuid="hba8f1eeeg12c1g43dag9a43g15d42b30000e" version="2">Each of your Mercenary abilities are are improved, allowing you to target an additional creature. &lt;LSTag Type="Spell" Tooltip="Target_DirtyTrick_Panache"&gt;Provocative Challenge&lt;/LSTag&gt; now affects all humanoids in a [1] radius.</content>
 
 	<content contentuid="h34233a5agb50eg4820g9f10g3e21aa000006" version="1">Cannon Fire</content>
 	<content contentuid="hba8f1eeeg12c1g43dag9a43g15d42b30000f" version="5">Summon the explosive power of cannons fired indiscriminately, blanketing an area of the battlefield at random.</content>

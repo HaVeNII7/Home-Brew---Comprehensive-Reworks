@@ -3,6 +3,11 @@
 
 <!--ARTIFICER-->
 
+	<content contentuid="66523fb3deaa14de1766304e0918494800001" version="1">Blunderbuss</content>
+	<content contentuid="66523fb3deaa14de1766304e0918494800002" version="1">Flintlock</content>
+	<content contentuid="66523fb3deaa14de1766304e0918494800003" version="1">Musket</content>
+	<content contentuid="66523fb3deaa14de1766304e091849480000a" version="2">The players currently equipped firearm.</content>
+
 	<content contentuid="66523fb3deaa14de1766304e0911fbc49ae66" version="1">Artificer</content>
 	<content contentuid="77523fb3deaa14de1766304e0911fbc49ae77" version="2">Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex system waiting to be decoded and then harnessed.</content>
 
@@ -16,11 +21,11 @@
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f0000c" version="2">Your firearms have reached the peak of their craftsmanship. They deal additional damage and have new effects.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Swapping your firearms may be done at any time, and will not consume a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000x1" version="1">Close-Range Bruiser</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000xa" version="2">While firing at multiple enemies within [1] of each other, this weapon makes all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000xa" version="2">While firing at multiple enemies within [1] of each other, this weapon rolls all damage dealt with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000y1" version="1">Splattershot</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000ya" version="2">upon landing a Killing Blow with this weapon, your target explodes, dealing [1] to all enemies within [2] of them.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000z1" version="1">Double-Barrel</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000za" version="2">When firing this weapon twice within a turn, the second shot will always roll as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000za" version="2">Dealing damage with this weapons basic attack twice within a turn will always roll the second shot as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f00zz1" version="1">Double-Barreled Over</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f00zza" version="2">Affected creature will be &lt;LSTag Tooltip="CriticalHit"&gt;Critically Hit&lt;/LSTag&gt; if damaged by a blunderbuss.</content>
 
@@ -34,9 +39,9 @@
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000x3" version="1">Boots on the Ground</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000xc" version="2">Upon firing this weapon, you deal additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; if you have not moved during your turn.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000y3" version="1">Kill Confirmed</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000yc" version="2">Once per turn, dealing damage with this weapon to an enemy below 25% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; will deal the maximum damage possible.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000yc" version="2">Dealing damage with this weapon to an enemy below 33% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; will deal the maximum damage possible.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000z3" version="1">One in the Chamber</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000zc" version="2">Dealing damage with this weapon to an enemy who has yet to be damaged will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000zc" version="2">Dealing damage with this weapon to an enemy below 33% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 
 <!--ARCANIST-->
 
@@ -80,11 +85,11 @@
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000c" version="2">Gain the ability to &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reload&lt;/LSTag&gt; your firearms as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00004" version="1">Focus Fire</content>
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000d" version="2">Dealing damage to an enemy with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; applies one stack of &lt;LSTag Type="Status" Tooltip="FOCUS_FIRE"&gt;Focus Fire&lt;/LSTag&gt;. Each time that they are subsequently damaged by a Ranged Weapon Attack, they take additional damage equal to the amount of Focus Fire stacks they have remaining.&lt;br&gt;&lt;br&gt;Damaging another creature or missing your shot will reset the amount of stacks.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000d" version="2">Dealing damage to an enemy with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; applies one stack of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt;. Each time that they are subsequently damaged by a Ranged Weapon Attack, they take additional damage equal to the amount of Focus Fire stacks they have remaining.&lt;br&gt;&lt;br&gt;Damaging another creature or missing your shot will reset the amount of stacks.</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000z4" version="1">Focus Fire: Target</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000zd" version="2">Affected creature will take additional damage equal to the amount of stacks of Focus Fire they have remaining.</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00zz4" version="1">Focus Fire: Focusing</content>
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00zzd" version="2">Affected creature will deal additional damage equal to the amount of stacks of &lt;LSTag Type="Status" Tooltip="FOCUS_FIRE"&gt;Focus Fire&lt;/LSTag&gt; their target has remaining.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00zzd" version="2">Affected creature will deal additional damage equal to the amount of stacks of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt; their target has remaining.</content>
 
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00005" version="1">Covering Fire</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000e" version="2">Once per turn, landing a Killing Blow with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; will restore an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
@@ -147,7 +152,7 @@
 	<content contentuid="99523fb3deaa14de1766304e0911fbc49ae99" version="2">Used in order to infuse allies and enemies.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00001" version="1">Infusion Matrix</content>
-	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000a" version="2">Gain the ability to infuse allies and enemies in order to apply powerful buffs and debuffs. In addition, &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt; your firearms in combat will restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Infusion Charge&lt;/LSTag&gt;.</content>
+	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000a" version="2">Gain the ability to infuse allies and enemies in order to apply powerful buffs and debuffs. In addition, &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt; your firearms will restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Infusion Charge&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f000z1" version="1">Infuse Creature</content>
 	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s000za" version="2">Infuse enemies or allies in order to provide a variety of different effects. Enemies currently under &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Immunity&lt;/LSTag&gt; can not be Infused.</content>
 
@@ -176,6 +181,9 @@
 
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400000" version="1">Optimization Matrix</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc400000" version="2">Select an effect to apply to your allies upon Infusing them.</content>
+
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40xxyz" version="1">Infused</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40xyzz" version="2">Affected creature is affected by a variety of effects based on a nearby Arcsmith's passives.</content>
 
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400001" version="1">Optimization: Adaptive Shielding</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000a" version="2">Grant allies &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
@@ -226,19 +234,19 @@
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z002" version="1">Sabatoge: Concentration Breach</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00b" version="2">Upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; an enemy, they immediately lose their &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z003" version="1">Sabatoge: Critical Lockout</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00c" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; cannot roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00c" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z004" version="1">Sabatoge: Cybernetic Psychosis</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00d" version="2">Upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; an enemy, they become rife with &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Madness&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z005" version="1">Sabatoge: Defensive Degredation</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00e" version="2">Impose upon enemies -2 penalty to &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z006" version="1">Sabatoge: Direct System Damage</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00f" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; take 1d8 Force damage multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00f" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; take 1d8 Force damage multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z007" version="1">Sabatoge: Exposed System Info</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00g" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; will have all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; made toward them be made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00g" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; will have all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; made toward them be made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z008" version="1">Sabatoge: Greater Soporific</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00h" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; will fall &lt;LSTag Type="Status" Tooltip="SLEEPING"&gt;Asleep&lt;/LSTag&gt;.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00h" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; will fall &lt;LSTag Type="Status" Tooltip="SLEEPING"&gt;Asleep&lt;/LSTag&gt; at the start of their next turn.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z009" version="1">Sabatoge: Healing Lockout</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00i" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; cannot recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00i" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z010" version="1">Sabatoge: Minimum Yield</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00j" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; have their weapons damage dice increased to a D4.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z011" version="1">Sabatoge: Mobility Lock</content>
@@ -252,7 +260,7 @@
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z015" version="1">Sabatoge: Save Destabilization</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00o" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; make all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z016" version="1">Sabatoge: Shield Collapse</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00p" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; have all &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Point&lt;/LSTag&gt; stripped from them.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00p" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; have all &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; stripped from them.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z017" version="1">Sabatoge: Signal Silence</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00q" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; become &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z018" version="1">Sabatoge: Spell Interference</content>
@@ -268,7 +276,7 @@
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zzz" version="2">Creation manifests brillaince, moulded in arcane echoes.&lt;br&gt;Productions of power, brought to life by your ingenuity.</content>
 
 	<content contentuid="115fb28f01e84e44b00000475sd5f4ef2f001" version="1">Adaptive Plating</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500a" version="2">The first time you receive damage each turn, you gain &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500a" version="2">At the beginning of each turn while in combat, you gain &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f002" version="1">Arcane Calibration Matrix</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500b" version="2">Your firearms are incapable of &lt;LSTag Type="Status" Tooltip="FIREARM_MALFUNCTION"&gt;Misfiring&lt;/LSTag&gt;.</content>
@@ -303,7 +311,7 @@
 	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d09" version="1">Elemental Payload: Radiant</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d10" version="1">Elemental Payload: Thunder</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d0a" version="2">Infuse your equipped ranged weapon with additional elemental damage.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
-	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2dza" version="2">Affected weapon deals an additional [1].</content>
+	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2dza" version="2">Affected creature deals an additional [1] when dealing damage with their equipped weapon.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f007" version="1">Emergency Power Cell</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500g" version="2">Once per turn, missing an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will refund your &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
@@ -386,41 +394,50 @@
 
 	<content contentuid="h4eb05b30f89b4d3fa9ea58a29dc17fb78c6g" version="1">Blunderbuss</content>
 	<content contentuid="h19b1e375f56847abba0b91fe963663a025ab" version="1">Blunderbuss</content>
-	<content contentuid="hf23219f4d0914655a282c7f6327b33e54g3d" version="1">Refined Blunderbuss</content>
-	<content contentuid="hc20cdb98d4cf407d8686bc7af76360a75181" version="1">This crudely assembled blunderbuss appears to have been fashioned from scrap metal and warped wood, held together with mismatched parts and rough craftsmanship. When fired, the firearm emits a loud, irregular bang, often accompanied by smokepowder. Its scattershot can spray unpredictably—sometimes hitting enemies, other times missing entirely.</content>
-	<content contentuid="h1138118bce9b41628c10a095c9fbbb6b4776" version="1">Axe Head Blunderbuss</content>
-	<content contentuid="hca108b480557468da68c781a54085093a5be" version="1">Ever wonder what happens if you mash a battle axe and a blunderbuss together? Well, here’s your answer. The Axehead Blunderbuss is a ridiculous firearm that looks like a savage barbarians’s dream—and possibly a nightmare for anyone caught in its spray.</content> 
+	<content contentuid="hf23219f4d0914655a282c7f6327b33e54g3d" version="1">Improved Blunderbuss</content>
+	<content contentuid="h1138118bce9b41628c10a095c9fbbb6b4776" version="1">Refined Blunderbuss</content>
+	<content contentuid="hc20cdb98d4cf407d8686bc7af76360a75181" version="1">This blunderbuss appears to have been fashioned from gondian metalworking, held together by their craftsmanship. When fired, the firearm emits a loud, irregular bang.</content>
 
 	<content contentuid="h5bd072ff8e674f1c9c4d544b43ba51123gf5" version="1">Flintlock</content>
 	<content contentuid="h79c3ecdb17104a25a3ed85df12dfebb98ff9" version="1">Flintlock</content>
-	<content contentuid="he816d8955eb9414db00ee78b1a46f2cbc209" version="1">Refined Flintlock</content>
-	<content contentuid="h8b48e08f01fb4bb49b3fdae19cf0afb7de55" version="1">A sleek, elegant firearm that marks a significant leap forward in personal weaponry, the flintlock features a smooth barrel and intricate woodwork. Its distinctive ignition system relies on a flint striking steel to produce sparks, igniting the powder charge and sending a lead ball hurtling towards its target. Known for its reliability across firearms, the flintlock became a symbol of technological progress and tactical advantage.</content> 
-	<content contentuid="h641e9744362f43f3a9813d49fed8be0c4396" version="1">Gondian Hand Cannon</content> 
-	<content contentuid="he2ae4e8474454e85aa176094ba32b84c5a5d" version="1">Forged in the bustling workshops of Gond and masterfully engineered for rapid fire, the Gondian Double Flintlock is a marvel of craftsmanship—and an absolute showstopper. This double-barreled masterpiece resembles twin sleek black guns, seamlessly mounted side by side, ready to unleash a storm of lead in quick succession. When fired, both barrels discharge simultaneously or in quick sequence, flooding the area with deadly projectiles and chaos. Its design allows an expert marksman to deliver devastating volleys.</content> 
+	<content contentuid="he816d8955eb9414db00ee78b1a46f2cbc209" version="1">Improved Flintlock</content>
+	<content contentuid="h641e9744362f43f3a9813d49fed8be0c4396" version="1">Refined Flintlock</content> 
+	<content contentuid="h8b48e08f01fb4bb49b3fdae19cf0afb7de55" version="1">A sleek, elegant firearm that marks a significant leap forward in personal weaponry. When fired, it triggers a distinctive ignition system which relies on a flint striking steel to produce sparks.</content> 
 
 	<content contentuid="hf180b3c3b984470a98b16721ee33d3bd888c" version="1">Musket</content>
 	<content contentuid="h16eb2966208447609f43970d0c8d3c879d25" version="1">Musket</content>
-	<content contentuid="hc810809c2a8a47759e12218aedc3563477b0" version="1">Refined Musket</content>
-	<content contentuid="hf7ade17af6e1465ea6fb6829f80523fb9979" version="1">This heavy, ornate firearm features a long barrel carved with intricate patterns and a finely crafted flintlock ignition system. When fired, it unleashes a devastating bolt of lead. Its smoke-belching shot can turn the tide of combat, providing a dramatic and powerful alternative to traditional bows and crossbows.</content>
-	<content contentuid="h457e4699e73c45129ead27f35b301d53ga5d" version="1">Hellfire Musket</content>
-	<content contentuid="ha3237193e51b498b8e683f155f1a09b3c42c" version="1">Steam constantly hisses from vents along the body. When fired, pressurized steam and mechanically driven pistons propel a lead ball with remarkable force and precision, often accompanied by a burst of scalding vapor. The steam musket’s roaring report echoes like a thunderclap, and its fiery burst can ignite combustible materials. This weapon embodies a perfect fusion of steam-powered engineering and firearm mastery, making it a formidable addition to Dictators arsenal.</content>
+	<content contentuid="hc810809c2a8a47759e12218aedc3563477b0" version="1">Improved Musket</content>
+	<content contentuid="h457e4699e73c45129ead27f35b301d53ga5d" version="1">Refined Musket</content>
+	<content contentuid="hf7ade17af6e1465ea6fb6829f80523fb9979" version="1">This heavy, ornate firearm features a long barrel carved with intricate patterns and a finely crafted flintlock ignition system. When fired, it unleashes a devastating bolt of lead.</content>
 
-	<content contentuid="h409da1e44d994836b7fb8289f44fb9b182fb" version="1">Weapon Tag</content>
-	<content contentuid="h441874ec06a54ecd858144db752e1724f3bd" version="1">Small Firearm</content>
-
+	<content contentuid="h81ed88e5gbedcg4e19g820ag3c711ff35215" version="1">Close Ranged Attack</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f65sd5" version="1">Fire a shell which can decimate a nearby enemy.</content>
 	<content contentuid="he372cfbe906a4cce81d8ba5d822f26f0e402" version="1">Scattershot</content>
-	<content contentuid="h8b1fb58660b4428a847534430560a5d140d2" version="1">Fire a scattershot, dealing damage in an area and leaving targets no chance to evade it.</content>
+	<content contentuid="h8b1fb58660b4428a847534430560a5d140d2" version="1">Fire a scattershot round from your blunderbuss, dealing damage in an area and leaving your targets no chance to evade it.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; This action cannot miss. As such, it also cannot roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 
-	<content contentuid="hdb5d21b859214bef87372ff3b901eaa7cf98" version="1">Fan the Trigger</content>
-	<content contentuid="h621af9ae545f4b8da48885e1216678342f7b" version="1">Expend all your ammunition to fire three shots simultaneously.</content>
+	<content contentuid="h81ed88e5gbedcg4e19g820ag3c711ff35216" version="1">Ranged Attack</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f65sd6" version="1">Fire a single shot with your flintlock.</content>
+	<content contentuid="hdb5d21b859214bef87372ff3b901eaa7cf98" version="1">Fan the Hammer</content>
+	<content contentuid="h621af9ae545f4b8da48885e1216678342f7b" version="1">Fire three shots from your flintlock simultaneously.</content>
 
+	<content contentuid="h81ed88e5gbedcg4e19g820ag3c711ff35217" version="1">Ranged Attack</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f65sd7" version="1">Fire a long range shot from your musket.</content>
 	<content contentuid="h1699213a6f194fa6ac028aaf1119707e2162" version="1">Precision Shot</content>
-	<content contentuid="h691a4d59f41f4427978220a7c85d3cc70921" version="1">Make an incredibly precise shot, allowing you to pierce enemies.</content>
+	<content contentuid="h691a4d59f41f4427978220a7c85d3cc70921" version="1">Fire an incredibly precise shot from your rifle, allowing you to pierce enemies.</content>
+
+	<content contentuid="h509b8e00gacb9g46e8d55s6d5f4ef4500000" version="1">Summon Firearms</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e6as8dfe800000" version="2">Summon one of three unique firearms. As you level in Artificer, they will deal additional damage and gain new effects.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Summoning your firearms may be done at any time as a free action.</content>
+	<content contentuid="h509b8e00gacb9g46e8d55s6d5f4ef4500001" version="1">Summon Blunderbuss</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e6as8dfe80000a" version="2">Summon a blunderbuss, capable of dealing high damage to multiple targets at a short range.</content>
+	<content contentuid="h509b8e00gacb9g46e8d55s6d5f4ef4500002" version="1">Summon Flintlock</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e6as8dfe80000b" version="2">Summon a flintlock capable of dealing consistent damage at a medium range.</content>
+	<content contentuid="h509b8e00gacb9g46e8d55s6d5f4ef4500003" version="1">Summon Musket</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e6as8dfe80000c" version="2">Summon a musket capable of dealing high single target damage at a long range.</content>
 
     <content contentuid="h9948c4df266c474c8f2a9e9f7c75bd508e81" version="1">Reload</content>
-	<content contentuid="h60fad97c1f12406089daa939fafbde5dc671" version="1">Restore your currently equipped firearms supply of ammunition and clear any &lt;LSTag Type="Status" Tooltip="FIREARM_MALFUNCTION"&gt;Misfires&lt;/LSTag&gt;.</content>
+	<content contentuid="h60fad97c1f12406089daa939fafbde5dc671" version="1">Restore your supply of ammunition and clear any &lt;LSTag Type="Status" Tooltip="FIREARM_MALFUNCTION"&gt;Misfires&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h6e14d0af00b24f35a154d0b96e68a1b067d4" version="1">Misfire</content>
-	<content contentuid="he84edbeb69df4c939af10bdf09d10c4966ga" version="1">Affected creature's weapon has malfunctioned. It cannot fire until the start of their next turn.&lt;/b&gt;&lt;br&gt;Cleared by &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt;.</content>
+	<content contentuid="he84edbeb69df4c939af10bdf09d10c4966ga" version="1">Affected creature's firearm has malfunctioned. It cannot fire until the start of their next turn.&lt;/b&gt;&lt;br&gt;Cleared by &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt;.</content>
 
 </contentList>

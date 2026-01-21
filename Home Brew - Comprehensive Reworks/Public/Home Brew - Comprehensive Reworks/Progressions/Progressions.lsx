@@ -110,7 +110,7 @@
 					<attribute id="Boosts" type="LSString" value="Proficiency(HB_Artificer);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Attunement,13,0);ActionResource(FirearmAmmo,3,0)" />
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="Artificer" />
-					<attribute id="PassivesAdded" type="LSString" value="Personality_Wizard;Firepower" />
+					<attribute id="PassivesAdded" type="LSString" value="Personality_Wizard;SummonFirearm_Unlock;Firepower" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
 					<attribute id="Selectors" type="LSString" value="SelectPassives(cf44a7c1-3fcb-4fb6-8624-45dd433c11b1,1,Personality);SelectPassives(15eff335-46df-4268-9eea-aabcb6c13025,1,Traits);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,3,1)" />
 					<attribute id="TableUUID" type="guid" value="6b701f1f-c477-43f0-9afe-0e169f65fc7a" />
@@ -139,7 +139,7 @@
 					<attribute id="Boosts" type="LSString" value="Proficiency(HB_Artificer);ActionResource(Attunement,1,0)" />
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="Artificer" />
-					<attribute id="PassivesAdded" type="LSString" value="Firepower" />
+					<attribute id="PassivesAdded" type="LSString" value="SummonFirearm_Unlock;Firepower" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
 					<attribute id="TableUUID" type="guid" value="6b701f1f-c477-43f0-9afe-0e169f65fc7a" />
 					<attribute id="UUID" type="guid" value="b2d91090-5195-47f3-95cd-7a1f2b8c3b8c" />
@@ -166,7 +166,7 @@
 					<attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Attunement,13,0)" />
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="NPC_Artificer" />
-					<attribute id="PassivesAdded" type="LSString" value="NPC_Artificer_Subclass;NPCConcentration_End;NPCBlocker_Randomizer;Firepower;NPC_Gun_Fix;ClassPassiveRandomizer1_Artificer_Optimization;ClassPassiveRandomizer1_Artificer_Sabatoge" />
+					<attribute id="PassivesAdded" type="LSString" value="NPC_Artificer_Subclass;NPCConcentration_End;NPCBlocker_Randomizer;SummonFirearm_Unlock;Firepower;NPC_Gun_Fix;ClassPassiveRandomizer1_Artificer_Optimization;ClassPassiveRandomizer1_Artificer_Sabatoge" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
 					<attribute id="TableUUID" type="guid" value="d951b92f-acb5-44a6-b642-962cc4c30c17" />
 					<attribute id="UUID" type="guid" value="a049bacd-ad7d-485b-a1dd-ce100e757dda" />
@@ -784,7 +784,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="Armorer" />
-					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_InfusedArcsmith;InfusionMatrix" />
+					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_InfusedArcsmith;InfusionMatrix_Visual;InfusionMatrix" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabatogeMatrix)" />
 					<attribute id="TableUUID" type="guid" value="d72245fb-3565-49ab-86f8-2964920d41c7" />

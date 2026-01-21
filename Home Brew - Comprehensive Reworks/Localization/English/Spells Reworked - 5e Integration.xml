@@ -274,7 +274,7 @@
 	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zl" version="1">Affected creature cannot use &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reactions&lt;/LSTag&gt;.</content>
 
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130013" version="1">Transposition</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000m" version="1">Forcibly teleport another creature to an area you can see. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be transposed.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000m" version="1">Forcibly teleport another creature to an area you can see. &lt;LSTag Type="Status" Tooltip="Tooltip_Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be transposed.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Clerics&lt;br&gt;Paladins&lt;br&gt;Sorcerers</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130z13" version="1">Transposition</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zm" version="1">Affected creature can be teleported at any time by the caster who applied this status.</content>
 

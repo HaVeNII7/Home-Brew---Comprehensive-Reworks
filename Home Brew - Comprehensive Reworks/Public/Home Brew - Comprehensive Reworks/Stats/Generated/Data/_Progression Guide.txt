@@ -21,6 +21,28 @@ data "DisplayName" "hb5a027a4g2934g40bfga5e1g7cb821278a54;1"
 data "Description" "h87a4cfdbg2ba1g4a61gbbe7g540a28a9a966;2"
 data "Icon" "PassiveFeature_MageSlayer_BreakConcentration"
 
+new entry "Tooltip_Dangerous_Encounter"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "51939390dfff9dif9dff4699fafff6d900001;1"
+data "Description" "51939390dfff9dif9dff4699fafff6d90000a;4"
+data "Icon" "PassiveFeature_UnarmoredDefense"
+
+new entry "Tooltip_Fatal_Encounter"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "51939390dfff9dif9dff4699fafff6d900002;1"
+data "Description" "51939390dfff9dif9dff4699fafff6d90000b;4"
+data "Icon" "Spell_Conjuration_SummonDraconicSpirit"
+
+new entry "Tooltip_MAG_Fire_Heat_Convergence_Passive"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h848e2c9fg3432g4695g880fgc7e6647372a0;2"
+data "Description" "h0a936a4cg714dg4771g80edgae9a7097cd3f;3"
+data "DescriptionParams" "DealDamage(1,Fire)"
+data "Icon" "PassiveFeature_HeatConvergence"
+
 <!--ARTIFICER-->
 
 new entry "Tooltip_Firepower"
@@ -754,6 +776,7 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "DisplayName" "ha24a3a6cg38bbg4ef4g8aa3g2a84d982tc01;2"
 data "Description" "hd9f3cddag9dc3g44dfg965ag7134230ftc01;2"
+data "DescriptionParams" "Distance(18)"
 data "Icon" "PassiveFeature_ThunderboltStrike"
 
 new entry "Tooltip_WrathOfTheStorm"

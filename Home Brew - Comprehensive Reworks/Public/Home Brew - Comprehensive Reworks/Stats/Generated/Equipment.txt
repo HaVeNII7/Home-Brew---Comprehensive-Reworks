@@ -1,7 +1,7 @@
 new equipment "EQP_CC_Artificer"
-add initialweaponset "Ranged"
+add initialweaponset "Melee"
 add equipmentgroup
-add equipment entry "WPN_MARA_Musket_1"
+add equipment entry "WPN_LightHammer"
 add equipmentgroup
 add equipment entry "ARM_Padded_BGWatch"
 add equipmentgroup

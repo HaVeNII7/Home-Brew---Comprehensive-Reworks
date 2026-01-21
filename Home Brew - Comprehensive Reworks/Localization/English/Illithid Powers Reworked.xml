@@ -118,9 +118,9 @@
 
 <!--PSIONIC DOMINANCE-->
 	<content contentuid="he41de5bbgb272g4762g8ebdg2e019a7d674e" version="2">Psionic Dominance</content>
-	<content contentuid="h9505afa8gf321g41cegbfbeg48626961f9a5" version="4">Once per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, when an enemy within [1] targets you with a Spell, you may immediately nullify it.&lt;Br&gt;&lt;br&gt;&lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot have their Spells nullified.</content>
+	<content contentuid="h9505afa8gf321g41cegbfbeg48626961f9a5" version="4">Once per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, when an enemy within [1] targets you with a Spell, you may immediately nullify it.&lt;Br&gt;&lt;br&gt;&lt;LSTag Type="Status" Tooltip="Tooltip_Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot have their Spells nullified.</content>
 	<content contentuid="hff08e0f3g51c5g4035g88a5gc62df0f40b36" version="2">Psionic Dominance</content>
-	<content contentuid="h12a36ce9g5886g4c82ga429g86007c9ef2a0" version="1">When an enemy within [1] targets you with a Spell, immediately nullify it.&lt;Br&gt;&lt;br&gt;&lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot have their Spells nullified.</content>
+	<content contentuid="h12a36ce9g5886g4c82ga429g86007c9ef2a0" version="1">When an enemy within [1] targets you with a Spell, immediately nullify it.&lt;Br&gt;&lt;br&gt;&lt;LSTag Type="Status" Tooltip="Tooltip_Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot have their Spells nullified.</content>
 
 <!--BLACK HOLE-->
 	<content contentuid="he71b1f23gc2bdg45f0g99c1g9f476ec396b6" version="2">Black Hole</content>

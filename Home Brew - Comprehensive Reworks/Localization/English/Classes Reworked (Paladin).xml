@@ -27,7 +27,7 @@
 	<content contentuid="fe6f4159abae42539029e284001d12de11111" version="3">Oath Broken</content>
 	<content contentuid="fe6f4159abae42539029e284001d12de22222" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Oathbroken"&gt;Oathbroken Smite&lt;/LSTag&gt;.</content>
 	<content contentuid="h940c3156gad0fg4a92g8573gff26b0433333" version="1">Oathbroken Smite</content>
-	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c944444" version="2">Bend the will of your target with necrotic wrath. This action always rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon damaging a target, they become &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt;. Your ability to Subjugate other creatures may be toggled at any time. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Subjugated.</content>
+	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c944444" version="2">Bend the will of your target with necrotic wrath. This action always rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon damaging a target, they become &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt;. Your ability to Subjugate other creatures may be toggled at any time. &lt;LSTag Type="Status" Tooltip="Tooltip_Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Subjugated.</content>
 	<content contentuid="h940c3156gad0fg4a92g8573gff26b0655555" version="1">Oathbroken Subjugation</content>
 	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c966666" version="2">Affected creature will follow and fight alongside the Paladin who subjugated them.&lt;br&gt;&lt;br&gt;If damaged by the Paladin or their allies, the subjugated creature will break free from the Paladin's control.&lt;br&gt;&lt;br&gt;A creature may only be Subjugated if one of their allies is alive and nearby. Removed if &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Downed&lt;/LSTag&gt;.</content>
 
@@ -109,7 +109,7 @@
 	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8a22d3f4" version="1">Oathbound Defender</content>
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e422d35f" version="3">Your &lt;LSTag Type="Spell" Tooltip="Shout_HealingRadiance"&gt;Healing Radiance&lt;/LSTag&gt; now grants &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage until it is recast. When dealing damage to a target affected by your &lt;LSTag Type="Spell" Tooltip="Target_NaturesWrath"&gt;Binding Radiance&lt;/LSTag&gt;, all damage dice is rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
-<!--OATH OF THE CROWN-->
+<!--OATH OF THE CROWNED PHOENIX-->
 
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081e8db2" version="2">Oath of the Crowned Phoenix</content>
 	<content contentuid="hb0043457gfdd6g470agbfd6g6594b92ca488" version="2">You have sworn yourself to the ideals of civilisation and law, serving society to ensure it is reborn from the ashes of our mistakes.&lt;br&gt;&lt;br&gt;Breaking your oath will result in grave consequences.</content>
@@ -190,7 +190,7 @@
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4derere" version="3">When making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; or dealing damage to a Undead type creature, roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Once per turn, upon landing a killing blow on an enemy Undead, restore one &lt;LSTag Type="ActionResource" Tooltip="WarPriestActionPoint"&gt;Crusader's Smite&lt;/LSTag&gt; charge.</content>
 
 	<content contentuid="hcf1bdf5bg6399g4460g881fg174d780e68c0" version="1">Inquisitor's Might</content>
-	<content contentuid="h0f21e528gda66g4bb7g988cg9039f7eaa2a6" version="2">You or an ally's weapon attacks deal an additional [1] and can &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Daze&lt;/LSTag&gt; enemies for 1 turn.</content>
+	<content contentuid="h0f21e528gda66g4bb7g988cg9039f7eaa2a6" version="2">Infuse your weapons, causing their attacks to deal an additional [1] and can &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Daze&lt;/LSTag&gt; enemies for 1 turn.</content>
 	<content contentuid="h0af19e18g2a2dg4907ga5e0g8bb939887b84" version="1">Inquisitor's Might</content>
 	<content contentuid="h64863ad5gd1acg47eegbca9g9fe7aeac4b7f" version="1">Affected creature's weapon attacks deal an additional [1] and can &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Daze&lt;/LSTag&gt; targets for 1 turn.</content>
 
@@ -223,7 +223,7 @@
 <!--OATHBREAKER-->
 
 	<content contentuid="h86a825dagb852g4f68g847cg41fcbs5d4f69" version="1">Subjugation</content>
-	<content contentuid="hf12dfcdfg3774g4f31g849sd8fs9d84fs987" version="3">Impose the power of your broken Oath to &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugate&lt;/LSTag&gt; other creatures. While enabled, Subjugation of enemies is possible. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Subjugated.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849sd8fs9d84fs987" version="3">Impose the power of your broken Oath to &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugate&lt;/LSTag&gt; other creatures. While enabled, Subjugation of enemies is possible. &lt;LSTag Type="Status" Tooltip="Tooltip_Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Subjugated.</content>
 	<content contentuid="ha612b54dg48c5g45cegbe8fg273c791e5a41" version="1">Control Undead</content>
 	<content contentuid="h7c01bf17g01deg4907gb001g8280ca511db6" version="3">Use the newfound power of your shattered Oath to force control over an Undead creature.</content>
 	<content contentuid="hb02ee372ga5eag4cb9g98eegdf84c040f8f1" version="1">Undead Servant</content>
@@ -235,7 +235,7 @@
 	<content contentuid="h058b7513g6ddcg4f92gafc7gd608373e8c13" version="1">Affected creature suffers from an imposing sense of dread. &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8afasdfs" version="1">Vicious Condemnation</content>
-	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4d2398u" version="3">Upon killing a target, you inflict upon them a terrible curse, shattering their mind into fragments which become trapped within your equipped weapon and causing you to deal an additional [1]. While their mind remains trapped in your weapon, dealing damage with it may &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugate&lt;/LSTag&gt; other creatures. Your ability to Subjugate other creatures may be toggled at any time. &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Subjugated.</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4d2398u" version="3">Upon killing a target, you inflict upon them a terrible curse, shattering their mind into fragments which become trapped within your equipped weapon and causing you to deal an additional [1]. While their mind remains trapped in your weapon, dealing damage with it may &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugate&lt;/LSTag&gt; other creatures. Your ability to Subjugate other creatures may be toggled at any time. &lt;LSTag Type="Status" Tooltip="Tooltip_Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Subjugated.</content>
 	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a82422545" version="1">Vicious Condemnation</content>
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1330asd66987" version="3">Affected creature deals an additional [1] with their main-hand weapon and may &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugate&lt;/LSTag&gt; other creatures upon dealing damage.</content>
 	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a82415d56" version="1">Vicious Condemnation</content>

@@ -1017,7 +1017,7 @@
 
 <!--DAUNTLESS AMULET-->
 	<content contentuid="h150f414cg5023g44cbg9d3fgs31df156d2sd" version="2">Dragonslayer</content>
-	<content contentuid="ha451de9fg863eg45e5g9976999ed85eff458" version="4">The number you need to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking a &lt;LSTag Type="Passive" Tooltip="Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; creature is reduced by 1. When attacking a &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; creature, it is reduced by 2.</content>
+	<content contentuid="ha451de9fg863eg45e5g9976999ed85eff458" version="4">The number you need to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking a &lt;LSTag Type="Status" Tooltip="Tooltip_Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; creature is reduced by 1. When attacking a &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; creature, it is reduced by 2.</content>
 
 <!--EVERBURN BLADE-->
 	<content contentuid="h6d7bd506g0399g40d8g9ccbgf2cbb41ff5d6" version="2">Everburn</content>

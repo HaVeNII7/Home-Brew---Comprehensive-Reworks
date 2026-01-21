@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="405" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="BLUNDERBUSSFIREARM" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="66523fb3deaa14de1766304e091849480000a" version="0" />
+			<attribute id="DisplayName" type="TranslatedString" handle="66523fb3deaa14de1766304e0918494800001" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="BLUNDERBUSS" />
+			<attribute id="UUID" type="guid" value="36f74ea5-beb3-4629-9120-ac8a1ee7016e" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

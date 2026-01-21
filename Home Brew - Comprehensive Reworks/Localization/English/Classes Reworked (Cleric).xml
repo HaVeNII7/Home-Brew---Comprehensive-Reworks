@@ -61,7 +61,7 @@
 	<content contentuid="heec87dfbg454fg4550g8622gb200a670000b" version="2">Gain the ability to use a &lt;LSTag Type="ActionResource" Tooltip="ChannelDivinity"&gt;Channel Divinity&lt;/LSTag&gt; charge to place a &lt;LSTag Type="Status" Tooltip="CURSEOFUNDEATH"&gt;Curse of Undeath&lt;/LSTag&gt; upon a creature.</content>
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c000z2" version="1">Channel Divinity: Curse of Undeath</content>
 	<content contentuid="heec87dfbg454fg4550g8622gb200a67000zb" version="2">Place a &lt;LSTag Type="Status" Tooltip="CURSEOFUNDEATH"&gt;Curse of Undeath&lt;/LSTag&gt; upon a creature. They are then considered to be Undead, gaining &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Necrotic and Poison damage.</content>
-	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00ss2" version="1">Curse of Rot</content>
+	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00ss2" version="1">Curse of Undeath</content>
 	<content contentuid="heec87dfbg454fg4550g8622gb200a6700ssb" version="2">Affected creature is considered to be Undead. They have &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Necrotic and Poison damage.</content>
 
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00003" version="1">Harvest</content>

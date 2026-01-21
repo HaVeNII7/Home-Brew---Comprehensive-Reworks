@@ -240,7 +240,7 @@
 	<content contentuid="h68bbe23dg8336g4c12g917dgbf9c5ac6a988" version="2">Your &lt;LSTag Type="Spell" Tooltip="Projectile_PyrrhicFlare"&gt;Pyrrhic Flares&lt;/LSTag&gt; now cause enemies to &lt;LSTag Type="Status" Tooltip="BURNING_LAVA"&gt;Melt&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hc580238eg0032g4f7fg9d2ag7f95874066cf" version="2">Pyrebound</content>
-	<content contentuid="h6fa01c82g439eg42c5g8c62g0169cf08fd50" version="3">Upon activating &lt;LSTag Type="Passive" Tooltip="MAG_Fire_Heat_Convergence_Passive"&gt;Heat Convergence&lt;/LSTag&gt;, you may expend ten stacks of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; in order to cast &lt;LSTag Type="Spell" Tooltip="Target_MeteoricBurst"&gt;Meteoric Burst&lt;/LSTag&gt;.</content>
+	<content contentuid="h6fa01c82g439eg42c5g8c62g0169cf08fd50" version="3">Upon activating &lt;LSTag Type="Status" Tooltip="Tooltip_MAG_Fire_Heat_Convergence_Passive"&gt;Heat Convergence&lt;/LSTag&gt;, you may expend ten stacks of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt; in order to cast &lt;LSTag Type="Spell" Tooltip="Target_MeteoricBurst"&gt;Meteoric Burst&lt;/LSTag&gt;.</content>
 	<content contentuid="hc580238eg0032g4f7fg9d2ag7f93d6f512d5" version="2">Meteoric Burst</content>
 	<content contentuid="h6fa01c82g439eg42c5g8c62g01696s8sfsd6" version="3">Release the latent power stored within you, destroying everything nearby!</content>
 
