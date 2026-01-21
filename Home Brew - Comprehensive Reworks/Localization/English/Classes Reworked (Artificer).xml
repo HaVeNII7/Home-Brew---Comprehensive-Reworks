@@ -23,9 +23,9 @@
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000x1" version="1">Close-Range Bruiser</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000xa" version="2">While firing at multiple enemies within [1] of each other, this weapon rolls all damage dealt with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000y1" version="1">Splattershot</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000ya" version="2">upon landing a Killing Blow with this weapon, your target explodes, dealing [1] to all enemies within [2] of them.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000ya" version="2">Upon landing a Killing Blow with this weapon, your target explodes, dealing [1] to all enemies within [2] of them.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000z1" version="1">Double-Barrel</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000za" version="2">Dealing damage with this weapons basic attack twice within a turn will always roll the second shot as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000za" version="2">Dealing damage with this weapon twice to the same enemy within a turn will always roll the second hit as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f00zz1" version="1">Double-Barreled Over</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f00zza" version="2">Affected creature will be &lt;LSTag Tooltip="CriticalHit"&gt;Critically Hit&lt;/LSTag&gt; if damaged by a blunderbuss.</content>
 
@@ -87,7 +87,7 @@
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00004" version="1">Focus Fire</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000d" version="2">Dealing damage to an enemy with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; applies one stack of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt;. Each time that they are subsequently damaged by a Ranged Weapon Attack, they take additional damage equal to the amount of Focus Fire stacks they have remaining.&lt;br&gt;&lt;br&gt;Damaging another creature or missing your shot will reset the amount of stacks.</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000z4" version="1">Focus Fire: Target</content>
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000zd" version="2">Affected creature will take additional damage equal to the amount of stacks of Focus Fire they have remaining.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000zd" version="2">Affected creature will take additional damage equal to the amount of stacks of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt; they have remaining.</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00zz4" version="1">Focus Fire: Focusing</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00zzd" version="2">Affected creature will deal additional damage equal to the amount of stacks of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt; their target has remaining.</content>
 
@@ -102,7 +102,7 @@
 	<content contentuid="33523fb3deaa14de1766304e0911fbc49ae33" version="1">Battle Synthetic</content>
 	<content contentuid="44523fb3deaa14de1766304e0911fbc49ae44" version="2">Armies require protection, and someone has to put things back together if defenses fall. A Battle Synthetic is an expert at defending others and repairs on the field. To aid in their work, Battlesmiths are accompanied by an Automaton.</content>
 
-	<content contentuid="h509b8e00gacb9g46a5sd65df45e4f2f00001" version="1">Stabalizing Rounds</content>
+	<content contentuid="h509b8e00gacb9g46a5sd65df45e4f2f00001" version="1">Stabilizing Rounds</content>
 	<content contentuid="h5b8e00gacb9g46a5sd6f4566e8f5d8s0000a" version="2">Your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; heal allies within [1] of your target for [2] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46a5sd65df45e4f2f000z1" version="1">Summon Lil' G</content>
 	<content contentuid="h5b8e00gacb9g46a5sd6f4566e8f5d8s000za" version="2">Summon your own personal Automaton. Lil' G grows in strength alongside you as you level as a Battle Synthetic.</content>
@@ -152,12 +152,12 @@
 	<content contentuid="99523fb3deaa14de1766304e0911fbc49ae99" version="2">Used in order to infuse allies and enemies.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00001" version="1">Infusion Matrix</content>
-	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000a" version="2">Gain the ability to infuse allies and enemies in order to apply powerful buffs and debuffs. In addition, &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt; your firearms will restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Infusion Charge&lt;/LSTag&gt;.</content>
+	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000a" version="2">Gain the ability to infuse allies and enemies in order to apply powerful buffs and debuffs. In addition, &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt; your firearms will restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f000z1" version="1">Infuse Creature</content>
-	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s000za" version="2">Infuse enemies or allies in order to provide a variety of different effects. Enemies currently under &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Immunity&lt;/LSTag&gt; can not be Infused.</content>
+	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s000za" version="2">Infuse enemies or allies in order to provide a variety of different effects. Enemies currently under &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Immunity&lt;/LSTag&gt; cannot be &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infused&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00002" version="1">Adaptive Intervention</content>
-	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000b" version="2">You may expend one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Infusion Charge&lt;/LSTag&gt; in order to grant an ally &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;. Additionally, when an ally or enemy is about to be damaged, you may expend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and an Infusion Charge to immediately &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; them.</content>
+	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000b" version="2">You may expend one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt; in order to grant an ally &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;. Additionally, when an ally or enemy is about to be damaged, you may expend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and a &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt; to immediately &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; them.</content>
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f000z2" version="1">Adaptive Intervention</content>
 	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s000zb" version="2">Grant an ally &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f000y2" version="1">Adaptive Intervention</content>
@@ -171,7 +171,7 @@
 	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000c" version="2">You may now &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; two creatures at once.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00004" version="1">Wanton Processing</content>
-	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000d" version="2">Once per turn, upon landing a Killing Blow or a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;, you restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Infusion Charge&lt;/LSTag&gt;.</content>
+	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000d" version="2">Once per turn, upon landing a Killing Blow or a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, you restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00005" version="1">Overclocked Subroutine</content>
 	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000e" version="2">You may now &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; three creatures at once.</content>
@@ -183,7 +183,7 @@
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc400000" version="2">Select an effect to apply to your allies upon Infusing them.</content>
 
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40xxyz" version="1">Infused</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40xyzz" version="2">Affected creature is affected by a variety of effects based on a nearby Arcsmith's passives.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40xyzz" version="2">Affected creature is affected by a variety of effects based on an Arcsmith's passives.</content>
 
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400001" version="1">Optimization: Adaptive Shielding</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000a" version="2">Grant allies &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
@@ -194,7 +194,7 @@
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400004" version="1">Optimization: Concentration Lock</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000d" version="2">Allies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot lose their &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400005" version="1">Optimization: Critical Dampener</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000e" version="2">The number your &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infused&lt;/LSTag&gt; allies needed to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by one.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000e" version="2">The number your &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infused&lt;/LSTag&gt; allies need to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by one.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400006" version="1">Optimization: Damage Amplifier</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000f" version="2">Grant allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all Damage Rolls upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400007" version="1">Optimization: Defensive Calibration</content>
@@ -226,54 +226,54 @@
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400020" version="1">Optimization: Stabality Matrix</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000t" version="2">Grant allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
 
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z000" version="1">Sabatoge Matrix</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z000" version="1">Sabotage Matrix</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z000" version="2">Select an effect to apply to your enemies upon Infusing them.</content>
 
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z001" version="1">Sabatoge: Armour Compromise</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z001" version="1">Sabotage: Armour Compromise</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00a" version="2">Impose upon enemies a -2 penalty to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z002" version="1">Sabatoge: Concentration Breach</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z002" version="1">Sabotage: Concentration Breach</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00b" version="2">Upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; an enemy, they immediately lose their &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z003" version="1">Sabatoge: Critical Lockout</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z003" version="1">Sabotage: Critical Lockout</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00c" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z004" version="1">Sabatoge: Cybernetic Psychosis</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z004" version="1">Sabotage: Cybernetic Psychosis</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00d" version="2">Upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; an enemy, they become rife with &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Madness&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z005" version="1">Sabatoge: Defensive Degredation</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z005" version="1">Sabotage: Defensive Degredation</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00e" version="2">Impose upon enemies -2 penalty to &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z006" version="1">Sabatoge: Direct System Damage</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z006" version="1">Sabotage: Direct System Damage</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00f" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; take 1d8 Force damage multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z007" version="1">Sabatoge: Exposed System Info</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00g" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; will have all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; made toward them be made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z008" version="1">Sabatoge: Greater Soporific</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z007" version="1">Sabotage: Exposed System Info</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00g" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; will have all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made toward them be made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z008" version="1">Sabotage: Greater Soporific</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00h" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; will fall &lt;LSTag Type="Status" Tooltip="SLEEPING"&gt;Asleep&lt;/LSTag&gt; at the start of their next turn.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z009" version="1">Sabatoge: Healing Lockout</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z009" version="1">Sabotage: Healing Lockout</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00i" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z010" version="1">Sabatoge: Minimum Yield</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00j" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; have their weapons damage dice increased to a D4.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z011" version="1">Sabatoge: Mobility Lock</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z010" version="1">Sabotage: Minimum Yield</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00j" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; have their weapon's damage dice decreased to a D4.</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z011" version="1">Sabotage: Mobility Lock</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00k" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot move.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z012" version="1">Sabatoge: Output Limiter</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z012" version="1">Sabotage: Output Limiter</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00l" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; become &lt;LSTag Type="Status" Tooltip="REDUCE"&gt;Reduced&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z013" version="1">Sabatoge: Precision Degredation</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00m" version="2">Impose upon enemies -2 penalty to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z014" version="1">Sabatoge: Reaction Suppression</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z013" version="1">Sabotage: Precision Degredation</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00m" version="2">Impose upon enemies -2 penalty to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z014" version="1">Sabotage: Reaction Suppression</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00n" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot use their &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z015" version="1">Sabatoge: Save Destabilization</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z015" version="1">Sabotage: Save Destabilization</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00o" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; make all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z016" version="1">Sabatoge: Shield Collapse</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z016" version="1">Sabotage: Shield Collapse</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00p" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; have all &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; stripped from them.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z017" version="1">Sabatoge: Signal Silence</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z017" version="1">Sabotage: Signal Silence</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00q" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; become &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z018" version="1">Sabatoge: Spell Interference</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z018" version="1">Sabotage: Spell Interference</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00r" version="2">Impose upon enemies a -2 penalty to their &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt; upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z019" version="1">Sabatoge: Targeting Disruption</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z019" version="1">Sabotage: Targeting Disruption</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00s" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; make their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z020" version="1">Sabatoge: Weapon Dampening</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z020" version="1">Sabotage: Weapon Dampening</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00t" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; deal half damage with all weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; which utilize their &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt;.</content>
 
 <!--PASSIVES-->
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f123" version="1">Arcane Infusions</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zzz" version="2">Creation manifests brillaince, moulded in arcane echoes.&lt;br&gt;Productions of power, brought to life by your ingenuity.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zzz" version="2">Creation manifests brilliance, moulded in arcane echoes.&lt;br&gt;Productions of power, brought to life by your ingenuity.</content>
 
 	<content contentuid="115fb28f01e84e44b00000475sd5f4ef2f001" version="1">Adaptive Plating</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500a" version="2">At the beginning of each turn while in combat, you gain &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
@@ -317,7 +317,7 @@
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500g" version="2">Once per turn, missing an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will refund your &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f008" version="1">Failsafe Injection</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500h" version="2">Once per combat, upon starting your turn in combat below 25% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, you consume a synthetic potion. This synthetic potion restores [1] Hit Points upon ending your turn.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500h" version="2">Once per combat, upon starting your turn in combat below 25% of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;, you consume a synthetic potion. This synthetic potion restores [1] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; upon ending your turn.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f009" version="1">Incendiary Rounds</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500i" version="2">Dealing damage with your firearms causes your target to Burn.</content>
@@ -337,12 +337,12 @@
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2fb12" version="1">Modular Augmentation: Attack</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50bl" version="2">Grant an ally a +2 bonus to their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;. This effect may only be applied to one ally at a time.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2fc12" version="1">Modular Augmentation: Damage</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50cl" version="2">Grant an ally a +2 bonus to their weapons Damage Rolls. This effect may only be applied to one ally at a time.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50cl" version="2">Grant an ally a +2 bonus to their weapon's Damage Rolls. This effect may only be applied to one ally at a time.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2fd12" version="1">Modular Augmentation: Difficulty Class</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50dl" version="2">Grant an ally a +2 bonus to their &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt;. This effect may only be applied to one ally at a time.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zal" version="2">Affected creature has received a +2 bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zbl" version="2">Affected creature has received a +2 bonus to their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zcl" version="2">Affected creature has received a +2 bonus to their weapons Damage Rolls.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zcl" version="2">Affected creature has received a +2 bonus to their weapon's Damage Rolls.</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zdl" version="2">Affected creature has received a +2 bonus to their &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt;.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f013" version="1">Nanite Dispersion Field</content>
@@ -352,7 +352,7 @@
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500n" version="2">When dealing damage, the minimum value you can roll is 4.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f015" version="1">Precision Rifling</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500o" version="2">Once per turn, upon landing a Killing Blow or a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt;, you restore one round of &lt;LSTag Type="ActionResource" Tooltip="FirearmAmmo"&gt;Ammunition&lt;/LSTag&gt;.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500o" version="2">Once per turn, upon landing a Killing Blow or a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt;, you restore one round of &lt;LSTag Type="ActionResource" Tooltip="FirearmAmmo"&gt;Ammunition&lt;/LSTag&gt;.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f016" version="1">Recoil Compensation</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500p" version="2">Landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with one of your firearms allows you to expend one round of your &lt;LSTag Type="ActionResource" Tooltip="FirearmAmmo"&gt;Ammunition&lt;/LSTag&gt; in order to fire at your target again.</content>

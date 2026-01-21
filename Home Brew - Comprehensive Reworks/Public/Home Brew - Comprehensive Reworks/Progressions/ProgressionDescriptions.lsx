@@ -250,6 +250,25 @@
 				<attribute id="Type" type="FixedString" value="UnlockSpellVariant" />
 				<attribute id="UUID" type="guid" value="3958ae75-ebe8-4069-8ac9-7eb53e210f29" />
 				</node>
+		<!--Action Resources-->
+		<!--Wild Soul-->
+		<node id="ProgressionDescription">
+				<attribute id="Description" type="TranslatedString" handle="ha8040c09g97e4g46ffgb9acg90364529c667" version="3" />
+				<attribute id="DisplayName" type="TranslatedString" handle="hec4449f0gd79ag481bga4f8g665154ddd14b" version="2" />
+				<attribute id="ParamMatch" type="FixedString" value="0:SpellSlot" />
+				<attribute id="ProgressionTableId" type="guid" value="7d5237b0-9ac6-4344-8171-43fa2f553e2f" />
+				<attribute id="Type" type="FixedString" value="ActionResource" />
+				<attribute id="UUID" type="guid" value="6dae0c2a-de55-491e-8a62-11931b6b0100" />
+				</node>
+		<!--Eldritch Knight-->
+		<node id="ProgressionDescription">
+				<attribute id="Description" type="TranslatedString" handle="he13e2e47g0014g44cdgbf7cg9e295d712db3" version="3" />
+				<attribute id="DisplayName" type="TranslatedString" handle="hae8be2f3ge703g4de9gb6a5gec812104e828" version="2" />
+				<attribute id="ParamMatch" type="FixedString" value="0:WarlockSpellSlot;1:1" />
+				<attribute id="ProgressionTableId" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435" />
+				<attribute id="Type" type="FixedString" value="ActionResource" />
+				<attribute id="UUID" type="guid" value="6dae0c2a-de55-491e-8a62-11931b6b0101" />
+				</node>
       </children>
     </node>
   </region>

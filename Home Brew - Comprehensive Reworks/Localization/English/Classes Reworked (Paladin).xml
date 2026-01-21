@@ -122,7 +122,7 @@
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000ba" version="2">When an ally within [1] of you is about to be damaged, take Fire damage equal to twice that of your level in order to heal them for the same amount, swapping places with them in the process. Your ally must be below half of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100002" version="2">To the Sun</content>
-	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000b" version="2">Using &lt;LSTag Type="Spell" Tooltip="Target_PhoenixLanding"&gt;Phoenix Landing&lt;/LSTag&gt; or Searing Protection grants you &lt;LSTag Type="Status" Tooltip="SUNSCORCHED"&gt;Sun Scorched&lt;/LSTag&gt; for three turns. In addition, you gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage.</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000b" version="2">Using &lt;LSTag Type="Spell" Tooltip="Target_PhoenixLanding"&gt;Phoenix Landing&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_SearingProtection"&gt;Searing Protection&lt;/LSTag&gt; grants you &lt;LSTag Type="Status" Tooltip="SUNSCORCHED"&gt;Sun Scorched&lt;/LSTag&gt; for three turns. In addition, you gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage.</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000s2" version="2">Sun Scorched</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000sb" version="2">Affected creature deals an additional [1] for every 10% of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; they are missing.</content>
 

@@ -318,7 +318,7 @@
 <!--BLESSINGS OF THE MOON-->
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714sdf68878d04" version="2">Blessings of the Moon</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f60d1fd250d" version="3">Gain &lt;LSTag Type="Spell" Tooltip="Shout_MOO_Nightsong_RadiantConsumption"&gt;Blessing of Moonfire&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Projectile_MOO_Nightsong_GuidingBolt"&gt;Lunar Flare&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_MOO_Nightsong_SearingSmite"&gt;Lunar Strike&lt;/LSTag&gt;. In addition, dealing damage to an enemy restores 1d4 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; to all nearby allies.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f60d1fd250d" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CShout_MOO_Nightsong_RadiantConsumption"&gt;Blessing of Moonfire&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Projectile_MOO_Nightsong_GuidingBolt"&gt;Lunar Flare&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_MOO_Nightsong_SearingSmite"&gt;Lunar Strike&lt;/LSTag&gt;. In addition, dealing damage to an enemy restores 1d4 &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; to all nearby allies.</content>
 
 <!--COMBAT MEDIC-->
 
