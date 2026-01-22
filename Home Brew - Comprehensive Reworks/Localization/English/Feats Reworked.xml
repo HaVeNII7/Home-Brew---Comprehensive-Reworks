@@ -368,7 +368,7 @@
 <!--YOKEBREAKER-->
 
 	<content contentuid="hd8f1acdbg0813g4950gab51g4e2ec13d9c0b" version="1">One level in required base class</content>
-	<content contentuid="47709b48-6124-44dc-8792-5sd6f545df12" version="1">Selecting a subclass you already have levels in will typically provide no benefit. Spells gained via Yokebreaker cannot be upcast.</content>
+	<content contentuid="47709b48-6124-44dc-8792-5sd6f545df12" version="1">Selecting a subclass you already have levels in will typically provide no benefit.&lt;Br&gt;&lt;br&gt;Spells gained via Yokebreaker cannot be upcast.</content>
 
 	<content contentuid="be31014b-2a27-4970-b6d6-c95bde200001" version="1">Yokebreaker: Arcanist</content>
 	<content contentuid="be31014b-2a27-4970-b6d6-c95bde20000a" version="1">Gain the unlocks associated with levels 1 through 3 of a &lt;LSTag Type="Status" Tooltip="StatusClassProgression_Arcanist"&gt;Arcanist Artificer&lt;/LSTag&gt;.&lt;Br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt;Selecting a subclass you already have levels in will typically provide no benefit. Spells gained via Yokebreaker cannot be upcast.</content>

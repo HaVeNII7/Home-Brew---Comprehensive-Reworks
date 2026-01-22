@@ -55,7 +55,7 @@ data "DisplayName" "h3a1cb81fge541g4da7g93f1g0175f429b4eb;2"
 data "Description" "h1a0cfc1ag18f1g4bafg9947gf88d8b302873;2"
 data "TooltipDamageList" "DealDamage(1d12, Radiant)"
 data "UseCosts" "BonusActionPoint:1"
-data "SpellFlags" "IsAttack;IsHarmful;IsDefaultWeaponAction"
+data "SpellFlags" "IsHarmful;IsDefaultWeaponAction"
 data "RequirementConditions" "not HasStatus('SG_Polymorph_BeastShape')"
 
 new entry "CONSUMED_FABRICATEDARBALEST"

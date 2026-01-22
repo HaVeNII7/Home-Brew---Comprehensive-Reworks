@@ -21,7 +21,7 @@ data "Icon" "Spell_Enchantment_Antagonize_Declare"
 data "DisplayName" "h0214a75fg98d8g44c3g997dg0ba26093657f;2"
 data "Description" "h0003f45dg0cd8g4cccg966fg766f3949baf8;2"
 data "UseCosts" "BonusActionPoint:1"
-data "SpellFlags" "IsAttack;IsMelee;IsHarmful;IsDefaultWeaponAction"
+data "SpellFlags" "IsMelee;IsHarmful;IsDefaultWeaponAction"
 data "RequirementConditions" "not HasStatus('SG_Polymorph_BeastShape')"
 
 new entry "CONSUMED_COMBINATIONAXE"

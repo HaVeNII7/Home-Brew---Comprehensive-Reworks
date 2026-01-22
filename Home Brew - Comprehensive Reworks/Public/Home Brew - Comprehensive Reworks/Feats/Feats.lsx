@@ -11,7 +11,7 @@
                 </node>
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="AccordoftheArcane"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(ffad33d2-e725-4655-ba80-0bc91e8002b3,2,0,,,AlwaysPrepared,,92cd50b6-eb1b-4824-8adb-853e90c34c90)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(ffad33d2-e725-4655-ba80-0bc91e8002b3,2,0,Cantrips,,,AlwaysPrepared)"/>
                     <attribute id="PassivesAdded" type="LSString" value="AccordoftheArcane"/>
                     <attribute id="UUID" type="guid" value="cdcbc538-883b-401c-a8ed-1373fb6d1720"/>
                 </node>
@@ -272,8 +272,8 @@
                 </node>
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="ArtificerArcanist"/>
-                    <attribute id="PassivesAdded" type="LSString" value="TheRightToolsfortheJob;MysticReload"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(2bb484e2-1d3a-4177-84b4-2894f25ab2b1,2,0,Cantrips);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,6,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
+                    <attribute id="PassivesAdded" type="LSString" value="Feat_SpellSlots_Artificer;TheRightToolsfortheJob;MysticReload"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(2bb484e2-1d3a-4177-84b4-2894f25ab2b1,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,6,0,Spells,Intelligence,None,AlwaysPrepared,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)" />
                     <attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Artificer&apos;)"/>
                     <attribute id="UUID" type="guid" value="03777635-ef87-4d19-a859-92b8dd69f6dc"/>
                 </node>
@@ -323,7 +323,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="BarbarianWildSoul"/>
                     <attribute id="PassivesAdded" type="LSString" value="Feat_SpellSlots;WildMagicRage;ChaoticRoar"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(2bb484e2-1d3a-4177-84b4-2894f25ab2b1,2,0,Cantrips);SelectSpells(a3c79518-7d3b-416c-8c78-470fb1a23c28,2,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(2bb484e2-1d3a-4177-84b4-2894f25ab2b1,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(a3c79518-7d3b-416c-8c78-470fb1a23c28,2,0,Spells,Charisma,None,AlwaysPrepared,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Spells,Charisma,None,AlwaysPrepared,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)" />
 					<attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Barbarian&apos;)"/>
                     <attribute id="UUID" type="guid" value="ae844b62-4b26-413d-8fce-20ca687f789a"/>
                 </node>
@@ -336,7 +336,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="BardCollegeOfLore"/>
                     <attribute id="PassivesAdded" type="LSString" value="TheBestKeptSecrets;CriticalSecrets"/>
-					<attribute id="Selectors" type="LSString" value="SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,3,0,BardSpells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
+					<attribute id="Selectors" type="LSString" value="SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,3,0,BardSpells,Charisma,None,AlwaysPrepared,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)" />
                     <attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Bard&apos;)"/>
                     <attribute id="UUID" type="guid" value="010dd210-461e-4aa8-b567-42f3ae52e2bd"/>
                 </node>
@@ -424,7 +424,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="FighterEldritchKnight"/>
                     <attribute id="PassivesAdded" type="LSString" value="Call_of_the_Old_One;Warlock_SpellSlots;From_Beyond"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(2db3752d-c3da-435a-aaea-a3b2ceafeb44,2,0,Cantrips);SelectSpells(f33b1b19-43c6-4f61-a001-cd55e516791c,2,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(2db3752d-c3da-435a-aaea-a3b2ceafeb44,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(f33b1b19-43c6-4f61-a001-cd55e516791c,2,0,Spells,Charisma,None,AlwaysPrepared,,e9127b70-22b7-42a1-b172-d02f828f260a);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Charisma,None,AlwaysPrepared,,e9127b70-22b7-42a1-b172-d02f828f260a)" />
 					<attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Fighter&apos;)"/>
                     <attribute id="UUID" type="guid" value="9715353b-13b3-4cbc-ae1d-db99b7f6cc67"/>
                 </node>
@@ -438,7 +438,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="MonkWayOfTheArcane"/>
                     <attribute id="PassivesAdded" type="LSString" value="Feat_SpellSlots;Flow_State;FlurryOfBlowsUnlock;Essence_of_the_Elements"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(ffad33d2-e725-4655-ba80-0bc91e8002b3,2,0,MonkCantrips);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,3,0,MonkSpells,Wisdom,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(ffad33d2-e725-4655-ba80-0bc91e8002b3,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,3,0,MonkSpells,Wisdom,None,AlwaysPrepared,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)" />
 					<attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Monk&apos;)"/>
 					<attribute id="UUID" type="guid" value="c9cffeb1-2cb0-44a2-a090-9db2026d549c"/>
                 </node>
@@ -512,7 +512,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="RogueArcaneTrickster"/>
 					<attribute id="PassivesAdded" type="LSString" value="Feat_SpellSlots;ArcaneTrickery;SneakAttack_Unlock_Magic;BlessingoftheTrickster"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(c0aaf09a-fbb5-4480-aae0-f196b7fa33d5,2,0,Cantrips);SelectSpells(8e57e7e8-af23-4621-a64a-3cf34b57676c,2,0,Spells,Intelligence,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(c0aaf09a-fbb5-4480-aae0-f196b7fa33d5,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(8e57e7e8-af23-4621-a64a-3cf34b57676c,2,0,Spells,Intelligence,None,AlwaysPrepared,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Intelligence,None,AlwaysPrepared,,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)" />
 					<attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Rogue&apos;)"/>
 					<attribute id="UUID" type="guid" value="32700827-6d27-40a2-b0a1-b176875af5a7"/>
                 </node>

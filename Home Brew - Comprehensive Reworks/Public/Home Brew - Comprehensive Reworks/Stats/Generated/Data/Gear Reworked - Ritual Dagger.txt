@@ -39,7 +39,7 @@ data "VerbalIntent" "Buff"
 data "SpellFlags" "Stealth;IgnoreSilence"
 data "PrepareEffect" "e4abb54b-8d1a-4940-a6e0-71cd6a895831"
 data "CastEffect" "c3c4ce67-c06b-42ef-84d6-d4f6eb205805"
-data "SpellFlags" "IsAttack;IsMelee;IsHarmful;IsDefaultWeaponAction"
+data "SpellFlags" "IsMelee;IsHarmful;IsDefaultWeaponAction"
 data "RequirementConditions" "not HasStatus('SG_Polymorph_BeastShape')"
 
 new entry "CONSUMED_RITUALDAGGER"

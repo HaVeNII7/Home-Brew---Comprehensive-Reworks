@@ -3,6 +3,8 @@
 
 <!--CLERIC-->
 
+	<content contentuid="he034908fg96cag4e09g8e90g5caffa6effb5" version="2">You gain three Channel Divinity charges per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, allowing you to both &lt;LSTag Type="Spell" Tooltip="Shout_TurnUndead"&gt;Pacify&lt;/LSTag&gt; Undead foes, as well as trigger additional effects determined by your choice of subclass.</content>
+
 	<content contentuid="h98e3be41aead4b5bb8ee601041ff5d6f8d45" version="1">Divine Intervention</content>
 	<content contentuid="hd3a156cc7fbf4a5c985eef63f0cssdf6f787" version="11">Utilized in prayer to divine various types of miracles.</content>
 
@@ -42,8 +44,6 @@
 	<content contentuid="h90dc6c92g4bdag440cg8119gab3778b7e67c" version="11">Pray for your god to pacify all nearby Undead, holding them still. Attacks made against them from within [1] will always be &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
 	<content contentuid="h3e63e6aag19b0g400agb559g2e966a984bde" version="1">Pacified</content>
 	<content contentuid="h90dc6c92g4bdag440cg8119gab35d211e67c" version="11">Affected creature is perfectly still, unable to act. Attacks made against them within [1] are always &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
-
-	<content contentuid="he034908fg96cag4e09g8e90g5caffa6effb5" version="2">You gain the ability to channel divine energy, allowing you to dominate Undead foes and provide boons for your allies. Replenished by &lt;LSTag Tooltip="ShortRest"&gt;Short&lt;/LSTag&gt; or &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
 
 <!--DEATH DOMAIN-->
 

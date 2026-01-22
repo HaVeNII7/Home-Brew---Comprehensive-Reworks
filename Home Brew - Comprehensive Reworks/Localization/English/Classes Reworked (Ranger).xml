@@ -3,6 +3,9 @@
 
 <!--RANGER-->
 
+	<content contentuid="h4c613264gb41123r6ega54wef6584s6e4f65" version="4">Natural Focus Charges: 3</content>
+	<content contentuid="h50416111g8a61g4293r87ys9df87983rofef" version="2">You gain three Natural Focus Charges per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, which allow you to either summon your Ranger Companion or fire various types of arrows.</content>
+
 	<content contentuid="hffaccf0ag0569g4b24gb7bfg483838dkhdic" version="1">RANGERCOMPANION</content>
 	<content contentuid="hffaccf0ag0569g4b24gb7bfg483838d38ddd" version="1">RANGERCOMPANIONTAGFORRANGEROVERHAUL</content>
 
@@ -68,7 +71,7 @@
 	<content contentuid="h93857089gb140g4c33ga0a9g26fde3asdf88" version="7">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when rolling for damage. However, enemies also have Advantage when making &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against it.</content>
 
 	<content contentuid="h940ee6cg45d6g4d44g9165gd4asdfsfff5de" version="3">Woodland Synergy</content>
-	<content contentuid="heab073adgda32g4f3bgbd79asdsdf6s54588" version="3">While within [1] of your Ranger Companion, you both gain a +1d4 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="heab073adgda32g4f3bgbd79asdsdf6s54588" version="3">While within [1] of your Ranger Companion in combat, you both gain a +1d4 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 	<content contentuid="h940ee6cg45d6g4d44g91656s9asdfsfff5de" version="3">Woodland Synergy</content>
 	<content contentuid="heab073adgda32g4f3bgbd7s9ddsdf6s54588" version="3">Affected creature is providing their summoning Ranger with a +1d4 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; while remaining within [1] of them.</content>
 	<content contentuid="h940ee6cg45d6g4d44g91656s9asd6a9545de" version="3">Woodland Synergy</content>

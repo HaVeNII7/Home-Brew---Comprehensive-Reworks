@@ -3,6 +3,8 @@
 
 <!--FIGHTER-->
 
+	<content contentuid="haa5c8093g2204g476fgb145gb10d4a0f7f29" version="2">You gain one Superiority Dice per level, which are restored upon taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;. These dice fuel your manoeuvres, allowing you to be more effective and versatile in combat.</content>
+
 	<content contentuid="h0a9065a4gd89fg46d6g9303gbeafa0ae1c6c" version="2">Manoeuvres</content>
 	<content contentuid="hab367dbfg2f2dg46d9g992ag4633184cc635" version="1">Manoeuvres are powerful attacks that utilize your &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Dice&lt;/LSTag&gt;.</content>
 
@@ -557,12 +559,11 @@
 
 <!--BATTLE MASTER TO FRONTIER KNIGHT-->
 
-	<content contentuid="h1b9bb939ga573g4e5dg8c16g20dfce934df7" version="4">Learn two manoeuvres and gain a &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to fuel them. You regain expended Superiority Dice after a &lt;LSTag Tooltip="ShortRest"&gt;Short&lt;/LSTag&gt; or &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h1b9bb939ga573g4e5dg8c16g20dfce934df7" version="4">Learn two manoeuvres and gain a &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to fuel them. You regain expended Superiority Dice after a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.</content>
 	<content contentuid="h1d06df95g7f0ag4a3eg996ag2f7c94531a0f" version="2">Superiority dice are spent to empower manoeuvres, improving efficiency in combat.</content>
 	<content contentuid="h2780bb92gd755g42bdg90e4g35ba06f48ac9" version="1">Frontier Knight</content>
 	<content contentuid="h338f766bg5761g4fd4g9715g0bb6958837dd" version="1">Frontier Knight</content>
 	<content contentuid="h7764b2fbgbbe2g4352g9868gb25f450704fe" version="1">Frontier Knights are paragons of tactical superiority, combining combat manoeuvres and experience in the field to dominate every fight.</content>
-	<content contentuid="haa5c8093g2204g476fgb145gb10d4a0f7f29" version="2">Your Superiority Dice fuel your manoeuvres and are expended upon use. You regain expended Superiority Dice after a &lt;LSTag Tooltip="ShortRest"&gt;Short&lt;/LSTag&gt; or &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
 
 <!--REMOVE ELDRITCH KNIGHT MENTIONS FROM WEAPON BUFFS-->
 

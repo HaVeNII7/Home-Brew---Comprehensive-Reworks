@@ -181,7 +181,7 @@ data "DisplayName" "h4344309ag115dg487bgbdcbg14552d822356;2"
 data "TooltipDamageList" "DealDamage(MainRangedWeapon + LevelMapValue(BardicInspiration), MainRangedWeaponDamageType)"
 data "UseCosts" "ReactionActionPoint:1"
 data "SpellAnimation" "a09de2c8-ec46-4c27-a502-bc92cf293fe5,,;9583ecee-cf6c-4735-86db-7ebf1df15eae,,;de006e3f-70fb-4eb7-a98d-d845d15b20e8,,;50696db7-d931-4734-915d-32d038ba99a5,,;244b53cb-dc0f-4932-afd0-ab19c6df1b34,,;,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,,"
-data "SpellFlags" "IsAttack;IsHarmful;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary"
+data "SpellFlags" "IsHarmful;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary"
 
 new entry "Projectile_CommanderStrike_Attack_D8_Bard_Caster"
 type "SpellData"

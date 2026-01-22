@@ -900,6 +900,11 @@ type "PassiveData"
 data "Properties" "IsHidden"
 data "Boosts" "ActionResource(SpellSlot,4,1)"
 
+new entry "Feat_SpellSlots_Artificer"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "ActionResource(SpellSlot,4,1);ActionResource(SpellSlot,2,2)"
+
 new entry "Feat_SporeDruid"
 type "PassiveData"
 data "Properties" "IsHidden"

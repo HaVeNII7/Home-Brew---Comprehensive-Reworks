@@ -6,8 +6,9 @@ data "DisplayName" "h86cd4e0cg5c92g43b9g885ag6fd1a719d8f9;1"
 data "Description" "h1bae7591geddag4834gb73agdecd5a32839e;1"
 data "Icon" "TadpoleSuperPower_IllithidPersuasion"
 data "Properties" "Highlighted"
-data "StatsFunctorContext" "OnLongRest"
-data "StatsFunctors" "IF(HasPassive('TAD_PsionicOverload', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_PeaceBreaker', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_ForceTunnel', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_ConcentratedBlast', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_TransfuseHealth', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_StageFright', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_DrainAbility', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_LuckOfTheFarRealms', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_Charm', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_Displace', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_Repulsor', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_CullTheWeak', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_PsionicBacklash', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_ShieldOfThralls', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_PerilousStakes', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_BeastFlayer', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_Imperil', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_Devour', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_PsionicDominance', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_BlackHole', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_Levitate', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_MindBlast', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_MindSanctuary', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_Freecast', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1);IF(HasPassive('TAD_AbsorbIntellect', context.Source) and not HasPassive('CRE_GithInfirmary_Awakened', context.Source)):ApplyStatus(HP_REDUCTION,100,1)"
+data "BoostContext" "OnLongRest"
+data "BoostConditions" "not HasPassive('CRE_GithInfirmary_Awakened', context.Source) and not HasPassive('PsionicDominance', context.Source)"
+data "Boosts" "IF(TadpolePowersAtLeast(2) and not TadpolePowersAtLeast(3)):IncreaseMaxHP(-4);IF(TadpolePowersAtLeast(3) and not TadpolePowersAtLeast(4)):IncreaseMaxHP(-8);IF(TadpolePowersAtLeast(4) and not TadpolePowersAtLeast(5)):IncreaseMaxHP(-12);IF(TadpolePowersAtLeast(5) and not TadpolePowersAtLeast(6)):IncreaseMaxHP(-16);IF(TadpolePowersAtLeast(6) and not TadpolePowersAtLeast(7)):IncreaseMaxHP(-20);IF(TadpolePowersAtLeast(7) and not TadpolePowersAtLeast(8)):IncreaseMaxHP(-24);IF(TadpolePowersAtLeast(8) and not TadpolePowersAtLeast(9)):IncreaseMaxHP(-28);IF(TadpolePowersAtLeast(9) and not TadpolePowersAtLeast(10)):IncreaseMaxHP(-32);IF(TadpolePowersAtLeast(10) and not TadpolePowersAtLeast(11)):IncreaseMaxHP(-36);IF(TadpolePowersAtLeast(11) and not TadpolePowersAtLeast(12)):IncreaseMaxHP(-40);IF(TadpolePowersAtLeast(12) and not TadpolePowersAtLeast(13)):IncreaseMaxHP(-44);IF(TadpolePowersAtLeast(13) and not TadpolePowersAtLeast(14)):IncreaseMaxHP(-48);IF(TadpolePowersAtLeast(14) and not TadpolePowersAtLeast(15)):IncreaseMaxHP(-52);IF(TadpolePowersAtLeast(15) and not TadpolePowersAtLeast(16)):IncreaseMaxHP(-56);IF(TadpolePowersAtLeast(16) and not TadpolePowersAtLeast(17)):IncreaseMaxHP(-60);IF(TadpolePowersAtLeast(17) and not TadpolePowersAtLeast(18)):IncreaseMaxHP(-64);IF(TadpolePowersAtLeast(18) and not TadpolePowersAtLeast(19)):IncreaseMaxHP(-68);IF(TadpolePowersAtLeast(19) and not TadpolePowersAtLeast(20)):IncreaseMaxHP(-72);IF(TadpolePowersAtLeast(20) and not TadpolePowersAtLeast(21)):IncreaseMaxHP(-76);IF(TadpolePowersAtLeast(21) and not TadpolePowersAtLeast(22)):IncreaseMaxHP(-80);IF(TadpolePowersAtLeast(22) and not TadpolePowersAtLeast(23)):IncreaseMaxHP(-84);IF(TadpolePowersAtLeast(23) and not TadpolePowersAtLeast(24)):IncreaseMaxHP(-88);IF(TadpolePowersAtLeast(24) and not TadpolePowersAtLeast(25)):IncreaseMaxHP(-92);IF(TadpolePowersAtLeast(25) and not TadpolePowersAtLeast(26)):IncreaseMaxHP(-96);IF(TadpolePowersAtLeast(26)):IncreaseMaxHP(-100)"
 
 <!--PSIONIC OVERLOAD-->
 
@@ -29,48 +30,6 @@ data "Description" "h93fe3509ge6dag4ff6gb7d8g45e80265433e;5"
 data "Icon" "TadpoleSuperPower_PeaceBreaker"
 data "Properties" "Highlighted"
 data "Boosts" "RollBonus(SavingThrow,2);RollBonus(Attack,2);RollBonus(SkillCheck,2);RollBonus(RawAbility,2)"
-
-<!--FORCE TUNNEL-->
-
-new entry "TAD_ForceTunnel"
-type "PassiveData"
-data "DisplayName" "h21961550ge2aeg4ba4g8789g62319f80e3aa;1"
-data "Description" "h46f50667gc444g4eebg9061gdaa6ac94e770;1"
-data "DescriptionParams" "Distance(9)"
-data "Icon" "TadpoleSuperPower_ForceTunnel"
-data "Properties" "IsHidden"
-data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Rush_ForceTunnel)"
-
-<!--CONCENTRATED BLAST-->
-
-new entry "TAD_ConcentratedBlast"
-type "PassiveData"
-data "DisplayName" "ha002841dg16b3g4217g8a6cg4bf54d1f9133;1"
-data "Description" "hf4f5d88fg1953g43c9g8366g45e0978f1b10;1"
-data "Icon" "TadpoleSuperPower_ConcentratedBlast"
-data "Properties" "IsHidden"
-data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Target_TAD_ConcentratedBlast)"
-
-<!--TRANSFUSE HEALTH-->
-
-new entry "TAD_TransfuseHealth"
-type "PassiveData"
-data "DisplayName" "haeb0741ag04eeg4d87g94b4g79d48f23ebe3;1"
-data "Description" "hf68e80ecga22fg46c2g9435g52182b9d182e;1"
-data "Icon" "TadpoleSuperPower_TransfuseHealth"
-data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Target_TAD_TransfuseHealth)"
-
-<!--STAGE FRIGHT-->
-
-new entry "TAD_StageFright"
-type "PassiveData"
-data "DisplayName" "hb9910987gcf19g423bg966egb9e7c5adce4d;1"
-data "Description" "hc7e1c210g5d40g4079gb3d1g703c332c2b19;1"
-data "DescriptionParams" "DealDamage(1d12,Psychic)"
-data "Icon" "TadpoleSuperPower_StageFright_2"
-data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Target_StageFright)"
 
 <!--ABILITY DRAIN-->
 
@@ -129,17 +88,6 @@ data "StatsFunctorContext" "OnDamaged"
 data "Conditions" "Character() and not Self() and IsFallDamage() and not IsRedirectedDamage()"
 data "StatsFunctors" "DealDamage(1d12,Psychic,Magical);RemoveStatus(TAD_DISPLACE)"
 
-<!--REPULSOR-->
-
-new entry "TAD_Repulsor"
-type "PassiveData"
-data "DisplayName" "h00edf05cgb29cg4037g9f2cg780dfce80b7a;1"
-data "Description" "he21bfeceg10a6g4686ga793g852612e09d46;1"
-data "DescriptionParams" "Distance(9)"
-data "Icon" "TadpoleSuperPower_Repulsor"
-data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Shout_Repulsor)"
-
 <!--CULL THE WEAK-->
 
 new entry "TAD_CullTheWeak"
@@ -149,7 +97,7 @@ data "Description" "hfd385480ga7c4g4d30gbaffg29423289561e;7"
 data "Icon" "TadpoleSuperPower_CullTheWeak"
 data "Properties" "Highlighted;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "HasLessHPThanTadpolePowers() and not IsKillingBlow() and TotalAttackDamageDoneGreaterThan(0) and not Ally() and not HasStatus('SG_Polymorph_BeastShape', context.Target) and not HasStatus('SG_Polymorph', context.Target)"
+data "Conditions" "HasLessHPThanTadpolePowersX4() and not IsKillingBlow() and TotalAttackDamageDoneGreaterThan(0) and not Ally() and not HasStatus('SG_Polymorph_BeastShape', context.Target) and not HasStatus('SG_Polymorph', context.Target)"
 data "StatsFunctors" "Kill();ApplyStatus(PASSIVE_CULL_THE_WEAK,100,1)"
 data "ToggleGroup" "NonLethal"
 
@@ -164,27 +112,6 @@ data "Icon" "TadpoleSuperPower_PsionicBacklash"
 data "Properties" "IsHidden"
 data "Boosts" "UnlockInterrupt(Interrupt_TAD_PsionicBacklash)"
 
-<!--SHIELD OF THE THRALLS-->
-
-new entry "TAD_ShieldOfThralls"
-type "PassiveData"
-data "DisplayName" "hf667134dge956g466dg8ba4g0834c024ffd2;1"
-data "Description" "hce1927d0g93e8g40b1gb53age1c909f8815c;1"
-data "DescriptionParams" "Distance(3)"
-data "Icon" "TadpoleSuperPower_ShieldOfThralls"
-data "Properties" "IsHidden"
-data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Target_TAD_ShieldOfThralls)"
-
-<!--PERILOUS STAKES-->
-
-new entry "TAD_PerilousStakes"
-type "PassiveData"
-data "DisplayName" "h97567157gea8eg43f4g942cgd98961fd7adb;1"
-data "Description" "h443d376dg292ag4338g9fb4g8383b67db13b;1"
-data "Icon" "TadpoleSuperPower_PerilousStakes"
-data "Properties" "IsHidden"
-data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Target_TAD_PerilousStakes)"
-
 <!--BEAST FLAYER-->
 
 new entry "TAD_BeastFlayer"
@@ -195,17 +122,6 @@ data "DescriptionParams" "Distance(18)"
 data "Icon" "TadpoleSuperPower_DisplacerShape"
 data "Properties" "Highlighted"
 data "Boosts" "AC(2);Initiative(2);DarkvisionRangeMin(18);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7);StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud)"
-
-<!--IMPERIL-->
-
-new entry "TAD_Imperil"
-type "PassiveData"
-data "DisplayName" "h7bc43a8cg9c8eg4c17gbb2dgc7c7b613a5a3;1"
-data "Description" "hef8f4025g2e42g4a1dg8201g9242d6757a5e;1"
-data "DescriptionParams" "4"
-data "Icon" "TadpoleSuperPower_Imperil"
-data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Target_TAD_Imperil)"
 
 <!--DEVOUR-->
 
@@ -230,45 +146,7 @@ data "Icon" "TadpoleSuperPower_PsionicDominance"
 data "Properties" "IsHidden"
 data "Boosts" "UnlockInterrupt(Interrupt_TAD_PsionicDominance);ActionResource(Interrupt_PsionicDominance_Charge,1,0)"
 
-<!--BLACK HOLE-->
-
-new entry "TAD_BlackHole"
-type "PassiveData"
-data "DisplayName" "he71b1f23gc2bdg45f0g99c1g9f476ec396b6;1"
-data "Description" "h3a37227bgeba3g476egbb82gfcbbfc2eca6e;1"
-data "Icon" "TadpoleSuperPower_BlackHole"
-data "Properties" "IsHidden"
-data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Target_TAD_BlackHole)"
-
-<!--LEVITATE-->
-
-new entry "TAD_Levitate"
-type "PassiveData"
-data "DisplayName" "hbcb4f19aga8cdg46b1g881bgd19d7bsd5f64;1"
-data "Description" "h5fbcf9edg1e2ag40eegbf04geb7e18sdfed8;1"
-data "Icon" "TadpoleSuperPower_Levitate"
-data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Projectile_TAD_Levitate)"
-
-<!--MIND BLAST-->
-
-new entry "TAD_MindBlast"
-type "PassiveData"
-data "DisplayName" "h27282233g52efg40b3gb198ge7b6c0ac2147;1"
-data "Description" "hbf315656ga8a7g4c85g9da6ga8decf79a784;1"
-data "Icon" "TadpoleSuperPower_MindBlast"
-data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Zone_TAD_MindBlast)"
-
 <!--MIND SANCTUARY-->
-
-new entry "TAD_MindSanctuaryUnlock"
-type "PassiveData"
-data "DisplayName" "h3557fe72g2249g4b24ga497gb05417249e82;1"
-data "Description" "hb86adc61g8cefg4121gb8cbgfa8d79b09208;1"
-data "Icon" "TadpoleSuperPower_MindSanctuary"
-data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Target_TAD_MindSanctuary)"
 
 new entry "TAD_MindSanctuary"
 type "PassiveData"
@@ -299,17 +177,6 @@ type "PassiveData"
 data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnShortRest"
 data "StatsFunctors" "RemoveStatus(SELF,TAD_FREECAST)"
-
-<!--ABSORB INTELLECT-->
-
-new entry "TAD_AbsorbIntellect"
-type "PassiveData"
-data "DisplayName" "h08852329g9412g4538ga181gaaf42285f6f3;1"
-data "Description" "h7f91680dgf49ag4dffg98aag5e46044a504f;1"
-data "DescriptionParams" "2"
-data "Icon" "TadpoleSuperPower_AbsorbIntellect"
-data "Properties" "IsHidden"
-data "Boosts" "IF(not HasStatus('MIND_FLAYER_FORM', context.Source)):UnlockSpell(Target_TAD_AbsorbIntellect)"
 
 <!--AWAKENED-->
 

@@ -5,6 +5,8 @@
 
 	<content contentuid="h1be7e965gcf8dg4a81gb85dga1fbc01a9f08" version="1">Wizards can learn new Spells by transcribing Spell scrolls to their Spellbook in exchange for gold. Scrolls are destroyed once transcribed.</content>
 
+	<content contentuid="h7387ca0ag0abag4c7fgaa69ga6s5e46f54e6" version="1">Arcane Recovery Points: 1</content>
+	<content contentuid="h7387ca0ag0abag4c7fgaa69gw54e6f5s84fe" version="1">You gain one Arcane Recovery point per level, which are restored upon taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;. Arcane Recovery points allow you to recover &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt;.</content>
 	<content contentuid="h7387ca0ag0abag4c7fgaa69ga6b41f39c7de" version="1">Utilized to recover &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; through &lt;LSTag Type="Spell" Tooltip="Shout_ArcaneRecovery"&gt;Arcane Channeling&lt;/LSTag&gt;.</content>
 
 	<content contentuid="212a895d77db46e38c2fca4bc4431d38000z1" version="6">Arcane Channeling</content>
@@ -136,7 +138,7 @@
 	<content contentuid="he6ee1384geb80g45fbg8d56gbf7262d63153" version="1">When you deal damage with a Spell, you recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; equal to half of the total damage dealt.</content>
 
 	<content contentuid="hcaab1c71g330cg4860g8ceeg443b4a5b3fd6" version="2">Apostle of the Risen Dead</content>
-	<content contentuid="h2ad29575gfd7cg4566g8445g7594ca37780e" version="1">All allied Undead within [1] gain a bonus to their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="h2ad29575gfd7cg4566g8445g7594ca37780e" version="1">All allied Undead within [1] gain a bonus to their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt; during combat.</content>
 
 	<content contentuid="h9aee3403g58c0g4c53g8ca6g380393800072" version="6">Preemptive Atrocity</content>
 	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c6s6d50007b" version="6">At the beginning of any combat encounter, you immediately summon a Death Shepherd.</content>

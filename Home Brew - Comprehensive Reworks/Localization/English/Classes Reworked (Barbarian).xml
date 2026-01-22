@@ -3,6 +3,9 @@
 
 <!--BARBARIAN-->
 
+	<content contentuid="h4c613264gb411g4c6egb997g838c863cb977" version="4">Rage Charges: 3</content>
+	<content contentuid="h50416111g8a61g4659g823fg88107fbfb336" version="2">You gain three Rage charges per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, which can be used to become enraged. Your subclass determines your type of rage.</content>
+
 	<content contentuid="hd0473bcfg9145g41d2gad13g8bc78ce6d718" version="1">Rage</content>
 	<content contentuid="h0758d09cgc5abg4ea7g8e0bg3ecc90844352" version="2">Deal [1] additional damage with &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Throw_ImprovisedWeapon"&gt;Improvised Weapons&lt;/LSTag&gt;, and when &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throwing&lt;/LSTag&gt; objects or creatures.</content>
 	<content contentuid="h9c492aaag4d3cg4dc8g8bd5g12c7dd5dbdef" version="3">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all physical damage, and &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>

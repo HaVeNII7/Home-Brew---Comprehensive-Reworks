@@ -33,7 +33,7 @@ using "Target_MAG_PHB_ScimitarOfSpeed_BonusAttack"
 data "RequirementConditions" "IsOffHandSlotEmpty()"
 data "DisplayName" "hcdb52661g3063g4993g997fg6aacd74abe99;2"
 data "Description" "h3545c8ccgdf05g4d97g994ag1bfeea577b20;2"
-data "SpellFlags" "IsAttack;IsMelee;IsHarmful;IsDefaultWeaponAction"
+data "SpellFlags" "IsMelee;IsHarmful;IsDefaultWeaponAction"
 data "RequirementConditions" "not HasStatus('SG_Polymorph_BeastShape')"
 
 new entry "MAG_TheDueller_ImprovedDuelist_Passive"

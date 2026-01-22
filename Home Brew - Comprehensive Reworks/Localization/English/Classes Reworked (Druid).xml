@@ -3,6 +3,15 @@
 
 <!--DRUID-->
 
+	<content contentuid="h4c613264gb41123r6egb997s2d6f54s5e64f" version="4">Wildshape Charges: 3</content>
+	<content contentuid="h50416111g8a61g43fs54fs84ef4f54e84585" version="2">You gain three Wildshape Charges per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, which allow you to turn into various animals.</content>
+
+	<content contentuid="h4c613264gb41123r6egb997s2d66s54d6f58" version="4">Fungal Symbiosis Charges: 3</content>
+	<content contentuid="h50416111g8a61g43fs54fs84ef452s6e4f58" version="2">You gain three Fungal Symbiosis Charges per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, which allow you to cast &lt;LSTag Type="Spell" Tooltip="Shout_SymbioticEntity"&gt;Symbiotic Entity&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h4c613264gb41123r6egb997s2d6w56e4f6w8" version="4">Star Maps: 3</content>
+	<content contentuid="h50416111g8a61g43fs54fs84ef429r89w8ef" version="2">You gain three Star Maps per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, which allow you to cast while under the guidance of &lt;LSTag Type="Spell" Tooltip="Shout_ShapeoftheCosmos"&gt;Shapes of the Cosmos&lt;/LSTag&gt;.</content>
+
 	<content contentuid="ha585d015g08f6g4c58ga0cdg5770377eb7e8" version="2">The number of times you can assume the form of a Wild Shape, or cast Spells as a Dryad.</content>
 
 	<content contentuid="9b7b811b9c3043e189f945540bf519a784555" version="1">Wildshapes</content>
@@ -62,7 +71,7 @@
 	<content contentuid="354df869b11c4ef6be4ade30a4608aaa0000a" version="1">At the beginning of each of your turns, create a [1] area of &lt;LSTag Type="Status" Tooltip="ENSNARED_VINES"&gt;Entangling Vines&lt;/LSTag&gt;. This can be toggled at any time.</content>
 
 	<content contentuid="b84b364eea3d414a8c9b99e2be62857500004" version="1">Untamed Freedom</content>
-	<content contentuid="b84b364eea3d414a8c9b99e2be6285750000d" version="1">You and all allies within [1] of you are unaffected by &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;. Additionally, your &lt;LSTag Type="Spell" Tooltip="Target_ConjureDryad"&gt;Dryad&lt;/LSTag&gt; creates a [2] area of &lt;LSTag Type="Status" Tooltip="ENSNARED_VINES"&gt;Entangling Vines&lt;/LSTag&gt; at the beginning of each of its turns.</content>
+	<content contentuid="b84b364eea3d414a8c9b99e2be6285750000d" version="1">You are unaffected by &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;, as well as your allies during combat. Additionally, your &lt;LSTag Type="Spell" Tooltip="Target_ConjureDryad"&gt;Dryad&lt;/LSTag&gt; creates a [2] area of &lt;LSTag Type="Status" Tooltip="ENSNARED_VINES"&gt;Entangling Vines&lt;/LSTag&gt; at the beginning of each of its turns.</content>
 	<content contentuid="b84b364eea3d414a8c9b99e2be628575000a4" version="1">Untamed Freedom</content>
 	<content contentuid="b84b364eea3d414a8c9b99e2be628575000ad" version="1">Affected creature is unaffected by &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;.</content>
 	<content contentuid="2c3c4b359f8f4c4a866c94b6145d165500001" version="1">Sylvan Resurgence</content>

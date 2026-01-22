@@ -20,7 +20,7 @@ data "DisplayName" "hfb3605eeg4fc4g478cg9d00g74782ade7cfd;2"
 data "Description" "he7348f1fgdf5cg410dg8971gca6473b8283e;1"
 data "UseCosts" "BonusActionPoint:1"
 data "SpellAnimation" "79e47203-3855-4837-8673-ddb708d86962,,;711781fb-5f5a-4b9a-bd8b-e0b4ff9dec46,,;a17a7bf3-7381-4191-83f4-304d37c738e0,,;1172e0b6-08d1-4f28-a651-a01681b84ee6,,;863fabe7-d990-42a3-8961-7898c207bcb1,,;0002afee-5ad9-4109-ae64-9b2571601226,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,,"
-data "SpellFlags" "IsAttack;IsMelee;IsHarmful;IsDefaultWeaponAction"
+data "SpellFlags" "IsMelee;IsHarmful;IsDefaultWeaponAction"
 data "RequirementConditions" "not HasStatus('SG_Polymorph_BeastShape')"
 
 new entry "CONSUMED_BELM"

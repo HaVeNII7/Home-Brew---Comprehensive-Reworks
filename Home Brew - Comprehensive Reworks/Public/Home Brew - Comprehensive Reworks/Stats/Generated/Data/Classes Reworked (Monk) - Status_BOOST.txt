@@ -464,6 +464,7 @@ data "AuraRadius" "18"
 data "AuraStatuses" "TARGET:IF(not HasStatus('SITOUT_ONCOMBATSTART_APPLIER_TECHNICAL',context.Source) and not HasStatus('SITOUT_ONCOMBATSTART_DOONCE_TECHNICAL',context.Source) and not HasStatus('BANISHED',context.Source) and not HasStatus('BANISHED_FINALSTAND',context.Source) and Enemy() and Character()):ApplyStatus(FADE_TO_BLACK_ENEMY)"
 data "StackId" "FADE_TO_BLACK"
 data "StatusGroups" "SG_RemoveOnRespec"
+data "RemoveEvents" "OnCombatEnded"
 
 new entry "FADE_TO_BLACK_ENEMY"
 type "StatusData"

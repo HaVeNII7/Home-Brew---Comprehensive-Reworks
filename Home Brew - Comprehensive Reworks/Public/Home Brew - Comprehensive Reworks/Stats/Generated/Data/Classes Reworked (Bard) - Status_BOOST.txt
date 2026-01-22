@@ -481,6 +481,7 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndi
 data "TickType" "EndTurn"
 data "AuraRadius" "18"
 data "AuraStatuses" "IF(Enemy()):ApplyStatus(CAPTIVATINGRECLAIM_ACTUAL)"
+data "RemoveEvents" "OnCombatEnded"
 
 new entry "CAPTIVATINGRECLAIM_ACTUAL"
 type "StatusData"

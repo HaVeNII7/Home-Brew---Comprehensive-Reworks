@@ -1,16 +1,3 @@
-<!--HP REDUCTION-->
-
-new entry "HP_REDUCTION"
-type "StatusData"
-data "StatusType" "BOOST"
-data "DisplayName" "h86cd4e0cg5c92g43b9g885ag6fd1a719d8f9;2"
-data "Description" "h1bae7591geddag4834gb73agdecd5a32839e;2"
-data "Icon" "TadpoleSuperPower_IllithidPersuasion"
-data "Boosts" "IncreaseMaxHP(-2)"
-data "StatusPropertyFlags" "MultiplyEffectsByDuration;FreezeDuration;ApplyToDead;DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
-data "StackId" "HP_REDUCTION"
-data "TickType" "EndTurn"
-data "StackType" "Additive"
 
 <!--STAGE FRIGHT-->
 

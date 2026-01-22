@@ -3,6 +3,9 @@
 
 <!--MONK-->
 
+	<content contentuid="hf8c4092eg6369g43cega6c8g8cdd2142511a" version="2">Ki Point: 1</content>
+	<content contentuid="hfe6be642g5ae0g4e79gaccag91689d25420c" version="3">You gain one Ki Point per level, which are restored upon taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;. Ki Points fuel various techniques as a Monk, allowing you to be more effective and versatile in combat.</content>
+
 	<content contentuid="d03f845e0df8463295a0cc3b6d86442c6a942" version="6">Martial Arts</content>
 	<content contentuid="d03f845e0df8463295a0cc3b6d86442c6a921" version="6">Attacks with weapons which are not &lt;LSTag Tooltip="TwoHanded"&gt;Two-Handed&lt;/LSTag&gt; deal [1], unless their normal damage is higher. The damage of these attacks may scale with either your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; or your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt;. This can be toggled at any time.&lt;br&gt;&lt;br&gt;Additionally, you are able to utilize your &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; in order to make an unarmed strike.</content>
 
@@ -221,7 +224,7 @@
 	<content contentuid="4512454c8e254628bd4dc6as9d8f79s86698d" version="3">Affected creature will only roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; when damaging another creature.</content>
 
 	<content contentuid="h9edc5297g58c0g4b7dg8e45as8d9f87s9d8f" version="2">Fade to Black</content>
-	<content contentuid="h9edc5297g58c0g4b7dg8e4as2dff31289898" version="3">Enemies within [1] of you have their peripheral vision severely reduced.</content>
+	<content contentuid="h9edc5297g58c0g4b7dg8e4as2dff31289898" version="3">Enemies within [1] of you have their peripheral vision severely reduced during combat.</content>
 	<content contentuid="h9edc5297g58c0g4b7dg8e45as8d9f87asdf8" version="2">Fade to Black</content>
 	<content contentuid="h9edc5297g58c0g4b7dg8e4as2dff31afdd22" version="3">Affected creature is severely reducing nearby enemies' peripheral vision.</content>
 	<content contentuid="h9edc5297g58c0g4b7dg8e45as8d9f876ad85" version="2">Fade to Black</content>

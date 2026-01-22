@@ -4,6 +4,8 @@
 <!--BARD-->
 
 	<content contentuid="h4c3e4729g5750g4cd6g8cc6g14dad43c269a" version="2">Instrument</content>
+	<content contentuid="h4c613264gb41123r6egb997g838a6s54dfef" version="4">Bardic Inspirations: 3</content>
+	<content contentuid="h50416111g8a61g43ffe823fg88107fwe56f4" version="2">You gain three Bardic Inspirations per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, which can be used to inspire allies, improving their rolls.</content>
 
 	<content contentuid="hc9735187g68cag427ag8680g4eff5dkkdkf1" version="1">Power of Performance</content>
 	<content contentuid="h843e9f50g1485g4d5dgbc14g6bss6f9ss6fa" version="2">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt; in combat, you are able to utilize various passive effects which increase in potency each turn. Upon ending your Performance, you may start Performing again at the same level that it was dropped by expending a charge of your &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Upon reaching a state of &lt;LSTag Type="Status" Tooltip="PERFORMATIVE_CHORUS"&gt;Performative Chorus&lt;/LSTag&gt;, you gain access to a unique action depending on which Bard subclass you currently belong to.</content>
@@ -103,7 +105,7 @@ Captivation</content>
 	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf400zzc" version="1">Affected creature will negate the next instance of damage taken.</content>
 
 	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef00004" version="2">Captivating Reclaim</content>
-	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf40000d" version="1">When a creature within [1] of you becomes &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;, you immediately regain one charge of &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
+	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf40000d" version="1">When a creature within [1] of you becomes &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; during combat, you immediately regain one charge of &lt;LSTag Type="ActionResource" Tooltip="BardicInspiration"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
 
 	<content contentuid="habfab1deg96a3g4928gbb99g29b61ef00005" version="2">Performative Shielding</content>
 	<content contentuid="hacc1d957g1ef1g4debg9f26gc25bcf40000e" version="1">While &lt;LSTag Type="Spell" Tooltip="Shout_Bard_Perform_Whistle"&gt;Performing&lt;/LSTag&gt;, you become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all forms of damage.</content>

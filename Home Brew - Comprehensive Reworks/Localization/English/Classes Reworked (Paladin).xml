@@ -3,6 +3,15 @@
 
 <!--PALADIN-->
 
+	<content contentuid="h4c613264gb41123r6egb91283492873re98f" version="4">Channel Oath Charges: 3</content>
+	<content contentuid="h50416111g8a61g43fs5492387497898f7df3" version="2">You gain three Channel Oath Charges per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, which allow you to trigger various effects determined by your choice of subclass.</content>
+
+	<content contentuid="h4c613264gb41123r6egb992839r7987fe983" version="4">Smite Charges: 3</content>
+	<content contentuid="h50416111g8a61g43fs54fs9283r9w78rw97f" version="2">You gain three Smite Charges per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, which allow you to deal tremendous damage to your enemies.</content>
+
+	<content contentuid="h4c613264gb41123r6egb997s2d6f54s5e64f" version="4">Wildshape Charges: 3</content>
+	<content contentuid="h50416111g8a61g43fs54fs84ef4f54e84585" version="2">You gain three Wildshape Charges per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, which allow you to turn into various animals.</content>
+
 	<content contentuid="9b7b811b9c3043e189f945540bf5116eff2d5" version="3">Break Oath</content>
 	<content contentuid="9b7b811b9c3043e189f945540bf5116ess6d8" version="3">A Paladin's oath is a sacred, binding vow. Their power a manifestation of their devotion to a just cause. To rescind one's oath would be utterly unconscionable...right?</content>
 	<content contentuid="9b7b811b9c3043e189f945540bf5116fd2d51" version="3">This action will have grave consequences.</content>
@@ -100,7 +109,7 @@
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4dasdf5" version="3">The range of your &lt;LSTag Type="Spell" Tooltip="Shout_HealingRadiance"&gt;Healing Radiance&lt;/LSTag&gt; is doubled. Additionally, &lt;LSTag Type="Spell" Tooltip="Target_NaturesWrath"&gt;Binding Radiance&lt;/LSTag&gt; may now select up to three targets.</content>
 
 	<content contentuid="hd8ffaca7g8aa7g4e02ga546g3592286387a8" version="2">Aura of Protection</content>
-	<content contentuid="h3728832agb688g4081gad4eg7dcab2a79276" version="5">Emit an aura across [1] which grants both yourself and allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="h3728832agb688g4081gad4eg7dcab2a79276" version="5">Emit an aura across [1] which grants both yourself and allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; until the end of combat.</content>
 	<content contentuid="hdfe1f27agb8e1g487cg88fdg8ca4b3c795fc" version="2">Aura of Protection</content>
 	<content contentuid="hc3749f97g4b86g46e8g9f1bg8bd2293a8de0" version="4">Affected creature is emitting an aura across [1] which grants both this creature and allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 	<content contentuid="h5d27ac75g5b53g4844gba19g9c87ff56d98a" version="2">Aura of Protection</content>
@@ -133,7 +142,7 @@
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000d" version="2">While &lt;LSTag Type="Status" Tooltip="SUNSCORCHED"&gt;Sun Scorched&lt;/LSTag&gt; is active, you are able to &lt;LSTag Type="Spell" Tooltip="Target_Fly"&gt;Fly&lt;/LSTag&gt;, and you make &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; against &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt; creatures. In addition, you gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Fire damage.</content>
 
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100005" version="2">Aura of Cinder</content>
-	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000e" version="2">All enemies within [1] of you &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt;.</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000e" version="2">All enemies within [1] of you &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt; until the end of combat.</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000s5" version="2">Aura of Cinder</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000se" version="2">Affected creature is causing all enemies within [1] of them &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burn&lt;/LSTag&gt;.</content>
 
@@ -171,7 +180,7 @@
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1asdf4dasdf5" version="3">When taking damage while &lt;LSTag Type="Spell" Tooltip="Target_HolyRebuke"&gt;Holy Rebuke&lt;/LSTag&gt; is active, your aggressor takes [1]. In addition, your &lt;LSTag Type="Spell" Tooltip="Shout_SacredWeapon"&gt;Sacred Weapon&lt;/LSTag&gt; now inflicts one stack of &lt;LSTag Type="Status" Tooltip="MAG_RADIANT_RADIATING_ORB"&gt;Radiating Orb&lt;/LSTag&gt; when you deal damage.</content>
 
 	<content contentuid="ha12ebad1gfaf7g4b82g827fg125b781e62a7" version="2">Aura of Courage</content>
-	<content contentuid="h6dc7d859g0635g4fc0gabbfg80e4218d0c89" version="4">Emit an aura across [1] granting &lt;LSTag Type="Status" Tooltip="HEROISM"&gt;Heroism&lt;/LSTag&gt; to yourself and allies, as well &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to all fear based status effects.</content>
+	<content contentuid="h6dc7d859g0635g4fc0gabbfg80e4218d0c89" version="4">Emit an aura across [1] granting &lt;LSTag Type="Status" Tooltip="HEROISM"&gt;Heroism&lt;/LSTag&gt; to yourself and allies, as well &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to all fear based status effects until the end of combat.</content>
 	<content contentuid="h619c3982ga449g4c32gbd32g7259e2bdac53" version="2">Aura of Courage</content>
 	<content contentuid="h2d139c7bgeb89g44cbgaed4g688c42570f41" version="5">Affected creature is emitting an aura across [1] which grants both this creature and allies &lt;LSTag Type="Status" Tooltip="HEROISM"&gt;Heroism&lt;/LSTag&gt;, as well as &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to all fear based status effects.</content>
 	<content contentuid="hac89c8ceg3aaag4f93ga5bfg52a93dc45905" version="2">Aura of Courage</content>
@@ -207,7 +216,7 @@
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1sdfsddasdf5" version="3">When dealing damage to a target affected by &lt;LSTag Type="Spell" Tooltip="Target_AbjureEnemy"&gt;Abjure Enemy&lt;/LSTag&gt;, roll your damage dice with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Additionally, &lt;LSTag Type="Spell" Tooltip="Target_InquisitorsMight"&gt;Inquisitor's Might&lt;/LSTag&gt; also grants Advantage on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hce5530e4g3326g4a39ga467gf5d023c89bcd" version="2">Aura of Warding</content>
-	<content contentuid="h7b194af9ge1fbg47b4g95ebg4b5d0eebb313" version="9">Emit an aura across [1] which grants both yourself and allies &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to damage from spells.</content>
+	<content contentuid="h7b194af9ge1fbg47b4g95ebg4b5d0eebb313" version="9">Emit an aura across [1] which grants both yourself and allies &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to damage from spells until the end of combat.</content>
 	<content contentuid="hd2abbfe7g0d50g4bbega5bdg8d1977439ff6" version="2">Aura of Warding</content>
 	<content contentuid="hbffabd18gf3d3g40b5gbfd1gc6d5bcb7c11e" version="5">Affected creature is emitting an aura across [1] which grants both this creature and allies &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to damage from spells.</content>
 	<content contentuid="ha87fa9dbg5e60g4a75ga11bgba1fb919d196" version="2">Aura of Warding</content>
@@ -250,7 +259,7 @@
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1sdfsdddfsdd" version="3">&lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; enemies deal the maximum amount of damage possible when dealing damage to another creature.</content>
 
 	<content contentuid="h927a9140g56d3g460fg9314g40fbd232b361" version="2">Aura of Hate</content>
-	<content contentuid="h0c2bc9a2g8e6bg4550ga8b9gfba7b2e8462d" version="7">Emit an aura across [1] which grants yourself, &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; creatures, and nearby Undead an additional [2] to all damage dealt.</content>
+	<content contentuid="h0c2bc9a2g8e6bg4550ga8b9gfba7b2e8462d" version="7">Emit an aura across [1] which grants yourself, &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; creatures, and nearby Undead an additional [2] to all damage dealt until the end of combat.</content>
 	<content contentuid="h8aa4cdf9ga9e7g46d5gb7a1gb32901defe3c" version="2">Aura of Hate</content>
 	<content contentuid="h1b60bee0geb62g4184ga679g1e7f6de42926" version="3">Affected creature is emitting an aura across [1] which grants this creature, &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; creatures, and nearby Undead an additional [2] to all damage dealt.</content>
 	<content contentuid="hfa4ad8dfge9efg4f7fg8bc2g664c49a83964" version="2">Aura of Hate</content>

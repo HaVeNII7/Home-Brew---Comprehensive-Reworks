@@ -3,6 +3,12 @@
 
 <!--ROGUE-->
 
+	<content contentuid="hc4558204g2c77g4b58gafb293874978sf987" version="1">Sneak Attack Charges: 1</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22923874987s9f87" version="3">You gain one Sneak Attack charge, allowing you to deal additional damage to your enemies each turn.</content>
+
+	<content contentuid="hc4558204g2c77g4b58gafb28934jhf940493" version="1">Luck Points: 3</content>
+	<content contentuid="h098941ccgc4ecg49f2gb22ag92839fdij340" version="3">You gain three Luck Points, allowing you to gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on your rolls.</content>
+
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b396a454" version="1">Sneak Attacks</content>
 	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b0ff858" version="3">The remaining amount of times that you may utilize your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; this turn.</content>
 

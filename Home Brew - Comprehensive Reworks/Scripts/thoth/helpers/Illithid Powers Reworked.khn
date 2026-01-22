@@ -1,0 +1,21 @@
+function TadpolePowersAtLeast(value)
+    local result = GetTadpolePowersNumber(context.Source) >= value
+    return ConditionResult(result)
+end
+
+function HasLessHPThanTadpolePowersX4(target, source)
+    target = target or context.Target
+    source = source or context.Source
+
+    local value = GetTadpolePowersNumber(source) - 1
+
+    if value < 0 then
+        value = 0
+    elseif value > 25 then
+        value = 25
+    end
+
+    value = value * 2
+
+    return ConditionResult(target.HP <= value)
+end

@@ -3,7 +3,7 @@
 
 <!--ILLITHID PERSUASION-->
 	<content contentuid="h86cd4e0cg5c92g43b9g885ag6fd1a719d8f9" version="1">Illithid Consequences</content>
-	<content contentuid="h1bae7591geddag4834gb73agdecd5a32839e" version="1">You may use your connection to the parasite in your brain in order to force cultists of the Absolute to obey you. However, giving in to further allure of the tadpole will take a toll on your mind.&lt;br&gt;&lt;br&gt;After having taken a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, your maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; are reduced by 2 for each additional illithid power you have acquired.</content>
+	<content contentuid="h1bae7591geddag4834gb73agdecd5a32839e" version="1">You may use your connection to the parasite in your brain in order to force cultists of the Absolute to obey you. However, giving in to further allure of the tadpole will take a toll on your mind.&lt;br&gt;&lt;br&gt;After having taken a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, your maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; are reduced by 4 for each additional illithid power you have acquired.</content>
 
 <!--PSIONIC OVERLOAD-->
 	<content contentuid="h2d18417cgc993g4e52g914cgf1e205a824cb" version="2">Psionic Overload</content>
@@ -75,7 +75,7 @@
 
 <!--CULL THE WEAK-->
 	<content contentuid="h4c2ba204g19acg477cg98e9g1d755242996e" version="2">Cull the Weak</content>
-	<content contentuid="hfd385480ga7c4g4d30gbaffg29423289561e" version="7">When you bring a creature down to fewer &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; than your number of Illithid Powers, it instantly dies.</content>
+	<content contentuid="hfd385480ga7c4g4d30gbaffg29423289561e" version="7">When you bring a creature down to fewer &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; than your number of chosen Illithid Powers multiplied by two, it instantly dies.</content>
 
 <!--PSIONIC BACKLASH-->
 	<content contentuid="h065f97f5ga6ddg48bag9ba6gc090244742c5" version="2">Psionic Backlash</content>

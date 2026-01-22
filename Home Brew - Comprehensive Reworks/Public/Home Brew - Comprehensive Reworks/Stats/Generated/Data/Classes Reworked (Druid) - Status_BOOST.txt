@@ -54,6 +54,7 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndi
 data "AuraRadius" "18"
 data "AuraStatuses" "IF(not HasStatus('SITOUT_ONCOMBATSTART_APPLIER_TECHNICAL',context.Source) and not HasStatus('SITOUT_ONCOMBATSTART_DOONCE_TECHNICAL',context.Source) and not HasStatus('BANISHED',context.Source) and not HasStatus('BANISHED_FINALSTAND',context.Source) and Ally() and not Self()):ApplyStatus(UNTAMED_FREEDOM,100,-1)"
 data "StatusGroups" "SG_RemoveOnRespec"
+data "RemoveEvents" "OnCombatEnded"
 
 new entry "UNTAMED_FREEDOM"
 type "StatusData"

@@ -514,7 +514,7 @@
 	<content contentuid="hf6737e4eg1692g42acgb65ag23edf956cbad" version="1">While obscured in darkness, you reflect all Radiant damage back at your attacker twofold as Force damage.</content>
 
 	<content contentuid="hf8723df2g1884g46aagb114g523ea75da964" version="4">Blessing of Moonfire</content>
-	<content contentuid="h9705bf5dg6a89g4205g9a88gaf5c5aecb5db" version="2">Surround yourself in a pillar of Selûne's light, dealing damage to and afflicting nearby foes with &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>
+	<content contentuid="h9705bf5dg6a89g4205g9a88gaf5c5aecb5db" version="2">Surround yourself in a pillar of Selûne's light, dealing damage to and afflicting nearby creatures with &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>
 	<content contentuid="h47fbac5dgda23g402bg9bcdg2cae3cc38820" version="1">Moonfire</content>
 	<content contentuid="h6e20f892gecf1g434aga880g3c2e3166302e" version="1">Affected creature is blessed by moonlight. Enemies within [1] of them will be afflicted with &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>
 

@@ -141,8 +141,9 @@ data "SpellStyleGroup" "Class"
 data "RequirementConditions" "not HasStatus('CAURA_OF_PROTECTION')"
 data "PrepareEffect" "c218f05b-1e12-4298-beff-e4d33a5fa5a5"
 data "CastEffect" "8265c6d6-662a-40fe-888b-024af0e2b1b9"
-data "UseCosts" "ActionPoint:1"
+data "UseCosts" "BonusActionPoint:1"
 data "HitAnimationType" "None"
+data "Requirements" "Combat"
 
 <!--OATH OF THE CROWN PHOENIX-->
 
@@ -192,9 +193,9 @@ data "SpellStyleGroup" "Class"
 data "RequirementConditions" "not HasStatus('CAURA_OF_CINDER')"
 data "PrepareEffect" "fdbf8e88-c3a5-4151-a81d-429985de422c"
 data "CastEffect" "69aaec35-fb5f-489e-a4cc-47310f4377e9"
-data "UseCosts" "ActionPoint:1"
+data "UseCosts" "BonusActionPoint:1"
 data "HitAnimationType" "None"
-
+data "Requirements" "Combat"
 
 <!--OATH OF DEVOTION-->
 
@@ -269,8 +270,9 @@ data "SpellStyleGroup" "Class"
 data "RequirementConditions" "not HasStatus('CAURA_OF_COURAGE')"
 data "PrepareEffect" "c218f05b-1e12-4298-beff-e4d33a5fa5a5"
 data "CastEffect" "8265c6d6-662a-40fe-888b-024af0e2b1b9"
-data "UseCosts" "ActionPoint:1"
+data "UseCosts" "BonusActionPoint:1"
 data "HitAnimationType" "None"
+data "Requirements" "Combat"
 
 <!--OATH OF VENGEANCE-->
 
@@ -319,8 +321,9 @@ data "SpellStyleGroup" "Class"
 data "RequirementConditions" "not HasStatus('CAURA_OF_WARDING')"
 data "PrepareEffect" "c218f05b-1e12-4298-beff-e4d33a5fa5a5"
 data "CastEffect" "8265c6d6-662a-40fe-888b-024af0e2b1b9"
-data "UseCosts" "ActionPoint:1"
+data "UseCosts" "BonusActionPoint:1"
 data "HitAnimationType" "None"
+data "Requirements" "Combat"
 
 new entry "Shout_VisageofVengeance"
 type "SpellData"
@@ -386,7 +389,7 @@ new entry "Shout_TurnTheLiving"
 type "SpellData"
 data "SpellType" "Shout"
 using "Shout_TurnUndead"
-data "SpellProperties" "IF(Dead()):SwitchDeathType(Explode);IF(Dead()):ApplyStatus(CORPSE_USED,100,-1);IF(Dead()):Summon(122ce989-2603-4bf4-a3ee-8b2513c39d5e, UntilLongRest,,,,SHADOWCURSE_SUMMON_CHECK,SUMMON_LOSECONTROL,UNSUMMON_ABLE)"
+data "SpellProperties" "IF(Dead()):SwitchDeathType(Explode);IF(Dead()):ApplyStatus(CORPSE_USED,100,-1);IF(Dead()):Summon(122ce989-2603-4bf4-a3ee-8b2513c39d5e, -1,,,,SHADOWCURSE_SUMMON_CHECK,SUMMON_LOSECONTROL,UNSUMMON_ABLE)"
 data "TargetConditions" "(Dead() and not HasStatus('CORPSE_USED') and IsTargetableCorpse()) or (HasPassive('Vicious_Advantage', context.Source) and not Dead() and not Ally())"
 data "Icon" "Action_Paladin_DreadfulAspect"
 data "DisplayName" "hb27de5a4g2331g490cgbbd5g86200d79a878;1"
@@ -431,8 +434,9 @@ data "SpellStyleGroup" "Class"
 data "RequirementConditions" "not HasStatus('CAURA_OF_HATE')"
 data "PrepareEffect" "c218f05b-1e12-4298-beff-e4d33a5fa5a5"
 data "CastEffect" "8265c6d6-662a-40fe-888b-024af0e2b1b9"
-data "UseCosts" "ActionPoint:1"
+data "UseCosts" "BonusActionPoint:1"
 data "HitAnimationType" "None"
+data "Requirements" "Combat"
 
 <!--PASSIVES-->
 

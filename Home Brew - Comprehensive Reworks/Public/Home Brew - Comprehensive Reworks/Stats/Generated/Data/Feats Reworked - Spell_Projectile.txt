@@ -41,7 +41,7 @@ data "UseCosts" "ReactionActionPoint:1"
 data "SpellAnimation" "73afb4e5-8cfe-4479-95cf-16889597fee3,,;7e67bfd0-2fc2-4d10-bed5-cfda9e660de5,,;eb054308-7fce-4b85-bf4c-7a0031fda7ac,,;0b0dc35b-4953-45c0-a9eb-8d3fef5e798a,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,,"
 data "VerbalIntent" "Damage"
 data "WeaponTypes" "Ammunition"
-data "SpellFlags" "IsAttack;IsHarmful;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold"
+data "SpellFlags" "IsHarmful;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold"
 data "HitAnimationType" "PhysicalDamage"
 data "SpellAnimationIntentType" "Aggressive"
 data "CastEffect" "8682067a-e523-40fb-b705-3112083b6b05"
@@ -90,7 +90,7 @@ data "Icon" "Spell_Transmutation_SwiftQuiver"
 data "DisplayName" "8a87461fd8dd4f5b9098ded714f6c8azzzz24;1"
 data "Description" "8a87461fd8dd4f5b9098ded714f6c8aazzzzx;2"
 data "UseCosts" ""
-data "SpellFlags" "IsAttack;IsHarmful;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary"
+data "SpellFlags" "IsHarmful;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary"
 data "Cooldown" "OncePerTurn"
 
 <!--BLESSINGS OF THE MOON-->
@@ -160,7 +160,7 @@ data "Icon" "Spell_Transmutation_SwiftQuiver"
 data "DisplayName" "8a87461fd8dd4f5b9098ded714sdf6887yy09;1"
 data "Description" "8a87461fd8dd4f5b9098ded714f60d1fdyy0i;2"
 data "UseCosts" "ReactionActionPoint:1"
-data "SpellFlags" "IsAttack;IsHarmful;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary"
+data "SpellFlags" "IsHarmful;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary"
 
 <!--TOGETHER IN TORMENT-->
 

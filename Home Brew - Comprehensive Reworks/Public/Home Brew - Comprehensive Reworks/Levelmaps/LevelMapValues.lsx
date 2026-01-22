@@ -117,6 +117,22 @@
                     <attribute id="UUID" type="guid" value="67432a46-f078-4c62-bade-e5a0f96db334"/>
 					</node>
         <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1d20"/>
+                    <attribute id="Level2" type="LSString" value="1d20"/>
+                    <attribute id="Level3" type="LSString" value="1d20"/>
+                    <attribute id="Level4" type="LSString" value="1d20"/>
+                    <attribute id="Level5" type="LSString" value="2d20"/>
+                    <attribute id="Level6" type="LSString" value="2d20"/>
+                    <attribute id="Level7" type="LSString" value="2d20"/>
+                    <attribute id="Level8" type="LSString" value="2d20"/>
+                    <attribute id="Level9" type="LSString" value="3d20"/>
+                    <attribute id="Level10" type="LSString" value="3d20"/>
+                    <attribute id="Level11" type="LSString" value="3d20"/>
+                    <attribute id="Level12" type="LSString" value="3d20"/>
+                    <attribute id="Name" type="FixedString" value="D20Cantrip"/>
+                    <attribute id="UUID" type="guid" value="46ffb554-d45c-4a56-a6c4-5ab51132247f"/>
+					</node>
+        <node id="LevelMapSeries">
                     <attribute id="Level1" type="LSString" value="2d12"/>
                     <attribute id="Level2" type="LSString" value="2d12"/>
                     <attribute id="Level3" type="LSString" value="2d12"/>

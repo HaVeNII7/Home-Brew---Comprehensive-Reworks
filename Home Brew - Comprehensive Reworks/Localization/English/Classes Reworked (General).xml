@@ -194,6 +194,26 @@
 	<content contentuid="h43f4dbfeg0d62g49eegbecagad62630e032d" version="2">Reaction</content>
 	<content contentuid="hb8abe274g41c8g481dgbd39g8a1c1c692457" version="3">Reactions are responses you can have to events which can trigger both during and outside of your turn.</content>
 
+	<content contentuid="h0089509agc899g43d0g991bg6974279ceb44" version="4">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h09b31492g952bg4e5fg8f84ged1ace0ccf5e" version="1">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h09f5efb9g4e3bg412ag8b33gde60127b046c" version="4">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h120fab4fg0eafg4254ga19eg0e7087563daa" version="1">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h1d2e5159g39d4g42bagb90egb48a837fdfc2" version="4">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h264cd9e9gbe19g4e44g9c76g564d77bd3592" version="3">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h28ad4b09g0c12g4c47g86cagcfb4b59e2913" version="1">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h4bc9842bg62deg4d7ag88a7g87fb02312dcf" version="1">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h4c79a339g5d45g479dgbbabg7eb0579ce7fe" version="5">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h4cfc6c2bgec3eg4703g93fbgff6640b77db7" version="1">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h53a47f89ga288g497fga3a3g3e4d5a77c55f" version="1">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h8696ab6bg57f1g48ecga1adg9df8c61cea66" version="3">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h91b31197g455eg4e3cg8172g32b65e1951f5" version="1">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h9fc1d1a2ga5c9g4bf0g9815gb0e0a4851bf3" version="4">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="ha21caf1cg7705g4a37g952ag8154a7d3920d" version="2">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="ha8040c09g97e4g46ffgb9acg90364529c667" version="3">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="hb71f491cg1c66g4c77g9c2egf0dc5075e657" version="3">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="hbb5c16e0g3f77g448fg9062ga41287a65c6a" version="1">You gain [3] level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="hf18b81d6gc28ag4367g9062ge7b3cd4a435d" version="6">You gain [3] Level [4] Spell Slots, which are restored on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+
 	<content contentuid="h9426bff1g05d0gd470g372dgbbf7cfcd0fb6" version="1">Aether Suspension</content>
 	<content contentuid="h4e31b13dgba1dg3215g0412g31583b8245c2" version="1">While enabled, this character will not participate in combat encounters. All non-participants vanish at the beginning of combat, only reappearing once combat has ended.&lt;Br&gt;&lt;Br&gt;Should all other party memberes flee combat, this character will have three turns to leave combat as well. After three turns, if they are still in combat, they will immediately die.&lt;Br&gt;&lt;Br&gt;If all members of the party have either been defeated or are non-participants, the game will immediately end.</content>
 	<content contentuid="h9426bff1g05d0gd470g372dgbbf7cfc88998" version="1">Aether Suspension: Final Stand</content>

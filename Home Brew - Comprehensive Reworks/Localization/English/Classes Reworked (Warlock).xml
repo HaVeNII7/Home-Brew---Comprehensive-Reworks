@@ -3,6 +3,8 @@
 
 <!--WARLOCK-->
 
+	<content contentuid="he13e2e47g0014g44cdgbf7cg9e295d712db3" version="3">You gain &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slots&lt;/LSTag&gt;, which are restored upon taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt; and allow you to cast Spells at the highest level possible.</content>
+
 	<content contentuid="9b7b811b9c3043e189f945540bf56sd8552e5" version="5">Pact Binding</content>
 	<content contentuid="9b7b811b9c3043e189f945540bawes4d8e568" version="1">Pacts can forge a Warlock's soul to a creature, object, or concept. Who or what have you signed your soul to?</content>
 

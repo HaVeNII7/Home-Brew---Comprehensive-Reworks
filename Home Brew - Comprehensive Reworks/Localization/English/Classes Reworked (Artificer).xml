@@ -8,6 +8,9 @@
 	<content contentuid="66523fb3deaa14de1766304e0918494800003" version="1">Musket</content>
 	<content contentuid="66523fb3deaa14de1766304e091849480000a" version="2">The players currently equipped firearm.</content>
 
+	<content contentuid="66523fb3deaa14de1766304e096s5d4f68e54" version="1">Ammunition: 3</content>
+	<content contentuid="77523fb3deaa14de1766304e09s56ef956e84" version="2">Gain three shots of ammunition per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, used to fire your currently equipped firearms unique actions. You may also restore your supply of Ammunition by &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt;.</content>
+
 	<content contentuid="66523fb3deaa14de1766304e0911fbc49ae66" version="1">Artificer</content>
 	<content contentuid="77523fb3deaa14de1766304e0911fbc49ae77" version="2">Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex system waiting to be decoded and then harnessed.</content>
 
@@ -78,14 +81,18 @@
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00001" version="1">Armour-Piercing Rounds</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000a" version="2">When dealing damage with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt;, you ignore piercing &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt;.</content>
 
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00002" version="1">Anti-Material Explosive Ammunition</content>
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000b" version="2">Upon rolling a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt;, you create an explosion, dealing damage across [1]. This can be toggled at any time.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00002" version="1">Anti-Material Ammunition</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000b" version="2">Upon landing a killing blow, you may fire &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000z2" version="1">Anti-Material Ammunition</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000zb" version="2">Affected creature may fire &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
 
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00003" version="1">Multipurpose Mag-Fed Carnage</content>
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000c" version="2">Gain the ability to &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reload&lt;/LSTag&gt; your firearms as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00003" version="1">Marked Suppression</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000c" version="2">Dealing damage to an enemy with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; will &lt;LSTag Type="Status" Tooltip="MARKED_SUPPRESSION"&gt;Mark&lt;/LSTag&gt; them. When either yourself or allies make an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against a Marked creature, it is rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Only one enemy may be Marked at a time.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000z3" version="1">Marked</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000zc" version="2">Affected creature is Marked. &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them are rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Only one enemy may be Marked at a time.</content>
 
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00004" version="1">Focus Fire</content>
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000d" version="2">Dealing damage to an enemy with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; applies one stack of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt;. Each time that they are subsequently damaged by a Ranged Weapon Attack, they take additional damage equal to the amount of Focus Fire stacks they have remaining.&lt;br&gt;&lt;br&gt;Damaging another creature or missing your shot will reset the amount of stacks.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000d" version="2">Dealing damage to an enemy with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; which only target one creature will apply one stack of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt;. Each time that they are subsequently damaged by a Ranged Weapon Attack, they take additional damage equal to the amount of Focus Fire stacks they have remaining.&lt;br&gt;&lt;br&gt;Damaging another creature or missing your shot will reset the amount of stacks.</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000z4" version="1">Focus Fire: Target</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000zd" version="2">Affected creature will take additional damage equal to the amount of stacks of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt; they have remaining.</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00zz4" version="1">Focus Fire: Focusing</content>
@@ -95,7 +102,7 @@
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000e" version="2">Once per turn, landing a Killing Blow with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; will restore an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00006" version="1">Double Tap</content>
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000f" version="2">Your firearms may now target twice as many creatures per shot.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000f" version="2">Your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; which only target one creature may now target two creatures instead.</content>
 
 <!--BATTLE SYNTHETIC-->
 
@@ -237,7 +244,7 @@
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00c" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot roll &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z004" version="1">Sabotage: Cybernetic Psychosis</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00d" version="2">Upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; an enemy, they become rife with &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Madness&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z005" version="1">Sabotage: Defensive Degredation</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z005" version="1">Sabotage: Defensive Degradation</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00e" version="2">Impose upon enemies -2 penalty to &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z006" version="1">Sabotage: Direct System Damage</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00f" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; take 1d8 Force damage multiplied by your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
@@ -253,7 +260,7 @@
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00k" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot move.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z012" version="1">Sabotage: Output Limiter</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00l" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; become &lt;LSTag Type="Status" Tooltip="REDUCE"&gt;Reduced&lt;/LSTag&gt;.</content>
-	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z013" version="1">Sabotage: Precision Degredation</content>
+	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z013" version="1">Sabotage: Precision Degradation</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00m" version="2">Impose upon enemies -2 penalty to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40z014" version="1">Sabotage: Reaction Suppression</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40z00n" version="2">Enemies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot use their &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;.</content>
@@ -328,7 +335,7 @@
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50zj" version="2">When an ally is damaged, make a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; with one of your firearms against their aggressor.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f011" version="1">Like Clockwork</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500k" version="2">Both you and all allies within [1] of you gain a +2 bonus to your Initiative.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500k" version="2">Gain a +4 bonus to your Initiative.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f012" version="1">Modular Augmentation</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500l" version="2">Grant an ally a +2 bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, Damage Rolls, or their &lt;LSTag Tooltip="DifficultyClass"&gt;Difficulty Class&lt;/LSTag&gt;. Each effect may only be applied to one ally at a time.</content>
@@ -355,7 +362,7 @@
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500o" version="2">Once per turn, upon landing a Killing Blow or a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt;, you restore one round of &lt;LSTag Type="ActionResource" Tooltip="FirearmAmmo"&gt;Ammunition&lt;/LSTag&gt;.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f016" version="1">Recoil Compensation</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500p" version="2">Landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with one of your firearms allows you to expend one round of your &lt;LSTag Type="ActionResource" Tooltip="FirearmAmmo"&gt;Ammunition&lt;/LSTag&gt; in order to fire at your target again.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500p" version="2">Once per turn, landing a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with one of your firearms allows you to expend one round of your &lt;LSTag Type="ActionResource" Tooltip="FirearmAmmo"&gt;Ammunition&lt;/LSTag&gt; in order to fire at your target again.</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2fz16" version="1">Recoil Compensation</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50zp" version="2">Affected creature may be fired upon once again by their aggressor.</content>
 
@@ -422,8 +429,10 @@
 
 	<content contentuid="h81ed88e5gbedcg4e19g820ag3c711ff35217" version="1">Ranged Attack</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f65sd7" version="1">Fire a long range shot from your musket.</content>
-	<content contentuid="h1699213a6f194fa6ac028aaf1119707e2162" version="1">Precision Shot</content>
-	<content contentuid="h691a4d59f41f4427978220a7c85d3cc70921" version="1">Fire an incredibly precise shot from your rifle, allowing you to pierce enemies.</content>
+	<content contentuid="h1699213a6f194fa6ac028aaf1119707e2162" version="1">Precision Aim</content>
+	<content contentuid="h691a4d59f41f4427978220a7c85d3cc70921" version="1">Enter into a crouched stance, doubling your muskets range and the bonus damage provided by &lt;LSTag Type="Passive" Tooltip="BootsontheGround"&gt;Boots on the Ground&lt;/LSTag&gt;. While in this crouched stance, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; are made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; and your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is reduced to zero.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Using this action again will cause you to stand back up, restoring your ability to move.</content>
+	<content contentuid="h1699213a6f194fa6ac028aaf1119707e2163" version="1">Precision Aim</content>
+	<content contentuid="h691a4d59f41f4427978220a7c85d3cc70922" version="1">Affected creature has entered into a crouched stance, doubling their muskets range and the bonus damage provided by &lt;LSTag Type="Passive" Tooltip="BootsontheGround"&gt;Boots on the Ground&lt;/LSTag&gt;. While in this crouched stance, their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; are made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; and their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is reduced to zero.</content>
 
 	<content contentuid="h509b8e00gacb9g46e8d55s6d5f4ef4500000" version="1">Summon Firearms</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e6as8dfe800000" version="2">Summon one of three unique firearms. As you level in Artificer, they will deal additional damage and gain new effects.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Summoning your firearms may be done at any time as a free action.</content>

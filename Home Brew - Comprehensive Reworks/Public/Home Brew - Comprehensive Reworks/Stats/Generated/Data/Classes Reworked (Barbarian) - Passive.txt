@@ -658,7 +658,7 @@ data "Description" "66706bd4b60a4ca88b703f3fc04bfaf80000a;2"
 data "ExtraDescription" "h197f62bbgd1ddg4436g90df5s6s5d4f56f45"
 data "Icon" "PassiveFeature_RelentlessRage"
 data "Properties" "IsHidden"
-data "StatsFunctorContext" "OnCreate;OnLongRest"
+data "StatsFunctorContext" "OnCreate;OnLongRest;OnTurn"
 data "Conditions" "HasPassive('BrutalCritical',GetSummoner(context.Source))"
 data "StatsFunctors" "IF(not HasStatus('BRUTALCRITICAL_SUMMON', context.Source)):ApplyStatus(SELF,BRUTALCRITICAL_SUMMON,100,-1)"
 

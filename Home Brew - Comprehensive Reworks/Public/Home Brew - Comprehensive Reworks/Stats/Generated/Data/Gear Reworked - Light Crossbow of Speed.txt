@@ -16,7 +16,7 @@ data "SpellType" "Projectile"
 using "Projectile_MainHandAttack"
 data "DisplayName" "h1eb4a116g1e71g4bbbgb343gb1125c02f74a;3"
 data "UseCosts" "BonusActionPoint:1"
-data "SpellFlags" "IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;Temporary"
+data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;Temporary"
 data "Cooldown" "OncePerTurn"
 
 new entry "CONSUMED_LIGHTCROSSBOWOFSPEED"

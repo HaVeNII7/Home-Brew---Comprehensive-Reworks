@@ -136,7 +136,7 @@
 					</node>
         <node id="Progression">
 					<attribute id="IsMulticlass" type="bool" value="true" />
-					<attribute id="Boosts" type="LSString" value="Proficiency(HB_Artificer);ActionResource(Attunement,1,0)" />
+					<attribute id="Boosts" type="LSString" value="Proficiency(HB_Artificer);ActionResource(Attunement,1,0);ActionResource(FirearmAmmo,3,0)" />
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="Artificer" />
 					<attribute id="PassivesAdded" type="LSString" value="SummonFirearm_Unlock;Firepower" />
@@ -163,7 +163,7 @@
 						</children>
 					</node>
         <node id="Progression">
-					<attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Attunement,13,0)" />
+					<attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Attunement,13,0);ActionResource(FirearmAmmo,3,0)" />
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="NPC_Artificer" />
 					<attribute id="PassivesAdded" type="LSString" value="NPC_Artificer_Subclass;NPCConcentration_End;NPCBlocker_Randomizer;SummonFirearm_Unlock;Firepower;NPC_Gun_Fix;ClassPassiveRandomizer1_Artificer_Optimization;ClassPassiveRandomizer1_Artificer_Sabatoge" />
@@ -5212,9 +5212,10 @@
 <!--FIGHTER (ELDRITCH KNIGHT)-->
 
         <node id="Progression">
+					<attribute id="Boosts" type="LSString" value="ActionResource(WarlockSpellSlot,2,1)" />
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="EldritchKnight" />
-					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_EldritchKnight;Call_of_the_Old_One;Warlock_SpellSlots" />
+					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_EldritchKnight;Call_of_the_Old_One" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="Selectors" type="LSString" value="SelectSpells(2db3752d-c3da-435a-aaea-a3b2ceafeb44,2,0,Cantrips);SelectSpells(f33b1b19-43c6-4f61-a001-cd55e516791c,1,0,Spells,,e9127b70-22b7-42a1-b172-d02f828f260a)" />
 					<attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435" />
@@ -5246,10 +5247,10 @@
 					<attribute id="UUID" type="guid" value="6300c505-0bb1-4c73-9565-ab155bec4e1f" />
 					</node>
         <node id="Progression">
-					<attribute id="Boosts" type="LSString" value="ActionResourceOverride(WarlockSpellSlot,0,1)" />
+					<attribute id="Boosts" type="LSString" value="ActionResource(WarlockSpellSlot,2,2);ActionResourceOverride(WarlockSpellSlot,0,1)" />
 					<attribute id="Level" type="uint8" value="5" />
 					<attribute id="Name" type="LSString" value="EldritchKnight" />
-					<attribute id="PassivesAdded" type="LSString" value="Ex_Oblivione;Warlock_SpellSlots_2" />
+					<attribute id="PassivesAdded" type="LSString" value="Ex_Oblivione" />
 					<attribute id="PassivesRemoved" type="LSString" value="Warlock_SpellSlots" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="Selectors" type="LSString" value="SelectSpells(2db3752d-c3da-435a-aaea-a3b2ceafeb44,1,0,Cantrips);SelectSpells(f33b1b19-43c6-4f61-a001-cd55e516791c,1,1,Spells,,e9127b70-22b7-42a1-b172-d02f828f260a)" />
@@ -5282,10 +5283,10 @@
 					<attribute id="UUID" type="guid" value="9604e657-2475-4a0f-9c75-4a9314269b2c" />
 					</node>
         <node id="Progression">
-					<attribute id="Boosts" type="LSString" value="ActionResourceOverride(WarlockSpellSlot,0,2)" />
+					<attribute id="Boosts" type="LSString" value="ActionResource(WarlockSpellSlot,2,3);ActionResourceOverride(WarlockSpellSlot,0,2)" />
 					<attribute id="Level" type="uint8" value="9" />
 					<attribute id="Name" type="LSString" value="EldritchKnight" />
-					<attribute id="PassivesAdded" type="LSString" value="Lurking_Fear;Warlock_SpellSlots_3" />
+					<attribute id="PassivesAdded" type="LSString" value="Lurking_Fear" />
 					<attribute id="PassivesRemoved" type="LSString" value="Warlock_SpellSlots_2" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="Selectors" type="LSString" value="SelectSpells(2db3752d-c3da-435a-aaea-a3b2ceafeb44,1,0,Cantrips);SelectSpells(f33b1b19-43c6-4f61-a001-cd55e516791c,1,1,Spells,,e9127b70-22b7-42a1-b172-d02f828f260a)" />
