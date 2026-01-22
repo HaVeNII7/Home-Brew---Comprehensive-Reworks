@@ -7,7 +7,6 @@ data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT);WeaponEnchantment(1)"
 data "Rarity" "Rare"
 data "BoostsOnEquipMainHand" "UnlockSpell(Zone_Cleave);UnlockSpell(Target_CripplingStrike);UnlockSpell(Zone_Mag_WeaponAction_GiantBlade)"
 data "Unique" "1"
-data "PassivesOnEquip" "Overwhelm"
 data "UseCosts" "ReactionActionPoint:1;Attunement:2"
 data "StatusOnEquip" "ATTUNEMENT2"
 
