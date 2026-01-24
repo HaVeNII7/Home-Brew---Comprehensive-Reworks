@@ -523,7 +523,7 @@ data "ExtraDescription" "h197f62bbgd1ddg4436g90df5s6s5d4f56f45"
 data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnDamaged"
 data "Conditions" "Character() and not Self()"
-data "StatsFunctors" "IF(IsDamageTypeBludgeoning()):ApplyStatus(DIVINE_SHIELDING_BLUDGEONING,100,1);IF(IsDamageTypeSlashing()):ApplyStatus(DIVINE_SHIELDING_SLASHING,100,1);IF(IsDamageTypePiercing()):ApplyStatus(DIVINE_SHIELDING_PIERCING,100,1)"
+data "StatsFunctors" "IF(IsDamageTypeBludgeoning()):ApplyStatus(DIVINE_SHIELDING_BLUDGEONING,100,3);IF(IsDamageTypeSlashing()):ApplyStatus(DIVINE_SHIELDING_SLASHING,100,3);IF(IsDamageTypePiercing()):ApplyStatus(DIVINE_SHIELDING_PIERCING,100,3)"
 
 new entry "Holy_Bulwark"
 type "PassiveData"

@@ -45,18 +45,18 @@ MULTIPLIER_HOT_NEUTRAL_NEG		 				1.0
 
 MULTIPLIER_CONTROL_SELF_POS		 				1.0
 MULTIPLIER_CONTROL_SELF_NEG		 				4.0 // Knocking yourself down looks pretty stupid.
-MULTIPLIER_CONTROL_ENEMY_POS					1.5 // Controlling enemies looks pretty smart.
+MULTIPLIER_CONTROL_ENEMY_POS					2.5 // Controlling enemies looks pretty smart.
 MULTIPLIER_CONTROL_ENEMY_NEG					1.0
 MULTIPLIER_CONTROL_ALLY_POS		 				1.0
 MULTIPLIER_CONTROL_ALLY_NEG		 				4.0 // Knocking allies down looks pretty stupid.
 MULTIPLIER_CONTROL_NEUTRAL_POS					1.0
 MULTIPLIER_CONTROL_NEUTRAL_NEG					4.0 // Avoid knocking neutrals down where possible.
 
-MULTIPLIER_BOOST_SELF_POS		 				2.0 // Buffing yourself looks pretty smart.
+MULTIPLIER_BOOST_SELF_POS		 				2.5 // Buffing yourself looks pretty smart.
 MULTIPLIER_BOOST_SELF_NEG		 				1.0
-MULTIPLIER_BOOST_ENEMY_POS		 				1.5 // Applying status effects to enemies looks pretty smart.
+MULTIPLIER_BOOST_ENEMY_POS		 				2.5 // Applying status effects to enemies looks pretty smart.
 MULTIPLIER_BOOST_ENEMY_NEG		 				1.0
-MULTIPLIER_BOOST_ALLY_POS		 				1.5 // Buffing allies looks pretty smart.
+MULTIPLIER_BOOST_ALLY_POS		 				2.5 // Buffing allies looks pretty smart.
 MULTIPLIER_BOOST_ALLY_NEG		 				1.0
 MULTIPLIER_BOOST_NEUTRAL_POS					1.0
 MULTIPLIER_BOOST_NEUTRAL_NEG					1.0
@@ -110,7 +110,7 @@ ENDPOS_ALLIES_NEARBY_MAX_DISTANCE				9.00 // ignore characters beyond this dista
 
 MULTIPLIER_ENDPOS_ENEMIES_NEARBY				0.00
 ENDPOS_ENEMIES_NEARBY_MIN_DISTANCE				3.00 // distance at which being any closer makes no difference
-ENDPOS_ENEMIES_NEARBY_MAX_DISTANCE				9.00 // ignore characters beyond this distance
+ENDPOS_ENEMIES_NEARBY_MAX_DISTANCE				36.00 // ignore characters beyond this distance
 
 MULTIPLIER_ENDPOS_FLANKED						0.00
 MULTIPLIER_ENDPOS_HEIGHT_DIFFERENCE				0.00
@@ -125,8 +125,8 @@ MULTIPLIER_ENEMY_HEIGHT_DIFFERENCE				0.00 // score for height relative to the h
 ENEMY_HEIGHT_DIFFERENCE_CLAMP					4.50 // once AI is this much higher than all of its enemies there is no point in going higher
 ENEMY_HEIGHT_SCORE_RADIUS_XZ					100.00 // radius of enemies to check heights
 
-MAX_DISTANCE_TO_CLOSEST_ENEMY					25.0
-MULTIPLIER_NO_ENEMIES_IN_MAX_DISTANCE			0.00  // tiny score so only if there is nothing better to do then try getting closer
+MAX_DISTANCE_TO_CLOSEST_ENEMY					18.0
+MULTIPLIER_NO_ENEMIES_IN_MAX_DISTANCE			0.05  // tiny score so only if there is nothing better to do then try getting closer
 
 //////////////////////////////////////////////////////////////////////////
 // Fallback Settings
@@ -188,7 +188,7 @@ MULTIPLIER_RESURRECT							4.00
 
 //////////////////////////////////////////////////////////////////////////
 // SPELL MULTIPLIERS
-SPELL_JUMP_MINIMUM_DISTANCE						9.00
+SPELL_JUMP_MINIMUM_DISTANCE						4.50
 SPELL_TELEPORT_MINIMUM_DISTANCE					9.00
 
 // Used when a surface is removed
@@ -224,8 +224,8 @@ MULTIPLIER_SUMMON_PATH_INFLUENCES				0.05
 // Distance based buffs
 // Prevent buffing allies that are far away from the action.
 // lerp between 100% and 0%, when you are between BUFF_DIST_MIN and BUFF_DIST_MAX from your closet enemy. Everything before DIST_MIN is going to be at 100%.
-BUFF_DIST_MAX									30.0
-BUFF_DIST_MIN									10.0
+BUFF_DIST_MAX									18.0
+BUFF_DIST_MIN									3.0
 
 // Multiplier for positive surface scores on allies that are secondary. E.g. blessed surface on an ally that's caused by a placed fire surface that's connected to a blessed surface
 MULTIPLIER_POS_SECONDARY_SURFACE				0.25
@@ -237,7 +237,7 @@ MULTIPLIER_REFLECT_DAMAGE						0.00
 LOSE_CONTROL_MAX_CONSUMABLES_PER_TURN			1
 
 // Multiplier for buffs as the first action
-MULTIPLIER_FIRST_ACTION_BUFF					2.0
+MULTIPLIER_FIRST_ACTION_BUFF					4.0
 
 // Multiplier for invisibility as the first action
 MULTIPLIER_FIRST_ACTION_INVISIBILITY			0.1

@@ -5,6 +5,34 @@
 		<node id="Templates">
 			<children>
 				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="h1d79c26eg31abg413egaf32ga3062ff07ea3" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int32" value="2" />
+					<attribute id="MapKey" type="FixedString" value="82d6ff04-db9d-4b02-82aa-fd4db21f5b7d" />
+					<attribute id="Name" type="LSString" value="Undead_Zombie_Melee_AnimateDead_Swarm" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c2a2c269-ede8-4887-99f1-e0c044cc0c75" />
+					<attribute id="SpellSet" type="FixedString" value="AnimateDeadZombie" />
+					<attribute id="Stats" type="FixedString" value="AnimateDead_Zombie__Horde" />
+					<attribute id="SwarmGroup" type="FixedString" value="SwarmAnimateDeadZombie" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209032" />
+					<children>
+						<node id="LocomotionParams" />
+						<node id="OnDeathActions" />
+						<node id="StatusList">
+							<children>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="6d60bed7-10cc-4b52-8fb7-baa75181cd49" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
 					<attribute id="Archetype" type="FixedString" value="deathShepherd" />
 					<attribute id="CharacterVisualResourceID" type="FixedString" value="39c40e2e-3596-497e-e146-d998db4ceba0" />
 					<attribute id="DisplayName" type="TranslatedString" handle="he95e7a86g72aeg41c3g9168g8c6ed952834f" version="3" />
