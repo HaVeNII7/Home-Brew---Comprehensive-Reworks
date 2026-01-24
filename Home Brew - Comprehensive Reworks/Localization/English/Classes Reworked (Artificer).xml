@@ -201,7 +201,7 @@
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400004" version="1">Optimization: Concentration Lock</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000d" version="2">Allies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; cannot lose their &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt;.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400005" version="1">Optimization: Critical Dampener</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000e" version="2">The number your &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infused&lt;/LSTag&gt; allies need to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by one.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000e" version="2">The number your &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infused&lt;/LSTag&gt; allies need to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by 1.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400006" version="1">Optimization: Damage Amplifier</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000f" version="2">Grant allies &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all Damage Rolls upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400007" version="1">Optimization: Defensive Calibration</content>
@@ -301,12 +301,12 @@
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zzd" version="2">Fire an arcane missile which will seek out a creature of your choosing.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f005" version="1">Dead-Zone Calibration</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500e" version="2">The number needed to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your firearms is reduced by one.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500e" version="2">The number needed to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with your firearms is reduced by 1.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f006" version="1">Elemental Payload</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500f" version="2">Gain the ability to cause a localized elemental shock with your equipped ranged weapon, causing it to deal an additional 1d4 damage type of your choice.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500f" version="2">Gain the ability to cause a localized elemental shock with your equipped weapons, causing them to deal an additional 1d4 damage type of your choice.</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f0z6" version="1">Elemental Payload</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50zf" version="2">Cause a localized elemental shock with your equipped ranged weapon, allowing it to deal additional damage.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50zf" version="2">Cause a localized elemental shock with your equipped weapons, allowing them to deal additional damage.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d01" version="1">Elemental Payload: Acid</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d02" version="1">Elemental Payload: Cold</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d03" version="1">Elemental Payload: Fire</content>
@@ -317,7 +317,7 @@
 	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d08" version="1">Elemental Payload: Psychic</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d09" version="1">Elemental Payload: Radiant</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d10" version="1">Elemental Payload: Thunder</content>
-	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d0a" version="2">Infuse your equipped ranged weapon with additional elemental damage.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
+	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2d0a" version="2">Infuse your equipped weapons with additional elemental damage.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd6s5d5f2dza" version="2">Affected creature deals an additional [1] when dealing damage with their equipped weapon.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f007" version="1">Emergency Power Cell</content>

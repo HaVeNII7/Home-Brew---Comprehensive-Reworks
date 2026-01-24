@@ -1,0 +1,13 @@
+// Keep distance from enemies
+MULTIPLIER_ENDPOS_ENEMIES_NEARBY   -0.50
+MULTIPLIER_FALLBACK_ENEMIES_NEARBY -0.50
+FALLBACK_ENEMIES_NEARBY_MAX_DISTANCE 10.00
+
+// Don't stand in smoke (LOS)
+MULTIPLIER_ENDPOS_NOT_IN_SMOKE 0.25
+
+// Slight high-ground preference (ranged should care a bit)
+MULTIPLIER_ENEMY_HEIGHT_DIFFERENCE 1.00
+
+// Prefer picking up ranged weapons
+WEAPON_PICKUP_PREFER_RANGED_ENABLED 1

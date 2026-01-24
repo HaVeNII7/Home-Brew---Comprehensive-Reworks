@@ -1,0 +1,4 @@
+USING ranged
+
+//If disarmed, gnolls don't care about picking up a new weapon
+WEAPON_PICKUP_MODIFIER 0.00

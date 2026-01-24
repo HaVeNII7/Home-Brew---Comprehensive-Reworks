@@ -1,0 +1,2 @@
+USING melee
+//Rogues are setup to be a mid range type of unit. If they have ranged options available, they use those, if they have good melee options, they use those.

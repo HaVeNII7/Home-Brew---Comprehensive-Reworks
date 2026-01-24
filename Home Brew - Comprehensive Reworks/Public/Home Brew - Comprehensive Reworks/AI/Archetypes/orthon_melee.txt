@@ -1,0 +1,4 @@
+USING melee_large
+
+//The Orthon doesn't care too much if he harms his allies
+MULTIPLIER_DAMAGE_ALLY_NEG							1.0

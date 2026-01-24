@@ -312,7 +312,7 @@
 					</node>
         <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Paladin - Oathbreaker (Level 1)" />
-                    <attribute id="Spells" type="LSString" value="Target_ControlUndead;Target_SpitefulSuffering" />
+                    <attribute id="Spells" type="LSString" value="Target_Subjugate;Target_SpitefulSuffering" />
                     <attribute id="UUID" type="guid" value="cb1e5aad-26cd-4370-a179-5536bfcc3d47" />
 					</node>
         <node id="SpellList">

@@ -1,0 +1,24 @@
+USING ranged
+
+//Healers care a bit less about going for kills
+MULTIPLIER_KILL_ENEMY 							1.00
+
+// Healer will prefer to heal allies over themselves 
+MULTIPLIER_HEAL_SELF_POS						1.75 
+MULTIPLIER_HEAL_ALLY_POS						1.75
+MAX_HEAL_MULTIPLIER								0.25
+MAX_HEAL_SELF_MULTIPLIER						0.25
+
+MULTIPLIER_BOOST_ALLY_POS		 				1.75
+MULTIPLIER_BOOST_SELF_POS		 				1.75
+
+// Healer tries to debuff enemies
+MULTIPLIER_BOOST_ENEMY_POS		 				1.75
+
+// Healer doesn't try to damage as enemies as much
+MULTIPLIER_DAMAGE_ENEMY_POS						0.75
+
+//Healers will try to stabilize downed players
+MULTIPLIER_TARGET_ALLY_DOWNED 					1.25
+
+MULTIPLIER_RESURRECT							5.00

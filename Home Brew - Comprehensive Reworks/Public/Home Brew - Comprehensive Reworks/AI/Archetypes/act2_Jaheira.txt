@@ -1,0 +1,2 @@
+USING melee_smart
+//Melee archetype for characters that are able to buff themselves, which they should do prior to jumping into the action

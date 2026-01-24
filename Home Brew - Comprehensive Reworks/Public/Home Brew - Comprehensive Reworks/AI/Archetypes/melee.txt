@@ -1,0 +1,22 @@
+//This archetype is intended for average humanoids like guards/bandits/soldiers etc
+
+MULTIPLIER_FALLBACK_ENEMIES_NEARBY				1.00
+
+//Don't care as much about sight range as they are melee anyways
+MULTIPLIER_BOOST_SIGHT_RANGE 0.05
+
+// Melee wants to end turns closer
+MULTIPLIER_ENDPOS_ENEMIES_NEARBY     0.10
+MULTIPLIER_FALLBACK_ENEMIES_NEARBY   0.35
+
+// “Close enough” should be closer than base’s 3.0m
+ENDPOS_ENEMIES_NEARBY_MIN_DISTANCE   2.0
+FALLBACK_ENEMIES_NEARBY_MIN_DISTANCE 2.0
+
+// Melee wants to end turns closer
+MULTIPLIER_ENDPOS_ENEMIES_NEARBY     0.10
+MULTIPLIER_FALLBACK_ENEMIES_NEARBY   0.35
+
+// “Close enough” should be closer than base’s 3.0m
+ENDPOS_ENEMIES_NEARBY_MIN_DISTANCE   1.5
+FALLBACK_ENEMIES_NEARBY_MIN_DISTANCE 1.5

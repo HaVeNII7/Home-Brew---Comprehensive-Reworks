@@ -6954,7 +6954,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="Oathbreaker" />
-					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_Oathbreaker;Smite_Oathbroken;Vicious_Condemnation_Toggle" />
+					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_Oathbreaker;Smite_Oathbroken" />
 					<attribute id="PassivesRemoved" type="LSString" value="Smite_Divine" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="Selectors" type="LSString" value="AddSpells(cb1e5aad-26cd-4370-a179-5536bfcc3d47,OathSpells)" />

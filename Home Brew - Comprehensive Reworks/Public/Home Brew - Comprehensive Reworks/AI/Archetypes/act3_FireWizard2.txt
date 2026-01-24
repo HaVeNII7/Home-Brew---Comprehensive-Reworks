@@ -1,0 +1,2 @@
+USING mage_smart
+//This archetype is intended for the grease wizard

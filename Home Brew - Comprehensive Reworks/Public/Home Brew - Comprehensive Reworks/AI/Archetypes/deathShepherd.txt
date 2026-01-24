@@ -1,0 +1,3 @@
+USING melee_smart
+
+MULTIPLIER_RESURRECT							20.00

@@ -1,0 +1,16 @@
+USING melee
+
+//Really wants to target taunting target
+MULTIPLIER_TARGET_PREFERRED						100.00
+
+//Does not care about surfaces really
+MULTIPLIER_ENDPOS_NOT_IN_DANGEROUS_SURFACE		0.00
+
+//Does not avoid AoO
+ENABLE_MOVEMENT_AVOID_AOO						0.00
+
+// Does not pick up weapons
+WEAPON_PICKUP_MODIFIER 0.0
+
+// Does not attack barrels / items
+MULTIPLIER_USABLE_ITEM 0.0

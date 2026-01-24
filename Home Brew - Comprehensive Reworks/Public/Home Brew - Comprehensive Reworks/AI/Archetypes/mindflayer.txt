@@ -1,0 +1,11 @@
+USING melee
+//Stays at range until it sees an opening to use Extract Brain on a target
+
+MODIFIER_CONCENTRATION_REMOVE_TARGET 2.0
+MULTIPLIER_TARGET_ENEMY_DOWNED 					1.50
+
+// Does not pick up weapons
+WEAPON_PICKUP_MODIFIER 0.0
+
+// Does not attack barrels / items
+MULTIPLIER_USABLE_ITEM 0.0

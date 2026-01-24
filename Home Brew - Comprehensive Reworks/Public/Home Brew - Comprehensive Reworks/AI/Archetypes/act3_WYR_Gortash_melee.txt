@@ -1,0 +1,5 @@
+USING melee_smart
+//This archetype is intended for when Gortie is using his crossbow
+
+MODIFIER_CONCENTRATION_REMOVE_TARGET 			4.00
+MULTIPLIER_TARGET_ENEMY_DOWNED 					2.00
