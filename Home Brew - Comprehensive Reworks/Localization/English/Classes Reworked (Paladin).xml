@@ -37,9 +37,9 @@
 	<content contentuid="fe6f4159abae42539029e284001d12de11111" version="3">Oath Broken</content>
 	<content contentuid="fe6f4159abae42539029e284001d12de22222" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Oathbroken"&gt;Oathbroken Smite&lt;/LSTag&gt;.</content>
 	<content contentuid="h940c3156gad0fg4a92g8573gff26b0433333" version="1">Oathbroken Smite</content>
-	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c944444" version="2">Bend the will of your target with necrotic wrath. This action always rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon damaging a target, they become &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt;. Your ability to Subjugate other creatures may be toggled at any time. &lt;LSTag Type="Status" Tooltip="Tooltip_Dangerous_Encounter"&gt;Dangerous&lt;/LSTag&gt; and &lt;LSTag Type="Passive" Tooltip="Fatal_Encounter"&gt;Fatal&lt;/LSTag&gt; foes cannot be Subjugated.</content>
-	<content contentuid="h940c3156gad0fg4a92g8573gff26b0655555" version="1">Oathbroken Subjugation</content>
-	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c966666" version="2">Affected creature will follow and fight alongside the Paladin who subjugated them.&lt;br&gt;&lt;br&gt;If damaged by the Paladin or their allies, the subjugated creature will break free from the Paladin's control.&lt;br&gt;&lt;br&gt;A creature may only be Subjugated if one of their allies is alive and nearby. Removed if &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Downed&lt;/LSTag&gt;.</content>
+	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c944444" version="2">Shatter the mind of your target with necrotic wrath, &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrifying&lt;/LSTag&gt; them. This action always rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h940c3156gad0fg4a92g8573gff26b0455555" version="1">Oathbroken Smite</content>
+	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c966666" version="2">Shatter the mind of your target with necrotic wrath, &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrifying&lt;/LSTag&gt; them.</content>
 	<content contentuid="h5b946111g68b0g402dg8509g7e0582a72f04" version="1">Oathbroken Smite: Critical</content>
 
 	<content contentuid="fe6f4159abae42539029e284001d12de00011" version="3">Blinding Smite</content>
@@ -208,7 +208,7 @@
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4derere" version="3">When making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; or dealing damage to a Undead type creature, roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Once per turn, upon landing a killing blow on an enemy Undead, restore one &lt;LSTag Type="ActionResource" Tooltip="WarPriestActionPoint"&gt;Crusader's Smite&lt;/LSTag&gt; charge.</content>
 
 	<content contentuid="hcf1bdf5bg6399g4460g881fg174d780e68c0" version="1">Inquisitor's Might</content>
-	<content contentuid="h0f21e528gda66g4bb7g988cg9039f7eaa2a6" version="2">Infuse your weapons, causing their attacks to deal an additional [1] and can &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Daze&lt;/LSTag&gt; enemies for 1 turn.</content>
+	<content contentuid="h0f21e528gda66g4bb7g988cg9039f7eaa2a6" version="2">Infuse your or an ally's weapons, causing their attacks to deal an additional [1] and can &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Daze&lt;/LSTag&gt; enemies for 1 turn.</content>
 	<content contentuid="h0af19e18g2a2dg4907ga5e0g8bb939887b84" version="1">Inquisitor's Might</content>
 	<content contentuid="h64863ad5gd1acg47eegbca9g9fe7aeac4b7f" version="1">Affected creature's weapon attacks deal an additional [1] and can &lt;LSTag Type="Status" Tooltip="DAZED"&gt;Daze&lt;/LSTag&gt; targets for 1 turn.</content>
 
@@ -301,7 +301,7 @@
   <content contentuid="fe6f4159abae42539029e284001d12de0000c" version="3">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against Aberrations, Fey, Fiends and Undead.</content>
 
   <content contentuid="fe6f4159abae42539029e284001d12de00004" version="3">Divine Shielding</content>
-  <content contentuid="fe6f4159abae42539029e284001d12de0000d" version="3">Upon taking physical damage, become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to that type of physical damage until the start of your next turn.</content>
+  <content contentuid="fe6f4159abae42539029e284001d12de0000d" version="3">Upon taking physical damage, become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to that type of physical damage for three turns.</content>
 
   <content contentuid="fe6f4159abae42539029e284001d12de00005" version="3">Holy Smites</content>
   <content contentuid="fe6f4159abae42539029e284001d12de0000e" version="3">Once per turn, upon damaging another creature with one of your Smites, holy energy erupts around you, healing allies within [1] of you. The amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; restored scales with the strength of your Smites.</content>
