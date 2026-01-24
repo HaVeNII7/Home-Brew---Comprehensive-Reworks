@@ -1,0 +1,7 @@
+USING mage_smart
+
+// Does not pick up weapons
+WEAPON_PICKUP_MODIFIER 0.0
+
+// Does not attack barrels / items
+MULTIPLIER_USABLE_ITEM 0.0

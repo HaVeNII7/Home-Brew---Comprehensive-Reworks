@@ -1,0 +1,10 @@
+USING ranged
+
+//stays away from allies and enemies
+MULTIPLIER_ENDPOS_ALLIES_NEARBY						-0.1
+MULTIPLIER_FALLBACK_ALLIES_NEARBY					-0.1
+FALLBACK_ENEMIES_NEARBY_MAX_DISTANCE				16.00
+FALLBACK_ALLIES_NEARBY_MAX_DISTANCE					8.00
+
+//The Orthon doesn't care too much if he harms his allies
+MULTIPLIER_DAMAGE_ALLY_NEG							1.0

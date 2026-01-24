@@ -1,0 +1,2 @@
+//Nurse likes buffing themselves - through the doing of which she'll actually be buffing the Surgeon
+MULTIPLIER_BOOST_SELF_POS		 				1.75

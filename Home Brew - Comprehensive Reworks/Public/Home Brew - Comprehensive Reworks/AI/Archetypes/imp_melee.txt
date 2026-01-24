@@ -1,0 +1,10 @@
+USING melee
+
+MULTIPLIER_POS_IN_AURA 0.05
+MODIFIER_OWN_AURA 0.05
+
+// Does not pick up weapons
+WEAPON_PICKUP_MODIFIER 0.0
+
+// Does not attack barrels / items
+MULTIPLIER_USABLE_ITEM 0.0

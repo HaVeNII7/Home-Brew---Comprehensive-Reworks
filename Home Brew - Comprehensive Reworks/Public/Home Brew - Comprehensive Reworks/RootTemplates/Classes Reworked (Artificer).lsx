@@ -21,6 +21,7 @@
 					<attribute id="DisplayName" type="TranslatedString" handle="h509b8e00gacb9g46a5sd65df45e4f2f00zz1" version="1" />
 					<attribute id="LevelOverride" type="int32" value="1" />
 					<attribute id="Scale" type="float" value="0.34" />
+					<attribute id="SoundInitEvent" type="FixedString" value="" />
 					<children>
 						<node id="EquipmentTypes">
 							<children>

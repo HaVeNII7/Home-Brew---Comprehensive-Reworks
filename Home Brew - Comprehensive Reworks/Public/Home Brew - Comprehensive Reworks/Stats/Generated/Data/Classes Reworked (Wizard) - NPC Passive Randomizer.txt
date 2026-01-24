@@ -1399,7 +1399,7 @@ data "RemoveEvents" "OnTurn;OnMove"
 data "StackId" "PASSIVE4"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
 data "StackType" "Ignore"
-data "Passives" "Boon_of_Plumes"
+data "Passives" "Boon_of_Plumes_NPC"
 data "OnApplyFunctors" "ApplyStatus(PASSIVE4_WIZARD_LIMIT,100,-1)"
 
 new entry "PASSIVE5_WIZARD"

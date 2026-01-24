@@ -1,0 +1,4 @@
+USING melee
+
+//Merregon's group up together - makes it easier to AoE them down
+MULTIPLIER_ENDPOS_ALLIES_NEARBY					0.25

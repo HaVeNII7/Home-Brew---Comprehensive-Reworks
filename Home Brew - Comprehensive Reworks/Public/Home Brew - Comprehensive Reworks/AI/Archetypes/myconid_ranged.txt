@@ -1,0 +1,2 @@
+USING ranged
+//This archetype is intended for myconids that don't want to end turn next to an enemy

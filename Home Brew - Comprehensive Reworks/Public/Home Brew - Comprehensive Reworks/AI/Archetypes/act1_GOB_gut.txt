@@ -1,0 +1,12 @@
+USING healer_melee
+//this is intended for use by Gut, Goblin Priestess
+
+//Gut doesn't want to destroy interesting items, she just wants to use spells on them
+MULTIPLIER_DESTROY_INTERESTING_ITEM 									0.0 
+
+//Boost to buffing self and allies
+MULTIPLIER_BOOST_ALLY_POS		 				1.75
+MULTIPLIER_BOOST_SELF_POS		 				1.75
+
+MODIFIER_CONCENTRATION_REMOVE_TARGET 			4.00
+MULTIPLIER_TARGET_ENEMY_DOWNED 					2.00

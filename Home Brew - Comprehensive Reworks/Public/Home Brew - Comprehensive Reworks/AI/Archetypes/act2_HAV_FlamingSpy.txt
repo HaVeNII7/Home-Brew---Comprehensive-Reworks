@@ -1,0 +1,5 @@
+USING melee_smart
+//This archetype is intended for smarter than average humanoids like bosses
+
+//Marcus wants to focus on Isobel
+MULTIPLIER_TARGET_PREFERRED						4.00

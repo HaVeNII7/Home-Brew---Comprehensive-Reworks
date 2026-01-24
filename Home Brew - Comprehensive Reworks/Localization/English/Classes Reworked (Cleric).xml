@@ -88,7 +88,7 @@
 	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc01" version="1">The first time you heal a creature each turn, the target regains additional &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; equal to your level.</content>
 
 	<content contentuid="h58347e3dg4eb2g4ed1g9537g4f361e1644db" version="1">Preserve Life</content>
-	<content contentuid="h4104b247g7085g45dbgba71g8734585d95cf" version="7">Evoke a healing radiance which restores your or an allies &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; by your level multiplied by four.</content>
+	<content contentuid="h4104b247g7085g45dbgba71g8734585d95cf" version="7">Evoke a healing radiance which restores your or an ally's &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; by your level multiplied by four.</content>
 
 	<content contentuid="h67fe33fdg46c1g415bg95c6g20291e26lc05" version="1">Benevolent Grace</content>
 	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc05" version="1">When healing a creature, you also apply &lt;LSTag Type="Status" Tooltip="SHIELD_OF_FAITH"&gt;Shield of Faith&lt;/LSTag&gt; for three turns.</content>

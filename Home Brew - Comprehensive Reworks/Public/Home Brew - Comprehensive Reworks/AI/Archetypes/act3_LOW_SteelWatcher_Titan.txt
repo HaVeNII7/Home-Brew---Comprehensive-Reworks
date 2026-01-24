@@ -1,0 +1,7 @@
+USING melee_smart
+
+// The Titan doesn't care to damage its allies
+MULTIPLIER_SCORE_ON_ALLY 0.0
+
+MODIFIER_CONCENTRATION_REMOVE_TARGET 			4.00
+MULTIPLIER_TARGET_ENEMY_DOWNED 					2.00
