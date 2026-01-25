@@ -1755,6 +1755,11 @@
 	<content contentuid="h664c60a6ga05ag4521gb393g5c3298e7bfde" version="1">A stone statue of Silvanus, the Oak Father, god of nature and its impartial fairness. Just holding this statue seems to provide one a deep understanding of nature...</content>
 	<content contentuid="ha7198ddfgdcb7g4492gb9d3g68946c916429" version="1">A stone statue of Silvanus, the Oak Father, god of nature and its impartial fairness. Just holding this statue seems to provide one a deep understanding of nature...</content>
 
+<!--STAFF OF THE MOONMAIDEN-->
+	<content contentuid="h6f9d2261g5b8cg4a4bgb38cg1ae36ad690ca" version="2">Moonbloom</content>
+	<content contentuid="h5ee21816gf097g4e95g8fabg2c662e59876a" version="6">Unleash lunar radiance in a [1] area, damaging enemies and healing allies for [2] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="hd2fd9d2dg3aeeg4579g9194g42397142ccbf" version="2">This staff's blue inlays and moon-shaped ornamentation indicate its use among Selûne's clergy. A name is carved into the wood: Mako.</content>
+
 <!--DISCORDANT INSTRUMENTS INTEGRATION-->
 	<content contentuid="hd0146582g2796g4c82g9253ge653e42736a4" version="1">Petpal</content>
 	<content contentuid="hbd185ddcgab06g4f22g8d91g6ce6b413d8d2" version="1">You roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; when conversing with beasts.</content>
