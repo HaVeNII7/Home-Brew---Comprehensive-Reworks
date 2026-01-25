@@ -11284,6 +11284,55 @@
 						</node>
 					</children>
 				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hd2fd9d2dg3aeeg4579g9194g42397142ccbf" version="2" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc5b45d5fg4ab8g4f39g95d3g7cee9c105bc6" version="1" />
+					<attribute id="EquipmentTypeID" type="guid" value="b428632e-3137-47aa-ae8f-ddff6fc27cc8" />
+					<attribute id="Icon" type="FixedString" value="Item_WPN_HUM_Magicstaff_B_0" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="4f0bc5b8-ff1e-49cd-b1f0-ee45c1ae4a9e" />
+					<attribute id="Name" type="LSString" value="WPN_HUM_Staff_Selune_A" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d25bc94a-5ee9-448f-9210-f2dad61ae7e5" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="0420f126-cd1f-e735-4eb3-3795b3ee9313" />
+					<attribute id="ReadinessFlags" type="uint32" value="128" />
+					<attribute id="Stats" type="FixedString" value="MAG_Moonmaiden_Staff" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="0912d723-045d-7e4b-64a7-c13f7b69ff1d" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.08795571" />
+									<attribute id="Max" type="fvec3" value="0.042561177 0.043977566 0.5742439" />
+									<attribute id="Min" type="fvec3" value="-0.04398338 -0.043978147 -1.4151363" />
+									<attribute id="Radius" type="float" value="0.49830085" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.08795571" />
+									<attribute id="Max" type="fvec3" value="0.021280589 0.043977566 0.28712195" />
+									<attribute id="Min" type="fvec3" value="-0.02199169 -0.043978147 -0.70756817" />
+									<attribute id="Radius" type="float" value="0.24915043" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.08795571" />
+									<attribute id="Max" type="fvec3" value="0.042561177 0.043977566 0.5742439" />
+									<attribute id="Min" type="fvec3" value="-0.04398338 -0.043978147 -1.4151363" />
+									<attribute id="Radius" type="float" value="0.49830085" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+							</children>
+						</node>
+						<node id="GameMaster">
+							<attribute id="GameMasterSpawnSection" type="int32" value="9" />
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>
