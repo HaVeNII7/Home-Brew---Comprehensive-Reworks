@@ -471,7 +471,7 @@ data "Properties" "Highlighted;ForceShowInCC"
 data "Icon" "PassiveFeature_PactOfTheBlade"
 data "StatsFunctorContext" "OnDamaged"
 data "Conditions" "IsMeleeAttack() and Character() and not Self() and not IsRedirectedDamage()"
-data "StatsFunctors" "IF(HasPassive('ClassProgression_Death', context.Target)):DealDamage(SWAP,WisdomModifier*2,Necrotic,,,0,,true);IF(HasPassive('ClassProgression_Tempest', context.Target)):DealDamage(SWAP,WisdomModifier*2,Lightning,,,0,,true);IF(not HasPassive('ClassProgression_Death', context.Target) and not HasPassive('ClassProgression_Tempest', context.Target)):DealDamage(SWAP,WisdomModifier*2,Radiant,,,0,,true)"
+data "StatsFunctors" "IF(HasPassive('CorpseParty', context.Target)):DealDamage(SWAP,WisdomModifier*2,Necrotic,,,0,,true);IF(HasPassive('Discharge', context.Target)):DealDamage(SWAP,WisdomModifier*2,Lightning,,,0,,true);IF(not HasPassive('ClassProgression_Death', context.Target) and not HasPassive('ClassProgression_Tempest', context.Target)):DealDamage(SWAP,WisdomModifier*2,Radiant,,,0,,true)"
 
 new entry "Immaculate_Ward"
 type "PassiveData"

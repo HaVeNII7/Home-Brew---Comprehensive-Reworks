@@ -814,7 +814,7 @@ data "StackType" "Overwrite"
 data "StatusPropertyFlags" "ForceOverhead;DisableCombatlog"
 data "FormatColor" "Red"
 data "TickType" "EndTurn"
-data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(SELF,MADNESS,100,-1)"
+data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(SELF,MADNESS,100,3)"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "Passives" "CT_Unhinged_Reset"
 

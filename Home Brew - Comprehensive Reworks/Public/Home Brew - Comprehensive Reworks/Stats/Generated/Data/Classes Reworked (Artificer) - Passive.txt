@@ -273,14 +273,14 @@ data "StatsFunctorContext" "OnDamage"
 data "Conditions" "Character() and not Self() and not Ally() and IsRangedWeaponAttackCheckNoMultihit() and not AreaRadiusGreaterThan(1)"
 data "StatsFunctors" "ApplyStatus(FOCUSFIRE,100,1);ApplyStatus(SELF,FOCUSFIRE_FOCUSING,100,1)"
 
-new entry "FocusFire_Damage"
+new entry "FocusFire_Damaged"
 type "PassiveData"
 data "DisplayName" "h509b8e00gacb9g46a5sd6f456e4ef4f00004;1"
 data "Description" "h509b8e00gacb9g46a5sd6f456e4ef4f0000d;1"
 data "Icon" "Action_SummonFirearm"
 data "Properties" "IsHidden"
-data "StatsFunctorContext" "OnDamage"
-data "Conditions" "Character() and not Self() and not Ally() and IsRangedWeaponAttack() and HasStatus('FOCUSFIRE', context.Source, context.Target)"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "Character() and not Self() and not Ally() and IsRangedWeaponAttack() and HasStatus('FOCUSFIRE', context.Target, context.Source)"
 data "StatsFunctors" "DealDamage(FOCUSFIRE_FOCUSING.Duration, Piercing)"
 
 new entry "FocusFire_Miss"
@@ -424,13 +424,6 @@ data "Conditions" "Character() and not Self() and not Ally() and HasPassive('UND
 data "StatsFunctors" "ApplyStatus(SELF,IMSORRYFATHER,100,1)"
 
 <--INFUSED ARCSMITH-->
-
-new entry "InfusionMatrix_Visual"
-type "PassiveData"
-data "Properties" "IsHidden"
-data "StatsFunctorContext" "OnAttack"
-data "Conditions" "SpellId('Target_Infusion')" 
-data "StatsFunctors" "ApplyStatus(INFUSION,100,1)"
 
 new entry "InfusionMatrix"
 type "PassiveData"

@@ -9,7 +9,7 @@
 	<content contentuid="66523fb3deaa14de1766304e091849480000a" version="2">The players currently equipped firearm.</content>
 
 	<content contentuid="66523fb3deaa14de1766304e096s5d4f68e54" version="1">Ammunition: 3</content>
-	<content contentuid="77523fb3deaa14de1766304e09s56ef956e84" version="2">Gain three shots of ammunition per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, used to fire your currently equipped firearms unique actions. You may also restore your supply of Ammunition by &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt;.</content>
+	<content contentuid="77523fb3deaa14de1766304e09s56ef956e84" version="2">Gain three shots of ammunition per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, used to fire your currently equipped firearms unique actions. You may restore your supply of Ammunition by &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt;.</content>
 
 	<content contentuid="66523fb3deaa14de1766304e0911fbc49ae66" version="1">Artificer</content>
 	<content contentuid="77523fb3deaa14de1766304e0911fbc49ae77" version="2">Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex system waiting to be decoded and then harnessed.</content>
@@ -94,9 +94,9 @@
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00004" version="1">Focus Fire</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000d" version="2">Dealing damage to an enemy with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; which only target one creature will apply one stack of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt;. Each time that they are subsequently damaged by a Ranged Weapon Attack, they take additional damage equal to the amount of Focus Fire stacks they have remaining.&lt;br&gt;&lt;br&gt;Damaging another creature or missing your shot will reset the amount of stacks.</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000z4" version="1">Focus Fire: Target</content>
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000zd" version="2">Affected creature will take additional damage equal to the amount of stacks of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt; they have remaining.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f000zd" version="2">Affected creature will take additional damage when the creature who applied this status damages them with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;The amount of additional damage dealt is equal to the amount of stacks of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE_FOCUSING"&gt;Focus&lt;/LSTag&gt; their aggressor currently has.</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00zz4" version="1">Focus Fire: Focusing</content>
-	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00zzd" version="2">Affected creature will deal additional damage equal to the amount of stacks of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE"&gt;Focus Fire&lt;/LSTag&gt; their target has remaining.</content>
+	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00zzd" version="2">Affected creature will deal additional damage equal to the amount of stacks of &lt;LSTag Type="Status" Tooltip="FOCUSFIRE_FOCUSING"&gt;Focus&lt;/LSTag&gt; that they have remaining when targeting the creature they are focusing on with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f00005" version="1">Covering Fire</content>
 	<content contentuid="h509b8e00gacb9g46a5sd6f456e4ef4f0000e" version="2">Once per turn, landing a Killing Blow with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; will restore an &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
@@ -155,13 +155,13 @@
 	<content contentuid="36523fb3deaa14de1766304e0911fbc49ae33" version="1">Infused Arcsmith</content>
 	<content contentuid="47523fb3deaa14de1766304e0911fbc49ae44" version="2">To an Infused Arcsmith, bodies are but a malleable canvas. Enhanced and honed through magic in order to unleash their potency, an Arcsmith's power only grows over time as experimentation and bonding further refines their work.</content>
 
-	<content contentuid="88523fb3deaa14de1766304e0911fbc49ae88" version="1">Matrix Charge</content>
+	<content contentuid="88523fb3deaa14de1766304e0911fbc49ae88" version="1">Matrix Charges</content>
 	<content contentuid="99523fb3deaa14de1766304e0911fbc49ae99" version="2">Used in order to infuse allies and enemies.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00001" version="1">Infusion Matrix</content>
 	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000a" version="2">Gain the ability to infuse allies and enemies in order to apply powerful buffs and debuffs. In addition, &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt; your firearms will restore one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f000z1" version="1">Infuse Creature</content>
-	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s000za" version="2">Infuse enemies or allies in order to provide a variety of different effects. Enemies currently under &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION_DESCRIPTION"&gt;Lockdown Immunity&lt;/LSTag&gt; cannot be &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infused&lt;/LSTag&gt;.</content>
+	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s000za" version="2">Infuse allies or enemies in order to provide a variety of different effects based on your choice of Optimization and Sabotage matrices.</content>
 
 	<content contentuid="h509b8e00gacb9g46a583898dfj5df2f00002" version="1">Adaptive Intervention</content>
 	<content contentuid="h5b8e00gacb9g46a5sd6f45623r4ff8s0000b" version="2">You may expend one &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt; in order to grant an ally &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;. Additionally, when an ally or enemy is about to be damaged, you may expend your &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and a &lt;LSTag Type="ActionResource" Tooltip="InfusionSlots"&gt;Matrix Charge&lt;/LSTag&gt; to immediately &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; them.</content>
@@ -190,7 +190,7 @@
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc400000" version="2">Select an effect to apply to your allies upon Infusing them.</content>
 
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc40xxyz" version="1">Infused</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40xyzz" version="2">Affected creature is affected by a variety of effects based on an Arcsmith's passives.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40xyzz" version="2">Affected creature is affected by a variety of effects based on an Arcsmith's choice of Optimization and Sabotage matrices.</content>
 
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400001" version="1">Optimization: Adaptive Shielding</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000a" version="2">Grant allies &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage upon &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infusing&lt;/LSTag&gt; them.</content>
@@ -430,9 +430,9 @@
 	<content contentuid="h81ed88e5gbedcg4e19g820ag3c711ff35217" version="1">Ranged Attack</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f65sd7" version="1">Fire a long range shot from your musket.</content>
 	<content contentuid="h1699213a6f194fa6ac028aaf1119707e2162" version="1">Precision Aim</content>
-	<content contentuid="h691a4d59f41f4427978220a7c85d3cc70921" version="1">Enter into a crouched stance, doubling your musket's range and the bonus damage provided by &lt;LSTag Type="Passive" Tooltip="BootsontheGround"&gt;Boots on the Ground&lt;/LSTag&gt;. While in this crouched stance, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; are made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; and your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is reduced to zero.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Using this action again will cause you to stand back up, restoring your ability to move.</content>
+	<content contentuid="h691a4d59f41f4427978220a7c85d3cc70921" version="1">Enter into a crouched stance, doubling your musket's range and the bonus damage provided by &lt;LSTag Type="Passive" Tooltip="BootsontheGround"&gt;Boots on the Ground&lt;/LSTag&gt;. While in this crouched stance, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; are made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;, consume one round of &lt;LSTag Type="ActionResource" Tooltip="FirearmAmmo"&gt;Ammunition&lt;/LSTag&gt;, and your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is reduced to zero.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Using this action again will cause you to stand back up, restoring your ability to move.</content>
 	<content contentuid="h1699213a6f194fa6ac028aaf1119707e2163" version="1">Precision Aim</content>
-	<content contentuid="h691a4d59f41f4427978220a7c85d3cc70922" version="1">Affected creature has entered into a crouched stance, doubling their musket's range and the bonus damage provided by &lt;LSTag Type="Passive" Tooltip="BootsontheGround"&gt;Boots on the Ground&lt;/LSTag&gt;. While in this crouched stance, their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; are made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; and their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is reduced to zero.</content>
+	<content contentuid="h691a4d59f41f4427978220a7c85d3cc70922" version="1">Affected creature has entered into a crouched stance, doubling their musket's range and the bonus damage provided by &lt;LSTag Type="Passive" Tooltip="BootsontheGround"&gt;Boots on the Ground&lt;/LSTag&gt;. While in this crouched stance, their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; are made with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;, consume one round of &lt;LSTag Type="ActionResource" Tooltip="FirearmAmmo"&gt;Ammunition&lt;/LSTag&gt;, and their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is reduced to zero.</content>
 
 	<content contentuid="h509b8e00gacb9g46e8d55s6d5f4ef4500000" version="1">Summon Firearms</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e6as8dfe800000" version="2">Summon one of three unique firearms. As you level in Artificer, they will deal additional damage and gain new effects.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Summoning your firearms may be done at any time as a free action.</content>
@@ -444,7 +444,7 @@
 	<content contentuid="h509b8e00gacb9g46e8d5f4e6as8dfe80000c" version="2">Summon a musket capable of dealing high single target damage at a long range.</content>
 
     <content contentuid="h9948c4df266c474c8f2a9e9f7c75bd508e81" version="1">Reload</content>
-	<content contentuid="h60fad97c1f12406089daa939fafbde5dc671" version="1">Restore your supply of ammunition and clear any &lt;LSTag Type="Status" Tooltip="FIREARM_MALFUNCTION"&gt;Misfires&lt;/LSTag&gt;.</content>
+	<content contentuid="h60fad97c1f12406089daa939fafbde5dc671" version="1">Restore your supply of &lt;LSTag Type="ActionResource" Tooltip="FirearmAmmo"&gt;Ammunition&lt;/LSTag&gt; and clear any &lt;LSTag Type="Status" Tooltip="FIREARM_MALFUNCTION"&gt;Misfires&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h6e14d0af00b24f35a154d0b96e68a1b067d4" version="1">Misfire</content>
 	<content contentuid="he84edbeb69df4c939af10bdf09d10c4966ga" version="1">Affected creature's firearm has malfunctioned. It cannot fire until the start of their next turn.&lt;/b&gt;&lt;br&gt;Cleared by &lt;LSTag Type="Spell" Tooltip="Shout_Reload_Firearm"&gt;Reloading&lt;/LSTag&gt;.</content>

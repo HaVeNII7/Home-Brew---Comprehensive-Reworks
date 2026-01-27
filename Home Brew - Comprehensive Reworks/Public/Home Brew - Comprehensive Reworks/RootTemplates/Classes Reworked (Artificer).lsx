@@ -22,6 +22,7 @@
 					<attribute id="LevelOverride" type="int32" value="1" />
 					<attribute id="Scale" type="float" value="0.34" />
 					<attribute id="SoundInitEvent" type="FixedString" value="" />
+					<attribute id="CanClimbLadders" type="bool" value="False" />
 					<children>
 						<node id="EquipmentTypes">
 							<children>
