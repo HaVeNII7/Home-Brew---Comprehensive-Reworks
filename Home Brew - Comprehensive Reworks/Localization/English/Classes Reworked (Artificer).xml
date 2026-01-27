@@ -296,7 +296,7 @@
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f004" version="1">Castle Defense</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500d" version="2">Gain the ability to deploy a turret within [1] of you.</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f0z4" version="1">Deploy Turret</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50zd" version="2">Deploy an arcane turret within [1] of you.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50zd" version="2">Deploy an arcane turret within [1] of you.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt;.</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2fzz4" version="1">Arcane Missile</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zzd" version="2">Fire an arcane missile which will seek out a creature of your choosing.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
 
