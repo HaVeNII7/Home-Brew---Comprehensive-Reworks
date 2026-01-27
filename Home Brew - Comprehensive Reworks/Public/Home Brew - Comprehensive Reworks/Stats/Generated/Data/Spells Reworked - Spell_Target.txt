@@ -3043,7 +3043,6 @@ data "MemoryCost" "1"
 data "PrepareEffect" "f2e02f51-70c2-482b-bcac-2dac285fda14"
 data "CastEffect" "e7d9a675-3a62-4eb5-9d90-f41884b1f524"
 data "TargetEffect" "45f03e64-4e97-42a3-8597-af369687c896"
-data "DamageType" "Cold"
 data "RequirementConditions" "not HasStatus('BUFF_BLOCKER')"
 
 new entry "Target_Goodberry_2"

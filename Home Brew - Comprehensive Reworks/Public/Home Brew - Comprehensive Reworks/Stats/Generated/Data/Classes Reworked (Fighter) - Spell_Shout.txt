@@ -30,7 +30,7 @@ type "SpellData"
 data "SpellType" "Shout"
 using "Shout_ActionSurge"
 data "SpellProperties" "ApplyStatus(ACTION_SURGE,100,1);ApplyStatus(SELF,AI_HELPER_BUFF_LARGE,100,0)"
-data "RequirementConditions" "not HasStatus('ACTION_SURGE_BLOCKER',context.Source) and not HasStatus('DASH') and HasEnemyWithinRange('SG_Incapacitated',9,nil,1,context.Target,context.Source) and HasPassive('ActionSurge',context.Source) or HasPassive('ImprovedActionSurge',context.Source)"
+data "RequirementConditions" "not HasStatus('ACTIONSURGE_BLOCKER',context.Source) and not HasStatus('DASH') and HasEnemyWithinRange('SG_Incapacitated',9,nil,1,context.Target,context.Source) and (HasPassive('ActionSurge',context.Source) or HasPassive('ImprovedActionSurge',context.Source))"
 
 new entry "CShout_ActionSurge"
 type "SpellData"
@@ -62,7 +62,7 @@ type "SpellData"
 data "SpellType" "Shout"
 using "Shout_ActionSurge"
 data "SpellProperties" "ApplyStatus(ACTION_SURGE,100,1);ApplyStatus(SELF,AI_HELPER_BUFF_LARGE,100,0)"
-data "RequirementConditions" "not HasStatus('ACTION_SURGE_BLOCKER',context.Source) and not HasStatus('DASH') and HasEnemyWithinRange('SG_Incapacitated',9,nil,1,context.Target,context.Source) and HasPassive('ActionSurge',context.Source) or HasPassive('ImprovedActionSurge',context.Source)"
+data "RequirementConditions" "not HasStatus('ACTIONSURGE_BLOCKER',context.Source) and not HasStatus('DASH') and HasEnemyWithinRange('SG_Incapacitated',9,nil,1,context.Target,context.Source) and (HasPassive('ActionSurge',context.Source) or HasPassive('ImprovedActionSurge',context.Source))"
 
 <!--ARCANE ARCHER-->
 
@@ -350,6 +350,14 @@ data "Requirements" "Combat"
 data "HitAnimationType" "None"
 data "Sheathing" "DontChange"
 data "RequirementConditions" "not HasStatus('SECONDWIND_BLOCKER')"
+data "CombatAIOverrideSpell" "Shout_CSecondWind_AI"
+
+new entry "Shout_CSecondWind_AI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_CSecondWind"
+data "TargetConditions" "Self() and HasHPPercentageWithoutTemporaryHPLessThan(75)"
+data "CombatAIOverrideSpell" ""
 
 new entry "Shout_ImprovedActionSurge"
 type "SpellData"
@@ -375,6 +383,14 @@ data "CastEffect" "2550e2bb-c9f9-4440-9cd4-146a03f2e9bc"
 data "Sheathing" "DontChange"
 data "HitAnimationType" "None"
 data "RequirementConditions" "not HasStatus('ACTION_SURGE') and not HasStatus('ACTIONSURGE_BLOCKER')"
+data "CombatAIOverrideSpell" "Shout_ImprovedActionSurge_NPC"
+
+new entry "Shout_ImprovedActionSurge_NPC"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_ActionSurge"
+data "SpellProperties" "ApplyStatus(ACTION_SURGE,100,1);ApplyStatus(ACTIONSURGE_BLOCKER,100,-1);ApplyStatus(SELF,AI_HELPER_BUFF_LARGE,100,0)"
+data "RequirementConditions" "not HasStatus('ACTIONSURGE_BLOCKER',context.Source) and not HasStatus('DASH') and HasEnemyWithinRange('SG_Incapacitated',9,nil,1,context.Target,context.Source) and (HasPassive('ActionSurge',context.Source) or HasPassive('ImprovedActionSurge',context.Source))"
 
 <!--MANEUVERS-->
 
@@ -490,7 +506,7 @@ data "PrepareEffect" "888d8c35-a26b-45a2-89c4-4463f3acda92"
 data "CastEffect" "acb4e099-8533-43ad-ad4f-c3c7b8bd67dd"
 data "Sheathing" "DontChange"
 data "HitAnimationType" "None"
-data "RequirementConditions" "not HasStatus('MANEUVER_BLOCKER')"
+data "RequirementConditions" "not HasStatus('MANEUVER_BLOCKER') and not HasStatus('LUNGING_ATTACK')"
 data "CombatAIOverrideSpell" "Shout_LungingAttack_AI"
 
 new entry "Shout_LungingAttack_AI"

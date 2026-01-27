@@ -248,6 +248,16 @@ data "Icon" "Action_DivineStrike_Radiant_Melee"
 data "StackId" "DIVINE_FAITH"
 data "Boosts" "Reroll(Damage,20,false);Advantage(AttackRoll)"
 
+new entry "WAR_GODS_VESSEL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h994500d0g1703g421bg8028g0f3a3101a645;1"
+data "Description" "hf729263eg37dcg43fbg923cg24cc642ieoo5;2"
+data "Icon" "Action_DivineStrike_Radiant_Melee"
+data "StackId" "WAR_GODS_VESSEL"
+data "StatusEffect" "f2204a1d-a79b-4efe-a3da-3ed69392b94a"
+data "Boosts" "RollBonus(Attack,10)"
+
 new entry "DEIFIC"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -261,16 +271,6 @@ data "RemoveConditions" "IsCritical()"
 data "RemoveEvents" "OnAttack;OnCombatEnded"
 data "StatusEffect" "f2204a1d-a79b-4efe-a3da-3ed69392b94a"
 data "StackType" "Ignore"
-
-new entry "WAR_GODS_VESSEL"
-type "StatusData"
-data "StatusType" "BOOST"
-data "DisplayName" "h994500d0g1703g421bg8028g0f3a3101a645;1"
-data "Description" "hf729263eg37dcg43fbg923cg24cc642ieoo5;2"
-data "Icon" "Action_DivineStrike_Radiant_Melee"
-data "StackId" "WAR_GODS_VESSEL"
-data "StatusEffect" "f2204a1d-a79b-4efe-a3da-3ed69392b94a"
-data "Boosts" "RollBonus(Attack,10)"
 
 <!--PASSIVES-->
 

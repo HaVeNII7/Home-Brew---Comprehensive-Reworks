@@ -1,0 +1,17 @@
+local __util = require 'larian.util'
+
+function SpellSlotCheck_Season_Spring()
+    return (HasUseCosts('SpellSlot') | HasUseCosts('WarlockSpellSlot') | HasUseCosts('SpellSlotsGroup')) & ~HasCantripSpellLevel() & (SpellDamageTypeIs(DamageType.Lightning) | SpellDamageTypeIs(DamageType.Thunder))
+end
+
+function SpellSlotCheck_Season_Summer()
+    return (HasUseCosts('SpellSlot') | HasUseCosts('WarlockSpellSlot') | HasUseCosts('SpellSlotsGroup')) & ~HasCantripSpellLevel() & (SpellDamageTypeIs(DamageType.Fire) | SpellDamageTypeIs(DamageType.Radiant))
+end
+
+function SpellSlotCheck_Season_Fall()
+    return (HasUseCosts('SpellSlot') | HasUseCosts('WarlockSpellSlot') | HasUseCosts('SpellSlotsGroup')) & ~HasCantripSpellLevel() & (SpellDamageTypeIs(DamageType.Necrotic) | SpellDamageTypeIs(DamageType.Poison))
+end
+
+function SpellSlotCheck_Season_Winter()
+    return (HasUseCosts('SpellSlot') | HasUseCosts('WarlockSpellSlot') | HasUseCosts('SpellSlotsGroup')) & ~HasCantripSpellLevel() & (SpellDamageTypeIs(DamageType.Cold) | SpellDamageTypeIs(DamageType.Force))
+end

@@ -353,7 +353,7 @@ data "Requirements" "Combat"
 data "SpellStyleGroup" "Class"
 data "SpellSoundMagnitude" "Big"
 data "Sheathing" "DontChange"
-data "Cooldown" "OncePerShortRest"
+data "Cooldown" "OncePerCombat"
 
 <!--OATHBREAKER-->
 

@@ -176,15 +176,15 @@
 	<content contentuid="h4c1f2f2dg8a14g4391gaf11g78e2496dd2f5" version="2">War Priest</content>
 	<content contentuid="h5846ba7cg19b5g475cg88dbg2ea9d37ss6f9" version="3">Make an additional &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; or &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
 
-	<content contentuid="h994500d0g1703g421bg8028g0f3a3109a888" version="2">Deific</content>
-	<content contentuid="hf729263eg37dcg43fbg923cg24cc64212aa5" version="2">Once per turn, after using one of your Miracles, your next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
-	<content contentuid="h994500d0g1703g421bg8028g0f3a31adfsd8" version="2">Deific</content>
-	<content contentuid="hf729263eg37dcg43fbg923cg24cc64668d59" version="2">Affected creature's next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
-
 	<content contentuid="h994500d0g1703g421bg8028g0f3a3101a644" version="2">War God's Vessel</content>
 	<content contentuid="hf729263eg37dcg43fbg923cg24cc642ieood" version="2">When you utilize your War God's Blessing in order to succeed an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, the bonus to your Attack Rolls remains active for three turns.</content>
 	<content contentuid="h994500d0g1703g421bg8028g0f3a3101a645" version="2">War God's Vessel</content>
 	<content contentuid="hf729263eg37dcg43fbg923cg24cc642ieoo5" version="2">Affected character has a +10 bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h994500d0g1703g421bg8028g0f3a3109a888" version="2">Deific</content>
+	<content contentuid="hf729263eg37dcg43fbg923cg24cc64212aa5" version="2">Once per turn, after using one of your Miracles, your next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
+	<content contentuid="h994500d0g1703g421bg8028g0f3a31adfsd8" version="2">Deific</content>
+	<content contentuid="hf729263eg37dcg43fbg923cg24cc64668d59" version="2">Affected creature's next &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 
 <!--PASSIVES-->
 
