@@ -1468,6 +1468,7 @@ So long as the affected creature is not &lt;LSTag Type="Status" Tooltip="DOWNED_
 	<content contentuid="h2c3554d0g78d2g48d8g93odi01s2d1f65d48" version="1">Summon an additional Guardian per level.</content>
 	<content contentuid="hf155fe40gd202g45dslkdjfiejfkfa256235" version="1">Select an additional target and increase &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; gained by +1 per level.</content>
 	<content contentuid="h197f62bbgd1ddg4436g90df5s5d4f6d54ef8" version="3">Conjure an additional cloud and deal an additional [1] per level.</content>
+	<content contentuid="h8d71539dg47bfg49b7g85e8g9b29bac83d90" version="3">Create a higher level &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; per &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charge spent.</content>
 
 	<content contentuid="h0ea221c3gad56g4a89g94d4g9c9243upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Affect creatures with more &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; per level.</content>
 	<content contentuid="h0f41f1a9g1969g42c5gb44cg7cf082upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Each dart deals an additional [1] per level.</content>
