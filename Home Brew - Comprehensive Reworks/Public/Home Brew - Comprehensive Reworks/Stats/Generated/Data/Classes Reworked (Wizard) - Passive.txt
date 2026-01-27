@@ -34,7 +34,7 @@ data "Icon" "Action_Bladesong_Dismiss"
 data "Properties" "Highlighted;ForceShowInCC;OncePerTurn"
 data "StatsFunctorContext" "OnDamage"
 data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally() or IsCritical() and Character() and not Self() and not Ally()"
-data "StatsFunctors" "ApplyStatus(SELF,WINDSOFTHEARCBLADE,100,-1)"
+data "StatsFunctors" "ApplyStatus(SELF,WINDSOFTHEARCBLADE,100,1)"
 
 new entry "SteelCast_Arcblade"
 type "PassiveData"

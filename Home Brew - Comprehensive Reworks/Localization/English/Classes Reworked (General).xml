@@ -168,9 +168,9 @@
 	<content contentuid="h8612a65dg446cg427bga712g6sd8f8900yaj" version="3">Affected creature has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h6eb72b35g6633g4642gaf97gc5sd4fd00037" version="3">Unhinged</content>
-	<content contentuid="h8612a65dg446cg427bga712g6sd8f89000ak" version="3">While in combat, killing another creature will immediately restore [1]. However, if you fail to kill a creature within three turns, you become permanently &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Mad&lt;/LSTag&gt; until you do.</content>
+	<content contentuid="h8612a65dg446cg427bga712g6sd8f89000ak" version="3">While in combat, killing another creature will immediately restore [1]. However, if you fail to kill a creature within three turns, you become stricken with &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Madness&lt;/LSTag&gt; either until you do, or until three turns have passed.</content>
 	<content contentuid="h6eb72b35g6633g4642gaf97gc5sd4fd00z37" version="3">Unhinged</content>
-	<content contentuid="h8612a65dg446cg427bga712g6sd8f8900zak" version="3">Affected creature is slowly being driven to &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Madness&lt;/LSTag&gt;. Should they fail to land a killing blow before this condition expires, they will become permanently Mad until they do.</content>
+	<content contentuid="h8612a65dg446cg427bga712g6sd8f8900zak" version="3">Affected creature is slowly being driven to &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Madness&lt;/LSTag&gt;. Should they fail to land a killing blow before this condition expires, they will become stricken with Madness either until they do, or until three turns have passed.</content>
 
 	<content contentuid="h6eb72b35g6633g4642gaf97gc5sd4fd00038" version="3">Unstable Source</content>
 	<content contentuid="h8612a65dg446cg427bga712g6sd8f89000al" version="3">Each turn in combat, you have a 10% chance to experience a positive surge of &lt;LSTag Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt;. However, upon recovering from being &lt;LSTag Type="Status" Tooltip="DOWNED"&gt;Downed&lt;/LSTag&gt;, you have a 100% chance to experience a negative surge.</content>
