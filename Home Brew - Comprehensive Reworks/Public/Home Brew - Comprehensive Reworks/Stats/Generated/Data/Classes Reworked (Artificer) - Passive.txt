@@ -425,13 +425,6 @@ data "StatsFunctors" "ApplyStatus(SELF,IMSORRYFATHER,100,1)"
 
 <--INFUSED ARCSMITH-->
 
-new entry "InfusionMatrix_Visual"
-type "PassiveData"
-data "Properties" "IsHidden"
-data "StatsFunctorContext" "OnAttack"
-data "Conditions" "SpellId('Target_Infusion')" 
-data "StatsFunctors" "ApplyStatus(INFUSION,100,1)"
-
 new entry "InfusionMatrix"
 type "PassiveData"
 data "DisplayName" "h509b8e00gacb9g46a583898dfj5df2f00001;4"
