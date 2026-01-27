@@ -215,7 +215,7 @@
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400011" version="1">Optimization: Kinetic Repulsor Field</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000k" version="2">Allies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; push enemies backward by [1] when dealing damage.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400012" version="1">Optimization: Maximum Yield</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000l" version="2">Allies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; have their weapons damage dice increased to a D20.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000l" version="2">Allies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; have their weapon's damage dice increased to a D20.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400013" version="1">Optimization: Output Contingency</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000m" version="2">Allies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; will always roll at least a 4 when dealing damage.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400014" version="1">Optimization: Precision Boost</content>
