@@ -1544,6 +1544,41 @@ data "DisplayName" "h298b9a29g5657g4aa9gaad6gad3a822d3f45;1"
 data "Description" "hb2400634gf3e4g46f1gb93dg1330e4ss6d85;2"
 data "DescriptionParams" "DealDamage(12,Radiant)"
 
+new entry "Tooltip_Aura_Of_Protection"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hd8ffaca7g8aa7g4e02ga546g3592286387a8;2"
+data "Description" "h3728832agb688g4081gad4eg7dcab2a79276;5"
+data "Icon" "Action_Paladin_AuraOfProtection"
+
+new entry "Tooltip_Aura_Of_Cinder"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hf8d923abg2aeeg446agac9dgbb2708100005;2"
+data "Description" "hf8d923abg2aeeg446agac9dgbb270810000e;2"
+data "Icon" "Action_Monster_GortashMachine_ActivateFlameTiles"
+
+new entry "Tooltip_Aura_Of_Courage"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "ha12ebad1gfaf7g4b82g827fg125b781e62a7;2"
+data "Description" "h6dc7d859g0635g4fc0gabbfg80e4218d0c89;4"
+data "Icon" "Action_Paladin_AuraOfCourage"
+
+new entry "Tooltip_Aura_Of_Warding"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hce5530e4g3326g4a39ga467gf5d023c89bcd;2"
+data "Description" "h7b194af9ge1fbg47b4g95ebg4b5d0eebb313;9"
+data "Icon" "Action_Paladin_AuraOfWarding"
+
+new entry "Tooltip_Aura_Of_Hate"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h927a9140g56d3g460fg9314g40fbd232b361;2"
+data "Description" "h0c2bc9a2g8e6bg4550ga8b9gfba7b2e8462d;7"
+data "Icon" "Action_Paladin_AuraOfHate"
+
 <!--RANGER-->
 
 new entry "Tooltip_CompanionsBond_Creature"

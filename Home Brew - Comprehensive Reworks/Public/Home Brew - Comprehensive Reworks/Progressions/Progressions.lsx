@@ -6643,7 +6643,7 @@
 					<attribute id="Level" type="uint8" value="9" />
 					<attribute id="Name" type="LSString" value="Ancients" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="Selectors" type="LSString" value="AddSpells(94db914d-95d0-484e-8a02-c0faa9d575a7,OathSpells)" />
+                    <attribute id="PassivesAdded" type="LSString" value="Aura_Of_Protection"/>
 					<attribute id="TableUUID" type="guid" value="b82864a7-b093-4553-a802-e176831029c1" />
 					<attribute id="UUID" type="guid" value="ed44db42-a704-4717-aed3-7d3672775b36" />
 					</node>
@@ -6736,7 +6736,7 @@
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="Crown"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(0e170ae3-56b4-487a-9690-830002d2555f)"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Aura_Of_Cinder"/>
                     <attribute id="TableUUID" type="guid" value="e3a25a7a-e793-4b99-9d4a-0fbc17fcc1ff"/>
                     <attribute id="UUID" type="guid" value="3277d612-488e-42b5-9441-576693ec68d2"/>
 					</node>
@@ -6829,7 +6829,7 @@
 					<attribute id="Level" type="uint8" value="9" />
 					<attribute id="Name" type="LSString" value="Devotion" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="Selectors" type="LSString" value="AddSpells(da27c6ae-15cf-4441-9115-82dcc282f8cc,OathSpells)" />
+                    <attribute id="PassivesAdded" type="LSString" value="Aura_Of_Courage"/>
 					<attribute id="TableUUID" type="guid" value="941ca27d-02f7-4f59-bd33-63fa3366134d" />
 					<attribute id="UUID" type="guid" value="5e9cbd8a-af0f-4ce8-a9ac-cc31d4873c61" />
 					</node>
@@ -6922,7 +6922,7 @@
 					<attribute id="Level" type="uint8" value="9" />
 					<attribute id="Name" type="LSString" value="Vengeance" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="Selectors" type="LSString" value="AddSpells(f6e69adb-d2d3-4d38-aca1-639fb38cf0fd,OathSpells)" />
+                    <attribute id="PassivesAdded" type="LSString" value="Aura_Of_Warding"/>
 					<attribute id="TableUUID" type="guid" value="f769aa02-1f74-4fb6-b94c-8850143daa20" />
 					<attribute id="UUID" type="guid" value="b3d4b30b-8a84-419a-98b2-68639ae3649d" />
 					</node>
@@ -7017,7 +7017,7 @@
 					<attribute id="Level" type="uint8" value="9" />
 					<attribute id="Name" type="LSString" value="Oathbreaker" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="Selectors" type="LSString" value="AddSpells(20c3ac99-a937-464c-810d-d2f50ba44e6e,OathSpells)" />
+                    <attribute id="PassivesAdded" type="LSString" value="Aura_Of_Hate"/>
 					<attribute id="TableUUID" type="guid" value="f0d6f933-4532-463f-b378-a1e8b0164325" />
 					<attribute id="UUID" type="guid" value="254264de-ef38-4219-8150-19886af18603" />
 					</node>
