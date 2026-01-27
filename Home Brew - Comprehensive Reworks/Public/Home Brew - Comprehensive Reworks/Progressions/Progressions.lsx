@@ -3547,7 +3547,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="9" />
 					<attribute id="Name" type="LSString" value="WarDomain" />
-					<attribute id="PassivesAdded" type="LSString" value="Deific" />
+					<attribute id="PassivesAdded" type="LSString" value="War_Gods_Vessel" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="TableUUID" type="guid" value="8f6048bc-47b8-49fa-956a-8a364807f6ec" />
 					<attribute id="UUID" type="guid" value="3939ff20-9ff5-43f0-bc1b-34bc4e4018db" />
@@ -3562,7 +3562,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="11" />
 					<attribute id="Name" type="LSString" value="WarDomain" />
-					<attribute id="PassivesAdded" type="LSString" value="War_Gods_Vessel" />
+					<attribute id="PassivesAdded" type="LSString" value="Deific" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="TableUUID" type="guid" value="8f6048bc-47b8-49fa-956a-8a364807f6ec" />
 					<attribute id="UUID" type="guid" value="247968f5-8b1a-4ff0-8ec0-a1cbea4b8aa6" />
@@ -3589,6 +3589,9 @@
 						<children>
 							<node id="SubClasses">
 								<children>
+										<node id="SubClass">
+											<attribute id="Object" type="guid" value="1320651e-30c6-4959-a0c1-0222834800b5" />
+										</node>
 										<node id="SubClass">
 											<attribute id="Object" type="guid" value="7458da78-34b7-4150-a42f-37197ab04510" />
 										</node>
@@ -3618,6 +3621,9 @@
 						<children>
 							<node id="SubClasses">
 								<children>
+										<node id="SubClass">
+											<attribute id="Object" type="guid" value="1320651e-30c6-4959-a0c1-0222834800b5" />
+										</node>
 										<node id="SubClass">
 											<attribute id="Object" type="guid" value="7458da78-34b7-4150-a42f-37197ab04510" />
 										</node>
@@ -3977,7 +3983,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="CircleOfElements" />
-					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_Elements;PASSIVE_NAME" />
+					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_Elements;CycleofBalance" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="Selectors" type="LSString" value="SelectSpells(11c23a6f-6f53-47bc-ad35-9cb7ed0c2b2e,3,0,Wildshape)" />
 					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
@@ -3993,7 +3999,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="3" />
 					<attribute id="Name" type="LSString" value="CircleOfElements" />
-					<attribute id="PassivesAdded" type="LSString" value="PASSIVE_NAME" />
+					<attribute id="PassivesAdded" type="LSString" value="Terrasoul;Terrasoul_Spring;Terrasoul_Summer;Terrasoul_Fall;Terrasoul_Winter" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
 					<attribute id="UUID" type="guid" value="087b16eb-9aa0-46b9-bced-43a259289652" />
@@ -4008,7 +4014,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="5" />
 					<attribute id="Name" type="LSString" value="CircleOfElements" />
-					<attribute id="PassivesAdded" type="LSString" value="PASSIVE_NAME" />
+					<attribute id="PassivesAdded" type="LSString" value="TempestuousSeasons" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="Selectors" type="LSString" value="SelectSpells(11c23a6f-6f53-47bc-ad35-9cb7ed0c2b2e,3,0,Wildshape)" />
 					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
@@ -4024,7 +4030,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="7" />
 					<attribute id="Name" type="LSString" value="CircleOfElements" />
-					<attribute id="PassivesAdded" type="LSString" value="PASSIVE_NAME" />
+					<attribute id="PassivesAdded" type="LSString" value="NaturalDesolation" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
 					<attribute id="UUID" type="guid" value="17769954-7aba-4ee2-a845-423a20ac5e54" />
@@ -4039,7 +4045,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="9" />
 					<attribute id="Name" type="LSString" value="CircleOfElements" />
-					<attribute id="PassivesAdded" type="LSString" value="PASSIVE_NAME" />
+					<attribute id="PassivesAdded" type="LSString" value="Maelstrom" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="Selectors" type="LSString" value="SelectSpells(11c23a6f-6f53-47bc-ad35-9cb7ed0c2b2e,3,0,Wildshape)" />
 					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
@@ -4055,7 +4061,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="11" />
 					<attribute id="Name" type="LSString" value="CircleOfElements" />
-					<attribute id="PassivesAdded" type="LSString" value="PASSIVE_NAME" />
+					<attribute id="PassivesAdded" type="LSString" value="AvatarofGaia" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
 					<attribute id="UUID" type="guid" value="035742e6-8f01-40ab-a86b-e54d2c3a0edf" />

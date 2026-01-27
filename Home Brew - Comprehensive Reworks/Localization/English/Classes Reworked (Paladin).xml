@@ -37,9 +37,9 @@
 	<content contentuid="fe6f4159abae42539029e284001d12de11111" version="3">Oath Broken</content>
 	<content contentuid="fe6f4159abae42539029e284001d12de22222" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Oathbroken"&gt;Oathbroken Smite&lt;/LSTag&gt;.</content>
 	<content contentuid="h940c3156gad0fg4a92g8573gff26b0433333" version="1">Oathbroken Smite</content>
-	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c944444" version="2">Shatter the mind of your target with necrotic wrath, &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrifying&lt;/LSTag&gt; them. This action always rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c944444" version="2">Shatter the mind of your target with necrotic wrath, afflicting them with &lt;LSTag Type="Status" Tooltip="SPITEFUL_SUFFERING"&gt;Spiteful Suffering&lt;/LSTag&gt;. This action always rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 	<content contentuid="h940c3156gad0fg4a92g8573gff26b0455555" version="1">Oathbroken Smite</content>
-	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c966666" version="2">Shatter the mind of your target with necrotic wrath, &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrifying&lt;/LSTag&gt; them.</content>
+	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c966666" version="2">Shatter the mind of your target with necrotic wrath, afflicting them with &lt;LSTag Type="Status" Tooltip="SPITEFUL_SUFFERING"&gt;Spiteful Suffering&lt;/LSTag&gt;.</content>
 	<content contentuid="h5b946111g68b0g402dg8509g7e0582a72f04" version="1">Oathbroken Smite: Critical</content>
 
 	<content contentuid="fe6f4159abae42539029e284001d12de00011" version="3">Blinding Smite</content>
@@ -246,9 +246,9 @@
 	<content contentuid="hd7ff90f2gdbe7g475aga57ege03e858ceb9f" version="1">Affected creature has been forcefully claimed by an Oathbreaker. It will attack it's allies indescriminately.</content>
 
 	<content contentuid="hbe9433acg21f7g450fg8e4dg52d76d77c680" version="1">Spiteful Suffering</content>
-	<content contentuid="hd646ac32g6ba7g4baagb3beg2ddef1a43dac" version="2">Submit your target to a malicious onslaught of spite, filling them with a sense of imposing dread. All &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them will roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="hd646ac32g6ba7g4baagb3beg2ddef1a43dac" version="2">Submit your target to a malicious onslaught of spite, filling them with a sense of imposing dread. All &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them will roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon dying, your target's dread will then manifest as a shadow under your command.</content>
 	<content contentuid="h32f822f1g557fg4f77g9e90gbe3d36acc9eb" version="1">Spiteful Suffering</content>
-	<content contentuid="h058b7513g6ddcg4f92gafc7gd608373e8c13" version="1">Affected creature suffers from an imposing sense of dread. &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
+	<content contentuid="h058b7513g6ddcg4f92gafc7gd608373e8c13" version="1">Affected creature suffers from an imposing sense of dread. &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon dying, the affected creature's dread will then manifest as a shadow, allied to whomever applied this condition.</content>
 
 	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8afasdfs" version="1">Vicious Condemnation</content>
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4d2398u" version="3">Upon killing a target, you inflict upon them a terrible curse, shattering their mind into fragments which become trapped within your equipped weapon and causing you to deal an additional [1]. While their mind remains trapped in your weapon, dealing damage with it may &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frighten&lt;/LSTag&gt; other creatures.</content>

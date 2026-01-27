@@ -39,8 +39,60 @@
 
 <!--CIRCLE OF THE ELEMENTS-->
 
-	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff0001" version="2">Circle of the Elements</content>
-	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff000a" version="2">You attune yourself to nature through four distinct elements - air, earth, fire, and water. Through their balance, you draw strength and fortitude.</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff0000" version="2">Circle of the Elements</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ffzzzz" version="2">You attune yourself to nature through four distinct elements - air, earth, fire, and water. Through their balance, you draw strength and fortitude.</content>
+
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff0001" version="2">Cycle of Balance</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff000a" version="2">Each turn while in combat, you cycle through one of the four seasons. Each season grants two passive damage buffs equal to your levels in Druid divided by two, as well as damage &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; corresponding to your seasonal damage types.&lt;br&gt;&lt;br&gt;In addition, each season allows you to morph into a corresponding elemental Myrmidon.</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00a1" version="2">Elemental Season: Spring</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00aa" version="2">Affected creature is attuned to the season of Spring. They deal additional Lightning and Thunder damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage as well.&lt;br&gt;&lt;br&gt;In addition, they may morph into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Air"&gt;Air Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00b2" version="2">Elemental Season: Summer</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00bb" version="2">Affected creature is attuned to the season of Summer. They deal additional Fire and Radiant damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage as well.&lt;br&gt;&lt;br&gt;In addition, they may morph into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Fire"&gt;Fire Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00c3" version="2">Elemental Season: Fall</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00cc" version="2">Affected creature is attuned to the season of Fall. They deal additional Poison and Necrotic damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage as well.&lt;br&gt;&lt;br&gt;In addition, they may morph into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Earth"&gt;Earth Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00d4" version="2">Elemental Season: Winter</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00dd" version="2">Affected creature is attuned to the season of Winter. They deal additional Cold and Force damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage as well.&lt;br&gt;&lt;br&gt;In addition, they may morph into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Water"&gt;Water Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z0001" version="2">Cycle of Balance: Air Myrmidon</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z000a" version="2">Shift into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Air"&gt;Air Myrmidon&lt;/LSTag&gt; as a free action.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z0002" version="2">Cycle of Balance: Fire Myrmidon</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z000b" version="2">Shift into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Fire"&gt;Fire Myrmidon&lt;/LSTag&gt; as a free action.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z0003" version="2">Cycle of Balance: Earth Myrmidon</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z000c" version="2">Shift into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Earth"&gt;Earth Myrmidon&lt;/LSTag&gt; as a free action.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z0004" version="2">Cycle of Balance: Water Myrmidon</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z000d" version="2">Shift into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Water"&gt;Water Myrmidon&lt;/LSTag&gt; as a free action.</content>
+
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd300002" version="2">Terrasoul</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd30000b" version="2">The first time each turn that you deal damage with a Spell associated with your seasonal damage types, you gain one use of Seasonal Reprieve.&lt;br&gt;&lt;br&gt;The next time that you cast a Spell which deals those same types of damage, your Seasonal Reprieve is spent in place of a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3x0001" version="2">Terrasoul: Spring</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3x000a" version="2">Cast your next Spell dealing either Lightning or Thunder damage without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3x0002" version="2">Terrasoul: Summer</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3x000b" version="2">Cast your next Spell dealing either Fire or Radiant damage without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3x0003" version="2">Terrasoul: Fall</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3x000c" version="2">Cast your next Spell dealing either Necrotic or Poison damage without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3x0004" version="2">Terrasoul: Winter</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3x000d" version="2">Cast your next Spell dealing either Cold or Force damage without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3y0001" version="2">Seasonal Reprieve: Spring</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3y000a" version="2">Affected creature may cast their next Spell dealing either Lightning or Thunder damage without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3y0002" version="2">Seasonal Reprieve: Summer</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3y000b" version="2">Affected creature may cast their next Spell dealing either Fire or Radiant damage without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3y0003" version="2">Seasonal Reprieve: Fall</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3y000c" version="2">Affected creature may cast their next Spell dealing either Necrotic or Poison damage without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3y0004" version="2">Seasonal Reprieve: Winter</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3y000d" version="2">Affected creature may cast their next Spell dealing either Cold or Force damage without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff0003" version="2">Tempestuous Seasons</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff000c" version="2">Gain the ability to manually advance your seasons by expending a &lt;LSTag Type="ActionResource" Tooltip="WildShape"&gt;Wildshape Charge&lt;/LSTag&gt;, dealing damage within a [1] area. The damage type dealt changes to match the season that you had upon advancing.</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ffz003" version="2">Tempestuous Seasons</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ffz00c" version="2">Manually advance your season, dealing damage to all enemies within a [1] area in the process.&lt;br&gt;&lt;br&gt;The damage type this deals both changes to match the season that you are currently in, as well as whether or not your target succeeds their &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd300004" version="2">Natural Desolation</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd30000d" version="2">While in combat, you ignore all forms of damage &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; associated with your current season.</content>
+
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd300005" version="2">Maelstrom</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd30000e" version="2">Upon landing a killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, you immediately trigger &lt;LSTag Type="Passive" Tooltip="TempestuousSeasons"&gt;Tempestuous Seasons&lt;/LSTag&gt; within a [1] around your target.&lt;br&gt;&lt;br&gt;Triggering Tempestuous Seasons in this way will not advance your season.</content>
+
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd300006" version="2">Avatar of Gaia</content>
+	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd30000f" version="2">At the beginning of each turn in combat, you immediately recover all of your &lt;LSTag Type="ActionResource" Tooltip="WildShape"&gt;Wildshape Charges&lt;/LSTag&gt;.</content>
 
 <!--CIRCLE OF THE LAND-->
 

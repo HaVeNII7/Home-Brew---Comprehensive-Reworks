@@ -427,8 +427,8 @@
 					</node>
         <node id="ClassDescription">
                     <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
-                    <attribute id="Description" type="TranslatedString" handle="ha585d015g08f6g4c52s1d6f54s6d54ff000a" version="2" />
-                    <attribute id="DisplayName" type="TranslatedString" handle="ha585d015g08f6g4c52s1d6f54s6d54ff0001" version="2" />
+                    <attribute id="Description" type="TranslatedString" handle="ha585d015g08f6g4c52s1d6f54s6d54ffzzzz" version="2" />
+                    <attribute id="DisplayName" type="TranslatedString" handle="ha585d015g08f6g4c52s1d6f54s6d54ff0000" version="2" />
                     <attribute id="LearningStrategy" type="uint8" value="1" />
                     <attribute id="MustPrepareSpells" type="bool" value="false" />
                     <attribute id="Name" type="FixedString" value="CircleOfElements" />

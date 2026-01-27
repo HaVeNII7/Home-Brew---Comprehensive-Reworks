@@ -968,7 +968,7 @@ data "Description" "115fb28f01e84e44b3536f4741b47sdfe500r;1"
 data "Icon" "Passive_SoulOfArtefice"
 data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally() and IsRangedWeaponAttack()"
+data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally()"
 data "StatsFunctors" "ApplyStatus(SELF,SPEEDLOADER,100,1)"
 
 new entry "SyntheticActionEconomy"

@@ -156,13 +156,18 @@
                     <attribute id="UUID" type="guid" value="11c23a6f-6f53-47bc-ad35-9cb7ed0c2b2e" />
 					</node>
         <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Druid - Circle of the Elements (Level 1)" />
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_Myrmidon_Air;Shout_WildShape_Myrmidon_Earth;Shout_WildShape_Myrmidon_Fire;Shout_WildShape_Myrmidon_Water" />
+                    <attribute id="UUID" type="guid" value="8396edf9-a9fd-41fe-b912-a6429fe2b66a" />
+					</node>
+        <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Druid - Circle of the Land (Level 1)" />
                     <attribute id="Spells" type="LSString" value="Target_ConjureDryad" />
                     <attribute id="UUID" type="guid" value="64e0c193-f303-499f-a33a-76aa04fa819a" />
 					</node>
         <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Druid - Circle of the Moon (Level 1)" />
-                    <attribute id="Spells" type="LSString" value="Shout_WildShape_Myrmidon_Air;Shout_WildShape_Myrmidon_Earth;Shout_WildShape_Myrmidon_Fire;Shout_WildShape_Myrmidon_Water;Shout_WildShape_Owlbear;Shout_Wildshape_Panther" />
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_Owlbear;Shout_Wildshape_Panther" />
                     <attribute id="UUID" type="guid" value="88b56a57-f48c-4550-9143-397686963a86" />
 					</node>
         <node id="SpellList">

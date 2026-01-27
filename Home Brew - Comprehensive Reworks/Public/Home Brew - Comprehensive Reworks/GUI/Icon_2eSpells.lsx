@@ -1376,6 +1376,34 @@
                     <attribute id="V1" type="float" value="0.45"/>
                     <attribute id="V2" type="float" value="0.5"/>
                 </node>
+                <node id="IconUV"> 
+                    <attribute id="MapKey" type="FixedString" value="Status_ElementalSeason_Spring"/>
+                    <attribute id="U1" type="float" value="0.75"/>
+                    <attribute id="U2" type="float" value="0.8"/>
+                    <attribute id="V1" type="float" value="0.45"/>
+                    <attribute id="V2" type="float" value="0.5"/>
+                </node>
+                <node id="IconUV"> 
+                    <attribute id="MapKey" type="FixedString" value="Status_ElementalSeason_Summer"/>
+                    <attribute id="U1" type="float" value="0.8"/>
+                    <attribute id="U2" type="float" value="0.85"/>
+                    <attribute id="V1" type="float" value="0.45"/>
+                    <attribute id="V2" type="float" value="0.5"/>
+                </node>
+                <node id="IconUV"> 
+                    <attribute id="MapKey" type="FixedString" value="Status_ElementalSeason_Fall"/>
+                    <attribute id="U1" type="float" value="0.85"/>
+                    <attribute id="U2" type="float" value="0.9"/>
+                    <attribute id="V1" type="float" value="0.45"/>
+                    <attribute id="V2" type="float" value="0.5"/>
+                </node>
+                <node id="IconUV"> 
+                    <attribute id="MapKey" type="FixedString" value="Status_ElementalSeason_Winter"/>
+                    <attribute id="U1" type="float" value="0.9"/>
+                    <attribute id="U2" type="float" value="0.95"/>
+                    <attribute id="V1" type="float" value="0.45"/>
+                    <attribute id="V2" type="float" value="0.5"/>
+                </node>
             </children>
         </node>
     </region>
