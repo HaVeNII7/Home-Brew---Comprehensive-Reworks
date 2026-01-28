@@ -3983,7 +3983,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="CircleOfElements" />
-					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_Elements;CycleofBalance" />
+					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_Elements;CycleofBalance;CycleofBalance_Spring;CycleofBalance_Summer;CycleofBalance_Fall;CycleofBalance_Winter" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
 					<attribute id="Selectors" type="LSString" value="SelectSpells(11c23a6f-6f53-47bc-ad35-9cb7ed0c2b2e,3,0,Wildshape)" />
 					<attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57" />
@@ -6223,10 +6223,10 @@
 											<attribute id="Object" type="guid" value="1c761ad0-6f5f-409e-ac1d-ddf6f85c1fc4" />
 										</node>
 										<node id="SubClass">
-											<attribute id="Object" type="guid" value="fb0d256d-5caa-4151-86b4-f28a42e0b628" />
+											<attribute id="Object" type="guid" value="3cc3d397-c47d-4966-87ae-88827f73f645" />
 										</node>
 										<node id="SubClass">
-											<attribute id="Object" type="guid" value="3cc3d397-c47d-4966-87ae-88827f73f645" />
+											<attribute id="Object" type="guid" value="fb0d256d-5caa-4151-86b4-f28a42e0b628" />
 										</node>
 								</children>
 							</node>
@@ -6255,10 +6255,10 @@
 											<attribute id="Object" type="guid" value="1c761ad0-6f5f-409e-ac1d-ddf6f85c1fc4" />
 										</node>
 										<node id="SubClass">
-											<attribute id="Object" type="guid" value="fb0d256d-5caa-4151-86b4-f28a42e0b628" />
+											<attribute id="Object" type="guid" value="3cc3d397-c47d-4966-87ae-88827f73f645" />
 										</node>
 										<node id="SubClass">
-											<attribute id="Object" type="guid" value="3cc3d397-c47d-4966-87ae-88827f73f645" />
+											<attribute id="Object" type="guid" value="fb0d256d-5caa-4151-86b4-f28a42e0b628" />
 										</node>
 								</children>
 							</node>
