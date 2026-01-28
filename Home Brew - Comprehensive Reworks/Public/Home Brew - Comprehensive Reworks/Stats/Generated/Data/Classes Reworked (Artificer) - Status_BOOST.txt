@@ -603,7 +603,7 @@ data "Icon" "GenericIcon_Intent_Buff"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 data "Boosts" "Advantage(SavingThrow,Strength);Advantage(SavingThrow,Dexterity);Advantage(SavingThrow,Constitution);Advantage(SavingThrow,Intelligence);Advantage(SavingThrow,Wisdom);Advantage(SavingThrow,Charisma)"
 
-<!--SABATOGE MATRIX-->
+<!--SABOTAGE MATRIX-->
 
 new entry "ARMOURCOMPROMISE"
 type "StatusData"

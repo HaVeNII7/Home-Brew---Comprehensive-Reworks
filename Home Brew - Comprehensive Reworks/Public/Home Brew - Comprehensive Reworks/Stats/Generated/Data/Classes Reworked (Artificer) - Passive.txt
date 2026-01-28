@@ -633,7 +633,7 @@ data "Description" "99523fb3deaasdf5e8f6304e0911fbc40000t;4"
 data "Icon" "GenericIcon_Intent_Buff"
 data "Properties" "Highlighted;ForceShowInCC"
 
-<!--SABATOGE MATRIX-->
+<!--SABOTAGE MATRIX-->
 
 new entry "ArmourCompromise"
 type "PassiveData"

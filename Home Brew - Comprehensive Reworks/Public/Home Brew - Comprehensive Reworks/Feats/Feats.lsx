@@ -292,7 +292,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="ArtificerInfusedArcsmith"/>
                     <attribute id="PassivesAdded" type="LSString" value="InfusionMatrix;AdaptiveIntervention"/>
-					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,2,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,2,SabatogeMatrix)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,2,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,2,SabotageMatrix)" />
                     <attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Artificer&apos;)"/>
                     <attribute id="UUID" type="guid" value="35e99c06-63f9-429c-8064-25bc2e22e730"/>
                 </node>

@@ -166,7 +166,7 @@
 					<attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Attunement,13,0);ActionResource(FirearmAmmo,3,0)" />
 					<attribute id="Level" type="uint8" value="1" />
 					<attribute id="Name" type="LSString" value="NPC_Artificer" />
-					<attribute id="PassivesAdded" type="LSString" value="NPC_Artificer_Subclass;NPCConcentration_End;NPCBlocker_Randomizer;SummonFirearm_Unlock;Firepower;NPC_Gun_Fix;ClassPassiveRandomizer1_Artificer_Optimization;ClassPassiveRandomizer1_Artificer_Sabatoge" />
+					<attribute id="PassivesAdded" type="LSString" value="NPC_Artificer_Subclass;NPCConcentration_End;NPCBlocker_Randomizer;SummonFirearm_Unlock;Firepower;NPC_Gun_Fix;ClassPassiveRandomizer1_Artificer_Optimization;ClassPassiveRandomizer1_Artificer_Sabotage" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
 					<attribute id="TableUUID" type="guid" value="d951b92f-acb5-44a6-b642-962cc4c30c17" />
 					<attribute id="UUID" type="guid" value="a049bacd-ad7d-485b-a1dd-ce100e757dda" />
@@ -199,7 +199,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="3" />
 					<attribute id="Name" type="LSString" value="NPC_Artificer" />
-					<attribute id="PassivesAdded" type="LSString" value="ClassPassiveRandomizer2_Artificer_Optimization;ClassPassiveRandomizer2_Artificer_Sabatoge" />
+					<attribute id="PassivesAdded" type="LSString" value="ClassPassiveRandomizer2_Artificer_Optimization;ClassPassiveRandomizer2_Artificer_Sabotage" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
 					<attribute id="TableUUID" type="guid" value="d951b92f-acb5-44a6-b642-962cc4c30c17" />
 					<attribute id="UUID" type="guid" value="a354b7db-0469-4a8a-b480-5aad875adfda" />
@@ -234,7 +234,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="5" />
 					<attribute id="Name" type="LSString" value="NPC_Artificer" />
-					<attribute id="PassivesAdded" type="LSString" value="ExtraAttack;ImprovedFirepower;ClassPassiveRandomizer3_Artificer_Optimization;ClassPassiveRandomizer3_Artificer_Sabatoge" />
+					<attribute id="PassivesAdded" type="LSString" value="ExtraAttack;ImprovedFirepower;ClassPassiveRandomizer3_Artificer_Optimization;ClassPassiveRandomizer3_Artificer_Sabotage" />
 					<attribute id="PassivesRemoved" type="LSString" value="Firepower" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
 					<attribute id="TableUUID" type="guid" value="d951b92f-acb5-44a6-b642-962cc4c30c17" />
@@ -268,7 +268,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="7" />
 					<attribute id="Name" type="LSString" value="NPC_Artificer" />
-					<attribute id="PassivesAdded" type="LSString" value="ClassPassiveRandomizer4_Artificer_Optimization;ClassPassiveRandomizer4_Artificer_Sabatoge" />
+					<attribute id="PassivesAdded" type="LSString" value="ClassPassiveRandomizer4_Artificer_Optimization;ClassPassiveRandomizer4_Artificer_Sabotage" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
 					<attribute id="TableUUID" type="guid" value="d951b92f-acb5-44a6-b642-962cc4c30c17" />
 					<attribute id="UUID" type="guid" value="af0bc2b5-ca34-4293-9541-ea034a0e0edb" />
@@ -303,7 +303,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="9" />
 					<attribute id="Name" type="LSString" value="NPC_Artificer" />
-					<attribute id="PassivesAdded" type="LSString" value="ExtraAttack_2;SuperiorFirepower;ClassPassiveRandomizer5_Artificer_Optimization;ClassPassiveRandomizer5_Artificer_Sabatoge" />
+					<attribute id="PassivesAdded" type="LSString" value="ExtraAttack_2;SuperiorFirepower;ClassPassiveRandomizer5_Artificer_Optimization;ClassPassiveRandomizer5_Artificer_Sabotage" />
 					<attribute id="PassivesRemoved" type="LSString" value="ExtraAttack;ImprovedFirepower" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
 					<attribute id="TableUUID" type="guid" value="d951b92f-acb5-44a6-b642-962cc4c30c17" />
@@ -337,7 +337,7 @@
         <node id="Progression">
 					<attribute id="Level" type="uint8" value="11" />
 					<attribute id="Name" type="LSString" value="NPC_Artificer" />
-					<attribute id="PassivesAdded" type="LSString" value="ClassPassiveRandomizer6_Artificer_Optimization;ClassPassiveRandomizer6_Artificer_Sabatoge" />
+					<attribute id="PassivesAdded" type="LSString" value="ClassPassiveRandomizer6_Artificer_Optimization;ClassPassiveRandomizer6_Artificer_Sabotage" />
 					<attribute id="ProgressionType" type="uint8" value="0" />
 					<attribute id="TableUUID" type="guid" value="d951b92f-acb5-44a6-b642-962cc4c30c17" />
 					<attribute id="UUID" type="guid" value="5b5aae4b-9aaf-4323-8ab9-ab050cd27108" />
@@ -786,7 +786,7 @@
 					<attribute id="Name" type="LSString" value="Armorer" />
 					<attribute id="PassivesAdded" type="LSString" value="ClassProgression_InfusedArcsmith;InfusionMatrix_Visual;InfusionMatrix" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabatogeMatrix)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabotageMatrix)" />
 					<attribute id="TableUUID" type="guid" value="d72245fb-3565-49ab-86f8-2964920d41c7" />
 					<attribute id="UUID" type="guid" value="35f46d64-7311-4903-9931-295b79c6b1c7" />
 					</node>
@@ -802,7 +802,7 @@
 					<attribute id="Name" type="LSString" value="Armorer" />
 					<attribute id="PassivesAdded" type="LSString" value="AdaptiveIntervention" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabatogeMatrix)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabotageMatrix)" />
 					<attribute id="TableUUID" type="guid" value="d72245fb-3565-49ab-86f8-2964920d41c7" />
 					<attribute id="UUID" type="guid" value="69ea4250-0238-4cf1-aa70-0f38abdafbee" />
 					</node>
@@ -818,7 +818,7 @@
 					<attribute id="Name" type="LSString" value="Armorer" />
 					<attribute id="PassivesAdded" type="LSString" value="DistributedSubroutine" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabatogeMatrix)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabotageMatrix)" />
 					<attribute id="TableUUID" type="guid" value="d72245fb-3565-49ab-86f8-2964920d41c7" />
 					<attribute id="UUID" type="guid" value="45649d9e-eba0-4320-9963-38689bc2737b" />
 					</node>
@@ -834,7 +834,7 @@
 					<attribute id="Name" type="LSString" value="Armorer" />
 					<attribute id="PassivesAdded" type="LSString" value="WantonProcessing" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabatogeMatrix)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabotageMatrix)" />
 					<attribute id="TableUUID" type="guid" value="d72245fb-3565-49ab-86f8-2964920d41c7" />
 					<attribute id="UUID" type="guid" value="4e3c60d2-ff1b-4a94-b9e8-fb6f50357b5a" />
 					</node>
@@ -851,7 +851,7 @@
 					<attribute id="PassivesAdded" type="LSString" value="OverclockedSubroutine" />
 					<attribute id="PassivesRemoved" type="LSString" value="DistributedSubroutine" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabatogeMatrix)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabotageMatrix)" />
 					<attribute id="TableUUID" type="guid" value="d72245fb-3565-49ab-86f8-2964920d41c7" />
 					<attribute id="UUID" type="guid" value="a7903a20-cc5e-412f-bf02-4d134f7d065a" />
 					</node>
@@ -867,7 +867,7 @@
 					<attribute id="Name" type="LSString" value="Armorer" />
 					<attribute id="PassivesAdded" type="LSString" value="ExperimentalAugmentation" />
 					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabatogeMatrix)" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(3069a836-a0fd-467d-afaf-555ab1192d24,1,OptimizationMatrix);SelectPassives(842b6948-adb0-4ce1-a55e-436eacd8693c,1,SabotageMatrix)" />
 					<attribute id="TableUUID" type="guid" value="d72245fb-3565-49ab-86f8-2964920d41c7" />
 					<attribute id="UUID" type="guid" value="6a877c27-f6fc-4498-b2c9-473d8df6fc8e" />
 					</node>
