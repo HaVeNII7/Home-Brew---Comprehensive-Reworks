@@ -259,6 +259,11 @@
                     <attribute id="Text" type="TranslatedString" handle="h197f62bbgd1ddg4436g90df5s5d4f6d54ef8" version="1"/>
                     <attribute id="UUID" type="guid" value="9be63378-034b-4532-a282-91fa3a5sf4df"/>
                 </node>
+                <node id="TooltipUpcastDescriptions">
+                    <attribute id="Name" type="FixedString" value="Oath Channeling"/>
+                    <attribute id="Text" type="TranslatedString" handle="h8d71539dg47bfg49b7g85e8g9b29bac83d90" version="1"/>
+                    <attribute id="UUID" type="guid" value="7e5b0be4-be6b-40fe-be96-27a3861e6fa8"/>
+                </node>
             </children>
         </node>
     </region>

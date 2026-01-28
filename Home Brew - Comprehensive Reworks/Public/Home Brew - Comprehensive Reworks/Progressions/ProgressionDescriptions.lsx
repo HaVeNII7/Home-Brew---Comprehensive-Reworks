@@ -25,7 +25,7 @@
         <node id="ProgressionDescription">
 				<attribute id="DisplayName" type="TranslatedString" handle="88523fb3deaa2d5f5ef6304e0911fbc40z000" version="2" />
 				<attribute id="Description" type="TranslatedString" handle="99523fb3deaasdf5e8f6304e0911fbc40z000" version="1" />
-				<attribute id="SelectorId" type="FixedString" value="SabatogeMatrix" />
+				<attribute id="SelectorId" type="FixedString" value="SabotageMatrix" />
 				<attribute id="UUID" type="guid" value="04da228b-20d7-4d6f-bb7e-6a52a8b7ed32" />
 				</node>
         <node id="ProgressionDescription">
