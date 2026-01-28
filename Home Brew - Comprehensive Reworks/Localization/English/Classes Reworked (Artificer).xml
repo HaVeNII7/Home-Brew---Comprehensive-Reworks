@@ -52,7 +52,9 @@
 	<content contentuid="45523fb3deaa14de1766304e0911fbc49ae44" version="2">Experts at combining the arcane with machinery to produce mystical effects, the oldest of Artificer traditions. An Arcanist's versatility has long been valued during times of both war and peace.</content>
 
 	<content contentuid="h509b8e00gacb9g46e8d56sd5f2e8d5f00001" version="1">The Right Tools for the Job</content>
-	<content contentuid="h509b8e00gacb9g46e8d5ffs5e8f5e5f0000a" version="2">You may select two of any Spell per level. However, Spells you select must be equipped from your Spellbook. The number of Spells that can be equipped at any given time is equal to your level added to your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5ffs5e8f5e5f0000a" version="2">You may select two of any Spell per level. However, Spells you select must be equipped from your Spellbook. The number of Spells that can be equipped at any given time is equal to your level added to your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;In addition, your firearms utilize your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.</content>
+	<content contentuid="h509b8e00gacb9g46e8d56sd5f2e8d5f000z1" version="2">The Right Tools for the Job</content>
+	<content contentuid="h509b8e00gacb9g46e8d5ffs5e8f5e5f000za" version="10">Affected weapon is magical, utilizing its owners &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability&lt;/LSTag&gt; for &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.</content>
 
 	<content contentuid="h509b8e00gacb9g46e8d56sd5f2e8d5f00002" version="1">Mystic Reload</content>
 	<content contentuid="h509b8e00gacb9g46e8d5ffs5e8f5e5f0000b" version="2">Once per turn, upon landing a Killing Blow with a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt;, you restore a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;. The level of the Spell Slot restored is equal to half of your levels in Artificer, rounded up.</content>
@@ -215,7 +217,7 @@
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400011" version="1">Optimization: Kinetic Repulsor Field</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000k" version="2">Allies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; push enemies backward by [1] when dealing damage.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400012" version="1">Optimization: Maximum Yield</content>
-	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000l" version="2">Allies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; have their weapons damage dice increased to a D20.</content>
+	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000l" version="2">Allies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; have their weapon's damage dice increased to a D20.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400013" version="1">Optimization: Output Contingency</content>
 	<content contentuid="99523fb3deaasdf5e8f6304e0911fbc40000m" version="2">Allies you &lt;LSTag Type="Status" Tooltip="INFUSION"&gt;Infuse&lt;/LSTag&gt; will always roll at least a 4 when dealing damage.</content>
 	<content contentuid="88523fb3deaa2d5f5ef6304e0911fbc400014" version="1">Optimization: Precision Boost</content>

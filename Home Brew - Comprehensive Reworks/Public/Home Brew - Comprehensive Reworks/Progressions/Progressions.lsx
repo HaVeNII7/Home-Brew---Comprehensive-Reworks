@@ -6223,6 +6223,9 @@
 											<attribute id="Object" type="guid" value="1c761ad0-6f5f-409e-ac1d-ddf6f85c1fc4" />
 										</node>
 										<node id="SubClass">
+											<attribute id="Object" type="guid" value="fb0d256d-5caa-4151-86b4-f28a42e0b628" />
+										</node>
+										<node id="SubClass">
 											<attribute id="Object" type="guid" value="3cc3d397-c47d-4966-87ae-88827f73f645" />
 										</node>
 								</children>
@@ -6250,6 +6253,9 @@
 										</node>
 										<node id="SubClass">
 											<attribute id="Object" type="guid" value="1c761ad0-6f5f-409e-ac1d-ddf6f85c1fc4" />
+										</node>
+										<node id="SubClass">
+											<attribute id="Object" type="guid" value="fb0d256d-5caa-4151-86b4-f28a42e0b628" />
 										</node>
 										<node id="SubClass">
 											<attribute id="Object" type="guid" value="3cc3d397-c47d-4966-87ae-88827f73f645" />

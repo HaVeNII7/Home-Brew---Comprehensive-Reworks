@@ -301,7 +301,7 @@
 <!--ALCHEMIST-->
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714sdf68878d01" version="2">Alchemist</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f60d1fd250a" version="3">Healing potions you consume always restore the maximum amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; possible. Additionally, thrown grenades will trigger an additional explosion, dealing damage to all creatures nearby your original target. Furthermore, upon applying a coating to your weapon, it will persist until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f60d1fd250a" version="3">Healing potions you consume always restore the maximum amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; possible. Additionally, thrown grenades will trigger an additional explosion, dealing damage to all creatures nearby your original target. Furthermore, upon applying a coating to your weapon, it will persist until your next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;. This may be toggled at any time.</content>
 
 <!--ANCHORED FOCUS-->
 

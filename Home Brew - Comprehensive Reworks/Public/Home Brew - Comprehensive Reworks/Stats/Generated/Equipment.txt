@@ -510,7 +510,7 @@ add initialweaponset "Melee"
 add equipmentgroup
 add equipment entry "WPN_Greatsword"
 add equipmentgroup
-add equipment entry "ARM_Breastplate_Body"
+add equipment entry "ARM_ChainShirt_Body_Shar"
 add equipmentgroup
 add equipment entry "ARM_Boots_Leather_E"
 add equipmentgroup

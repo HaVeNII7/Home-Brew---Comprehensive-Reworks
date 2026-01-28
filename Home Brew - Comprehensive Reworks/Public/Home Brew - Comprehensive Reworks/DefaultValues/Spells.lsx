@@ -70,6 +70,13 @@
                     <attribute id="Add" type="LSString" value="Shout_WildShape_Bear_Polar;Shout_WildShape_Cat;Shout_WildShape_Dire_Wolf"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="SelectorId" type="LSString" value="Druid - Wildshape"/>
+                    <attribute id="TableUUID" type="guid" value="7d0acf1e-191b-481f-b227-b54c63e02b57"/>
+                    <attribute id="UUID" type="guid" value="cb6f6543-7016-45e0-a5e9-8a865b6b3e6d"/>
+					</node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_WildShape_Bear_Polar;Shout_WildShape_Cat;Shout_WildShape_Dire_Wolf"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Druid - Wildshape"/>
                     <attribute id="TableUUID" type="guid" value="ba1f14d6-d40b-47ce-b071-91b491d87b27"/>
                     <attribute id="UUID" type="guid" value="c7b06496-1166-491f-b93b-cd4c51175ea5"/>
 					</node>
