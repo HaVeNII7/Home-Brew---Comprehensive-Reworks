@@ -179,6 +179,16 @@ data "StatusEffectOverride" "3a532fbc-122a-4f1d-9d2a-ce2be245688d"
 
 <!--ARCANIST-->
 
+new entry "THERIGHTTOOLSFORTHEJOB"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h509b8e00gacb9g46e8d56sd5f2e8d5f000z1;1"
+data "Description" "h509b8e00gacb9g46e8d5ffs5e8f5e5f000za;1"
+data "Icon" "Passive_AlchemicalSavant"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" "WeaponProperty(Magical);WeaponAttackRollAbilityOverride(SpellCastingAbility)"
+data "StatusPropertyFlags" "IgnoreResting"
+
 new entry "MYSTICRELOAD"
 type "StatusData"
 data "StatusType" "BOOST"

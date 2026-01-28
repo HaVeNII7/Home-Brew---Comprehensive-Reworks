@@ -127,6 +127,13 @@ data "Properties" "Highlighted;ForceShowInCC"
 
 <!--DRUID-->
 
+new entry "ClassProgression_Elements"
+type "PassiveData"
+data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f68441;1"
+data "Description" "55ce1b701c9642a4a3dbf59a6810157f5484a;1"
+data "Icon" "Spell_Divination_Identify"
+data "Properties" "Highlighted;ForceShowInCC"
+
 new entry "ClassProgression_Land"
 type "PassiveData"
 data "DisplayName" "55ce1b701c9642a4a3dbf59a6810157f00041;1"

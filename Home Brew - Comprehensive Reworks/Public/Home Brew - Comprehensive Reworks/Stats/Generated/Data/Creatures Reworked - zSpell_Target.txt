@@ -568,6 +568,29 @@ data "PositionEffect" "47de8912-a859-436b-b88b-e849b1f5e180"
 data "RequirementConditions" "not HasStatus('RANGER_SUMMON_BLOCK') and not Tagged('UNDEAD')"
 data "SpellFlags" "HasVerbalComponent;IsEnemySpell"
 
+<!--GRYM-->
+
+new entry "Target_Slam_AdamantineGolem"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_UnarmedAttack"
+data "TargetRadius" "3.0"
+data "AreaRadius" "1.5"
+data "SpellSuccess" "DealDamage(3d12+UnarmedMeleeAbilityModifier, Bludgeoning);IF(not SavingThrow(Ability.Strength, SourceSpellDC())):ApplyStatus(PRONE,100,1);"
+data "TargetConditions" "not Self() and not Dead()"
+data "AoEConditions" "not Self() and not Dead()"
+data "Icon" "Action_Slam"
+data "DisplayName" "haa73b635gdcf8g48ddgb9b6g8f2bd1b51fa6;1"
+data "Description" "h6ce229e2ge707g452agbb59g42f167f27b03;3"
+data "TooltipDamageList" "DealDamage(3d12+UnarmedMeleeAbilityModifier, Bludgeoning)"
+data "TooltipAttackSave" "MeleeUnarmedAttack;Strength"
+data "TooltipStatusApply" "ApplyStatus(PRONE,100,1)"
+data "CastSound" "CrSpell_Cast_SlamAdamantine"
+data "TargetSound" "CrSpell_Impact_SlamAdamantine"
+data "CastEffect" "34e9449d-504e-406d-960b-b1cc5b996566"
+data "TargetEffect" "f06e7b1c-80a7-4227-814c-de5e35585627"
+data "Sheathing" "DontChange"
+
 <!--GUARDIAN OF FAITH-->
 
 new entry "Target_MainHandAttack_GuardianOfFaith"

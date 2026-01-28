@@ -71,6 +71,8 @@ data "Icon" "Action_SupremeSneak"
 data "Properties" "Highlighted;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar"
 data "Boosts" "UnlockSpellVariant(SpellId('Shout_Dash'),ModifyUseCosts(Replace,ActionPoint,0,-1,ActionPoint),ModifyUseCosts(Add,BonusActionPoint,1,0));UnlockSpellVariant(SpellId('Shout_Disengage'),ModifyUseCosts(Replace,ActionPoint,0,-1,ActionPoint),ModifyUseCosts(Add,BonusActionPoint,1,0));UnlockSpellVariant(SpellId('Shout_Hide'),ModifyUseCosts(Replace,ActionPoint,0,-1,ActionPoint),ModifyUseCosts(Add,BonusActionPoint,1,0));UnlockSpellVariant(SpellId('Projectile_CunningFangs'),ModifyUseCosts(Replace,ActionPoint,0,-1,ActionPoint),ModifyUseCosts(Add,BonusActionPoint,1,0))"
 data "ToggleGroup" "RogueMovement"
+data "EnabledConditions" "HasActionResource('BonusActionPoint', 1, 0, false, false, context.Source)"
+data "EnabledContext" "OnActionResourcesChanged"
 
 new entry "LuckyToss"
 type "PassiveData"

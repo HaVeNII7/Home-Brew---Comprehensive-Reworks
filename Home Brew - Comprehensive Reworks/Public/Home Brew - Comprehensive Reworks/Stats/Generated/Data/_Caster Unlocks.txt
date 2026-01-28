@@ -97,6 +97,17 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndi
 data "StackType" "Ignore"
 data "Boosts" "AiArchetypeOverride(melee_magic_smart,1);IF(not Player(context.Source)):UnlockSpell(Target_SacredFlame);IF(not Player(context.Source)):UnlockSpell(Shout_WordOfRadiance);IF(not Player(context.Source)):UnlockSpell(Shout_DivineFavor,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);IF(not Player(context.Source)):UnlockSpell(Target_FlameStrike,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);IF(not Player(context.Source)):UnlockSpell(Projectile_GuidingBolt,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);IF(not Player(context.Source)):UnlockSpell(Shout_Shield_Wizard,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);IF(not Player(context.Source)):UnlockSpell(Shout_SpiritGuardians,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);IF(not Player(context.Source)):UnlockSpell(Target_SpiritualWeapon,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)"
 
+new entry "CASTER_UNLOCK_CIRCLEOFTHEELEMENTS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "HitAnimationType" "None"
+data "StackId" "CASTER_UNLOCK"
+data "RemoveConditions" "Player(context.Source)"
+data "RemoveEvents" "OnTurn;OnMove;OnCombatEnded;OnStatusRemoved"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+data "StackType" "Ignore"
+data "Boosts" "AiArchetypeOverride(mage_smart,1);IF(not Player(context.Source)):UnlockSpell(Projectile_FireBolt);IF(not Player(context.Source)):UnlockSpell(Target_Frostbite);IF(not Player(context.Source)):UnlockSpell(Zone_ConeOfCold,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);IF(not Player(context.Source)):UnlockSpell(Target_Moonbeam,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);IF(not Player(context.Source)):UnlockSpell(Projectile_RayOfSickness,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);IF(not Player(context.Source)):UnlockSpell(Target_SleetStorm,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);IF(not Player(context.Source)):UnlockSpell(Zone_Sunbeam,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);IF(not Player(context.Source)):UnlockSpell(Target_WitherAndBloom,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)"
+
 new entry "CASTER_UNLOCK_CIRCLEOFTHELAND"
 type "StatusData"
 data "StatusType" "BOOST"
