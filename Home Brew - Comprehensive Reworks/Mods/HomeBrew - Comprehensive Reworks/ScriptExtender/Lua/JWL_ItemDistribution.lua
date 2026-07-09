@@ -32,7 +32,7 @@ local function OnSessionLoaded()
 			npcMapKey = "67770922-5e0a-40c5-b3f0-67e8eb50493a",
 			itemName = "Empowered Guardian Emblem",
 			itemUUID = "68ae2a78-57fc-4a10-9271-afe10dcc50c0",
-			addEquip = true
+			addEquip = false
 		},
 		{
 			npcName = "Astral Prism Potion Pouch",

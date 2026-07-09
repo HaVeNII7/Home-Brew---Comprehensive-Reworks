@@ -44,6 +44,19 @@ local function GetAllPlayers()
   return players
 end
 
+local function GetPartyFollowerRows()
+  if not Osi.DB_PartyFollowers or not Osi.DB_PartyFollowers.Get then
+    return nil
+  end
+
+  local ok, rows = pcall(Osi.DB_PartyFollowers.Get, Osi.DB_PartyFollowers, nil, nil)
+  if not ok then
+    return nil
+  end
+
+  return rows
+end
+
 local function HasRecruitStatus(target)
   if not target or target == "" then return false end
 
@@ -64,7 +77,7 @@ end
 local function IsTrackedFollower(target)
   if not target or target == "" then return false end
 
-  local rows = SafeCall(Osi.DB_PartyFollowers.Get, Osi.DB_PartyFollowers, nil, nil)
+  local rows = GetPartyFollowerRows()
   if not rows then return false end
 
   for _, row in pairs(rows) do
@@ -133,9 +146,9 @@ end
 local function RebuildOwnersFromPartyFollowers()
   Owner = {}
 
-  local rows = SafeCall(Osi.DB_PartyFollowers.Get, Osi.DB_PartyFollowers, nil, nil)
+  local rows = GetPartyFollowerRows()
   if not rows then
-    Ext.Utils.PrintError("[Recruit/Cleanup] Failed to read DB_PartyFollowers during rebuild.")
+    Ext.Utils.Print("[Recruit/Cleanup] DB_PartyFollowers unavailable during rebuild; skipping.")
     return
   end
 
@@ -152,7 +165,7 @@ local function RebuildOwnersFromPartyFollowers()
 end
 
 local function CleanupInvalidFollowers()
-  local rows = SafeCall(Osi.DB_PartyFollowers.Get, Osi.DB_PartyFollowers, nil, nil)
+  local rows = GetPartyFollowerRows()
   if not rows then return end
 
   for _, row in pairs(rows) do

@@ -441,7 +441,7 @@ data "Icon" "Spell_2e_ImpeccableFlow"
 data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnDamage"
 data "Conditions" "Character() and not Self() and not Ally() and not HasStatus('MADNESS', context.Target) and not HasStatus('LOCKDOWN_CONDITION', context.Target)"
-data "StatsFunctors" "IF(not SavingThrow(Ability.Wisdom, SourceSpellDC())):ApplyStatus(MADNESS,100,1)"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Wisdom, CalculateSpellDC(Ability.Charisma, context.Source))):ApplyStatus(MADNESS,100,1)"
 
 new entry "WinterHarvest"
 type "PassiveData"
