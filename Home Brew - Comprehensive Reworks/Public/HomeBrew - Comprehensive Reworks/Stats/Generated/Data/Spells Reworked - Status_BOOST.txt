@@ -2291,7 +2291,7 @@ data "StatusPropertyFlags" "InitiateCombat"
 data "OnRemoveFunctors" "ApplyStatus(WEB_IMMUNE,100,0)"
 data "StatusGroups" "SG_Surface;SG_Restrained;SG_Helpable_Condition"
 data "StatusEffect" "b5421666-aec7-4e59-9736-2efed8d0537e"
-data "TickType" "StartTurn"
+data "TickType" "EndTurn"
 data "ManagedStatusEffectType" "Negative"
 
 new entry "WEB_IMMUNE"

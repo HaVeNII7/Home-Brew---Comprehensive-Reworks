@@ -598,8 +598,9 @@ data "DisplayName" "he304548d505b416981eeccf86d46687d035b;1"
 data "Description" "h64f556054b1f46c1a19454a42611cc42gf02;1"
 data "Properties" "Highlighted;ForceShowInCC"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "HasStatus('HEAVILY_SILENCED',context.Target) and Enemy() and (IsSpell() or IsAttack() or IsCantrip() or MFL_ValidCost()) and not HasStatus('DOA_PROPER_KB_CHECK_TECHNICAL',context.Target,context.Source)"
-data "StatsFunctors" "ApplyStatus(DOA_PROPER_KB_CHECK_TECHNICAL,100,0)"
+data "Conditions" "IsKillingBlow() and Character() and not Self() and not Ally() and (HasStatus('HEAVILY_SILENCED',context.Target) or HasStatus('SILENCED',context.Target))"
+data "StatsFunctors" "RestoreResource(SELF,WarPriestActionPoint, 1, 0)"
+
 data "Boosts" "IF(HasStatus('HEAVILY_SILENCED',context.Target) or HasStatus('SILENCED',context.Target)):Advantage(AttackRoll);IF(HasStatus('HEAVILY_SILENCED',context.Target) or HasStatus('SILENCED',context.Target)):Reroll(Damage, 20, false)"
 
 new entry "DivineOntoArcane_Yokebreaker"

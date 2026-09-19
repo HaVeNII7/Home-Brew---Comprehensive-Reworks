@@ -475,16 +475,16 @@
 	<content contentuid="83fafe237f6740dea359526646fb6a2broodb" version="1">Fire a venomous substance which potentially &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisons&lt;/LSTag&gt; your target from a distance.</content>
 	<content contentuid="83fafe237f6740dea359526646fb6a2brood3" version="1">Ethereal Jaunt</content>
 	<content contentuid="83fafe237f6740dea359526646fb6a2broodc" version="1">Teleport to an unoccupied space you can see.</content>
-	<content contentuid="83fafe237f6740dea359526646fb6a2brood4" version="1">Broodmare's Call</content>
-	<content contentuid="83fafe237f6740dea359526646fb6a2broodd" version="1">Target a corpse, conjuring three phase spiderlings inside which claw their way free from it's body.</content>
+	<content contentuid="83fafe237f6740dea359526646fb6a2brood4" version="1">Nightmare's Call</content>
+	<content contentuid="83fafe237f6740dea359526646fb6a2broodd" version="1">Target a corpse, conjuring three phase spiderlings inside which claw their way free from it's body until the end of your current combat encounter.</content>
 
-	<content contentuid="83fafe237f6740dea359526646fb6a2100001" version="1">Broodmare Apotheosis</content>
-	<content contentuid="83fafe237f6740dea359526646fb6a210000a" version="1">Gain the ability to shift into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_BroodmarePhaseSpider"&gt;Broodmare Phase Spider&lt;/LSTag&gt; at will. In addition, when dealing damage, you potentially &lt;LSTag Type="Status" Tooltip="WEB"&gt;Enweb&lt;/LSTag&gt; your enemies.</content>
-	<content contentuid="83fafe237f6740dea359526646fb6a21000z1" version="1">Wildshape: Broodmare Phase Spider</content>
-	<content contentuid="83fafe237f6740dea359526646fb6a21000za" version="8">Assume the shape of a Broodmare Phase Spider, capable of both driving your targets to &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Madness&lt;/LSTag&gt; and creating &lt;LSTag Type="Spell" Tooltip="Target_CreateIllusion_DisplacerBeast"&gt;Illusory Copies&lt;/LSTag&gt; of yourself.</content>
-	<content contentuid="83fafe237f6740dea359526646fb6a2100zz1" version="1">Broodmare Phase Spider</content>
-	<content contentuid="83fafe237f6740dea359526646fb6a210zzz1" version="1">Wildshape: Broodmare Phase Spider</content>
-	<content contentuid="83fafe237f6740dea359526646fb6a2100zza" version="7">Assume the shape of a broodmare phase spider that can &lt;LSTag Type="Status" Tooltip="ENTOMBED"&gt;Cocoon&lt;/LSTag&gt; enemies.</content>
+	<content contentuid="83fafe237f6740dea359526646fb6a2100001" version="1">Nightmare Apotheosis</content>
+	<content contentuid="83fafe237f6740dea359526646fb6a210000a" version="1">Gain the ability to shift into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_BroodmarePhaseSpider"&gt;Nightmare Phase Spider&lt;/LSTag&gt; at will. In addition, when dealing damage, you potentially &lt;LSTag Type="Status" Tooltip="WEB"&gt;Enweb&lt;/LSTag&gt; your enemies.</content>
+	<content contentuid="83fafe237f6740dea359526646fb6a21000z1" version="1">Wildshape: Nightmare Phase Spider</content>
+	<content contentuid="83fafe237f6740dea359526646fb6a21000za" version="8">Assume the shape of a Nightmare Phase Spider, capable of both driving your targets to &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Madness&lt;/LSTag&gt; and creating &lt;LSTag Type="Spell" Tooltip="Target_CreateIllusion_DisplacerBeast"&gt;Illusory Copies&lt;/LSTag&gt; of yourself.</content>
+	<content contentuid="83fafe237f6740dea359526646fb6a2100zz1" version="1">Nightmare Phase Spider</content>
+	<content contentuid="83fafe237f6740dea359526646fb6a210zzz1" version="1">Wildshape: Nightmare Phase Spider</content>
+	<content contentuid="83fafe237f6740dea359526646fb6a2100zza" version="7">Assume the shape of a nightmare phase spider that can &lt;LSTag Type="Status" Tooltip="ENTOMBED"&gt;Cocoon&lt;/LSTag&gt; enemies.</content>
 
 	<content contentuid="83fafe237f6740dea359526646fb6a2100002" version="1">Friendly Neighborhood</content>
 	<content contentuid="83fafe237f6740dea359526646fb6a210000b" version="1">While in combat, both yourself and allies within [1] of you gain status immunity to being &lt;LSTag Type="Status" Tooltip="WEB"&gt;Enwebbed&lt;/LSTag&gt;.</content>
