@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="301" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="UUID" type="guid" value="cdad1fc1-352b-4441-82f2-73d8433e42ea" />
+			<attribute id="Name" type="FixedString" value="WARLOCK_GREAT_OLD_ONE" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h7f32ad21gc045g4903gbc8bgb0569194308b" version="2" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hff4a6f17g2194g489agbb2dgd6c7c3e32a5f" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Description" type="LSString" value="This warlock's patron is a Great Old One" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+				<node id="Properties" />
+			</children>
+		</node>
+	</region>
+</save>

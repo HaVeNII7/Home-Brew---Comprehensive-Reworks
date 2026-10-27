@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="UUID" type="guid" value="5e06f1e7-474f-4d46-b8e7-feac2315ebf9" />
+			<attribute id="Name" type="FixedString" value="WARLOCK_HEXBLADE" />
+			<attribute id="DisplayName" type="TranslatedString" handle="hbb6503bega54dg4af4ga229gc6335bef73db" version="1" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h2507cb22g1c7eg4717ga9acg46d85a702e33" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Description" type="LSString" value="|This warlock's patron is a entity from the Shadowfell.|" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Class" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+				<node id="Properties" />
+			</children>
+		</node>
+	</region>
+</save>

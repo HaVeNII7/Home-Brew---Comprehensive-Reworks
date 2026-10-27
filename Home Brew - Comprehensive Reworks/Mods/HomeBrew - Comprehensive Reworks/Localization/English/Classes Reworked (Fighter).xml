@@ -14,7 +14,7 @@
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5fs854" version="2">Affected creature will restore [1] &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; and regain one of their &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Dice&lt;/LSTag&gt; upon the expiration of this status.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f59a644" version="2">Action Surge</content>
-	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f593kdd" version="2">Once per &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hasten&lt;/LSTag&gt; yourself and restore three of your &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Dice&lt;/LSTag&gt;.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f593kdd" version="2">Once per combat encounter, &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hasten&lt;/LSTag&gt; yourself and restore three of your &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Dice&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">ARCANE ARCHER</content>
 
@@ -41,7 +41,7 @@
 	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00z13" version="1">Elemental Fletching: Acidic Arrow</content>
 	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2100z1c" version="1">Loose a projectile bubbling with caustic substances, coating the ground in &lt;LSTag Type="Status" Tooltip="ACID"&gt;Acid&lt;/LSTag&gt;.</content>
 	<content contentuid="h2e8de670g9f71g4d53ga652ga28focused13" version="1">Focused Fletching: Corrosive Arrow</content>
-	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused1c" version="1">Fire an arrow which afflicts your target with &lt;LSTag Type="Status" Tooltip="CORROSIVES_SPIT_DILOPHOSAURS_1"&gt;Corrosion&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c0focused1c" version="1">Fire an arrow which afflicts your target with &lt;LSTag Type="Status" Tooltip="CORRODED"&gt;Corrosion&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h2e8de670g9f71g4d53ga652ga2816de00023" version="1">Elemental Fletching: Frost Infusion</content>
 	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c210002c" version="1">Infuse magical energy into your arcane quiver, gaining the ability to fire &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Cold"&gt;Frost Arrows&lt;/LSTag&gt;, which can create and stack ice blocks for you to climb, as well as damage enemies, reducing their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;If &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Weave&lt;/LSTag&gt; is active, you will instead fire two &lt;LSTag Type="Spell" Tooltip="Projectile_ElementalFletching_Cold_Focused"&gt;Bifrost Arrows&lt;/LSTag&gt;, which can damage and slow your targets Movement Speed.</content>
@@ -173,7 +173,7 @@
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9020dd" version="8">When targeting a &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenged&lt;/LSTag&gt; enemy, you make both your &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and Damage Rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h86a825dagb852g4f68g847cg41fcba29a654" version="1">Challenger's Presence</content>
-	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2112a35" version="9">Killing a &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenged&lt;/LSTag&gt; enemy refreshes the cooldown of your actions which require a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="hf12dfcdfg3774g4f31g849cg8c09c2112a35" version="9">Killing a &lt;LSTag Type="Status" Tooltip="CHALLENGERS_CALL"&gt;Challenged&lt;/LSTag&gt; enemy refreshes the cooldown of your actions which can only be used once per combat encounter.</content>
 
 	<content contentuid="hf222df47g5060g4a4bg918egf8dbdc6a885f" version="2">Champion's Indomitability</content>
 	<content contentuid="hd0776e74g8eeeg435fgad4eg5b7fa3aa4654" version="2">Whenever you fail a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, you roll again, using the new result instead. In addition to this, you add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
@@ -569,11 +569,9 @@
 	<content contentuid="he232e187g96ffg4e53gb64dg7413cad43a28" version="5">Make an attack which potentially &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightens&lt;/LSTag&gt; your target.</content>
 
 	<content contentuid="h1c046e70g3edcg4ba8g9a99gbafa2c7a41b5" version="3">Parrying Stance</content>
-	<content contentuid="h81d70f61g785eg4fb6gb7edg4cb2e53f8098" version="3">Spend a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to enter a defensive stance. Your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; increases by 10 until the next time another creature makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you.</content>
+	<content contentuid="h81d70f61g785eg4fb6gb7edg4cb2e53f8098" version="3">Spend a &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to enter a defensive stance when attacked, increasing your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 20.</content>
 	<content contentuid="ha6f2dce6g31bcg4b5dgaecfg6b538fde6fe4" version="2">Parrying Stance</content>
-	<content contentuid="h7fe9bf34gbb35g45f0g90bdg14b43ccd6002" version="3">Enter a defensive stance, increasing your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 20 until the next time another creature makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against you.</content>
-	<content contentuid="ha6f2dce6g31bcg4b5dgaecfg6b538fde6fe6" version="2">Parrying Stance</content>
-	<content contentuid="h7fe9bf34gbb35g45f0g90bdg14b43ccd62a1" version="3">Affected creature has entered a defensive stance. Their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; has increased by 20 until the next time another creature makes an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against them.</content>
+	<content contentuid="h7fe9bf34gbb35g45f0g90bdg14b43ccd6002" version="3">Enter a defensive stance when attacked, increasing your &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by 20.</content>
 
 	<content contentuid="h435f7bacga36cg4e63gb926ga6f70f86a9b4" version="1">Precision Attacks</content>
 	<content contentuid="h847c428bg7223g469cg89c8g11794616ca2f" version="1">Spend a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt; to add a +4 bonus to the result of your weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; for three turns.</content>

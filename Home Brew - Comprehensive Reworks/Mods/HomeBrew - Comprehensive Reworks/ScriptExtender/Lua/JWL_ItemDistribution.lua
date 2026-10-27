@@ -1,4 +1,3 @@
--- Distributions will be saved to PersistentVars to avoid repeats. This is per-save file.
 PersistentVars = {
 	
 }

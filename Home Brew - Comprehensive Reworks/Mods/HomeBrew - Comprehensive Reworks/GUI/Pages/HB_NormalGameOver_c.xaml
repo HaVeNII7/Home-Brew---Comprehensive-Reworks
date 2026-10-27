@@ -1,0 +1,73 @@
+<ls:UIWidget x:Name="HB_NormalGameOver_c"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ls="clr-namespace:ls;assembly=Code"
+             ls:UIWidget.ContextName="GameMenu">
+    <ls:UIWidget.Template>
+        <ControlTemplate TargetType="ls:UIWidget">
+            <Grid x:Name="bgFade" Background="{StaticResource LS_PanelBackgroundLight}">
+                <Rectangle x:Name="ScreenBGSideGradient" VerticalAlignment="Stretch"
+                           Fill="{StaticResource CenteredGradientLightShadingBrush}"/>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock x:Name="Title" Text="Game Over" HorizontalAlignment="Center"
+                               VerticalAlignment="Top" Margin="0,200,0,0"
+                               Style="{StaticResource PanelTitleStyle}"/>
+                    <ls:LSNineSliceImage x:Name="MessageBoxNineSlice"
+                                         Style="{StaticResource GenericControllerPanelBackground}"
+                                         Margin="0,-220,0,0" HorizontalAlignment="Center">
+                        <StackPanel VerticalAlignment="Top" MaxWidth="1300">
+                            <StackPanel.Resources>
+                                <Style TargetType="ScrollBar" BasedOn="{StaticResource ControllerHintGoldScrollbar}"/>
+                                <Style TargetType="ls:LSScrollViewer" BasedOn="{StaticResource {x:Type ls:LSScrollViewer}}">
+                                    <Style.Resources>
+                                        <GridLength x:Key="Top">100</GridLength>
+                                    </Style.Resources>
+                                </Style>
+                            </StackPanel.Resources>
+                            <ls:LSScrollViewer MaxHeight="1000" HorizontalAlignment="Center"
+                                               VerticalScrollBarVisibility="Auto"
+                                               BoundScrollUpEvent="UIScrollUp" BoundScrollDownEvent="UIScrollDown">
+                                <TextBlock ls:TextBlockFormatter.SourceText="Your party has been defeated…"
+                                           FontSize="{StaticResource ScaledDefaultFontSize}"
+                                           Foreground="{StaticResource LS_accent100TxtColor}"
+                                           TextWrapping="Wrap" TextAlignment="Center" Margin="20,0"/>
+                            </ls:LSScrollViewer>
+                        </StackPanel>
+                    </ls:LSNineSliceImage>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,-360,0,0">
+                        <ls:LSButton x:Name="MainMenuButton" BoundEvent="UICancel"
+                                     ContentTemplate="{StaticResource ControllerButtonHint}"
+                                     Content="{Binding CurrentPlayer.UIData.InputEvents, Converter={StaticResource FindInputEventConverter}, ConverterParameter='UICancel'}"
+                                     Tag="{Binding Source='hf1a302e1ged15g4e4fgae48g5579d02b2605', Converter={StaticResource TranslatedStringConverter}}"
+                                     Command="{Binding MainMenuCommand}"/>
+                        <ls:LSButton x:Name="LoadGameButton" BoundEvent="UIAccept"
+                                     ContentTemplate="{StaticResource ControllerButtonHint}"
+                                     Content="{Binding CurrentPlayer.UIData.InputEvents, Converter={StaticResource FindInputEventConverter}, ConverterParameter='UIAccept'}"
+                                     Tag="{Binding Source='heb9ae2d4g4fcdg4eb2g821bg97ed63c5ce8c', Converter={StaticResource TranslatedStringConverter}}"
+                                     Command="{Binding CustomEvent}" CommandParameter="LoadGameOpen"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Layout}" Value="Left"/>
+                        <Condition Binding="{Binding Data.IsCameraSplit}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="bgFade" Property="Background" Value="Transparent"/>
+                    <Setter TargetName="ScreenBGSideGradient" Property="Fill" Value="{StaticResource LeftSideWideShadingBrush}"/>
+                    <Setter TargetName="ScreenBGSideGradient" Property="Visibility" Value="Visible"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Layout}" Value="Right"/>
+                        <Condition Binding="{Binding Data.IsCameraSplit}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="bgFade" Property="Background" Value="Transparent"/>
+                    <Setter TargetName="ScreenBGSideGradient" Property="Fill" Value="{StaticResource RightSideWideShadingBrush}"/>
+                    <Setter TargetName="ScreenBGSideGradient" Property="Visibility" Value="Visible"/>
+                </MultiDataTrigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </ls:UIWidget.Template>
+</ls:UIWidget>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="hd3a156cc7fbf4a5c985eef63f0c2zreverts" version="2" />
+					<attribute id="Description" type="TranslatedString" handle="hd3a156cc7fbf4a5c985w5e41f6524reverts" version="2" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hd3a156cc7fbf4a5c985eef6311124reverts" version="2" />
+					<attribute id="Icon" type="FixedString" value="Item_BOOK_GEN_Scroll_Parchment_C_Single_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="2306af93-cc75-41d6-8852-ceb7b8883e8e" />
+					<attribute id="Name" type="LSString" value="ScrollofReversion" />
+					<attribute id="ParentTemplateId" type="FixedString" value="4ffd5c4b-4c56-4f05-a228-a33754bb1806" />
+					<attribute id="Stats" type="FixedString" value="OBJ_Scroll_ScrollofReversion" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241810" />
+					<children>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

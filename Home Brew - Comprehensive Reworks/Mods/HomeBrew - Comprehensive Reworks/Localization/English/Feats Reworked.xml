@@ -44,7 +44,7 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">CHARGER</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00005" version="2">Charger</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000e" version="4">Gain the ability to charge toward nearby enemies as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; once per turn, &lt;LSTag Type="Spell" Tooltip="Rush_Charger_Attack&gt;Attacking&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Rush_Charger_Push"&gt;Shoving&lt;/LSTag&gt; them in the process.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000e" version="4">Gain the ability to charge toward nearby enemies as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; once per turn, &lt;LSTag Type="Spell" Tooltip="Rush_Charger_Attack"&gt;Attacking&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Rush_Charger_Push"&gt;Shoving&lt;/LSTag&gt; them in the process.</content>
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00055" version="2">Charger: Attack</content>
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000ee" version="4">Charge into nearby enemies, making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against the first you come in contact with.</content>
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00555" version="2">Charger: Shove</content>

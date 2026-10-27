@@ -16,7 +16,7 @@ DB_GLO_Jergal_HasMetFlags((FLAG)CAMP_Jergal_HasMet_fdba7b59-851a-3edb-fe0f-d6045
 
 //REGION Resurrection services
 // DB_GLO_Jergal_ResurrectionDialogues(_Dialog, _Price)
-DB_GLO_Jergal_ResurrectionDialogues((DIALOGRESOURCE)CAMP_Jergal_7f4acd9b-15c0-81fe-9409-623634ec3ed3, 1000);
+DB_GLO_Jergal_ResurrectionDialogues((DIALOGRESOURCE)CAMP_Jergal_7f4acd9b-15c0-81fe-9409-623634ec3ed3, 500);
 DB_GLO_Jergal_ResurrectionDiscount(0);
 
 DB_GLO_Jergal_ResurrectionStringVariableAndFlags("CAMP_Jergal_PlayerToResurrect_1_c85cdca4-6579-776d-206d-6967e4999281", (FLAG)CAMP_Jergal_State_PlayerDead_1_CanBeResurrected_ce41c909-e150-47c2-b506-32715f1b5180, (FLAG)CAMP_Jergal_State_PlayerDead_1_f7c984fb-04b3-426b-b500-4c3f9e68e33c, (FLAG)CAMP_Jergal_Event_ResurrectPlayer_1_1aa10cc1-4399-4321-8196-8cb5e1c1a0db, (FLAG)CAMP_Jergal_State_CanDismiss_Player1_96587543-6ced-41cf-b74e-6204d189915b, (FLAG)CAMP_Jergal_Event_DismissDeadPlayer1_e3686b79-fdf4-4f85-a11d-5afc0bd9fd1d);
@@ -453,11 +453,27 @@ PROC_GLO_Jergal_SetResurrectionPrice((INTEGER)_Price, (DIALOGRESOURCE)_Dialog)
 THEN
 DB_DialogMoneyTransfer(1, _Dialog, _Price);
 
+// Set the per-character resurrection price before calculating multi-revival totals.
+PROC
+PROC_HB_Jergal_UpdateResurrectionPrice((DIALOGRESOURCE)_Dialog)
+AND
+GetRulesetModifierBool(MYTHIC_STATS_b843263f-869c-4a21-960d-867091e8bd04, 1)
+THEN
+PROC_GLO_Jergal_SetResurrectionPrice(2500, _Dialog);
+
+PROC
+PROC_HB_Jergal_UpdateResurrectionPrice((DIALOGRESOURCE)_Dialog)
+AND
+GetRulesetModifierBool(MYTHIC_STATS_b843263f-869c-4a21-960d-867091e8bd04, 0)
+THEN
+PROC_GLO_Jergal_SetResurrectionPrice(500, _Dialog);
+
 PROC
 PROC_DialogFlagSetup(_Dialog, _, _)
 AND
 DB_GLO_Jergal_ResurrectionDialogues(_Dialog, _)
 THEN
+PROC_HB_Jergal_UpdateResurrectionPrice(_Dialog);
 PROC_GLO_Jergal_SetDeadPlayers();
 PROC_GLO_Jergal_SetDialogVariables(_Dialog);
 

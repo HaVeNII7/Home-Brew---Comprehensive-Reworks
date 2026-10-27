@@ -1,0 +1,28 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+KBSECTION
+// Single Save uses the native game-over handler, including native Honour consequences.
+PROC
+PROC_HB_ShowPartyWipeMenu()
+AND
+CheckRulesetModifierBool(IRONMAN_MODE_338450d9-d77d-4950-9e1e-0e7f12210bb3,1,1)
+THEN
+ShowGameOverMenu();
+
+// Without Single Save, do not enter the native Honour game-over handler.
+PROC
+PROC_HB_ShowPartyWipeMenu()
+AND
+NOT CheckRulesetModifierBool(IRONMAN_MODE_338450d9-d77d-4950-9e1e-0e7f12210bb3,1,1)
+THEN
+PROC_HB_RequestNormalGameOver();
+
+// The server Lua listener sends this request to the client UI.
+PROC
+PROC_HB_RequestNormalGameOver()
+THEN
+DB_NOOP(1);
+EXITSECTION
+ENDEXITSECTION
+ParentTargetEdge "__Shared_Campaign"

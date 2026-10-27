@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids" />
+	<region id="VisualBank">
+		<node id="VisualBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="8abaa537-e93c-914d-17d7-7f483ba69099" />
+					<attribute id="Name" type="LSString" value="XEL_GateStone_Sigma_Item" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/HomeBrew - Comprehensive Reworks/Assets/Decoration/Dungeon/DEC_Dungeon_SharTemple_Orb_ABC/Resources/XEL_GateStone_Sigma_Item.GR2" />
+					<attribute id="Slot" type="FixedString" value="Unassigned" />
+					<attribute id="RemapperSlotId" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/HomeBrew - Comprehensive Reworks/Assets/Decoration/Dungeon/DEC_Dungeon_SharTemple_Orb_ABC/Resources/XEL_GateStone_Sigma_Item.Dummy_DEC_Dungeon_SharTemple_Orb_A_Item.0" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<attribute id="SkeletonResource" type="FixedString" value="" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+					<attribute id="HairType" type="uint8" value="0" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.17774306 -0.015558395 -0.17829026" />
+					<attribute id="BoundsMax" type="fvec3" value="0.1777431 0.33819282 0.17634445" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<children>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="XEL_GateStone_Sigma_Item.DEC_Dungeon_SharTemple_Orb_A_Item_Ext_Mesh.0" />
+							<attribute id="MaterialID" type="FixedString" value="10e0c5ba-44bb-3857-f190-e45f0d02c01f" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="XEL_GateStone_Sigma_Item.DEC_Dungeon_SharTemple_Orb_A_Item_Int_Mesh.1" />
+							<attribute id="MaterialID" type="FixedString" value="36d39e25-898e-886e-9f23-aa66cdbe11ec" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="XEL_GateStone_Sigma_Item.DEC_Dungeon_SharTemple_Orb_A_Item_Ext_Mesh_LOD1.2" />
+							<attribute id="MaterialID" type="FixedString" value="10e0c5ba-44bb-3857-f190-e45f0d02c01f" />
+							<attribute id="LOD" type="uint8" value="1" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="XEL_GateStone_Sigma_Item.DEC_Dungeon_SharTemple_Orb_A_Item_Int_Mesh_LOD1.3" />
+							<attribute id="MaterialID" type="FixedString" value="36d39e25-898e-886e-9f23-aa66cdbe11ec" />
+							<attribute id="LOD" type="uint8" value="1" />
+						</node>
+						<node id="Attachments">
+							<attribute id="UUID" type="FixedString" value="2b0d8435-9b2b-5d08-4817-effd5fc961dc" />
+							<attribute id="Name" type="FixedString" value="Dummy_DEC_Dungeon_SharTemple_Orb_A_Item" />
+						</node>
+						<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node>
+						<node id="ClothProxyMapping" />
+						<node id="Base" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <content contentuid="h02238473g817cg2188g8962g043863cfdeb1" version="1">TEST</content>
+  <content contentuid="h522832b1g4fb9g675eg0f85gaede22858f5f" version="1">TEST</content>
+  <content contentuid="he8337bd0g9bc5gd974gf371ga7c916aedb26" version="1">%%% EMPTY</content>
+  <content contentuid="h69881385g27efg5550g7cc2g0b3376429207" version="1">%%% EMPTY</content>
+  <content contentuid="he784cd2ag05b5g0f3cga7b0g743114bf4d49" version="1">%%% EMPTY</content>
+  <content contentuid="h86b9d065gc336g9c74g16b9g96649bf55d73" version="10">Gate Stone (Alpha)</content>
+  <content contentuid="h85b7f7b5g598ag58a3ge2d9g983f5c09f01c" version="6">Gate Stone (Beta)</content>
+  <content contentuid="he10d83acg91f8g6ea7g0120gb4beceebf2e3" version="6">Gate Stone (Gamma)</content>
+  <content contentuid="h29523fc9g3278ged75g984agcab7f7232632" version="6">Gate Stone (Delta)</content>
+  <content contentuid="hb6699978g1d11gaf24g6ed4g515ba2a7464c" version="1">Teleport to Beta</content>
+  <content contentuid="h7ad78875g4875g0937ga80cgc33939d242dc" version="1">Teleport to Gamma</content>
+  <content contentuid="hf11b005agfaa2g952egd94eg7a5a50374956" version="1">Teleport to Delta</content>
+  <content contentuid="h55ac87f1g4ee5g5dcbg3f07g69f85edbc7ed" version="1">Gate Stone (Alpha)</content>
+  <content contentuid="h7ecdaea5g678cg7664g4692g5ca15516f2d4" version="3">%%% EMPTY</content>
+  <content contentuid="hb20048f4g9a12gb418g461cge78cb8095d87" version="1">Teleport to Alpha</content>
+  <content contentuid="hf20638b7g3b2bgb465gee2eg9e7b37872780" version="1">Teleport to Delta</content>
+  <content contentuid="hb1867583g4dd6g351egd3a6g6ed4c90a9b98" version="1">Teleport to Gamma</content>
+  <content contentuid="hb0cfda7cgb1fbg49e4gb104g9a77edb9edf8" version="1">Teleport to Alpha</content>
+  <content contentuid="ha3823d29g42a0g215cgb381g093447a82e73" version="1">Teleport to Gamma</content>
+  <content contentuid="hb38de1e8g3a16g2fffgbe38g049e03274d97" version="1">Teleport to Alpha</content>
+  <content contentuid="h51b85e3agcf24gc35dg922bgb17c828cffe3" version="1">Teleport to Gamma</content>
+  <content contentuid="h78d2cd0cg8527g9c5dg71bdg0b96b29bc377" version="1">Gate Stone (Beta)</content>
+  <content contentuid="hf5cced4egd428gbc6ag8f9ag43523898d27c" version="1">Gate Stone (Delta)</content>
+  <content contentuid="h116e7192gf288g2991gcbb8g366590e3951e" version="1">Gate Stone (Gamma)</content>
+  <content contentuid="h764a3f83gf392gf986g49fag334a69a1a866" version="2">While holding one of these stones, spend one action to teleport to one of the other stones.</content>
+  <content contentuid="h7b30ccceg9178gb5fdg8e1bgdd4d5a5dee94" version="7">The stone shimmers with a red glow. When you look closely you can see glimpses of 3 other colours within.</content>
+  <content contentuid="hf7ffaa38gb3bbgc529gae92g5116c0d0e49f" version="3">The stone shimmers with a green glow. When you look closely you can see glimpses of 3 other colours within.</content>
+  <content contentuid="h3e1fe873g7117g16aeg012dge6cd3dc1099a" version="3">The stone shimmers with a blue glow. When you look closely you can see glimpses of 3 other colours within.</content>
+  <content contentuid="h32521a8fg5bfeg92edg69e7g853a242279c7" version="3">The stone shimmers with a yellow glow. When you look closely you can see glimpses of 3 other colours within.</content>
+  <content contentuid="hc533c65dg1cc6g9ceegf950g3e0ea54c80ae" version="2">While this stone is in your inventory, you will have the ability to teleport to the three other stones.</content>
+  <content contentuid="h6105d04agdd88ga889g444dgc334856fc3bc" version="2">While this stone is in your inventory, you will have the ability to teleport to the three other stones.</content>
+  <content contentuid="hc6486102g78c2g0341g6b2cg5fe607ca73e5" version="2">While this stone is in your inventory, you will have the ability to teleport to the three other stones.</content>
+  <content contentuid="hbf9f6073g5e33g2126gdcf0g87d4840e39e5" version="6">While this stone is in your inventory, you will have the ability to teleport to the three other stones.</content>
+  <content contentuid="h605e6d4agd792g970ag9112g570fc1d4303e" version="29">Gate Stone Recaller</content>
+  <content contentuid="ha8568c9cg4d63gbbd2g65b5g4d00e182ca01" version="29">When used from your inventory all Gate Stones will be moved to your inventory. Useful if a Gate Stone has become inaccessible. &lt;br&gt;&lt;br&gt;This item can also be usd to summon any Gate Stones you have not found out in the world. Anyone installing this mod in Act 2 or Act 3 should activate this item and accept the popup.</content>
+  <content contentuid="hc89aa546g5d07gd7d2g99ccg3f2cdea3ac27" version="1">%%% EMPTY</content>
+  <content contentuid="hc04c9d65gd418g18d4gbbdcg09dea58d1b9a" version="1">%%% EMPTY</content>
+  <content contentuid="ha5698b50ga153g4f70gebaagf671133b423f" version="26">Activate</content>
+  <content contentuid="h2f4f61ecgc5c5g1c4fg840agec2aa5e9af93" version="1">%%% EMPTY</content>
+  <content contentuid="hfd6d6907g9738g626fgbaacg4ea12dbbe412" version="2">(Temporary) Remove Duplicate Stones</content>
+  <content contentuid="ha0888639g52eegb50ag6917gb34713a3fe45" version="2">Activate</content>
+  <content contentuid="h03de657bg6280g6e64ge6f8g89df89b8aa91" version="2">This is a one use item. This item will only appear for those updating from 1.0 to 1.1. In 1.1 I changed how the Gate Stones were given to the player. Due to this, people who already had the mod installed would receive a duplicate version of each Gate Stone. This item will resolve that when consumed.</content>
+  <content contentuid="h7c9cf96bg3178g9a60g09dfg1fa4400607c8" version="2">Gate Stone Duplicate Disintegrator</content>
+  <content contentuid="h76da10d0g53aeg1d2cg7b31g879d43a5484c" version="2">This unusually shaped crest bears the markings of a Lathanderian high priest, but its practical function is unclear. </content>
+  <content contentuid="hd8043928g8b53g4fb1g62b9g7a5498980aae" version="1">%%% EMPTY</content>
+  <content contentuid="h3bd55655g4364g961bg3631g82c9f9ba8b6f" version="3">Gate Stone Duplicate Disintegrator</content>
+  <content contentuid="h5f960606g1014g4e76g1fdbg52f4f7f02574" version="3">This is a one time use item. It will remove duplicate Gate Stones caused by updating from 1.0 to 1.1.</content>
+  <content contentuid="h3d3eb75fg64c4gdc1bgc373g878eccb898a6" version="1">%%% EMPTY</content>
+  <content contentuid="h7a88e9deg1fa6gb2a4gb14bg4b90434cfab7" version="5">Gate Stone Duplicate Disabler</content>
+  <content contentuid="h21df936bg3899g7216g5cbeg95fffa8b82f1" version="5" />
+  <content contentuid="hef2f2c79g225fg7bb0g5362gf5d70fc51a48" version="2">This item is a one time use fix for those updating from 1.0. You should collect all your Gate Stones and then use this item in your inventory. It will disable the duplicate stones from being used for teleporting and clean up some DB entries. Once this is consumed, just throw all your stones on the ground and use the recaller to get the working ones.</content>
+  <content contentuid="h2ec05ce3g33d7g6376g3a8fg73742044358b" version="1">Activate</content>
+  <content contentuid="ha512d7b9gcbf5g5b72gc9c3gad08dd01a5e7" version="1">&lt;b&gt;WARNING!&lt;/b&gt;&lt;br&gt;&lt;br&gt;Updating Gate Stones from 1.X to 2.0 is unsupported. Please reload and downgrade.&lt;br&gt;&lt;br&gt;Failure to do so will result in problems with the mod and your save.</content>
+  <content contentuid="h195366a4g3564gc06cg4db3g0fc0792b529f" version="1">It appears you have not found 1 or more Gate Stones, would you like to summon all Gate Stones that you have not found?&lt;br&gt;&lt;br&gt;If you are in Act 2 or Act 3 you should accept this as it will be impossible for you to get the Gate Stones any other way.</content>
+  <content contentuid="h5a2532fdg99cbg7f11gdc25g924f10eecb04" version="1">%%% EMPTY</content>
+  <content contentuid="h22da43cag5e98g06a7g9d7eg66dd8c20e744" version="1">%%% EMPTY</content>
+  <content contentuid="h5af1ecfbg4485g455egb9f1g79ed6f0c2e2c" version="1">%%% EMPTY</content>
+  <content contentuid="h02632bfeg2415gd4b2g1beage323b5121192" version="1">%%% EMPTY</content>
+  <content contentuid="hb8b9aa6dge544g5f5agba98g62d915847bb7" version="1">Gate Stone (Beta) not yet found.</content>
+  <content contentuid="h942a9b34g8a66g90ddg9f94g6cb8739ddc6f" version="1">Gate Stone (Alpha) not yet found.</content>
+  <content contentuid="hae45e8f7g2e2bg9fd4gd28egce6b24b57c5d" version="1">Gate Stone (Delta) not yet found.</content>
+  <content contentuid="h9b1e98c3gbcb2gee80g43dfg4837831d7ed4" version="1">Gate Stone (Gamma) not yet found.</content>
+  <content contentuid="h9d3f00f9gcde6g102dg5c5bg764749a49c8b" version="7">Gate Stone (Epsilon)</content>
+  <content contentuid="h4a89fa04g48c1gf77fg06b4g2114a51f245e" version="7">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="he03695c3g8153g3113g228fgcca04c94198a" version="7">The stone shimmers with an orange glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="h2fbcace5g014dg72bcg9d3bg8d1e978a2181" version="6">Gate Stone (Omicron)</content>
+  <content contentuid="h10af9679g9432g07a3g8166gc391cfef6d0f" version="6">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="h5be87495g5b7bg938ag2c69g5c80ba889f40" version="6">The stone shimmers with a cyan glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="h676a2c78gf9bdg87fdg6434gf64e2ee3c64e" version="6">Gate Stone (Zeta)</content>
+  <content contentuid="hf8a57093g76c5g7922g6858ge2f66b3470f2" version="6">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="h195997b8g11f3g963ag242eg9fb9b9eb0868" version="6">The stone shimmers with a purple glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="h09be48e0g7f9fga3a7gca9bge24f98841ae3" version="6">Gate Stone (Theta)</content>
+  <content contentuid="h1c49e0e1gf55ag06b2g58ddgb5f9b6b5ad75" version="6">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="he17bce82g4512g8243gdb32ge6a58b534f77" version="6">The stone shimmers with a lime green glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="hb179476bg7b9bg6d78g9a59g1a5b78963235" version="6">Gate Stone (Eta)</content>
+  <content contentuid="h525866c9g7935gfa9cg2147gae1920c55a86" version="6">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="h85580b17g07fag8403g9a68g1975d5d6f3c0" version="6">The stone shimmers with a magenta glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="hc9f4ac2bgeaacg7930ge78bg57e1395ee465" version="6">Gate Stone (Sigma)</content>
+  <content contentuid="h6f6a0c57g6995gca41g573fg7016333be439" version="6">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="h0ac4748eg69c6g9d35ga3ffgbdce50cab8b8" version="6">The stone shimmers with a white glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="hfd7363c0g60f3gbf16gc1e2ge2d8f257b100" version="6">Gate Stone (Upsilon)</content>
+  <content contentuid="h104825d1g36ffge67dgda73gdb37c5698c0a" version="6">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="h6f456b95g2a86gc9d8gf4e7gd35e8c6f6211" version="6">The stone shimmers with a dark blue glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="hf25242b8gdb0age56dg3dbfg116325a0a0a2" version="6">Gate Stone (Omega)</content>
+  <content contentuid="hc7a3dc28gfbbcgdef2gc550gaa03bedf8edf" version="6">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="hda8cca86gfa16gc2cfg1e7fg0992db175cd1" version="6">The stone shimmers with a maroon glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="hbfcf90a3g6ba0g671dg56f7g1a0f76c2d35e" version="1">Teleport to Eta</content>
+  <content contentuid="h01ff6668g34dag48c1g6f00g8a2c9579420e" version="1">Gate Stone (Epsilon)</content>
+  <content contentuid="hcda024beg8323gdd32g0d43ga3350d819000" version="2">While this stone is in your inventory, spend one action to teleport to one of the other stones.
+
+You may only teleport to stones you have found.</content>
+  <content contentuid="h0887cf17g25fdg104agcd40ga5d20021c6b8" version="1">Teleport to Zeta</content>
+  <content contentuid="hcdd8544dge8ecg7b74g19edg279d437dc8ff" version="1">Teleport to Theta</content>
+  <content contentuid="h574079fag8aaagc810g3b7cgf9ed08adfb52" version="1">Gate Stone (Eta)</content>
+  <content contentuid="h0a971df2gd875ge320g4c83geef6b04352a3" version="1">While this stone is in your inventory, spend one action to teleport to one of the following stones: Epsilon, Zeta, or Theta.</content>
+  <content contentuid="h0b2ef35dgf4a5g8ddag5837g60c328773edf" version="1">Gate Stone (Zeta)</content>
+  <content contentuid="he4995f7fg3f73g3de4gc5ecgef2ac67db07a" version="1">While this stone is in your inventory, spend one action to teleport to one of the following stones: Epsilon, Eta or Theta.</content>
+  <content contentuid="h65e60317g7d10g2c4agbc42gc19a25874bc4" version="1">Teleport to Eta</content>
+  <content contentuid="h798645b7g8218g96e0g18f2g0d44c2e04cb9" version="1">Teleport to Epsilon</content>
+  <content contentuid="hd49f9efbge1a6ga5d8gc29dgc0c43c48db97" version="1">Teleport to Epsilon</content>
+  <content contentuid="hac030cdfg3e3dg99a4g0fbdge683fb45e855" version="1">Teleport to Theta</content>
+  <content contentuid="ha9140510g07c2g79e4g6d36g86e21c1b77fe" version="1">Teleport to Zeta</content>
+  <content contentuid="h00ab4f49g311ag05adg6aa7gcd889eb14b60" version="1">Teleport to Theta</content>
+  <content contentuid="hc30c772fge5f6g376fg290aga3b890f64464" version="1">Gate Stone (Theta)</content>
+  <content contentuid="h73a3dd51g6b0cged95g2865g642c4f6522a7" version="1">While this stone is in your inventory, spend one action to teleport to one of the following stones: Epsilon, Zeta or Eta.</content>
+  <content contentuid="h1f2ee7f8g7db0gc0abg7e04g3f5c95cd0ca8" version="1">Teleport to Zeta</content>
+  <content contentuid="h05d409fcg2d3cgb897g5d58g29078b3cb04b" version="1">Teleport to Epsilon</content>
+  <content contentuid="ha97d446agc973g19e7gd64fge08e9b58dfc5" version="1">Teleport to Eta</content>
+  <content contentuid="hac9a7161g3ce0gdb1eg5161g8392dc543f13" version="1">Gate Stone (Omicron)</content>
+  <content contentuid="h7287fb47gcb9dg48fagccbdg9e18f1ae90a7" version="1">While this stone is in your inventory, spend one action to teleport to one of the following stones: Sigma, Upsilon or Omega.</content>
+  <content contentuid="h5a99b352gf416gfe14g55d8gb2e5eaf337b5" version="1">Teleport to Upsilon</content>
+  <content contentuid="h479ada46gdb74g7b2fgf9f0gaf9d535063c6" version="1">Teleport to Sigma</content>
+  <content contentuid="h42a6e0ddgaa3fg9b65g6aa6g09e7f0e444c8" version="1">Teleport to Omega</content>
+  <content contentuid="hc78f3693g8039g7d00g6f48g21f1667c6b7e" version="1">Gate Stone (Sigma)</content>
+  <content contentuid="h8e0750efg8692gffb2g3a87g6f3f31122b28" version="1">While this stone is in your inventory, spend one action to teleport to one of the following stones: Omicron, Upsilon or Omega.</content>
+  <content contentuid="h5c59920dga76cga405gd29dg91dedd550b54" version="1">Teleport to Alpha</content>
+  <content contentuid="h61747e78g872dg2deeg5200g6d6173f95471" version="1">Teleport to Beta</content>
+  <content contentuid="hd284a123g7a7fg4877gab03g5bc7f695b5ec" version="1">Teleport to Delta</content>
+  <content contentuid="h4bdbc6aegcb27gf944g58bega3d8380fd21d" version="2">Teleport to Gamma</content>
+  <content contentuid="h330d8910g1d07g48a3gd555g0f0030d118f0" version="1">Teleport to Omicron</content>
+  <content contentuid="h69e96d8agc71fg69a4g1213gcfe22f14b842" version="1">Teleport to Sigma</content>
+  <content contentuid="h83ec9b9bgc907g27ffgdcc6g655d72611a5b" version="1">Teleport to Upsilon</content>
+  <content contentuid="hb3e1e8bdg1cd7g390ag3c10g64d4b8c871a0" version="1">Teleport to Omega</content>
+  <content contentuid="hc9a99446g6da1g2859gd1deg5568cdb541d8" version="1">Teleport to Zeta</content>
+  <content contentuid="h18b0aa6fg0c36g1b35gf1d8gb0c71465bc38" version="1">Teleport to Epsilon</content>
+  <content contentuid="h1d044a5fg2df9gab3bgd1c0g38d743b4423e" version="1">Teleport to Alpha</content>
+  <content contentuid="h2d0439dcg1897g4772ga763g6a1f70494221" version="1">Teleport to Beta</content>
+  <content contentuid="h5efaa25cgfae9g4accg12fagf9d3cc5c93ad" version="1">Teleport to Delta</content>
+  <content contentuid="hf0f1e115g6fb2gc150g6669g24abda106bca" version="2">Teleport to Gamma</content>
+  <content contentuid="hcfd2acfcg4abagc1a8g04a5g7cd4c810ed89" version="1">Teleport to Omicron</content>
+  <content contentuid="h7143428fg49e6g3dd3g4d21ga8857dfc1fa4" version="1">Teleport to Sigma</content>
+  <content contentuid="h7270e6e0gd93dgc0e5g760fg19a4d01251cb" version="1">Teleport to Upsilon</content>
+  <content contentuid="h19230792g4c12gcb2agc156ga52850a7c639" version="1">Teleport to Omega</content>
+  <content contentuid="h21ae0313gbe89g6ba0gaf76g6c4c967bde05" version="1">Teleport to Alpha</content>
+  <content contentuid="hc0350173gff13g9d68g1a48g462aa08d8c28" version="1">Teleport to Beta</content>
+  <content contentuid="h7a8d3d1bgad20gfd3bgd90ag167dcf21217d" version="1">Teleport to Delta</content>
+  <content contentuid="ha30149bdgab37gd77fga543g3550604a85bd" version="1">Teleport to Gamma</content>
+  <content contentuid="hb3b7ac7eg2504gb427g3562g81e3ad52c4ca" version="1">Teleport to Omicron</content>
+  <content contentuid="h653e2399g4773g24d4g15adg1f767b297b7a" version="1">Teleport to Sigma</content>
+  <content contentuid="he156423dg1ac7gb8e2gef1fg2084f9bbe6a7" version="1">Teleport to Upsilon</content>
+  <content contentuid="h54c573d2gb37bg952agfe3eg10fe857555ea" version="1">Teleport to Omega</content>
+  <content contentuid="h995b7d83gadbag7954gf71dg88a7b0a55aa1" version="1">Teleport to Epsilon</content>
+  <content contentuid="hb03c90d1ga290g4182g2394g3bc76f4af516" version="1">Gate Stone (Alpha)</content>
+  <content contentuid="h8506c298g81a3g592ag3812g6815b1a34ea2" version="1">While holding one of these stones, spend one action to teleport to one of the other stones.</content>
+  <content contentuid="hf1860ba9g7f71g3986g97b9gb207d8b8a4d3" version="1">Gate Stone (Epsilon)</content>
+  <content contentuid="habb929e2g0184g1116gdb90g8c08407d2936" version="1">While this stone is in your inventory, spend one action to teleport to one of the other stones.
+
+You may only teleport to stones you have found.</content>
+  <content contentuid="h7815a5fagf0d2gabc7g0835g9ae4389fec75" version="1">Teleport to Zeta</content>
+  <content contentuid="h42d6f48egb236gfcd2gb3eag605b3ef0dd02" version="1">While this stone is in your inventory, spend one action to teleport to one of the other stones.
+
+You may only teleport to stones you have found.</content>
+  <content contentuid="haa071fd1g79aag0e8cg47adgef0d7ad7b217" version="1">While this stone is in your inventory, spend one action to teleport to one of the other stones.
+
+You may only teleport to stones you have found.</content>
+  <content contentuid="hffa8b78cgca37g8055gb148gea86aaff0431" version="1">Gate Stone (Delta)</content>
+  <content contentuid="h58c5052cgbdd9gcfcdgfc39gfb5617f4f5bd" version="1">While this stone is in your inventory, spend one action to teleport to one of the other stones.
+
+You may only teleport to stones you have found.</content>
+  <content contentuid="h065d3584g97fag9ab0g9c1eg8891a290be37" version="1">Gate Stone (Gamma)</content>
+  <content contentuid="hf5537e13g252ag7c4ag7ddcgf0c5b98c9caa" version="1">While this stone is in your inventory, spend one action to teleport to one of the other stones.
+
+You may only teleport to stones you have found.</content>
+  <content contentuid="h0a682715g7040g1c41gfc0bgfce5f43c7c60" version="1">Gate Stone (Beta)</content>
+  <content contentuid="h605e6d4agd792g970ag9112g570fc1d4303e" version="31">Gate Stone Recaller (Act 1)</content>
+  <content contentuid="ha5698b50ga153g4f70gebaagf671133b423f" version="28">Activate</content>
+  <content contentuid="ha8568c9cg4d63gbbd2g65b5g4d00e182ca01" version="31">When used from your inventory all Gate Stones will be moved to your inventory. Useful if a Gate Stone has become inaccessible. &lt;br&gt;&lt;br&gt;This item can also be usd to summon any Gate Stones you have not found out in the world during Act 1.</content>
+  <content contentuid="h1a8ea48egdec9g32fcgbc54g1e47020e50fe" version="3">Gate Stone Recaller (Act 2)</content>
+  <content contentuid="h98225848ge37egf6f9gbf64g56016362e92b" version="3">Activate</content>
+  <content contentuid="h57259fcdg74d6g6bc1g2633g2ccd4d3e8d12" version="3">When used from your inventory all Gate Stones will be moved to your inventory. Useful if a Gate Stone has become inaccessible. &lt;br&gt;&lt;br&gt;This item can also be usd to summon any Gate Stones you have not found out in the world during Act 2. Anyone installing this mod in Act 3 should activate this item and accept the popup.</content>
+  <content contentuid="h0fd1a205g0a00g9fffgf93ag74a67703dbbc" version="3">Gate Stone Recaller (Act 3)</content>
+  <content contentuid="hb81b9433gb52cge2e9g02f0gccc29730b2e3" version="3">Activate</content>
+  <content contentuid="h1970bf8cgf248gb053g4d81gd221cf429114" version="3">When used from your inventory all Gate Stones will be moved to your inventory. Useful if a Gate Stone has become inaccessible. &lt;br&gt;&lt;br&gt;This item can also be usd to summon any Gate Stones you have not found out in the world during Act 3.</content>
+  <content contentuid="h15d63441g6809gea6bgb674g3b51e6fb6cde" version="1">%%% EMPTY</content>
+  <content contentuid="h9fcdcd1ag4dc2g2465g8f26gf3e6711ed0b8" version="1">%%% EMPTY</content>
+  <content contentuid="hb21d6bd4gdf08g0706ge404g650ef375e927" version="1">%%% EMPTY</content>
+  <content contentuid="h282e7f9ag008bgd337ge405g1158a828c05f" version="1">%%% EMPTY</content>
+  <content contentuid="h4606a9e3g0364ge8dfg5610gd7708aa44ead" version="1">%%% EMPTY</content>
+  <content contentuid="hbc06a61eg5076g99c1g21fdg1f6934a2162d" version="1">%%% EMPTY</content>
+  <content contentuid="hd9c90b6eg6106g8c0ag07bfg377361b217eb" version="1">%%% EMPTY</content>
+  <content contentuid="h23450c64gd9f2gdaf3gf9efg58486db93dc1" version="1">%%% EMPTY</content>
+  <content contentuid="h2488ee26g7e67ga24cg758cg4cd0cfaeae85" version="1">%%% EMPTY</content>
+  <content contentuid="hf3177a92gea5eg07ccg47a1gc2fddee9fa77" version="1">%%% EMPTY</content>
+  <content contentuid="h4c3af298g8278g1710g27b5ge058bee8375c" version="1">%%% EMPTY</content>
+  <content contentuid="h382fa5a7ge063gbbf9g5d12ge65e78536157" version="1">%%% EMPTY</content>
+  <content contentuid="ha47fdfb8g4626g0594gc790g98cb992fabe7" version="1">%%% EMPTY</content>
+  <content contentuid="hc8b056b1g3f87gd085g6263g47819ceae77b" version="1">%%% EMPTY</content>
+  <content contentuid="h74f17de4g4365g32f9g0b5bge2b83a2f82f0" version="1">%%% EMPTY</content>
+  <content contentuid="h7db17b8bga223g239egedc2ge8bb4e3f5553" version="1">%%% EMPTY</content>
+  <content contentuid="h39fa5019g51adg46ebgd695g966a7943612e" version="1">%%% EMPTY</content>
+  <content contentuid="h3ff2c882gbcccg98b3g8d21ga936d5fe9b15" version="1">%%% EMPTY</content>
+  <content contentuid="h992d41afgf51egc9c7g728fgedfe8d93bfad" version="1">It appears you have not found 1 or more Gate Stones from Act 2, would you like to summon all Gate Stones from Act 2 that you have not found?&lt;br&gt;&lt;br&gt;If you are in Act 3 you should accept this as it will be impossible for you to get the Gate Stones any other way.</content>
+  <content contentuid="ha6bad120gbaf3gddb7g4f34g737d471b278b" version="1">It appears you have not found 1 or more Gate Stones from Act 3, would you like to summon all Gate Stones from Act 3 that you have not found?</content>
+  <content contentuid="h29cb31a5gd5f4gec5fg1b92g7fae823e1871" version="1">It appears you have not found 1 or more Gate Stones from Act 1, would you like to summon all Gate Stones from Act 1 that you have not found?&lt;br&gt;&lt;br&gt;If you are in Act 2 or Act 3 you should accept this as it will be impossible for you to get the Gate Stones any other way.</content>
+  <content contentuid="h86b9d065gc336g9c74g16b9g96649bf55d73" version="11">Gate Stone (Alpha)</content>
+  <content contentuid="hbf9f6073g5e33g2126gdcf0g87d4840e39e5" version="7">While this stone is in your inventory, you will have the ability to teleport to the three other stones.</content>
+  <content contentuid="h7b30ccceg9178gb5fdg8e1bgdd4d5a5dee94" version="8">The stone shimmers with a red glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="h85b7f7b5g598ag58a3ge2d9g983f5c09f01c" version="8">Gate Stone (Beta)</content>
+  <content contentuid="hc6486102g78c2g0341g6b2cg5fe607ca73e5" version="4">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="hf7ffaa38gb3bbgc529gae92g5116c0d0e49f" version="5">The stone shimmers with a green glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="h29523fc9g3278ged75g984agcab7f7232632" version="8">Gate Stone (Delta)</content>
+  <content contentuid="h6105d04agdd88ga889g444dgc334856fc3bc" version="4">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="h3e1fe873g7117g16aeg012dge6cd3dc1099a" version="5">The stone shimmers with a blue glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="he10d83acg91f8g6ea7g0120gb4beceebf2e3" version="8">Gate Stone (Gamma)</content>
+  <content contentuid="hc533c65dg1cc6g9ceegf950g3e0ea54c80ae" version="4">While this stone is in your inventory, you will have the ability to teleport to the other stones that you have found.</content>
+  <content contentuid="h32521a8fg5bfeg92edg69e7g853a242279c7" version="5">The stone shimmers with a yellow glow. When you look closely you can see glimpses of other colours within.</content>
+  <content contentuid="h3e0dc204g3314g73e9ga657g18d0d8453ea2" version="1">Gate Stone (Upsilon)</content>
+  <content contentuid="hb0daf0d3gbc06gb42agdfb1ge6c99fa7a9fa" version="1">Gate Stone (Omega)</content>
+  <content contentuid="h1c2a6711gedf1g229cgd20fg0238454ca2ce" version="1">Gate Stone (Epsilon) not yet found.</content>
+  <content contentuid="h9f142549g1efag4a6fg6347g1b0ecf8181cc" version="1">Gate Stone (Zeta) not yet found.</content>
+  <content contentuid="h4a1067e1g84ebg1b6dg1633g33e026683598" version="1">Gate Stone (Eta) not yet found.</content>
+  <content contentuid="hecdd3447gc28bg7fb9g24a0g86b48550921c" version="1">Gate Stone (Theta) not yet found.</content>
+  <content contentuid="h256eda35gec4ag7d8fg2eb2g2cb2c340d16c" version="1">Gate Stone (Omicron) not yet found.</content>
+  <content contentuid="h3e72691ag0f78g24d1g8739g03275636c0fb" version="1">Gate Stone (Sigma) not yet found.</content>
+  <content contentuid="h990fe8e5g4bb1gecb2gc526g5e20f2aa8fbc" version="1">Gate Stone (Upsilon) not yet found.</content>
+  <content contentuid="hd2582955g6876g8558g4b36g6dec62b09db8" version="1">Gate Stone (Omega) not yet found.</content>
+</contentList>

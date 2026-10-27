@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="0" build="58" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="A scoundrel who uses stealth and trickery to overcome obstacles and enemies." />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hd3488457gb9bfg4f9eg83dfg318de5d3c0c9" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h7c6002e9g298dg40c4g8023g1dd681f8d627" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="ROGUE" />
+			<attribute id="UUID" type="guid" value="f8a0608b-666c-4be6-a49c-03b369c10bd2" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Class" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

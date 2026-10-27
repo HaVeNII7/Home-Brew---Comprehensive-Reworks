@@ -23,6 +23,29 @@ data "TargetEffect" "91ef374a-8917-4b10-a4dc-89ba36ec60b4"
 data "PositionEffect" "69cd378b-2fa5-466b-bbf4-2c2ccb165717"
 data "Sheathing" "DontChange"
 
+<!--SCROLL OF REBIRTH-->
+
+new entry "Shout_ScrollofRebirth"
+type "SpellData"
+data "SpellType" "Shout"
+data "AIFlags" "CanNotUse"
+data "TargetConditions" "Self()"
+data "Icon" "Spell_2e_RestoreSenses"
+data "DisplayName" "hd3a156cc7fbsdfsef2ffef6311124rebirth;1"
+data "Description" "hd3a156c6se4fse65e8585e41f6524rebirth;1"
+data "PrepareSound" "Spell_Prepare_ClericGen_L1to3_01"
+data "PrepareLoopSound" "Spell_Loop_ClericGen_L1to3"
+data "CastSound" "Spell_Cast_Buff_Sanctuary_L1To3"
+data "TargetSound" "Spell_Impact_Buff_Sanctuary_L1To3"
+data "PreviewCursor" "Cast"
+data "CastTextEvent" "Cast"
+data "UseCosts" "ActionPoint:1"
+data "SpellAnimation" "03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;8252328a-66dd-4dc0-bbe0-00eea3204922,,;982d842b-5d44-4ef6-ab33-14d5ae514a50,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;499b7945-9eff-40a2-9911-73b8963108e4,,;1d3a29f0-9409-462e-81cd-3f24944f63ca,,"
+data "VerbalIntent" "Utility"
+data "Requirements" "!Combat"
+data "PrepareEffect" "60ec0a2d-1b72-4fb2-9eaf-571638aca25d"
+data "CastEffect" "6d072523-11f5-4b1b-a2d8-24ade34a315d"
+
 <!--CHARACTER TRAITS-->
 
 new entry "Shout_CTBreatheDeep"

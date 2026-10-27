@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="hd3a156cc7fbf4a5c985eef63f0c2zrebirth" version="2" />
+					<attribute id="Description" type="TranslatedString" handle="hd3a156cc7fbf4a5c985w5e41f6524rebirth" version="2" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hd3a156cc7fbf4a5c985eef6311124rebirth" version="2" />
+					<attribute id="Icon" type="FixedString" value="Item_UNI_FOR_MasterworkPlans" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="952de87b-93a8-4575-b1ca-2d8922dd8980" />
+					<attribute id="Name" type="LSString" value="ScrollofRebirth" />
+					<attribute id="ParentTemplateId" type="FixedString" value="4ffd5c4b-4c56-4f05-a228-a33754bb1806" />
+					<attribute id="Stats" type="FixedString" value="OBJ_Scroll_ScrollofRebirth" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241810" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="12" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Consume" type="bool" value="True" />
+											<attribute id="SkillID" type="FixedString" value="Shout_ScrollofRebirth" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

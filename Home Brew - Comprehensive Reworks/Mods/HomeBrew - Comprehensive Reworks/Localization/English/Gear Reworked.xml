@@ -85,6 +85,28 @@
 	<content contentuid="hd3a156cc7fbf4a5c985eef63f0c2b99b55g3" version="1">Attunement</content>
 	<content contentuid="h98e3be41aead4b5bb8ee60104126ded4b17d" version="5">Determines your ability to equip magical items. The rarity of the item determines the amount of Attunement required to equip it, with each higher rarity costing more.&lt;br&gt;&lt;br&gt;Uncommon items require one point of Attunement.&lt;br&gt;&lt;br&gt;Rare items require two points of Attunement.&lt;br&gt;&lt;br&gt;Very Rare items require three points of Attunement.&lt;br&gt;&lt;br&gt;Legendary items require four points of Attunement.</content>
 
+<content contentuid="0000000000000000000000000000000000000" version="1">SCROLL OF REBIRTH</content>
+	<content contentuid="hd3a156cc7fbf4a5c985eef63f0c2zrebirth" version="1">Scroll of Rebirth</content>
+	<content contentuid="hd3a156cc7fbf4a5c985eef6311124rebirth" version="5">Use in order to trigger a one-time respec for your character.</content>
+	<content contentuid="hd3a156cc7fbf4a5c985w5e41f6524rebirth" version="5">Holding this scroll produces a strange sense of belonging. It's as if nostalgia itself has taken form in your hands.</content>
+	<content contentuid="hd3a156cc7fbsdfsef2ffef6311124rebirth" version="5">Rebirth</content>
+	<content contentuid="hd3a156c6se4fse65e8585e41f6524rebirth" version="5">Born anew, you may change most aspects of yourself.</content>
+
+<content contentuid="0000000000000000000000000000000000000" version="1">SCROLL OF REVERSION</content>
+	<content contentuid="hd3a156cc7fbf4a5c985eef63f0c2zreverts" version="1">Scroll of Reversion</content>
+	<content contentuid="hd3a156cc7fbf4a5c985eef6311124reverts" version="5">Combine with a transmogrified piece of armour in order to revert the transmogrification.</content>
+	<content contentuid="hd3a156cc7fbf4a5c985w5e41f6524reverts" version="5">Holding this scroll reminds one of their sense of self. A gentle reminder of once difficult steps, now taken with ease.</content>
+
+<content contentuid="0000000000000000000000000000000000000" version="1">SCROLL OF TRANSMOGRIFICATION</content>
+	<content contentuid="hd3a156cc7fbf4a5c985eef63f0c2ztransmo" version="1">Scroll of Transmogrification</content>
+	<content contentuid="hd3a156cc7fbf4a5c985eef6311124transmo" version="5">Combine with two pieces of armour in order to transmogrify the second armour pieces appearance onto the first.</content>
+	<content contentuid="hd3a156cc7fbf4a5c985w5e41f6524transmo" version="5">Holding this scroll fills one with a newfound sense of identity. A bold reminder that we are who we choose to be.</content>
+
+<content contentuid="0000000000000000000000000000000000000" version="1">TRANSMOGRIFIED ARMOUR</content>
+	<content contentuid="hd3a156cc7fbf4a5c985eef63f0c2ztmtoken" version="1">Transmogrified Armour</content>
+	<content contentuid="hd3a156cc7fbf4a5c985eef6311124tmtoken" version="5">Armour which has been transmogrified.</content>
+	<content contentuid="hd3a156cc7fbf4a5c985w5e41f6524tmtoken" version="5">Magically altered, this armour looks exactly as you imagined.</content>
+
 <content contentuid="0000000000000000000000000000000000000" version="1">COATINGS</content>
 	<content contentuid="h9328bdc1gcc66g4369g91f3gf3568b1c5133" version="1">Wyvern Toxin</content>
 	<content contentuid="h057011f1g48a4g48b2g85daga04e5026f87d" version="2">Affected entity takes [1] at the start of its next turn.</content>
@@ -146,8 +168,8 @@
 	<content contentuid="hcd29882agc525g43a4gb69ag577fc554d421" version="1">Consuming this piece of fey flesh will alter your &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt;.</content>
 	<content contentuid="h066676b1gce7dg4bf5gbcd5g7ae30c97493e" version="1">Consuming this piece of fey flesh will alter your &lt;LSTag Tooltip="Wisdom"&gt;Wisdom&lt;/LSTag&gt;.</content>
 	<content contentuid="he0cd3c1cg3e22g4477g8804g00084266704a" version="1">Consuming this piece of fey flesh will alter your &lt;LSTag Tooltip="Charisma"&gt;Charisma&lt;/LSTag&gt;.</content>
-	<content contentuid="h1dcaeebcg9c5dg49dcg9e23g74d9056a4bd0" version="2">Trusting a Hag</content>
-	<content contentuid="h8c35f8f8gf36bg49f0gb846g32f6dd6f3cee" version="2">Trusting a Hag sure does have benefits, doesn't it?</content>
+	<content contentuid="h1dcaeebcg9c5dg49dcg9e23g74d9056a4bd0" version="2">A Living Hag's Magic</content>
+	<content contentuid="h8c35f8f8gf36bg49f0gb846g32f6dd6f3cee" version="2">Trusting a Hag sure does have benefits, doesn't it? Removed upon killing the hag who applied this condition.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">MISC</content>
 	<content contentuid="hc3051800g8d41g428fgb80ag9479e41d112d" version="2">Cannot use.</content>
@@ -728,10 +750,6 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">DRAKETHROAT GLAIVE</content>
 	<content contentuid="h1cc1a903g3f66g4a95g9763g3e3a2b1ddfed" version="1">Relentless Revenge</content>
 	<content contentuid="h2f240a51g20b4g4f7cg8842gef50ca571e03" version="1">When the wielder has 50% &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; or less, they deal an additional [1] with their main-hand melee weapon.</content>
-
-<content contentuid="0000000000000000000000000000000000000" version="1">DRAKETHROAT GLAIVE</content>
-	<content contentuid="h9b3a403egfba1g424ag9bdeg841fa5a16051" version="3">Vicious Dragon Breath</content>
-	<content contentuid="h600a70ebgef05g4769ga741g73846dc74ac5" version="2">Enemies have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against your Dragonborn breath.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SHARPENED SNARE CUIRASS</content>
 	<content contentuid="h46ecfcf8g86aag4e80gaa8egf74117d40060" version="2">Sharpened Snare</content>
@@ -2260,7 +2278,9 @@
 	<content contentuid="h55a5b521g64d7g4043g9517g4edfcc4355fd" version="1">Cerberus Whistle</content>
 	<content contentuid="ha772e4e1g77c9g4bfeg84ebgce7bf99c847a" version="1">This whistle releases a terrible tone that drives creatures into a frenzy.</content>
 	<content contentuid="ha4e22634g9128g4dddga41cge55c88a6b5d0" version="1">Droning Buzz</content>
-	<content contentuid="h4e389111g119bg46aeg9333gebe4b8e6ac4f" version="1">The wielder's summoned creatures within [1] receive &lt;LSTag Type="Status" Tooltip="JWL_Status_WhistleCerberusBuff"&gt;Frenzied&lt;/LSTag&gt;, granting them &lt;LSTag Type="Passive" Tooltip="ExtraAttack"&gt;Extra Actions&lt;/LSTag&gt;.</content>
+	<content contentuid="h4e389111g119bg46aeg9333gebe4b8e6ac4f" version="1">The wielder's summoned creatures within [1] receive an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;. However, creatures affected by the whistle who leave it's area of effect immediately die.</content>
+	<content contentuid="h56548455g57b5g4339ga161g7005fc45e869" version="1">Frenzied</content>
+	<content contentuid="hbd51fc39g5a09g4b1dgbfdcg85482ebf3e24" version="1">Affected creature has gained an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;. If they move farther than [1] away from their summoner, they will immediately die.</content>
 
 	<content contentuid="he2146d72g3d2eg4389g8222g3e236e5d39a1" version="1">Gibbering Bell</content>
 	<content contentuid="h514b9a04g2741g4db6gb6d8gb49d83eb57ca" version="1">A sentient bell that can telepathically communicate with nearby undead.</content>
@@ -2318,8 +2338,6 @@
 	<content contentuid="hc1c15525gfea2g4421g87bdgd0b2ca6a9881" version="1">Greater Soldier's Boon</content>
 	<content contentuid="h6f918201g54f0g4fc8g9e9fg8cf53338b703" version="1">Dragon Bloodwell Vial: Depleted</content>
 	<content contentuid="h3ad30dfeg74a5g43e1gaed3g0a2bab8e257a" version="1">The &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; granted from the bloodwell vial are depleted. A &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt; will restore them.</content>
-	<content contentuid="h56548455g57b5g4339ga161g7005fc45e869" version="1">Frenzied</content>
-	<content contentuid="hbd51fc39g5a09g4b1dgbfdcg85482ebf3e24" version="1">Affected creature has gained &lt;LSTag Type="Passive" Tooltip="ExtraAttack"&gt;Extra Actions&lt;/LSTag&gt;.</content>
 	<content contentuid="h5861773dg99b0g4cd9gb3e6g4b9739fbe6a5" version="1">Grave Touch</content>
 	<content contentuid="haca3a816gc467g4376g829bgf7b568bbd766" version="1">Affected creature's attacks deal an additional [1]. This effect scales with their summoners &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 	<content contentuid="h6d3375acgb5c5g447ag98c4g0c67e3f905f1" version="1">Affected creature does an additional [1] with attacks.</content>

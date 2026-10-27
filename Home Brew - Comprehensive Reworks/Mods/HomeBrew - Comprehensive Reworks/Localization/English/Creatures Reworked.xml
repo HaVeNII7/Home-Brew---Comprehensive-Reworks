@@ -692,8 +692,8 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">GORTASH</content>
 
-	<content contentuid="h22fe979bg5f78g4142gabfegc3f2c7657d06" version="1">Bane's Chosen</content>
-	<content contentuid="h3883a7e3g05d3g485cgbad9gcce24ddff3e2" version="2">Immediately upon starting combat, Gortash will morph into the &lt;LSTag Type="Status" Tooltip="WYR_GORTASH_BANE_BUFF"&gt;Avatar of Tyranny&lt;/LSTag&gt;.</content>
+	<content contentuid="h09a82df0gc406g4333g8a50g55b17passive" version="1">Bane's Chosen</content>
+	<content contentuid="h9835c7d2geb17g4c77gaf0eg45a7bpassive" version="2">Immediately upon starting combat, Gortash will morph into the &lt;LSTag Type="Status" Tooltip="WYR_GORTASH_BANE_BUFF"&gt;Avatar of Tyranny&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">GLUT</content>
 
@@ -748,6 +748,9 @@
 	<content contentuid="h7cc2127e6s9e6e8e5f45cb1gf5558passive" version="3">This creature has the ability to &lt;LSTag Type="Spell" Tooltip="Target_Shadowstep_Merregon"&gt;Shadow Step&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">MIND FLAYER</content>
+
+	<content contentuid="ha32797b6g8153g43b6gbb5cga37cc6cflays" version="1">Illithid Draw</content>
+	<content contentuid="hf0c16535gd5a3g4da1gbf6agb69118dflays" version="3">This Mind Flayer is psionically keeping the attention of Commander Zhalk. In addition, it's maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; have been increased by 200.</content>
 
 	<content contentuid="ha32797b6g8153g43b6gbb5cga37cc6czhalk" version="1">The Flayer Dies First!</content>
 	<content contentuid="hf0c16535gd5a3g4da1gbf6agb69118dzhalk" version="3">Affected creature must kill the nearby mind-flayer before it can target any other creature.</content>

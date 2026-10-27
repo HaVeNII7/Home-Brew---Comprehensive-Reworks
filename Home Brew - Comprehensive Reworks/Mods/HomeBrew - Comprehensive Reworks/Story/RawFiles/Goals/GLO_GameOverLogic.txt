@@ -1,0 +1,93 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+/* ----------------------------------------------------------------------------------------------------------------------
+If your situation includes a state where all characters would normally be considered out of the game, but they are,
+for some reason, not (e.g. everyone is dead, but a character will be brought back to life by an external force), use
+QRY_GameOver_BlockGameOver().
+-------------------------------------------------------------------------------------------------------------------------*/
+
+DB_GameOver_DefeatCausesNotGameOver("TempBanished");
+DB_GameOver_DefeatCausesNotGameOver("TempPetrified");
+KBSECTION
+//REGION Character leave/join logic.
+IF
+DB_Players(_Player)
+THEN
+DB_CheckPartyForPlayer(_Player);
+
+//player removed
+IF
+DB_CheckPartyForPlayer(_Player)
+AND
+NOT DB_Players(_Player)
+THEN
+NOT DB_CheckPartyForPlayer(_Player);
+PROC_GameOver_CheckGameOver();
+
+//END_REGION
+
+//REGION Potential game over on character death.
+PROC
+PROC_StateSet_Defeated((GUIDSTRING)_Player)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+PROC_GameOver_CheckGameOver();
+//END_REGION
+
+//REGION Final game over check
+PROC
+PROC_GameOver_CheckGameOver()
+AND
+NOT QRY_GameOver_AliveCharactersLeft()
+AND
+NOT QRY_GameOver_BlockGameOver()
+THEN
+MusicPlayGeneral("Music_Game_Over");
+PROC_HB_ShowPartyWipeMenu();
+//END_REGION
+
+//REGION Queries
+QRY
+QRY_GameOver_AliveCharactersLeft()
+AND
+DB_Players(_Player)
+AND
+NOT QRY_GameOver_CharacterWarrantsGameOver(_Player)
+THEN
+DB_NOOP(1);
+
+// Character is defeated and has at least one defeated case that results in a game over.
+QRY
+QRY_GameOver_CharacterWarrantsGameOver((CHARACTER)_Character)
+AND
+DB_Defeated(_Character)
+AND
+DB_DefeatedCauses(_Character, _DefeatCause, _)
+AND
+NOT DB_GameOver_DefeatCausesNotGameOver(_DefeatCause)
+THEN
+DB_NOOP(1);
+
+// Shouldn't happen, but in case there is no linked DB_DefeatedCauses, and the character is in DB_Defeated, consider it warranted for a game over.
+QRY
+QRY_GameOver_CharacterWarrantsGameOver((CHARACTER)_Character)
+AND
+DB_Defeated(_Character)
+AND
+NOT DB_DefeatedCauses(_Character, _, _)
+THEN
+DB_NOOP(1);
+
+QRY //Dummy implementation, query can be overriden for moments when we need to suspend endgame logic (e.g. because all characters are dead, but can still be raised)
+QRY_GameOver_BlockGameOver() 
+AND
+1 == 0
+THEN
+DB_NOOP(1);
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Shared_Campaign"

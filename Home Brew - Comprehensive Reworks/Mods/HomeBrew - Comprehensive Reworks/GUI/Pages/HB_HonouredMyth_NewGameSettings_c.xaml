@@ -1,0 +1,1602 @@
+<ls:UIWidget x:Name="DMSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ls="clr-namespace:ls;assembly=Code"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:noesis="clr-namespace:NoesisGUIExtensions;assembly=Noesis.GUI.Extensions"
+             xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             ls:UIWidget.ContextName="DMSettings"
+             FocusLeft="UILeft" FocusRight="UIRight"
+             FocusDown="UIDown" FocusUp="UIUp"
+             ls:MoveFocus.FocusMovementMode="Closest"
+             KeyboardNavigation.DirectionalNavigation="Continue"
+             CanCacheFocusSurroundingElements="False"
+             d:DataContext="{d:DesignInstance {x:Type ls:DCDMSettings}, IsDesignTimeCreatable=True}"
+             d:DesignHeight="2160" d:DesignWidth="3840"
+             ls:AttachedProperties.AutomationId ="{Binding (ls.UICanvas.CanvasLayout), RelativeSource={RelativeSource Mode=Self}, StringFormat='{}NewGameSettings_c_{0}'}">
+    
+    <ls:UIWidget.Template>
+        <ControlTemplate>
+            <ControlTemplate.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="/Core;component/Library/OptionTemplates_c.xaml"/>
+                    </ResourceDictionary.MergedDictionaries>
+
+                    <System:String x:Key="HB_CloseWidgetParameter">CloseWidget</System:String>
+                    <BitmapImage x:Key="FadeHeaderImage" UriSource="pack://application:,,,/Core;component/Assets/DMSettings/fade_header.png"/>
+                    <BitmapImage x:Key="FadeFooterImage" UriSource="pack://application:,,,/Core;component/Assets/DMSettings/fade_footer.png"/>
+                    <BitmapImage x:Key="TitleBarImage" UriSource="pack://application:,,,/Core;component/Assets/DMSettings/titlebar.png"/>
+                    <BitmapImage x:Key="Selector" UriSource="pack://application:,,,/Core;component/Assets/DMSettings/c_selector.png" />
+                    <BitmapImage x:Key="BackgroundBanner" UriSource="pack://application:,,,/Core;component/Assets/DMSettings/column_bg.png" />
+                    <BitmapImage x:Key="Arrow" UriSource="pack://application:,,,/Core;component/Assets/DMSettings/c_selectionArrow.png" />
+                    <BitmapImage x:Key="BackgroundFade" UriSource="pack://application:,,,/Core;component/Assets/Shared/background_fade.png"/>
+
+                    <Thickness x:Key="WidescreenMarginCustom">-2840,0,0,-100</Thickness>
+                    <Thickness x:Key="LetterboxMarginCustom">-2460,0,0,-100</Thickness>
+                    <Thickness x:Key="FullscreenMarginCustom">-2000,0,0,-100</Thickness>
+
+                    <Style x:Key="HB_SingleSaveTickBoxStyle" TargetType="ls:LSTickBox">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ls:LSTickBox">
+                                    <Grid Width="64" Height="64" Background="Transparent">
+                                        <Image x:Name="Box" Source="pack://application:,,,/Core;component/Assets/Options/checkBox_d.png" Stretch="None"/>
+                                        <Image x:Name="Check" Source="pack://application:,,,/Core;component/Assets/Options/ico_check_h.png" Stretch="None" Visibility="Hidden"/>
+                                    </Grid>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsChecked" Value="True">
+                                            <Setter TargetName="Check" Property="Visibility" Value="Visible"/>
+                                        </Trigger>
+                                        <Trigger Property="ls:MoveFocus.IsFocused" Value="True">
+                                            <Setter TargetName="Box" Property="Source" Value="pack://application:,,,/Core;component/Assets/Options/checkBox_h.png"/>
+                                        </Trigger>
+                                        <Trigger Property="IsEnabled" Value="False">
+                                            <Setter TargetName="Box" Property="Source" Value="pack://application:,,,/Core;component/Assets/Options/checkBox_disabled.png"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+
+                    <DataTemplate x:Key="RulesetDataTemplate">
+                        <Grid x:Name="base" ls:MoveFocus.Focusable="True" Focusable="True">
+                            <b:Interaction.Triggers>
+                                <b:DataTrigger Binding="{Binding IsFocused, ElementName=base}" Value="True">
+                                    <ls:LSPlaySound Sound="UI_Shared_Hover" />
+                                    <b:ChangePropertyAction TargetObject="{Binding RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}" PropertyName="SelectedItem" Value="{Binding .}"/>
+                                </b:DataTrigger>
+                                <b:DataTrigger Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="False">
+                        <b:Interaction.Behaviors>
+                            <b:ConditionBehavior><b:ConditionalExpression>
+                                <b:ComparisonCondition LeftOperand="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Operator="Equal" RightOperand="True"/>
+                            </b:ConditionalExpression></b:ConditionBehavior>
+                        </b:Interaction.Behaviors>
+                        <b:ChangePropertyAction TargetName="carouselClipper" PropertyName="Margin" Value="0,0,0,-100"/>
+                    </b:DataTrigger>
+                    <b:DataTrigger Binding="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="True">
+                        <b:Interaction.Behaviors>
+                            <b:ConditionBehavior><b:ConditionalExpression>
+                                <b:ComparisonCondition LeftOperand="{Binding IsChecked, ElementName=HB_CustomViewMode}" Operator="Equal" RightOperand="False"/>
+                            </b:ConditionalExpression></b:ConditionBehavior>
+                        </b:Interaction.Behaviors>
+                        <b:ChangePropertyAction TargetName="carouselClipper" PropertyName="Margin" Value="0,0,0,-100"/>
+                    </b:DataTrigger>
+                    <b:EventTrigger EventName="Loaded">
+                                    <b:Interaction.Behaviors>
+                                        <b:ConditionBehavior>
+                                            <b:ConditionalExpression>
+                                                <b:ComparisonCondition LeftOperand="{Binding IsSelected, RelativeSource={RelativeSource AncestorType={x:Type ListBoxItem}}}" Operator="Equal" RightOperand="True"/>
+                                            </b:ConditionalExpression>
+                                        </b:ConditionBehavior>
+                                    </b:Interaction.Behaviors>
+                                    <ls:SetMoveFocusAction TargetName="DMSettings" FocusElement="{Binding ElementName=base}"/>
+                                </b:EventTrigger>
+                            </b:Interaction.Triggers>
+
+                            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" ClipToBounds="True" Margin="0,80,0,0">
+                                <Image x:Name="DifficultyImage" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                                    <Image.RenderTransform>
+                                        <ScaleTransform/>
+                                    </Image.RenderTransform>
+                                    <Image.Source>
+                                        <MultiBinding Converter="{StaticResource IconIdToSourceConverter}">
+                                            <Binding Source="Assets/DMSettings/"/>
+                                            <Binding Path="AssetName"/>
+                                            <Binding Source="_bg_d"/>
+                                        </MultiBinding>
+                                    </Image.Source>
+                                    <Image.Effect>
+                                        <ls:SaturationEffect Saturation="0"/>
+                                    </Image.Effect>
+                                </Image>
+
+                                <Image x:Name="DifficultyImageHover" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Top" Opacity="0" RenderTransformOrigin="0.5,0.5">
+                                    <Image.RenderTransform>
+                                        <ScaleTransform/>
+                                    </Image.RenderTransform>
+                                    <Image.Source>
+                                        <MultiBinding Converter="{StaticResource IconIdToSourceConverter}">
+                                            <Binding Source="Assets/DMSettings/"/>
+                                            <Binding Path="AssetName"/>
+                                            <Binding Source="_bg_h"/>
+                                        </MultiBinding>
+                                    </Image.Source>
+                                </Image>
+                            </Grid>
+
+                            <Image Source="{StaticResource BackgroundBanner}" Stretch="None" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                            <Image x:Name="SelectorImage" Source="{StaticResource Selector}" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Hidden"/>
+
+                            <TextBlock x:Name="Title" Text="{Binding Title.Str}" 
+                                           Foreground="{StaticResource LS_accent75TxtColor}" FontSize="{StaticResource ScaledTitleFontSize}" FontWeight="DemiBold"
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Top" 
+                                           Margin="0,1360,0,0"/>
+
+                            <TextBlock x:Name="Description" Text="{Binding Description.Str}" 
+                                           Foreground="{StaticResource LS_baseTxtColor}" FontSize="{StaticResource ScaledSmallishFontSize}" FontStyle="Italic" FontWeight="DemiBold" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" 
+                                           TextWrapping="Wrap" 
+                                           Margin="0,1464,0,0" 
+                                           MaxWidth="720"/>
+
+                            <Image x:Name="LeftArrow" Source="{StaticResource Arrow}" Stretch="None" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,796,0,0" RenderTransformOrigin="0.5, 0.5" Visibility="Hidden">
+                                <Image.RenderTransform>
+                                    <ScaleTransform ScaleX="-1"/>
+                                </Image.RenderTransform>
+                            </Image>
+                            <Image x:Name="RightArrow" Source="{StaticResource Arrow}" Stretch="None" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,796,0,0" Visibility="Hidden"/>
+                        </Grid>
+
+                        <DataTemplate.Triggers>
+
+                            <!-- Any difficulty animation (in selection) -->
+                            <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource Mode=TemplatedParent}}" Value="True">
+                                <Setter TargetName="SelectorImage" Property="Source" Value="pack://application:,,,/Core;component/Assets/DMSettings/selector_active.png"/>
+                                <Setter TargetName="SelectorImage" Property="Margin" Value="0,36,0,0"/>
+                                <Setter TargetName="SelectorImage" Property="Visibility" Value="Visible"/>
+                                <Setter TargetName="LeftArrow" Property="Visibility" Value="Visible"/>
+                                <Setter TargetName="RightArrow" Property="Visibility" Value="Visible"/>
+                                <Setter TargetName="Title" Property="Foreground" Value="{StaticResource LS_tint100}"/>
+                                <Setter TargetName="Description" Property="Foreground" Value="{StaticResource LS_accent75TxtColor}"/>
+
+                                <DataTrigger.EnterActions>
+                                    <BeginStoryboard x:Name="ImageHover" Storyboard="{StaticResource NewGameCard.ImageHover}"/>
+                                    <StopStoryboard BeginStoryboardName="ImageDefault"/>
+                                </DataTrigger.EnterActions>
+                                <DataTrigger.ExitActions>
+                                    <BeginStoryboard x:Name="ImageDefault" Storyboard="{StaticResource NewGameCard.ImageDefault}"/>
+                                    <StopStoryboard BeginStoryboardName="ImageHover"/>
+                                </DataTrigger.ExitActions>
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding Path=(ItemsControl.AlternationIndex), RelativeSource={RelativeSource AncestorType={x:Type ListBoxItem}}}" Value="0">
+                                <Setter TargetName="LeftArrow" Property="Visibility" Value="Hidden"/>
+                            </DataTrigger>
+
+                            
+                            <DataTrigger Value="True">
+                                <DataTrigger.Binding>
+                                    <MultiBinding Converter="{StaticResource LessThanOrEqualMultiConverter}">
+                                        <Binding Path="Items.Count" RelativeSource="{RelativeSource AncestorType={x:Type ListBox}}" Converter="{StaticResource AddConverter}" ConverterParameter="-1"/>
+                                        <Binding Path="(ItemsControl.AlternationIndex)" RelativeSource="{RelativeSource AncestorType={x:Type ListBoxItem}}"/>
+                                    </MultiBinding>
+                                </DataTrigger.Binding>
+                                <Setter TargetName="RightArrow" Property="Visibility" Value="Hidden"/>
+                            </DataTrigger>
+
+
+
+
+                            <DataTrigger Binding="{Binding Tag, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}" Value="NoArrow">
+                                <Setter TargetName="LeftArrow" Property="Visibility" Value="Hidden"/>
+                                <Setter TargetName="RightArrow" Property="Visibility" Value="Hidden"/>
+                                <Setter TargetName="base" Property="Focusable" Value="False"/>
+                                <Setter TargetName="base" Property="ls:MoveFocus.Focusable" Value="False"/>
+                                <DataTrigger.EnterActions>
+                                    <BeginStoryboard x:Name="ImageHoverCustom" Storyboard="{StaticResource NewGameCard.ImageHover}"/>
+                                </DataTrigger.EnterActions>
+                            </DataTrigger>
+
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="True"/>
+                                    <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Mode=TemplatedParent}}" Value="False"/>
+                                </MultiDataTrigger.Conditions>
+
+                                <MultiDataTrigger.EnterActions>
+                                    <BeginStoryboard x:Name="DifficultyFadeOut">
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                    <StopStoryboard BeginStoryboardName="DifficultyFadeIn"/>
+                                </MultiDataTrigger.EnterActions>
+
+                                <MultiDataTrigger.ExitActions>
+                                    <BeginStoryboard x:Name="DifficultyFadeIn">
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                    <StopStoryboard BeginStoryboardName="DifficultyFadeOut"/>
+                                </MultiDataTrigger.ExitActions>
+                            </MultiDataTrigger>
+
+                            <DataTrigger Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="True">
+                                <Setter TargetName="LeftArrow" Property="Visibility" Value="Hidden"/>
+                                <Setter TargetName="RightArrow" Property="Visibility" Value="Hidden"/>
+                                <Setter TargetName="base" Property="Focusable" Value="False"/>
+                                <Setter TargetName="base" Property="ls:MoveFocus.Focusable" Value="False"/>
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+                </ResourceDictionary>
+            </ControlTemplate.Resources>
+
+            <Grid x:Name="HB_SettingsRoot">
+            <Grid x:Name="HB_SettingsContent" Background="{StaticResource LS_PopUpBackgroundColor}">
+                
+
+                <ls:LSToggleButton x:Name="HB_CustomViewMode" Width="0" Height="0"
+                                   Visibility="Collapsed" IsHitTestVisible="False" Focusable="False">
+                        <ls:LSToggleButton.Style>
+                            <Style TargetType="ls:LSToggleButton">
+                                <Setter Property="IsChecked" Value="{Binding IsInCustomMode, Mode=OneWay}"/>
+                            </Style>
+                        </ls:LSToggleButton.Style>
+                    </ls:LSToggleButton>
+                <ls:LSToggleButton x:Name="HB_CustomOnlyView" Width="0" Height="0"
+                                   Visibility="Collapsed" IsHitTestVisible="False" Focusable="False">
+                        <ls:LSToggleButton.Style>
+                            <Style TargetType="ls:LSToggleButton">
+                                <Setter Property="IsChecked" Value="{Binding CanOnlyChangeCustomMode, Mode=OneWay}"/>
+                            </Style>
+                        </ls:LSToggleButton.Style>
+                    </ls:LSToggleButton>
+                <Control x:Name="HB_DifficultyBrowserHost" DataContext="{x:Null}"
+                         Width="0" Height="0" Visibility="Collapsed" IsHitTestVisible="False" Focusable="False">
+                    <Control.Style>
+                        <Style TargetType="Control">
+                            <Setter Property="Tag" Value="{x:Null}"/>
+                        </Style>
+                    </Control.Style>
+                </Control>
+                <!-- Native-XAML visibility gate. The underlying native cards are never
+                     painted in-game before the complete HomeBrew collection is attached. -->
+                <Control x:Name="HB_NativeDifficultyFallback" Tag="Waiting"
+                         Width="0" Height="0" Visibility="Collapsed" IsHitTestVisible="False" Focusable="False"/>
+                <Control x:Name="HB_SingleSaveHost" DataContext="{x:Null}"
+                         Width="0" Height="0" Visibility="Collapsed" IsHitTestVisible="False" Focusable="False"/>
+                <b:Interaction.Behaviors>
+                    <ls:RuleSetModifierValueBehavior x:Name="HB_SettingsIronmanModifier" Modifiers="{Binding Data.CurrentRuleSetModifiers}" ModifierName="IRONMAN_MODE"/>
+                </b:Interaction.Behaviors>
+                <b:Interaction.Triggers>
+                    <b:PropertyChangedTrigger Binding="{Binding SelectedItem, ElementName=PresetList}">
+                        <b:InvokeCommandAction Command="{Binding DataContext.HB_SelectSingleSave, ElementName=HB_SingleSaveHost}"
+                                               CommandParameter="{Binding SelectedItem, ElementName=PresetList}"/>
+                        <b:InvokeCommandAction Command="{Binding DataContext.HB_SelectionChanged, ElementName=HB_DifficultyBrowserHost}"
+                                               CommandParameter="{Binding SelectedItem, ElementName=PresetList}"/>
+                    </b:PropertyChangedTrigger>
+                    <b:EventTrigger EventName="Loaded">
+                        <ls:LSPlaySound Sound="UI_HUD_NewGameSettings_Open"/>
+                        <ls:SetMoveFocusAction TargetName="DMSettings" FocusElement="{Binding ElementName=PresetList}"/>
+                    </b:EventTrigger>
+
+                    <b:DataTrigger Binding="{Binding IsChecked, ElementName=HB_CustomOnlyView}" Value="True">
+                        <b:ChangePropertyAction TargetName="PresetList" PropertyName="SelectedIndex" Value="{Binding Items.Count, ElementName=PresetList, Converter={StaticResource AddConverter}, ConverterParameter=-1}"/>
+                        <b:ChangePropertyAction TargetName="carouselClipper" PropertyName="Margin" Value="{StaticResource WidescreenMarginCustom}"/>
+                        <b:ChangePropertyAction TargetName="CustomSettingsHolder" PropertyName="Opacity" Value="1"/>
+                    </b:DataTrigger>
+
+                    <b:DataTrigger Binding="{Binding IsChecked, ElementName=HB_CustomOnlyView}" Value="True">
+                        <b:Interaction.Behaviors>
+                            <b:ConditionBehavior>
+                                <b:ConditionalExpression>
+                                    <b:ComparisonCondition LeftOperand="{Binding Data.AspectRatio}" Operator="GreaterThanOrEqual" RightOperand="0.625"/>
+                                </b:ConditionalExpression>
+                            </b:ConditionBehavior>
+                        </b:Interaction.Behaviors>
+                        <b:ChangePropertyAction TargetName="carouselClipper" PropertyName="Margin" Value="{StaticResource LetterboxMarginCustom}"/>
+                    </b:DataTrigger>
+
+
+                    <b:DataTrigger Binding="{Binding IsChecked, ElementName=HB_CustomOnlyView}" Value="True">
+                        <b:Interaction.Behaviors>
+                            <b:ConditionBehavior>
+                                <b:ConditionalExpression>
+                                    <b:ComparisonCondition LeftOperand="{Binding Data.AspectRatio}" Operator="GreaterThanOrEqual" RightOperand="0.75"/>
+                                </b:ConditionalExpression>
+                            </b:ConditionBehavior>
+                        </b:Interaction.Behaviors>
+                        <b:ChangePropertyAction TargetName="carouselClipper" PropertyName="Margin" Value="{StaticResource FullscreenMarginCustom}"/>
+                    </b:DataTrigger>
+
+                    <b:DataTrigger Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="False">
+                        <ls:SetMoveFocusAction TargetName="DMSettings" FocusElement="{Binding ElementName=PresetList}"/>
+                    </b:DataTrigger>
+                </b:Interaction.Triggers>
+
+                <ls:LSNineSliceImage x:Name="CurrentGameBackground" ImageSource="{StaticResource BackgroundFade}" Slices="0" IconWidth="3740" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"/>
+                <Image Source="{StaticResource FadeHeaderImage}" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None"/>
+                <Image Source="{StaticResource FadeFooterImage}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Stretch="None"/>
+
+                <TextBlock x:Name="TitleText" Text="{Binding Source='h57a5735eg7213g4c3cg914cgbd1b5af276cc', Converter={StaticResource TranslatedStringConverter}}" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="{StaticResource ScaledHugeFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="0,40,0,0"/>
+
+                <Image Source="{StaticResource TitleBarImage}" VerticalAlignment="Top" HorizontalAlignment="Center" Stretch="None" Margin="0,148,0,0"/>
+
+                <Grid x:Name="carouselClipper" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,-100" Width="3840">
+                    <Grid.OpacityMask>
+                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Offset="0" Color="Transparent"/>
+                                <GradientStop Offset="0.05" Color="White"/>
+                                <GradientStop Offset="0.95" Color="White"/>
+                                <GradientStop Offset="1" Color="Transparent"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Grid.OpacityMask>
+                    <ListBox x:Name="PresetList" Margin="0,220,0,0" ItemTemplate="{StaticResource RulesetDataTemplate}" Width="8000" >
+                        <ListBox.Style>
+                            <Style TargetType="ListBox" BasedOn="{StaticResource {x:Type ListBox}}">
+                                <Setter Property="ItemsSource" Value="{Binding Presets}"/>
+                                <Setter Property="SelectedIndex" Value="{Binding PresetSelectedIndex, Mode=TwoWay}"/>
+                                <Setter Property="AlternationCount" Value="{Binding Items.Count, ElementName=PresetList}"/>
+                            </Style>
+                        </ListBox.Style>
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <ItemsPanelTemplate.Resources>
+                                    <System:Double x:Key="IndexSizeModifier">-996</System:Double>
+                                    <System:Double x:Key="LeftMarginSize">1420</System:Double>
+                                </ItemsPanelTemplate.Resources>
+                                <!--I hate doing this but I don't see any other sane way. I don't want to play a sound on the first FocusChanged event, executed on screen loading, so I set the Tag and remove it on the first FocusChanged event-->
+                                <StackPanel x:Name="itemsPanel" IsItemsHost="True" Orientation="Horizontal" Background="Transparent" Tag="JustLoaded" >
+                                    <StackPanel.RenderTransform>
+                                        <TranslateTransform x:Name="itemsPanelTransform" X="0" Y="0"/>
+                                    </StackPanel.RenderTransform>
+
+                                    <b:Interaction.Triggers>
+
+                                        <!-- Set initial sideways offset to animate from -->
+                                        <b:DataTrigger Binding="{Binding Path=IsInitialized}" Value="True">
+                                            <b:Interaction.Behaviors>
+                                                <b:ConditionBehavior>
+                                                    <b:ConditionalExpression>
+                                                        <b:ComparisonCondition LeftOperand="{Binding IsChecked, ElementName=HB_CustomOnlyView}" Operator="Equal" RightOperand="False"/>
+                                                    </b:ConditionalExpression>
+                                                </b:ConditionBehavior>
+                                            </b:Interaction.Behaviors>
+
+                                            <b:ChangePropertyAction TargetName="itemsPanelTransform" PropertyName="X">
+                                                <b:ChangePropertyAction.Value>
+                                                    <MultiBinding Converter="{StaticResource AddMultipleConverter}">
+                                                        <Binding ElementName="PresetList" Path="SelectedIndex" Converter="{StaticResource MultiplierConverter}" ConverterParameter="{StaticResource IndexSizeModifier}"/>
+                                                        <Binding Source="{StaticResource LeftMarginSize}"/>
+                                                    </MultiBinding>
+                                                </b:ChangePropertyAction.Value>
+                                            </b:ChangePropertyAction>
+
+                                            <b:ControlStoryboardAction ControlStoryboardOption="Play">
+                                                <b:ControlStoryboardAction.Storyboard>
+                                                    <Storyboard TargetName="itemsPanelTransform" TargetProperty="X">
+                                                        <DoubleAnimation Duration="0:0:0">
+                                                            <DoubleAnimation.To>
+                                                                <MultiBinding Converter="{StaticResource AddMultipleConverter}">
+                                                                    <Binding ElementName="PresetList" Path="SelectedIndex" Converter="{StaticResource MultiplierConverter}" ConverterParameter="{StaticResource IndexSizeModifier}"/>
+                                                                    <Binding Source="{StaticResource LeftMarginSize}"/>
+                                                                </MultiBinding>
+                                                            </DoubleAnimation.To>
+                                                        </DoubleAnimation>
+                                                    </Storyboard>
+                                                </b:ControlStoryboardAction.Storyboard>
+                                            </b:ControlStoryboardAction>
+                                        </b:DataTrigger>
+
+                                        <!-- Animate sideways to selected item -->
+                                        <b:PropertyChangedTrigger Binding="{Binding Path=SelectedValue, ElementName=PresetList}">
+                                            <b:ChangePropertyAction TargetName="itemsPanelTransform" PropertyName="X">
+                                                <b:ChangePropertyAction.Value>
+                                                    <MultiBinding Converter="{StaticResource AddMultipleConverter}">
+                                                        <Binding ElementName="PresetList" Path="SelectedIndex" Converter="{StaticResource MultiplierConverter}" ConverterParameter="{StaticResource IndexSizeModifier}"/>
+                                                        <Binding Source="{StaticResource LeftMarginSize}"/>
+                                                    </MultiBinding>
+                                                </b:ChangePropertyAction.Value>
+                                            </b:ChangePropertyAction>
+                                        </b:PropertyChangedTrigger>
+
+                                        <b:PropertyChangedTrigger Binding="{Binding Path=SelectedValue, ElementName=PresetList}">
+                                            <b:Interaction.Behaviors>
+                                                <b:ConditionBehavior>
+                                                    <b:ConditionalExpression>
+                                                        <b:ComparisonCondition LeftOperand="{Binding IsChecked, ElementName=HB_CustomOnlyView}" Operator="Equal" RightOperand="False"/>
+                                                    </b:ConditionalExpression>
+                                                </b:ConditionBehavior>
+                                            </b:Interaction.Behaviors>
+
+                                            <b:ControlStoryboardAction ControlStoryboardOption="Play">
+                                                <b:ControlStoryboardAction.Storyboard>
+                                                    <Storyboard TargetName="itemsPanelTransform" TargetProperty="X">
+                                                        <DoubleAnimation Duration="0:0:0.2" AccelerationRatio="0.25" DecelerationRatio="0.25">
+                                                            <DoubleAnimation.To>
+                                                                <MultiBinding Converter="{StaticResource AddMultipleConverter}">
+                                                                    <Binding ElementName="PresetList" Path="SelectedIndex" Converter="{StaticResource MultiplierConverter}" ConverterParameter="{StaticResource IndexSizeModifier}"/>
+                                                                    <Binding Source="{StaticResource LeftMarginSize}"/>
+                                                                </MultiBinding>
+                                                            </DoubleAnimation.To>
+                                                        </DoubleAnimation>
+                                                    </Storyboard>
+                                                </b:ControlStoryboardAction.Storyboard>
+                                            </b:ControlStoryboardAction>
+                                        </b:PropertyChangedTrigger>
+
+                                        <b:EventTrigger EventName="FocusChanged">
+                                            <b:Interaction.Behaviors>
+                                                <b:ConditionBehavior>
+                                                    <b:ConditionalExpression>
+                                                        <b:ComparisonCondition LeftOperand="{Binding Tag, ElementName=itemsPanel}" Operator="NotEqual" RightOperand="JustLoaded"/>
+                                                    </b:ConditionalExpression>
+                                                </b:ConditionBehavior>
+                                            </b:Interaction.Behaviors>
+                                            <ls:LSPlaySound Sound="{Binding SelectedItem.AssetName, ElementName=PresetList, StringFormat='UI_HUD_MainMenu_{0}_Selected'}"/>
+                                        </b:EventTrigger>
+                                        <b:EventTrigger EventName="FocusChanged">
+                                            <b:Interaction.Behaviors>
+                                                <b:ConditionBehavior>
+                                                    <b:ConditionalExpression>
+                                                        <b:ComparisonCondition LeftOperand="{Binding Tag, ElementName=itemsPanel}" Operator="Equal" RightOperand="JustLoaded"/>
+                                                    </b:ConditionalExpression>
+                                                </b:ConditionBehavior>
+                                            </b:Interaction.Behaviors>
+                                            <b:ChangePropertyAction TargetName="itemsPanel" PropertyName="Tag" Value="Done"/>
+                                        </b:EventTrigger>
+
+                                    </b:Interaction.Triggers>
+
+                                </StackPanel>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                    </ListBox>
+                </Grid>
+
+                <Control x:Name="CustomSettingsHolder" VerticalAlignment="Center" Opacity="0" ls:MoveFocus.IsMoveFocusScope="True"/>
+
+                <TextBlock x:Name="ChangeDifficultyNotice" Text="{Binding Source='h63e32c4agf6d6g42dagb8f6g6ae105cb4f52', Converter={StaticResource TranslatedStringConverter}}" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,160" Visibility="Collapsed"/>
+
+
+                <StackPanel x:Name="ButtonPrompts" Style="{StaticResource ButtonHint.Container.Center}">
+                    <ls:LSButton x:Name="HB_MCMDifficultyButton"
+                                 Content="Adjust Difficulty" Tag="Adjust Difficulty"
+                                 BoundEvent="UIMessageBoxX"
+                                 Command="{Binding DataContext.HB_OpenMCM, ElementName=HB_DifficultyBrowserHost}"
+                                 IsEnabled="{Binding DataContext.HB_AllowMCM, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}"
+                                     Visibility="Collapsed"
+                                 VerticalAlignment="Center" Margin="10,0,10,0" >
+                            <b:Interaction.Triggers>
+                                <b:EventTrigger EventName="LSButtonPressed">
+                                    <b:InvokeCommandAction Command="{Binding DataContext.HB_OpenMCM, ElementName=HB_DifficultyBrowserHost}"/>
+                                </b:EventTrigger>
+                            </b:Interaction.Triggers>
+                        </ls:LSButton>
+                    <ls:LSButton x:Name="HB_DifficultyDetailsButton"
+                                 Content="Difficulty Details" Tag="Difficulty Details"
+                                 BoundEvent="UIMessageBoxY"
+                                 Command="{Binding DataContext.HB_OpenPresetDetails, ElementName=HB_DifficultyBrowserHost}"
+                                 Visibility="{Binding DataContext.HB_ShowPresetDetails, ElementName=HB_DifficultyBrowserHost, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                                 VerticalAlignment="Center" Margin="10,0,10,0">
+                        <b:Interaction.Triggers>
+                            <b:EventTrigger EventName="LSButtonPressed">
+                                <b:InvokeCommandAction Command="{Binding DataContext.HB_OpenPresetDetails, ElementName=HB_DifficultyBrowserHost}"/>
+                            </b:EventTrigger>
+                        </b:Interaction.Triggers>
+                    </ls:LSButton>
+                    <ls:LSButton x:Name="HB_MCMCustomSettingsButton"
+                                 Content="Custom Settings" Tag="Custom Settings"
+                                 BoundEvent="UIMessageBoxY"
+                                 Command="{Binding DataContext.HB_OpenCustomMCM, ElementName=HB_DifficultyBrowserHost}"
+                                 Visibility="{Binding DataContext.HB_ShowCustomMCM, ElementName=HB_DifficultyBrowserHost, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                                 VerticalAlignment="Center" Margin="10,0,10,0">
+                            <b:Interaction.Triggers>
+                                <b:EventTrigger EventName="LSButtonPressed">
+                                    <b:InvokeCommandAction Command="{Binding DataContext.HB_OpenCustomMCM, ElementName=HB_DifficultyBrowserHost}"/>
+                                </b:EventTrigger>
+                            </b:Interaction.Triggers>
+                        </ls:LSButton>
+                    <ls:LSButton x:Name="CancelButton" 
+                                 BoundEvent="UICancel" 
+                                 Command="{Binding CustomEvent, Mode=OneTime}" 
+                                 CommandParameter="CloseWidget" 
+                                 Tag="{Binding Source='hfe928c0dgb014g4eb2g8c52g6ed43b026e20', Converter={StaticResource TranslatedStringConverter}}" 
+                                 ContentTemplate="{StaticResource ControllerButtonHint}" 
+                                 Content="{Binding CurrentPlayer.UIData.InputEvents, ConverterParameter=UICancel, Converter={StaticResource FindInputEventConverter}}" Margin="10,0,10,0"/>
+                    
+                    <ls:LSButton x:Name="StartGameButton" 
+                                 BoundEvent="UIAccept" 
+                                 ContentTemplate="{StaticResource ControllerButtonHint}" 
+                                 Command="{Binding StartNewGame, Mode=OneTime}" 
+                                 CommandParameter="{Binding SelectedItem, ElementName=PresetList}" 
+                                 Content="{Binding CurrentPlayer.UIData.InputEvents, ConverterParameter=UIAccept, Converter={StaticResource FindInputEventConverter}}" 
+                                 Tag="{Binding Source='hff3fbf0fgf6c5g427fga4dfgbb238c01cb4c', Converter={StaticResource TranslatedStringConverter}}" 
+                                 OverwriteClickSound="UI_HUD_NewGameSettings_StartGame_Click" Margin="10,0,10,0">
+                            <b:Interaction.Triggers>
+                                <b:EventTrigger EventName="LSButtonPressed">
+                                    <b:InvokeCommandAction Command="{Binding DataContext.HB_CaptureNewGame, ElementName=HB_DifficultyBrowserHost}"/>
+                                    <b:InvokeCommandAction Command="{Binding DataContext.HB_CaptureCommittedDifficulty, ElementName=HB_DifficultyBrowserHost}"/>
+                                </b:EventTrigger>
+                            </b:Interaction.Triggers>
+                        </ls:LSButton>
+
+                    <ls:LSButton x:Name="RestoreToDefaultButton"
+                                 Style="{StaticResource ControllerHoldButtonStyle}"
+                                 Content="{Binding CurrentPlayer.UIData.InputEvents, Converter={StaticResource FindInputEventConverter}, ConverterParameter='UIMessageBoxX'}"
+                                 Command="{Binding DataContext.ResetToDefaultCommand, ElementName=DMSettings}"
+                                 Tag="{Binding Source='h0dcd297egde63g4e44g820dg07c21a2346d3', Converter={StaticResource TranslatedStringConverter}}" 
+                                 Visibility="Collapsed" Margin="10,0,10,0"/>
+
+                    <ls:LSButton x:Name="MoreInfoButton" 
+                                 BoundEvent="UIRefresh" 
+                                 Command="{x:Null}"
+                                 CommandParameter="OpenMoreInfo"
+                                 Tag="{Binding Source='h46c00fa7gbb38g480fg9a0fgb4232bec8658', Converter={StaticResource TranslatedStringConverter}}" 
+                                 ContentTemplate="{StaticResource ControllerButtonHint}" 
+                                 Content="{Binding CurrentPlayer.UIData.InputEvents, ConverterParameter=UIRefresh, Converter={StaticResource FindInputEventConverter}}" 
+                                 Visibility="Collapsed" Margin="10,0,10,0"/>
+
+                    <ls:LSButton x:Name="HB_HonouredMythCustomInfoButton"
+                                 BoundEvent="UIMessageBoxX"
+                                 Command="{Binding CustomEvent, Mode=OneTime}"
+                                 CommandParameter="HB_OpenHonouredMythCustomInfo"
+                                 Tag="{Binding Source='h6f72b6bdg1e53g4d1cgad09gd69298171330', Converter={StaticResource TranslatedStringConverter}}" ContentTemplate="{StaticResource ControllerButtonHint}"
+                                 Content="{Binding CurrentPlayer.UIData.InputEvents, ConverterParameter=UIMessageBoxX, Converter={StaticResource FindInputEventConverter}}"
+                                 Visibility="Collapsed" Margin="10,0,10,0"/>
+
+                    <!-- Dedicated Deific controller hints: direct click parameters
+                         avoid shared-button local-value / trigger precedence conflicts. -->
+                    <ls:LSButton x:Name="HB_DeificHallInfoButton"
+                                 BoundEvent="UIRefresh"
+                                 Command="{Binding CustomEvent}"
+                                 CommandParameter="HB_OpenDeificHallInfo"
+                                 Tag="{Binding Source='ha7b56d19gf9e2g5af1gad0egf886932db2fc', Converter={StaticResource TranslatedStringConverter}}"
+                                 ContentTemplate="{StaticResource ControllerButtonHint}"
+                                 Content="{Binding CurrentPlayer.UIData.InputEvents, ConverterParameter=UIRefresh, Converter={StaticResource FindInputEventConverter}}"
+                                 Visibility="Collapsed" Margin="10,0,10,0"/>
+
+                    <ls:LSButton x:Name="HB_DeificCustomInfoButton"
+                                 BoundEvent="UIMessageBoxX"
+                                 Command="{Binding CustomEvent}"
+                                 CommandParameter="HB_OpenDeificCustomInfo"
+                                 Tag="{Binding Source='h1f7c76e4g9432g52d3gb970g48a1bcb00a9e', Converter={StaticResource TranslatedStringConverter}}"
+                                 ContentTemplate="{StaticResource ControllerButtonHint}"
+                                 Content="{Binding CurrentPlayer.UIData.InputEvents, ConverterParameter=UIMessageBoxX, Converter={StaticResource FindInputEventConverter}}"
+                                 Visibility="Collapsed" Margin="10,0,10,0"/>
+
+                    <StackPanel x:Name="HB_SingleSaveFooter" Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,10,0"
+                                Visibility="{Binding DataContext.IsMainMenu, ElementName=DMSettings, Converter={StaticResource BoolToVisibleConverter}}">
+                        <ls:LSTickBox x:Name="HB_SingleSaveToggle" Style="{StaticResource HB_SingleSaveTickBoxStyle}"
+                                      IsChecked="{Binding HB_Enabled, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                      IsEnabled="{Binding HB_Ready, FallbackValue=False}"
+                                      ActionNextEvent="UIRight" ActionPrevEvent="UILeft"
+                                      Focusable="True" ls:MoveFocus.Focusable="True"
+                                      SoundID="UI_HUD_Options_ToggleButton" VerticalAlignment="Center"/>
+                        <ls:LSButton x:Name="HB_SingleSaveControllerButton" BoundEvent="UIDelete"
+                                     Command="{Binding DataContext.HB_ToggleSingleSave, ElementName=HB_SingleSaveHost}" CommandParameter="{Binding SelectedItem, ElementName=PresetList}"
+                                     IsEnabled="{Binding DataContext.HB_Ready, ElementName=HB_SingleSaveToggle, FallbackValue=False}"
+                                     Tag="Honour Mode" ContentTemplate="{StaticResource ControllerButtonHint}"
+                                     Content="{Binding CurrentPlayer.UIData.InputEvents, Converter={StaticResource FindInputEventConverter}, ConverterParameter='UIDelete'}"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <TextBlock x:Name="HB_DifficultyUnavailableNotice" Visibility="Collapsed"
+                           Text="{Binding SelectedItem.HB_UnavailableText, ElementName=PresetList}"
+                           HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,260"
+                           Foreground="{StaticResource LS_accent100TxtColor}" FontSize="{StaticResource ScaledDefaultFontSize}"
+                           TextWrapping="Wrap" MaxWidth="1800" IsHitTestVisible="False"/>
+
+                <TextBlock x:Name="HB_CustomDifficultyNotice" Visibility="Collapsed"
+                           Text="Changing to a Custom difficulty is permanent. You cannot return to a preset difficulty once confirmed."
+                           HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,260"
+                           Foreground="{StaticResource LS_accent100TxtColor}" FontSize="{StaticResource ScaledDefaultFontSize}"
+                           TextAlignment="Center" TextWrapping="Wrap" MaxWidth="1800" IsHitTestVisible="False"/>
+
+                <TextBlock x:Name="HB_SingleSaveDifficultyNotice" Visibility="Collapsed"
+                           Text="Difficulty is locked while Honour Mode is enabled."
+                           HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,260"
+                           Foreground="{StaticResource LS_accent100TxtColor}" FontSize="{StaticResource ScaledDefaultFontSize}"
+                           TextWrapping="Wrap" MaxWidth="1800" IsHitTestVisible="False"/>
+
+                <!-- Player slots -->
+                <Control x:Name="PlayerSlots" Style="{StaticResource MinimalPlayerSlotsMenuStyle}"/>
+                <TextBlock Text="{Binding DataContext.HB_SingleSaveStatus, ElementName=HB_SingleSaveHost}" IsHitTestVisible="False" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                           Margin="0,0,0,260" Foreground="{StaticResource LS_accent100TxtColor}"
+                           FontSize="{StaticResource ScaledDefaultFontSize}" TextWrapping="Wrap" MaxWidth="1800"/>
+
+            </Grid>
+
+                <!-- HomeBrew MCM preset editor: game-owned difficulty window stays open
+                     while this modal is shown; only Confirm sends a server request. -->
+                <Grid x:Name="HB_MCMPresetOverlay"
+                      Visibility="{Binding DataContext.HB_MCMOverlayOpen, ElementName=HB_DifficultyBrowserHost, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                      Background="{StaticResource LS_PanelBackground}"
+                      ls:MoveFocus.IsMoveFocusScope="True"
+                      KeyboardNavigation.DirectionalNavigation="Contained"
+                      KeyboardNavigation.TabNavigation="Cycle">
+                    <b:Interaction.Triggers>
+                        <b:DataTrigger Binding="{Binding DataContext.HB_MCMOverlayOpen, ElementName=HB_DifficultyBrowserHost}" Value="True">
+                            <ls:SetMoveFocusAction TargetName="HB_MCMPresetList"/>
+                        </b:DataTrigger>
+                    </b:Interaction.Triggers>
+                    <Grid.Resources>
+                        <BitmapImage x:Key="HB_MCMPresetDialogImage" UriSource="pack://application:,,,/Core;component/Assets/Messagebox/dialogBox.png"/>
+                    </Grid.Resources>
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="1220">
+                        <ls:LSNineSliceImage
+                            ImageSource="{StaticResource HB_MCMPresetDialogImage}"
+                            Slices="0,196,0,224" Width="1220" Height="1570"/>
+                        <!-- Keep the heading above the frame ornament without moving the
+                             centered preset choices or their Confirm/Cancel buttons. -->
+                        <TextBlock Text="Difficulty Preset" HorizontalAlignment="Center"
+                                   VerticalAlignment="Top" Margin="0,25,0,0"
+                                   FontSize="{StaticResource ScaledMassiveFontSize}"
+                                   Foreground="{StaticResource LS_tint100}"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"
+                                    Width="1000" Margin="0,110,0,0">
+                            <TextBlock Foreground="{StaticResource LS_accent100TxtColor}"
+                                       FontSize="{StaticResource ScaledIntermediateFontSize}"
+                                       TextWrapping="Wrap" TextAlignment="Center" Margin="10,0,10,26"><Run Text="Select a difficulty preset."/><LineBreak/><Run Text="Presets fine tune enemy HP, stats, and resources."/></TextBlock>
+                            <ListBox x:Name="HB_MCMPresetList"
+                                     ItemsSource="{Binding DataContext.HB_MCMPresets, ElementName=HB_DifficultyBrowserHost}"
+                                     SelectedIndex="{Binding DataContext.HB_MCMSelectedIndex, ElementName=HB_DifficultyBrowserHost, Mode=TwoWay}"
+                                     Width="970" Height="1010" HorizontalAlignment="Center"
+                                     ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                     BorderThickness="0" Background="Transparent">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Name}"
+                                                   FontSize="{StaticResource ScaledDefaultFontSize}"
+                                                   Foreground="{StaticResource LS_accent100TxtColor}"
+                                                   Margin="30,10"/>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                                <ListBox.ItemContainerStyle>
+                                    <Style TargetType="ListBoxItem">
+                                        <Setter Property="Focusable" Value="True"/>
+                                        <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+                                        <Setter Property="Padding" Value="20,7"/>
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="ListBoxItem">
+                                                    <Border x:Name="entry" Padding="{TemplateBinding Padding}" Margin="62,0,60,0"
+                                                            BorderThickness="1" BorderBrush="Transparent" Background="Transparent">
+                                                        <ContentPresenter/>
+                                                    </Border>
+                                                    <ControlTemplate.Triggers>
+                                                        <Trigger Property="IsSelected" Value="True">
+                                                            <Setter TargetName="entry" Property="Background" Value="#804A3827"/>
+                                                            <Setter TargetName="entry" Property="BorderBrush" Value="{StaticResource LS_accent100TxtColor}"/>
+                                                        </Trigger>
+                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                            <Setter TargetName="entry" Property="Background" Value="#504A3827"/>
+                                                        </Trigger>
+                                                    </ControlTemplate.Triggers>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </ListBox.ItemContainerStyle>
+                            </ListBox>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,25,0,0">
+                                <ls:LSButton Content="Cancel" Style="{StaticResource BigBrownButtonStyle}"
+                                             BoundEvent="UICancel"
+                                             Command="{Binding DataContext.HB_MCMCancel, ElementName=HB_DifficultyBrowserHost}"
+                                             SoundID="UI_HUD_Options_Close" Margin="0,0,12,0"/>
+                                <ls:LSButton Content="Confirm" Style="{StaticResource BigBlueButtonStyle}"
+                                             BoundEvent="UIAccept"
+                                             Command="{Binding DataContext.HB_MCMConfirm, ElementName=HB_DifficultyBrowserHost}"
+                                             SoundID="UI_Shared_Accept" Margin="12,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+
+                <!-- The two-pane custom editor uses a full-width value control below the lists.
+                     Its bounded widths avoid oversized native controls overflowing the layout. -->
+                <Grid x:Name="HB_CustomSettingsOverlay"
+                      Visibility="{Binding DataContext.HB_CustomOverlayOpen, ElementName=HB_DifficultyBrowserHost, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                      Background="{StaticResource LS_PanelBackground}"
+                      ls:MoveFocus.IsMoveFocusScope="True"
+                      KeyboardNavigation.DirectionalNavigation="Contained"
+                      KeyboardNavigation.TabNavigation="Cycle">
+                    <b:Interaction.Triggers>
+                        <b:DataTrigger Binding="{Binding DataContext.HB_CustomOverlayOpen, ElementName=HB_DifficultyBrowserHost}" Value="True">
+                            <ls:SetMoveFocusAction TargetName="HB_CustomCategoriesList"/>
+                        </b:DataTrigger>
+                    </b:Interaction.Triggers>
+                    <Grid.Resources>
+                        <BitmapImage x:Key="HB_CustomDialogImage" UriSource="pack://application:,,,/Core;component/Assets/Messagebox/dialogBox.png"/>
+                    </Grid.Resources>
+                    <Grid Width="2190" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <ls:LSNineSliceImage ImageSource="{StaticResource HB_CustomDialogImage}"
+                            Slices="0,196,0,224" Width="2190" Height="1700"/>
+                        <TextBlock Text="{Binding DataContext.HB_CustomDialogTitle, ElementName=HB_DifficultyBrowserHost}" FontSize="{StaticResource ScaledMassiveFontSize}"
+                                   Foreground="{StaticResource LS_tint100}" HorizontalAlignment="Center"
+                                   VerticalAlignment="Top" Margin="0,-36,0,0"/>
+                        <StackPanel Width="1960" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,92,0,40">
+                            <TextBlock Text="{Binding DataContext.HB_CustomDialogHelp, ElementName=HB_DifficultyBrowserHost}"
+                                       FontSize="{StaticResource ScaledDefaultFontSize}"
+                                       Foreground="{StaticResource LS_accent100TxtColor}" TextAlignment="Center" Margin="0,0,0,24"/>
+                            <Grid Height="790">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="495"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0" Margin="15,0,40,0">
+                                    <TextBlock Text="Category" Foreground="{StaticResource LS_tint100}"
+                                               FontSize="{StaticResource ScaledMediumFontSize}" Margin="10,0,0,12"/>
+                                    <ListBox x:Name="HB_CustomCategoriesList" Height="720"
+                                             ItemsSource="{Binding DataContext.HB_CustomCategories, ElementName=HB_DifficultyBrowserHost}"
+                                             SelectedIndex="{Binding DataContext.HB_CustomCategoryIndex, ElementName=HB_DifficultyBrowserHost, Mode=TwoWay}"
+                                             BorderThickness="0" Background="Transparent" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="Focusable" Value="True"/>
+                                                <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+                                                <Setter Property="Background" Value="Transparent"/>
+                                                <Setter Property="Padding" Value="5,9"/>
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="ListBoxItem">
+                                                            <Border x:Name="HB_SelectableRow" Background="{TemplateBinding Background}"
+                                                                    BorderThickness="1" BorderBrush="Transparent" Padding="{TemplateBinding Padding}" Margin="0,0,22,0">
+                                                                <ContentPresenter/>
+                                                            </Border>
+                                                            <ControlTemplate.Triggers>
+                                                                <Trigger Property="IsSelected" Value="True">
+                                                                    <Setter TargetName="HB_SelectableRow" Property="Background" Value="#804A3827"/>
+                                                                    <Setter TargetName="HB_SelectableRow" Property="BorderBrush" Value="{StaticResource LS_accent100TxtColor}"/>
+                                                                </Trigger>
+                                                                <Trigger Property="IsMouseOver" Value="True">
+                                                                    <Setter TargetName="HB_SelectableRow" Property="Background" Value="#504A3827"/>
+                                                                </Trigger>
+                                                            </ControlTemplate.Triggers>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
+                                        <ListBox.ItemTemplate><DataTemplate><TextBlock Text="{Binding Name}"
+                                            Foreground="{StaticResource LS_accent100TxtColor}"
+                                            FontSize="{StaticResource ScaledDefaultFontSize}" TextWrapping="Wrap" Margin="14,20"/></DataTemplate></ListBox.ItemTemplate>
+                                        <b:Interaction.Triggers><b:EventTrigger EventName="SelectionChanged">
+                                            <b:InvokeCommandAction Command="{Binding DataContext.HB_CustomCategoryChanged, ElementName=HB_DifficultyBrowserHost}"/>
+                                        </b:EventTrigger></b:Interaction.Triggers>
+                                    </ListBox>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1" Margin="20,0,20,0">
+                                    <TextBlock Text="Settings" Foreground="{StaticResource LS_tint100}"
+                                               FontSize="{StaticResource ScaledMediumFontSize}" Margin="10,0,0,12"/>
+                                    <ListBox x:Name="HB_CustomSettingsList" Height="720"
+                                             ItemsSource="{Binding DataContext.HB_CustomSettings, ElementName=HB_DifficultyBrowserHost}"
+                                             SelectedIndex="{Binding DataContext.HB_CustomSettingIndex, ElementName=HB_DifficultyBrowserHost, Mode=TwoWay}"
+                                             BorderThickness="0" Background="Transparent" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="Focusable" Value="True"/>
+                                                <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+                                                <Setter Property="Background" Value="Transparent"/>
+                                                <Setter Property="Padding" Value="5,9"/>
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="ListBoxItem">
+                                                            <Border x:Name="HB_SelectableRow" Background="{TemplateBinding Background}"
+                                                                    BorderThickness="1" BorderBrush="Transparent" Padding="{TemplateBinding Padding}" Margin="0,0,22,0">
+                                                                <ContentPresenter/>
+                                                            </Border>
+                                                            <ControlTemplate.Triggers>
+                                                                <Trigger Property="IsSelected" Value="True">
+                                                                    <Setter TargetName="HB_SelectableRow" Property="Background" Value="#804A3827"/>
+                                                                    <Setter TargetName="HB_SelectableRow" Property="BorderBrush" Value="{StaticResource LS_accent100TxtColor}"/>
+                                                                </Trigger>
+                                                                <Trigger Property="IsMouseOver" Value="True">
+                                                                    <Setter TargetName="HB_SelectableRow" Property="Background" Value="#504A3827"/>
+                                                                </Trigger>
+                                                            </ControlTemplate.Triggers>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Disabled}" Value="True">
+                                                        <Setter Property="IsEnabled" Value="False"/>
+                                                        <Setter Property="Opacity" Value="0.42"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
+                                        <ListBox.ItemTemplate><DataTemplate>
+                                            <Grid Margin="14,13,18,13">
+                                                <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="310"/></Grid.ColumnDefinitions>
+                                                <TextBlock Grid.Column="0" Text="{Binding Name}" TextWrapping="Wrap"
+                                                    FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_accent100TxtColor}"/>
+                                                <TextBlock Grid.Column="1" Text="{Binding Display}" TextAlignment="Right"
+                                                    FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_tint100}" TextWrapping="Wrap"/>
+                                            </Grid>
+                                        </DataTemplate></ListBox.ItemTemplate>
+                                        <b:Interaction.Triggers><b:EventTrigger EventName="SelectionChanged">
+                                            <b:InvokeCommandAction Command="{Binding DataContext.HB_CustomSettingChanged, ElementName=HB_DifficultyBrowserHost}"/>
+                                        </b:EventTrigger></b:Interaction.Triggers>
+                                    </ListBox>
+                                </StackPanel>
+                            </Grid>
+                            <StackPanel Height="430" Margin="22,26,22,0">
+                                <TextBlock Text="{Binding DataContext.HB_CustomSelectedTitle, ElementName=HB_DifficultyBrowserHost}"
+                                           Foreground="{StaticResource LS_tint100}" FontSize="{StaticResource ScaledMediumFontSize}"
+                                           TextAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="0,0,0,12"/>
+                                <TextBlock Text="{Binding DataContext.HB_CustomSelectedDescription, ElementName=HB_DifficultyBrowserHost}"
+                                           Foreground="{StaticResource LS_accent100TxtColor}" TextAlignment="Center"
+                                           TextWrapping="Wrap" MaxHeight="115" MaxWidth="1600" HorizontalAlignment="Center" Margin="0,0,0,18"/>
+                                <TextBlock Text="{Binding DataContext.HB_CustomReadOnlyValue, ElementName=HB_DifficultyBrowserHost}"
+                                           Visibility="{Binding DataContext.HB_CustomDetailMode, ElementName=HB_DifficultyBrowserHost, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                                           Foreground="{StaticResource LS_tint100}" FontSize="{StaticResource ScaledMediumFontSize}"
+                                           TextAlignment="Center" HorizontalAlignment="Center" Margin="0,4,0,24"/>
+                                <StackPanel Visibility="{Binding DataContext.HB_CustomEditMode, ElementName=HB_DifficultyBrowserHost, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
+                                <StackPanel Visibility="{Binding DataContext.HB_CustomIsSlider, ElementName=HB_DifficultyBrowserHost, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                                            HorizontalAlignment="Center">
+                                    <TextBlock Text="{Binding DataContext.HB_CustomSliderValue, ElementName=HB_DifficultyBrowserHost, StringFormat={}{0:0}}"
+                                               Foreground="{StaticResource LS_tint100}" FontSize="{StaticResource ScaledMediumFontSize}" HorizontalAlignment="Center" Margin="0,0,0,12"/>
+                                    <ls:LSSlider Minimum="{Binding DataContext.HB_CustomSliderMin, ElementName=HB_DifficultyBrowserHost}"
+                                                 Maximum="{Binding DataContext.HB_CustomSliderMax, ElementName=HB_DifficultyBrowserHost}"
+                                                 Value="{Binding DataContext.HB_CustomSliderValue, ElementName=HB_DifficultyBrowserHost, Mode=TwoWay}"
+                                                 Width="1160" IsSnapToTickEnabled="True" TickFrequency="1" SmallChange="1" LargeChange="1"
+                                                 IsEnabled="{Binding DataContext.HB_CustomSliderEnabled, ElementName=HB_DifficultyBrowserHost, FallbackValue=True}"
+                                                 Style="{StaticResource Slider.StyleDisplayValue}">
+                                        <b:Interaction.Triggers><b:EventTrigger EventName="ValueChanged">
+                                            <b:InvokeCommandAction Command="{Binding DataContext.HB_CustomValueChanged, ElementName=HB_DifficultyBrowserHost}"/>
+                                        </b:EventTrigger></b:Interaction.Triggers>
+                                    </ls:LSSlider>
+                                </StackPanel>
+                                <ls:LSToggleButton Content="Enabled" Template="{StaticResource BigBrownButtonWithCheckbox}"
+                                    HorizontalAlignment="Center"
+                                    Visibility="{Binding DataContext.HB_CustomIsCheck, ElementName=HB_DifficultyBrowserHost, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                                    IsChecked="{Binding DataContext.HB_CustomCheckValue, ElementName=HB_DifficultyBrowserHost, Mode=TwoWay}">
+                                    <b:Interaction.Triggers><b:EventTrigger EventName="Checked">
+                                        <b:InvokeCommandAction Command="{Binding DataContext.HB_CustomValueChanged, ElementName=HB_DifficultyBrowserHost}"/>
+                                    </b:EventTrigger><b:EventTrigger EventName="Unchecked">
+                                        <b:InvokeCommandAction Command="{Binding DataContext.HB_CustomValueChanged, ElementName=HB_DifficultyBrowserHost}"/>
+                                    </b:EventTrigger></b:Interaction.Triggers>
+                                </ls:LSToggleButton>
+                                <StackPanel Visibility="{Binding DataContext.HB_CustomIsEnum, ElementName=HB_DifficultyBrowserHost, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                                            HorizontalAlignment="Center">
+                                    <TextBlock Text="{Binding DataContext.HB_CustomEnumName, ElementName=HB_DifficultyBrowserHost}"
+                                               FontSize="{StaticResource ScaledMediumFontSize}" Foreground="{StaticResource LS_accent100TxtColor}"
+                                               TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,18"/>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <ls:LSButton Content="Previous" Style="{StaticResource BrownButtonStyle}"
+                                             Command="{Binding DataContext.HB_CustomEnumPrev, ElementName=HB_DifficultyBrowserHost}" Margin="0,0,30,0"/>
+                                        <ls:LSButton Content="Next" Style="{StaticResource BrownButtonStyle}"
+                                             Command="{Binding DataContext.HB_CustomEnumNext, ElementName=HB_DifficultyBrowserHost}"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                                <ls:LSButton Content="{Binding DataContext.HB_CustomCloseLabel, ElementName=HB_DifficultyBrowserHost}" Style="{StaticResource BigBrownButtonStyle}"
+                                             Command="{Binding DataContext.HB_CustomCancel, ElementName=HB_DifficultyBrowserHost}"
+                                             BoundEvent="UICancel" Margin="0,0,22,0"/>
+                                <ls:LSButton Content="Confirm" Style="{StaticResource BigBlueButtonStyle}"
+                                             Visibility="{Binding DataContext.HB_CustomEditMode, ElementName=HB_DifficultyBrowserHost, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                                             Command="{Binding DataContext.HB_CustomConfirm, ElementName=HB_DifficultyBrowserHost}"
+                                             BoundEvent="UIAccept" Margin="22,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+                <Grid x:Name="HB_MythicCustomConfirmation" Visibility="Collapsed"
+                      Background="{StaticResource LS_PanelBackgroundLight}" ls:MoveFocus.IsMoveFocusScope="True">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock Text="Custom Difficulty" HorizontalAlignment="Center" Margin="0,200,0,0"
+                                   Style="{StaticResource PanelTitleStyle}"/>
+                        <ls:LSNineSliceImage Style="{StaticResource GenericControllerPanelBackground}" Margin="0,-220,0,0"
+                                             HorizontalAlignment="Center">
+                            <TextBlock x:Name="HB_MythicCustomWarning" Text="Mythic difficulty features cannot be enabled through a Custom difficulty. Continuing will lock you out of Mythic difficulty features for the remainder of your run. Continue?" MaxWidth="1300"
+                                       TextWrapping="Wrap" TextAlignment="Center" Margin="20,0"
+                                       FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_accent100TxtColor}"/>
+                        </ls:LSNineSliceImage>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,-360,0,0">
+                            <ls:LSButton x:Name="HB_MythicCustomBack" BoundEvent="UICancel"
+                                         Command="{Binding DataContext.HB_CancelMythicCustom, ElementName=HB_DifficultyBrowserHost}"
+                                         Tag="Back" ContentTemplate="{StaticResource ControllerButtonHint}"
+                                         Content="{Binding CurrentPlayer.UIData.InputEvents, Converter={StaticResource FindInputEventConverter}, ConverterParameter='UICancel'}"
+                                         Margin="0,0,40,0"/>
+                            <ls:LSButton x:Name="HB_MythicCustomContinue" BoundEvent="UIAccept"
+                                         Command="{Binding DataContext.HB_ContinueMythicCustom, ElementName=HB_DifficultyBrowserHost}"
+                                         IsEnabled="{Binding DataContext.HB_MythicConfirmationReady, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}"
+                                         Tag="Continue" ContentTemplate="{StaticResource ControllerButtonHint}"
+                                         Content="{Binding CurrentPlayer.UIData.InputEvents, Converter={StaticResource FindInputEventConverter}, ConverterParameter='UIAccept'}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+            <ControlTemplate.Triggers>
+                <!-- The in-game carousel is staged in native XAML, not animated from
+                     vanilla to HomeBrew after opening. When the browser is ready,
+                     the existing ItemsSource trigger below installs HB_Presets and
+                     the entire completed view becomes visible in the same frame.
+                     If the client reports a failure, its fallback host exposes the
+                     unmodified BG3 view rather than trapping a blank screen. -->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="False"/>
+                        <Condition Binding="{Binding Tag, ElementName=HB_NativeDifficultyFallback}" Value="Waiting"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="carouselClipper" Property="Opacity" Value="0"/>
+                </MultiDataTrigger>
+                <!-- The native New Game page displays Adjust Difficulty immediately, before Lua
+                     attaches the HomeBrew ViewModel. The command itself stays disabled until ready. -->
+                <DataTrigger Binding="{Binding IsMainMenu}" Value="True">
+                    <Setter TargetName="HB_MCMDifficultyButton" Property="Visibility" Value="Visible"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding DataContext.HB_ShowMCMControls, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="True">
+                    <Setter TargetName="HB_MCMDifficultyButton" Property="Visibility" Value="Visible"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="True">
+                    <Setter TargetName="HB_SingleSaveFooter" Property="Visibility" Value="Collapsed"/>
+                </DataTrigger>
+                <!-- New Game: the actual Honour/Single Save toggle controls the
+                     availability of HomeBrew's difficulty editors. Deific has
+                     HB_Enabled=True permanently, so it locks automatically. -->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="True"/>
+                        <Condition Binding="{Binding DataContext.HB_Enabled, ElementName=HB_SingleSaveToggle}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="HB_MCMDifficultyButton" Property="IsEnabled" Value="False"/>
+                    <Setter TargetName="HB_MCMCustomSettingsButton" Property="IsEnabled" Value="False"/>
+                </MultiDataTrigger>
+
+                
+                <DataTrigger Binding="{Binding IsMainMenu}" Value="False">
+                    <Setter TargetName="CurrentGameBackground" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="TitleText" Property="Text" Value="{Binding Source='h37dad4aagf5cag4c29g90c2g88e3b50cbc9e', Converter={StaticResource TranslatedStringConverter}}"/>
+                    <Setter TargetName="StartGameButton" Property="Command" Value="{Binding UpdateDifficultyCommand, Mode=OneTime}"/>
+                    <Setter TargetName="StartGameButton" Property="Tag" Value="{Binding Source='h5ec59419gbcbag4572gbf24g259ad7f261f2', Converter={StaticResource TranslatedStringConverter}}"/>
+                    <Setter TargetName="StartGameButton" Property="OverwriteClickSound" Value="UI_Shared_Apply"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Items.Count, ElementName=PresetList}" Value="1">
+                    <Setter TargetName="TitleText" Property="Text" Value="{Binding Source='h46616d84g0ebag4586g9230gca30c54e7596', Converter={StaticResource TranslatedStringConverter}}"/>
+                </DataTrigger>
+
+                
+                <!-- Show separate local-parameter controls for Heroic vs Deific.
+                     The native Heroic binding and Mythic hint remain unchanged. -->
+                <DataTrigger Binding="{Binding SelectedItem.AssetName, ElementName=PresetList}" Value="difficulty_05">
+                    <Setter TargetName="MoreInfoButton" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="HB_HonouredMythCustomInfoButton" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="MoreInfoButton" Property="Command" Value="{Binding CustomEvent, Mode=OneTime}"/>
+                    <Setter TargetName="MoreInfoButton" Property="CommandParameter" Value="OpenMoreInfo"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding SelectedItem.AssetName, ElementName=PresetList}" Value="difficulty_07">
+                    <Setter TargetName="HB_DeificHallInfoButton" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="HB_DeificCustomInfoButton" Property="Visibility" Value="Visible"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding SelectedItem.AssetName, ElementName=PresetList}" Value="difficulty_06">
+                    <Setter TargetName="MoreInfoButton" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="MoreInfoButton" Property="Command" Value="{Binding CustomEvent, Mode=OneTime}"/>
+                    <Setter TargetName="MoreInfoButton" Property="CommandParameter" Value="HB_OpenMythicMechanicsInfo"/>
+                    <Setter TargetName="MoreInfoButton" Property="Tag" Value="{Binding Source='h8120eae4g4931g40ecgb253g63f8279401dc', Converter={StaticResource TranslatedStringConverter}}"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding SelectedItem.IsCustom, ElementName=PresetList}" Value="True">
+                    <Setter TargetName="HB_SingleSaveFooter" Property="Visibility" Value="Collapsed"/>
+                    <Setter TargetName="HB_SingleSaveToggle" Property="IsEnabled" Value="False"/>
+                    <Setter TargetName="HB_SingleSaveControllerButton" Property="IsEnabled" Value="False"/>
+                    <Setter TargetName="StartGameButton" Property="Tag" Value="{Binding Source='h839dd40ag30f3g49e0g9135g411c9fcc81ba', Converter={StaticResource TranslatedStringConverter}}"/>
+                    <Setter TargetName="StartGameButton" Property="Command" Value="{Binding ChangeDisplayCustomSettingsCommand, Mode=OneTime}"/>
+                    <Setter TargetName="StartGameButton" Property="CommandParameter" Value="{StaticResource TrueValue}"/>
+                    <Setter TargetName="StartGameButton" Property="OverwriteClickSound" Value="UI_Shared_Apply"/>
+                </DataTrigger>
+
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding HasBeenInitialized}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CurrentGameBackground" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="TitleText" Property="Text" Value="{Binding Source='h6f947303gef88g4640g8e4cg1ec35b5da79e', Converter={StaticResource TranslatedStringConverter}}"/>
+                    <Setter TargetName="StartGameButton" Property="Tag" Value="{Binding Source='hff3fbf0fgf6c5g427fga4dfgbb238c01cb4c', Converter={StaticResource TranslatedStringConverter}}"/>
+                    <Setter TargetName="StartGameButton" Property="Command" Value="{Binding StartNewCustomGame}"/>
+                    <Setter TargetName="StartGameButton" Property="IsEnabled" Value="True"/>
+                    <Setter TargetName="StartGameButton" Property="OverwriteClickSound" Value="UI_HUD_NewGameSettings_StartGame_Click"/>
+                    <Setter TargetName="CancelButton" Property="Command" Value="{Binding ChangeDisplayCustomSettingsCommand, Mode=OneTime}"/>
+                    <Setter TargetName="CancelButton" Property="CommandParameter" Value="{StaticResource FalseValue}"/>
+                    <Setter TargetName="RestoreToDefaultButton" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="CustomSettingsHolder" Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate>
+                                <ControlTemplate.Resources>
+                                    <ImageSource x:Key="ItemBG">pack://application:,,,/Core;component/Assets/Options/li_bg.png</ImageSource>
+                                    <ImageSource x:Key="ItemBGHL">pack://application:,,,/Core;component/Assets/Options/li_bg_active.png</ImageSource>
+
+                                    <ControlTemplate x:Key="ComboBoxTemplate">
+                                        <ls:LSComboBox x:Name="comboBox" 
+                                                       ItemsSource="{Binding Options, Mode=OneWay}" 
+                                                       SelectedItem="{Binding SelectedValue, Mode=TwoWay}" 
+                                                       Foreground="{StaticResource LS_specialTxtColor}" 
+                                                       Style="{StaticResource OptionsComboBoxStyle}" 
+                                                       Text="{Binding SelectedValue.Name, Mode=OneWay}" 
+                                                       SoundID="UI_Shared_Hover" 
+                                                       KeyboardNavigation.DirectionalNavigation="Cycle"
+                                                       IsEnabled="{Binding DataContext.IsHost, ElementName=DMSettings}"
+                                                       >
+                                            <b:Interaction.Triggers>
+                                                <b:PropertyChangedTrigger Binding="{Binding SelectedValue}">
+                                                    <b:InvokeCommandAction Command="{Binding DataContext.ValueChanged, ElementName=DMSettings, Mode=OneTime}" CommandParameter="{Binding .}"/>
+                                                </b:PropertyChangedTrigger>
+                                            </b:Interaction.Triggers>
+                                        </ls:LSComboBox>
+
+                                        <ControlTemplate.Triggers>
+                                            <DataTrigger Binding="{Binding EditableInGame}" Value="False">
+                                                <Setter TargetName="comboBox" Property="IsEnabled" Value="False"/>
+                                            </DataTrigger>
+
+                                            <DataTrigger Binding="{Binding DataContext.IsMainMenu, ElementName=DMSettings}" Value="True">
+                                                <Setter TargetName="comboBox" Property="IsEnabled" Value="True"/>
+                                            </DataTrigger>
+
+                                            <DataTrigger Binding="{Binding Metadata, ElementName=DMSettings}" Value="Lobby">
+                                                <Setter TargetName="comboBox" Property="IsEnabled" Value="True"/>
+                                            </DataTrigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+
+                                    <ControlTemplate x:Key="TickBoxTemplate">
+                                        <ls:LSTickBox x:Name="tickBox" 
+                                                      Style="{StaticResource TickBoxStyle}" 
+                                                      IsChecked="{Binding Value}" 
+                                                      SoundID="" 
+                                                      IsEnabled="{Binding DataContext.IsHost, ElementName=DMSettings}"
+                                                      ActionNextEvent="UIRight"
+                                                      ActionPrevEvent="UILeft">
+                                            <b:PropertyChangedTrigger Binding="{Binding Value}">
+                                                <ls:LSPlaySound Sound="UI_Shared_Hover"/>
+                                                <b:InvokeCommandAction Command="{Binding DataContext.ValueChanged, ElementName=DMSettings, Mode=OneTime}" CommandParameter="{Binding .}"/>
+                                            </b:PropertyChangedTrigger>
+                                        </ls:LSTickBox>
+
+                                        <ControlTemplate.Triggers>
+                                            <DataTrigger Binding="{Binding EditableInGame}" Value="False">
+                                                <Setter TargetName="tickBox" Property="IsEnabled" Value="False"/>
+                                            </DataTrigger>
+
+                                            <DataTrigger Binding="{Binding DataContext.IsMainMenu, ElementName=DMSettings}" Value="True">
+                                                <Setter TargetName="tickBox" Property="IsEnabled" Value="True"/>
+                                            </DataTrigger>
+
+                                            <DataTrigger Binding="{Binding Metadata, ElementName=DMSettings}" Value="Lobby">
+                                                <Setter TargetName="tickBox" Property="IsEnabled" Value="True"/>
+                                            </DataTrigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+
+                                    <ControlTemplate x:Key="SliderTemplate">
+                                        <ls:LSSlider x:Name="element" 
+                                                     Style="{StaticResource OptionsSliderStyle}"
+                                                     Template="{StaticResource OptionsSliderTemplate}"
+                                                     Value="{Binding Value}" 
+                                                     Minimum="{Binding Min}" 
+                                                     Maximum="{Binding Max}" 
+                                                     IsSnapToTickEnabled="True" 
+                                                     SmallChange="{Binding Step}" 
+                                                     LargeChange="{Binding Step, Converter={StaticResource MultiplierConverter}, ConverterParameter=3}" 
+                                                     TickFrequency="{Binding Step}" 
+                                                     IsEnabled="{Binding DataContext.IsHost, ElementName=DMSettings}">
+                                            <b:Interaction.Triggers>
+                                                <b:EventTrigger EventName="ValueChanged">
+                                                    <b:InvokeCommandAction Command="{Binding DataContext.ValueChanged, ElementName=DMSettings, Mode=OneTime}" CommandParameter="{Binding .}"/>
+                                                </b:EventTrigger>
+                                            </b:Interaction.Triggers>
+                                        </ls:LSSlider>
+
+                                        <ControlTemplate.Triggers>
+                                            <DataTrigger Binding="{Binding EditableInGame}" Value="False">
+                                                <Setter TargetName="element" Property="IsEnabled" Value="False"/>
+                                            </DataTrigger>
+
+                                            <DataTrigger Binding="{Binding DataContext.IsMainMenu, ElementName=DMSettings}" Value="True">
+                                                <Setter TargetName="element" Property="IsEnabled" Value="True"/>
+                                            </DataTrigger>
+
+                                            <DataTrigger Binding="{Binding Metadata, ElementName=DMSettings}" Value="Lobby">
+                                                <Setter TargetName="element" Property="IsEnabled" Value="True"/>
+                                            </DataTrigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </ControlTemplate.Resources>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" MinWidth="900"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*" MinWidth="600"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <b:Interaction.Triggers>
+                                        <b:EventTrigger EventName="Loaded">
+                                            <ls:SetMoveFocusAction TargetName="DMSettings" FocusElement="{Binding ElementName=Options}" DeferFocusAction="True"/>
+                                        </b:EventTrigger>
+
+                                        <b:EventTrigger EventName="LocalFocusChanged">
+                                            <ls:LSPlaySound Sound="UI_Shared_Hover" />
+                                        </b:EventTrigger>
+                                    </b:Interaction.Triggers>
+
+                                    <ItemsControl x:Name="Options" 
+                                                  Grid.Column="1" 
+                                                  VerticalAlignment="Top" 
+                                                  HorizontalAlignment="Center" 
+                                                  AlternationCount="{Binding CustomSettings.Count}" 
+                                                  ItemsSource="{Binding CustomSettings}" 
+                                                  VirtualizingPanel.IsVirtualizing="True"
+                                                  VirtualizingPanel.ScrollUnit="Pixel"
+                                                  VirtualizingPanel.VirtualizationMode="Recycling"
+                                                  Height="1680">
+                                        <ItemsControl.Template>
+                                            <ControlTemplate>
+                                                <ls:LSScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible" Template="{StaticResource StretchingScrollViewerTemplate}">
+                                                    <ItemsPresenter/>
+                                                </ls:LSScrollViewer>
+                                            </ControlTemplate>
+                                        </ItemsControl.Template>
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <VirtualizingStackPanel Orientation="Vertical" VerticalAlignment="Top"/>
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid x:Name="Container" Margin="0,0,0,12" MaxWidth="1800">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition x:Name="col0" Width="*"/>
+                                                        <ColumnDefinition x:Name="col1" Width="Auto"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Image x:Name="Box" Grid.Column="0" Grid.ColumnSpan="2" Source="{StaticResource ListButtonBg}" Stretch="Fill" Height="{Binding ActualHeight, ElementName=label, Converter={StaticResource AddConverter}, ConverterParameter=28}"/>
+                                                    <TextBlock x:Name="label" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0" TextWrapping="Wrap" MaxWidth="1100" ls:TextBlockFormatter.SourceText="{Binding Text}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_accent75TxtColor}"/>
+                                                    <Control x:Name="content" Grid.Column="1" IsEnabled="False" VerticalAlignment="Center"  HorizontalAlignment="Right" Template="{StaticResource ComboBoxTemplate}" Margin="20,0,60,0"/>
+                                                    <Control x:Name="Frame" Grid.Column="0" Grid.ColumnSpan="2" Visibility="Hidden" Style="{StaticResource FocusableBorderStyle}" Width="{Binding ActualWidth, ElementName=Box}" Height="{Binding ActualHeight, ElementName=Box}"/>
+                                                </Grid>
+
+                                                <DataTemplate.Triggers>
+                                                    <DataTrigger Binding="{Binding ListItemType}" Value="TickBox">
+                                                        <Setter Property="Template" Value="{StaticResource TickBoxTemplate}" TargetName="content"/>
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding ListItemType}" Value="Slider">
+                                                        <Setter Property="Template" Value="{StaticResource SliderTemplate}" TargetName="content"/>
+                                                    </DataTrigger>
+
+                                                    <MultiDataTrigger>
+                                                        <MultiDataTrigger.Conditions>
+                                                            <Condition Binding="{Binding EditableInGame}" Value="False"/>
+                                                            <Condition Binding="{Binding DataContext.IsMainMenu, ElementName=DMSettings}" Value="False"/>
+                                                            <Condition Binding="{Binding Metadata, ElementName=DMSettings}" Value=""/>
+                                                        </MultiDataTrigger.Conditions>
+
+                                                        <Setter TargetName="label" Property="Opacity" Value="{StaticResource DisabledOpacity}"/>
+                                                        <Setter TargetName="content" Property="Opacity" Value="{StaticResource DisabledOpacity}"/>
+                                                    </MultiDataTrigger>
+
+                                                    <DataTrigger Binding="{Binding IsEdited}" Value="True">
+                                                        <Setter TargetName="label" Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                                                    </DataTrigger>
+                                                    
+                                                    <DataTrigger  Binding="{Binding DataContext.Data.AspectRatio, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}} , Converter={StaticResource GreaterThanConverter}, ConverterParameter=0.62}" Value="True">
+                                                        <Setter TargetName="Container" Property="Width" Value="1400"/>
+                                                    </DataTrigger>
+
+                                                    <DataTrigger  Binding="{Binding DataContext.Data.AspectRatio, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}} , Converter={StaticResource GreaterThanConverter}, ConverterParameter=0.74}" Value="True">
+                                                        <Setter TargetName="Container" Property="Width" Value="1200"/>
+                                                    </DataTrigger>
+
+                                                    <DataTrigger Binding="{Binding (ls:MoveFocus.IsFocused), RelativeSource={RelativeSource Mode=Self}}" Value="True">
+                                                        <Setter TargetName="Box" Property="Source" Value="{StaticResource ListButtonBg_h}"/>
+                                                        <Setter TargetName="content" Property="IsEnabled" Value="True"/>
+                                                        <Setter TargetName="Frame" Property="Visibility" Value="Visible"/>
+                                                        <Setter TargetName="label" Property="Foreground" Value="{StaticResource LS_tint100}"/>
+                                                    </DataTrigger>
+
+                                                    <MultiDataTrigger>
+                                                        <MultiDataTrigger.Conditions>
+                                                            <Condition Binding="{Binding EditableInGame}" Value="False"/>
+                                                            <Condition Binding="{Binding DataContext.IsMainMenu, ElementName=DMSettings}" Value="False"/>
+                                                            <Condition Binding="{Binding Metadata, ElementName=DMSettings}" Value=""/>
+                                                            <Condition Binding="{Binding (ls:MoveFocus.IsFocused), RelativeSource={RelativeSource Mode=Self}}" Value="True"/>
+                                                        </MultiDataTrigger.Conditions>
+                                                        <Setter TargetName="content" Property="IsEnabled" Value="False"/>
+                                                    </MultiDataTrigger>
+                                                </DataTemplate.Triggers>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                        <ItemsControl.ItemContainerStyle>
+                                            <Style TargetType="ContentPresenter">
+                                                <Setter Property="Focusable" Value="True"/>
+                                                <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+                                            </Style>
+                                        </ItemsControl.ItemContainerStyle>
+                                    </ItemsControl>
+
+                                    <StackPanel x:Name="SelectedItemDescription" Grid.Column="2" Margin="80,0,80,0" Orientation="Vertical" DataContext="{Binding FocusedElement.DataContext, ElementName=DMSettings}">
+                                        <TextBlock ls:TextBlockFormatter.SourceText="{Binding Text}" TextAlignment="Center" TextWrapping="Wrap" Foreground="{StaticResource LS_tint100}" FontSize="{StaticResource ScaledLargeFontSize}"/>
+
+                                        <TextBlock ls:TextBlockFormatter.SourceText="{Binding Description}" TextAlignment="Left" TextWrapping="Wrap" Margin="0,20"/>
+
+                                        <ListBox ItemsSource="{Binding Options}" Visibility="{Binding Options, Converter={StaticResource NullToCollapsedConverter}}" HorizontalAlignment="Left">
+                                            <ListBox.ItemsPanel>
+                                                <ItemsPanelTemplate>
+                                                    <StackPanel Orientation="Vertical"/>
+                                                </ItemsPanelTemplate>
+                                            </ListBox.ItemsPanel>
+
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate DataType="{x:Type ls:VMEnumData}">
+                                                    <DataTemplate.Resources>
+                                                        <Style TargetType="TextBlock">
+                                                            <Setter Property="TextWrapping" Value="Wrap"/>
+                                                            <Setter Property="HorizontalAlignment" Value="Left"/>
+                                                        </Style>
+
+                                                        <ImageSource x:Key="SelectedOptionIcon">pack://application:,,,/Core;component/Assets/CharacterPanel/ico_bullet_d.png</ImageSource>
+                                                    </DataTemplate.Resources>
+
+                                                    <StackPanel x:Name="ItemPanel" Orientation="Vertical" Margin="0,0,0,20" MaxWidth="800" HorizontalAlignment="Left">
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <Image x:Name="SelectedIcon" Source="{StaticResource SelectedOptionIcon}" Stretch="None" Visibility="Collapsed" VerticalAlignment="Top" Margin="0,12,0,0"/>
+                                                            <TextBlock x:Name="Title" ls:TextBlockFormatter.SourceText="{Binding Name}" Foreground="{StaticResource LS_accent75TxtColor}" FontSize="{StaticResource ScaledIntermediateFontSize}"/>
+                                                        </StackPanel>
+
+                                                        <TextBlock ls:TextBlockFormatter.SourceText="{Binding Description}" Foreground="{StaticResource LS_baseTxtColor}" FontSize="{StaticResource ScaledDefaultFontSize}"/>
+                                                    </StackPanel>
+
+                                                    <DataTemplate.Triggers>
+                                                        <DataTrigger Value="True">
+                                                            <DataTrigger.Binding>
+                                                                <MultiBinding Converter="{StaticResource EqualConverter}">
+                                                                    <Binding Path=""/>
+                                                                    <Binding Path="DataContext.SelectedItem" RelativeSource="{RelativeSource AncestorType={x:Type ListBox}}" />
+                                                                </MultiBinding>
+                                                            </DataTrigger.Binding>
+                                                            <Setter TargetName="SelectedIcon" Property="Visibility" Value="Visible"/>
+                                                            <Setter TargetName="Title" Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                                                        </DataTrigger>
+
+                                                        <DataTrigger  Binding="{Binding DataContext.Data.AspectRatio, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}} , Converter={StaticResource GreaterThanConverter}, ConverterParameter=0.74}" Value="True">
+                                                            <Setter TargetName="ItemPanel" Property="MaxWidth" Value="600"/>
+                                                        </DataTrigger>
+                                                    </DataTemplate.Triggers>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+
+                                        <TextBlock x:Name="DescriptionText" ls:TextBlockFormatter.SourceText="{Binding Source='h3c46af69gfe72g49f1gb524g8bf318295dc3', Converter={StaticResource TranslatedStringConverter}}" Visibility="{Binding EditableInGame, Converter={StaticResource BoolToCollapsedConverter}}" TextWrapping="Wrap" Foreground="{StaticResource LS_accent100TxtColor}"/>
+                                    </StackPanel>
+                                </Grid>
+
+                                <ControlTemplate.Triggers>
+                                    <DataTrigger  Binding="{Binding DataContext.Data.AspectRatio, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}} , Converter={StaticResource GreaterThanConverter}, ConverterParameter=0.74}" Value="True">
+                                        <Setter TargetName="SelectedItemDescription" Property="Margin" Value="0,40,0,0"/>
+                                        <Setter TargetName="DescriptionText" Property="Margin" Value="0,40,0,0"/>
+                                        <Setter TargetName="SelectedItemDescription" Property="MaxWidth" Value="600"/>
+                                        <Setter TargetName="DescriptionText" Property="MaxWidth" Value="600"/>
+                                    </DataTrigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+
+                    <MultiDataTrigger.EnterActions>
+                        <BeginStoryboard x:Name="CustomSettingsFadeIn">
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetName="CustomSettingsHolder" Storyboard.TargetProperty="Opacity" To="1" BeginTime="0:0:0.3" Duration="0:0:0.5">
+                                    <DoubleAnimation.EasingFunction>
+                                        <CubicEase EasingMode="EaseOut"/>
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                        <StopStoryboard BeginStoryboardName="CustomSettingsFadeOut"/>
+                    </MultiDataTrigger.EnterActions>
+                    <MultiDataTrigger.ExitActions>
+                        <BeginStoryboard x:Name="CustomSettingsFadeOut">
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetName="CustomSettingsHolder" Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:0.1">
+                                    <DoubleAnimation.EasingFunction>
+                                        <CubicEase EasingMode="EaseOut"/>
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                        <BeginStoryboard x:Name="PresetListPanToRight">
+                            <Storyboard>
+                                <ThicknessAnimation Storyboard.TargetName="carouselClipper" Storyboard.TargetProperty="Margin" To="0,0,0,-100" Duration="0:0:0.5">
+                                    <ThicknessAnimation.EasingFunction>
+                                        <CubicEase EasingMode="EaseOut"/>
+                                    </ThicknessAnimation.EasingFunction>
+                                </ThicknessAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                        <StopStoryboard BeginStoryboardName="CustomSettingsFadeIn"/>
+                    </MultiDataTrigger.ExitActions>
+                </MultiDataTrigger>
+
+                <!-- Taller screen ratio (16:10 and plus) -->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding HasBeenInitialized}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomOnlyView}" Value="False"/>
+                        <Condition Binding="{Binding Data.AspectRatio, Converter={StaticResource GreaterThanConverter}, ConverterParameter=0.62}" Value="True"/>
+                        <Condition Binding="{Binding Data.AspectRatio, Converter={StaticResource GreaterThanConverter}, ConverterParameter=0.74}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+
+                    <MultiDataTrigger.EnterActions>
+                        <BeginStoryboard x:Name="PresetListPanToLeftTallScreen">
+                            <Storyboard>
+                                <ThicknessAnimation Storyboard.TargetName="carouselClipper" Storyboard.TargetProperty="Margin" To="{StaticResource LetterboxMarginCustom}"  Duration="0:0:0.5">
+                                    <ThicknessAnimation.EasingFunction>
+                                        <CubicEase EasingMode="EaseOut"/>
+                                    </ThicknessAnimation.EasingFunction>
+                                </ThicknessAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                        <StopStoryboard BeginStoryboardName="PresetListPanToRight"/>
+                        <StopStoryboard BeginStoryboardName="PresetListPanToLeft"/>
+                        <StopStoryboard BeginStoryboardName="PresetListPanToLeftWideScreen"/>
+                    </MultiDataTrigger.EnterActions>
+                </MultiDataTrigger>
+
+                <!-- For 4:3 screen ratios and squarer -->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding HasBeenInitialized}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomOnlyView}" Value="False"/>
+                        <Condition Binding="{Binding Data.AspectRatio, Converter={StaticResource GreaterThanConverter}, ConverterParameter=0.74}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+
+                    <MultiDataTrigger.EnterActions>
+                        <BeginStoryboard x:Name="PresetListPanToLeft">
+                            <Storyboard>
+                                <ThicknessAnimation Storyboard.TargetName="carouselClipper" Storyboard.TargetProperty="Margin" To="{StaticResource FullscreenMarginCustom}"  Duration="0:0:0.5">
+                                    <ThicknessAnimation.EasingFunction>
+                                        <CubicEase EasingMode="EaseOut"/>
+                                    </ThicknessAnimation.EasingFunction>
+                                </ThicknessAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                        <StopStoryboard BeginStoryboardName="PresetListPanToRight"/>
+                        <StopStoryboard BeginStoryboardName="PresetListPanToLeftTallScreen"/>
+                        <StopStoryboard BeginStoryboardName="PresetListPanToLeftWideScreen"/>
+                    </MultiDataTrigger.EnterActions>
+                </MultiDataTrigger>
+
+                <!-- Wide screen counterparts -->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding HasBeenInitialized}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomOnlyView}" Value="False"/>
+                        <Condition Binding="{Binding Data.AspectRatio, Converter={StaticResource GreaterThanConverter}, ConverterParameter=0.62}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+
+                    <MultiDataTrigger.EnterActions>
+                        <BeginStoryboard x:Name="PresetListPanToLeftWideScreen">
+                            <Storyboard>
+                                <ThicknessAnimation Storyboard.TargetName="carouselClipper" Storyboard.TargetProperty="Margin" To="{StaticResource WidescreenMarginCustom}" Duration="0:0:0.5">
+                                    <ThicknessAnimation.EasingFunction>
+                                        <CubicEase EasingMode="EaseOut"/>
+                                    </ThicknessAnimation.EasingFunction>
+                                </ThicknessAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                        <StopStoryboard BeginStoryboardName="PresetListPanToRight"/>
+                        <StopStoryboard BeginStoryboardName="PresetListPanToLeft"/>
+                        <StopStoryboard BeginStoryboardName="PresetListPanToLeftTallScreen"/>
+                    </MultiDataTrigger.EnterActions>
+                </MultiDataTrigger>
+
+                <DataTrigger Binding="{Binding Items.Count, ElementName=PresetList, Converter={StaticResource GreaterThanConverter}, ConverterParameter=1}" Value="False">
+                    <Setter TargetName="StartGameButton" Property="Visibility" Value="Collapsed"/>
+                </DataTrigger>
+
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="True"/>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+
+                    <Setter TargetName="TitleText" Property="Text" Value="{Binding Source='h3745e72dg245ag4502g8774g8965baf256eb', Converter={StaticResource TranslatedStringConverter}}"/>
+                    <Setter TargetName="StartGameButton" Property="Tag" Value="{Binding Source='h5ec59419gbcbag4572gbf24g259ad7f261f2', Converter={StaticResource TranslatedStringConverter}}"/>
+                    <Setter TargetName="StartGameButton" Property="Command" Value="{Binding UpdateCustomDifficultyCommand, Mode=OneTime}"/>
+                    <Setter TargetName="StartGameButton" Property="OverwriteClickSound" Value="UI_Shared_Apply"/>
+
+                    <Setter TargetName="RestoreToDefaultButton" Property="Tag" Value="{Binding Source='hf8f0bd69gdbfeg4657gbb07gfda9602d4a08', Converter={StaticResource TranslatedStringConverter}}"/>
+                </MultiDataTrigger>
+
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomOnlyView}" Value="True"/>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CancelButton" Property="Command" Value="{Binding CustomEvent, Mode=OneTime}"/>
+                    <Setter TargetName="CancelButton" Property="CommandParameter" Value="CloseWidget"/>
+                </MultiDataTrigger>
+
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsHost}" Value="False"/>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="ChangeDifficultyNotice" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="StartGameButton" Property="Visibility" Value="Collapsed"/>
+                    <Setter TargetName="RestoreToDefaultButton" Property="Visibility" Value="Collapsed"/>
+                </MultiDataTrigger>
+                
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding Metadata, ElementName=DMSettings}" Value=""/>
+                        <Condition Binding="{Binding SelectedItem.AssetName, ElementName=PresetList}" Value="difficulty_07"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="StartGameButton" Property="IsEnabled" Value="False"/>
+                    <Setter TargetName="StartGameButton" Property="Command" Value="{x:Null}"/>
+                </MultiDataTrigger>
+                
+
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="PresetList" Property="ItemsSource" Value="{Binding DataContext.HB_Presets, ElementName=HB_DifficultyBrowserHost}"/>
+                    <!-- The HB cards have a different order from BG3's native Presets.
+                         Do not bind their index to the original PresetSelectedIndex. -->
+                    <Setter TargetName="PresetList" Property="SelectedIndex" Value="{Binding DataContext.HB_SelectedIndex, ElementName=HB_DifficultyBrowserHost, Mode=TwoWay}"/>
+                    <Setter TargetName="HB_CustomOnlyView" Property="IsChecked" Value="{Binding DataContext.HB_CustomOnly, ElementName=HB_DifficultyBrowserHost}"/>
+                    <Setter TargetName="HB_CustomViewMode" Property="IsChecked" Value="{Binding DataContext.HB_InCustomView, ElementName=HB_DifficultyBrowserHost}"/>
+                    <Setter TargetName="PresetList" Property="AlternationCount" Value="7"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="True"/>
+                        <Condition Binding="{Binding SelectedItem.IsCustom, ElementName=PresetList}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="StartGameButton" Property="CommandParameter" Value="{Binding SelectedItem.HB_Native, ElementName=PresetList}"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="PresetList" Property="SelectedValue" Value="{Binding CurrentPreset, Mode=OneTime}"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="True"/>
+                        
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="False"/>
+                        <Condition Binding="{Binding SelectedItem.IsCustom, ElementName=PresetList}" Value="True"/>
+                        <Condition Binding="{Binding SelectedItem.HB_CanApply, ElementName=PresetList, FallbackValue=False}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="StartGameButton" Property="Command" Value="{Binding DataContext.HB_OpenCustomView, ElementName=HB_DifficultyBrowserHost}"/>
+                    <Setter TargetName="StartGameButton" Property="CommandParameter" Value="{Binding SelectedItem, ElementName=PresetList}"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CancelButton" Property="Command" Value="{Binding DataContext.HB_CloseCustomView, ElementName=HB_DifficultyBrowserHost}"/>
+                    <Setter TargetName="CancelButton" Property="CommandParameter" Value="{x:Null}"/>
+                </MultiDataTrigger>
+
+                
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="True"/>
+                        <Condition Binding="{Binding SelectedItem.HB_CanApply, ElementName=PresetList, FallbackValue=False}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="StartGameButton" Property="IsEnabled" Value="False"/>
+                    <Setter TargetName="StartGameButton" Property="Command" Value="{x:Null}"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding IsHost}" Value="True"/>
+                        <Condition Binding="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="True"/>
+                        <Condition Binding="{Binding SelectedItem.HB_CanApply, ElementName=PresetList, FallbackValue=False}" Value="False"/>
+                        <Condition Binding="{Binding ModifierEnabled, ElementName=HB_SettingsIronmanModifier}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="HB_DifficultyUnavailableNotice" Property="Visibility" Value="Visible"/>
+                </MultiDataTrigger>
+
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding IsHost}" Value="True"/>
+                        <Condition Binding="{Binding SelectedItem.IsCustom, ElementName=PresetList}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="False"/>
+                        <Condition Binding="{Binding ModifierEnabled, ElementName=HB_SettingsIronmanModifier}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="HB_CustomDifficultyNotice" Property="Visibility" Value="Visible"/>
+                </MultiDataTrigger>
+
+                
+
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding ModifierEnabled, ElementName=HB_SettingsIronmanModifier}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CustomSettingsHolder" Property="IsEnabled" Value="False"/>
+                    <Setter TargetName="CustomSettingsHolder" Property="Visibility" Value="Collapsed"/>
+                    <Setter TargetName="StartGameButton" Property="IsEnabled" Value="False"/>
+                    <Setter TargetName="StartGameButton" Property="Command" Value="{x:Null}"/>
+                    <Setter TargetName="RestoreToDefaultButton" Property="IsEnabled" Value="False"/>
+                    <Setter TargetName="RestoreToDefaultButton" Property="Command" Value="{x:Null}"/>
+                    <Setter TargetName="RestoreToDefaultButton" Property="Visibility" Value="Collapsed"/>
+                    <Setter TargetName="CancelButton" Property="Command" Value="{Binding CustomEvent, Mode=OneTime}"/>
+                    <Setter TargetName="CancelButton" Property="CommandParameter" Value="CloseWidget"/>
+                    <Setter TargetName="ChangeDifficultyNotice" Property="Visibility" Value="Collapsed"/>
+                    <Setter TargetName="HB_SingleSaveDifficultyNotice" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="HB_DifficultyBrowserHost" Property="Tag" Value="SingleSave"/>
+                    <Setter TargetName="HB_CustomViewMode" Property="IsChecked" Value="False"/>
+                                    <Setter TargetName="HB_MCMDifficultyButton" Property="IsEnabled" Value="False"/>
+                    <Setter TargetName="HB_MCMCustomSettingsButton" Property="IsEnabled" Value="False"/>
+</MultiDataTrigger>
+
+                
+
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Enabled, ElementName=HB_SingleSaveToggle}" Value="True"/>
+                        <Condition Binding="{Binding DataContext.HB_Applied, ElementName=HB_SingleSaveToggle}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="StartGameButton" Property="IsEnabled" Value="False"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="True"/>
+                        <Condition Binding="{Binding IsChecked, ElementName=HB_CustomViewMode}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Enabled, ElementName=HB_SingleSaveToggle}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Applied, ElementName=HB_SingleSaveToggle}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="StartGameButton" Property="IsEnabled" Value="False"/>
+                </MultiDataTrigger>
+
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding IsMainMenu}" Value="False"/>
+                        <Condition Binding="{Binding DataContext.HB_Ready, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="True"/>
+                        <Condition Binding="{Binding DataContext.HB_MythicConfirmation, ElementName=HB_DifficultyBrowserHost, FallbackValue=False}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="HB_MythicCustomConfirmation" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="HB_SettingsContent" Property="IsEnabled" Value="False"/>
+                </MultiDataTrigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </ls:UIWidget.Template>
+</ls:UIWidget>

@@ -30,12 +30,49 @@
                   "Maximum Difficulty",
                   "Endurance",
                   "Custom"
-                ]
+                ],
+                "Dynamic": true
               }
             }
           ]
+        },
+        {
+          "SectionId": "hb_mcm_internal_state",
+          "SectionName": "Internal campaign state (hidden)",
+          "VisibleIf": {
+            "Conditions": [
+              {
+                "SettingId": "hb_mcm_campaign_active",
+                "Operator": "==",
+                "ExpectedValue": true
+              },
+              {
+                "SettingId": "hb_mcm_campaign_active",
+                "Operator": "==",
+                "ExpectedValue": false
+              }
+            ]
+          },
+          "Settings": [
+            {
+              "Id": "hb_mcm_campaign_active",
+              "Name": "Campaign available (internal)",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Internal HomeBrew MCM visibility state. Not user editable."
+            }
+          ]
         }
-      ]
+      ],
+      "VisibleIf": {
+        "Conditions": [
+          {
+            "SettingId": "hb_mcm_campaign_active",
+            "Operator": "==",
+            "ExpectedValue": true
+          }
+        ]
+      }
     },
     {
       "TabId": "npc_hit_points",
@@ -134,7 +171,21 @@
             "IsCollapsible": true
           }
         }
-      ]
+      ],
+      "VisibleIf": {
+        "Conditions": [
+          {
+            "SettingId": "hb_difficulty_preset",
+            "Operator": "==",
+            "ExpectedValue": "Custom"
+          },
+          {
+            "SettingId": "hb_mcm_campaign_active",
+            "Operator": "==",
+            "ExpectedValue": true
+          }
+        ]
+      }
     },
     {
       "TabId": "npc_resources",
@@ -275,7 +326,21 @@
             "IsCollapsible": true
           }
         }
-      ]
+      ],
+      "VisibleIf": {
+        "Conditions": [
+          {
+            "SettingId": "hb_difficulty_preset",
+            "Operator": "==",
+            "ExpectedValue": "Custom"
+          },
+          {
+            "SettingId": "hb_mcm_campaign_active",
+            "Operator": "==",
+            "ExpectedValue": true
+          }
+        ]
+      }
     },
     {
       "TabId": "npc_stats",
@@ -668,7 +733,21 @@
             "IsCollapsible": true
           }
         }
-      ]
+      ],
+      "VisibleIf": {
+        "Conditions": [
+          {
+            "SettingId": "hb_difficulty_preset",
+            "Operator": "==",
+            "ExpectedValue": "Custom"
+          },
+          {
+            "SettingId": "hb_mcm_campaign_active",
+            "Operator": "==",
+            "ExpectedValue": true
+          }
+        ]
+      }
     },
     {
       "TabId": "player_hit_points",
@@ -697,7 +776,21 @@
             }
           ]
         }
-      ]
+      ],
+      "VisibleIf": {
+        "Conditions": [
+          {
+            "SettingId": "hb_difficulty_preset",
+            "Operator": "==",
+            "ExpectedValue": "Custom"
+          },
+          {
+            "SettingId": "hb_mcm_campaign_active",
+            "Operator": "==",
+            "ExpectedValue": true
+          }
+        ]
+      }
     },
     {
       "TabId": "player_resources",
@@ -745,7 +838,21 @@
             }
           ]
         }
-      ]
+      ],
+      "VisibleIf": {
+        "Conditions": [
+          {
+            "SettingId": "hb_difficulty_preset",
+            "Operator": "==",
+            "ExpectedValue": "Custom"
+          },
+          {
+            "SettingId": "hb_mcm_campaign_active",
+            "Operator": "==",
+            "ExpectedValue": true
+          }
+        ]
+      }
     },
     {
       "TabId": "player_stats",
@@ -877,7 +984,21 @@
             }
           ]
         }
-      ]
+      ],
+      "VisibleIf": {
+        "Conditions": [
+          {
+            "SettingId": "hb_difficulty_preset",
+            "Operator": "==",
+            "ExpectedValue": "Custom"
+          },
+          {
+            "SettingId": "hb_mcm_campaign_active",
+            "Operator": "==",
+            "ExpectedValue": true
+          }
+        ]
+      }
     }
   ]
 }

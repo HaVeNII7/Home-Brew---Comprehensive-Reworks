@@ -67,97 +67,97 @@
                     <attribute id="FeatId" type="guid" value="71b65667-0eac-4e62-b878-fa862e88ebbf"/>
                     <attribute id="UUID" type="guid" value="cfe571e4-5d45-4715-82e6-d63dd4a8335b"/>
                 </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa6s8d5" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa2d1f2" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Artificer"/>
-                    <attribute id="FeatId" type="guid" value="56c3c247-35cf-4ffd-86dd-7d249cc1808f"/>
-                    <attribute id="UUID" type="guid" value="b51ca853-4b73-46f8-b87b-054eabf93454"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000f" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00006" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Barbarian"/>
-                    <attribute id="FeatId" type="guid" value="cec2d95b-451c-40f8-8e17-9e547d363e8e"/>
-                    <attribute id="UUID" type="guid" value="0715b482-2377-4288-a2b3-9c818a1836b3"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000g" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00007" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Bard"/>
-                    <attribute id="FeatId" type="guid" value="c09815f7-282b-4ccf-bd89-a51caa1b550f"/>
-                    <attribute id="UUID" type="guid" value="413644a9-3cb5-4f76-980a-bf2397dcac3d"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000h" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00008" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Cleric"/>
-                    <attribute id="FeatId" type="guid" value="7bc235ac-7eeb-49d3-8249-c3313d87af75"/>
-                    <attribute id="UUID" type="guid" value="95777965-bb2b-4ad5-8cc8-3c0c407c4bc4"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000i" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00009" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Druid"/>
-                    <attribute id="FeatId" type="guid" value="0de08fff-ab18-442f-a0b1-f53e7be04c03"/>
-                    <attribute id="UUID" type="guid" value="5438a1a6-83e6-44dd-813a-b87c0f8fba36"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000j" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00010" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Fighter"/>
-                    <attribute id="FeatId" type="guid" value="b441c722-e4d4-4702-861a-039bfd77c124"/>
-                    <attribute id="UUID" type="guid" value="43c5159d-1ba2-400b-8657-805aa84bec04"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000k" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00011" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Monk"/>
-                    <attribute id="FeatId" type="guid" value="d84c7f36-8c5b-4b17-b95a-e1da725f9004"/>
-                    <attribute id="UUID" type="guid" value="3f4f93f3-4cd5-44e8-8011-ad8017aac378"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000l" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00012" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Paladin"/>
-                    <attribute id="FeatId" type="guid" value="a533fde7-ee0a-46ce-92e2-9763201a54d2"/>
-                    <attribute id="UUID" type="guid" value="da220d1c-c365-4695-9c3a-60927f364201"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000m" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00013" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Ranger"/>
-                    <attribute id="FeatId" type="guid" value="4f744a6e-8589-4a46-89ab-a95415a73245"/>
-                    <attribute id="UUID" type="guid" value="8ee6c346-ccdf-4335-a342-a15261051035"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000n" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00014" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Rogue"/>
-                    <attribute id="FeatId" type="guid" value="28e5fed3-bd41-4b74-ab48-b8e824ad3443"/>
-                    <attribute id="UUID" type="guid" value="91ab8967-1a89-490b-882c-36b9db4d7ed4"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000o" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00015" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Sorcerer"/>
-                    <attribute id="FeatId" type="guid" value="1e1a9a4d-38f4-4a05-b080-d32c2b872250"/>
-                    <attribute id="UUID" type="guid" value="b12ac1e4-aad8-4cdf-aa22-d92b5757bd50"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000p" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00016" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Warlock"/>
-                    <attribute id="FeatId" type="guid" value="93d41226-d7af-495c-b023-08a6af077962"/>
-                    <attribute id="UUID" type="guid" value="27bbfed5-ec5b-484f-8ae6-dab3299a28dd"/>
-                </node>
-                <node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000q" version="4"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00017" version="2"/>
-                    <attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Wizard"/>
-                    <attribute id="FeatId" type="guid" value="1e0ac3c4-5bb5-42d7-941c-9de58d919732"/>
-                    <attribute id="UUID" type="guid" value="d2e48d4d-4b19-458f-a880-34aa51c04519"/>
-                </node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000f" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00006" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Barbarian"/>
+					<attribute id="FeatId" type="guid" value="56c3c247-35cf-4ffd-86dd-7d249cc1808f"/>
+					<attribute id="UUID" type="guid" value="0715b482-2377-4288-a2b3-9c818a1836b3"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000g" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00007" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Bard"/>
+					<attribute id="FeatId" type="guid" value="cec2d95b-451c-40f8-8e17-9e547d363e8e"/>
+					<attribute id="UUID" type="guid" value="413644a9-3cb5-4f76-980a-bf2397dcac3d"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000h" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00008" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Cleric"/>
+					<attribute id="FeatId" type="guid" value="c09815f7-282b-4ccf-bd89-a51caa1b550f"/>
+					<attribute id="UUID" type="guid" value="95777965-bb2b-4ad5-8cc8-3c0c407c4bc4"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000i" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00009" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Druid"/>
+					<attribute id="FeatId" type="guid" value="7bc235ac-7eeb-49d3-8249-c3313d87af75"/>
+					<attribute id="UUID" type="guid" value="5438a1a6-83e6-44dd-813a-b87c0f8fba36"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000j" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00010" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Fighter"/>
+					<attribute id="FeatId" type="guid" value="0de08fff-ab18-442f-a0b1-f53e7be04c03"/>
+					<attribute id="UUID" type="guid" value="43c5159d-1ba2-400b-8657-805aa84bec04"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000k" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00011" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Monk"/>
+					<attribute id="FeatId" type="guid" value="b441c722-e4d4-4702-861a-039bfd77c124"/>
+					<attribute id="UUID" type="guid" value="3f4f93f3-4cd5-44e8-8011-ad8017aac378"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000l" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00012" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Paladin"/>
+					<attribute id="FeatId" type="guid" value="d84c7f36-8c5b-4b17-b95a-e1da725f9004"/>
+					<attribute id="UUID" type="guid" value="da220d1c-c365-4695-9c3a-60927f364201"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000m" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00013" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Ranger"/>
+					<attribute id="FeatId" type="guid" value="a533fde7-ee0a-46ce-92e2-9763201a54d2"/>
+					<attribute id="UUID" type="guid" value="8ee6c346-ccdf-4335-a342-a15261051035"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000n" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00014" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Rogue"/>
+					<attribute id="FeatId" type="guid" value="4f744a6e-8589-4a46-89ab-a95415a73245"/>
+					<attribute id="UUID" type="guid" value="91ab8967-1a89-490b-882c-36b9db4d7ed4"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000o" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00015" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Sorcerer"/>
+					<attribute id="FeatId" type="guid" value="28e5fed3-bd41-4b74-ab48-b8e824ad3443"/>
+					<attribute id="UUID" type="guid" value="b12ac1e4-aad8-4cdf-aa22-d92b5757bd50"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000p" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00016" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Warlock"/>
+					<attribute id="FeatId" type="guid" value="1e1a9a4d-38f4-4a05-b080-d32c2b872250"/>
+					<attribute id="UUID" type="guid" value="27bbfed5-ec5b-484f-8ae6-dab3299a28dd"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa0000q" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa00017" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Wizard"/>
+					<attribute id="FeatId" type="guid" value="93d41226-d7af-495c-b023-08a6af077962"/>
+					<attribute id="UUID" type="guid" value="d2e48d4d-4b19-458f-a880-34aa51c04519"/>
+				</node>
+				<node id="FeatDescription">
+					<attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa6s8d5" version="4"/>
+					<attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f6c8aa2d1f2" version="2"/>
+					<attribute id="ExactMatch" type="FixedString" value="ClassDivergence_Artificer"/>
+					<attribute id="FeatId" type="guid" value="1e0ac3c4-5bb5-42d7-941c-9de58d919732"/>
+					<attribute id="UUID" type="guid" value="b51ca853-4b73-46f8-b87b-054eabf93454"/>
+				</node>
                 <node id="FeatDescription">
                     <attribute id="Description" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714f60d1fd250e" version="3"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="8a87461fd8dd4f5b9098ded714sdf68878d05" version="1"/>

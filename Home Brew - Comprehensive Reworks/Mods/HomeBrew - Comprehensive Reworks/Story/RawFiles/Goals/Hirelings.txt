@@ -2,7 +2,7 @@ Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
 // Hirelings money transfer cost: search for this DB below
-DB_Hirelings_MoneyTransferVariable(3, 1000); // last param is hire price
+DB_Hirelings_MoneyTransferVariable(3, 2500); // last param is hire price
 
 NOT DB_Hirelings_HACK_PlayerRoot_Chosen((CHARACTERROOT)NULL_00000000-0000-0000-0000-000000000000,(FLAG)NULL_00000000-0000-0000-0000-000000000000,(FLAG)NULL_00000000-0000-0000-0000-000000000000);
 NOT DB_Hirelings_HACK_Classes_Chosen((FLAG)NULL_00000000-0000-0000-0000-000000000000,(CHARACTER)NULL_00000000-0000-0000-0000-000000000000,(FLAG)NULL_00000000-0000-0000-0000-000000000000);
@@ -1145,6 +1145,64 @@ ClearFlag(Hirelings_State_CCmutex_dfbc6d83-5c08-417d-9cc7-6f3bcdea9deb,NULL_0000
 PROC_PlayerSlot_Free();
 PROC_Hirelings_Refund(_Player);
 
+
+// Update hireling pricing before a native recruitment dialogue opens.
+// Keep the refund price and dialogue-payment price synchronized.
+PROC
+PROC_DialogFlagSetup(_Dialog, _, _)
+AND
+DB_Hirelings_RecruiterDialog(_Dialog)
+AND
+GetRulesetModifierBool(MYTHIC_STATS_b843263f-869c-4a21-960d-867091e8bd04, 1)
+AND
+DB_Hirelings_MoneyTransferVariable(3, _PreviousCost)
+AND
+_PreviousCost != 10000
+THEN
+NOT DB_Hirelings_MoneyTransferVariable(3, _PreviousCost);
+DB_Hirelings_MoneyTransferVariable(3, 10000);
+
+PROC
+PROC_DialogFlagSetup(_Dialog, _, _)
+AND
+DB_Hirelings_RecruiterDialog(_Dialog)
+AND
+GetRulesetModifierBool(MYTHIC_STATS_b843263f-869c-4a21-960d-867091e8bd04, 0)
+AND
+DB_Hirelings_MoneyTransferVariable(3, _PreviousCost)
+AND
+_PreviousCost != 2500
+THEN
+NOT DB_Hirelings_MoneyTransferVariable(3, _PreviousCost);
+DB_Hirelings_MoneyTransferVariable(3, 2500);
+
+PROC
+PROC_DialogFlagSetup(_Dialog, _, _)
+AND
+DB_Hirelings_RecruiterDialog(_Dialog)
+AND
+GetRulesetModifierBool(MYTHIC_STATS_b843263f-869c-4a21-960d-867091e8bd04, 1)
+AND
+DB_DialogMoneyTransfer(3, _Dialog, _PreviousPrice)
+AND
+_PreviousPrice != 10000
+THEN
+NOT DB_DialogMoneyTransfer(3, _Dialog, _PreviousPrice);
+DB_DialogMoneyTransfer(3, _Dialog, 10000);
+
+PROC
+PROC_DialogFlagSetup(_Dialog, _, _)
+AND
+DB_Hirelings_RecruiterDialog(_Dialog)
+AND
+GetRulesetModifierBool(MYTHIC_STATS_b843263f-869c-4a21-960d-867091e8bd04, 0)
+AND
+DB_DialogMoneyTransfer(3, _Dialog, _PreviousPrice)
+AND
+_PreviousPrice != 2500
+THEN
+NOT DB_DialogMoneyTransfer(3, _Dialog, _PreviousPrice);
+DB_DialogMoneyTransfer(3, _Dialog, 2500);
 
 IF
 DB_Hirelings_MoneyTransferVariable(_Var, _Cost)

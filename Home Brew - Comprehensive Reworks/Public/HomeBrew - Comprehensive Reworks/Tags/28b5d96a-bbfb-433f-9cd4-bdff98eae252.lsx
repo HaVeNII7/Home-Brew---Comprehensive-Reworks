@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="8" build="301" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="|Player or NPC is a paladin of Bahamut.|" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hea7c770eg9133g452bg96c2g014bed2472f3" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="hb89ddff2ga0a9g4a9fgadc2gf7e6db76dc81" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="PALADIN_BAHAMUT" />
+			<attribute id="UUID" type="guid" value="28b5d96a-bbfb-433f-9cd4-bdff98eae252" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Class" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+				<node id="Properties" />
+			</children>
+		</node>
+	</region>
+</save>

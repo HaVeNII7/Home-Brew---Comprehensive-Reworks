@@ -70,7 +70,7 @@ data "DisplayName" "d3e15e63749c4b62b8e7760ccaw2es6f2e2f1;1"
 data "Description" "d3e15e63749c4b62b8e7760cc72354r6we8fa;2"
 data "Icon" "PassiveFeature_ReliableTalent"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "IF(IsAttackType(AttackType.MeleeUnarmedAttack)):RollBonus(Attack,DexterityModifier);IF(IsAttackType(AttackType.RangedUnarmedAttack)):RollBonus(Attack,DexterityModifier)"
+data "Boosts" "IF(IsAttackType(AttackType.MeleeUnarmedAttack)):RollBonus(Attack,DexterityModifier);IF(IsAttackType(AttackType.RangedUnarmedAttack)):RollBonus(Attack,DexterityModifier);UnlockSpell(Projectile_SmokeBomb)"
 
 new entry "LuckyToss"
 type "PassiveData"

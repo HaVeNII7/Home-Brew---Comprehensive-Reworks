@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="7" build="201" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="|Jaheira companion, shapeshifted or not|" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h68408481g7a16g42e1ga400gbd6f18de3d03" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h660ebd09g9494g4a8fg9444gd0146f38a45b" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="REALLY_JAHEIRA" />
+			<attribute id="UUID" type="guid" value="8457eb5f-036c-4143-b6cf-447a9f555c7a" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

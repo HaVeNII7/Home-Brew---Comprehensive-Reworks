@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="0" build="58" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="| Lae'zel, the Gith Companion |" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h0d178affga12eg488cga158g8582c1e427df" version="2" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h59d20b67g2f2ag401cg92e7g8d38385f57c5" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="REALLY_LAEZEL" />
+			<attribute id="UUID" type="guid" value="b5682d1d-c395-489c-9675-1f9b0c328ea5" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="7fbb9f1b-043b-e054-d670-96b4c96aa252" />
+					<attribute id="Name" type="LSString" value="XEL_GateStone_Eta_Effect" />
+					<attribute id="SourceFile" type="LSString" value="Public/HomeBrew - Comprehensive Reworks/Assets/Effects/Effects_Banks/XEL_GateStone_Eta_Effect.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="XEL_GateStone_Eta_Effect" />
+					<attribute id="BoundsMin" type="fvec3" value="-2 -1.9 -2" />
+					<attribute id="BoundsMax" type="fvec3" value="2 2.1 2" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="0.6" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5eeebc6b-bb55-4dbd-bdf1-98bb2978f44d" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

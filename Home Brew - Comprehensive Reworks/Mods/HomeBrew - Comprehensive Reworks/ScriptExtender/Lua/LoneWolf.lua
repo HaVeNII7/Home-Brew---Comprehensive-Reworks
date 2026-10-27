@@ -1,6 +1,4 @@
--- ============================================================
 -- Lone Wolf (party-size based)
--- ============================================================
 
 local LONE_WOLF_PASSIVE = "CT_LoneWolf"
 local SOLO_STATUS       = "CT_LONEWOLF_1"
@@ -10,9 +8,7 @@ local PARTY_LIMIT       = 2
 local LOG_PREFIX = "[LoneWolf] "
 local function Log(msg) Ext.Utils.Print(LOG_PREFIX .. msg) end
 
--- ------------------------------------------------------------
 -- Party counting (DB_Players)
--- ------------------------------------------------------------
 local function GetValidParty()
     local valid = {}
     local players = Osi.DB_Players:Get(nil) or {}
@@ -27,9 +23,7 @@ local function GetValidParty()
     return valid
 end
 
--- ------------------------------------------------------------
 -- Apply/remove Lone Wolf statuses
--- ------------------------------------------------------------
 local function ClearStatuses(charID)
     Osi.RemoveStatus(charID, SOLO_STATUS)
     Osi.RemoveStatus(charID, DUO_STATUS)
@@ -45,9 +39,7 @@ local function ApplyForPartySize(charID, partySize)
     end
 end
 
--- ------------------------------------------------------------
 -- Main update
--- ------------------------------------------------------------
 local function UpdateLoneWolf(reason)
     local valid = GetValidParty()
     local partySize = #valid
@@ -65,9 +57,7 @@ local function UpdateLoneWolf(reason)
     end
 end
 
--- ------------------------------------------------------------
 -- Listeners
--- ------------------------------------------------------------
 Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function()
     UpdateLoneWolf("LevelGameplayStarted")
 end)
@@ -88,13 +78,11 @@ Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
     end
 end)
 
--- ------------------------------------------------------------
 -- Passive-change detector (fixes respec selecting it)
--- ------------------------------------------------------------
 local didInitialRefresh = false
-local lastPassiveState = {}   -- charID -> boolean
+local lastPassiveState = {}
 local tickCounter = 0
-local TICK_INTERVAL = 30      -- about twice/sec at 60fps
+local TICK_INTERVAL = 30
 
 Ext.Events.Tick:Subscribe(function()
     tickCounter = tickCounter + 1

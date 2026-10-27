@@ -1164,7 +1164,7 @@ data "DisplayName" "h1c046e70g3edcg4ba8g9a99gbafa2c7a41b5;3"
 data "Description" "h81d70f61g785eg4fb6gb7edg4cb2e53f8098;3"
 data "Icon" "PassiveFeature_Parry"
 data "Properties" "IsHidden"
-data "Boosts" "UnlockSpell(Shout_Parry)"
+data "Boosts" "UnlockInterrupt(Interrupt_Parry)"
 
 new entry "PrecisionAttack"
 type "PassiveData"

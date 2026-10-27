@@ -15,6 +15,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes"
@@ -56,6 +58,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes"
@@ -96,6 +100,8 @@ add equipmentgroup
 add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
 add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
@@ -140,6 +146,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes"
@@ -180,6 +188,8 @@ add equipmentgroup
 add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
 add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
@@ -224,6 +234,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes"
@@ -265,6 +277,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes"
@@ -305,6 +319,8 @@ add equipmentgroup
 add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
 add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
@@ -349,6 +365,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes"
@@ -392,6 +410,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes"
@@ -432,6 +452,8 @@ add equipmentgroup
 add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
 add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
@@ -474,6 +496,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes"
@@ -514,6 +538,8 @@ add equipmentgroup
 add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
 add equipmentgroup
 add equipment entry "ARM_Camp_Body"
 add equipmentgroup
@@ -564,6 +590,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body_Astarion"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes_Astarion"
@@ -571,6 +599,8 @@ add equipmentgroup
 add equipment entry "ARM_Underwear_Astarion"
 add equipmentgroup
 add equipment entry "DOR_BagsReforged_AstarionBag"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_StartingGear"
 
 new equipment "EQ_Gale"
 add initialweaponset "Melee"
@@ -595,6 +625,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body_Gale"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes_Gale"
@@ -602,6 +634,8 @@ add equipmentgroup
 add equipment entry "ARM_Underwear_Gale"
 add equipmentgroup
 add equipment entry "DOR_BagsReforged_GaleBag"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_StartingGear"
 
 new equipment "EQ_Karlach"
 add initialweaponset "Melee"
@@ -626,6 +660,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body_Karlach"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes_Karlach"
@@ -633,6 +669,8 @@ add equipmentgroup
 add equipment entry "ARM_Underwear_Karlach"
 add equipmentgroup
 add equipment entry "DOR_BagsReforged_KarlachBag"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_StartingGear"
 
 new equipment "EQ_Laezel"
 add initialweaponset "Melee"
@@ -657,6 +695,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body_Laezel"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes_Laezel"
@@ -664,6 +704,8 @@ add equipmentgroup
 add equipment entry "ARM_Underwear_Laezel"
 add equipmentgroup
 add equipment entry "DOR_BagsReforged_LaezelBag"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_StartingGear"
 
 new equipment "EQ_Shadowheart"
 add initialweaponset "Melee"
@@ -690,6 +732,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body_Shadowheart"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes_Shadowheart"
@@ -697,6 +741,8 @@ add equipmentgroup
 add equipment entry "ARM_Underwear_Shadowheart"
 add equipmentgroup
 add equipment entry "DOR_BagsReforged_ShadowheartBag"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_StartingGear"
 
 new equipment "EQ_Wyll"
 add initialweaponset "Melee"
@@ -721,6 +767,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body_Wyll"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes_Wyll"
@@ -728,6 +776,8 @@ add equipmentgroup
 add equipment entry "ARM_Underwear_Wyll"
 add equipmentgroup
 add equipment entry "DOR_BagsReforged_WyllBag"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_StartingGear"
 
 new equipment "EQ_Halsin"
 add initialweaponset "Melee"
@@ -752,6 +802,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body_Halsin"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes_Halsin"
@@ -759,6 +811,8 @@ add equipmentgroup
 add equipment entry "ARM_Underwear_Halsin"
 add equipmentgroup
 add equipment entry "DOR_BagsReforged_HalsinBag"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_StartingGear"
 
 new equipment "EQP_Jaheira"
 add initialweaponset "Melee"
@@ -785,6 +839,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body_Jaheira"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes_Jaheira"
@@ -792,6 +848,8 @@ add equipmentgroup
 add equipment entry "ARM_Underwear_Jaheira"
 add equipmentgroup
 add equipment entry "DOR_BagsReforged_JaheiraBag"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_StartingGear"
 
 new equipment "GOB_DrowCommander"
 add equipmentgroup
@@ -815,6 +873,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body_Minthara"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes_Minthara"
@@ -822,6 +882,8 @@ add equipmentgroup
 add equipment entry "ARM_Underwear_Minthara"
 add equipmentgroup
 add equipment entry "DOR_BagsReforged_MintharaBag"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_StartingGear"
 
 new equipment "EQP_Minsc"
 add initialweaponset "Ranged"
@@ -848,6 +910,8 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup
+add equipment entry "OBJ_Scroll_ScrollofRebirth"
+add equipmentgroup
 add equipment entry "ARM_Camp_Body_Minsc"
 add equipmentgroup
 add equipment entry "ARM_Camp_Shoes_Minsc"
@@ -855,6 +919,8 @@ add equipmentgroup
 add equipment entry "ARM_Underwear_Minsc"
 add equipmentgroup
 add equipment entry "DOR_BagsReforged_MinscBag"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_StartingGear"
 
 new equipment "CCompanion_Azer"
 add initialweaponset "Melee"

@@ -1598,6 +1598,28 @@ data "StatusGroups" "SG_Surface;SG_DifficultTerrain"
 data "StatusEffect" "dad9bc41-e1b4-4f80-98a0-4d9e768f3575"
 data "ManagedStatusEffectType" "Negative"
 
+<!--DIRECT TARGET-->
+
+new entry "DIRECT_TARGET"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "92028d1c93474f8b821ee0eb2d82b9c7000z5;1"
+data "Description" "92028d1c93474f8b821ee0eb2d82b9c7000ze;6"
+data "Icon" "DT_Vigilance"
+data "StackId" "DIRECT_TARGET"
+data "Boosts" "Tag(AI_PREFERRED_TARGET)"
+data "SoundVocalStart" "NONE"
+data "SoundLoop" "Spell_Status_Dash_MO"
+data "SoundStop" "Spell_Status_Dash_MO_Stop"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "NonExtendable"
+data "ApplyEffect" "c8db5bfe-06a2-4847-a496-bac8a11453ef"
+data "StatusEffect" "30c73b0a-169a-46f9-9f6f-c3ea19117e38"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnCombatEnded;OnSourceDeath"
+data "ManagedStatusEffectType" "Negative"
+data "IsUnique" "1"
+
 <!--DISARMED-->
 
 new entry "DISARM"

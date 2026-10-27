@@ -79,6 +79,9 @@
                         <node id="Rulesets">
                             <children>
                                 <node id="Ruleset">
+                                    <attribute id="Rulesets" type="guid" value="2f135ca5-bad8-464e-99d6-443c7d835fbb"/>
+                                </node>
+                                <node id="Ruleset">
                                     <attribute id="Rulesets" type="guid" value="3f777143-d1de-4035-b9e5-23763148b1fd"/>
                                 </node>
                                 <node id="Ruleset">
@@ -103,6 +106,9 @@
                                 <node id="Ruleset">
                                     <attribute id="Rulesets" type="guid" value="28b5b9de-cef7-4cc2-972c-22f962efe757"/>
                                 </node>
+                                <node id="Ruleset">
+                                    <attribute id="Rulesets" type="guid" value="5d595a7a-6182-4559-b404-ed7cc7ad8ada"/>
+                                </node>
                             </children>
                         </node>
                     </children>
@@ -117,6 +123,9 @@
                         <node id="Rulesets">
                             <children>
                                 <node id="Ruleset">
+                                    <attribute id="Rulesets" type="guid" value="536ca292-53d1-4fe0-a85a-c29dc5b737fb"/>
+                                </node>
+                                <node id="Ruleset">
                                     <attribute id="Rulesets" type="guid" value="643bed89-5895-4b77-a29e-08d19634eff8"/>
                                 </node>
                                 <node id="Ruleset">
@@ -124,6 +133,9 @@
                                 </node>
                                 <node id="Ruleset">
                                     <attribute id="Rulesets" type="guid" value="5d595a7a-6182-4559-b404-ed7cc7ad8ada"/>
+                                </node>
+                                <node id="Ruleset">
+                                    <attribute id="Rulesets" type="guid" value="8ed1fb00-91a5-437e-864d-6fb8113bc37e"/>
                                 </node>
                             </children>
                         </node>

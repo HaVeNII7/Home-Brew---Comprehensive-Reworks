@@ -1,0 +1,799 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib"
+                    xmlns:ls="clr-namespace:ls;assembly=Code"
+                    xmlns:data="clr-namespace:System.Data;assembly=System.Data"
+                    mc:Ignorable="d">
+
+    <BitmapImage x:Key="ScreenshotHolder" UriSource="pack://application:,,,/Core;component/Assets/SaveLoad/frame_screenshot.png"/>
+    <BitmapImage x:Key="CrossImage" UriSource="pack://application:,,,/Core;component/Assets/SaveLoad/ico_cross_save.png"/>
+    <BitmapImage x:Key="CloudImage" UriSource="pack://application:,,,/Core;component/Assets/SaveLoad/ico_cloud.png"/>
+    <BitmapImage x:Key="HasModsImage" UriSource="/Core;component/Assets/SaveLoad/ico_modio.png"/>
+    <BitmapImage x:Key="ConsoleIncompatibleImage" UriSource="/Core;component/Assets/SaveLoad/ico_modio_w3.png"/>
+    <BitmapImage x:Key="TitleDecoration" UriSource="pack://application:,,,/Core;component/Assets/SaveLoad/title_decoration.png"/>
+    <BitmapImage x:Key="NewSaveDecoration" UriSource="pack://application:,,,/Core;component/Assets/SaveLoad/saveBtn_decoration.png"/>
+    <BitmapImage x:Key="FadeFooterImage" UriSource="pack://application:,,,/Core;component/Assets/DMSettings/fade_footer.png"/>
+    <BitmapImage x:Key="FooterCenterDecorImage" UriSource="pack://application:,,,/Core;component/Assets/DMSettings/footer_centerDecors.png"/>
+    <BitmapImage x:Key="FooterSideDecorImage" UriSource="pack://application:,,,/Core;component/Assets/DMSettings/footer_sideDecors.png"/>
+    <BitmapImage x:Key="FadeHeader" UriSource="pack://application:,,,/Core;component/Assets/DMSettings/fade_header.png"/>
+
+    <!-- Message box to ensure user wants to delete a savegame -->
+    <ls:LSMessageBoxData x:Key="MessageBoxSaveDelete"
+                         Title="{Binding Source='h07d13857g9ac7g4a97g912cg78a67b932954', Converter={StaticResource TranslatedStringConverter}}"
+                         UUID="UUID">
+        <ls:LSMessageBoxData.Actions>
+            <ls:LSGameCommandData ActionName="{Binding Source='hf52bf842g05beg48dega717gca15b3678e0e', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.DoDelete, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  BoundEvent="UIAccept"/>
+            <ls:LSGameCommandData ActionName="{Binding Source='heded8384gb4f5g439dg9883g5cf950b2bbfc', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.CustomEvent, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  CommandParameter="CloseMessageBox"
+                                  BoundEvent="UICancel"/>
+        </ls:LSMessageBoxData.Actions>
+        <ls:LSMessageBoxData.Text>
+            <MultiBinding Converter="{StaticResource ParameterizedTranslatedStringConverter}">
+                <Binding Source="hff837222g4949g4631g9090g989ae93fbe29"/>
+                <Binding Path="DataContext.SelectedSave.Title" RelativeSource="{RelativeSource AncestorType={x:Type ls:UIWidget}}"/>
+            </MultiBinding>
+        </ls:LSMessageBoxData.Text>
+    </ls:LSMessageBoxData>
+
+    <!-- Message boxes to ensure user wants to delete a campaign and confirming this action -->
+    <ls:LSMessageBoxData x:Key="MessageBoxSaveDeleteCampaignConfirmation"
+                         Title="{Binding Source='ha58e0d43g4b0ag433ag939eg1c140baa7732', Converter={StaticResource TranslatedStringConverter}}"
+                         Text="{Binding Source='h72ff8199g2db2g4b13g924cg70eb7879f77c', Converter={StaticResource TranslatedStringConverter}}"
+                         UUID="UUID">
+        <ls:LSMessageBoxData.Actions>
+            <ls:LSGameCommandData ActionName="{Binding Source='hf52bf842g05beg48dega717gca15b3678e0e', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.DoDeleteCampaign, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  BoundEvent="UIAccept"/>
+            <ls:LSGameCommandData ActionName="{Binding Source='heded8384gb4f5g439dg9883g5cf950b2bbfc', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.CustomEvent, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  CommandParameter="CloseMessageBox"
+                                  BoundEvent="UICancel"/>
+        </ls:LSMessageBoxData.Actions>
+    </ls:LSMessageBoxData>
+
+    <ls:LSMessageBoxData x:Key="MessageBoxSaveDeleteCampaign"
+                         Title="{Binding Source='ha58e0d43g4b0ag433ag939eg1c140baa7732', Converter={StaticResource TranslatedStringConverter}}"
+                         UUID="UUID">
+        <ls:LSMessageBoxData.Actions>
+            <ls:LSGameCommandData ActionName="{Binding Source='hf52bf842g05beg48dega717gca15b3678e0e', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.OpenConfirmationDeleteCampaignCommand, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  CommandParameter="{StaticResource MessageBoxSaveDeleteCampaignConfirmation}"
+                                  BoundEvent="UIAccept"/>
+            <ls:LSGameCommandData ActionName="{Binding Source='heded8384gb4f5g439dg9883g5cf950b2bbfc', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.CustomEvent, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  CommandParameter="CloseMessageBox"
+                                  BoundEvent="UICancel"/>
+        </ls:LSMessageBoxData.Actions>
+        <ls:LSMessageBoxData.Text>
+            <MultiBinding Converter="{StaticResource ParameterizedTranslatedStringConverter}">
+                <Binding Source="h66937a39g1904g45a6gae4ag8fad832cc5ee"/>
+                <Binding Path="DataContext.SelectedPlaythrough.ProtagonistName" RelativeSource="{RelativeSource AncestorType={x:Type ls:UIWidget}}"/>
+            </MultiBinding>
+        </ls:LSMessageBoxData.Text>
+    </ls:LSMessageBoxData>
+
+    <!-- Message boxes to ensure user wants to delete all the saves of a campaign (except latest) and confirming this action -->
+    <ls:LSMessageBoxData x:Key="MessageBoxSaveDeleteCampaignButLatestConfirmation"
+                         Title="{Binding Source='h9c2809d8g833dg4deagb0d9g5f0ab199cb41', Converter={StaticResource TranslatedStringConverter}}"
+                         UUID="UUID">
+        <ls:LSMessageBoxData.Actions>
+            <ls:LSGameCommandData ActionName="{Binding Source='hf52bf842g05beg48dega717gca15b3678e0e', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.DoDeleteAllCampaignButLatest, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  BoundEvent="UIAccept"/>
+            <ls:LSGameCommandData ActionName="{Binding Source='heded8384gb4f5g439dg9883g5cf950b2bbfc', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.CustomEvent, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  CommandParameter="CloseMessageBox"
+                                  BoundEvent="UICancel"/>
+        </ls:LSMessageBoxData.Actions>
+        <ls:LSMessageBoxData.Text>
+            <MultiBinding Converter="{StaticResource ParameterizedTranslatedStringConverter}">
+                <Binding Source="hbf7cfa8dgfed9g42c3gaf6eg218a67d5be4b"/>
+                <Binding Path="DataContext.SelectedPlaythrough.LatestSave.Title" RelativeSource="{RelativeSource AncestorType={x:Type ls:UIWidget}}"/>
+            </MultiBinding>
+        </ls:LSMessageBoxData.Text>
+    </ls:LSMessageBoxData>
+
+    <ls:LSMessageBoxData x:Key="MessageBoxSaveDeleteCampaignButLatest"
+                         Title="{Binding Source='h9c2809d8g833dg4deagb0d9g5f0ab199cb41', Converter={StaticResource TranslatedStringConverter}}"
+                         UUID="UUID">
+        <ls:LSMessageBoxData.Actions>
+            <ls:LSGameCommandData ActionName="{Binding Source='hf52bf842g05beg48dega717gca15b3678e0e', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.OpenConfirmationDeleteCampaignCommand, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  CommandParameter="{StaticResource MessageBoxSaveDeleteCampaignButLatestConfirmation}"
+                                  BoundEvent="UIAccept"/>
+            <ls:LSGameCommandData ActionName="{Binding Source='heded8384gb4f5g439dg9883g5cf950b2bbfc', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.CustomEvent, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  CommandParameter="CloseMessageBox"
+                                  BoundEvent="UICancel"/>
+        </ls:LSMessageBoxData.Actions>
+        <ls:LSMessageBoxData.Text>
+            <MultiBinding Converter="{StaticResource ParameterizedTranslatedStringConverter}">
+                <Binding Source="ha66a404cga5efg404dg80adg1a462b40c8b8"/>
+                <Binding Path="DataContext.SelectedPlaythrough.ProtagonistName" RelativeSource="{RelativeSource AncestorType={x:Type ls:UIWidget}}"/>
+                <Binding Path="DataContext.SelectedPlaythrough.LatestSave.Title" RelativeSource="{RelativeSource AncestorType={x:Type ls:UIWidget}}"/>
+            </MultiBinding>
+        </ls:LSMessageBoxData.Text>
+    </ls:LSMessageBoxData>
+
+    <!-- The deprecated message box appears only for debug/internal builds -->
+    <ls:LSMessageBoxData x:Key="MessageBoxSaveDeleteDeprecated"
+                         Text="Are you sure you want to delete the deprecated save files? (aka the ones that can't be loaded because we bumped the savefile version)"
+                         Title="Delete deprecated files"
+                         UUID="UUID">
+        <ls:LSMessageBoxData.Actions>
+            <ls:LSGameCommandData ActionName="{Binding Source='hf52bf842g05beg48dega717gca15b3678e0e', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.DoDeleteDeprecated, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  BoundEvent="UIAccept"/>
+            <ls:LSGameCommandData ActionName="{Binding Source='heded8384gb4f5g439dg9883g5cf950b2bbfc', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding DataContext.CustomEvent, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                  CommandParameter="CloseMessageBox"
+                                  BoundEvent="UICancel"/>
+        </ls:LSMessageBoxData.Actions>
+    </ls:LSMessageBoxData>
+
+    <!-- Message box to ensure user wants to overwrite a savegame -->
+    <ls:LSMessageBoxData x:Key="MessageBoxSaveOverwrite"
+                                                 Title="{Binding Source='h0467763cg427dg436bg8b84g8dd62da07906', Converter={StaticResource TranslatedStringConverter}}"
+                                                 UUID="SaveOverwriteUUID">
+        <ls:LSMessageBoxData.Text>
+            <MultiBinding Converter="{StaticResource ParameterizedTranslatedStringConverter}">
+                <Binding Source="hb1dc6bf6g3206g432egb052g345428bd3537"/>
+                <Binding Path="DataContext.SelectedSave.Title" RelativeSource="{RelativeSource AncestorType={x:Type ls:UIWidget}}"/>
+            </MultiBinding>
+        </ls:LSMessageBoxData.Text>
+        <ls:LSMessageBoxData.Actions>
+            <ls:LSGameCommandData ActionName="{Binding Source='hf52bf842g05beg48dega717gca15b3678e0e', Converter={StaticResource TranslatedStringConverter}}"
+                                      Command="{Binding DataContext.DoSaveOverwrite, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                      BoundEvent="UIAccept"/>
+            <ls:LSGameCommandData ActionName="{Binding Source='heded8384gb4f5g439dg9883g5cf950b2bbfc', Converter={StaticResource TranslatedStringConverter}}" 
+                                      Command="{Binding DataContext.CustomEvent, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                      CommandParameter="CloseMessageBox"
+                                      BoundEvent="UICancel"/>
+        </ls:LSMessageBoxData.Actions>
+    </ls:LSMessageBoxData>
+
+    <!-- Message box to warn about unsaved cc changes before overwriting a save -->
+    <ls:LSMessageBoxData x:Key="MessageBoxSaveOverwriteCCWarning"
+                                                 Title="{Binding Source='h87a9d1fcgf345g49c4g94f6gd56b0deb1501', Converter={StaticResource TranslatedStringConverter}}"
+                                                 Text="{Binding Source='ha5bb2680g75cag499bg9040gfe4033508f26', Converter={StaticResource TranslatedStringConverter}}"
+                                                 UUID="SaveOverwriteCCWarningUUID">
+        <ls:LSMessageBoxData.Actions>
+            <ls:LSGameCommandData ActionName="{Binding Source='h7722daddg843ag420cga14ag68863470f9f1', Converter={StaticResource TranslatedStringConverter}}"
+                                      Command="{Binding DataContext.CloseMessageboxAndOpenNewCommand, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                      BoundEvent="UIAccept">
+                <ls:LSGameCommandData.CommandParameter>
+                    <MultiBinding Converter="{StaticResource PassThroughConverter}">
+                        <Binding Source="SaveOverwriteCCWarningUUID"/>
+                        <Binding Source="{StaticResource MessageBoxSaveOverwrite}"/>
+                    </MultiBinding>
+                </ls:LSGameCommandData.CommandParameter>
+            </ls:LSGameCommandData>
+            <ls:LSGameCommandData ActionName="{Binding Source='h0d98c8cbg811eg40a5g958dg2552a3f4e350', Converter={StaticResource TranslatedStringConverter}}" 
+                                      Command="{Binding DataContext.CustomEvent, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                                      CommandParameter="CloseMessageBox"
+                                      BoundEvent="UICancel"/>
+        </ls:LSMessageBoxData.Actions>
+    </ls:LSMessageBoxData>
+
+    <ControlTemplate x:Key="SaveLoad.SavegameList" TargetType="ListBox">
+        <ls:LSScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+            <ls:LSScrollViewer.Template>
+                <ControlTemplate TargetType="{x:Type ls:LSScrollViewer}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="38" />
+                        </Grid.ColumnDefinitions>
+
+                        <ScrollContentPresenter Grid.Column="0" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}" CanContentScroll="{TemplateBinding CanContentScroll}"/>
+                        <ScrollBar Grid.Column="1" Name="PART_VerticalScrollBar" Value="{TemplateBinding VerticalOffset}" Maximum="{TemplateBinding ScrollableHeight}" ViewportSize="{TemplateBinding ViewportHeight}" Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Style="{StaticResource BaseScrollBar}" Margin="0,20,0,20"/>
+                    </Grid>
+                </ControlTemplate>
+            </ls:LSScrollViewer.Template>
+
+            <ItemsPresenter />
+        </ls:LSScrollViewer>
+    </ControlTemplate>
+
+    <Style x:Key="SavegameItemTemplateStyle" TargetType="ListBoxItem">
+        <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}"/>
+        <Setter Property="Height" Value="68"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                    <ControlTemplate.Resources>
+                        <BitmapImage x:Key="BulletPointImage" UriSource="pack://application:,,,/Core;component/Assets/SaveLoad/ico_listItem_d.png"/>
+                        <BitmapImage x:Key="ListItemSelected" UriSource="pack://application:,,,/Core;component/Assets/SaveLoad/listItem_selected.png"/>
+                    </ControlTemplate.Resources>
+                    <ContentControl x:Name="ControlRoot">
+                        <b:Interaction.Triggers>
+                            <b:EventTrigger EventName="MouseDoubleClick">
+                                <b:InvokeCommandAction Command="{Binding DataContext.UseSavefileCommand, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" IsEnabled="{Binding IsEnabled, ElementName=WarningCommandAction, Converter={StaticResource InvertBoolConverter}}"/>
+                                <b:InvokeCommandAction x:Name="WarningCommandAction" Command="{Binding DataContext.OpenMessageBox, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" CommandParameter="{StaticResource MessageBoxSaveOverwriteCCWarning}" IsEnabled="{Binding DataContext.ShouldWarnAboutCCSaving, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"/>
+                            </b:EventTrigger>
+                        </b:Interaction.Triggers>
+
+                        <Grid x:Name="GridRoot" Background="Transparent" Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType={x:Type ScrollContentPresenter}}}">
+                            <b:Interaction.Triggers>
+                                <b:EventTrigger EventName="MouseEnter">
+                                    <ls:LSPlaySound Sound="UI_Shared_Hover"/>
+                                </b:EventTrigger>
+
+                                <b:PropertyChangedTrigger Binding="{Binding IsSelected}">
+                                    <ls:LSPlaySound Sound="UI_Shared_Select"/>
+                                </b:PropertyChangedTrigger>
+                            </b:Interaction.Triggers>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="84"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0"  x:Name="bg" Grid.ColumnSpan="4" Source="{StaticResource ListItemSelected}" Stretch="Fill" Margin="-40,8,0,-8" IsHitTestVisible="False" Visibility="Hidden" />
+
+                            <Image x:Name="bulletPoint" Grid.Column="0" Source="{StaticResource BulletPointImage}" Stretch="None" Margin="12,0" HorizontalAlignment="Right"/>
+
+                            <TextBlock Grid.Column="1" x:Name="Title" Foreground="{StaticResource LS_accent75TxtColor}" FontSize="{StaticResource ScaledLargeFontSize}" HorizontalAlignment="Stretch" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" IsHitTestVisible="False">
+                            <Run x:Name="TitleName" Text="{Binding Title}"/><Run x:Name="Location" Text="{Binding LevelName, StringFormat='{} - {0}'}" Foreground="{StaticResource LS_baseTxtColor}"/>
+                            </TextBlock>
+
+                            <Image x:Name="HasModsIcon" Source="{StaticResource HasModsImage}" Grid.Column="2" VerticalAlignment="Center" Stretch="None" Visibility="Hidden">
+                                <Image.ToolTip>
+                                    <ls:LSTooltip x:Name="ModsIconTT" Content="{Binding Source=h61df9aeag7c90g43cbgaac8g1c3d458ebcee, Converter={StaticResource TranslatedStringConverter}}" Placement="Right" HorizontalOffset="50" VerticalOffset="-10"/>
+                                </Image.ToolTip>
+                            </Image>
+
+                            <Image x:Name="CrossIcon" Source="{StaticResource CrossImage}" Grid.Column="3" VerticalAlignment="Center" Stretch="None"/>
+                            <Image x:Name="CloudIcon" Source="{StaticResource CloudImage}" Grid.Column="4" VerticalAlignment="Center" Stretch="None"/>
+
+                            <Control x:Name="InputHolderControl" Grid.Column="0" Grid.ColumnSpan="5"/>
+
+                        </Grid>
+                    </ContentControl>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bulletPoint" Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_listItem_h.png"/>
+                            <Setter TargetName="Title" Property="Foreground" Value="{StaticResource LS_tint100}"/>
+                            <Setter TargetName="Location" Property="Foreground" Value="{StaticResource LS_tint100}"/>
+                        </Trigger>
+
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="bg" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="bulletPoint" Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_listItem_h.png"/>
+                            <Setter TargetName="Title" Property="Foreground" Value="{StaticResource LS_tint100}"/>
+                            <Setter TargetName="Location" Property="Foreground" Value="{StaticResource LS_tint100}"/>
+                        </Trigger>
+
+                        <DataTrigger Binding="{Binding Type}" Value="Normal">
+                            <Setter TargetName="Location" Property="Text" Value="{x:Null}"/>
+                        </DataTrigger>
+
+                        <DataTrigger Binding="{Binding Type}" Value="Quicksave">
+                            <Setter TargetName="TitleName" Property="Text">
+                                <Setter.Value>
+                                    <MultiBinding Converter="{StaticResource ParameterizedTranslatedStringConverter}">
+                                        <Binding Source="hc2d2fcdeg94b7g419ag9c16g0bd8232d7d7e"/>
+                                        <Binding Path="SaveID"/>
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                        </DataTrigger>
+
+                        <DataTrigger Binding="{Binding Type}" Value="Autosave">
+                            <Setter TargetName="TitleName" Property="Text">
+                                <Setter.Value>
+                                    <MultiBinding Converter="{StaticResource ParameterizedTranslatedStringConverter}">
+                                        <Binding Source="h0979ca13g2c30g4362gae55g5d0b3bdc2a45"/>
+                                        <Binding Path="SaveID"/>
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                        </DataTrigger>
+
+                        <!-- Single Save -->
+                        <DataTrigger Binding="{Binding Type}" Value="Honour">
+                            <Setter TargetName="TitleName" Property="Text" Value="{Binding Source='hc46a669cgdbedg4bb4g8bfbg7940e7dd74d1', Converter={StaticResource TranslatedStringConverter}}"/>
+                        </DataTrigger>
+                        <!-- Use the area name even if the stored Honour title is fixed. -->
+                        <DataTrigger Binding="{Binding IsHonourMode}" Value="True">
+                            <Setter TargetName="TitleName" Property="Text" Value="{Binding LevelName}"/>
+                            <Setter TargetName="Location" Property="Text" Value="{x:Null}"/>
+                        </DataTrigger>
+
+
+                        <!-- HB: exact automatic titles use Honour Mode, not engine internal SingleSave. -->
+                        <DataTrigger Binding="{Binding Title}" Value="SingleSave">
+                            <Setter TargetName="TitleName" Property="Text" Value="Honour Mode"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Title}" Value="Single Save">
+                            <Setter TargetName="TitleName" Property="Text" Value="Honour Mode"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Title}" Value="HonourMode">
+                            <Setter TargetName="TitleName" Property="Text" Value="Honour Mode"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Title.Str}" Value="SingleSave">
+                            <Setter TargetName="TitleName" Property="Text" Value="Honour Mode"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Title.Str}" Value="Single Save">
+                            <Setter TargetName="TitleName" Property="Text" Value="Honour Mode"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Title.Str}" Value="HonourMode">
+                            <Setter TargetName="TitleName" Property="Text" Value="Honour Mode"/>
+                        </DataTrigger>
+
+                        <!-- Never replace the native Quicksave / Autosave type and index. -->
+                        <DataTrigger Binding="{Binding Type}" Value="Quicksave">
+                                                    <Setter TargetName="TitleName" Property="Text">
+                                                        <Setter.Value>
+                                                            <MultiBinding Converter="{StaticResource ParameterizedTranslatedStringConverter}">
+                                                                <Binding Source="hc2d2fcdeg94b7g419ag9c16g0bd8232d7d7e"/>
+                                                                <Binding Path="SaveID"/>
+                                                            </MultiBinding>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </DataTrigger>
+                        <DataTrigger Binding="{Binding Type}" Value="Autosave">
+                                                    <Setter TargetName="TitleName" Property="Text">
+                                                        <Setter.Value>
+                                                            <MultiBinding Converter="{StaticResource ParameterizedTranslatedStringConverter}">
+                                                                <Binding Source="h0979ca13g2c30g4362gae55g5d0b3bdc2a45"/>
+                                                                <Binding Path="SaveID"/>
+                                                            </MultiBinding>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </DataTrigger>
+                        <DataTrigger Binding="{Binding CloudStatus}" Value="NoSync">
+                            <Setter Property="Visibility" Value="Hidden" TargetName="CloudIcon"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding CloudStatus}" Value="ToBeSynced">
+                            <Setter Property="Opacity" Value="0.6" TargetName="CloudIcon"/>
+                        </DataTrigger>
+
+                        <DataTrigger Binding="{Binding CrossStatus}" Value="NoCrossSync">
+                            <Setter Property="Visibility" Value="Hidden" TargetName="CrossIcon"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding CrossStatus}" Value="Uploading">
+                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_cross_save_uploading.png" TargetName="CrossIcon"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding CrossStatus}" Value="Downloading">
+                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_cross_save_downloading.png" TargetName="CrossIcon"/>
+                            <Setter Property="Foreground" Value="{StaticResource LS_accent00TxtColor}" TargetName="Title"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding CrossStatus}" Value="ToDownload">
+                            <Setter Property="Foreground" Value="{StaticResource LS_accent00TxtColor}" TargetName="Title"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding CrossStatus}" Value="FailedUpload">
+                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_cross_save_uploading_issue.png" TargetName="CrossIcon"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding CrossStatus}" Value="FailedDownload">
+                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_cross_save_downloading_issue.png" TargetName="CrossIcon"/>
+                            <Setter Property="Foreground" Value="{StaticResource LS_accent00TxtColor}" TargetName="Title"/>
+                        </DataTrigger>
+
+                        <DataTrigger Binding="{Binding Validity}" Value="TooOld">
+                            <Setter Property="Foreground" Value="{StaticResource LS_accent00TxtColor}" TargetName="Title"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Validity}" Value="TooNew">
+                            <Setter Property="Foreground" Value="{StaticResource LS_accent00TxtColor}" TargetName="Title"/>
+                        </DataTrigger>
+						<DataTrigger Binding="{Binding Validity}" Value="ModdedCrossSaveConsole">
+							<Setter Property="Foreground" Value="{StaticResource LS_accent00TxtColor}" TargetName="Title"/>
+						</DataTrigger>
+
+						<DataTrigger Binding="{Binding HasMods}" Value="True">
+                            <Setter TargetName="HasModsIcon" Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsCrossplay}" Value="True"/>
+                                <Condition Binding="{Binding IsConsoleFriendly}" Value="False"/>
+                                <Condition Binding="{Binding DataContext.Data.DefineCrossplayEnabled, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" Value="True"/>
+                                <Condition Binding="{Binding DataContext.Data.LarianNetIsConnected, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" Value="True"/>
+                                <Condition Binding="{Binding DataContext.Data.CrossplayIsEnabled, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" Value="True"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter TargetName="HasModsIcon" Property="Source" Value="{StaticResource ConsoleIncompatibleImage}"/>
+                            <Setter TargetName="ModsIconTT" Property="Content" Value="{Binding Source=hebff55c6g3e4cg4193ga9c2gdafb6ced279b, Converter={StaticResource TranslatedStringConverter}}"/>
+                        </MultiDataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SavefileInfo.Title" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource LS_baseTxtColor}"/>
+        <Setter Property="FontSize" Value="{StaticResource ScaledDefaultFontSize}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="SavefileInfo.Value" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource LS_extraspecialTxtColor}"/>
+        <Setter Property="FontSize" Value="{StaticResource ScaledLargeFontSize}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="DeleteDeprecatedButtonStyle" TargetType="ls:LSButton" BasedOn="{StaticResource BigBrownButtonStyle}">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="600"/>
+        <Setter Property="Content" Value="[DBG] Delete deprecated saves"/>
+        <Setter Property="Command" Value="{Binding OpenMessageBox}"/>
+        <Setter Property="CommandParameter" Value="{StaticResource MessageBoxSaveDeleteDeprecated}"/>
+        <Setter Property="Visibility" Value="{Binding Data.IsGold, Converter={StaticResource BoolToCollapsedConverter}}"/>
+    </Style>
+
+    <ControlTemplate x:Key="SaveInformationTemplate">
+        <Grid x:Name="TimeHolders" Margin="0,12,0,60">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.Resources>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Top"/>
+                </Style>
+            </Grid.Resources>
+
+            <TextBlock x:Name="PlayTimeLabel" Grid.Column="0" Grid.Row="0" Text="{Binding Source='hbb2f0430g4914g4a10g8e16g64475b192e02', Converter={StaticResource TranslatedStringConverter}}" Style="{StaticResource SavefileInfo.Title}"/>
+            <TextBlock x:Name="PlayTime" Grid.Column="0" Grid.Row="1" Text="{Binding PlayTimeString}" Style="{StaticResource SavefileInfo.Value}"/>
+
+            <TextBlock x:Name="DateLabel" Grid.Column="1" Grid.Row="0" Text="{Binding Source='hd2d05509gaea8g4d37g9457gf3e226b4baa1', Converter={StaticResource TranslatedStringConverter}}" Style="{StaticResource SavefileInfo.Title}"/>
+            <TextBlock x:Name="Date" Grid.Column="1" Grid.Row="1" Text="{Binding TimeString}" Style="{StaticResource SavefileInfo.Value}"/>
+
+            <TextBlock x:Name="DifficultyLabel" Grid.Column="2" Grid.Row="0" Text="{Binding Source='h46616d84g0ebag4586g9230gca30c54e7596', Converter={StaticResource TranslatedStringConverter}}" Style="{StaticResource SavefileInfo.Title}"/>
+            <TextBlock x:Name="Difficulty" Grid.Column="2" Grid.Row="1" Text="{Binding Difficulty}" Style="{StaticResource SavefileInfo.Value}"/>
+        </Grid>
+
+        <ControlTemplate.Triggers>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="SavePresenterTemplate">
+        <DockPanel Visibility="{Binding SelectedSave, Converter={StaticResource NullToHiddenConverter}}" Margin="60,0,0,0" Width="1346">
+            <TextBlock DockPanel.Dock="Top" Text="{Binding Source='h43359aecg77b3g49d0g9632g18a79d3e0bbd', Converter={StaticResource TranslatedStringConverter}}" Foreground="{StaticResource LS_tint100}" FontSize="{StaticResource ScaledTitleFontSize}" HorizontalAlignment="Center"/>
+
+            <Grid DockPanel.Dock="Top" x:Name="ScreenshotHolder" HorizontalAlignment="Center" Margin="0,40,0,0">
+                <Rectangle Fill="{Binding SelectedScreenshot}" Margin="20"/>
+                <Image Source="{StaticResource ScreenshotHolder}" Stretch="None"/>
+            </Grid>
+
+            <ls:LSButton x:Name="DeleteDeprecatedDbg" DockPanel.Dock="Bottom" Style="{StaticResource DeleteDeprecatedButtonStyle}" Margin="0,0,0,60"/>
+
+            <Grid x:Name="TextDescriptions" Margin="80,36,80,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto" MinHeight="100"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" x:Name="SaveType" Text="{Binding Source='hc41b7af0g94d7g4e1ag979cg904a9146c941', Converter={StaticResource TranslatedStringConverter}}" Style="{StaticResource SavefileInfo.Title}" FontSize="{StaticResource ScaledLargeFontSize}"/>
+                <TextBlock Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" x:Name="RegionName" Text="{Binding SelectedSave.LevelName}" Style="{StaticResource SavefileInfo.Value}" HorizontalAlignment="Stretch" VerticalAlignment="Top" FontSize="{StaticResource ScaledTitleFontSize}" TextWrapping="Wrap" TextAlignment="Center"/>
+
+                <Control Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Template="{StaticResource SaveInformationTemplate}" DataContext="{Binding SelectedSave}" Margin="0,20,0,0"/>
+
+                <Image Grid.Column="0" Grid.Row="3" x:Name="CrossIcon" Source="{StaticResource CrossImage}" Stretch="None" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="0" Grid.Row="4" x:Name="CrossTitle" Text="{Binding Source='hd9a78783g7021g4e8dga770g11c966ce5262', Converter={StaticResource TranslatedStringConverter}}" Style="{StaticResource SavefileInfo.Title}" FontSize="{StaticResource ScaledMediumFontSize}"/>
+                <TextBlock Grid.Column="0" Grid.Row="5" x:Name="CrossSaveStatus" Text="{Binding Source='hb20007ddg7ba5g4432ga01eg42b1f30c0e2f', Converter={StaticResource TranslatedStringConverter}}" Style="{StaticResource SavefileInfo.Value}" VerticalAlignment="Top"/>
+
+                <ls:LSButton Grid.Column="1" Grid.Row="4" Grid.RowSpan="2" x:Name="DeleteBtn"
+                             HorizontalAlignment="Center"
+                             Style="{StaticResource BigBrownButtonStyle}"
+                             Content="{Binding Source='h4b0153e2g855bg45fag9e49g9c4ae03a648c', Converter={StaticResource TranslatedStringConverter}}"
+                             Command="{Binding OpenMessageBox}"
+                             CommandParameter="{DynamicResource MessageBoxSaveDelete}"
+                             BoundEvent="UIDelete"/>
+
+                <Image Grid.Column="2" Grid.Row="3" x:Name="CloudIcon" Source="{StaticResource CloudImage}" Stretch="None"/>
+                <TextBlock Grid.Column="2" Grid.Row="4" x:Name="CloudTitle" Text="{Binding Source='hc76b68d4g8daeg422eg80b2ge283aa2465d9', Converter={StaticResource TranslatedStringConverter}}" Style="{StaticResource SavefileInfo.Title}" FontSize="{StaticResource ScaledMediumFontSize}"/>
+                <TextBlock Grid.Column="2" Grid.Row="5" x:Name="CloudSaveStatus" Text="{Binding Source='hb20007ddg7ba5g4432ga01eg42b1f30c0e2f', Converter={StaticResource TranslatedStringConverter}}" Style="{StaticResource SavefileInfo.Value}" VerticalAlignment="Top"/>
+
+
+                <StackPanel x:Name="VersionText" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+                    <StackPanel.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="{StaticResource ScaledMediumFontSize}"/>
+                            <Setter Property="Foreground" Value="{StaticResource LS_accent00TxtColor}"/>
+                        </Style>
+                    </StackPanel.Resources>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center">
+                            <TextBlock.Text>
+                                <MultiBinding Converter="{StaticResource ParameterizedTranslatedStringConverter}">
+                                    <Binding Source="hf5795482g056ag446fgb664gfe2b0007058e"/>
+                                    <Binding Source="hbbc4fb50ga17ag467dgb3b8g8db652071022" Converter="{StaticResource TranslatedStringConverter}"/>
+                                    <Binding Path="SelectedSave.Version" FallbackValue=""/>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+
+                        <TextBlock x:Name="ValiditySeparator" Text=" - " Visibility="{Binding Visibility, ElementName=InvalidTextReason}"/>
+                        <TextBlock x:Name="InvalidTextReason" Text="" Visibility="Collapsed" HorizontalAlignment="Center"/>
+                    </StackPanel>
+
+                    <TextBlock x:Name="SingleSaveDescription" Text="{Binding Source='hb276a3ccg5e63g47fag8820gb751dc159b4e', Converter={StaticResource TranslatedStringConverter}}" Visibility="Collapsed" Foreground="{StaticResource LS_warning50TxtColor}" Margin="0,12,0,0"/>
+                </StackPanel>
+            </Grid>
+
+        </DockPanel>
+
+        <ControlTemplate.Triggers>
+            <!-- Triggers for CrossSave -->
+            <DataTrigger Binding="{Binding SelectedSave.CrossStatus}" Value="NoCrossSync">
+                <Setter TargetName="CrossIcon" Property="Visibility" Value="Hidden"/>
+                <Setter TargetName="CrossTitle" Property="Visibility" Value="Hidden"/>
+                <Setter TargetName="CrossSaveStatus" Property="Visibility" Value="Hidden"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedSave.CrossStatus}" Value="InCrossSync">
+                <Setter TargetName="CrossSaveStatus" Property="Foreground" Value="{StaticResource LS_accent75TxtColor}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedSave.CrossStatus}" Value="Uploading">
+                <Setter TargetName="CrossSaveStatus" Property="Foreground" Value="{StaticResource SaveLoad.Uploading}"/>
+                <Setter TargetName="CrossSaveStatus" Property="Text" Value="{Binding Source='h36ab7cddg5320g4ba0ga3f5g84b0c69c25b5', Converter={StaticResource TranslatedStringConverter}}"/>
+                <Setter TargetName="CrossIcon" Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_cross_save_uploading.png"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedSave.CrossStatus}" Value="Downloading">
+                <Setter TargetName="CrossSaveStatus" Property="Foreground" Value="{StaticResource SaveLoad.Downloading}"/>
+                <Setter TargetName="CrossSaveStatus" Property="Text" Value="{Binding Source='hda248faeg2731g45a1g9687ga449aef4f1cf', Converter={StaticResource TranslatedStringConverter}}"/>
+                <Setter TargetName="CrossIcon" Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_cross_save_downloading.png"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedSave.CrossStatus}" Value="FailedUpload">
+                <Setter TargetName="CrossSaveStatus" Property="Foreground" Value="{StaticResource SaveLoad.Uploading}"/>
+                <Setter TargetName="CrossSaveStatus" Property="Text" Value="{Binding Source='hf86b04ffg9073g422egab1agdfbf61109ae2', Converter={StaticResource TranslatedStringConverter}}"/>
+                <Setter TargetName="CrossIcon" Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_cross_save_uploading_issue.png"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedSave.CrossStatus}" Value="FailedDownload">
+                <Setter TargetName="CrossSaveStatus" Property="Foreground" Value="{StaticResource SaveLoad.Downloading}"/>
+                <Setter TargetName="CrossSaveStatus" Property="Text" Value="{Binding Source='h3123b1adgf9cfg47b6gaf3fg8494b2353658', Converter={StaticResource TranslatedStringConverter}}"/>
+                <Setter TargetName="CrossIcon" Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_cross_save_downloading_issue.png"/>
+            </DataTrigger>
+
+            <!-- Triggers for Cloud save -->
+            <DataTrigger Binding="{Binding SelectedSave.CloudStatus}" Value="NoSync">
+                <Setter TargetName="CloudIcon" Property="Visibility" Value="Hidden"/>
+                <Setter TargetName="CloudTitle" Property="Visibility" Value="Hidden"/>
+                <Setter TargetName="CloudSaveStatus" Property="Visibility" Value="Hidden"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedSave.CloudStatus}" Value="InSync">
+                <Setter TargetName="CloudSaveStatus" Property="Foreground" Value="{StaticResource LS_accent75TxtColor}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedSave.CloudStatus}" Value="ToBeSynced">
+                <Setter TargetName="CloudSaveStatus" Property="Foreground" Value="{StaticResource SaveLoad.Downloading}"/>
+                <Setter TargetName="CloudSaveStatus" Property="Text" Value="{Binding Source='h3efe7ad3g38e4g4155g888dg642ed634e5b6', Converter={StaticResource TranslatedStringConverter}}"/>
+            </DataTrigger>
+
+            <!-- Triggers for save type -->
+            <DataTrigger Binding="{Binding SelectedSave.Type}" Value="Quicksave">
+                <Setter TargetName="SaveType" Property="Text" Value="{Binding Source='h07880ddcgf66eg4c24g9fd5g6ad2c8cf67c3', Converter={StaticResource TranslatedStringConverter}}"/>
+            </DataTrigger>
+
+            <DataTrigger Binding="{Binding SelectedSave.Type}" Value="Autosave">
+                <Setter TargetName="SaveType" Property="Text" Value="{Binding Source='habeee505g3007g49cag8398gca3ebc53911b', Converter={StaticResource TranslatedStringConverter}}"/>
+            </DataTrigger>
+
+            <!-- Save validity -->
+            <DataTrigger Binding="{Binding SelectedSave.Validity}" Value="TooOld">
+                <Setter TargetName="InvalidTextReason" Property="Visibility" Value="Visible"/>
+                <Setter TargetName="InvalidTextReason" Property="Text" Value="{Binding Source='h4cb97c56g2888g45c4g8b54ga92efe29d05f', Converter={StaticResource TranslatedStringConverter}}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedSave.Validity}" Value="TooNew">
+                <Setter TargetName="InvalidTextReason" Property="Visibility" Value="Visible"/>
+                <Setter TargetName="InvalidTextReason" Property="Text" Value="{Binding Source='h1a72f51bg19b8g489cg875dg60e3ca119f57', Converter={StaticResource TranslatedStringConverter}}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedSave.Validity}" Value="DataNotReady">
+                <Setter TargetName="InvalidTextReason" Property="Visibility" Value="Visible"/>
+                <Setter TargetName="InvalidTextReason" Property="Text" Value="{Binding Source='hbe37675cg33d5g4f00gbcf0gd82ef213b101', Converter={StaticResource TranslatedStringConverter}}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedSave.Validity}" Value="LoadHonourModeWhilePlaying">
+                <Setter TargetName="SingleSaveDescription" Property="Visibility" Value="Visible"/>
+            </DataTrigger>
+			<DataTrigger Binding="{Binding SelectedSave.Validity}" Value="ModdedCrossSaveConsole">
+				<Setter TargetName="InvalidTextReason" Property="Visibility" Value="Visible"/>
+				<Setter TargetName="InvalidTextReason" Property="Text" Value="{Binding Source='hfa5b8049g1dfag44f8g83e6gb65c58849d71', Converter={StaticResource TranslatedStringConverter}}"/>
+			</DataTrigger>
+		</ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="CampaignPresenterTemplate">
+        <ControlTemplate.Resources>
+            <BitmapImage x:Key="Decoration" UriSource="pack://application:,,,/Core;component/Assets/SaveLoad/saveBtn_decoration.png"/>
+        </ControlTemplate.Resources>
+
+        <DockPanel LastChildFill="False" Margin="60,0,0,0" Width="1346">
+            <TextBlock DockPanel.Dock="Top" Text="{Binding Source='h3eee6536g6802g4551g90ffge290cd22d5de', Converter={StaticResource TranslatedStringConverter}}" Foreground="{StaticResource LS_tint100}" FontSize="{StaticResource ScaledTitleFontSize}" HorizontalAlignment="Center"/>
+
+            <Grid DockPanel.Dock="Top" x:Name="ScreenshotHolder" HorizontalAlignment="Center" Margin="0,40,0,0">
+                <Rectangle Fill="{Binding SelectedScreenshot}" Margin="20"/>
+                <Image Source="{StaticResource ScreenshotHolder}" Stretch="None"/>
+            </Grid>
+
+            <Control DockPanel.Dock="Top" Template="{StaticResource SaveInformationTemplate}" DataContext="{Binding SelectedPlaythrough.LatestSave}" Margin="80"/>
+
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Grid>
+                    <Image Source="{StaticResource Decoration}" Stretch="Uniform" Width="600" Margin="0,-16,0,-12"/>
+                    <ls:LSButton  x:Name="DeleteCampaignExceptKatestBtn"
+                                  HorizontalAlignment="Center"
+                                  Style="{StaticResource BigBrownButtonStyle}"
+                                  Content="{Binding Source='hd338417fg3591g475bga45cg85abc82bfa55', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding OpenMessageBox}"
+                                  CommandParameter="{DynamicResource MessageBoxSaveDeleteCampaignButLatest}"
+                                  IsEnabled="{Binding SelectedPlaythrough.Saves.Count, Converter={StaticResource GreaterThanConverter}, ConverterParameter=1}"/>
+                </Grid>
+
+                <Grid>
+                    <Image Source="{StaticResource Decoration}" Stretch="Uniform" Width="600" Margin="0,-16,0,-12"/>
+                    <ls:LSButton  x:Name="DeleteCampaignBtn"
+                                  HorizontalAlignment="Center"
+                                  Style="{StaticResource BigBrownButtonStyle}"
+                                  Content="{Binding Source='ha58e0d43g4b0ag433ag939eg1c140baa7732', Converter={StaticResource TranslatedStringConverter}}"
+                                  Command="{Binding OpenMessageBox}"
+                                  CommandParameter="{DynamicResource MessageBoxSaveDeleteCampaign}"
+                                  BoundEvent="UIDelete"/>
+                </Grid>
+            </StackPanel>
+
+            <ls:LSButton DockPanel.Dock="Bottom" x:Name="DeleteDeprecatedDbg" Style="{StaticResource DeleteDeprecatedButtonStyle}" Margin="0,0,0,60"/>
+        </DockPanel>
+    </ControlTemplate>
+
+    <DataTemplate x:Key="PlaythroughItemTemplate" DataType="{x:Type ls:LSListBoxItem}">
+        <DataTemplate.Resources>
+            <BitmapImage x:Key="ExpanderIcon" UriSource="pack://application:,,,/Core;component/Assets/SaveLoad/ico_expander_d.png"/>
+            <BitmapImage x:Key="ListItemSelected" UriSource="pack://application:,,,/Core;component/Assets/SaveLoad/listItem_selected.png"/>
+        </DataTemplate.Resources>
+        <Expander x:Name="Playthrough" Background="Transparent" Header="{Binding ProtagonistName}" IsExpanded="False">
+            <b:Interaction.Triggers>
+                <!-- Using interaction triggers to force (and keep) the expanded value -->
+                <b:DataTrigger Binding="{Binding IsSelected}" Value="True">
+                    <b:ChangePropertyAction TargetName="Playthrough" PropertyName="IsExpanded" Value="True"/>
+                </b:DataTrigger>
+
+                <!-- Expand current campaign if we're in game -->
+                <b:EventTrigger EventName="Loaded">
+                    <b:Interaction.Behaviors>
+                        <b:ConditionBehavior>
+                            <b:ConditionalExpression>
+                                <b:ComparisonCondition LeftOperand="{Binding DataContext.CurrentPlaythroughID, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" Operator="NotEqual" RightOperand=""/>
+                                <b:ComparisonCondition LeftOperand="{Binding DataContext.CurrentPlaythroughID, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" Operator="Equal" RightOperand="{Binding PlaythroughString}"/>
+                            </b:ConditionalExpression>
+                        </b:ConditionBehavior>
+                    </b:Interaction.Behaviors>
+
+                    <b:ChangePropertyAction TargetName="Playthrough" PropertyName="IsExpanded" Value="True"/>
+                </b:EventTrigger>
+
+                <!-- Expand latest campaign if we're in main menu -->
+                <b:EventTrigger EventName="Loaded">
+                    <b:Interaction.Behaviors>
+                        <b:ConditionBehavior>
+                            <b:ConditionalExpression>
+                                <b:ComparisonCondition LeftOperand="{Binding DataContext.IsSaving, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" Operator="Equal" RightOperand="False"/>
+                                <b:ComparisonCondition LeftOperand="{Binding DataContext.CurrentPlaythroughID, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" Operator="Equal" RightOperand=""/>
+                                <b:ComparisonCondition LeftOperand="{Binding (ItemsControl.AlternationIndex), RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListBoxItem}}}" Operator="Equal" RightOperand="0"/>
+                                <b:ComparisonCondition LeftOperand="{Binding SelectedItem.IsSelected, ElementName=PlaythroughSavegames}" Operator="Equal" RightOperand="True"/>
+                            </b:ConditionalExpression>
+                        </b:ConditionBehavior>
+                    </b:Interaction.Behaviors>
+
+                    <b:ChangePropertyAction TargetName="Playthrough" PropertyName="IsExpanded" Value="True"/>
+                </b:EventTrigger>
+            </b:Interaction.Triggers>
+            <Expander.Template>
+                <ControlTemplate TargetType="{x:Type Expander}">
+                    <DockPanel Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType={x:Type ScrollContentPresenter}}}">
+                        <DockPanel DockPanel.Dock="Top" x:Name="HeaderHolder" >
+                            <ls:LSToggleButton DockPanel.Dock="Left" x:Name="ExpanderButton" IsChecked="{Binding IsExpanded, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" Margin="0,0,8,0" HorizontalAlignment="Left">
+                                <ls:LSToggleButton.Template>
+                                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                        <Image x:Name="Arrow" Width="32" Source="{StaticResource ExpanderIcon}" VerticalAlignment="Center" Stretch="None" />
+
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsChecked" Value="False">
+                                                <Setter TargetName="Arrow" Property="RenderTransform">
+                                                    <Setter.Value>
+                                                        <RotateTransform Angle="-90" CenterX="16" CenterY="10"/>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="Arrow" Property="Source" Value="pack://application:,,,/Core;component/Assets/SaveLoad/ico_expander_h.png"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </ls:LSToggleButton.Template>
+                            </ls:LSToggleButton>
+                            <ls:LSButton Content="{TemplateBinding Header}" Margin="12,0,0,0" Command="{Binding DataContext.SelectPlaythroughCommand, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" CommandParameter="{Binding .}">
+                                <ls:LSButton.Template>
+                                    <ControlTemplate TargetType="{x:Type ls:LSButton}">
+                                        <Grid Height="72">
+                                            <Image x:Name="bg" Source="{StaticResource ListItemSelected}" Stretch="Fill" Margin="-40,8,0,-8" IsHitTestVisible="False" Visibility="Hidden"/>
+                                            <TextBlock x:Name="Content" Text="{Binding Path=Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" Foreground="{StaticResource LS_accent75TxtColor}" FontSize="{StaticResource ScaledBigFontSize}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="Transparent"/>
+                                        </Grid>
+
+                                        <ControlTemplate.Triggers>
+                                            <DataTrigger Binding="{Binding IsExpanded, RelativeSource={RelativeSource AncestorType=Expander}}" Value="True">
+                                                <Setter TargetName="Content" Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                                            </DataTrigger>
+
+                                            <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                                                <Setter TargetName="Content" Property="Foreground" Value="{StaticResource LS_tint100}"/>
+                                                <Setter TargetName="bg" Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="Content" Property="Foreground" Value="{StaticResource LS_tint100}"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </ls:LSButton.Template>
+                            </ls:LSButton>
+                        </DockPanel>
+                        <ContentPresenter Name="Content"/>
+                    </DockPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsExpanded" Value="False">
+                            <Setter TargetName="Content" Property="Visibility" Value="Collapsed"/>
+                        </Trigger>
+                        <Trigger SourceName="ExpanderButton" Property="IsChecked" Value="True">
+                            <Setter Property="IsExpanded" Value="True"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Expander.Template>
+            <b:Interaction.Behaviors>
+                <ls:CollectionSortBehavior x:Name="PlaythroughSortBehavior" ItemsSource="{Binding Saves}" Comparer="{Binding DataContext.SaveComparer, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}" />
+            </b:Interaction.Behaviors>
+
+            <ls:LSListBox x:Name="PlaythroughSavegames"
+                          ItemsSource="{Binding SortedItems, ElementName=PlaythroughSortBehavior, Mode=OneWay}"
+                          SelectionMode="Single"
+                          SelectedItem="{Binding DataContext.SelectedSave, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
+                          ItemContainerStyle="{StaticResource SavegameItemTemplateStyle}"
+                          ActionPrevEvent="UIUp" ActionNextEvent="UIDown"
+                          Background="Transparent" BorderBrush="Transparent">
+                <ls:LSListBox.Template>
+                    <ControlTemplate TargetType="ls:LSListBox">
+                        <ItemsPresenter/>
+                    </ControlTemplate>
+                </ls:LSListBox.Template>
+                <ls:LSListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </ls:LSListBox.ItemsPanel>
+            </ls:LSListBox>
+        </Expander>
+    </DataTemplate>
+
+</ResourceDictionary>

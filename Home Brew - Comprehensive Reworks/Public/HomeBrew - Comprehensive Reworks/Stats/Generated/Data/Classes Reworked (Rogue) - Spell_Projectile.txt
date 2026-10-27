@@ -1,3 +1,37 @@
+<!--ROGUE-->
+
+new entry "Projectile_SmokeBomb"
+type "SpellData"
+data "SpellType" "Projectile"
+data "SpellProperties" "GROUND:CreateSurface(3,3,FogCloud,true)"
+data "TargetFloor" "-1"
+data "AreaRadius" "3"
+data "ExplodeRadius" "3"
+data "TargetConditions" ""
+data "Trajectories" "1ce97707-9c10-4199-8d91-44621939918e,5958e05a-222c-40ab-88f7-f5ecf1b61d78,1ed1af36-bbf0-4020-8ec0-a464cf272131"
+data "Icon" "DT_EscapeActive"
+data "DisplayName" "d3e15e63749c4b62b8e7760ccaw2es6f2bomb;1"
+data "Description" "d3e15e63749c4b62b8e7760cc72354r6wbomb;4"
+data "PrepareSound" "Generic_GeneralAction_Start"
+data "PrepareLoopSound" "Generic_GeneralAction_Loop"
+data "PreviewCursor" "Cast"
+data "CastTextEvent" "Cast"
+data "CycleConditions" "Enemy() and not Dead()"
+data "UseCosts" "BonusActionPoint:1"
+data "SpellAnimation" "3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;38cdb41c-2eec-4e03-bb31-83cff0346c35,,;85414f5f-b448-4dda-9370-1b6c4b38b561,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,,"
+data "SpellFlags" "IsHarmful"
+data "HitAnimationType" "MagicalDamage_External"
+data "MemoryCost" "1"
+data "PrepareEffect" "ede0c318-7f5d-43b4-bc73-a50e0a528d55"
+data "CombatAIOverrideSpell" "Projectile_SmokeBomb_AI"
+
+new entry "Projectile_SmokeBomb_AI"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_SmokeBomb"
+data "CombatAIOverrideSpell" ""
+data "Cooldown" "OncePerCombat"
+
 <!--HIDDEN TOXICANT-->
 
 new entry "Projectile_ToxicEruption"

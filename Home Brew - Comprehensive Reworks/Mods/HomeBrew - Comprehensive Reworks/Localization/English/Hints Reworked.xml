@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+<content contentuid="h809b87b4g868ag4e87gbe4bgb895f7efc47b" version="1">Free-Handling requires at least one slot free in both Melee and Ranged slots. A longsword and a hand-crossbow will give you Free-Handling. A longsword and a longbow will not.</content>
+
+<content contentuid="h08d17d54gf579g43ebga0a6gbf74ad1fc133" version="1">Swapping your equipment in combat only costs a Reaction. Sometimes the best path forward is in your back pocket.</content>
+
+<content contentuid="h828f1b29ge3c9g4606gb942gf00216f796e2" version="1">Withers can help you change your class for free. Don't be afraid to experiment!</content>
+
+<content contentuid="h87355969gfcbbg424fg92c1g351a1b9e6ce5" version="1">Not wanting to loot every little thing? Heroes Feast can be cast once per Long Rest to gain an abundance of Camp Supplies.</content>
+
+<content contentuid="h54ccef5cg601bg4333g8473g1eb69aed0436" version="1">Medium and Heavy armour can help reduce the damage you take. Physical damage is reduced by your Constitution Modifier, while Elemental damage is reduced by your Charisma.</content>
+
+<content contentuid="h34f27a9bg5a6eg4421g9d15g8b83d498124d" version="1">While you are a "Priority Target", enemies will focus on dealing damage to you. Use this feature to tank damage and protect your allies!</content>
+
+<content contentuid="he1a8eb0eg277fg4278gaa18g1dc22e1cc830" version="1">Dying got you feeling down? Healing and tanking are both extremely effective. Try to maintain a balanced party.</content>
+
+<content contentuid="hb0963f67g8432g4573g9a53g54fe33262c80" version="1">You can adjust the health, stats, and resources of enemies in the Difficulty menu, or when starting a new save. Just click "Adjust Difficulty" at the bottom!</content>
+
+<content contentuid="h17e1f9fbg49d0g405agb733ga396708e6e72" version="1">The amount of Hit Points a healing potion restores scales with your Proficiency Bonus.</content>
+
+<content contentuid="hb98b72a6gff93g4a81ga8edgead58f6722ac" version="1">Both the living and the dead have plenty to say, but corpses won't be inclined to speak to their killers.</content>
+
+<content contentuid="h402b1bfeg3f47g43c5ga481g2fddcd3e6972" version="1">Any class can use any piece of gear. Have a specific class fantasy in mind? You can build it!</content>
+
+<content contentuid="h5e550837g8575g4196ga376g55ea38a18e45" version="1">Zetherists are capable of swapping between their guns without expending resources.</content>
+
+<content contentuid="hea0be49bg4758g42e0gab48gef901ee00fda" version="1">To keep their Rage going, Barbarians must score at least one kill or Critical Hit every three turns. Doing so will reset the duration of their Rage.</content>
+
+<content contentuid="h470412aegd5d4g4429g96dfg888f6a0d184b" version="1">Bards gain a Climax ability after three turns of Performing in battle, which can trigger powerful effects! Toggling "The Sound of Silence" will allow you to Perform while taking other actions, too!</content>
+
+<content contentuid="h975207b5gb68cg4f9dgae15g5dc7eefd3334" version="1">Cleric's have a 33% chance each turn to experience Divine Intervention from their god, granting them the ability to trigger powerful effects based on their subclass!</content>
+
+<content contentuid="hd2e816a0g9ec7g4a4cg8210g32dcd3f2bc81" version="1">Want to be the worlds deadliest house cat? While assuming the form of a Wild Shape, you retain all passive effects from your equipped gear.</content>
+
+<content contentuid="hd1502ce7g66a0g4e3cgb3b0ga56745fee96d" version="1">Fighters will regain Hit Points and a Superiority Dice every three turns. Keep an eye on their Second Wind duration!</content>
+
+<content contentuid="he3d1d1bagd74dg4df3gbf35g1743d016e5d6" version="1">Monks are capable of hitting significantly more often than most classes. Stack damage bonuses in order to take advantage of it!</content>
+
+<content contentuid="hcd9123c9g1d9dg4676g804cgac05d50e1d26" version="1">Judge, jury, and executioner! Once per turn, landing a killing blow as a Paladin will restore a Crusader's Smite charge.</content>
+
+<content contentuid="haeacd961g8366g4afbga52agdc51c03b4570" version="1">Rangers can summon an animal companion at any time. Each Ranger Companion has unique benefits and uses, so don't be afraid to swap them out regularly!</content>
+
+<content contentuid="hf66531fcg8dc0g42b7gbbe8g9c0ef90959cb" version="1">As a Rogue, you can trigger a Sneak Attack against enemies you have Advantage against, dealing significantly more damage. This can also trigger if your ally is standing nearby your target!</content>
+
+<content contentuid="h4899733eg21edg4bebg9e5ag2e04e1d6b104" version="1">Get creative with Creationary! Sorcerers can use Creationary to exchange their Sorcery Points with their Spell Slots, and vice versa, as an equal exchange.</content>
+
+<content contentuid="hd30ded14g5ad5g4712gbf66g32736faa955f" version="1">Do not hesitate to call upon your Warlock's Hematic Invocation. A surviving enemy can deal far more than 10% of your Hit Points in a single strike.</content>
+
+<content contentuid="h27457824g3787g4dd3gb730g5df2c91d92df" version="1">Playing a Wizard? Pay attention to your active conditions! The Scholarly Acumen you're granted each turn can grant you significantly more Spell Slots.</content>
+
+<content contentuid="ha927c7cbg6f76g4f49ga9dcg46c93dac8082" version="1">Regret a decision made several levels ago? Selective Respec allows you to revisit your character's earlier choices without rebuilding everything from scratch.</content>
+
+<content contentuid="h509221cag2369g4e91g928egdd4dfaf65484" version="1">In the Respec menu, you can save your favourite character builds as presets, allowing you to revisit old strategies, or even share them with your friends!</content>
+
+<content contentuid="h66621a17gbc76g4ba1gb03ag015e7477e881" version="1">Found the perfect appearance for your adventurer? Save it as a preset in the Magic Mirror so you can recreate that look with the click of a button!</content>
+
+<content contentuid="hc10e13b6gcb52g413bgaf14g6d725654e3e7" version="1">Looking for a particular Spell? Search by name or sort your Spell lists to find the exact magic you need. You can even combine different sorting types!</content>
+
+<content contentuid="h6e653b23g6d43g49acg8160g876c46bae16f" version="1">HomeBrew's higher difficulty settings aren't for the faint of heart. Choose your battles carefully, or you may find yourself on the wrong side of a very short adventure.</content>
+
+<content contentuid="he9f0d816gf61ag4313ga49dg1cfbc58a62c3" version="1">Selecting Custom within the "Adjust Difficulty" menu allows you to adjust both yours and enemies' Hit Points, stats, and resources, to create your ideal challenge.</content>
+
+<content contentuid="h0ead99b2gdd90g4b9fg8d02g1d1aeff59f7b" version="1">With a Scroll of Transmogrification, armour can take on another appearance while retaining its original protective properties.</content>
+
+<content contentuid="h5b183927gc84ag430egabdbg77f69f36cbeb" version="1">A Scroll of Reversion can restore transmogrified armour to its original appearance. Sometimes the classics really are better.</content>
+
+<content contentuid="h9d7c4bf6gc5eag4d88g9a8dg918a71827f59" version="1">Finding HomeBrew too easy? Go to the Difficulty menu and select "Adjust Difficulty" at the bottom. You'll find plenty of options to make things more harsh for yourself.</content>
+
+<content contentuid="h1a7c974ag6f3bg4c57ga318ga13fb4c535fe" version="1">Sometimes the most effective character builds arise from combinations nobody had thought to try. Experiment, adapt, and discover what works for you as a player.</content>
+
+<content contentuid="hee48e0e7g875cg4b66ga21dg7aa7257288ce" version="1">Most effects which increase your damage, bypass Resistances, or trigger on a killing blow, will not trigger when dealing damage to allies.</content>
+
+<content contentuid="h7a54e545gc4ddg44d6g95f1g3e4c8e8d7338" version="1">Want to play a heavily armoured caster? Or perhaps a lightly armoured warrior? HomeBrew removes class-based restrictions, allowing you to build around and play your own class fantasy.</content>
+
+<content contentuid="h5fd25fb5g0c76g470cg9b88g61f286bb1802" version="1">Complete HomeBrew on Heroic difficulty in order to be welcomed into the Hall of Heroes! See the difficulty page while starting a new save for more info.</content>
+
+<content contentuid="hd8f008fcg54d0g4755ga10ag3972a8e04391" version="1">Completing HomeBrew on Deific difficulty will grant access to the Deific Pantheon. Think you've got what it takes to become a god? See the difficulty page while starting a new save for more info.</content>
+
+<content contentuid="hf32dddb6g3b5ag4c5ag9993gb911fcba4ac1" version="1">Offence may win battles, but defence wins wars. Damage reduction, healing, and protective abilities become increasingly valuable against more powerful enemies.</content>
+
+<content contentuid="hbe0d706eg24f7g4a89g8516g6992571520cf" version="1">HomeBrew remembers your custom difficulty settings separately for each campaign. Your adventures can offer entirely different levels of challenge without affecting one another.</content>
+
+<content contentuid="h007e84f6gf030g45e0gab26g2ed02daa4138" version="1">Don't underestimate the value of controlling your enemies. A creature that cannot act could be just the edge you need to win a fight.</content>
+
+<content contentuid="h2c7413d7gc4dbg44d5ga1bcge70d24592b53" version="1">The best character build isn't always the one that deals the most damage. Experiment with combinations of abilities, equipment, and tactics to discover what works best for you.</content>
+
+<content contentuid="hcb3ee220gf5c0g4550g9077g61d5894e55c2" version="1">Prefer to walk your own path? Lone Wolf offers powerful bonuses to adventurers willing to face the dangers of Faerûn without a full party. Who needs companions when you can be an army of one?</content>
+
+<content contentuid="hb4d9d7c8g3c73g4e5dg8546g2b0856021984" version="1">Sometimes the best defence is a devastating offence. Eliminating a dangerous enemy before it can act may save more Hit Points than any healing spell could restore.</content>
+
+<content contentuid="h408acb08g6fadg4f5ag91d5gce255328a472" version="1">Don't overlook your Bonus Actions and Reactions! Many of HomeBrew's abilities are designed to make use of these resources, allowing you to accomplish far more in a single turn.</content>
+
+<content contentuid="h733641d5g9062g4e38gba65g4c1e3baa022a" version="1">Two-Handed weapons pierce an enemies Damage Resistance. If an enemy is hardy, bring out the big guns!</content>
+
+<content contentuid="h0f1c58fegc2fbg438bgbfa0g4fd7d389b848" version="1">Many traps and environmental hazards cause extreme damage to larger creatures. Any smaller creature unlucky enough to be in the way will be instantly killed.</content>
+
+<content contentuid="hcefe3edegb575g4ff9gb196ga3ca327adb1c" version="1">Many status effects and conditions can remove an enemies ability to reduce damage with their armour. Shatter their defenses, then move in for the kill!</content>
+
+<content contentuid="h82f10252g795ag4256gaaebg31c22a61b122" version="1">Critical Hits ignore a creatures Damage Resistance entirely. It wouldn't be very critical if it was halved, now would it?</content>
+
+</contentList>

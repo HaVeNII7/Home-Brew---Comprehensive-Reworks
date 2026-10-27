@@ -1,0 +1,119 @@
+<ls:UIWidget x:Name="HB_StartingGear"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ls="clr-namespace:ls;assembly=Code">
+    <ls:UIWidget.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="HB_GearFrame" UriSource="pack://application:,,,/Core;component/Assets/Messagebox/dialogBox.png"/>
+            <Style x:Key="HB_GearRow" TargetType="ListBoxItem">
+                <Setter Property="Focusable" Value="True"/>
+                <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+                <Setter Property="Padding" Value="14,11"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ListBoxItem">
+                            <Border x:Name="outline" Padding="{TemplateBinding Padding}"
+                                    Background="Transparent" BorderThickness="1" BorderBrush="Transparent">
+                                <ContentPresenter/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter TargetName="outline" Property="Background" Value="#70583E28"/>
+                                    <Setter TargetName="outline" Property="BorderBrush" Value="{StaticResource LS_accent100TxtColor}"/>
+                                </Trigger>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="outline" Property="Background" Value="#40583E28"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </ls:UIWidget.Resources>
+    <ls:UIWidget.Template>
+        <ControlTemplate TargetType="ls:UIWidget">
+            <Grid>
+                <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,115,430"
+                            Visibility="{Binding HB_Active, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
+                    <ls:LSButton Content="Starting Equipment" Command="{Binding HB_Show}"
+                                 Style="{StaticResource BrownButtonStyle}" MinWidth="520" MinHeight="76"/>
+                </StackPanel>
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Center" Margin="385,0,0,0"
+                      Visibility="{Binding HB_Open, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                      ls:MoveFocus.IsMoveFocusScope="True"
+                      KeyboardNavigation.DirectionalNavigation="Contained"
+                      KeyboardNavigation.TabNavigation="Cycle">
+                    <ls:LSNineSliceImage ImageSource="{StaticResource HB_GearFrame}" Slices="0,196,0,224"
+                                         Width="1150" Padding="94,104,88,105">
+                        <StackPanel>
+                            <TextBlock Text="Starting Equipment" HorizontalAlignment="Center"
+                                       FontFamily="{StaticResource DefaultFont}" FontSize="{StaticResource ScaledMassiveFontSize}"
+                                       Foreground="{StaticResource LS_tint100}" Margin="0,0,0,16"/>
+                            <TextBlock Text="Choose an equipment slot, then select an item."
+                                       Foreground="{StaticResource LS_accent100TxtColor}" FontSize="{StaticResource ScaledDefaultFontSize}"
+                                       TextAlignment="Center" Margin="0,0,0,26"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="390"/>
+                                    <ColumnDefinition Width="28"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock Text="Equipment Slots" Foreground="{StaticResource LS_accent100TxtColor}"
+                                               FontSize="{StaticResource ScaledDefaultFontSize}" Margin="6,0,0,10"/>
+                                    <ListBox ItemsSource="{Binding HB_Slots}" SelectedIndex="{Binding HB_SelectedSlot, Mode=TwoWay}"
+                                             ItemContainerStyle="{StaticResource HB_GearRow}" Height="480"
+                                             ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                             Background="#40140F0A" BorderBrush="{StaticResource LS_accent25TxtColor}" BorderThickness="1">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <StackPanel>
+                                                    <TextBlock Text="{Binding Name}" Foreground="{StaticResource LS_baseTxtColor}"
+                                                               FontSize="{StaticResource ScaledDefaultFontSize}"/>
+                                                    <TextBlock Text="{Binding Choice}" Foreground="{StaticResource LS_accent100TxtColor}"
+                                                               FontSize="19" Margin="0,3,0,0"/>
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </StackPanel>
+                                <StackPanel Grid.Column="2">
+                                    <TextBlock Text="{Binding HB_SlotName}" Foreground="{StaticResource LS_accent100TxtColor}"
+                                               FontSize="{StaticResource ScaledDefaultFontSize}" Margin="5,0,0,10"/>
+                                    <ListBox ItemsSource="{Binding HB_Entries}" SelectedIndex="{Binding HB_SelectedEntry, Mode=TwoWay}"
+                                             ItemContainerStyle="{StaticResource HB_GearRow}" Height="360"
+                                             ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                             Background="#40140F0A" BorderBrush="{StaticResource LS_accent25TxtColor}" BorderThickness="1">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <StackPanel>
+                                                    <TextBlock Text="{Binding Name}" Foreground="{StaticResource LS_baseTxtColor}"
+                                                               FontSize="{StaticResource ScaledDefaultFontSize}"/>
+                                                    <TextBlock Text="{Binding Detail}" Foreground="{StaticResource LS_accent100TxtColor}"
+                                                               FontSize="18" Margin="0,4,0,0"/>
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                    <TextBlock Text="{Binding HB_Detail}" TextWrapping="Wrap" Margin="8,12,8,10"
+                                               Foreground="{StaticResource LS_baseTxtColor}" FontSize="19"/>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <ls:LSButton Content="Select" Command="{Binding HB_Choose}"
+                                                     Style="{StaticResource BrownButtonStyle}" MinWidth="210" Margin="0,0,8,0"/>
+                                        <ls:LSButton Content="Reset Slot" Command="{Binding HB_Clear}"
+                                                     Style="{StaticResource BrownButtonStyle}" MinWidth="210"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Grid>
+                            <TextBlock Text="{Binding HB_Status}" HorizontalAlignment="Center" TextWrapping="Wrap"
+                                       Foreground="{StaticResource LS_accent100TxtColor}" FontSize="17" Margin="0,20,0,14"/>
+                            <ls:LSButton Content="Back" Command="{Binding HB_Close}"
+                                         Style="{StaticResource BrownButtonStyle}" HorizontalAlignment="Center" MinWidth="270"/>
+                        </StackPanel>
+                    </ls:LSNineSliceImage>
+                </Grid>
+            </Grid>
+        </ControlTemplate>
+    </ls:UIWidget.Template>
+</ls:UIWidget>

@@ -31,7 +31,8 @@ function GeminiCheck()
 	~SpellTypeIs(SpellType.Teleportation) & 
 	~SpellTypeIs(SpellType.Throw) & 
 	~SpellTypeIs(SpellType.Wall) & 
-	~SpellTypeIs(SpellType.Zone)
+	~SpellTypeIs(SpellType.Zone) & 
+	~HasFunctor(StatsFunctorType.Summon)
 end
 
 function HexSpellVariation()

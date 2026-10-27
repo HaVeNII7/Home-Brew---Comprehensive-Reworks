@@ -358,7 +358,7 @@ new entry "Projectile_Ranger_ArrowOfFiendSlaying"
 type "SpellData"
 data "SpellType" "Projectile"
 using "Projectile_ArrowOfFiendSlaying"
-data "UseCosts" "ActionPoint:1;NaturalRecoveryPoint:1"
+data "UseCosts" "BonusActionPoint:1;NaturalRecoveryPoint:1"
 data "SpellContainerID" "Projectile_Ranger_ArrowContainer"
 
 new entry "Projectile_Ranger_ArrowOfFire"

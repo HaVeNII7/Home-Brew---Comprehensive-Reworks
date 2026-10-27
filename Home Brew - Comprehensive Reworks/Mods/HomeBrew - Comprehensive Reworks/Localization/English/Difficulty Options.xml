@@ -1,65 +1,133 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentList>
 
-	<content contentuid="0d725d8aae6a4d4fba9768e69b7difficulty" version="1">MCM</content>
+	<content contentuid="0d725d8aae6a4d4fba9768e69b7difficulty" version="1">Difficulty</content>
+	<content contentuid="hc46a669cgdbedg4bb4g8bfbg7940e7dd74d1" version="5">Honour Mode</content>
+	<content contentuid="h465dc37dg304dg4745gbd0eg81f210051ab8" version="1">Honour Mode limits your campaign to a single save slot and disables reloading. Your choices and rolls are final, and the campaign’s difficulty cannot be changed.</content>
+	<content contentuid="he66013b5g6f70g4a13g8bafgad57212febea" version="2">Enemy Critical Hits</content>
+	<content contentuid="h7891c266g62eag4cf1gb882g5823a20e9742" version="2">Enemies will be able to roll Critical Hits.</content>
+	<content contentuid="heeadf224gf0fcg441ag9081gb6b9e5119ccb" version="1">Adjust how much camp supplies is required in order to Long Rest.</content>
+	<content contentuid="h069cb016g2c26g4295g877ag006de81cb0a8" version="1">Your Hit Points are fully restored on a Short Rest.</content>
+	<content contentuid="hb276a3ccg5e63g47fag8820gb751dc159b4e" version="1">You cannot reload a previous save while playing in Honour mode. </content>
 
 	<content contentuid="h18609575g480eg4ffagaf6agd9108901b307" version="1">The set of rules used in this campaign.</content>
 	<content contentuid="h478b1265gbd06g4447g95d3ge9e29717ffd2" version="2">The standard HomeBrew experience.</content>
-	<content contentuid="h5e2183f0g1d9ag4726g86ffg83791b335a2b" version="4">Various enemies gain Legendary Actions.</content>
-	<content contentuid="h2c549d89g09d2g46cbgac4egfefddd259dcc" version="2">Player Hit Points are doubled.</content>
-	<content contentuid="h044c5afbgd615g4f0bg9f78gd65dfcbc7e3d" version="2">Intended for players new to HomeBrew.</content>
-	<content contentuid="hba73bf80g7f60g4074g9f45gc1ad48c4aafc" version="2">Various enemies receive new passives and effects.</content>
+	<content contentuid="h5e2183f0g1d9ag4726g86ffg83791b335a2b" version="4">Specific bosses receive Legendary Actions.</content>
+	<content contentuid="h2c549d89g09d2g46cbgac4egfefddd259dcc" version="2">Intended for players new to HomeBrew.</content>
+	<content contentuid="h044c5afbgd615g4f0bg9f78gd65dfcbc7e3d" version="2">A moderate challenge suitable for most players.</content>
+	<content contentuid="hba73bf80g7f60g4074g9f45gc1ad48c4aafc" version="2">Various creatures receive new passives and effects.</content>
 
-	<content contentuid="h0391e720g05e0g4aefga7adgc720138eef0d" version="1">A forgiving adventure emphasising story.
-Player Hit Points are doubled.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-	<content contentuid="h1f2aff9fg778bg42c7gb889g1d22cf8ff229" version="1">A forgiving adventure emphasising story.
-Player Hit Points are doubled.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-	<content contentuid="h366531b1gb52dg4fa2ga934g52d4f63c0407" version="2">A forgiving adventure emphasising story.
-Player Hit Points are doubled.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-	<content contentuid="hc496a0cfgc494g4aceg8c0fg7be58ecbfd0f" version="1">A forgiving adventure emphasising story.
-Player Hit Points are doubled.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-
-	<content contentuid="h28aabc06gd83fg4afeg8eb3ga62f34663da5" version="2">A balanced adventure emphasising choice.
+	<content contentuid="h1952cae3g352ag4808gb08fg44f9f57b53f7" version="1">Explorer</content>
+	<content contentuid="h0391e720g05e0g4aefga7adgc720138eef0d" version="1">A balanced adventure emphasising story.
 Intended for players new to HomeBrew.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-	<content contentuid="h8e4fc10fg1268g4493g988cg2591b1d10d86" version="1">A balanced adventure emphasising choice.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="h1f2aff9fg778bg42c7gb889g1d22cf8ff229" version="1">A balanced adventure emphasising story.
 Intended for players new to HomeBrew.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-	<content contentuid="hb429db4cg4078g4b26gab53ge26dafc75419" version="1">A balanced adventure emphasising choice.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="h366531b1gb52dg4fa2ga934g52d4f63c0407" version="2">A balanced adventure emphasising story.
 Intended for players new to HomeBrew.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-	<content contentuid="he819f6fag6378g4cffgb07bg3ade72b6fcd8" version="1">A balanced adventure emphasising choice.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="hc496a0cfgc494g4aceg8c0fg7be58ecbfd0f" version="1">A balanced adventure emphasising story.
 Intended for players new to HomeBrew.
-Fine tune NPCs via the Mod Configuration Menu.</content>
+Fine tune difficulty via "Adjust Difficulty" below.</content>
 
-	<content contentuid="h1e6dc331g10a6g4928g8542gff542aceb610" version="1">A difficult adventure emphasising strategy.
-Various enemies receive new passives and effects.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-	<content contentuid="h228d08dcg6917g4bd0g8ed4gcbe82a5eea80" version="1">A difficult adventure emphasising strategy.
-Various enemies receive new passives and effects.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-	<content contentuid="h9496f911g6df4g4955g94fbgd531e179dfcd" version="1">A difficult adventure emphasising strategy.
-Various enemies receive new passives and effects.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-	<content contentuid="hc0c91b81gdffeg47f3g83a2ga39dfaab3b84" version="2">A difficult adventure emphasising strategy.
-Various enemies receive new passives and effects.
-Fine tune NPCs via the Mod Configuration Menu.</content>
+	<content contentuid="h9098bfc2g6874g40a0gad32g016d164c7d63" version="1">Adventurer</content>
+	<content contentuid="h0b1d5d3eg10d8g4f2agbc94g813c04283674" version="1">Adventurer</content>
+	<content contentuid="h2dfaada3g0652g41ceg8a6dg19756b3e135a" version="1">Adventurer</content>
+	<content contentuid="h57d67e56g6a80g4101ga0b0g5cd7d8e45866" version="1">Adventurer</content>
+	<content contentuid="h5ee38762gf9cfg4c43g9e69g7524e9c5564c" version="1">Adventurer</content>
+	<content contentuid="h602795e2g9b90g478dg90b8g2ca126220420" version="1">Adventurer</content>
+	<content contentuid="h69ce75b8g5f43g41begb153gb4f99e6572fd" version="2">Adventurer</content>
+	<content contentuid="h69f49da0g6ecag47f5g8266g967e1448addc" version="1">Adventurer</content>
+	<content contentuid="h7378238bg18d0g41eag8891g0336c23138a7" version="1">Adventurer</content>
+	<content contentuid="h9098bfc2g6874g40a0gad32g016d164c7d63" version="1">Adventurer</content>
+	<content contentuid="hd2aed8e7g225fg45e6g9a5dg33faf9264997" version="1">Adventurer</content>
+	<content contentuid="hdd1dd463gf707g40e5g916cg08bca7500f72" version="2">Adventurer</content>
+	<content contentuid="hefd6a61cg3936g44ebgb1e6g18f7340470fa" version="2">Adventurer</content>
+	<content contentuid="h50246aa3ga6b3g48cdg91d2ga50d1bd93842" version="1">Difficulty: Adventurer</content>
+	<content contentuid="h54d53506g24d7g49d4g91dfgfa2afb6c1dfe" version="1">Difficulty: Adventurer</content>
+	<content contentuid="h5a312d51g0996g40e0g83d4ga9dad72ea5d0" version="2">Difficulty: Adventurer</content>
+	<content contentuid="h1a45ba2cgaf38g406bg8b03g3a04cf9511be" version="1">Difficulty: Adventurer</content>
+	<content contentuid="h609d606fge78eg44f1g8b82g488b5a785d1e" version="1">Difficulty: Adventurer</content>
+	<content contentuid="ha593ac29ga10ag4848g8150ga5bf84c61ec1" version="1">Difficulty: Adventurer</content>
+	<content contentuid="hce06f17bg2e73g4d39g9e9ag3b61c39ee3f4" version="2">Difficulty: Adventurer</content>
+	<content contentuid="hce2b6b99g4d90g4f03gbc1bg71979b45d93d" version="1">Difficulty: Adventurer</content>
+	<content contentuid="he8242f0fgd47cg47e9gb3cegf52fe213113a" version="1">Difficulty: Adventurer</content>
 
-	<content contentuid="h2061fea8gde95g4e88gb4bcg93e240e16110" version="1">A deadly adventure emphasizing consequence.
-Various enemies receive Legendary Actions.
-Fine tune NPCs via the Mod Configuration Menu.</content>
-	<content contentuid="h46c00fa7gbb38g480fg9a0fgb4232bec8658" version="1">Hall of Heroes</content>
-	<content contentuid="hc84c257fg484bg490cgab0dg6026185bdebe" version="1">Hall of Heroes: Challenge Details</content>
-	<content contentuid="h98f4af19g94b7g4821g9043g5e89b45bd8f6" version="1">This is an incredibly intense difficulty recommended only for the most seasoned of HomeBrew veterans.&lt;br&gt;&lt;br&gt;The most dangerous foes you'll encounter are more powerful than ever, boasting new abilities and Legendary Actions. Additionally, you cannot reload older save files if events go awry - your choices and their consequences are permanent. If your entire party is defeated in combat, your Honour mode run will end in failure.&lt;br&gt;&lt;br&gt;If you are victorious and beat HomeBrew on this difficulty, your accomplishment will be listed in game for all other players players to see! Upon having done so, reach out to the mod author (HaVeNII7) to be included.&lt;br&gt;&lt;br&gt;Good luck, adventurer. You're really going to need it.</content>
+	<content contentuid="h28aabc06gd83fg4afeg8eb3ga62f34663da5" version="2">A tougher adventure emphasising choice.
+A moderate challenge suitable for most players.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="h8e4fc10fg1268g4493g988cg2591b1d10d86" version="1">A tougher adventure emphasising choice.
+A moderate challenge suitable for most players.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="hb429db4cg4078g4b26gab53ge26dafc75419" version="1">A tougher adventure emphasising choice.
+A moderate challenge suitable for most players.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="he819f6fag6378g4cffgb07bg3ade72b6fcd8" version="1">A tougher adventure emphasising choice.
+A moderate challenge suitable for most players.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
 
-	<content contentuid="h873f0d5bgb949g43bbgbc36g3bfed6s54df5" version="2">Hall of Heroes</content>
-	<content contentuid="h873f0d5bgb949g43bbgbc36g3bsdf6645df8" version="2">A recording of Faerûn's most honourable individuals.</content>
-	<content contentuid="h873f0d5bgb949g43bbgbc36g3bsdf6622525" version="2">This magical book seems to fill its own pages at rare and uneven intervals. Will you find your own name within, one day?</content>
-	<content contentuid="h873f0d5bgb949g43bbgbc36g35d5f5d2f458" version="2">Let the record show that the following individuals have braved the greatest perils of Faerûn for glory and renown. May their exploits live on forever, a paragon of honour to look to in times of doubt!
+	<content contentuid="h45da8011g956cg474dga4ecg6efa6794131a" version="1">Veteran</content>
+	<content contentuid="h04a015cbg6aabg4e09g80f3g8328409d98e8" version="2">Veteran</content>
+	<content contentuid="h0aa323a5g5879g431cg8e43g157f282720dc" version="1">Veteran</content>
+	<content contentuid="h8c35ce75g83fcg4565gbe85g7682aa8a0b3b" version="1">Veteran</content>
+	<content contentuid="hb34838b3g8333g427cgb012gf6fd18200218" version="2">Veteran</content>
+	<content contentuid="hee047271g3b10g4e9fg9377g3fd4ff7e6251" version="1">Veteran</content>
+	<content contentuid="hfb046da5gc3d0g44a9g9685g0ffc9cb91ff3" version="1">Veteran</content>
+	<content contentuid="hae162a45g7d49g49d5g9079ga9224aae860b" version="2">Veteran</content>
+	<content contentuid="h0ba9a2f5g5332g4f8bgb8fbg327ef860ebc2" version="2">Veteran Mode</content>
+	<content contentuid="h2405233ega34fg4443gbc8bg69a29b9e7919" version="1">Veteran Mode</content>
+	<content contentuid="h1d1c89c6g9342g4d77gb2c9gf8a80153ab5a" version="1">Difficulty: Veteran</content>
+	<content contentuid="h3e308034gcad4g46ebgbd10g288ebe5581e7" version="2">Difficulty: Veteran</content>
+	<content contentuid="h7f892a1eg46d0g4124g9f32g31c266ea17d8" version="3">Difficulty: Veteran</content>
+	<content contentuid="hfd692c8egc88eg4a92gadedg3fa01bad883b" version="1">Difficulty: Veteran</content>
+
+	<content contentuid="h1e6dc331g10a6g4928g8542gff542aceb610" version="1">A difficult adventure emphasising combat.
+Various creatures receive new passives and effects.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="h228d08dcg6917g4bd0g8ed4gcbe82a5eea80" version="1">A difficult adventure emphasising combat.
+Various creatures receive new passives and effects.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="h9496f911g6df4g4955g94fbgd531e179dfcd" version="1">A difficult adventure emphasising combat.
+Various creatures receive new passives and effects.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="hc0c91b81gdffeg47f3g83a2ga39dfaab3b84" version="2">A difficult adventure emphasising combat.
+Various creatures receive new passives and effects.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+
+	<content contentuid="hb80200a7g8e69g4f66gbc18g4155d70f0dcc" version="3">Heroic</content>
+	<content contentuid="h2061fea8gde95g4e88gb4bcg93e240e16110" version="1">A deadly adventure emphasizing strategy.
+Specific bosses receive Legendary Actions.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="h39ed1ebbg6dadg4bafga046g6e3523d8bf7b" version="4">Heroic Ruleset</content>
+
+	<content contentuid="h5cd05482gabb3g40e0gb470gb4ca5fc617a6" version="1">An adventure of your own making.
+Set your own rules and forge a unique journey.
+Fine tune difficulty via "Custom Settings" below.</content>
+
+<content contentuid="0000000000000000000000000000000000000" version="1">HALL OF HEROES CHALLENGE</content>
+
+	<content contentuid="h46c00fa7gbb38g480fg9a0fgb4232bec8658" version="1">Hall of Heroes: Info</content>
+	<content contentuid="hc84c257fg484bg490cgab0dg6026185bdebe" version="1">Hall of Heroes: Info</content>
+	<content contentuid="h98f4af19g94b7g4821g9043g5e89b45bd8f6" version="1">This challenge is reserved for seasoned adventurers who possess the courage, skill, and determination to rise above the ordinary.
+
+The foes you encounter are significantly more formidable, wielding powerful new passives and devastating Legendary Actions. Victory will demand strategy, perseverance, and the resolve to overcome even the most daunting of odds.
+
+Those who emerge triumphant will be forever enshrined within the Hall of Heroes, where all who follow may bear witness to their achievement.
+
+Should you conquer HomeBrew upon this difficulty, contact me (HaVeNII7) to claim your rightful place among the honoured.
+
+May your courage never falter, and your deeds be remembered for generations to come.
+
+Good luck, hero. Your legend awaits.</content>
+
+<content contentuid="h6f72b6bdg1e53g4d1cgad09gd69298171330" version="1">Hall of Heroes: Victors</content>
+<content contentuid="hd48b153cga87fg4314g93c0gfb3a3a7240de" version="1">Hall of Heroes: Victors</content>
+<content contentuid="hc89449cdg3f26g4680g8378g88d874ec8c83" version="1">Let the annals of Faerûn forever bear witness to the extraordinary adventurers whose names are recorded here.
+
+Through courage, cunning, and unwavering determination, these champions have overcome the trials set before them and emerged victorious. Their deeds have earned them a place of honour among the greatest heroes to walk these lands.
+
+To each of you, congratulations. Your triumphs shall not be forgotten, and your names shall stand as an inspiration to all who dare follow in your footsteps.
 
 Honoured Adventurers:
 - Captain Swampass
@@ -82,7 +150,7 @@ Honoured Adventurers:
 - YOU
 - Ani
 - The Fungus Is Amongus
-- 「Sir Pretzel」
+- Sir Pretzel
 - Rin
 - Moorzaube, Explicator of Stuns
 - sillyhappybone
@@ -104,18 +172,44 @@ Honoured Adventurers:
 
 	</content>
 
+<content contentuid="0000000000000000000000000000000000000" version="1">DEIFIC PANTHEON CHALLENGE</content>
+
+	<content contentuid="ha7b56d19gf9e2g5af1gad0egf886932db2fc" version="1">Deific Pantheon: Info</content>
+	<content contentuid="hf156f892g1334g5ed4gb109g02ebf329e581" version="1">Beyond the trials of ordinary heroes lies the Deific Pantheon - a challenge reserved for those who would dare stand among legends.
+
+Only the most exceptional adventurers should undertake this journey. The foes you face possess unparalleled strength, devastating new passives, and formidable Legendary Actions. The merciless mechanics of Mythic difficulty will test your abilities at every turn, and the consequences of every decision weighs both heavy and permanent. No past save may undo your mistakes, and should your entire party fall in battle, your journey will end in defeat.
+
+Yet for those who overcome these impossible odds, you secure your place among the legends of Faerûn.
+
+Those who conquer HomeBrew upon this difficulty shall have their names forever enshrined within the Deific Pantheon, where all who follow may bear witness to their extraordinary achievement. Upon claiming victory, contact me (HaVeNII7) to secure your rightful place among the gods.
+
+May fortune favour the bold, may your deeds prove worthy of remembrance, and may the dice ever roll in your favour.
+
+The Pantheon awaits.</content>
+
+<content contentuid="h1f7c76e4g9432g52d3gb970g48a1bcb00a9e" version="1">Deific Pantheon: Victors</content>
+<content contentuid="hb13e26deg7798g54a0gafb7g007198c0173c" version="1">Here stands the names of those who have accomplished what others dared not dream.
+
+These are no ordinary champions, but legends whose courage, mastery, and unyielding resolve carried them through the greatest trials Faerûn could muster. Against overwhelming odds, they stood defiant. Where countless others fell, they endured. And through their triumph, they earned a place among the immortals.
+
+Let their names be celebrated for all ages, their victories remembered throughout the realms, and their deeds serve as an eternal testament to what can be achieved by those who refuse to yield.
+
+Only...
+
+No adventurer has yet earned a place within the Pantheon. Its thrones remain vacant, awaiting the first to prove themselves worthy.</content>
+
 <content contentuid="0000000000000000000000000000000000000" version="1">MYTHIC DIFFICULTY</content>
 
 	<content contentuid="hb80200a7g8e69g4f66gbc18gs6d84f96s8e4" version="1">Mythic</content>
-	<content contentuid="h2061fea8gde95g4e88gb4bcg9325f4d5f3d5" version="1">A ruthless adventure emphasizing loss.
-Player death comes with irreversable consequences.
-See the tutorial menu for info on Mythic changes.</content>
-	<content contentuid="hb80200a7g8e69g4f66gbc18gs6d83as2d2f5" version="1">Honoured Myth</content>
-	<content contentuid="h2061fea8gde95g4e88gb4bcg9325s6e5e2f5" version="1">A merciless adventure emphasizing suffering.
-Both Honour and Mythic rulesets are applied.
-See the tutorial menu for info on Mythic changes.</content>
+	<content contentuid="h2061fea8gde95g4e88gb4bcg9325f4d5f3d5" version="1">A ruthless adventure emphasizing consequence.
+Death comes with irreversable debilitation.
+Fine tune difficulty via "Adjust Difficulty" below.</content>
+	<content contentuid="hb80200a7g8e69g4f66gbc18gs6d83as2d2f5" version="1">Deific</content>
+	<content contentuid="h2061fea8gde95g4e88gb4bcg9325s6e5e2f5" version="1">A merciless adventure emphasizing loss.
+Claim your place within the Pantheon.
+Difficulty is set and cannot be changed.</content>
 	<content contentuid="h39ed1ebbg6dadg4bafga046g6e5e8f6f8858" version="4">Mythic Ruleset</content>
-	<content contentuid="h5e2183f0g1d9ag4726g86ffg832d5f5d5f6f" version="4">Player death comes with irreversable consequences.</content>
+	<content contentuid="h5e2183f0g1d9ag4726g86ffg832d5f5d5f6f" version="4">Death comes with irreversable consequences.</content>
 	<content contentuid="hb80200a7g8e69g4f66gbc18gs6666d3f8858" version="1">Various enemies receive new passives and effects. In addition, Mythic systems such as Exhaustion and Stress are enabled.</content>
 
 	<content contentuid="957ba11249774ae19941f337058395be00001" version="4">Mythic: Dangerous Encounter</content>

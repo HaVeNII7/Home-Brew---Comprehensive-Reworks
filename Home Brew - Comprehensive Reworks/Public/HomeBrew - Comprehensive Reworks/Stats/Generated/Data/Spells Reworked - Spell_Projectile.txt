@@ -535,7 +535,7 @@ data "SpellFlags" "IsSpell;IsHarmful;HasHighGroundRangeExtension;RangeIgnoreVert
 data "HitAnimationType" "MagicalDamage_External"
 data "PrepareEffect" "61382e69-8e1a-4235-afed-8681082f3c42"
 data "CastEffect" "f395c8b1-41a2-4cc6-9f56-2b0bcf86e761"
-data "DamageType" "Fire"
+data "DamageType" "Radiant"
 data "FollowUpOriginalSpell" "Shout_ProduceFlame"
 
 new entry "Projectile_ProduceFlame_Hurl_Free"

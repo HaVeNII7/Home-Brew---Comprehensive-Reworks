@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="7" build="402" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="Player or NPC is cleric of Mielikki." />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h2f84b2f1gb74bg4040g8d36g8d3850390b66" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h2e52ac7dg2619g4f6dgb3c0g4ec3a4e83b09" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="CLERIC_MIELIKKI" />
+			<attribute id="UUID" type="guid" value="5ce73ec6-be80-4853-ad3c-12149d71e07e" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Class" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

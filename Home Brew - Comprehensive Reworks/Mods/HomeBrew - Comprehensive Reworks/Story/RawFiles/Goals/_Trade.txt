@@ -1,0 +1,416 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+NOT DB_DialogBlockTradeButton((DIALOGRESOURCE)NULL_00000000-0000-0000-0000-000000000000);
+
+NOT DB_BoughtFromMerchantInDialogFlag((CHARACTER)NULL_00000000-0000-0000-0000-000000000000, (DIALOGRESOURCE)NULL_00000000-0000-0000-0000-000000000000, (FLAG)NULL_00000000-0000-0000-0000-000000000000);
+KBSECTION
+//REGION Creating and resetting TraderTreasure
+// If not yet an inventory generated for this npc, do it:
+PROC	
+PROC_GenTradeItems((CHARACTER)_Player,(CHARACTER)_Npc)
+AND
+NOT DB_TradeTreasureGeneratedSinceLongRest(_Npc)
+THEN	
+PROC_DoGenTradeItems(_Player,_Npc);
+
+//
+PROC	
+PROC_DoGenTradeItems((CHARACTER)_Player,(CHARACTER)_Npc) 
+THEN	
+PROC_GenerateTradeTreasure(_Player,_Npc);
+DB_TradeTreasureGeneratedSinceLongRest(_Npc);
+DB_TradeTreasureGeneratedEver(_Npc);
+
+PROC
+PROC_ClearGeneratedItems((CHARACTER)_Npc)
+AND
+NOT DB_ItemsCleared(_Npc)
+THEN
+DB_ItemsCleared(_Npc);
+ClearTradeGeneratedItems(_Npc);
+
+PROC
+PROC_SetCustomTradeTreasure((CHARACTER)_Npc,(STRING)_Treasure)
+THEN
+SetCustomTradeTreasure(_NPC,_Treasure);
+PROC_ClearGeneratedItems(_Npc);
+PROC_ClearLastTradeTime(_Npc);
+
+PROC
+PROC_ClearLastTradeTime((CHARACTER)_Trader)
+AND
+DB_TradeTreasureGeneratedSinceLongRest(_Trader)
+THEN
+NOT DB_TradeTreasureGeneratedSinceLongRest(_Trader);
+
+PROC
+PROC_GenerateTradeTreasure((CHARACTER)_Player,(CHARACTER)_Npc) 
+THEN
+GenerateItems(_Player,_Npc);
+NOT DB_ItemsCleared(_Npc);
+
+//Restock on long rest
+PROC
+// Vendor Prevent Restock on Partial Long Rest
+// PROC_LongRest()
+PROC_LongRest_Player((CHARACTER)_Player, 1)
+AND
+DB_TradeTreasureGeneratedSinceLongRest(_Trader)
+THEN
+NOT DB_TradeTreasureGeneratedSinceLongRest(_Trader);
+
+//Restock on level-up (temporary until levelling up is only supported during long rest)
+// Vendor Prevent Restock on Level
+// IF
+// LeveledUp(_Player)
+// AND
+// DB_Players(_Player)
+// AND
+// DB_TradeTreasureGeneratedSinceLongRest(_Trader)
+// THEN
+// NOT DB_TradeTreasureGeneratedSinceLongRest(_Trader);
+
+//Trader dies and trade treasure never generated -> generate
+IF
+Dying(_Npc)
+AND
+IsTagged(_Npc, (TAG)TRADER_91d5ebc6-91ea-44db-8a51-216860d69b5b, 1)
+AND
+IsPartyMember(_Npc, 1, 0)
+AND
+NOT DB_TradeTreasureGeneratedEver(_Npc)
+AND
+GetClosestPlayer(_NPC, _Player, _)
+THEN
+PROC_GenerateTradeTreasure(_Player, _Npc);
+//END_REGION
+
+//REGION Start Trade
+//
+// StartTrade: set all facts and startup the trade window:
+//
+PROC	
+PROC_StartTrade((CHARACTER)_Player,(CHARACTER)_Npc)
+THEN
+PROC_StartTrade(_Player,_Npc,TRADEMODE.Trade);
+
+// If _StartAsTrade == 1, then start using the trade view
+// If _StartAsTrade == 0, then start using the barter view
+PROC	
+PROC_StartTrade((CHARACTER)_Player,(CHARACTER)_Npc,(TRADEMODE)_StartAsTrade,(STRING)_ItemsTagFilter)
+THEN	
+PROC_GenTradeItems(_Player,_Npc);					// regenerate items
+PROC_TradeResetInsults(_Player,_Npc);
+
+PROC	
+PROC_StartTrade((CHARACTER)_Player,(CHARACTER)_Npc,(TRADEMODE)_StartAsTrade)
+THEN
+PROC_StartTrade(_Player,_Npc,_StartAsTrade,"");
+
+PROC	
+PROC_StartTrade((CHARACTER)_Player,(CHARACTER)_Npc,(TRADEMODE)_StartAsTrade,(STRING)_ItemsTagFilter)
+AND
+QRY_Trade_InternalGetInitiallySelectedTradeObject(_Player,_NPC)
+AND
+DB_QRY_RTN_Trade_InternalGetInitiallySelectedObject(_InitiallySelectedObject)
+THEN
+PROC_StartTrade(_Player,_Npc,_StartAsTrade,_InitiallySelectedObject,_ItemsTagFilter);
+
+PROC
+PROC_StartTrade((CHARACTER)_Player,(CHARACTER)_Npc,(TRADEMODE)_StartAsTrade,(GUIDSTRING)_InitiallySelectedTradeObject,(STRING)_ItemsTagFilter)
+THEN
+ActivateTrade(_Player,_Npc,1,_StartAsTrade,_InitiallySelectedTradeObject,_ItemsTagFilter);
+
+QRY
+QRY_Trade_InternalGetInitiallySelectedTradeObject((CHARACTER)_Player,(CHARACTER)_NPC)
+AND
+DB_QRY_RTN_Trade_InternalGetInitiallySelectedObject(_Object)
+THEN
+NOT DB_QRY_RTN_Trade_InternalGetInitiallySelectedObject(_Object);
+
+QRY
+QRY_Trade_InternalGetInitiallySelectedTradeObject((CHARACTER)_Player,(CHARACTER)_NPC)
+AND
+QRY_Trade_GetInitiallySelectedTradeObject(_Player,_NPC)
+AND
+DB_QRY_RTN_Trade_GetInitiallySelectedTradeObject(_Object)
+THEN
+NOT DB_QRY_RTN_Trade_GetInitiallySelectedTradeObject(_Object);
+DB_QRY_RTN_Trade_InternalGetInitiallySelectedObject(_Object);
+
+QRY
+QRY_Trade_InternalGetInitiallySelectedTradeObject((CHARACTER)_Player,(CHARACTER)_NPC)
+AND
+NOT DB_QRY_RTN_Trade_InternalGetInitiallySelectedObject(_)
+THEN
+DB_QRY_RTN_Trade_InternalGetInitiallySelectedObject(NULL_00000000-0000-0000-0000-000000000000);
+
+QRY
+QRY_Trade_GetInitiallySelectedTradeObject((CHARACTER)_Player,(CHARACTER)_NPC)
+AND
+1 == 2
+THEN
+DB_QRY_RTN_Trade_GetInitiallySelectedTradeObject(NULL_00000000-0000-0000-0000-000000000000);
+
+IF		
+RequestTrade(_Player,_Npc,_StartAsTrade,_ItemsTagFilter)
+THEN
+PROC_StartTrade(_Player,_Npc,_StartAsTrade,_ItemsTagFilter);
+
+PROC 
+PROC_TradeResetInsults((CHARACTER)_Player,(CHARACTER)_Npc)
+AND
+DB_InsultCounter(_Player, _Npc, _Counter)
+THEN
+NOT DB_InsultCounter(_Player, _Npc, _Counter);
+
+PROC 
+PROC_TradeResetInsults((CHARACTER)_Player,(CHARACTER)_Npc)
+THEN
+DB_InsultCounter(_Player, _Npc, 0);
+
+//END_REGION
+
+//REGION Finish trade and adjust attitude if necessary
+IF
+HappyWithDeal(_Player,_Npc,_ValuePlayer,_ValueNpc)
+AND 
+NOT QRY_AlternateEvaluateTradeDeal(_Player,_Npc,_ValuePlayer,_ValueNpc)
+THEN
+PROC_EvaluateTradeDeal(_Player,_Npc,_ValuePlayer,_ValueNpc);
+
+PROC
+PROC_EvaluateTradeDeal((CHARACTER)_Player,(CHARACTER)_Npc,(INTEGER)_ValuePlayer,(INTEGER)_ValueNpc)
+AND
+QRY_GetAttitudeChangeForTrade(_Player,_Npc,_ValuePlayer,_ValueNpc)
+AND
+DB_AttitudeAdjustMent(_Player,_Npc,_Att)
+AND
+_Att != 0
+THEN
+AddAttitudeTowardsPlayer(_Npc,_Player,_Att);
+
+PROC
+PROC_EvaluateTradeDeal((CHARACTER)_Player,(CHARACTER)_Npc,(INTEGER)_ValuePlayer,(INTEGER)_ValueNpc)
+AND
+_ValuePlayer >= _ValueNpc
+AND
+DB_AttitudeAdjustMent(_Player,_Npc,_Att)
+THEN	
+ExecuteDeal(_Player,1,_Att);
+
+PROC
+PROC_EvaluateTradeDeal((CHARACTER)_Player,(CHARACTER)_Npc,(INTEGER)_ValuePlayer,(INTEGER)_ValueNpc)
+AND
+_ValuePlayer < _ValueNpc
+AND
+DB_AttitudeAdjustMent(_Player,_Npc,_Att)
+THEN	
+ExecuteDeal(_Player,0,_Att);
+
+// overload QRY to offer an alternate evaluation of the trade logic. Be wary to always call ExecuteDeal in this flow.
+QRY
+QRY_AlternateEvaluateTradeDeal((CHARACTER)_Player,(CHARACTER)_Npc,(INTEGER)_ValuePlayer,(INTEGER)_ValueNpc)
+AND
+1 == 0
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_GetAttitudeChangeForTrade((CHARACTER)_Player,(CHARACTER)_Npc,(INTEGER)_ValuePlayer,(INTEGER)_ValueNpc)
+AND
+NOT DB_TempTradeBalance(_Player,_Npc,_)
+THEN
+DB_TempTradeBalance(_Player,_Npc,0);
+
+QRY
+QRY_GetAttitudeChangeForTrade((CHARACTER)_Player,(CHARACTER)_Npc,(INTEGER)_ValuePlayer,(INTEGER)_ValueNpc)
+AND
+IntegerSubtract(_ValuePlayer,_ValueNPC,_Delta)
+AND
+DB_TempTradeBalance(_Player,_Npc,_OldBalance)
+AND
+IntegerSum(_Delta,_OldBalance,_NewBalance)
+AND
+GetLevel(_Player,_PlayerLevel)
+AND
+DataGetGoldValue((GOLDREWARD)AttitudePoints_cb15f73a-5aca-404a-9186-5e172b7cf6c3,_PlayerLevel,_Price)
+AND
+_Price != 0
+AND
+IntegerDivide(_NewBalance,_Price,_Q)
+AND
+IntegerModulo(_NewBalance,_Price,_Remainder)
+THEN
+NOT DB_TempTradeBalance(_Player,_Npc,_OldBalance);
+DB_TempTradeBalance(_Player,_Npc,_Remainder);
+PROC_Trade_SetAttitudeAdjustment(_Player, _Npc, _Q);
+
+PROC
+PROC_Trade_SetAttitudeAdjustment((CHARACTER)_Player, (CHARACTER)_Npc, (INTEGER)_Q)
+AND
+DB_AttitudeAdjustMent(_Player,_Npc,_Att)
+THEN
+NOT DB_AttitudeAdjustMent(_Player,_Npc,_Att);
+
+PROC
+PROC_Trade_SetAttitudeAdjustment((CHARACTER)_Player, (CHARACTER)_Npc, (INTEGER)_Q)
+AND
+_Q >= 0
+THEN
+DB_AttitudeAdjustMent(_Player,_Npc,_Q);
+
+PROC
+PROC_Trade_SetAttitudeAdjustment((CHARACTER)_Player, (CHARACTER)_Npc, (INTEGER)_Q)
+AND
+_Q < 0
+AND
+DB_InsultCounter(_Player, _Npc, _InsultCount)
+AND
+_InsultCount < 2 // Player can insult trader with the offer 2 times before Attitude reduction kicks in
+AND
+IntegerSum(_InsultCount, 1, _NewInsultCount)
+AND
+DB_TempTradeBalance(_Player,_Npc,_Remainder)
+THEN
+DB_AttitudeAdjustMent(_Player,_Npc,0);
+NOT DB_InsultCounter(_Player,_Npc,_InsultCount);
+DB_InsultCounter(_Player,_Npc,_NewInsultCount);
+// If we ignore the insult, don't keep track of the balance either
+NOT DB_TempTradeBalance(_Player,_Npc,_Remainder);
+DB_TempTradeBalance(_Player,_Npc,0);
+
+PROC
+PROC_Trade_SetAttitudeAdjustment((CHARACTER)_Player, (CHARACTER)_Npc, (INTEGER)_Q)
+AND
+_Q < 0
+AND
+NOT DB_AttitudeAdjustMent(_Player,_Npc,_)
+AND
+GetAttitudeTowardsPlayer(_Npc,_Player,_OldAtt)
+AND
+IntegerSubtract(_OldAtt,15,_NewAtt)
+AND
+IntegerMax(_NewAtt,-45,_NewAttCapped)
+AND
+IntegerSubtract(_NewAttCapped,_oldAtt,_NewDelta)
+THEN
+DB_AttitudeAdjustMent(_Player,_Npc,_NewDelta);
+//END_REGION
+
+//Start Trade via Event (instead of button click in dialog)
+IF
+FlagSet(StartTrade_4e5de589-f40a-a10d-f088-3ea7482b75ec, (CHARACTER)_Player, _Instance) // flagType: Object
+AND
+DB_DialogNPCs(_Instance,_Npc,1)
+THEN
+PROC_StartTrade((CHARACTER)_Player,(CHARACTER)_Npc);
+ClearFlag((FLAG)StartTrade_4e5de589-f40a-a10d-f088-3ea7482b75ec, _Player, _Instance); // flagType: Object
+
+//REGION Manual Trade Toggling Per Player
+
+PROC
+PROC_DialogFlagSetup(_,(GUIDSTRING)_NPC,(GUIDSTRING)_Player)
+AND
+DB_ManualTradeNPC(_NPC)
+AND
+DB_PreventTradeBetween(_NPC,_Player)
+THEN
+SetCanTrade((CHARACTER)_NPC,0);
+
+PROC
+PROC_DialogFlagSetup(_,(GUIDSTRING)_NPC,(GUIDSTRING)_Player)
+AND
+IsTagged(_NPC,(TAG)GHOST_3def9d73-7c73-487b-8111-d1df1dce076e,1)
+THEN
+SetCanTrade((CHARACTER)_NPC,0);
+
+IF
+FlagSet(PreventTradeWithPlayer_b4405483-6875-4b6a-80ae-e6248ead0313, (GUIDSTRING)_NPC, _ID) // flagType: Object
+AND
+DialogGetInvolvedPlayer(_ID,1,(CHARACTER)_Player)
+THEN
+DB_ManualTradeNPC(_NPC);
+DB_PreventTradeBetween(_NPC,_Player);
+ClearFlag((FLAG)PreventTradeWithPlayer_b4405483-6875-4b6a-80ae-e6248ead0313, _NPC, _ID); // flagType: Object
+
+PROC
+PROC_DialogFlagSetup(_,(GUIDSTRING)_NPC,(GUIDSTRING)_Player)
+AND
+DB_ManualTradeNPC(_NPC)
+AND
+NOT DB_PreventTradeBetween(_NPC,_Player)
+THEN
+SetCanTrade((CHARACTER)_NPC,1);
+//END_REGION
+
+//REGION Prevent Trade for dialog
+IF
+DialogStarted(_Dialog,_ID)
+AND
+DB_DialogBlockTradeButton(_Dialog)
+THEN
+PROC_Dialog_TempDisableTrade_ForNPC(_Dialog,_ID,1);
+
+PROC
+PROC_Dialog_TempDisableTrade_ForNPC((DIALOGRESOURCE)_Dialog,(INTEGER)_ID,(INTEGER)_Index)
+AND
+DialogGetInvolvedNPC(_ID,_Index,_NPC)
+AND
+IntegerSum(_Index,1,_Increment)
+THEN
+PROC_Dialog_TempDisableTrade(_Dialog,_NPC);
+PROC_Dialog_TempDisableTrade_ForNPC(_Dialog,_ID,_Increment);
+
+PROC
+PROC_Dialog_TempDisableTrade((DIALOGRESOURCE)_Dialog,(GUIDSTRING)_NPC)
+AND
+IsCharacter(_NPC, 1)
+AND
+CanTrade((CHARACTER)_NPC,1)
+THEN
+SetCanTrade(_NPC,0);
+DB_TradeTempDisabled(_Dialog,_NPC);
+
+//Reenable trade if it was disabled
+IF
+DialogEnded(_Dialog,_)
+AND
+DB_TradeTempDisabled(_Dialog,_NPC)
+THEN
+NOT DB_TradeTempDisabled(_Dialog,_NPC);
+SetCanTrade((CHARACTER)_NPC,1);
+//END_REGION
+
+//REGION Bought something from a merchant flag
+// Merchant
+IF
+MovedFromTo(_, _Merchant, _Player, 1)
+AND
+DB_BoughtFromMerchantInDialogFlag((CHARACTER)_Merchant,_Dialog,_Flag)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+DB_DialogPlayers(_DialogInstance, _Player, _)
+AND
+DB_DialogName(_Dialog, _DialogInstance)
+THEN
+SetFlag(_Flag, _Player, _DialogInstance);
+
+IF
+DialogEnded(_Dialog, _DialogInstance)
+AND
+DB_BoughtFromMerchantInDialogFlag(_Merchant,(DIALOGRESOURCE)_Dialog,_Flag)
+AND
+DB_DialogPlayers(_DialogInstance, _Player, _)
+AND
+DB_DialogName(_Dialog, _DialogInstance)
+AND
+GetFlag((FLAG)_Flag, _Player, 1)
+THEN
+ClearFlag((FLAG)_Flag, _Player, _DialogInstance);
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

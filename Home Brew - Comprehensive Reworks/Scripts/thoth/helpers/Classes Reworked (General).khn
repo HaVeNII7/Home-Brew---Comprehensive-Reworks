@@ -19,6 +19,31 @@ function AbilityIsExactly(ability, value, entity)
     end
 end
 
+function ChainDamage()
+    return SpellId('Target_GreenFlameBlade') | SpellId('Target_EldritchStrike') | SpellId('Target_EldritchStrike_2')
+    | SpellId('Target_EldritchStrike_3') | SpellId('Target_EldritchStrike_4') | SpellId('Target_EldritchStrike_5')
+    | SpellId('Target_EldritchStrike_6') | SpellId('Projectile_FocusedWeave') | SpellId('Projectile_FocusedWeave_Explosion')
+    | SpellId('Projectile_FocusedWeave_Explosion_Secondary') | SpellId('Projectile_FocusedWeave_Explosion_Arcane') | SpellId('Projectile_ElementalFletching_Lightning_Focused')
+    | SpellId('Projectile_ElementalFletching_Lightning_Explosion') | SpellId('Projectile_PiercingTorrent') | SpellId('Projectile_PoisonSpray')
+    | SpellId('Projectile_ChainLightning') | SpellId('Projectile_ChainLightning_Explosion') | SpellId('Projectile_ChainLightning_2')
+    | SpellId('Projectile_ChainLightning_Explosion_2') | SpellId('Projectile_ChainLightning_3') | SpellId('Projectile_ChainLightning_Explosion_3')
+    | SpellId('Projectile_ChainLightning_4') | SpellId('Projectile_ChainLightning_Explosion_4') | SpellId('Projectile_ChainLightning_5')
+    | SpellId('Projectile_ChainLightning_Explosion_5') | SpellId('Projectile_ChainLightning_6') | SpellId('Projectile_ChainLightning_Explosion_6')
+    | SpellId('Projectile_IceKnife') | SpellId('Projectile_IceKnife_Explosion') | SpellId('Projectile_IceKnife_2')
+    | SpellId('Projectile_IceKnife_Explosion_2') | SpellId('Projectile_IceKnife_3') | SpellId('Projectile_IceKnife_Explosion_3')
+    | SpellId('Projectile_IceKnife_4') | SpellId('Projectile_IceKnife_Explosion_4') | SpellId('Projectile_IceKnife_5')
+    | SpellId('Projectile_IceKnife_Explosion_5') | SpellId('Projectile_IceKnife_6') | SpellId('Projectile_IceKnife_Explosion_6')
+    | SpellId('Projectile_WillOWisp') | SpellId('Projectile_WillOWisp_2') | SpellId('Projectile_WillOWisp_3')
+    | SpellId('Projectile_WillOWisp_4') | SpellId('Projectile_WillOWisp_5') | SpellId('Projectile_WillOWisp_6')
+    | SpellId('Projectile_WillOWisp_AdditionalProjectile') | SpellId('Projectile_WillOWisp_AdditionalProjectile_2') | SpellId('Projectile_WillOWisp_AdditionalProjectile_3')
+    | SpellId('Projectile_WillOWisp_AdditionalProjectile_4') | SpellId('Projectile_WillOWisp_AdditionalProjectile_5') | SpellId('Projectile_WillOWisp_AdditionalProjectile_6')
+    | SpellId('Projectile_MAG_Legendary_Chromatic_ChainLightning') | SpellId('Projectile_Abracadabra_ArcWand') | SpellId('Projectile_Abracadabra_ArcWand_Explosion')
+    | SpellId('Projectile_EldritchBlast_Penumbral_Necrotic') | SpellId('Projectile_EldritchBlast_Penumbral_Radiant') | SpellId('Projectile_EldritchBlast_Penumbral_Necrotic_Enemy')
+    | SpellId('Projectile_EldritchBlast_Penumbral_Necrotic_Enemy2') | SpellId('Projectile_EldritchBlast_Penumbral_Radiant_Enemy') | SpellId('Projectile_EldritchBlast_Penumbral_Radiant_Enemy2')
+    | SpellId('Projectile_EldritchBlast_Penumbral_Necrotic_Corpse') | SpellId('Projectile_EldritchBlast_Penumbral_Necrotic_Corpse2') | SpellId('Projectile_EldritchBlast_Penumbral_Radiant_Ally')
+    | SpellId('Projectile_EldritchBlast_Penumbral_Radiant_Ally2') | SpellId('Projectile_PyrrhicFlare_Chain')
+end
+
 function ConcealedCarryCheck()
 	return HasStringInSpellRoll('RangedWeaponAttack') & ~HasUseCosts('ReactionActionPoint') & ~NumberOfTargetsGreaterThan(1) & ~AreaRadiusGreaterThan(0) & SpellId('Projectile_MainHandAttack')
 end

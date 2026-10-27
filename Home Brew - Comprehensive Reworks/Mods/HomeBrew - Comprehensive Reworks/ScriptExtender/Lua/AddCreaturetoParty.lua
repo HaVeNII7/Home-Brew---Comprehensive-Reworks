@@ -1,10 +1,5 @@
--- AddCreaturetoParty.lua
 -- Recruits Spore Servants / bound undead into the party while their status exists,
 -- and removes them the moment that status is removed.
---
--- Important fix:
--- Cleanup no longer depends on Lua-only tracking tables surviving a reload.
--- If CCREATURE_SPORE_SERVANT is removed for any reason, cleanup always runs.
 
 local RECRUIT_STATUSES = {
   ["CCREATURE_SPORE_SERVANT"] = true,
@@ -220,7 +215,6 @@ Ext.Osiris.RegisterListener("StatusRemoved", 4, "after",
     if not RECRUIT_STATUSES[status] then return end
     if not target or target == "" then return end
 
-    -- Critical fix:
     -- Do NOT require Owner[target] or any Lua-tracked table entry here.
     -- After a reload, those tables are empty, but the status removal still matters.
     Cleanup(target, "StatusRemoved:" .. tostring(status))

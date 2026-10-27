@@ -108,6 +108,22 @@
                     <attribute id="Text" type="TranslatedString" handle="h7ce4ea8b27294504bba9fa46869cd3f96f6g" version="2"/>
                     <attribute id="UUID" type="guid" value="2691699b-4ca4-41dd-88d8-044fc116a5fc"/>
 					</node>
+                <node id="TooltipExtraTexts">
+                    <attribute id="Text" type="TranslatedString" handle="ha512d7b9gcbf5g5b72gc9c3gad08dd01a5e7" version="1"/>
+                    <attribute id="UUID" type="guid" value="cdaf5b94-2b29-4677-9525-8a1064843498"/>
+					</node>
+                <node id="TooltipExtraTexts">
+                    <attribute id="Text" type="TranslatedString" handle="h195366a4g3564gc06cg4db3g0fc0792b529f" version="1"/>
+                    <attribute id="UUID" type="guid" value="348e7bf4-e976-46f4-a091-6a961a3146d2"/>
+					</node>
+                <node id="TooltipExtraTexts">
+                    <attribute id="Text" type="TranslatedString" handle="h992d41afgf51egc9c7g728fgedfe8d93bfad" version="1"/>
+                    <attribute id="UUID" type="guid" value="b38412d1-e4c6-419a-a4c7-a58369efc1d6"/>
+					</node>
+                <node id="TooltipExtraTexts">
+                    <attribute id="Text" type="TranslatedString" handle="ha6bad120gbaf3gddb7g4f34g737d471b278b" version="1"/>
+                    <attribute id="UUID" type="guid" value="3d08dac5-d006-478a-9c41-aaf81f0af79c"/>
+					</node>
             </children>
         </node>
     </region>

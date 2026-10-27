@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="301" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="UUID" type="guid" value="fbe3ee5d-1bb8-4c0b-a18c-26386101a680" />
+			<attribute id="Name" type="FixedString" value="WARLOCK_FIEND" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h452aaefagda0eg4269gb4bbg773479ca789f" version="1" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h0777d1f2g0903g4fadg9870g5c3133dafac6" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Description" type="LSString" value="This warlock's patron is a Fiend" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+				<node id="Properties" />
+			</children>
+		</node>
+	</region>
+</save>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="0" build="58" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="|Karlach, Hells' champion. Tiefling origin.|" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="ha5c9ac63g96e2g413eg959cg1a0bf2667c15" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h818d8e87gf7b3g4ba6g94e3gf0550eaa67a7" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="KARLACH" />
+			<attribute id="UUID" type="guid" value="9aab4bcd-e1f7-4008-8f7b-f1203789ae9b" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Origin" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

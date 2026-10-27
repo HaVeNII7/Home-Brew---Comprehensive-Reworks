@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="328" />
+    <region id="TranslatedStringKeys">
+        <node id="TranslatedStringKeys">
+            <children>
+                <node id="TranslatedStringKey">
+                    <attribute id="Content" type="TranslatedString" handle="ha512d7b9gcbf5g5b72gc9c3gad08dd01a5e7" version="1" />
+                    <attribute id="UUID" type="FixedString" value="XEL_GS_WarnAboutUpdating" />
+                    <attribute id="Speaker" type="FixedString" value="" />
+                    <attribute id="ExtraData" type="LSString" value="" />
+                    <attribute id="Stub" type="bool" value="False" />
+                </node>
+                <node id="TranslatedStringKey">
+                    <attribute id="Content" type="TranslatedString" handle="h195366a4g3564gc06cg4db3g0fc0792b529f" version="1" />
+                    <attribute id="UUID" type="FixedString" value="XEL_GS_SummonNotFoundGateStones" />
+                    <attribute id="Speaker" type="FixedString" value="" />
+                    <attribute id="ExtraData" type="LSString" value="" />
+                    <attribute id="Stub" type="bool" value="False" />
+                </node>
+                <node id="TranslatedStringKey">
+                    <attribute id="Content" type="TranslatedString" handle="h992d41afgf51egc9c7g728fgedfe8d93bfad" version="1" />
+                    <attribute id="UUID" type="FixedString" value="XEL_GSE_SummonNotFoundGateStonesActTwo" />
+                    <attribute id="Speaker" type="FixedString" value="" />
+                    <attribute id="ExtraData" type="LSString" value="" />
+                    <attribute id="Stub" type="bool" value="False" />
+                </node>
+                <node id="TranslatedStringKey">
+                    <attribute id="Content" type="TranslatedString" handle="ha6bad120gbaf3gddb7g4f34g737d471b278b" version="1" />
+                    <attribute id="UUID" type="FixedString" value="XEL_GSE_SummonNotFoundGateStonesActThree" />
+                    <attribute id="Speaker" type="FixedString" value="" />
+                    <attribute id="ExtraData" type="LSString" value="" />
+                    <attribute id="Stub" type="bool" value="False" />
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

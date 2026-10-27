@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<save>
+  <version major="4" minor="0" revision="9" build="307"/>
+  <region id="CustomDice">
+    <node id="root">
+      <children>
+        <node id="CustomDice">
+          <attribute id="Description" type="TranslatedString" handle="hd7c559f0ged91g4d81ga0f7gae3fdcbcaaec" version="1"/>
+          <attribute id="DisplayName" type="TranslatedString" handle="h0980c5a6gdbdbg4192ga26fg08af682cf887" version="1"/>
+          <attribute id="Flip1" type="bool" value="false"/>
+          <attribute id="Flip20" type="bool" value="false"/>
+          <attribute id="Icon1" type="bool" value="true"/>
+          <attribute id="Icon20" type="bool" value="true"/>
+          <attribute id="Name" type="LSString" value="MythicDice V1"/>
+          <attribute id="UUID" type="guid" value="1e6b8525-8e24-49a0-8896-a8207d6dbbd5"/>
+        </node>
+      </children>
+    </node>
+  </region>
+</save>

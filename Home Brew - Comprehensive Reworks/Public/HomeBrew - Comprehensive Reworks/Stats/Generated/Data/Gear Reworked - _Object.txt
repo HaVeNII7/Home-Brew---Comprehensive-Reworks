@@ -1,10 +1,3 @@
-<!--HALL OF FAME-->
-
-new entry "HALLOFFAME"
-type "Object"
-using "OBJ_Book"
-data "RootTemplate" "0db35759-02d5-4b30-96b0-f3f58cf698c9"
-data "Rarity" "Legendary"
 
 <!--ALCHEMY-->
 
@@ -235,6 +228,39 @@ using "OBJ_Backpack"
 data "RootTemplate" "5d6803ad-119e-44a7-ac6c-272e72a3195d"
 data "Weight" "0"
 data "Vitality" "-1"
+
+<!--BARRELS-->
+
+new entry "OBJ_Barrel_Filled"
+type "Object"
+using "_Thrown"
+data "ValueOverride" "5"
+data "Weight" "140"
+data "GameSize" "Medium"
+data "Vitality" "4"
+data "FireResistance" "Vulnerable"
+
+new entry "OBJ_Barrel_Filled_Alcohol"
+type "Object"
+using "OBJ_Barrel_Filled"
+data "RootTemplate" "79050068-7ce3-43f9-a9a3-1646f5eb39c3"
+
+new entry "OBJ_Barrel_Filled_Oil"
+type "Object"
+using "OBJ_Barrel_Filled"
+data "RootTemplate" "72e3f454-5a68-4bb2-acef-7b8d595b5015"
+
+new entry "OBJ_Barrel_Filled_Smokepowder"
+type "Object"
+using "OBJ_Barrel_Filled"
+data "RootTemplate" "9c875b66-4024-487f-b67c-0c175538eb5c"
+
+new entry "UND_OBJ_Runepowder_Barrel"
+type "Object"
+using "OBJ_Barrel_Filled_Smokepowder"
+data "RootTemplate" "79dfb371-cd87-48f3-b542-26db2d39cfe2"
+data "ValueOverride" "2500"
+data "Rarity" "VeryRare"
 
 <!--BOMBS-->
 
@@ -2792,6 +2818,38 @@ data "MaxAmount" "1"
 data "Priority" "1"
 data "ValueLevel" "5"
 data "ObjectCategory" "MagicScroll"
+
+new entry "OBJ_Scroll_ScrollofRebirth"
+type "Object"
+using "_MagicScroll"
+data "RootTemplate" "952de87b-93a8-4575-b1ca-2d8922dd8980"
+data "ValueOverride" "0"
+data "Rarity" "Legendary"
+data "UseConditions" "not IsSummon()"
+
+new entry "OBJ_Scroll_ScrollofReversion"
+type "Object"
+using "_MagicScroll"
+data "RootTemplate" "2306af93-cc75-41d6-8852-ceb7b8883e8e"
+data "ValueOverride" "0"
+data "Rarity" "Legendary"
+data "UseConditions" "not IsSummon()"
+
+new entry "OBJ_Scroll_ScrollofTransmogrification"
+type "Object"
+using "_MagicScroll"
+data "RootTemplate" "dcd4429e-1c2e-4b15-b906-dc6379a161fe"
+data "ValueOverride" "0"
+data "Rarity" "Legendary"
+data "UseConditions" "not IsSummon()"
+
+new entry "OBJ_Scroll_TransmogToken"
+type "Object"
+using "_MagicScroll"
+data "RootTemplate" "498c4921-e60f-4c0f-b399-e10069cb8880"
+data "ValueOverride" "0"
+data "Rarity" "Legendary"
+data "UseConditions" "not IsSummon()"
 
 <!------------------------------------------------------CANTRIPS------------------------------------------------------>
 

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="5" build="1" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="| Really Astarion, Vampire companion |" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hef165f1agd6bbg4b6fg859eg7b454c5a3702" version="2" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h0db12988ge4f1g4619g9c85ga8bd356db395" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="REALLY_ASTARION" />
+			<attribute id="UUID" type="guid" value="ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

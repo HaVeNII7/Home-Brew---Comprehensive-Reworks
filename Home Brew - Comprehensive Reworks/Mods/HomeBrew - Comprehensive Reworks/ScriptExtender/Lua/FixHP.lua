@@ -8,6 +8,7 @@ local function FixHp(Entity)
 
     if reservations and reservations["00000000-0000-0000-0000-000000000000"] then
         local guid = Entity.Uuid and Entity.Uuid.EntityUuid
+        if not guid or not Entity.Health then return end
         if Osi.IsPlayer(guid) == 1 or Osi.IsInCombat(guid) == 1 then return end
         local Hp = Entity.Health.Hp
         local MaxHp = Entity.Health.MaxHp

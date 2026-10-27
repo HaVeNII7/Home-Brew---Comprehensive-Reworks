@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="68f0676c-f6df-4f8d-89f1-10944ae3cc51" />
+					<attribute id="Name" type="LSString" value="XEL_Item_GateStone_Disintegrator" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="bf385fcc-8a09-4c98-b899-c9dafb1d830d" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h7a88e9deg1fa6gb2a4gb14bg4b90434cfab7" version="5" />
+					<attribute id="Icon" type="FixedString" value="Item_DEC_Dungeon_SharTemple_Gem_Socket_C" />
+					<attribute id="Stats" type="FixedString" value="XEL_Obj_GateStone_Disintegrator" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="h2ec05ce3g33d7g6376g3a8fg73742044358b" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h21df936bg3899g7216g5cbeg95fffa8b82f1" version="5" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hef2f2c79g225fg7bb0g5362gf5d70fc51a48" version="2" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.09440008 -0.00070761144 0.00020982325" />
+									<attribute id="Max" type="fvec3" value="0.09447421 0.13363518 0.13192964" />
+									<attribute id="Radius" type="float" value="0.2165065" />
+									<attribute id="Height" type="float" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.09440008 -0.00070761144 0.00020982325" />
+									<attribute id="Max" type="fvec3" value="0.09447421 0.13363518 0.13192964" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Height" type="float" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.09440008 -0.00070761144 0.00020982325" />
+									<attribute id="Max" type="fvec3" value="0.09447421 0.13363518 0.13192964" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Height" type="float" value="1" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="StatsId" type="FixedString" value="XEL_GATESIONE_DISINTEGRATOR_STATUS" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+											<attribute id="Consume" type="bool" value="True" />
+											<attribute id="IsHiddenStatus" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

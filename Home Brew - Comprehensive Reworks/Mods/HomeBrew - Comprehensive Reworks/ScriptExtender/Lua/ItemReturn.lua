@@ -9,7 +9,6 @@ local V = {
 }
 local NULL_UUID = "00000000-0000-0000-0000-000000000000"
 
--- quick “returning” test for re-equip step
 local function IsReturning(it)
   if not it then return false end
   return  Osi.HasActiveStatus(it,"MAG_THROWING_RETURN_TO_OWNER")		==1
@@ -29,7 +28,6 @@ local function ClearVars(c)
   log("Cleared vars on "..c)
 end
 
--- ── 0.  Clear on manual gear changes (skip while throw active) ────────
 for _,ev in ipairs{"Equipped","Unequipped"} do
   Ext.Osiris.RegisterListener(ev,2,"after",function(_,c)
     if Osi.GetVarInteger(c,V.ACTIVE)==0 then ClearVars(c)
@@ -37,7 +35,6 @@ for _,ev in ipairs{"Equipped","Unequipped"} do
   end)
 end
 
--- ── 1.  Snapshot *template IDs* of both hand slots at UsingSpell ──────
 Ext.Osiris.RegisterListener("UsingSpell",5,"after",
 function(c,s,st)
   if (s=="Throw_Throw" or s=="Throw_FrenziedThrow") and st=="throw" then
@@ -57,18 +54,15 @@ function(c,s,st)
   end
 end)
 
--- ── 2.  OnThrown: decide by template match ────────────────────────────
 Ext.Osiris.RegisterListener("OnThrown", 7, "after",
 function(item, itemTemplate, char)
 
-    -- 1️⃣  Bail out immediately if the landed item is NOT a returning weapon
     if not IsReturning(item) then
         log("Not a returning weapon → leave it where it landed")
-        ClearVars(char)            -- tidy up any throw-tracking flags
+        ClearVars(char)
         return
     end
 
-    -- 2️⃣  Genuine returning weapon → continue 
     Osi.ToInventory(item, char, 1, 1, 0)
 
   local mainTempl = Osi.GetVarUUID(char,V.MAIN_TEMPL)
@@ -84,7 +78,7 @@ function(item, itemTemplate, char)
     return
   end
 
-  if not IsReturning(item) then                -- safety: weapon lost status
+  if not IsReturning(item) then
     log("Matched hand slot but not returning → keep in bag")
     ClearVars(char)
     return

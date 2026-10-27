@@ -1035,7 +1035,6 @@ data "VerbalIntent" "Summon"
 data "SpellStyleGroup" "Class"
 data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;CannotTargetCharacter;CannotTargetItems"
 data "DamageType" "Psychic"
-data "Cooldown" "OncePerShortRest"
 
 <!--PACT OF THE PRIMORDIAL-->
 

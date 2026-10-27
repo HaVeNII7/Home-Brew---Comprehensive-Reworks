@@ -1,0 +1,29 @@
+<ls:UIWidget x:Name="HB_VisualPresetFooter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ls="clr-namespace:ls;assembly=Code">
+    <ls:UIWidget.Template>
+        <ControlTemplate TargetType="ls:UIWidget">
+            <Grid>
+                <StackPanel x:Name="HB_PresetFooter" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,250"
+                    Visibility="{Binding HB_Visible, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                    IsEnabled="{Binding HB_FooterEnabled, FallbackValue=True}">
+                    <ls:LSButton Content="Change Equipment" Command="{Binding HB_Gear_Show}"
+                        Visibility="{Binding HB_Gear_Visible, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                        Style="{StaticResource BrownButtonStyle}" MinWidth="440" MinHeight="76" HorizontalAlignment="Center" Margin="0,0,0,14"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <ls:LSButton Content="Save Appearance" Command="{Binding HB_OpenSave}" Style="{StaticResource BrownButtonStyle}" MinWidth="370" MinHeight="82" Margin="2,0"/>
+                        <ls:LSButton Content="Load Appearance" Command="{Binding HB_OpenLoad}" Style="{StaticResource BrownButtonStyle}" MinWidth="370" MinHeight="82" Margin="2,0"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <!-- Mirror Confirm sits left of centre; align the footer above it without moving creation buttons. -->
+                <DataTrigger Binding="{Binding HB_IsMirror}" Value="True">
+                    <Setter TargetName="HB_PresetFooter" Property="Margin" Value="-485,0,485,250"/>
+                </DataTrigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </ls:UIWidget.Template>
+</ls:UIWidget>

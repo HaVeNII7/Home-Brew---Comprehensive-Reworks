@@ -1,0 +1,144 @@
+<ls:UIWidget x:Name="HB_AbilityBaseMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ls="clr-namespace:ls;assembly=Code"
+    xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+    ls:UIWidget.UseCustomDC="True" ls:UIWidget.ContextName="HB_AbilityBaseMenu">
+    <ls:UIWidget.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="HB_AbilityBaseNameTemplate" TargetType="Control">
+                <ls:LSButton x:Name="HB_AbilityBaseButton" DataContext="{x:Null}"
+                    Command="{Binding HB_Open}" IsEnabled="{Binding HB_Ready, FallbackValue=False}"
+                    FontFamily="{TemplateBinding FontFamily}" FontSize="{TemplateBinding FontSize}"
+                    Foreground="{TemplateBinding Foreground}" Background="Transparent"
+                    BorderThickness="0" Padding="0" Focusable="True" ls:MoveFocus.Focusable="True">
+                    <ls:LSButton.Template>
+                        <ControlTemplate TargetType="ls:LSButton">
+                            <Border x:Name="nameBackground" Background="Transparent" Padding="0,4">
+                                <Control x:Name="HB_BaseNativeName" Template="{StaticResource AbilityDisplayName}"
+                                    DataContext="{Binding HB_NativeAbility}" FontSize="{TemplateBinding FontSize}"
+                                    FontFamily="{TemplateBinding FontFamily}" Foreground="{TemplateBinding Foreground}"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Opacity" Value="0.35"/>
+                                </Trigger>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                                    <Setter TargetName="HB_BaseNativeName" Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                                </Trigger>
+                                <DataTrigger Binding="{Binding Path=(ls:MoveFocus.IsFocused), RelativeSource={RelativeSource Self}}" Value="True">
+                                    <Setter Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                                    <Setter TargetName="HB_BaseNativeName" Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                                    <Setter Property="BoundEvent" Value="UIAccept"/>
+                                </DataTrigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </ls:LSButton.Template>
+                </ls:LSButton>
+            </ControlTemplate>
+            <Style x:Key="HB_BaseChoiceStyle" TargetType="ls:LSButton">
+                <Setter Property="FontFamily" Value="{StaticResource DefaultFont}"/>
+                <Setter Property="FontSize" Value="{StaticResource ScaledMediumFontSize}"/>
+                <Setter Property="Foreground" Value="{StaticResource LS_baseTxtColor}"/>
+                <Setter Property="Height" Value="48"/>
+                <Setter Property="Focusable" Value="True"/>
+                <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ls:LSButton">
+                            <Border x:Name="entryBorder" Background="Transparent" BorderThickness="1"
+                                BorderBrush="Transparent" Padding="16,4">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="entryBorder" Property="Background" Value="#AA463525"/>
+                                    <Setter TargetName="entryBorder" Property="BorderBrush" Value="{StaticResource LS_accent100TxtColor}"/>
+                                </Trigger>
+                                <DataTrigger Binding="{Binding Path=(ls:MoveFocus.IsFocused), RelativeSource={RelativeSource Self}}" Value="True">
+                                    <Setter TargetName="entryBorder" Property="Background" Value="#AA463525"/>
+                                    <Setter Property="BoundEvent" Value="UIAccept"/>
+                                </DataTrigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </ls:UIWidget.Resources>
+    <ls:UIWidget.Template>
+        <ControlTemplate TargetType="ls:UIWidget">
+            
+            <Grid Visibility="{Binding HB_MenuOpen, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
+                <Popup x:Name="HB_BasePopup" PlacementTarget="{Binding HB_Anchor}"
+                    IsOpen="{Binding HB_MenuOpen, FallbackValue=False}" Placement="Bottom"
+                    VerticalOffset="6" StaysOpen="True">
+                <Border Width="480" Padding="18" Background="#F21B1713" BorderThickness="1"
+                    BorderBrush="{StaticResource LS_accent25TxtColor}">
+                    <StackPanel KeyboardNavigation.DirectionalNavigation="Contained">
+                        <b:Interaction.Triggers>
+                            <b:DataTrigger Binding="{Binding HB_MenuOpen}" Value="True">
+                                <ls:SetMoveFocusAction TargetName="HB_BaseChoice8"/>
+                            </b:DataTrigger>
+                        </b:Interaction.Triggers>
+                        <TextBlock Text="{Binding HB_Title}" FontSize="{StaticResource ScaledDefaultFontSize}"
+                            Foreground="{StaticResource LS_tint100}" HorizontalAlignment="Center" Margin="0,0,0,8"/>
+                        <TextBlock Text="{Binding HB_Selected}" FontSize="{StaticResource SmallFontSize}"
+                            Foreground="{StaticResource LS_baseTxtColor}" HorizontalAlignment="Center" Margin="0,0,0,8"/>
+                        <TextBlock Text="{Binding HB_TransferPoints}" FontSize="{StaticResource SmallFontSize}"
+                            Foreground="{StaticResource LS_baseTxtColor}" HorizontalAlignment="Center" Margin="0,0,0,8"/>
+                        <ScrollViewer MaxHeight="384" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                            <StackPanel KeyboardNavigation.DirectionalNavigation="Contained">
+                                <ls:LSButton Content="1" Command="{Binding HB_Choose_1}"
+                                    IsEnabled="{Binding HB_CanChoose_1, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="2" Command="{Binding HB_Choose_2}"
+                                    IsEnabled="{Binding HB_CanChoose_2, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="3" Command="{Binding HB_Choose_3}"
+                                    IsEnabled="{Binding HB_CanChoose_3, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="4" Command="{Binding HB_Choose_4}"
+                                    IsEnabled="{Binding HB_CanChoose_4, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="5" Command="{Binding HB_Choose_5}"
+                                    IsEnabled="{Binding HB_CanChoose_5, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="6" Command="{Binding HB_Choose_6}"
+                                    IsEnabled="{Binding HB_CanChoose_6, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="7" Command="{Binding HB_Choose_7}"
+                                    IsEnabled="{Binding HB_CanChoose_7, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton x:Name="HB_BaseChoice8" Content="8" Command="{Binding HB_Choose_8}"
+                                    IsEnabled="{Binding HB_CanChoose_8, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="9" Command="{Binding HB_Choose_9}"
+                                    IsEnabled="{Binding HB_CanChoose_9, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="10" Command="{Binding HB_Choose_10}"
+                                    IsEnabled="{Binding HB_CanChoose_10, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="11" Command="{Binding HB_Choose_11}"
+                                    IsEnabled="{Binding HB_CanChoose_11, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="12" Command="{Binding HB_Choose_12}"
+                                    IsEnabled="{Binding HB_CanChoose_12, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="13" Command="{Binding HB_Choose_13}"
+                                    IsEnabled="{Binding HB_CanChoose_13, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="14" Command="{Binding HB_Choose_14}"
+                                    IsEnabled="{Binding HB_CanChoose_14, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="15" Command="{Binding HB_Choose_15}"
+                                    IsEnabled="{Binding HB_CanChoose_15, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="16" Command="{Binding HB_Choose_16}"
+                                    IsEnabled="{Binding HB_CanChoose_16, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="17" Command="{Binding HB_Choose_17}"
+                                    IsEnabled="{Binding HB_CanChoose_17, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="18" Command="{Binding HB_Choose_18}"
+                                    IsEnabled="{Binding HB_CanChoose_18, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="19" Command="{Binding HB_Choose_19}"
+                                    IsEnabled="{Binding HB_CanChoose_19, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                                <ls:LSButton Content="20" Command="{Binding HB_Choose_20}"
+                                    IsEnabled="{Binding HB_CanChoose_20, FallbackValue=False}" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                        <TextBlock Text="Adjust the base value of your selected Ability Score. By decreasing the value of an Ability, you gain points which may then be spent to increase another.&#10;&#10;This feature is intended for either challenge or role play purposes, and can drastically impact HomeBrew's intended balance." TextWrapping="Wrap"
+                            FontSize="{StaticResource SmallFontSize}" Foreground="{StaticResource LS_baseTxtColor}" Margin="8,12,8,4"/>
+                        <ls:LSButton Content="Close" Command="{Binding HB_Close}" BoundEvent="UIBack" Style="{StaticResource HB_BaseChoiceStyle}"/>
+                    </StackPanel>
+                </Border>
+                </Popup>
+            </Grid>
+        </ControlTemplate>
+    </ls:UIWidget.Template>
+</ls:UIWidget>

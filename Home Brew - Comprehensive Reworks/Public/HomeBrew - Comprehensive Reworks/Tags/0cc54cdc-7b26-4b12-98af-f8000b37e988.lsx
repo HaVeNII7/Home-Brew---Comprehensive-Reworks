@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="0" build="58" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="Player is a paladin of Lolth." />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h6cd5839dg02b6g4bc0gab6fgdb3e8147a185" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h4feab1f8gf372g4044g9f3ag6eb3569a0384" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="PALADIN_LOLTH" />
+			<attribute id="UUID" type="guid" value="0cc54cdc-7b26-4b12-98af-f8000b37e988" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Class" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

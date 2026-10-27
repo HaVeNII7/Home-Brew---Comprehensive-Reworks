@@ -1,0 +1,234 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_XEL_GateStones_ModVersion(7);
+DB_XEL_GS_OneTimeRewards(1,(ITEMROOT)XEL_Item_GateStone_Recall_e0b99522-b03a-49c9-9ae3-4da08216f7e3);
+DB_XEL_GateStone_RootID(1,(ITEMROOT)XEL_Item_GateStone_Alpha_7d9269c2-dc08-4777-bb42-ddf9c45e476a,"XEL_GATESTONE_ALPHA_STATUS");
+DB_XEL_GateStone_RootID(2,(ITEMROOT)XEL_Item_GateStone_Beta_73c3687c-c188-41dd-ae69-34ad1fee2084,"XEL_GATESTONE_BETA_STATUS");
+DB_XEL_GateStone_RootID(3,(ITEMROOT)XEL_Item_GateStone_Delta_104869b8-c758-467d-8444-8bbad5416183,"XEL_GATESTONE_DELTA_STATUS");
+DB_XEL_GateStone_RootID(4,(ITEMROOT)XEL_Item_GateStone_Gamma_c06d5a3a-a788-43f5-a50e-94030d9584d6,"XEL_GATESTONE_GAMMA_STATUS");
+DB_XEL_GateStone(1,(GUIDSTRING)de5cd146-8221-434b-9aec-794886e8c10c);
+DB_XEL_GateStone(2,(GUIDSTRING)c493217b-8713-493b-964f-4398686075ae);
+DB_XEL_GateStone(3,(GUIDSTRING)724c2b7d-8a60-4825-807a-5212f236e5e1);
+DB_XEL_GateStone(4,(GUIDSTRING)baef2a1f-22fc-4efe-984d-5c5e5badf2a1);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_ALPHA",1);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_BETA",2);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_DELTA",3);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_GAMMA",4);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GS_FOUND_ALPHA_aae16155-9e1c-445d-9a8b-fe3e20ecf049,1);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GS_FOUND_BETA_bc4ac55b-88be-4233-938d-2a8e9e593157,2);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GS_FOUND_DELTA_6c346435-e010-4c44-aa3a-0078e5dc76f0,3);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GS_FOUND_GAMMA_7700f185-d290-4368-8979-507fb651be14,4);
+KBSECTION
+IF
+SavegameLoaded()
+AND
+DB_XEL_GateStones_ModVersion(_Version)
+AND
+_Version < 7
+THEN
+NOT DB_XEL_GateStones_ModVersion(_Version);
+DB_XEL_GateStones_ModVersion(7);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_BETA_TO_ALPHA",1);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_DELTA_TO_ALPHA",1);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_GAMMA_TO_ALPHA",1);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_ALPHA_TO_BETA",2);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_DELTA_TO_BETA",2);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_GAMMA_TO_BETA",2);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_ALPHA_TO_DELTA",3);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_BETA_TO_DELTA",3);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_GAMMA_TO_DELTA",3);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_ALPHA_TO_GAMMA",4);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_BETA_TO_GAMMA",4);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_DELTA_TO_GAMMA",4);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_ALPHA",1);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_BETA",2);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_DELTA",3);
+NOT DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_GAMMA",4);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_ALPHA",1);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_BETA",2);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_DELTA",3);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_GAMMA",4);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GS_FOUND_ALPHA_aae16155-9e1c-445d-9a8b-fe3e20ecf049,1);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GS_FOUND_BETA_bc4ac55b-88be-4233-938d-2a8e9e593157,2);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GS_FOUND_DELTA_6c346435-e010-4c44-aa3a-0078e5dc76f0,3);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GS_FOUND_GAMMA_7700f185-d290-4368-8979-507fb651be14,4);
+
+IF
+LevelGameplayStarted(_,_)
+AND
+DB_Avatars(_Player)
+AND
+DB_XEL_GS_OneTimeRewards(_RewardNo,_Reward)
+THEN
+PROC_XEL_GS_OneTimeReward_GiveReward(_RewardNo, _Reward, 1, 1, _Player);
+
+PROC
+PROC_XEL_GS_OneTimeReward_GiveReward((INTEGER)_RewardNo, (ITEMROOT)_Reward, (INTEGER)_Amount, (INTEGER)_Notification, (GUIDSTRING)_Player)
+AND
+NOT DB_XEL_GS_OneTimeRewards_RewardGiven(_RewardNo)
+THEN
+DB_XEL_GS_OneTimeRewards_RewardGiven(_RewardNo);
+TemplateAddTo(_Reward,_Player,_Amount,_Notification);
+
+IF
+LevelGameplayStarted(_,_)
+AND
+DB_XEL_GateStones_ModVersion(_Version)
+AND
+_Version < 5
+AND
+DB_Avatars((CHARACTER)_Player)
+THEN
+TimerLaunch("XEL_GS_UserUpdatedToVersionTwoMidSave", 15000);
+
+IF
+TimerFinished("XEL_GS_UserUpdatedToVersionTwoMidSave")
+AND
+DB_Avatars((CHARACTER)_Player)
+THEN
+OpenMessageBox(_Player, "XEL_GS_WarnAboutUpdating");
+
+IF
+TemplateAddedTo((ITEMROOT)_GateStoneRootID, (GUIDSTRING)_GateStoneID, _Player, _)
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+NOT DB_XEL_GateStoneFound(_GateStoneNo)
+THEN
+DB_XEL_GateStoneFound(_GateStoneNo);
+PROC_XEL_GS_TagPartyMembers(_GateStoneNo);
+
+PROC
+PROC_XEL_GS_TagPartyMembers((INTEGER)_GateStoneTagNo)
+AND
+DB_Players(_Player)
+AND
+DB_XEL_GateStone_FoundTag(_GateStoneTag, _GateStoneTagNo)
+AND
+IsTagged(_Player, _GateStoneTag, 0)
+THEN
+SetTag(_Player, _GateStoneTag);
+
+IF
+LevelGameplayStarted(_,_)
+AND
+DB_Players(_Player)
+AND
+DB_XEL_GateStoneFound(_GateStoneNo)
+AND
+DB_XEL_GateStone_FoundTag(_GateStoneTag, _GateStoneNo)
+AND
+IsTagged(_Player, _GateStoneTag, 0)
+THEN
+SetTag(_Player, _GateStoneTag);
+
+IF
+CharacterJoinedParty(_Player)
+AND
+DB_Players(_Player)
+AND
+DB_XEL_GateStoneFound(_GateStoneTagNo)
+AND
+DB_XEL_GateStone_FoundTag(_GateStoneTag, _GateStoneTagNo)
+AND
+IsTagged(_Player, _GateStoneTag, 0)
+THEN
+SetTag(_Player, _GateStoneTag);
+
+IF
+TemplateAddedTo((ITEMROOT)_GateStoneRootID, (GUIDSTRING)_GateStoneID, _Player, _)
+AND
+DB_XEL_GateStone_RootID(_GateStoneNo, _GateStoneRootID, _StatusName)
+THEN
+ApplyStatus(_Player, _StatusName, -1.0, 0, _Player);
+
+IF
+TemplateRemovedFrom((ITEMROOT)_GateStoneRootID, (GUIDSTRING)_GateStoneID, _Player)
+AND
+DB_XEL_GateStone_RootID(_GateStoneNo, _GateStoneRootID, _StatusName)
+THEN
+RemoveStatus(_Player, _StatusName, _Player);
+
+IF
+LevelUnloading(_Level)
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+DB_XEL_GateStoneFound(_GateStoneNo)
+AND
+DB_Avatars(_Player)
+AND
+IsInMagicPockets(_GateStoneID, _Player, 0)
+THEN
+ToInventory(_GateStoneID, _Player, 1, 1, 0);
+
+IF
+StatusApplied(_Caster, _StatusName, _, _)
+AND
+DB_XEL_GateStone_TeleportStatus(_StatusName, _StatusNo)
+AND
+DB_XEL_GateStone(_StatusNo, _GateStoneID)
+AND
+DB_XEL_GateStoneFound(_StatusNo)
+THEN
+PROC_XEL_GateStone_Teleport(_GateStoneID, _Caster);
+
+PROC
+PROC_XEL_GateStone_Teleport((GUIDSTRING)_GateStoneID, (GUIDSTRING)_Caster)
+THEN
+TeleportTo(_Caster, _GateStoneID, "XEL_GateStoneTeleported_ToStone", 0, 0, 1, 1, 1);
+
+IF
+StatusApplied(_Player, "XEL_GATESTONE_RECALL", _, _)
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+_GateStoneNo <= 4
+AND
+IsInInventoryOf(_GateStoneID, _Player, 0)
+AND
+DB_XEL_GateStoneFound(_GateStoneNo)
+THEN
+PROC_XEL_GateStone_Recall(_GateStoneID, _Player);
+
+PROC
+PROC_XEL_GateStone_Recall((GUIDSTRING)_GateStoneID, (GUIDSTRING)_Player)
+THEN
+ToInventory(_GateStoneID, _Player, 1, 1, 0);
+
+IF
+StatusApplied((CHARACTER)_Player, "XEL_GATESTONE_RECALL", _, _)
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+NOT DB_XEL_GateStoneFound(_GateStoneNo)
+AND
+_GateStoneNo <= 4
+AND
+NOT DB_XEL_GateStonesAskToSummonMissing(1)
+THEN
+DB_XEL_GateStonesAskToSummonMissing(1);
+OpenMessageBoxYesNo(_Player, "XEL_GS_SummonNotFoundGateStones");
+
+IF
+MessageBoxYesNoClosed((CHARACTER)_Player, "XEL_GS_SummonNotFoundGateStones", (INTEGER)_Result)
+AND
+_Result == 1
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+_GateStoneNo <= 4
+AND
+NOT DB_XEL_GateStoneFound(_GateStoneNo)
+THEN
+ToInventory(_GateStoneID, _Player, 1, 1, 0);
+IF
+MessageBoxYesNoClosed((CHARACTER)_Player, "XEL_GS_SummonNotFoundGateStones", (INTEGER)_Result)
+AND
+_Result == 0
+THEN
+NOT DB_XEL_GateStonesAskToSummonMissing(1);
+EXITSECTION
+
+ENDEXITSECTION

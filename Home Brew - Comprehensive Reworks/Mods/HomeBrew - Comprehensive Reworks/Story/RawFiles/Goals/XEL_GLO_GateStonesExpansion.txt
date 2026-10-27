@@ -1,0 +1,163 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_XEL_GateStonesExpansion_ModVersion(2);
+DB_XEL_GS_OneTimeRewards(2,(ITEMROOT)XEL_Item_GateStone_RecallActTwo_09185739-6d2d-4e2a-91d5-3f2d903adfb0);
+DB_XEL_GS_OneTimeRewards(3,(ITEMROOT)XEL_Item_GateStone_RecallActThree_c26e127c-21e0-4a9c-978e-2f166afa7087);
+DB_XEL_GateStone_RootID(5,(ITEMROOT)XEL_Item_GateStone_Epsilon_43c26e14-d657-4be0-8a4b-7d97d12a87df,"XEL_GATESTONE_EPSILON_STATUS");
+DB_XEL_GateStone_RootID(6,(ITEMROOT)XEL_Item_GateStone_Zeta_9c1b8d30-bd3d-4d99-838b-d0385e435c58,"XEL_GATESTONE_ZETA_STATUS");
+DB_XEL_GateStone_RootID(7,(ITEMROOT)XEL_Item_GateStone_Eta_76367ce3-5b9b-4ed9-800c-ab6de07f8b59,"XEL_GATESTONE_ETA_STATUS");
+DB_XEL_GateStone_RootID(8,(ITEMROOT)XEL_Item_GateStone_Theta_ec865bd8-fdd1-4457-8bab-b2214d226edc,"XEL_GATESTONE_THETA_STATUS");
+DB_XEL_GateStone_RootID(9,(ITEMROOT)XEL_Item_GateStone_Omicron_20ac4bc2-1e95-4f47-82af-0c77790be8b9,"XEL_GATESTONE_OMICRON_STATUS");
+DB_XEL_GateStone_RootID(10,(ITEMROOT)XEL_Item_GateStone_Sigma_0b0dd39d-699d-4899-8a0a-a6197d20ba95,"XEL_GATESTONE_SIGMA_STATUS");
+DB_XEL_GateStone_RootID(11,(ITEMROOT)XEL_Item_GateStone_Upsilon_573353f5-2634-45ca-b6f7-9a5726463d0c,"XEL_GATESTONE_UPSILON_STATUS");
+DB_XEL_GateStone_RootID(12,(ITEMROOT)XEL_Item_GateStone_Omega_29d227fe-a728-4aee-b738-0209fc0e6b2c,"XEL_GATESTONE_OMEGA_STATUS");
+DB_XEL_GateStone(5,(GUIDSTRING)cebfb378-160b-425a-9d57-3294e63adb8c);
+DB_XEL_GateStone(6,(GUIDSTRING)44fb56c7-3ed7-481c-aab4-0076d4d50c13);
+DB_XEL_GateStone(7,(GUIDSTRING)2967aab9-3bc6-4864-a5c5-d45853e84019);
+DB_XEL_GateStone(8,(GUIDSTRING)e9ab8a8d-c5a9-40aa-9276-59cc19553491);
+DB_XEL_GateStone(9,(GUIDSTRING)0dec842f-de81-4bf0-b34b-53737104402e);
+DB_XEL_GateStone(10,(GUIDSTRING)aa39e129-7fb6-4f52-87bb-01a37acf3601);
+DB_XEL_GateStone(11,(GUIDSTRING)abfdfa5a-610d-44dd-b16e-4fcb54cc5f2d);
+DB_XEL_GateStone(12,(GUIDSTRING)7539ad27-0ee9-48a4-848a-0805649a08a4);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_EPSILON",5);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_ZETA",6);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_ETA",7);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_THETA",8);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_OMICRON",9);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_SIGMA",10);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_UPSILON",11);
+DB_XEL_GateStone_TeleportStatus("XEL_TELEPORT_TO_OMEGA",12);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_EPSILON_6a7abd8f-1e1f-4258-b51f-25b6dc6f47ce,5);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_ZETA_3dc1f9e7-e81f-4965-bc27-b9478c07ed28,6);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_ETA_abd96cec-c152-4407-a9ba-4cb1b7448cd1,7);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_THETA_5e47f72c-118e-4d6b-b388-143fa8807d41,8);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_OMICRON_420f8163-b23b-4ce4-8abb-14665214a834,9);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_SIGMA_dbe3e8c1-5cc5-4496-9275-d3641ca6e65c,10);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_UPSILON_00add04b-5240-4479-bbb5-acbd1024b0d1,11);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_OMEGA_aa6268ea-eb66-4e6e-9bd5-4f1bcfb9e50d,12);
+KBSECTION
+IF
+SavegameLoaded()
+AND
+DB_XEL_GateStonesExpansion_ModVersion(_Version)
+AND
+_Version < 2
+THEN
+NOT DB_XEL_GateStonesExpansion_ModVersion(_Version);
+DB_XEL_GateStonesExpansion_ModVersion(2);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_EPSILON_6a7abd8f-1e1f-4258-b51f-25b6dc6f47ce,5);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_ZETA_3dc1f9e7-e81f-4965-bc27-b9478c07ed28,6);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_ETA_abd96cec-c152-4407-a9ba-4cb1b7448cd1,7);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_THETA_5e47f72c-118e-4d6b-b388-143fa8807d41,8);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_OMICRON_420f8163-b23b-4ce4-8abb-14665214a834,9);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_SIGMA_dbe3e8c1-5cc5-4496-9275-d3641ca6e65c,10);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_UPSILON_00add04b-5240-4479-bbb5-acbd1024b0d1,11);
+DB_XEL_GateStone_FoundTag((TAG)XEL_GSE_FOUND_OMEGA_aa6268ea-eb66-4e6e-9bd5-4f1bcfb9e50d,12);
+
+IF
+StatusApplied(_Player, "XEL_GATESTONE_RECALL_ACTTWO", _, _)
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+_GateStoneNo >= 5
+AND
+_GateStoneNo <= 8
+AND
+IsInInventoryOf(_GateStoneID, _Player, 0)
+AND
+DB_XEL_GateStoneFound(_GateStoneNo)
+THEN
+PROC_XEL_GateStone_Recall(_GateStoneID, _Player);
+
+IF
+StatusApplied(_Player, "XEL_GATESTONE_RECALL_ACTTHREE", _, _)
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+_GateStoneNo >= 9
+AND
+_GateStoneNo <= 12
+AND
+IsInInventoryOf(_GateStoneID, _Player, 0)
+AND
+DB_XEL_GateStoneFound(_GateStoneNo)
+THEN
+PROC_XEL_GateStone_Recall(_GateStoneID, _Player);
+
+IF
+StatusApplied((CHARACTER)_Player, "XEL_GATESTONE_RECALL_ACTTWO", _, _)
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+_GateStoneNo >= 5
+AND
+_GateStoneNo <= 8
+AND
+NOT DB_XEL_GateStoneFound(_GateStoneNo)
+AND
+NOT DB_XEL_GateStonesAskToSummonMissingActTwo(1)
+THEN
+DB_XEL_GateStonesAskToSummonMissingActTwo(1);
+OpenMessageBoxYesNo(_Player, "XEL_GSE_SummonNotFoundGateStonesActTwo");
+
+IF
+MessageBoxYesNoClosed((CHARACTER)_Player, "XEL_GSE_SummonNotFoundGateStonesActTwo", (INTEGER)_Result)
+AND
+_Result == 1
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+_GateStoneNo >= 5
+AND
+_GateStoneNo <= 8
+AND
+NOT DB_XEL_GateStoneFound(_GateStoneNo)
+THEN
+ToInventory(_GateStoneID, _Player, 1, 1, 0);
+IF
+MessageBoxYesNoClosed((CHARACTER)_Player, "XEL_GSE_SummonNotFoundGateStonesActTwo", (INTEGER)_Result)
+AND
+_Result == 0
+THEN
+NOT DB_XEL_GateStonesAskToSummonMissingActTwo(1);
+
+IF
+StatusApplied((CHARACTER)_Player, "XEL_GATESTONE_RECALL_ACTTHREE", _, _)
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+_GateStoneNo >= 9
+AND
+_GateStoneNo <= 12
+AND
+NOT DB_XEL_GateStoneFound(_GateStoneNo)
+AND
+NOT DB_XEL_GateStonesAskToSummonMissingActThree(1)
+THEN
+DB_XEL_GateStonesAskToSummonMissingActThree(1);
+OpenMessageBoxYesNo(_Player, "XEL_GSE_SummonNotFoundGateStonesActThree");
+
+IF
+MessageBoxYesNoClosed((CHARACTER)_Player, "XEL_GSE_SummonNotFoundGateStonesActThree", (INTEGER)_Result)
+AND
+_Result == 1
+AND
+DB_XEL_GateStone(_GateStoneNo, _GateStoneID)
+AND
+_GateStoneNo >= 9
+AND
+_GateStoneNo <= 12
+AND
+NOT DB_XEL_GateStoneFound(_GateStoneNo)
+THEN
+ToInventory(_GateStoneID, _Player, 1, 1, 0);
+IF
+MessageBoxYesNoClosed((CHARACTER)_Player, "XEL_GSE_SummonNotFoundGateStonesActThree", (INTEGER)_Result)
+AND
+_Result == 0
+THEN
+NOT DB_XEL_GateStonesAskToSummonMissingActThree(1);
+EXITSECTION
+
+ENDEXITSECTION

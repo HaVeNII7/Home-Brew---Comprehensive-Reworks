@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="ef76cec3-7500-4e09-a7c9-e2b37eb02ade" />
+					<attribute id="Name" type="LSString" value="XEL_Light_GateStone_Epsilon" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="light" />
+					<attribute id="ParentTemplateId" type="FixedString" value="6aa40391-2ec2-4b01-9523-1c9dcfaa0b93" />
+					<attribute id="Radius" type="float" value="2" />
+					<attribute id="Intensity" type="float" value="40000" />
+					<attribute id="Gain" type="float" value="1" />
+					<attribute id="Color" type="fvec3" value="1 0.57254905 0" />
+					<attribute id="Enabled" type="bool" value="True" />
+					<attribute id="IsFlickering" type="bool" value="True" />
+					<attribute id="Speed" type="float" value="5" />
+					<attribute id="Amount" type="float" value="7000" />
+					<attribute id="Shadow" type="bool" value="False" />
+					<attribute id="VolumetricShadow" type="bool" value="False" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

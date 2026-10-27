@@ -1,0 +1,8 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="CCLib_c.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <System:String x:Key="HB_SpellSchoolLibraryLoaded">controller v3</System:String>
+</ResourceDictionary>

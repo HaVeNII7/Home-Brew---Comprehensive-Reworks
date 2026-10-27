@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="0" build="58" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="They call you a savage, an animal. They don't know what it's like to need to fight, tooth and claw, just to survive. You do. " />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h9ead197bg1c99g4118g885cgd3b5ec2e5542" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="he58b883ag9b2fg45adgac11g2a67dd1a1181" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="BARBARIAN" />
+			<attribute id="UUID" type="guid" value="02913f9a-f696-40cf-acdf-32032afab32c" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Class" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

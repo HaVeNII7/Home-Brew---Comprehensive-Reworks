@@ -1,8 +1,7 @@
 -- Barebones: allow dual wielding 2H melee weapons if you have the passive
 local PASSIVE = "TitanicStrength"
-local modified = {} -- modified[itemUuid] = true
+local modified = {}
 
--- Bit flags used by the script you shared:
 -- TwoHanded: 1024, Versatile: 2048, Melee: 4096
 local TWO_HANDED = 1024
 local VERSATILE  = 2048

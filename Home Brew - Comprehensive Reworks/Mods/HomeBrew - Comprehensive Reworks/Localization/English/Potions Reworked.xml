@@ -36,6 +36,8 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">POTION OF SLEEP</content>
 	<content contentuid="h6af0c0b4ga716g4077ga346gf19db8d7574c" version="1">Soporific Oil</content>
 	<content contentuid="hab1c6872g65e7g405egbfc5ge120d3a64b95" version="2">When applied to a creature, they fall into a magical slumber. Condition ends when the creature takes damage or they are &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Helped&lt;/LSTag&gt;.</content>
+	<content contentuid="h8d75c64dg9573g4f9cg9c77gb0796c1bfdd1" version="2">A small, handwritten note affixed to this bottle cautions that its effects may, on rare occasions, prove unreliable against those of elven blood.</content>
+	<content contentuid="h777b8ebcg4470g48a6gbeb5ga1935b295a3d" version="3">A small, handwritten note affixed to this bottle cautions that its effects may, on rare occasions, prove unreliable against those of elven blood.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">POTION OF VITALITY</content>
 	<content contentuid="h32c8dbe5g463fg4394gbe02ge4d876634ecb" version="1">Drink to cure any form of disease.</content>

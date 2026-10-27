@@ -20,7 +20,7 @@
                     <ls:LSNineSliceImage Style="{StaticResource GenericNotification9Slice}"
                                          MinWidth="736">
                         <StackPanel MaxWidth="640">
-                            <TextBlock ls:TextBlockFormatter.SourceText="{Binding Source='hd1efcd1dg3ed5g41f2g8773g45d3361b1289', Converter={StaticResource TranslatedStringConverter}, FallbackValue='Partial Respec Complete'}"
+                            <TextBlock ls:TextBlockFormatter.SourceText="{Binding PR_ToastTitle, FallbackValue='Partial Respec Complete'}"
                                        Style="{StaticResource NotificationTitleTextStyle}"
                                        HorizontalAlignment="Center"
                                        TextAlignment="Center"/>

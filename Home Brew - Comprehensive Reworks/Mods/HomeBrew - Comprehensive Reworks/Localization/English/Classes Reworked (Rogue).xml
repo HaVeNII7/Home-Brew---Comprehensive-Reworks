@@ -30,7 +30,9 @@
 	<content contentuid="d3e15e63749c4b62b8e7760cc70741209sd09" version="3">Gain the ability to &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Dash&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Shout_Disengage"&gt;Disengage&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Shout_Hide"&gt;Hide&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;. This effect can be toggled at any time.</content>
 
 	<content contentuid="d3e15e63749c4b62b8e7760ccaw2es6f2e2f1" version="1">Dexterous Maneuvers</content>
-	<content contentuid="d3e15e63749c4b62b8e7760cc72354r6we8fa" version="3">All unarmed based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; that you make receive a bonus equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Dexterity Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="d3e15e63749c4b62b8e7760cc72354r6we8fa" version="3">All unarmed based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; that you make receive a bonus equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Dexterity Modifier&lt;/LSTag&gt;. In addition, you gain the ability to throw a &lt;LSTag Type="Spell" Tooltip="Projectile_SmokeBomb"&gt;Smoke Bomb&lt;/LSTag&gt; once per turn.</content>
+	<content contentuid="d3e15e63749c4b62b8e7760ccaw2es6f2bomb" version="1">Smoke Bomb</content>
+	<content contentuid="d3e15e63749c4b62b8e7760cc72354r6wbomb" version="3">Throw a bomb which can &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blind&lt;/LSTag&gt; creatures and conceal your position.</content>
 
 	<content contentuid="hc4558204g2c77g4b58gafb6g0ba6b399ja83" version="1">Lucky Toss</content>
 	<content contentuid="h098941ccgc4ecg49f2gb22agabed0b01ofk9" version="3">While in combat, you have a 50% chance to restore one &lt;LSTag Type="ActionResource" Tooltip="LuckPoint"&gt;Luck Point&lt;/LSTag&gt; at the beginning of your turns.</content>

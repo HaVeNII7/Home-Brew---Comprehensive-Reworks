@@ -1,0 +1,64 @@
+<ls:UIWidget x:Name="HB_NormalGameOver"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ls="clr-namespace:ls;assembly=Code"
+             ls:UIWidget.ContextName="GameMenu">
+    <ls:UIWidget.Template>
+        <ControlTemplate TargetType="ls:UIWidget">
+            <ControlTemplate.Resources>
+                <ImageSource x:Key="MessageBoxTwoButtons">pack://application:,,,/Core;component/Assets/Messagebox/dialogBox.png</ImageSource>
+            </ControlTemplate.Resources>
+            <Grid Background="{StaticResource LS_PanelBackground}">
+                <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <ls:LSNineSliceImage x:Name="MessageBox"
+                                         ImageSource="{StaticResource MessageBoxTwoButtons}"
+                                         Slices="0,196,0,224" Width="1424"
+                                         Padding="0,160,0,222" VerticalContentAlignment="Center">
+                        <StackPanel Margin="0,36,0,66">
+                            <TextBlock x:Name="Title" Text="Game Over"
+                                       HorizontalAlignment="Center" Margin="0,0,0,12"
+                                       FontSize="{StaticResource ScaledMassiveFontSize}"
+                                       Foreground="{StaticResource LS_tint100}" TextWrapping="Wrap"/>
+                            <ls:LSScrollViewer MaxHeight="1000" HorizontalAlignment="Center"
+                                               VerticalScrollBarVisibility="Auto"
+                                               BoundScrollUpEvent="UIScrollUp" BoundScrollDownEvent="UIScrollDown">
+                                <ls:LSScrollViewer.Resources>
+                                    <Style TargetType="ScrollBar" BasedOn="{StaticResource GoldScrollBar}"/>
+                                </ls:LSScrollViewer.Resources>
+                                <TextBlock ls:TextBlockFormatter.SourceText="Your party has been defeated…"
+                                           FontSize="{StaticResource ScaledDefaultFontSize}"
+                                           Foreground="{StaticResource LS_accent100TxtColor}"
+                                           TextWrapping="Wrap" TextAlignment="Center" Margin="20,0"/>
+                            </ls:LSScrollViewer>
+                        </StackPanel>
+                    </ls:LSNineSliceImage>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom"
+                                HorizontalAlignment="Center" Margin="0,0,0,154">
+                        <ls:LSButton x:Name="MainMenuButton" Margin="-6,0" BoundEvent="UICancel"
+                                     Style="{StaticResource BrownButtonTextAndIconStyle}"
+                                     Content="{Binding Source='hf1a302e1ged15g4e4fgae48g5579d02b2605', Converter={StaticResource TranslatedStringConverter}}"
+                                     Command="{Binding MainMenuCommand}">
+                            <ls:LSButton.Resources>
+                                <ImageBrush x:Key="IconNormal" ImageSource="pack://application:,,,/Core;component/Assets/Buttons/ico_btn_cross_d.png" Stretch="Fill"/>
+                                <ImageBrush x:Key="IconPressed" ImageSource="pack://application:,,,/Core;component/Assets/Buttons/ico_btn_cross_d.png" Stretch="Fill"/>
+                                <ImageBrush x:Key="IconHighlight" ImageSource="pack://application:,,,/Core;component/Assets/Buttons/ico_btn_cross_h.png" Stretch="Fill"/>
+                                <ImageBrush x:Key="IconDisabled" ImageSource="pack://application:,,,/Core;component/Assets/Buttons/ico_btn_cross_d.png" Stretch="Fill"/>
+                            </ls:LSButton.Resources>
+                        </ls:LSButton>
+                        <ls:LSButton x:Name="LoadGameButton" Margin="-6,0" BoundEvent="UIAccept"
+                                     Style="{StaticResource BlueButtonTextAndIconStyle}"
+                                     Content="{Binding Source='heb9ae2d4g4fcdg4eb2g821bg97ed63c5ce8c', Converter={StaticResource TranslatedStringConverter}}"
+                                     Command="{Binding CustomEvent}" CommandParameter="LoadGameOpen">
+                            <ls:LSButton.Resources>
+                                <ImageBrush x:Key="IconNormal" ImageSource="pack://application:,,,/Core;component/Assets/Buttons/ico_btn_load_d.png" Stretch="Fill"/>
+                                <ImageBrush x:Key="IconPressed" ImageSource="pack://application:,,,/Core;component/Assets/Buttons/ico_btn_load_d.png" Stretch="Fill"/>
+                                <ImageBrush x:Key="IconHighlight" ImageSource="pack://application:,,,/Core;component/Assets/Buttons/ico_btn_load_h.png" Stretch="Fill"/>
+                                <ImageBrush x:Key="IconDisabled" ImageSource="pack://application:,,,/Core;component/Assets/Buttons/ico_btn_load_d.png" Stretch="Fill"/>
+                            </ls:LSButton.Resources>
+                        </ls:LSButton>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </ControlTemplate>
+    </ls:UIWidget.Template>
+</ls:UIWidget>

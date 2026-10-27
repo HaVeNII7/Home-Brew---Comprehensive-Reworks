@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="304" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="UUID" type="guid" value="1a2f70d6-8ead-4eb5-a824-79ee1971764a" />
+			<attribute id="Name" type="FixedString" value="REALLY_KARLACH" />
+			<attribute id="DisplayName" type="TranslatedString" handle="hf1650a70g77e5g415fgae97ga23e4842c3f2" version="2" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hfad14a96gbba2g491bga489g30ffd797bf05" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Description" type="LSString" value="|Karlach, Hells' champion. Tiefling origin. Whether or not she's shapeshifted.|" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+					</children>
+				</node>
+				<node id="Properties" />
+			</children>
+		</node>
+	</region>
+</save>

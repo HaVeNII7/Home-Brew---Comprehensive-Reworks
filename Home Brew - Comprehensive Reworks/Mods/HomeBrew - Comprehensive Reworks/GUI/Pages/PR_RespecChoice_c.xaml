@@ -7,158 +7,312 @@
              xmlns:noesis="clr-namespace:NoesisGUIExtensions;assembly=Noesis.GUI.Extensions"
              xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             mc:Ignorable="d"
-             d:DesignHeight="2160" d:DesignWidth="3840"
-             ls:UIWidget.UseCustomDC="True"
-             ls:UIWidget.ContextName="PR_RespecChoice"
+             mc:Ignorable="d" d:DesignHeight="2160" d:DesignWidth="3840"
+             ls:UIWidget.UseCustomDC="True" ls:UIWidget.ContextName="PR_RespecChoice"
              d:DataContext="{d:DesignInstance {x:Type ls:Widget}, IsDesignTimeCreatable=True}">
-
+    <ls:UIWidget.Resources>
+        <ResourceDictionary>
+            <Style x:Key="PR_BuildPresetRowStyle" TargetType="ListBoxItem">
+                <Setter Property="Focusable" Value="True"/>
+                <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+                <Setter Property="Padding" Value="20,12"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ListBoxItem">
+                            <Border x:Name="entry" Padding="{TemplateBinding Padding}" BorderThickness="1"
+                                    BorderBrush="Transparent" Background="Transparent">
+                                <ContentPresenter/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter TargetName="entry" Property="Background" Value="#804A3827"/>
+                                    <Setter TargetName="entry" Property="BorderBrush" Value="{StaticResource LS_accent100TxtColor}"/>
+                                </Trigger>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="entry" Property="Background" Value="#504A3827"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </ls:UIWidget.Resources>
     <ls:UIWidget.Template>
         <ControlTemplate TargetType="ls:UIWidget">
             <Grid Background="{StaticResource LS_PanelBackground}"
                   Visibility="{Binding PR_PopupVisible, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
                   IsHitTestVisible="True">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-
                 <b:Interaction.Triggers>
                     <b:EventTrigger EventName="Loaded">
-                        <ls:SetMoveFocusAction TargetName="PR_RespecChoice_c"
-                                               FocusElement="PR_LevelSlider"
-                                               DeferFocusAction="True"/>
+                        <ls:SetMoveFocusAction TargetName="PR_RespecChoice_c" FocusElement="PR_ModePartialButton" DeferFocusAction="True"/>
                     </b:EventTrigger>
-                    <b:DataTrigger Binding="{Binding PR_PopupVisible}" Value="True">
-                        <ls:SetMoveFocusAction TargetName="PR_RespecChoice_c"
-                                               FocusElement="PR_LevelSlider"
-                                               DeferFocusAction="True"/>
+                    <b:DataTrigger Binding="{Binding PR_HasLevelSlider}" Value="True">
+                        <ls:SetMoveFocusAction TargetName="PR_RespecChoice_c" FocusElement="PR_LevelSlider" DeferFocusAction="True"/>
                     </b:DataTrigger>
                 </b:Interaction.Triggers>
-
-                <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,40">
-                    <ls:LSNineSliceImage x:Name="PR_ControllerDialog"
-                                         Style="{StaticResource GenericControllerPanelBackground}"
-                                         HorizontalAlignment="Center">
-                        <StackPanel Width="1300" HorizontalAlignment="Center">
-                            <TextBlock ls:TextBlockFormatter.SourceText="{Binding Source='hceda4f95ge6c1g4134g8fedg30704e3a533d', Converter={StaticResource TranslatedStringConverter}, FallbackValue='Partial Respec'}"
-                                       HorizontalAlignment="Center"
-                                       TextAlignment="Center"
-                                       Margin="0,0,0,22"
-                                       FontSize="{StaticResource ScaledHugeFontSize}"
-                                       Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                       TextWrapping="Wrap"/>
-
-                            <TextBlock ls:TextBlockFormatter.SourceText="{Binding Source='h8730f71cg2996g4d93ga849g99897df1703a', Converter={StaticResource TranslatedStringConverter}, FallbackValue='Choose the last level to keep from your current build.'}"
-                                       HorizontalAlignment="Center"
-                                       MaxWidth="1200"
-                                       TextAlignment="Center"
-                                       TextWrapping="Wrap"
-                                       Margin="0,0,0,24"
-                                       FontSize="{StaticResource ScaledDefaultFontSize}"
-                                       Foreground="{StaticResource LS_accent100TxtColor}"/>
-
-                            <ls:LSSlider x:Name="PR_LevelSlider"
-                                         Minimum="1"
-                                         Maximum="{Binding PR_MaxLevel}"
-                                         Value="{Binding PR_SelectedLevel, Mode=TwoWay}"
-                                         SmallChange="1" LargeChange="1"
-                                         IsSnapToTickEnabled="True" TickFrequency="1"
-                                         Focusable="True" ls:MoveFocus.Focusable="True"
-                                         Width="1104" HorizontalAlignment="Center" Margin="0,0,0,24"
-                                         Style="{StaticResource Slider.StyleDisplayValue}">
-                                <b:Interaction.Triggers>
-                                    <b:EventTrigger EventName="ValueChanged">
-                                        <b:InvokeCommandAction Command="{Binding PR_LevelChangedCommand}"/>
-                                    </b:EventTrigger>
-                                </b:Interaction.Triggers>
-                            </ls:LSSlider>
-
-                            <TextBlock ls:TextBlockFormatter.SourceText="{Binding PR_Summary}"
-                                       HorizontalAlignment="Center"
-                                       MaxWidth="1200"
-                                       TextAlignment="Center"
-                                       TextWrapping="Wrap"
-                                       Margin="0,0,0,24"
-                                       FontSize="{StaticResource ScaledDefaultFontSize}"
-                                       Foreground="{StaticResource LS_tint100}"/>
-                            <StackPanel Visibility="{Binding PR_HasClassPassives, Converter={StaticResource BoolToVisibleConverter}}"
-                                        HorizontalAlignment="Center" Margin="20,0,20,12">
-                                <TextBlock Text="Class Passives" HorizontalAlignment="Center"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_tint100}"
-                                           Margin="0,0,0,4"/>
-                                <WrapPanel HorizontalAlignment="Center" MaxWidth="1200">
-                                <TextBlock Text="{Binding PR_Passive1Name}"
-                                           Visibility="{Binding PR_Passive1Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive2Name}"
-                                           Visibility="{Binding PR_Passive2Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive3Name}"
-                                           Visibility="{Binding PR_Passive3Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive4Name}"
-                                           Visibility="{Binding PR_Passive4Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive5Name}"
-                                           Visibility="{Binding PR_Passive5Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive6Name}"
-                                           Visibility="{Binding PR_Passive6Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive7Name}"
-                                           Visibility="{Binding PR_Passive7Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive8Name}"
-                                           Visibility="{Binding PR_Passive8Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive9Name}"
-                                           Visibility="{Binding PR_Passive9Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive10Name}"
-                                           Visibility="{Binding PR_Passive10Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive11Name}"
-                                           Visibility="{Binding PR_Passive11Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                <TextBlock Text="{Binding PR_Passive12Name}"
-                                           Visibility="{Binding PR_Passive12Visible, Converter={StaticResource BoolToVisibleConverter}}"
-                                           FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
-                                           Margin="8,2"/>
-                                </WrapPanel>
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,36">
+                    <ls:LSNineSliceImage Style="{StaticResource GenericControllerPanelBackground}" HorizontalAlignment="Center">
+                        <StackPanel Margin="26,32,26,36">
+                            <StackPanel Width="1270" HorizontalAlignment="Center" Margin="12,0,12,0">
+        <TextBlock Text="{Binding PR_ModeTitle}" HorizontalAlignment="Center" TextAlignment="Center"
+                   FontSize="{StaticResource ScaledHugeFontSize}" Foreground="{StaticResource LS_tint100}"
+                   Margin="0,0,0,12"/>
+        <TextBlock Text="{Binding PR_ModeHelp}" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                   FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_accent100TxtColor}"
+                   Margin="18,0,18,22"/>
+        <StackPanel Visibility="{Binding PR_ModeSelectVisible, Converter={StaticResource BoolToVisibleConverter}}" HorizontalAlignment="Center" Margin="0,18,0,24">
+            <!-- PR_ModeHelp already contains this instruction. -->
+            <StackPanel HorizontalAlignment="Center" Width="1030">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,12">
+                    <ls:LSButton Content="Partial Respec" Style="{StaticResource BlueButtonStyle}" IsEnabled="{Binding PR_CanHistoricalRespec, FallbackValue=False}" SoundID="UI_Shared_Accept" Width="465" Margin="12,0"><b:Interaction.Triggers><b:EventTrigger EventName="Click"><b:InvokeCommandAction Command="{Binding PR_OpenPartialRespec}"/></b:EventTrigger></b:Interaction.Triggers></ls:LSButton>
+                    <ls:LSButton Content="Selective Respec" Style="{StaticResource BlueButtonStyle}" IsEnabled="{Binding PR_CanHistoricalRespec, FallbackValue=False}" SoundID="UI_Shared_Accept" Width="465" Margin="12,0"><b:Interaction.Triggers><b:EventTrigger EventName="Click"><b:InvokeCommandAction Command="{Binding PR_OpenBuildEditor}"/></b:EventTrigger></b:Interaction.Triggers></ls:LSButton>
+                </StackPanel>
+                <ls:LSButton Content="Full Respec" Command="{Binding PR_FullRespecCommand}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Width="465" HorizontalAlignment="Center"/>
+                <!-- Keep Mythic's 80%-scaled red button in the normal layout, but position it visually
+                     just below the Save/Load Build controls and above the bottom-center ornament.
+                     RenderTransform leaves the dialog and the other buttons at their verified positions. -->
+                <StackPanel HorizontalAlignment="Center" Margin="0,22,0,0">
+                    <StackPanel.LayoutTransform>
+                        <ScaleTransform ScaleX="0.80" ScaleY="0.80"/>
+                    </StackPanel.LayoutTransform>
+                    <StackPanel.RenderTransform>
+                        <TranslateTransform Y="145"/>
+                    </StackPanel.RenderTransform>
+                    <ls:LSButton x:Name="PR_CancelRespecButton" Content="Cancel"
+                        Command="{Binding PR_CancelRespecCommand}"
+                        Style="{StaticResource SmallRedButtonStyle}"
+                        SoundID="UI_Shared_Cancel" Width="420" MinWidth="0"
+                        HorizontalAlignment="Center" Focusable="True"
+                        ls:MoveFocus.Focusable="True"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Visibility="{Binding PR_HasLevelSlider, Converter={StaticResource BoolToVisibleConverter}}" HorizontalAlignment="Center" Margin="0,2,0,12">
+            <ls:LSSlider x:Name="PR_LevelSlider" Minimum="1" Maximum="{Binding PR_MaxLevel}"
+                         Value="{Binding PR_SelectedLevel, Mode=TwoWay}" SmallChange="1" LargeChange="1"
+                         IsSnapToTickEnabled="True" TickFrequency="1" Width="950" Style="{StaticResource Slider.StyleDisplayValue}" Focusable="True" ls:MoveFocus.Focusable="True"
+                         HorizontalAlignment="Center" Margin="0,0,0,12">
+                
+                <b:Interaction.Triggers>
+                    <b:EventTrigger EventName="ValueChanged">
+                        <b:InvokeCommandAction Command="{Binding PR_LevelChangedCommand}"/>
+                    </b:EventTrigger>
+                </b:Interaction.Triggers>
+            </ls:LSSlider>
+        </StackPanel>
+        <StackPanel Visibility="{Binding PR_PartialViewVisible, Converter={StaticResource BoolToVisibleConverter}}" HorizontalAlignment="Center" Width="1190" Margin="0,2,0,10">
+            <TextBlock Text="Choose the first level you want to rebuild. Earlier levels will be preserved."
+                       HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                       FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="0,0,0,14"/>
+            <ScrollViewer MaxHeight="590" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                <StackPanel HorizontalAlignment="Center" Width="1120">
+                    <TextBlock ls:TextBlockFormatter.SourceText="{Binding PR_Summary}"
+                               HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                               FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_tint100}"/>
+                    <StackPanel Visibility="{Binding PR_HasClassPassives, Converter={StaticResource BoolToVisibleConverter}}" HorizontalAlignment="Center" Margin="0,14,0,0">
+                        <TextBlock Text="Preserved class passives" HorizontalAlignment="Center"
+                                   FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_tint100}"/>
+                        <WrapPanel HorizontalAlignment="Center" MaxWidth="1100">
+                            <TextBlock Text="{Binding PR_Passive1Name}" Visibility="{Binding PR_Passive1Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive2Name}" Visibility="{Binding PR_Passive2Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive3Name}" Visibility="{Binding PR_Passive3Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive4Name}" Visibility="{Binding PR_Passive4Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive5Name}" Visibility="{Binding PR_Passive5Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive6Name}" Visibility="{Binding PR_Passive6Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive7Name}" Visibility="{Binding PR_Passive7Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive8Name}" Visibility="{Binding PR_Passive8Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive9Name}" Visibility="{Binding PR_Passive9Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive10Name}" Visibility="{Binding PR_Passive10Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive11Name}" Visibility="{Binding PR_Passive11Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/><TextBlock Text="{Binding PR_Passive12Name}" Visibility="{Binding PR_Passive12Visible, Converter={StaticResource BoolToVisibleConverter}}" FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}" Margin="6,2"/>
+                        </WrapPanel>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </StackPanel>
+        <StackPanel Visibility="Collapsed" HorizontalAlignment="Center" Width="1240">
+            <ScrollViewer MaxHeight="1040" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                <StackPanel Width="1190" HorizontalAlignment="Center">
+                    <TextBlock Text="Choices at this level" HorizontalAlignment="Center" FontSize="{StaticResource ScaledDefaultFontSize}"
+                               Foreground="{StaticResource LS_tint100}" Margin="0,0,0,4"/>
+                    <TextBlock ls:TextBlockFormatter.SourceText="{Binding PR_LevelChoices}"
+                               HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                               FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"
+                               Margin="10,0,10,14"/>
+                    <StackPanel Visibility="{Binding PR_ExtraEditVisible, Converter={StaticResource BoolToVisibleConverter}}" HorizontalAlignment="Center" Margin="0,2,0,12">
+                        <TextBlock Text="Extra Resource" HorizontalAlignment="Center" Foreground="{StaticResource LS_tint100}"
+                                   FontSize="{StaticResource ScaledDefaultFontSize}" Margin="0,0,0,4"/>
+                        <TextBlock Text="{Binding PR_ExtraEditSelected}" HorizontalAlignment="Center" TextAlignment="Center"
+                                   FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_extraspecialTxtColor}"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,2,0,0">
+                            <ls:LSButton Content="Action" Command="{Binding PR_EditAction}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                            <ls:LSButton Content="Bonus Action" Command="{Binding PR_EditBonusAction}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                            <ls:LSButton Content="Reaction" Command="{Binding PR_EditReaction}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Visibility="{Binding PR_PassiveEditVisible, Converter={StaticResource BoolToVisibleConverter}}" HorizontalAlignment="Center" Margin="0,0,0,8">
+                        <TextBlock Text="Class passives and maneuvers" HorizontalAlignment="Center"
+                                   Foreground="{StaticResource LS_tint100}" FontSize="{StaticResource ScaledDefaultFontSize}" Margin="0,0,0,4"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <ls:LSButton Content="&lt;" Command="{Binding PR_PassiveTargetPrevious}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                            <TextBlock Text="{Binding PR_PassiveEditTarget}" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                                       Width="520" Foreground="{StaticResource LS_extraspecialTxtColor}" FontSize="{StaticResource ScaledDefaultFontSize}"/>
+                            <ls:LSButton Content="&gt;" Command="{Binding PR_PassiveTargetNext}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <ls:LSButton Content="&lt;" Command="{Binding PR_PassiveOptionPrevious}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                            <TextBlock Text="{Binding PR_PassiveEditProposed}" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                                       Width="520" Foreground="{StaticResource LS_extraspecialTxtColor}" FontSize="{StaticResource ScaledDefaultFontSize}"/>
+                            <ls:LSButton Content="&gt;" Command="{Binding PR_PassiveOptionNext}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,4,0,0">
+                            <ls:LSButton Content="Stage Swap" Command="{Binding PR_PassiveStage}" Style="{StaticResource BlueButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                            <ls:LSButton Content="Clear Swap" Command="{Binding PR_PassiveReset}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                        </StackPanel>
+                        <TextBlock Text="{Binding PR_PassiveEditFeedback}" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                                   FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_accent100TxtColor}" Margin="0,4,0,0"/>
+                    </StackPanel>
+                    <StackPanel Visibility="{Binding PR_OtherEditVisible, Converter={StaticResource BoolToVisibleConverter}}" HorizontalAlignment="Center" Margin="0,4,0,10">
+                        <TextBlock Text="Feats, Ability Scores, Spells &amp; Skills (Experimental)" HorizontalAlignment="Center"
+                                   Foreground="{StaticResource LS_tint100}" FontSize="{StaticResource ScaledDefaultFontSize}" Margin="0,2,0,4"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <ls:LSButton Content="&lt;" Command="{Binding PR_OtherTargetPrevious}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                            <TextBlock Text="{Binding PR_OtherTarget}" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                                       Width="660" Foreground="{StaticResource LS_extraspecialTxtColor}" FontSize="{StaticResource ScaledDefaultFontSize}"/>
+                            <ls:LSButton Content="&gt;" Command="{Binding PR_OtherTargetNext}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <ls:LSButton Content="&lt;" Command="{Binding PR_OtherOptionPrevious}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                            <TextBlock Text="{Binding PR_OtherOption}" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                                       Width="660" Foreground="{StaticResource LS_extraspecialTxtColor}" FontSize="{StaticResource ScaledDefaultFontSize}"/>
+                            <ls:LSButton Content="&gt;" Command="{Binding PR_OtherOptionNext}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,4,0,0">
+                            <ls:LSButton Content="Stage Swap" Command="{Binding PR_OtherStage}" IsEnabled="{Binding PR_OtherCanStage}" Style="{StaticResource BlueButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                            <ls:LSButton Content="Clear" Command="{Binding PR_OtherClear}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+                        </StackPanel>
+                        <TextBlock Text="{Binding PR_OtherFeedback}" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                                   FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_accent100TxtColor}" Width="900" Margin="0,4,0,0"/>
+                    </StackPanel>
+                    <TextBlock Text="Pending changes" HorizontalAlignment="Center"
+                               Foreground="{StaticResource LS_tint100}" FontSize="{StaticResource ScaledDefaultFontSize}" Margin="0,12,0,4"/>
+                    <ScrollViewer MaxHeight="190" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                        <TextBlock Text="{Binding PR_EditorStagedText}" TextAlignment="Center" TextWrapping="Wrap"
+                                   HorizontalAlignment="Center" FontSize="{StaticResource ScaledDefaultFontSize}"
+                                   Foreground="{StaticResource LS_extraspecialTxtColor}" Width="1120"/>
+                    </ScrollViewer>
+                    <TextBlock Text="{Binding PR_EditorStatus}" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"
+                               FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_accent100TxtColor}"
+                               Margin="0,8,0,0"/>
+                </StackPanel>
+            </ScrollViewer>
+        </StackPanel>
+    </StackPanel>
+                            <StackPanel Margin="0,18,0,0">
+                                <StackPanel HorizontalAlignment="Center" Margin="0,0,0,0">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Visibility="{Binding PR_ModeSelectVisible, Converter={StaticResource BoolToVisibleConverter}}">
+            <ls:LSButton Content="Full Respec" Command="{Binding PR_FullRespecCommand}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" Visibility="Collapsed" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Visibility="{Binding PR_PartialViewVisible, Converter={StaticResource BoolToVisibleConverter}}">
+            <ls:LSButton Content="Confirm Partial Respec" Command="{Binding PR_ConfirmCommand}" Style="{StaticResource BlueButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+            <ls:LSButton Content="Back" Command="{Binding PR_BackToModes}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+            <ls:LSButton Content="Full Respec" Command="{Binding PR_FullRespecCommand}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Visibility="Collapsed">
+            <ls:LSButton Content="Apply Selective Respec (Fallback)" Command="{Binding PR_EditorApplyCommand}" Style="{StaticResource BlueButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" IsEnabled="{Binding PR_EditorHasEdits}"/>
+            <ls:LSButton Content="Open Native Level Editor" Command="{Binding PR_OpenNativePreview}"
+                Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+            <ls:LSButton Content="Back" Command="{Binding PR_BackToModes}" Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" Margin="-6,0" />
+        </StackPanel>
+    </StackPanel>
                             </StackPanel>
-
+                        </StackPanel>
+                    </ls:LSNineSliceImage>
+                <!-- Preset buttons anchor to the bottom corners of the native-styled respec dialog. -->
+                <Grid Width="1450" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,220"
+                      Visibility="{Binding PR_BuildButtonsVisible, Converter={StaticResource BoolToVisibleConverter}}">
+                    <ls:LSButton Content="Save Build" Command="{Binding PR_BuildOpenSave}"
+                        Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept"
+                        MinWidth="345" MinHeight="76" HorizontalAlignment="Left" Margin="56,0,0,0"/>
+                    <ls:LSButton Content="Load Build" Command="{Binding PR_BuildOpenLoad}"
+                        Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept"
+                        MinWidth="345" MinHeight="76" HorizontalAlignment="Right" Margin="0,0,56,0"/>
+                </Grid>
+                </Grid>
+                <!-- Same nine-slice, fonts and buttons as BG3's existing appearance preset dialog. -->
+                <Grid Background="{StaticResource LS_PanelBackground}"
+                    Visibility="{Binding PR_BuildOpen, Converter={StaticResource BoolToVisibleConverter}}">
+                    <ls:LSNineSliceImage ImageSource="pack://application:,,,/Core;component/Assets/Messagebox/dialogBox.png"
+                         Slices="0,196,0,224" Width="1470" Padding="135,140,135,165"
+                         HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <StackPanel Width="1180" HorizontalAlignment="Center">
+                            <TextBlock Text="{Binding PR_BuildTitle}" FontFamily="{StaticResource DefaultFont}"
+                                FontSize="{StaticResource ScaledHugeFontSize}" Foreground="{StaticResource LS_tint100}"
+                                HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,18"/>
+                            <StackPanel Visibility="{Binding PR_BuildSaveMode, Converter={StaticResource BoolToVisibleConverter}}">
+                                <TextBlock Text="Build Name" HorizontalAlignment="Center"
+                                    Foreground="{StaticResource LS_tint100}" FontSize="{StaticResource ScaledDefaultFontSize}"/>
+                                <ls:LSTextBox x:Name="PR_BuildName" Text="{Binding PR_BuildName, Mode=TwoWay}"
+                                    TextImmediateSourceUpdate="True" MaxLength="64" MinHeight="70" Margin="160,12,160,0"
+                                    FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_baseTxtColor}"
+                                    Background="Black" CaretBrush="#FFF2E4CD" SelectionBrush="#FF66543A"
+                                    BorderBrush="{StaticResource LS_accent25TxtColor}" BorderThickness="1" Padding="18,8">
+                                    <ls:LSTextBox.Template>
+                                        <ControlTemplate TargetType="ls:LSTextBox">
+                                            <Border Background="Black" BorderBrush="{TemplateBinding BorderBrush}"
+                                                BorderThickness="{TemplateBinding BorderThickness}">
+                                                <ScrollViewer x:Name="PART_ContentHost" Focusable="False"
+                                                    Padding="{TemplateBinding Padding}" Foreground="{TemplateBinding Foreground}"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </ls:LSTextBox.Template>
+                                    <b:Interaction.Triggers>
+                                        <b:DataTrigger Binding="{Binding PR_BuildSaveMode}" Value="True">
+                                            <noesis:SetFocusAction/>
+                                        </b:DataTrigger>
+                                    </b:Interaction.Triggers>
+                                </ls:LSTextBox>
+                            </StackPanel>
+                            <StackPanel Visibility="{Binding PR_BuildLoadMode, Converter={StaticResource BoolToVisibleConverter}}">
+                                <TextBlock Text="Select a matching Class and Subclass in order to load a build.&#10;If you are a higher level than the build you select, it cannot be loaded."
+                                    TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"
+                                    FontSize="{StaticResource ScaledDefaultFontSize}" Foreground="{StaticResource LS_accent100TxtColor}"
+                                    Margin="0,0,0,16"/>
+                                <ListBox x:Name="PR_BuildList" ItemsSource="{Binding PR_BuildRows}"
+                                    SelectedIndex="{Binding PR_BuildSelectedIndex, Mode=TwoWay}"
+                                    ItemContainerStyle="{StaticResource PR_BuildPresetRowStyle}"
+                                    MaxHeight="480" MinHeight="120"
+                                    ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                    ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                    Background="Transparent" BorderBrush="{StaticResource LS_accent25TxtColor}" BorderThickness="1">
+                                    <b:Interaction.Triggers>
+                                        <b:EventTrigger EventName="SelectionChanged">
+                                            <b:InvokeCommandAction Command="{Binding PR_BuildSelectionChanged}"/>
+                                        </b:EventTrigger>
+                                    </b:Interaction.Triggers>
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding Name}" Foreground="{StaticResource LS_baseTxtColor}"
+                                                    FontSize="{StaticResource ScaledDefaultFontSize}"/>
+                                                <TextBlock Text="{Binding Detail}" TextWrapping="Wrap" Foreground="{StaticResource LS_accent100TxtColor}"
+                                                    FontSize="{StaticResource SmallFontSize}"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </StackPanel>
+                            <TextBlock Text="{Binding PR_BuildStatus}" TextWrapping="Wrap" TextAlignment="Center"
+                                Foreground="{StaticResource LS_accent100TxtColor}"
+                                FontSize="{StaticResource ScaledDefaultFontSize}" Margin="0,18,0,2"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,28,0,0">
+                                <ls:LSButton Content="Back" Command="{Binding PR_BuildBack}"
+                                    Style="{StaticResource BrownButtonStyle}" SoundID="UI_Shared_Accept" MinWidth="330" MinHeight="76" Margin="-5,0"/>
+                                <ls:LSButton Content="Delete" Command="{Binding PR_BuildDelete}"
+                                    IsEnabled="{Binding PR_BuildCanDelete}" Style="{StaticResource BrownButtonStyle}" MinWidth="330" MinHeight="76" Margin="-5,0"
+                                    Visibility="{Binding PR_BuildLoadMode, Converter={StaticResource BoolToVisibleConverter}}"/>
+                                <ls:LSButton Content="{Binding PR_BuildSaveLabel}" Command="{Binding PR_BuildSave}"
+                                    IsEnabled="{Binding PR_BuildCanSave}" Style="{StaticResource BlueButtonStyle}"
+                                    MinWidth="330" MinHeight="76" Margin="-5,0"
+                                    Visibility="{Binding PR_BuildSaveMode, Converter={StaticResource BoolToVisibleConverter}}"/>
+                                <ls:LSButton Content="Load" Command="{Binding PR_BuildLoad}"
+                                    IsEnabled="{Binding PR_BuildCanLoad}" Style="{StaticResource BlueButtonStyle}"
+                                    MinWidth="330" MinHeight="76" Margin="-5,0"
+                                    Visibility="{Binding PR_BuildLoadMode, Converter={StaticResource BoolToVisibleConverter}}"/>
+                            </StackPanel>
                         </StackPanel>
                     </ls:LSNineSliceImage>
                 </Grid>
-
-                <StackPanel Grid.Row="1" Style="{StaticResource ButtonHint.Container.Center}">
-                    <ls:LSButton Style="{StaticResource ControllerButton}"
-                                 DataContext="{Binding PR_CurrentPlayer.UIData.InputEvents, Converter={StaticResource FindInputEventConverter}, ConverterParameter='UIAccept'}"
-                                 Content="{Binding Source='h5e41976eg3042g4a83g936egbf3422228144', Converter={StaticResource TranslatedStringConverter}}"
-                                 Command="{Binding DataContext.PR_ConfirmCommand, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
-                                 SoundID="UI_Shared_Accept"/>
-                    <ls:LSButton Style="{StaticResource ControllerHoldButtonStyle}"
-                                 Content="{Binding PR_CurrentPlayer.UIData.InputEvents, Converter={StaticResource FindInputEventConverter}, ConverterParameter='UIDelete'}"
-                                 Tag="{Binding Source='h6f1869a4g06a4g45c9gb27fga6c1819eeb2e', Converter={StaticResource TranslatedStringConverter}}"
-                                 Command="{Binding DataContext.PR_ConfirmCommand, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"/>
-                    <ls:LSButton Style="{StaticResource ControllerButton}"
-                                 DataContext="{Binding PR_CurrentPlayer.UIData.InputEvents, Converter={StaticResource FindInputEventConverter}, ConverterParameter='UICancel'}"
-                                 Content="{Binding Source='h60c59b13gd01fg443aga97egcd80ad888951', Converter={StaticResource TranslatedStringConverter}}"
-                                 Command="{Binding DataContext.PR_FullRespecCommand, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}}"
-                                 SoundID="UI_Shared_Cancel"/>
-                </StackPanel>
             </Grid>
         </ControlTemplate>
     </ls:UIWidget.Template>

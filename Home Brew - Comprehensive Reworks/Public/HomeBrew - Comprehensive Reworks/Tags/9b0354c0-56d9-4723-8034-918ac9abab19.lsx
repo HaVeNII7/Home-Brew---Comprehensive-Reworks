@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="5" build="101" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="|Gale companion, shapeshifted or not|" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h122f7be8gaa11g454agaa92g4f5aa11aaed1" version="2" />
+			<attribute id="DisplayName" type="TranslatedString" handle="hf21ab23cgf9f5g4aaeg9599ga5c700b03f3f" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="REALLY_GALE" />
+			<attribute id="UUID" type="guid" value="9b0354c0-56d9-4723-8034-918ac9abab19" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

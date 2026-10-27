@@ -16,6 +16,78 @@
                     <attribute id="Identifier" type="FixedString" value="TotemistTotemCounterMaximum"/>
                     <attribute id="UUID" type="guid" value="9ab43197-d4c4-45bb-8f22-8bf50ed5a589"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb8b9aa6dge544g5f5agba98g62d915847bb7" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GS_FOUND_BETA_False"/>
+                    <attribute id="UUID" type="guid" value="8e5a7a41-a6f8-4103-b361-ab1451d6590a"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h942a9b34g8a66g90ddg9f94g6cb8739ddc6f" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GS_FOUND_ALPHA_False"/>
+                    <attribute id="UUID" type="guid" value="611b8d46-1960-4b5c-a85c-bf4313909447"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hae45e8f7g2e2bg9fd4gd28egce6b24b57c5d" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GS_FOUND_DELTA_False"/>
+                    <attribute id="UUID" type="guid" value="cf4a4e09-6f4b-4362-92bb-02c2f1e08475"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h9b1e98c3gbcb2gee80g43dfg4837831d7ed4" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GS_FOUND_GAMMA_False"/>
+                    <attribute id="UUID" type="guid" value="f42e16eb-ffed-4373-ae82-ad98752737af"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h1c2a6711gedf1g229cgd20fg0238454ca2ce" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GSE_FOUND_EPSILON_False"/>
+                    <attribute id="UUID" type="guid" value="344b965d-6721-4054-9653-7ce89e7cd2d4"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h9f142549g1efag4a6fg6347g1b0ecf8181cc" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GSE_FOUND_ZETA_False"/>
+                    <attribute id="UUID" type="guid" value="6d92996e-05f4-4d2a-86a3-9075ba1dcfe7"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h4a1067e1g84ebg1b6dg1633g33e026683598" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GSE_FOUND_ETA_False"/>
+                    <attribute id="UUID" type="guid" value="bae8f1e9-2efc-437b-93a3-c7c0714a1dc3"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hecdd3447gc28bg7fb9g24a0g86b48550921c" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GSE_FOUND_THETA_False"/>
+                    <attribute id="UUID" type="guid" value="6a3247fb-527a-40ae-a3d8-85b4ecd9e40c"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h256eda35gec4ag7d8fg2eb2g2cb2c340d16c" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GSE_FOUND_OMICRON_False"/>
+                    <attribute id="UUID" type="guid" value="24db4f64-2b9b-435c-b498-3fc3031f8e11"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3e72691ag0f78g24d1g8739g03275636c0fb" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GSE_FOUND_SIGMA_False"/>
+                    <attribute id="UUID" type="guid" value="99d1a0d8-a121-427e-a76f-e816e98f39cc"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h990fe8e5g4bb1gecb2gc526g5e20f2aa8fbc" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GSE_FOUND_UPSILON_False"/>
+                    <attribute id="UUID" type="guid" value="331f8183-38a2-49e3-b652-77c7cf8f3a29"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hd2582955g6876g8558g4b36g6dec62b09db8" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_XEL_GSE_FOUND_OMEGA_False"/>
+                    <attribute id="UUID" type="guid" value="c2f405eb-5d75-4b02-923d-e1654a8c04b7"/>
+                </node>
             </children>
         </node>
     </region>

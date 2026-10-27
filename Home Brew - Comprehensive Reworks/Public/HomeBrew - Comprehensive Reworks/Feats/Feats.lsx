@@ -50,71 +50,71 @@
                     <attribute id="PassivesAdded" type="LSString" value="Charger;Charger_Display"/>
                     <attribute id="UUID" type="guid" value="71b65667-0eac-4e62-b878-fa862e88ebbf"/>
                 </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Artificer"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(a8257cf3-7c6b-4627-a77c-760a064fc201,2)" />
-                    <attribute id="UUID" type="guid" value="56c3c247-35cf-4ffd-86dd-7d249cc1808f"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Barbarian"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(d8183f3c-9c62-40b7-9418-e7ad07a8204e,2)" />
-                    <attribute id="UUID" type="guid" value="cec2d95b-451c-40f8-8e17-9e547d363e8e"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Bard"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(2e8c5dba-f49c-4f24-a850-05e61aefb4ef,2)"/>
-                    <attribute id="UUID" type="guid" value="c09815f7-282b-4ccf-bd89-a51caa1b550f"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Cleric"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(137c5bd5-c5a9-4185-aec9-70a583191f17,2)"/>
-                    <attribute id="UUID" type="guid" value="7bc235ac-7eeb-49d3-8249-c3313d87af75"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Druid"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(82745b68-e0f8-49a2-a147-7ccac142b7d9,2)"/>
-                    <attribute id="UUID" type="guid" value="0de08fff-ab18-442f-a0b1-f53e7be04c03"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Fighter"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(da3203d8-750a-4de1-b8eb-1eccfccddf46,2)" />
-                    <attribute id="UUID" type="guid" value="b441c722-e4d4-4702-861a-039bfd77c124"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Monk"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(1cafd528-b848-477b-9a3e-adfe4a989970,2)" />
-                    <attribute id="UUID" type="guid" value="d84c7f36-8c5b-4b17-b95a-e1da725f9004"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Paladin"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(27e37640-a012-40f0-8ced-a398640dac75,2)" />
-                    <attribute id="UUID" type="guid" value="a533fde7-ee0a-46ce-92e2-9763201a54d2"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Ranger"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(fed4c4e9-fbe0-41d6-abc1-ee3dc5b80302,2)"/>
-                    <attribute id="UUID" type="guid" value="4f744a6e-8589-4a46-89ab-a95415a73245"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Rogue"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(da3203d8-750a-4de1-b8eb-1eccfcc6a911,2)" />
-                    <attribute id="UUID" type="guid" value="28e5fed3-bd41-4b74-ab48-b8e824ad3443"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Sorcerer"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(c3506532-36eb-4d18-823e-497a537a9619,2)"/>
-                    <attribute id="UUID" type="guid" value="1e1a9a4d-38f4-4a05-b080-d32c2b872250"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Warlock"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(fd7736fa-5c64-475e-a4c9-f4061690d8c4,2)"/>
-                    <attribute id="UUID" type="guid" value="93d41226-d7af-495c-b023-08a6af077962"/>
-                </node>
-                <node id="Feat">
-                    <attribute id="Name" type="FixedString" value="ClassDivergence_Wizard"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(e5ab4424-e30b-4752-b280-51a5c77bc9c3,2)"/>
-                    <attribute id="UUID" type="guid" value="1e0ac3c4-5bb5-42d7-941c-9de58d919732"/>
-                </node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Barbarian"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(d8183f3c-9c62-40b7-9418-e7ad07a8204e,2)" />
+					<attribute id="UUID" type="guid" value="56c3c247-35cf-4ffd-86dd-7d249cc1808f"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Bard"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(2e8c5dba-f49c-4f24-a850-05e61aefb4ef,2)"/>
+					<attribute id="UUID" type="guid" value="cec2d95b-451c-40f8-8e17-9e547d363e8e"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Cleric"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(137c5bd5-c5a9-4185-aec9-70a583191f17,2)"/>
+					<attribute id="UUID" type="guid" value="c09815f7-282b-4ccf-bd89-a51caa1b550f"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Druid"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(82745b68-e0f8-49a2-a147-7ccac142b7d9,2)"/>
+					<attribute id="UUID" type="guid" value="7bc235ac-7eeb-49d3-8249-c3313d87af75"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Fighter"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(da3203d8-750a-4de1-b8eb-1eccfccddf46,2)" />
+					<attribute id="UUID" type="guid" value="0de08fff-ab18-442f-a0b1-f53e7be04c03"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Monk"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(1cafd528-b848-477b-9a3e-adfe4a989970,2)" />
+					<attribute id="UUID" type="guid" value="b441c722-e4d4-4702-861a-039bfd77c124"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Paladin"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(27e37640-a012-40f0-8ced-a398640dac75,2)" />
+					<attribute id="UUID" type="guid" value="d84c7f36-8c5b-4b17-b95a-e1da725f9004"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Ranger"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(fed4c4e9-fbe0-41d6-abc1-ee3dc5b80302,2)"/>
+					<attribute id="UUID" type="guid" value="a533fde7-ee0a-46ce-92e2-9763201a54d2"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Rogue"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(da3203d8-750a-4de1-b8eb-1eccfcc6a911,2)" />
+					<attribute id="UUID" type="guid" value="4f744a6e-8589-4a46-89ab-a95415a73245"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Sorcerer"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(c3506532-36eb-4d18-823e-497a537a9619,2)"/>
+					<attribute id="UUID" type="guid" value="28e5fed3-bd41-4b74-ab48-b8e824ad3443"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Warlock"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(fd7736fa-5c64-475e-a4c9-f4061690d8c4,2)"/>
+					<attribute id="UUID" type="guid" value="1e1a9a4d-38f4-4a05-b080-d32c2b872250"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Wizard"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(e5ab4424-e30b-4752-b280-51a5c77bc9c3,2)"/>
+					<attribute id="UUID" type="guid" value="93d41226-d7af-495c-b023-08a6af077962"/>
+				</node>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="ClassDivergence_Artificer"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(a8257cf3-7c6b-4627-a77c-760a064fc201,2)" />
+					<attribute id="UUID" type="guid" value="1e0ac3c4-5bb5-42d7-941c-9de58d919732"/>
+				</node>
                 <node id="Feat">
                     <attribute id="Name" type="FixedString" value="CombatMedic"/>
                     <attribute id="PassivesAdded" type="LSString" value="CombatMedic"/>
@@ -273,7 +273,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="ArtificerArcanist"/>
                     <attribute id="PassivesAdded" type="LSString" value="Feat_SpellSlots_Artificer;TheRightToolsfortheJob;MysticReload"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(2bb484e2-1d3a-4177-84b4-2894f25ab2b1,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,6,0,Spells,Intelligence,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(ffad33d2-e725-4655-ba80-0bc91e8002b3,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,6,0,Spells,Intelligence,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
                     <attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Artificer&apos;)"/>
                     <attribute id="UUID" type="guid" value="03777635-ef87-4d19-a859-92b8dd69f6dc"/>
                 </node>
@@ -341,7 +341,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="BarbarianWildSoul"/>
                     <attribute id="PassivesAdded" type="LSString" value="Feat_SpellSlots;WildMagicRage_Yokebreaker;ChaoticRoar_Yokebreaker;Unstable_Backlash_Yokebreaker"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(2bb484e2-1d3a-4177-84b4-2894f25ab2b1,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(a3c79518-7d3b-416c-8c78-470fb1a23c28,2,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(ffad33d2-e725-4655-ba80-0bc91e8002b3,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(a3c79518-7d3b-416c-8c78-470fb1a23c28,2,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
 					<attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Barbarian&apos;)"/>
                     <attribute id="UUID" type="guid" value="ae844b62-4b26-413d-8fce-20ca687f789a"/>
                 </node>
@@ -497,7 +497,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="FighterEldritchKnight"/>
                     <attribute id="PassivesAdded" type="LSString" value="Call_of_the_Old_One_Yokebreaker;Warlock_SpellSlots_Yokebreaker;From_Beyond"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(2db3752d-c3da-435a-aaea-a3b2ceafeb44,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(f33b1b19-43c6-4f61-a001-cd55e516791c,2,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(ffad33d2-e725-4655-ba80-0bc91e8002b3,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(f33b1b19-43c6-4f61-a001-cd55e516791c,2,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
 					<attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Fighter&apos;)"/>
                     <attribute id="UUID" type="guid" value="9715353b-13b3-4cbc-ae1d-db99b7f6cc67"/>
                 </node>
@@ -634,7 +634,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="RogueArcaneTrickster"/>
 					<attribute id="PassivesAdded" type="LSString" value="Feat_SpellSlots;ArcaneTrickery;SneakAttack_Unlock_Magic;BlessingoftheTrickster"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(c0aaf09a-fbb5-4480-aae0-f196b7fa33d5,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(8e57e7e8-af23-4621-a64a-3cf34b57676c,2,0,Spells,Intelligence,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Intelligence,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(ffad33d2-e725-4655-ba80-0bc91e8002b3,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(8e57e7e8-af23-4621-a64a-3cf34b57676c,2,0,Spells,Intelligence,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Intelligence,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
 					<attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Rogue&apos;)"/>
 					<attribute id="UUID" type="guid" value="32700827-6d27-40a2-b0a1-b176875af5a7"/>
                 </node>

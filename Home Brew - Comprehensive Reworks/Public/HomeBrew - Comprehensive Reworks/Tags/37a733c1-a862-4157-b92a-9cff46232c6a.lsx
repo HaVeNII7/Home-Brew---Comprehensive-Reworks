@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="0" build="58" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization." />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hc95330cfgad1cg4670ga222g0d0f12f06808" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="hce9fd8dfgd5a3g4824gb4beg1c974a709b03" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="RANGER" />
+			<attribute id="UUID" type="guid" value="37a733c1-a862-4157-b92a-9cff46232c6a" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Class" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

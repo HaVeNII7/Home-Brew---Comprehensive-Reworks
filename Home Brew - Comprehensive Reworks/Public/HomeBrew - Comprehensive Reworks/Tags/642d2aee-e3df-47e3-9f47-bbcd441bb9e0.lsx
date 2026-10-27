@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="5" build="1" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="|Really Shadowheart|" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hbdbe210egdcc7g470agb9b7g66b9a108d8e1" version="2" />
+			<attribute id="DisplayName" type="TranslatedString" handle="hd7b77e53g3968g4a4dg8018g10591859dc9b" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="REALLY_SHADOWHEART" />
+			<attribute id="UUID" type="guid" value="642d2aee-e3df-47e3-9f47-bbcd441bb9e0" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

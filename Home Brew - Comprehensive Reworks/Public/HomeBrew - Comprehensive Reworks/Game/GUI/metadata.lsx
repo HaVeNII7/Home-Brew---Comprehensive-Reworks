@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='utf-8'?>
+<save>
+  <version major="4" minor="0" revision="9" build="319"/>
+  <region id="config">
+    <node id="config">
+      <children>
+        <node id="entries">
+          <children>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_1.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_10.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_11.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_12.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_13.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_14.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_15.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_16.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_17.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_18.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_19.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_2.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_20.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_3.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_4.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_5.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_6.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_7.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_8.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_9.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1024"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1280"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/d20_faceCover.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="256"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="256"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/double_roll_1.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1280"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1536"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/double_roll_2.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1280"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1536"/>
+                </node>
+              </children>
+            </node>
+            <node id="Object">
+              <attribute id="MapKey" type="FixedString" value="Assets/DiceSets/MythicDice V1/single_roll.png"/>
+              <children>
+                <node id="entries">
+                  <attribute id="h" type="int16" value="1280"/>
+                  <attribute id="mipcount" type="int8" value="1"/>
+                  <attribute id="w" type="int16" value="1536"/>
+                </node>
+              </children>
+            </node>
+          </children>
+        </node>
+      </children>
+    </node>
+  </region>
+</save>

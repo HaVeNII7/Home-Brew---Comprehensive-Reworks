@@ -10,12 +10,22 @@ PROC
 PROC_FlagReactionAfterDialog(_Player,GLO_Respec_Start_6d4979bc-8e95-46be-9c27-96c6e22b0152,_)
 THEN
 ClearFlag(GLO_Respec_Start_6d4979bc-8e95-46be-9c27-96c6e22b0152,_Player,0);
+DB_HB_WithersPaidRespec(_Player);
 StartRespec(_Player);
 
 IF
 DB_GLO_Respec_MoneyTransferVariable(_Var)
 THEN
 DB_DialogMoneyTransfer(_Var,CAMP_Jergal_7f4acd9b-15c0-81fe-9409-623634ec3ed3,0); // last param is respec price
+
+// Keep Withers' respec price at 0 on every difficulty before native dialogue.
+PROC
+PROC_DialogFlagSetup((DIALOGRESOURCE)CAMP_Jergal_7f4acd9b-15c0-81fe-9409-623634ec3ed3, _, _)
+AND
+DB_DialogMoneyTransfer(4, (DIALOGRESOURCE)CAMP_Jergal_7f4acd9b-15c0-81fe-9409-623634ec3ed3, _PreviousPrice)
+THEN
+NOT DB_DialogMoneyTransfer(4, (DIALOGRESOURCE)CAMP_Jergal_7f4acd9b-15c0-81fe-9409-623634ec3ed3, _PreviousPrice);
+DB_DialogMoneyTransfer(4, (DIALOGRESOURCE)CAMP_Jergal_7f4acd9b-15c0-81fe-9409-623634ec3ed3, 0);
 
 IF
 RespecCompleted(_Player)
@@ -24,20 +34,73 @@ ApplyStatus(_Player,"RESPEC_TECHNICAL",1.0,1,NULL_00000000-0000-0000-0000-000000
 
 IF
 RespecCancelled(_Player)
+AND
+DB_HB_WithersPaidRespec(_Player)
 THEN
+NOT DB_HB_WithersPaidRespec(_Player);
 PROC_Respec_Refund(_Player);
+
+IF
+RespecCompleted(_Player)
+AND
+DB_HB_WithersPaidRespec(_Player)
+THEN
+NOT DB_HB_WithersPaidRespec(_Player);
+
+
+IF
+CastedSpell((CHARACTER)_Caster,"Shout_ScrollofRebirth",_,_,_)
+AND
+DB_Players(_Caster)
+AND
+NOT DB_HB_ScrollOfRebirthRespec(_Caster)
+THEN
+DB_HB_ScrollOfRebirthRespec(_Caster);
+StartRespec(_Caster);
+
+
+IF
+RespecCompleted(_Player)
+AND
+DB_HB_ScrollOfRebirthRespec(_Player)
+THEN
+NOT DB_HB_ScrollOfRebirthRespec(_Player);
+
+
+
+IF
+RespecCancelled(_Player)
+AND
+DB_HB_ScrollOfRebirthRespec(_Player)
+THEN
+NOT DB_HB_ScrollOfRebirthRespec(_Player);
+TemplateAddTo((ITEMROOT)ScrollofRebirth_952de87b-93a8-4575-b1ca-2d8922dd8980,_Player,1,1);
+
+
+IF
+SavegameLoaded()
+AND
+DB_HB_ScrollOfRebirthRespec(_Player)
+THEN
+NOT DB_HB_ScrollOfRebirthRespec(_Player);
 
 PROC
 PROC_Respec_Refund((CHARACTER)_Player)
 AND
-GetGold(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805,0)
-AND
 DB_GLO_Respec_MoneyTransferVariable(_Var)
 AND
-DB_DialogMoneyTransfer(_Var,CAMP_Jergal_7f4acd9b-15c0-81fe-9409-623634ec3ed3,0)
+DB_DialogMoneyTransfer(_Var,CAMP_Jergal_7f4acd9b-15c0-81fe-9409-623634ec3ed3,_Cost)
+AND
+_Cost > 0
+AND
+GetGold(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805,_Gold)
+AND
+_Gold >= _Cost
+AND
+IntegerProduct(_Cost,-1,_MinusCost)
 THEN
-AddGold(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805,0);
-AddGold(_Player,0);
+AddGold(S_GLO_JergalAvatar_0133f2ad-e121-4590-b5f0-a79413919805,_MinusCost);
+AddGold(_Player,_Cost);
 EXITSECTION
 
 ENDEXITSECTION

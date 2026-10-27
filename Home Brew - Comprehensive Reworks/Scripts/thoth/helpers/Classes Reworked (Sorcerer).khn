@@ -24,7 +24,7 @@ function DistantSpellCheck()
 end
 
 function DistantTouchSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & TargetRadiusGreaterThan(0) & ~TargetRadiusGreaterThan(1.5)
+    return HasSpellFlag(SpellFlags.Spell) & TargetRadiusGreaterThan(0) & IsMelee()
 end
 
 function ExtendedSpellCheck()

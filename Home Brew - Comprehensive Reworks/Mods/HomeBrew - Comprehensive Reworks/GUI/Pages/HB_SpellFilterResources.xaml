@@ -1,0 +1,325 @@
+<ls:UIWidget x:Name="HB_SpellFilterResources"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:ls="clr-namespace:ls;assembly=Code"
+    IsHitTestVisible="False" Focusable="False" Width="0" Height="0">
+    <ls:UIWidget.Resources>
+        <ResourceDictionary>
+
+    
+    <Style x:Key="HB_SchoolMenuButton" TargetType="ls:LSButton">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFont}"/>
+        <Setter Property="FontSize" Value="{StaticResource ScaledMediumFontSize}"/>
+        <Setter Property="Foreground" Value="{StaticResource LS_baseTxtColor}"/>
+        <Setter Property="Height" Value="52"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ls:LSButton">
+                    <Border x:Name="entryBorder" Background="Transparent" Padding="16,8" BorderThickness="1" BorderBrush="Transparent">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="entryBorder" Property="Background" Value="#AA463525"/>
+                            <Setter TargetName="entryBorder" Property="BorderBrush" Value="{StaticResource LS_accent100TxtColor}"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding Path=(ls:MoveFocus.IsFocused), RelativeSource={RelativeSource Self}}" Value="True">
+                            <Setter TargetName="entryBorder" Property="Background" Value="#AA463525"/>
+                            <Setter TargetName="entryBorder" Property="BorderBrush" Value="{StaticResource LS_accent100TxtColor}"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Path=(ls:MoveFocus.IsFocused), RelativeSource={RelativeSource Self}}" Value="True">
+                <Setter Property="BoundEvent" Value="UIAccept"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="HB_SchoolHeadingButton" TargetType="ls:LSButton" BasedOn="{StaticResource HB_SchoolMenuButton}">
+        <Setter Property="Height" Value="Auto"/>
+        <Setter Property="Foreground" Value="{StaticResource LS_tint100}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ls:LSButton">
+                    <Border Background="Transparent" Padding="0,6">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Image Source="pack://application:,,,/Core;component/Assets/CC/decor_header.png" Stretch="None" VerticalAlignment="Center"/>
+                            <ContentPresenter Margin="20,0,20,0" VerticalAlignment="Center"/>
+                            <Image Source="pack://application:,,,/Core;component/Assets/CC/decor_header.png" Stretch="None" VerticalAlignment="Center">
+                                <Image.RenderTransform><ScaleTransform ScaleX="-1" CenterX="42"/></Image.RenderTransform>
+                            </Image>
+                        </StackPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding Path=(ls:MoveFocus.IsFocused), RelativeSource={RelativeSource Self}}" Value="True">
+                            <Setter Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    
+    <Style x:Key="HB_DamageTextHeadingButton_v59" TargetType="ls:LSButton">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFont}"/>
+        <Setter Property="FontSize" Value="{StaticResource ScaledMediumFontSize}"/>
+        <Setter Property="Foreground" Value="{StaticResource LS_tint100}"/>
+        <Setter Property="Height" Value="Auto"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+            </Trigger>
+            <DataTrigger Binding="{Binding Path=(ls:MoveFocus.IsFocused), RelativeSource={RelativeSource Self}}" Value="True">
+                <Setter Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                <Setter Property="BoundEvent" Value="UIAccept"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Each list is checked initially; toggles affect only displayed native tiles.
+         Unchecked list hides its exact 80 spell IDs. -->
+    <!-- Shared checked list row: individual
+         clicks only alter filtering of the available native spell tiles. -->
+    <!-- Compact gold text actions for each expanded filter section. -->
+    <Style x:Key="HB_FilterBulkButtonStyle" TargetType="ls:LSButton">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFont}"/>
+        <Setter Property="FontSize" Value="{StaticResource ScaledMediumFontSize}"/>
+        <Setter Property="Foreground" Value="{StaticResource LS_tint100}"/>
+        <Setter Property="Height" Value="Auto"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ls:LSButton">
+                    <Border Background="Transparent" Padding="8,6">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding Path=(ls:MoveFocus.IsFocused), RelativeSource={RelativeSource Self}}" Value="True">
+                            <Setter Property="Foreground" Value="{StaticResource LS_accent100TxtColor}"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="HB_ClassListToggleStyle_v1" TargetType="ls:LSToggleButton">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFont}"/>
+        <Setter Property="FontSize" Value="{StaticResource ScaledMediumFontSize}"/>
+        <Setter Property="Foreground" Value="{StaticResource LS_tint100}"/>
+        <Setter Property="Height" Value="70"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="ls:MoveFocus.Focusable" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ls:LSToggleButton">
+                    <Border x:Name="classRow" Background="Transparent" Padding="16,8">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                            <Grid VerticalAlignment="Center">
+                                <Image x:Name="classCheck" Source="pack://application:,,,/Core;component/Assets/Options/checkBox_d.png" Stretch="None"/>
+                                <Image x:Name="classTick" Source="pack://application:,,,/Core;component/Assets/Options/ico_check_d.png" Stretch="None" Visibility="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BoolToVisibleConverter}}"/>
+                            </Grid>
+                            <ContentPresenter Margin="12,0,0,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="classRow" Property="Background" Value="#AA463525"/>
+                            <Setter TargetName="classCheck" Property="Source" Value="pack://application:,,,/Core;component/Assets/Options/checkBox_h.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <ControlTemplate x:Key="HB_CCSpellSchoolHeaderTemplate" TargetType="ContentControl">
+        <StackPanel HorizontalAlignment="Center" MaxWidth="750">
+            <!-- Live spell-name filter.  Keyboard text input is owned by LSTextBox; the
+                 command only requests a fresh pass over the existing available items. -->
+            <StackPanel Margin="18,8,18,8" HorizontalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,6">
+                    <Image Source="pack://application:,,,/Core;component/Assets/CC/decor_header.png" Stretch="None" VerticalAlignment="Center"/>
+                    <TextBlock Text="Search by Name" FontFamily="{StaticResource DefaultFont}"
+                        FontSize="{StaticResource ScaledMediumFontSize}" Foreground="{StaticResource LS_tint100}"
+                        Margin="20,0,20,0" VerticalAlignment="Center" TextAlignment="Center"/>
+                    <Image Source="pack://application:,,,/Core;component/Assets/CC/decor_header.png" Stretch="None" VerticalAlignment="Center">
+                        <Image.RenderTransform><ScaleTransform ScaleX="-1" CenterX="42"/></Image.RenderTransform>
+                    </Image>
+                </StackPanel>
+                <ls:LSTextBox x:Name="HB_SpellNameSearch" Text="{Binding HB_SearchText, Mode=TwoWay}"
+                        TextImmediateSourceUpdate="True" MaxLength="64" Height="46" Width="370" HorizontalAlignment="Center"
+                        FontFamily="{StaticResource DefaultFont}" FontSize="{StaticResource ScaledMediumFontSize}"
+                        Foreground="{StaticResource LS_baseTxtColor}" Background="#F21B1713"
+                        CaretBrush="#FFF2E4CD" SelectionBrush="#FF66543A"
+                        BorderBrush="{StaticResource LS_accent25TxtColor}" BorderThickness="1" Padding="12,6">
+                        <ls:LSTextBox.Template>
+                            <ControlTemplate TargetType="ls:LSTextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ScrollViewer x:Name="PART_ContentHost" Focusable="False"
+                                        Padding="{TemplateBinding Padding}" Foreground="{TemplateBinding Foreground}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </ls:LSTextBox.Template>
+                        <b:Interaction.Triggers>
+                            <b:EventTrigger EventName="TextChanged">
+                                <b:InvokeCommandAction Command="{Binding HB_SearchChanged}"/>
+                            </b:EventTrigger>
+                        </b:Interaction.Triggers>
+                </ls:LSTextBox>
+            </StackPanel>
+            <ls:LSButton Content="Spell Filtering" Command="{Binding HB_ToggleFilter}"
+                IsEnabled="{Binding HB_Ready, FallbackValue=False}"
+                Style="{StaticResource HB_SchoolHeadingButton}" Margin="0,6,0,0"/>
+            <Border Background="#F21B1713" BorderThickness="1" BorderBrush="{StaticResource LS_accent25TxtColor}"
+                Margin="0,8,0,8" MinWidth="550" Visibility="{Binding HB_FilterOpen, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
+                <ScrollViewer MaxHeight="850" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                    <StackPanel KeyboardNavigation.DirectionalNavigation="Contained">
+                    <ls:LSButton Content="Class" Command="{Binding HB_ToggleClasses}"
+                        Style="{StaticResource HB_SchoolHeadingButton}" Margin="0,6,0,4"/>
+                    <StackPanel Visibility="{Binding HB_ClassesMenuOpen, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,4,0,6">
+                            <ls:LSButton Content="Check All" Command="{Binding HB_Class_CheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}" Margin="0,0,12,0"/>
+                            <ls:LSButton Content="Uncheck All" Command="{Binding HB_Class_UncheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}"/>
+                        </StackPanel>
+                        <ls:LSToggleButton Content="{Binding HB_ClassName_1}" Tag="{Binding HB_ClassEnabled_1, Mode=OneWay}" IsChecked="{Binding HB_ClassEnabled_1, Mode=OneWay}"
+                            Visibility="{Binding HB_ClassVisible_1, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                            Command="{Binding HB_Class_1}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="{Binding HB_ClassName_2}" Tag="{Binding HB_ClassEnabled_2, Mode=OneWay}" IsChecked="{Binding HB_ClassEnabled_2, Mode=OneWay}"
+                            Visibility="{Binding HB_ClassVisible_2, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                            Command="{Binding HB_Class_2}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="{Binding HB_ClassName_3}" Tag="{Binding HB_ClassEnabled_3, Mode=OneWay}" IsChecked="{Binding HB_ClassEnabled_3, Mode=OneWay}"
+                            Visibility="{Binding HB_ClassVisible_3, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                            Command="{Binding HB_Class_3}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="{Binding HB_ClassName_4}" Tag="{Binding HB_ClassEnabled_4, Mode=OneWay}" IsChecked="{Binding HB_ClassEnabled_4, Mode=OneWay}"
+                            Visibility="{Binding HB_ClassVisible_4, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                            Command="{Binding HB_Class_4}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="{Binding HB_ClassName_5}" Tag="{Binding HB_ClassEnabled_5, Mode=OneWay}" IsChecked="{Binding HB_ClassEnabled_5, Mode=OneWay}"
+                            Visibility="{Binding HB_ClassVisible_5, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}"
+                            Command="{Binding HB_Class_5}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                    </StackPanel>
+                    <ls:LSButton Content="Concentration" Command="{Binding HB_ToggleConcentrationMenu}"
+                        Style="{StaticResource HB_SchoolHeadingButton}" Margin="0,6,0,4"/>
+                    <StackPanel Visibility="{Binding HB_ConcentrationMenuOpen, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,4,0,6">
+                            <ls:LSButton Content="Check All" Command="{Binding HB_Concentration_CheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}" Margin="0,0,12,0"/>
+                            <ls:LSButton Content="Uncheck All" Command="{Binding HB_Concentration_UncheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}"/>
+                        </StackPanel>
+                        <ls:LSToggleButton Content="Concentration" Tag="{Binding HB_ConcentrationEnabled, Mode=OneWay}" IsChecked="{Binding HB_ConcentrationEnabled, Mode=OneWay}"
+                            Command="{Binding HB_ToggleConcentration}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="Not Concentration" Tag="{Binding HB_NotConcentrationEnabled, Mode=OneWay}" IsChecked="{Binding HB_NotConcentrationEnabled, Mode=OneWay}"
+                            Command="{Binding HB_ToggleNotConcentration}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                    </StackPanel>
+                    <ls:LSButton Content="Damage Type" Command="{Binding HB_ToggleDamage}"
+                        Style="{StaticResource HB_SchoolHeadingButton}" Margin="0,6,0,4"/>
+                    <StackPanel Visibility="{Binding HB_DamageMenuOpen, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,4,0,6">
+                            <ls:LSButton Content="Check All" Command="{Binding HB_Damage_CheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}" Margin="0,0,12,0"/>
+                            <ls:LSButton Content="Uncheck All" Command="{Binding HB_Damage_UncheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}"/>
+                        </StackPanel>
+                        
+                        <Grid Margin="0,2,0,6">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                        <ls:LSToggleButton Grid.Column="0" Grid.Row="0" Content="Acid" Tag="{Binding HB_DamageEnabled_2, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_2, Mode=OneWay}"
+                            Command="{Binding HB_Damage_2}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="0" Grid.Row="1" Content="Bludgeoning" Tag="{Binding HB_DamageEnabled_3, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_3, Mode=OneWay}"
+                            Command="{Binding HB_Damage_3}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="0" Grid.Row="2" Content="Cold" Tag="{Binding HB_DamageEnabled_4, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_4, Mode=OneWay}"
+                            Command="{Binding HB_Damage_4}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="0" Grid.Row="3" Content="Fire" Tag="{Binding HB_DamageEnabled_5, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_5, Mode=OneWay}"
+                            Command="{Binding HB_Damage_5}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="0" Grid.Row="4" Content="Force" Tag="{Binding HB_DamageEnabled_6, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_6, Mode=OneWay}"
+                            Command="{Binding HB_Damage_6}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="0" Grid.Row="5" Content="Lightning" Tag="{Binding HB_DamageEnabled_7, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_7, Mode=OneWay}"
+                            Command="{Binding HB_Damage_7}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="0" Grid.Row="6" Content="Necrotic" Tag="{Binding HB_DamageEnabled_8, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_8, Mode=OneWay}"
+                            Command="{Binding HB_Damage_8}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="1" Grid.Row="0" Content="Piercing" Tag="{Binding HB_DamageEnabled_9, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_9, Mode=OneWay}"
+                            Command="{Binding HB_Damage_9}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="1" Grid.Row="1" Content="Poison" Tag="{Binding HB_DamageEnabled_10, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_10, Mode=OneWay}"
+                            Command="{Binding HB_Damage_10}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="1" Grid.Row="2" Content="Psychic" Tag="{Binding HB_DamageEnabled_11, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_11, Mode=OneWay}"
+                            Command="{Binding HB_Damage_11}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="1" Grid.Row="3" Content="Radiant" Tag="{Binding HB_DamageEnabled_12, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_12, Mode=OneWay}"
+                            Command="{Binding HB_Damage_12}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="1" Grid.Row="4" Content="Slashing" Tag="{Binding HB_DamageEnabled_13, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_13, Mode=OneWay}"
+                            Command="{Binding HB_Damage_13}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="1" Grid.Row="5" Content="Thunder" Tag="{Binding HB_DamageEnabled_14, Mode=OneWay}" IsChecked="{Binding HB_DamageEnabled_14, Mode=OneWay}"
+                            Command="{Binding HB_Damage_14}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Grid.Column="1" Grid.Row="6" Content="Non-Damaging" Tag="{Binding HB_DamageNonDamagingEnabled, Mode=OneWay}" IsChecked="{Binding HB_DamageNonDamagingEnabled, Mode=OneWay}"
+                            Command="{Binding HB_Damage_NonDamaging}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        </Grid>
+                    </StackPanel>
+                    <ls:LSButton Content="Spell School" Command="{Binding HB_Toggle}"
+                        Style="{StaticResource HB_SchoolHeadingButton}" Margin="0,6,0,4"/>
+                    <StackPanel Visibility="{Binding HB_MenuOpen, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,4,0,6">
+                            <ls:LSButton Content="Check All" Command="{Binding HB_School_CheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}" Margin="0,0,12,0"/>
+                            <ls:LSButton Content="Uncheck All" Command="{Binding HB_School_UncheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}"/>
+                        </StackPanel>
+                        <ls:LSToggleButton Content="Abjuration" Tag="{Binding HB_SchoolEnabled_2, Mode=OneWay}" IsChecked="{Binding HB_SchoolEnabled_2, Mode=OneWay}"
+                            Command="{Binding HB_School_2}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="Conjuration" Tag="{Binding HB_SchoolEnabled_3, Mode=OneWay}" IsChecked="{Binding HB_SchoolEnabled_3, Mode=OneWay}"
+                            Command="{Binding HB_School_3}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="Divination" Tag="{Binding HB_SchoolEnabled_4, Mode=OneWay}" IsChecked="{Binding HB_SchoolEnabled_4, Mode=OneWay}"
+                            Command="{Binding HB_School_4}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="Enchantment" Tag="{Binding HB_SchoolEnabled_5, Mode=OneWay}" IsChecked="{Binding HB_SchoolEnabled_5, Mode=OneWay}"
+                            Command="{Binding HB_School_5}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="Evocation" Tag="{Binding HB_SchoolEnabled_6, Mode=OneWay}" IsChecked="{Binding HB_SchoolEnabled_6, Mode=OneWay}"
+                            Command="{Binding HB_School_6}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="Illusion" Tag="{Binding HB_SchoolEnabled_7, Mode=OneWay}" IsChecked="{Binding HB_SchoolEnabled_7, Mode=OneWay}"
+                            Command="{Binding HB_School_7}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="Necromancy" Tag="{Binding HB_SchoolEnabled_8, Mode=OneWay}" IsChecked="{Binding HB_SchoolEnabled_8, Mode=OneWay}"
+                            Command="{Binding HB_School_8}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="Transmutation" Tag="{Binding HB_SchoolEnabled_9, Mode=OneWay}" IsChecked="{Binding HB_SchoolEnabled_9, Mode=OneWay}"
+                            Command="{Binding HB_School_9}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                    </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+            <TextBlock Text="{Binding HB_Status, FallbackValue=''}" TextWrapping="Wrap" TextAlignment="Center"
+                FontSize="{StaticResource SmallFontSize}" Foreground="{StaticResource LS_baseTxtColor}"/>
+        </StackPanel>
+    </ControlTemplate>
+
+            <ControlTemplate x:Key="HB_CCSpellSchoolItemsTemplate" TargetType="ItemsControl">
+                <StackPanel>
+                    <ContentControl x:Name="HB_SchoolFilterRoot" Template="{StaticResource HB_CCSpellSchoolHeaderTemplate}"
+                        Visibility="{Binding HB_Visible, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}" Margin="0,12,0,8"/>
+                    <ItemsPresenter/>
+                </StackPanel>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ls:UIWidget.Resources>
+    <Grid/>
+</ls:UIWidget>

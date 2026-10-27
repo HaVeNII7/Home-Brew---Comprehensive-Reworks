@@ -52,7 +52,7 @@ type "PassiveData"
 data "DisplayName" "hc14fc8efge9b7g4609gb276g44dd5f8d55ff;2"
 data "Description" "hfa6d8951gc8eag4be9g846bgffffgtg556d9;5"
 data "Icon" "GenericIcon_Intent_Summon"
-data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Temporary"
+data "Properties" "IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Temporary"
 data "StatsFunctorContext" "OnCombatEnded"
 data "StatsFunctors" "IF(HasStatus('SG_Polymorph_BeastShape', context.Source)):RestoreResource(SELF,WildShape,1,0);IF(HasStatus('SG_Polymorph_BeastShape', context.Source)):RemoveStatus(SG_Polymorph_BeastShape)"
 

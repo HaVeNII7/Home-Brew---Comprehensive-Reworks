@@ -1,0 +1,115 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Needs to be a top-level goal because the CharacterJoinedParty events for the CC dummies arrive before GameModeStarted
+KBSECTION
+IF
+CharacterCreationStarted()
+THEN
+DB_TUT_CharacterCreation_Started(1);
+
+IF
+MovieFinished("GUS_CGI01_Part1")
+THEN
+DB_TUT_CharacterCreation_IntroMovieFinished(1);
+
+// Show tutorial for all users connected once CC starts and the intro movie has finished
+IF
+DB_TUT_CharacterCreation_Started(1)
+AND
+DB_TUT_CharacterCreation_IntroMovieFinished(1)
+THEN
+// Delay a bit for the fade-in
+TimerLaunch("TUT_CharacterCreation", 5000);
+
+IF
+TimerFinished("TUT_CharacterCreation")
+AND
+DB_CharacterCreationDummy(_CCDummy)
+AND
+GetReservedUserID(_CCDummy,_UserID)
+AND
+NOT WasTutorialCompletedForUser(_UserID, 1)
+THEN
+DB_TUT_CharacterCreation_InitialShown(1);
+PROC_TUT_CharacterCreation_ShowTutorialForUser(_UserID);
+
+// Also show for users connecting after CC has already started
+IF
+UserConnected(_UserID,_,_)
+AND
+DB_TUT_CharacterCreation_InitialShown(1)
+AND
+NOT WasTutorialCompletedForUser(_UserID, 1)
+THEN
+PROC_TUT_CharacterCreation_ShowTutorialForUser(_UserID);
+
+PROC
+PROC_TUT_CharacterCreation_ShowTutorialForUser((INTEGER)_UserID)
+AND
+QRY_TUT_CharacterCreation_GetUserDummy(_UserID)
+AND
+DB_QRYRTN_TUT_CharacterCreation_GetUserDummy(_CCDummy)
+AND
+NOT WasTutorialCompletedForUser(_UserID, 1)
+THEN
+DB_ResetTutorialsRequest(_UserID, 0);
+
+IF
+UserDisconnected(_UserID,_,_)
+AND
+DB_ResetTutorialsRequest(_UserID, _TutCompleted)
+THEN
+NOT DB_ResetTutorialsRequest(_UserID, _TutCompleted);
+
+IF
+DB_CurrentLevel(_Level)
+AND
+IsCharacterCreationLevel(_Level,1)
+AND
+DB_ResetTutorialsRequest(_UserID, _TutCompleted)
+THEN
+NOT DB_ResetTutorialsRequest(_UserID, _TutCompleted);
+ResetTutorialsRequest(_UserID, _TutCompleted);
+
+PROC
+PROC_ShowUnifiedTutorialForPlayer((CHARACTER)_Character,(UNIFIEDTUTORIAL)_Tutorial)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_TUT_CharacterCreation_GetUserDummy((INTEGER)_UserID)
+AND
+DB_QRYRTN_TUT_CharacterCreation_GetUserDummy(_Result)
+THEN
+NOT DB_QRYRTN_TUT_CharacterCreation_GetUserDummy(_Result);
+
+QRY
+QRY_TUT_CharacterCreation_GetUserDummy((INTEGER)_UserID)
+AND
+DB_CharacterCreationDummy(_CCDummy)
+AND
+// The host can have multiple dummies assigned
+NOT DB_QRYRTN_TUT_CharacterCreation_GetUserDummy(_)
+AND
+GetReservedUserID(_CCDummy,_UserID)
+THEN
+DB_QRYRTN_TUT_CharacterCreation_GetUserDummy(_CCDummy);
+
+IF
+CharacterCreationFinished()
+AND
+DB_QRYRTN_TUT_CharacterCreation_GetUserDummy(_CCDummy)
+THEN
+NOT DB_QRYRTN_TUT_CharacterCreation_GetUserDummy(_CCDummy);
+
+IF
+CharacterCreationFinished()
+THEN
+NOT DB_TUT_CharacterCreation_Started(1);
+NOT DB_TUT_CharacterCreation_IntroMovieFinished(1);
+NOT DB_TUT_CharacterCreation_InitialShown(1);
+GoalCompleted;
+EXITSECTION
+
+ENDEXITSECTION

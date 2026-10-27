@@ -29,12 +29,28 @@
                     <attribute id="UUID" type="guid" value="3f777143-d1de-4035-b9e5-23763148b1fd"/>
                 </node>
                 <node id="Ruleset">
+                    <attribute id="Description" type="TranslatedString" handle="h2061fea8gde95g4e88gb4bcg93e240e16110" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb80200a7g8e69g4f66gbc18g4155d70f0dcc" version="2"/>
+                    <attribute id="Name" type="LSString" value="DIFFICULTY_HEROIC"/>
+                    <attribute id="ShowInCustom" type="bool" value="false"/>
+                    <attribute id="Type" type="uint8" value="1"/>
+                    <attribute id="UUID" type="guid" value="2f135ca5-bad8-464e-99d6-443c7d835fbb"/>
+                </node>
+                <node id="Ruleset">
                     <attribute id="Description" type="TranslatedString" handle="h2061fea8gde95g4e88gb4bcg9325f4d5f3d5" version="2"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="hb80200a7g8e69g4f66gbc18gs6d84f96s8e4" version="2"/>
                     <attribute id="Name" type="LSString" value="DIFFICULTY_MYTHIC"/>
                     <attribute id="ShowInCustom" type="bool" value="false"/>
                     <attribute id="Type" type="uint8" value="1"/>
                     <attribute id="UUID" type="guid" value="643bed89-5895-4b77-a29e-08d19634eff8"/>
+                </node>
+                <node id="Ruleset">
+                    <attribute id="Description" type="TranslatedString" handle="h2061fea8gde95g4e88gb4bcg9325s6e5e2f5" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb80200a7g8e69g4f66gbc18gs6d83as2d2f5" version="2"/>
+                    <attribute id="Name" type="LSString" value="DIFFICULTY_DEIFIC"/>
+                    <attribute id="ShowInCustom" type="bool" value="false"/>
+                    <attribute id="Type" type="uint8" value="1"/>
+                    <attribute id="UUID" type="guid" value="536ca292-53d1-4fe0-a85a-c29dc5b737fb"/>
                 </node>
                 <node id="Ruleset">
                     <attribute id="Description" type="TranslatedString" handle="h478b1265gbd06g4447g95d3ge9e29717ffd2" version="2"/>
@@ -59,6 +75,14 @@
                     <attribute id="ShowInCustom" type="bool" value="false"/>
                     <attribute id="Type" type="uint8" value="0"/>
                     <attribute id="UUID" type="guid" value="28b5b9de-cef7-4cc2-972c-22f962efe757"/>
+                </node>
+                <node id="Ruleset">
+                    <attribute id="Description" type="TranslatedString" handle="h478b1265gbd06g4447g95d3ge9e29717ffd2" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hee984f60g20e8g4cb1gb894g6f1d34c013d8" version="2"/>
+                    <attribute id="Name" type="LSString" value="SINGLE_SAVE"/>
+                    <attribute id="ShowInCustom" type="bool" value="false"/>
+                    <attribute id="Type" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="8ed1fb00-91a5-437e-864d-6fb8113bc37e"/>
                 </node>
                 <node id="Ruleset">
                     <attribute id="Description" type="TranslatedString" handle="ha5546e37g3490g4384g9477g76799bb9e169" version="1"/>

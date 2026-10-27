@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="8" build="606" lslib_meta="v1,bswap_guids" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="UUID" type="guid" value="d84a8a0b-b648-464c-9bd5-1ed9b965da2a" />
+			<attribute id="Name" type="FixedString" value="OATHBREAKER_ANCIENTS" />
+			<attribute id="DisplayName" type="TranslatedString" handle="hd3d471e4g80eag4be7ga23eg8cc07e2e27a3" version="2" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="hc230d5e2g8d38g4541ga8fbgf0f061d7c093" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Description" type="LSString" value="Used to remember paladin subclass" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="DialogHidden" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Story" />
+						</node>
+					</children>
+				</node>
+				<node id="Properties" />
+			</children>
+		</node>
+	</region>
+</save>

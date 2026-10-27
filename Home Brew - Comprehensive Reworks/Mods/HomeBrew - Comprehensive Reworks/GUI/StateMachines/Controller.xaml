@@ -10,8 +10,228 @@
 
         <ls:State Name="CharacterRespec" ModType="Extend">
             <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_NativeHistoricalPreview.xaml" Layer="MessageBox"/>
+                <ls:StateWidget Filename="HB_AbilityBaseMenu.xaml" Layer="MessageBox"/>
+                <ls:StateWidget Filename="HB_SpellFilterResources.xaml" Layer="HUD" IgnoreHitTest="True"/>
                 <ls:StateWidget Filename="PR_RespecChoice_c.xaml" Layer="MessageBox"/>
             </ls:State.Widgets>
+        </ls:State>
+
+        <ls:State Name="CharacterCreation" ModType="Extend">
+            <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_VisualPresets.xaml" Layer="MessageBox"/>
+                <ls:StateWidget Filename="HB_VisualPresetFooter.xaml" Layer="HUDTop"/>
+                <ls:StateWidget Filename="HB_AbilityBaseMenu.xaml" Layer="MessageBox"/>
+                <ls:StateWidget Filename="HB_SpellFilterResources.xaml" Layer="HUD" IgnoreHitTest="True"/>
+            </ls:State.Widgets>
+        </ls:State>
+
+        <!-- Magic Mirror uses CharacterChangeAppearance, not CharacterCreation. -->
+        <ls:State Name="CharacterChangeAppearance" ModType="Extend">
+            <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_VisualPresets.xaml" Layer="MessageBox"/>
+                <ls:StateWidget Filename="HB_VisualPresetFooter.xaml" Layer="HUDTop"/>
+            </ls:State.Widgets>
+        </ls:State>
+
+        <ls:State Name="CharacterLevelUp" ModType="Extend">
+            <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_NativeHistoricalPreview.xaml" Layer="MessageBox"/>
+                <ls:StateWidget Filename="HB_SpellFilterResources.xaml" Layer="HUD" IgnoreHitTest="True"/>
+            </ls:State.Widgets>
+        </ls:State>
+
+        <!-- HB v4: explicitly load the area-title page. -->
+        <ls:State Name="MainMenu.LoadGame" ModType="Extend">
+
+            <ls:State.Widgets>
+
+                <ls:StateWidget Filename="HB_SaveTitles_LoadGame_c.xaml" Layer="Pause"/>
+
+            </ls:State.Widgets>
+
+        </ls:State>
+
+        <!-- HB v4: explicitly load the area-title page. -->
+        <ls:State Name="Paused.LoadGame" ModType="Extend">
+
+            <ls:State.Widgets>
+
+                <ls:StateWidget Filename="HB_SaveTitles_LoadGame_c.xaml" Layer="Pause"/>
+
+            </ls:State.Widgets>
+
+        </ls:State>
+
+        <!-- HB v4: explicitly load the area-title page. -->
+        <ls:State Name = "Paused.SaveGame" Layout = "Common" Owner = "DefaultPlayer"  DisableStatesBelow = "True" HideStatesBelow = "True" IsModal="True" ModType="Override">
+            <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_SaveTitles_SaveGame_c.xaml" Layer="Pause"/>
+            </ls:State.Widgets>
+            <ls:State.Events>
+                <ls:StateEvent Name = "SaveGameClose">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "OpenMessageBox">
+                    <ls:StateEvent.Actions>
+                        <ls:AddSubstate Name="CommonMessageBox"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "OpenNewSaveDialog">
+                    <ls:StateEvent.Actions>
+                        <ls:AddSubstate Name="SaveGame.InputSaveName"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "IE.ToggleInGameMenu">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "CloseWidget">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+            
+                <ls:StateEvent Name = "OpenFriendsList">
+                    <ls:StateEvent.Actions>
+                        <ls:AddSubstate Name="CrossplayFriendsList"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+            
+            </ls:State.Events>
+        </ls:State>
+
+        <!-- HB: disallow Honoured Myth transitions in existing games. -->
+        <ls:State Name="GameSettings" HideStatesBelow="True" IsModal="True" DisableStatesBelow="True" Layout="Common" Owner="DefaultPlayer" ModType="Override">
+            <ls:State.Widgets>
+                <ls:StateWidget Filename="pack://application:,,,/Core;component/Widgets/ScreenFade.xaml" Layer="ScreenFade" BlockedLoading="True"/>
+                <ls:StateWidget Filename="HB_HonouredMyth_NewGameSettings_c.xaml" Layer="HUDTop"/>
+                <ls:StateWidget Filename="/MainUI;component/Pages/Notification_c.xaml" Layer="MessageBox"/>
+            </ls:State.Widgets>
+
+            <ls:State.Events>
+                <ls:StateEvent Name = "CloseWidget">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "OpenMessageBox">
+                    <ls:StateEvent.Actions>
+                        <ls:AddSubstate Name="MessageBox"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name = "IE.ToggleInGameMenu">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name= "OpenMoreInfo">
+                    <ls:StateEvent.Actions>
+                        <ls:PushState Name="GameSettingsMoreInfo"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+            
+                <ls:StateEvent Name = "OpenFriendsList">
+                    <ls:StateEvent.Actions>
+                        <ls:AddSubstate Name="CrossplayFriendsList"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+            
+                <!-- Deific uses its own localized bodies; Heroic retains both original popups. -->
+                <ls:StateEvent Name="HB_OpenDeificHallInfo">
+                    <ls:StateEvent.Actions><ls:PushState Name="HB_DeificHallMoreInfo"/></ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name="HB_OpenDeificCustomInfo">
+                    <ls:StateEvent.Actions><ls:PushState Name="HB_DeificCustomMoreInfo"/></ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name="HB_OpenHonouredMythCustomInfo">
+                    <ls:StateEvent.Actions>
+                        <ls:PushState Name="HB_HonouredMythCustomMoreInfo"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <!-- Open the Mythic explanation without replacing the native Hall of Heroes popup. -->
+                <ls:StateEvent Name="HB_OpenMythicMechanicsInfo">
+                    <ls:StateEvent.Actions>
+                        <ls:PushState Name="HB_MythicMechanicsMoreInfo"/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+            </ls:State.Events>
+        </ls:State>
+
+        
+        <!-- Deific: custom information popups, independent of Heroic's Hall of Heroes. -->
+        <ls:State Name="HB_DeificHallMoreInfo" IsModal="True" DisableStatesBelow="True" Layout="Common" Owner="All">
+            <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_DeificHallInformationPopup_c.xaml" Layer="HUDTop"/>
+            </ls:State.Widgets>
+            <ls:State.Events>
+                <ls:StateEvent Name="CloseWidget">
+                    <ls:StateEvent.Actions><ls:RemoveState/></ls:StateEvent.Actions>
+                </ls:StateEvent>
+            </ls:State.Events>
+        </ls:State>
+        <ls:State Name="HB_DeificCustomMoreInfo" IsModal="True" DisableStatesBelow="True" Layout="Common" Owner="All">
+            <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_DeificCustomInformationPopup_c.xaml" Layer="HUDTop"/>
+            </ls:State.Widgets>
+            <ls:State.Events>
+                <ls:StateEvent Name="CloseWidget">
+                    <ls:StateEvent.Actions><ls:RemoveState/></ls:StateEvent.Actions>
+                </ls:StateEvent>
+            </ls:State.Events>
+        </ls:State>
+
+        <ls:State Name="HB_HonouredMythCustomMoreInfo" IsModal="True" DisableStatesBelow="True" Layout="Common" Owner="All">
+            <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_HonouredMythCustomInformationPopup_c.xaml" Layer="HUDTop"/>
+            </ls:State.Widgets>
+            <ls:State.Events>
+                <ls:StateEvent Name="CloseWidget">
+                    <ls:StateEvent.Actions><ls:RemoveState/></ls:StateEvent.Actions>
+                </ls:StateEvent>
+            </ls:State.Events>
+        </ls:State>
+
+        <!-- HB: separate Mythic mechanics popup. -->
+        <ls:State Name="HB_MythicMechanicsMoreInfo" IsModal="True" DisableStatesBelow="True" Layout="Common" Owner="All">
+            <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_MythicMechanicsInformationPopup_c.xaml" Layer="HUDTop"/>
+            </ls:State.Widgets>
+
+            <ls:State.Events>
+                <ls:StateEvent Name = "CloseWidget">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+
+                <ls:StateEvent Name = "IE.ToggleInGameMenu">
+                    <ls:StateEvent.Actions>
+                        <ls:RemoveState/>
+                    </ls:StateEvent.Actions>
+                </ls:StateEvent>
+            </ls:State.Events>
+        </ls:State>
+
+        <!-- Route a non-Ironman wipe without calling the native Honour game-over handler. -->
+        <ls:State Name="HB_NormalGameOver" Layout="Common" Owner="Player" IsModal="True" DisableStatesBelow="True">
+            <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_NormalGameOver_c.xaml" Layer="Pause" SoundLayer="EscapeMenu"/>
+            </ls:State.Widgets>
+            <ls:State.Events>
+                <ls:StateEvent Name="LoadGameOpen">
+                    <ls:StateEvent.Actions><ls:PushState Name="Paused.LoadGame"/></ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name="OpenMessageBox">
+                    <ls:StateEvent.Actions><ls:AddSubstate Name="MessageBox"/></ls:StateEvent.Actions>
+                </ls:StateEvent>
+                <ls:StateEvent Name="HB_OpenNormalGameOver"/>
+                <ls:StateEvent Name="IE.ToggleInGameMenu"/>
+                <ls:StateEvent Name="CloseGameMenu"/>
+            </ls:State.Events>
         </ls:State>
     </ls:StateMachine.States>
 </ls:StateMachine>

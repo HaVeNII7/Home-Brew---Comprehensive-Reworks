@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="9c1b8d30-bd3d-4d99-838b-d0385e435c58" />
+					<attribute id="Name" type="LSString" value="XEL_Item_GateStone_Zeta" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="6d34fb12-b441-4d83-a661-49d08f43eb89" />
+					<attribute id="VisualTemplate" type="FixedString" value="07ca7a4e-7a9a-dfcc-bd9e-6ecb9c702335" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="f215dbdc-4fd5-aba4-73d3-efded937932f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h676a2c78gf9bdg87fdg6434gf64e2ee3c64e" version="6" />
+					<attribute id="Icon" type="FixedString" value="XEL_Item_GateStone_Zeta" />
+					<attribute id="Stats" type="FixedString" value="XEL_Obj_GateStone_Zeta" />
+					<attribute id="StoryItem" type="bool" value="True" />
+					<attribute id="maxStackAmount" type="int32" value="1" />
+					<attribute id="InventoryMoveSound" type="FixedString" value="7f06581c-2518-4a88-84f1-23e95feb2d81" />
+					<attribute id="DropSound" type="FixedString" value="7f06581c-2518-4a88-84f1-23e95feb2d81" />
+					<attribute id="PickupSound" type="FixedString" value="877087fe-2014-4e2e-b97b-aab11c37df05" />
+					<attribute id="Description" type="TranslatedString" handle="h195997b8g11f3g963ag242eg9fb9b9eb0868" version="6" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hf8a57093g76c5g7922g6858ge2f66b3470f2" version="6" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2831093 0.017781138 -0.28459397" />
+									<attribute id="Max" type="fvec3" value="0.28450918 0.73190814 0.28302446" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Height" type="float" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2831093 0.017781138 -0.28459397" />
+									<attribute id="Max" type="fvec3" value="0.28450918 0.73190814 0.28302446" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Height" type="float" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.2831093 0.017781138 -0.28459397" />
+									<attribute id="Max" type="fvec3" value="0.28450918 0.73190814 0.28302446" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Height" type="float" value="1" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
