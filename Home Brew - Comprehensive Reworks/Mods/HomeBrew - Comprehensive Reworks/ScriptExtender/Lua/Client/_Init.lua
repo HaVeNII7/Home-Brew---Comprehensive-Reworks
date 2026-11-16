@@ -1,5 +1,7 @@
 PRPrint(0, "Partial Respec (client) loaded")
+Ext.Require("Client/MenuScope.lua").Start()
 Ext.Require("Client/PartialRespecUI.lua")
+Ext.Require("Client/LevelUpBuild.lua")
 Ext.Require("Client/NativeHistoricalPreview.lua")
 Ext.Require("Client/SpellSchoolFilter.lua")
 Ext.Require("Client/AbilityMinimum.lua")

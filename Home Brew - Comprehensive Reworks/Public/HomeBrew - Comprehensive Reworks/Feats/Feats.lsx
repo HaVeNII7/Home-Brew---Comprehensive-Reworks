@@ -292,6 +292,7 @@
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="ArtificerGrenadier"/>
                     <attribute id="PassivesAdded" type="LSString" value="TheAnarchistsCookbook_Yokebreaker;ShockwaveTheory"/>
+					<attribute id="Selectors" type="LSString" value="AddSpells(62b78cbc-f9df-4834-a544-d6002d44d588,,,,AlwaysPrepared)" />
                     <attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Artificer&apos;)"/>
                     <attribute id="UUID" type="guid" value="8dfca7e9-16a1-419c-bb92-faae1eed1bff"/>
                 </node>
@@ -496,7 +497,7 @@
                 </node>
 				<node id="Feat">
                     <attribute id="Name" type="FixedString" value="FighterEldritchKnight"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Call_of_the_Old_One_Yokebreaker;Warlock_SpellSlots_Yokebreaker;From_Beyond"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Call_of_the_Old_One_Yokebreaker;Warlock_SpellSlots_Yokebreaker;Ex_Oblivione_Yokebreaker"/>
                     <attribute id="Selectors" type="LSString" value="SelectSpells(ffad33d2-e725-4655-ba80-0bc91e8002b3,2,0,Cantrips,,,AlwaysPrepared);SelectSpells(f33b1b19-43c6-4f61-a001-cd55e516791c,2,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared);SelectSpells(4f8a545f-2a42-490b-a008-7276d5186b0a,1,0,Spells,Charisma,e9127b70-22b7-42a1-b172-d02f828f260a,AlwaysPrepared)" />
 					<attribute id="Requirements" type="LSString" value="FeatRequirementProficiency(&apos;HB_Fighter&apos;)"/>
                     <attribute id="UUID" type="guid" value="9715353b-13b3-4cbc-ae1d-db99b7f6cc67"/>

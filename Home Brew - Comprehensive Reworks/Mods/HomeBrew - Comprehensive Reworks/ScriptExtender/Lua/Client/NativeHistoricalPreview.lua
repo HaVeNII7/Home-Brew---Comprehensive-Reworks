@@ -567,7 +567,9 @@ end
 Log = function(message)
     notes[#notes + 1] = tostring(message)
     if #notes > 360 then table.remove(notes, 2) end
-    if not batchLogs then FlushLog() end
+    if not batchLogs and (_G.HB_DebugDiagnostics == true
+        or tostring(message):find('ERROR',1,true)
+        or tostring(message):find('FAILED',1,true)) then FlushLog() end
 end
 local function Read(obj, name)
     if not obj then return nil end
@@ -8435,6 +8437,207 @@ local function ScanNative()
         end
     end
 end
+if _G.HB_EnableOrdinaryLevelUpProbe == true then
+(function()
+-- Read-only Level Up build handoff probe. Never executes game commands.
+local HB_LEVELUP_PROBE_FILE="HomeBrew/Diagnostics/HB_LevelUpBuild_Diagnostics.txt"
+local hbLevelUpProbeLines={"HomeBrew ordinary level-up native option schema probe v4 (read-only)"}
+local hbLevelUpProbeTick=0
+local hbLevelUpProbeLast=nil
+local hbLevelUpProbeShots=0
+local hbLevelUpProbeScreen=nil
+local function HBLevelUpProbeLabel(value)
+    if value==nil then return "nil" end
+    if type(value)=="string" or type(value)=="boolean" or type(value)=="number" then
+        return tostring(value):sub(1,115)
+    end
+    return "["..tostring(Read(value,"Type") or type(value)):sub(1,115).."]"
+end
+local function HBLevelUpProbeSave(line)
+    hbLevelUpProbeLines[#hbLevelUpProbeLines+1]=tostring(line)
+    if #hbLevelUpProbeLines>360 then table.remove(hbLevelUpProbeLines,2) end
+end
+local function HBLevelUpProbeFlush()
+    if Ext.IO and Ext.IO.SaveFile then
+        pcall(Ext.IO.SaveFile,HB_LEVELUP_PROBE_FILE,
+            table.concat(hbLevelUpProbeLines,"\n").."\n")
+    end
+end
+local function HBLevelUpProbeCommand(vm,name)
+    local command=Read(vm,name)
+    if not command then return name.."=missing" end
+    local ok,allowed=pcall(function() return command:CanExecute(nil) end)
+    return name.."="..(ok and tostring(allowed) or "unknown").."/"..type(command)
+end
+local HB_LEVELUP_OPTION_FIELDS={"PassiveId","Passive","Id","ID","UUID",
+    "Name","DisplayName","IsSelected","Selected","IsChecked","Checked",
+    "Enabled","IsEnabled","IsAvailable","Available","IsComplete","IsActive",
+    "SpellId","SpellID","IsCantrip","SelectedPassiveCount","MaxSelectedPassiveCount",
+    "SelectorId","ListId","Level","FeatId","Feat"}
+local function HBLevelUpProbeFields(obj,limit)
+    if not obj then return "nil" end
+    local names,parts={},{}
+    for _,name in ipairs(HB_LEVELUP_OPTION_FIELDS) do
+        local value=Read(obj,name)
+        if value~=nil then
+            parts[#parts+1]=name..":"..HBLevelUpProbeLabel(value)
+            names[name]=true
+        end
+    end
+    local properties=GetProperties(obj)
+    local n=0
+    for _,property in ipairs(properties) do
+        if n>=limit then break end
+        local name=tostring(property):gsub(" %[%a+%]$","")
+        if not names[name] and not name:find("Command",1,true) then
+            local value=Read(obj,name)
+            if value~=nil and (type(value)=="string" or type(value)=="number" or type(value)=="boolean") then
+                parts[#parts+1]=name..":"..HBLevelUpProbeLabel(value)
+                n=n+1
+            end
+        end
+    end
+    return table.concat(parts," "):sub(1,600)
+end
+local function HBLevelUpProbeCollection(col,name,limit)
+    local count=CollectionCount(col)
+    HBLevelUpProbeSave("COLLECTION "..name.." count="..tostring(count))
+    if not count then return end
+    for i=0,math.min(count-1,limit-1) do
+        local item=GetCollectionItem(col,i)
+        HBLevelUpProbeSave("ITEM "..name.."["..i.."] "
+            ..HBLevelUpProbeLabel(item).." "..HBLevelUpProbeFields(item,10))
+    end
+end
+local function HBLevelUpProbeSchema(obj,description)
+    if not obj then return end
+    local properties=GetProperties(obj)
+    HBLevelUpProbeSave("SCHEMA "..description.." type="..HBLevelUpProbeLabel(obj)
+        .." properties="..table.concat(properties,","):sub(1,2100))
+    local count=0
+    for _,raw in ipairs(properties) do
+        if count>=45 then break end
+        local key=tostring(raw):gsub(" %[ro%]$", "")
+        local value=Read(obj,key)
+        if value~=nil then
+            count=count+1
+            local kind=type(value)
+            local info=HBLevelUpProbeLabel(value)
+            if kind=="table" or kind=="userdata" then
+                local vt=Read(value,"Type")
+                local count2=CollectionCount(value)
+                info=info.." collection="..tostring(count2)
+                    .." nativeType="..tostring(vt)
+            end
+            HBLevelUpProbeSave("FIELD "..description.."."..key.."="..info)
+        end
+    end
+    local name=Read(obj,"Name")
+    if name~=nil and Ext.Loca and Ext.Loca.GetTranslatedString then
+        local ok,translation=pcall(Ext.Loca.GetTranslatedString,tostring(name))
+        if ok and type(translation)=="string" then
+            HBLevelUpProbeSave("TRANSLATED "..description.."="..translation:sub(1,200))
+        end
+    end
+end
+local function HBLevelUpProbeSnapshot(vm,screen,signature)
+    hbLevelUpProbeShots=hbLevelUpProbeShots+1
+    HBLevelUpProbeSave("SCREEN "..tostring(screen).." shot="..hbLevelUpProbeShots)
+    HBLevelUpProbeSave("STATE "..signature)
+    HBLevelUpProbeSave("COMMANDS "..HBLevelUpProbeCommand(vm,"FinishLevelUp")
+        .."; "..HBLevelUpProbeCommand(vm,"TogglePassive")
+        .."; "..HBLevelUpProbeCommand(vm,"SelectSpell")
+        .."; "..HBLevelUpProbeCommand(vm,"DeselectSpell"))
+    for _,name in ipairs({"ClassPassives","ClassAndSubClassPassives","SubClassPassives"}) do
+        local col=Read(vm,name)
+        local count=CollectionCount(col)
+        HBLevelUpProbeSave("GROUP "..name.." count="..tostring(count))
+        if count then
+            for i=0,math.min(count-1,3) do
+                local entry=GetCollectionItem(col,i)
+                HBLevelUpProbeSave("GROUP_ITEM "..name.."["..i.."] "
+                    ..HBLevelUpProbeLabel(entry).." "..HBLevelUpProbeFields(entry,10))
+                HBLevelUpProbeCollection(Read(entry,"Passives"),name.."["..i.."].Passives",32)
+            end
+        end
+    end
+    if hbLevelUpProbeShots==2 then
+        local group=GetCollectionItem(Read(vm,"ClassPassives"),0)
+        HBLevelUpProbeSchema(group,"ClassPassives[0]")
+        local options=Read(group,"Passives")
+        for _,i in ipairs({0,1,2,3,4,18,19}) do
+            HBLevelUpProbeSchema(GetCollectionItem(options,i),"ClassPassives[0].Passives["..i.."]")
+        end
+    end
+    if hbLevelUpProbeShots==1 then
+        for _,name in ipairs({"SelectableFeats","ClassSkills","ProgressionSpells",
+            "ProgressionCantrips","ProgressionFinalSpells"}) do
+            HBLevelUpProbeCollection(Read(vm,name),name,8)
+        end
+        local progression=Read(vm,"ClassProgressionDetails")
+        HBLevelUpProbeSave("PROGRESSION "..HBLevelUpProbeLabel(progression)
+            .." fields="..HBLevelUpProbeFields(progression,12))
+        if progression then
+            for _,name in ipairs({"SpellSelectors","NotSubPassiveSelectors",
+                "SubPassiveSelectors","ClassPassiveSelectors"}) do
+                HBLevelUpProbeCollection(Read(progression,name),"ClassProgressionDetails."..name,6)
+            end
+        end
+    end
+    HBLevelUpProbeSave("END_SNAPSHOT "..hbLevelUpProbeShots)
+    HBLevelUpProbeFlush()
+end
+HB_NATIVE_L1_SLIDER.ProbeQueued=false
+Ext.Events.Tick:Subscribe(function()
+    hbLevelUpProbeTick=hbLevelUpProbeTick+1
+    if hbLevelUpProbeTick%30~=0 or HB_NATIVE_L1_SLIDER.ProbeQueued
+        or not Ext.UI or not Ext.UI.Defer then return end
+    HB_NATIVE_L1_SLIDER.ProbeQueued=true
+    local ok,err=pcall(Ext.UI.Defer,function()
+      HB_NATIVE_L1_SLIDER.ProbeQueued=false
+      local safe,why=pcall(function()
+    local vm,screen=NativeVM()
+    if screen~="CharacterLevelUp" and screen~="CharacterLevelUp_c" then
+        hbLevelUpProbeLast=nil
+        hbLevelUpProbeShots=0
+        hbLevelUpProbeScreen=nil
+        return
+    end
+    if not vm then return end
+    local current=Read(vm,"CurrentCharacterLevel")
+    local available=Read(vm,"AvailableCharacterLevel")
+    local complete=Read(vm,"IsLevelUpComplete")
+    local step=Read(vm,"LevelUpStep")
+    local groups={}
+    for _,name in ipairs({"ClassPassives","SubClassPassives","ClassAndSubClassPassives"}) do
+        local first=GetCollectionItem(Read(vm,name),0)
+        groups[#groups+1]=name.."="..tostring(Read(first,"SelectedPassiveCount"))
+            .."/"..tostring(Read(first,"MaxSelectedPassiveCount"))
+    end
+    local signature="level="..tostring(current).."->"..tostring(available)
+        .." step="..HBLevelUpProbeLabel(step)
+        .." complete="..tostring(complete)
+        .." "..table.concat(groups," ")
+    if signature~=hbLevelUpProbeLast and hbLevelUpProbeShots<10 then
+        hbLevelUpProbeLast=signature
+        local ok,why=pcall(HBLevelUpProbeSnapshot,vm,screen,signature)
+        if not ok then
+            HBLevelUpProbeSave("PROBE_ERROR "..tostring(why))
+            HBLevelUpProbeFlush()
+        end
+    end
+      end)
+      if not safe then HBLevelUpProbeSave("SAFE_UI_PROBE_ERROR "..tostring(why)) end
+    end)
+    if not ok then
+        HB_NATIVE_L1_SLIDER.ProbeQueued=false
+        HBLevelUpProbeSave("SAFE_UI_PROBE_QUEUE_ERROR "..tostring(err))
+    end
+end)
+
+end)()
+end
+
 _G.HB_NativeLevelBridge = {
     ShowPreview = function(levels,maxLevel,level,resume,stagePassive,stagedRows,
         stageResource,stageOther,stagedResources,stagedOtherRows,confirmLevelRespec,prepareNativeLevelOne)
@@ -8950,9 +9153,22 @@ end
 -- Observe the unmodified native choice viewmodels. Do not call Execute() or
 -- assign anything to native DataContexts: the observation must be harmless.
 local tick = 0
+HB_NATIVE_L1_SLIDER.WatchQueued=false
 if Ext.Events and Ext.Events.Tick and Ext.Events.Tick.Subscribe then
     Ext.Events.Tick:Subscribe(function()
         tick=tick+1
+        if not previewOpen or HB_NATIVE_L1_SLIDER.WatchQueued
+            or not Ext.UI or not Ext.UI.Defer then return end
+        if tick%4~=0 and tick%6~=0 and tick%8~=0 and tick%12~=0
+            and tick%30~=0 and tick%120~=0 and tick%150~=0
+            and not queuedRefresh then return end
+        HB_NATIVE_L1_SLIDER.WatchQueued=true
+        local watchTick=tick
+        local ok,err=pcall(Ext.UI.Defer,function()
+            HB_NATIVE_L1_SLIDER.WatchQueued=false
+            if not previewOpen then return end
+            local safe,why=pcall(function()
+            local tick=watchTick
         -- Fallback for Noesis slider bindings invalidated by Cancel -> No:
         -- read its TwoWay-bound value even when the old ValueChanged command
         -- does not execute. The existing level switch and fail-closed native
@@ -9148,6 +9364,13 @@ if Ext.Events and Ext.Events.Tick and Ext.Events.Tick.Subscribe then
         if tick % 150 == 0 and previewOpen
             and (not reported.CharacterRespec or not reported.CharacterLevelUp) then
             pcall(ScanNative)
+        end
+            end)
+            if not safe then Log("NATIVE_SAFE_UI_WATCH_ERROR "..tostring(why)) end
+        end)
+        if not ok then
+            HB_NATIVE_L1_SLIDER.WatchQueued=false
+            Log("NATIVE_SAFE_UI_WATCH_QUEUE_ERROR "..tostring(err))
         end
     end)
 end

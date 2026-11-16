@@ -65,13 +65,13 @@
 	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff0001" version="2">Cycle of Balance</content>
 	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff000a" version="2">Each turn while in combat, you cycle through one of the four seasons. Each season grants two passive damage buffs equal to your levels in Druid divided by two, as well as damage &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; corresponding to your seasonal damage types. This bonus does not apply to damage dealt with an off-hand weapon.&lt;br&gt;&lt;br&gt;In addition, each season allows you to morph into a corresponding elemental Myrmidon.</content>
 	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00a1" version="2">Elemental Season: Spring</content>
-	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00aa" version="2">Affected creature is attuned to the season of Spring. When damaging an enemy, they deal additional Lightning and Thunder damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage. This bonus does not apply to damage dealt with an off-hand weapon.&lt;br&gt;&lt;br&gt;In addition, they may morph into an &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Air"&gt;Air Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00aa" version="2">Affected creature is attuned to the season of Spring. When damaging non-allied targets, they deal additional Lightning and Thunder damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage. This bonus does not apply to damage dealt with an off-hand weapon.&lt;br&gt;&lt;br&gt;In addition, they may morph into an &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Air"&gt;Air Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
 	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00b2" version="2">Elemental Season: Summer</content>
-	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00bb" version="2">Affected creature is attuned to the season of Summer. When damaging an enemy, they deal additional Fire and Radiant damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage. This bonus does not apply to damage dealt with an off-hand weapon.&lt;br&gt;&lt;br&gt;In addition, they may morph into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Fire"&gt;Fire Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00bb" version="2">Affected creature is attuned to the season of Summer. When damaging non-allied targets, they deal additional Fire and Radiant damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage. This bonus does not apply to damage dealt with an off-hand weapon.&lt;br&gt;&lt;br&gt;In addition, they may morph into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Fire"&gt;Fire Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
 	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00c3" version="2">Elemental Season: Fall</content>
-	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00cc" version="2">Affected creature is attuned to the season of Fall. When damaging an enemy, they deal additional Poison and Necrotic damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage. This bonus does not apply to damage dealt with an off-hand weapon.&lt;br&gt;&lt;br&gt;In addition, they may morph into an &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Earth"&gt;Earth Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00cc" version="2">Affected creature is attuned to the season of Fall. When damaging non-allied targets, they deal additional Poison and Necrotic damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage. This bonus does not apply to damage dealt with an off-hand weapon.&lt;br&gt;&lt;br&gt;In addition, they may morph into an &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Earth"&gt;Earth Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
 	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00d4" version="2">Elemental Season: Winter</content>
-	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00dd" version="2">Affected creature is attuned to the season of Winter. When damaging an enemy, they deal additional Cold and Force damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage. This bonus does not apply to damage dealt with an off-hand weapon.&lt;br&gt;&lt;br&gt;In addition, they may morph into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Water"&gt;Water Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
+	<content contentuid="ha585d015g08f6g4c52s1d6f54s6d54ff00dd" version="2">Affected creature is attuned to the season of Winter. When damaging non-allied targets, they deal additional Cold and Force damage equal to their levels in Druid divided by two and are &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to those types of damage. This bonus does not apply to damage dealt with an off-hand weapon.&lt;br&gt;&lt;br&gt;In addition, they may morph into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Water"&gt;Water Myrmidon&lt;/LSTag&gt; at any time as a free action.</content>
 	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z0001" version="2">Cycle of Balance: Air Myrmidon</content>
 	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z000a" version="2">Shift into an &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_Myrmidon_Air"&gt;Air Myrmidon&lt;/LSTag&gt; as a free action.</content>
 	<content contentuid="ae5967aac30a4b8babe8f0f2f7dfecd3z0002" version="2">Cycle of Balance: Fire Myrmidon</content>
@@ -209,7 +209,7 @@
 	<content contentuid="5126c10823d3434e8286ee66c19e569800zz1" version="1">Displacer Beast</content>
 
 	<content contentuid="5126c10823d3434e8286ee66c19e569800002" version="2">Veilstalker</content>
-	<content contentuid="5126c10823d3434e8286ee66c19e56980000b" version="2">While assuming a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wildshape&lt;/LSTag&gt;, deal additional Psychic damage to enemies, and recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; at the start of each of your turns, equal to your levels in Druid. This bonus does not apply to damage dealt with an off-hand weapon.</content>
+	<content contentuid="5126c10823d3434e8286ee66c19e56980000b" version="2">While assuming a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wildshape&lt;/LSTag&gt;, deal additional Psychic damage to non-allied targets, and recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; at the start of each of your turns, equal to your levels in Druid. This bonus does not apply to damage dealt with an off-hand weapon.</content>
 
 	<content contentuid="5126c10823d3434e8286ee66c19e569800003" version="2">Predatory Communion</content>
 	<content contentuid="5126c10823d3434e8286ee66c19e56980000c" version="2">Gain the ability to morph your allies into &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_DisplacerBeast"&gt;Displacer Beasts&lt;/LSTag&gt;. In addition, while &lt;LSTag Type="Status" Tooltip="SNEAKING_HEAVILY_OBSCURED"&gt;Heavily Obscured&lt;/LSTag&gt;, you are immune to all forms of curses.</content>
@@ -242,7 +242,7 @@
 	<content contentuid="he96500f3g4a0ag445dg9c20gbf779e375b5f" version="2">Symbiotic Entity</content>
 	<content contentuid="h927d41d9g5ed6g4a4fga717g45ba259261dc" version="5">Gain [1]. While you have Temporary Hit Points active, you deal an additional [2] when dealing damage. Additionally, &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt; will deal double damage while active.</content>
 	<content contentuid="h3c96a155g4061g4c87g9bc3gee1647f1035b" version="2">Symbiotic Entity</content>
-	<content contentuid="h0da9c0dfg1351g4f7bg8ff4gf300f82b1c00" version="4">Affected creature deals an additional [2], and &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt; will deal double damage, so long as they have &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="h0da9c0dfg1351g4f7bg8ff4gf300f82b1c00" version="4">Affected creature deals an additional [2] to non-allied targets, and &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt; will deal double damage, so long as they have &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;.</content>
 	<content contentuid="18a4141a7d3147d18d8de9d2d3f7c7a900000" version="4">&lt;LSTag Type="Image" Info="SoftWarning"/&gt; A creature reanimated via spores is not considered to be a summon.</content>
 
 	<content contentuid="h580791fcg0d77g485bg8f6eg4a9w8dfe9suy" version="2">Animator</content>
@@ -352,13 +352,13 @@
 	<content contentuid="h7f47975775534742b7d25a8d9a510416ge48" version="1">This totem will trigger an effect at the beginning of its turns.</content>
 	<content contentuid="hf65fb0d7ba1c42908c1b1c80f2ef85a8286d" version="1">This totem has shifted its element to [1], based on the summoner's current &lt;LSTag Type="Status" Tooltip="TOTEMIST_ELEMENTAL_COMMUNION_BASE"&gt;Elemental Communion&lt;/LSTag&gt;.</content>
 	<content contentuid="h718b0769eec549cc85d34b6e3ec43d059537" version="1">Conjure Totem</content>
-	<content contentuid="haae3b15d12ec481c993e100212c19e615f49" version="1">Conjure a totem.</content>
+	<content contentuid="haae3b15d12ec481c993e100212c19e615f49" version="1">Conjure a totem. Totems are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 
 	<content contentuid="h653de13df6314da9b4009a163fff372e2b6e" version="1">Totemic Initiate</content>
 	<content contentuid="h90b5d6c16c854067a9e5fdae11960c499329" version="1">Gain &lt;LSTag Type="Spell" Tooltip="Target_Totemist_ElementalBeamTotem"&gt;Elemental Totems&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Shout_Totemist_ElementalCommunion"&gt;Elemental Communion&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Target_Totemist_ElementalCalling"&gt;Elemental Calling&lt;/LSTag&gt;.</content> 
 
 	<content contentuid="h6fd04336924b4d49a9f0faded88dd7ba7230" version="1">Conjure Elemental Totem</content>
-	<content contentuid="hc016e124144541f5ad76dfdd42abb122g204" version="1">Conjure an elemental totem capable of casting &lt;LSTag Type="Spell" Tooltip="Target_Totemist_ElementalBeam_Base"&gt;Elemental Beam&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="hc016e124144541f5ad76dfdd42abb122g204" version="1">Conjure an elemental totem capable of casting &lt;LSTag Type="Spell" Tooltip="Target_Totemist_ElementalBeam_Base"&gt;Elemental Beam&lt;/LSTag&gt; for three turns. Totems are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 	<content contentuid="h105b66b350394843864ce2c063b34fc78406" version="1">Elemental Totem</content>
 	<content contentuid="hb98abbab2f334c2da7eedfbc829ae30c7aa0" version="1">Caustic Totem</content>
 	<content contentuid="hb461b120dfd14c5d960283af4990984b637b" version="1">Flame Totem</content>
@@ -408,7 +408,7 @@
 	<content contentuid="he17848ecce0141568e0bdced4049f259ef36" version="1">Totemic Relocation</content>
 	<content contentuid="h2709d4c55c4a44928394f7a2ee3a5a692af7" version="1">Target one of your &lt;LSTag Type="Spell" Tooltip="Target_Totemist_ElementalBeamTotem"&gt;Elemental Totems&lt;/LSTag&gt; and move it to a new location within [1] of you. Relocating your totem in this way does not require line of sight.</content>
 	<content contentuid="h5d956bb24aed4adaafcd61f50e1a02cbf07b" version="1">Conjure Surge Totem</content>
-	<content contentuid="h3e50292b85fb4c28a0e632a55d5287a2g98b" version="1">Conjure a totem for three turns that, upon being summoned and upon starting its turn, will cast &lt;LSTag Type="Spell" Tooltip="Projectile_Totemist_ElementalSurgeTotem_Effect"&gt;Elemental Surge&lt;/LSTag&gt;.</content>
+	<content contentuid="h3e50292b85fb4c28a0e632a55d5287a2g98b" version="1">Conjure a totem for three turns that, upon being summoned and upon starting its turn, will cast &lt;LSTag Type="Spell" Tooltip="Projectile_Totemist_ElementalSurgeTotem_Effect"&gt;Elemental Surge&lt;/LSTag&gt;. Totems are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 	<content contentuid="h5314d14040314c8d8d521ac832e127067935" version="1">Elemental Surge</content>
 	<content contentuid="h2c860c21f22e49c2861a50a77132794a9d9e" version="1">Unleash a destructive wave, dealing damage to nearby enemies and inflicting a relevant condition for three turns.&lt;br&gt;&lt;br&gt;The damage type and condition applied changes based on the summoner's current &lt;LSTag Type="Status" Tooltip="TOTEMIST_ELEMENTAL_COMMUNION_BASE"&gt;Elemental Communion&lt;/LSTag&gt; and their level in Druid.</content>
 	<content contentuid="h04a38432974a485a95437ff77100e7fa1g0f" version="1">Surge Totem</content>
@@ -424,7 +424,7 @@
 	<content contentuid="h844aca28540a49939066af34b702f8b4g0ge" version="1">Thunder Surge</content>
 
 	<content contentuid="hbcf8af2da65244efa07d27e1207f1e3437d9" version="1">Conjure Grasping Totem</content>
-	<content contentuid="hc6fb4f08b0b0427f8470be4b3d67dfc5cgb8" version="1">Conjure a totem for three turns that, upon being summoned and upon starting its turn, forces all nearby enemies to roll a Wisdom based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="TAUNTED"&gt;Goaded&lt;/LSTag&gt; into attacking it.&lt;br&gt;&lt;br&gt;Enemies will consider this totem to be a preferred target.</content>
+	<content contentuid="hc6fb4f08b0b0427f8470be4b3d67dfc5cgb8" version="1">Conjure a totem for three turns that, upon being summoned and upon starting its turn, forces all nearby enemies to roll a Wisdom based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="TAUNTED"&gt;Goaded&lt;/LSTag&gt; into attacking it.&lt;br&gt;&lt;br&gt;Enemies will consider this totem to be a preferred target. Totems are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 	<content contentuid="hea62d45f31cf4488a5a4473994013f70cdaf" version="1">Grasping Totem</content>
 	<content contentuid="h574aafd10b0c4792be534aadb501fe8d6bcd" version="1">Nature's Grasp</content>
 
@@ -444,12 +444,12 @@
 	<content contentuid="hc995db949dd44e5490736c37bab4a58cg349" version="1">Totemic Adept</content>
 	<content contentuid="haab4494d73664d3db9bb4dc61f6e77444676" version="1">Gain the ability to summon &lt;LSTag Type="Spell" Tooltip="Target_Totemist_FortressTotem"&gt;Bulwark Totems&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Target_Totemist_ChaosTotem"&gt;Chaos Totems&lt;/LSTag&gt;.</content>
 	<content contentuid="h6b756a6ad1cf431bb1f0d054f6e31a1fg7ea" version="1">Conjure Bulwark Totem</content>
-	<content contentuid="h425e521253ad4f09b85e31da97d3255b937b" version="1">Conjure a totem for three turns that, upon being summoned and upon starting its turn, grants all nearby allies &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; equal to your level until the end of your current combat encounter.</content>
+	<content contentuid="h425e521253ad4f09b85e31da97d3255b937b" version="1">Conjure a totem for three turns that, upon being summoned and upon starting its turn, grants all nearby allies &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt; equal to your level until the end of your current combat encounter. Totems are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 	<content contentuid="h6a0585da1e5d431c97e5aecc23fcde9c01da" version="1">Nature's Bulwark</content>
 	<content contentuid="h4b9a20600fce4c4186c0fab36520fe66bcc3" version="1">Bulwark Totem</content>
 	<content contentuid="h824b40fd0316402e805a4b0a85d6d74845b3" version="1">Chaos Totem</content>
 	<content contentuid="h57cbfdf36b08403bb9963ffcf8b1453a55a3" version="1">Conjure Chaos Totem</content>
-	<content contentuid="h09e66bd7d2e741a7b1fcfa7de833ad7f5bc1" version="1">Conjure a totem for three turns that, upon being summoned and upon starting its turn, causes every creature within range of the totem to potentially experience a sudden surge of &lt;LSTag Type="Passive" Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt;. Allies will experience positive surges, while enemies experience negative surges.</content>
+	<content contentuid="h09e66bd7d2e741a7b1fcfa7de833ad7f5bc1" version="1">Conjure a totem for three turns that, upon being summoned and upon starting its turn, causes every creature within range of the totem to potentially experience a sudden surge of &lt;LSTag Type="Passive" Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt;. Allies will experience positive surges, while enemies experience negative surges. Totems are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 
 	<content contentuid="hfb9d9cd8c33d4d29906fe70c1c703eae4f13" version="1">Elemental Overflow</content>
 	<content contentuid="h6c5c4d0442c24313a8aad27dd94e87be4fb2" version="1">Your &lt;LSTag Type="Spell" Tooltip="Target_Totemist_ElementalBeamTotem"&gt;Elemental Totems&lt;/LSTag&gt; gain an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;.</content>
@@ -476,7 +476,7 @@
 	<content contentuid="83fafe237f6740dea359526646fb6a2brood3" version="1">Ethereal Jaunt</content>
 	<content contentuid="83fafe237f6740dea359526646fb6a2broodc" version="1">Teleport to an unoccupied space you can see.</content>
 	<content contentuid="83fafe237f6740dea359526646fb6a2brood4" version="1">Nightmare's Call</content>
-	<content contentuid="83fafe237f6740dea359526646fb6a2broodd" version="1">Target a corpse, conjuring three phase spiderlings inside which claw their way free from it's body until the end of your current combat encounter.</content>
+	<content contentuid="83fafe237f6740dea359526646fb6a2broodd" version="1">Target a corpse, conjuring three phase spiderlings inside which claw their way free from it's body until the end of your current combat encounter. Spiders born from these corpses are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 
 	<content contentuid="83fafe237f6740dea359526646fb6a2100001" version="1">Nightmare Apotheosis</content>
 	<content contentuid="83fafe237f6740dea359526646fb6a210000a" version="1">Gain the ability to shift into a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape_BroodmarePhaseSpider"&gt;Nightmare Phase Spider&lt;/LSTag&gt; at will. In addition, when dealing damage, you potentially &lt;LSTag Type="Status" Tooltip="WEB"&gt;Enweb&lt;/LSTag&gt; your enemies.</content>
@@ -546,27 +546,19 @@
 	<content contentuid="h683ebb58gc713g4bc4gb9c2gbcab4ac5552b" version="2">Corrosive Spit</content>
 	<content contentuid="h18fd8438g2488g41bfga7aeg93470229d95d" version="4">Spray a target with corrosive fluids that slowly melt away its &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;.</content>
 	<content contentuid="h46408244gf01dg4accgb982gfd22021efa24" version="4">Acidic Decay</content>
-	<content contentuid="hbf8ed102g5fbeg416dg8712gc27f00e7191e" version="8">Affected creature is covered in an acidic fluid, reducing their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by [1]. The fluid will keep eating away at its defences, further reducing its Armour Class, unless it is washed away with water. In addition, they are unable to utilize their armours physical &lt;LSTag Type="Status" Tooltip="DAMAGE_REDUCTION"&gt;Damage Reduction&lt;/LSTag&gt;.</content>
-	<content contentuid="h3429c982g747ag4ce8gbbc2g89dacd1b54b9" version="2">Affected creature is covered in a corrosive fluid, reducing their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by [1]. The fluid can be washed away with water. In addition, they are unable to utilize their armours physical &lt;LSTag Type="Status" Tooltip="DAMAGE_REDUCTION"&gt;Damage Reduction&lt;/LSTag&gt;.</content>
+	<content contentuid="hbf8ed102g5fbeg416dg8712gc27f00e7191e" version="8">Affected creature is covered in an acidic fluid, reducing their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by [1]. The fluid will keep eating away at its defences, further reducing its Armour Class, unless it is washed away with water.</content>
+	<content contentuid="h3429c982g747ag4ce8gbbc2g89dacd1b54b9" version="2">Affected creature is covered in a corrosive fluid, reducing their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; by [1]. The fluid can be washed away with water.</content>
 	<content contentuid="h42eafd44gfe7cg4e24ga220g76236dd6370c" version="2">The target's Armour Class decreases by [1] per turn, up to a maximum penalty of -[2]. Water removes the fluid and its effects.</content>
 	<content contentuid="h0e46ea98g5c80g450aga9b5g9269179a7848" version="1">Clever Girls</content>
 	<content contentuid="h2ca5b313g0e08g4b0ega14bg01a0fea64458" version="2">When attacking a target under the effects of your &lt;LSTag Type="Spell" Tooltip="Projectile_CorrosiveSpit_Dilophosaurus"&gt;Corrosive Spit&lt;/LSTag&gt;, you attack with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h605796f1gbcb9g4bf2gb46dg2100cebc27a5" version="1">Wildshape: Dire Raven</content>
 	<content contentuid="hbd5b7624gf416g48d0g9a28g415b4fe456ab" version="4">Take the shape of a dire raven that can avoid attention and &lt;LSTag Type="Spell" Tooltip="Target_RendVision_Raven_Summon"&gt;Blind&lt;/LSTag&gt; enemies.</content>
-	<content contentuid="h258b5f82g833ag43f6g83a3gbe6aba932f3d" version="1">Rend Vision</content>
-	<content contentuid="h711280e0g7c59g433fga4fag95870bcfcff7" version="2">Attack a creature's eyes and &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blind&lt;/LSTag&gt; it.</content>
 
 	<content contentuid="h90c01d74gf156g4626ga8cag30c6f8d775e3" version="1">Wildshape: Dire Wolf</content>
 	<content contentuid="hcd9582f6g876cg4a53gb23bg006c3cf2e851" version="8">Assume the shape of a dire wolf that can &lt;LSTag Type="Spell" Tooltip="Target_Bite_Wolf_Dire_Wildshape"&gt;Expose&lt;/LSTag&gt; enemies' weak points.</content>
 	<content contentuid="h83163ccdg4921g44d0g9254g940cc93262e5" version="2">Exposing Bite</content>
 	<content contentuid="h035ece6cg9569g42eaga2b7g34e8ce307d74" version="4">Nip at a target to distract it, exposing a weak point. If your attack hits, the next attack against the target from within [1] will be a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
-	<content contentuid="h4f96e2fag9dd8g4072g965dg95cfefbeb623" version="2">Exposing Bite</content>
-	<content contentuid="h6a2b41c8g2af1g4021g959fgad60a1ab524d" version="2">Creature is distracted. The next attack against this creature from within [1] is guaranteed to be a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
-	<content contentuid="hcb2b874eg1a16g43e5g943dg7f3ff7a61129" version="1">Inciting Howl</content>
-	<content contentuid="h6cf0dc25g9069g4326gb6cag8547ea65c253" version="2">Each ally within earshot can move twice as far during their next turn.</content>
-	<content contentuid="h2bc70a04g9bb0g4ac3g9df7gf00a26cdd35d" version="2">Inciting Howl</content>
-	<content contentuid="h56cdffe6g9623g4647g839ag8cd406319fc5" version="3">&lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is doubled.</content>
 
 	<content contentuid="ha18a7b48g111ag4011gbd21gb7d6191ab5ba" version="1">Wildshape: Giant Spider</content>
 	<content contentuid="hc8e8c9dcg768fg4292gae2dgbb2fa509830a" version="7">Assume the shape of a giant spider that can &lt;LSTag Type="Spell" Tooltip="Target_Web_Spider"&gt;Enweb&lt;/LSTag&gt; enemies.</content>
@@ -587,11 +579,11 @@
 	<content contentuid="h77e5b733ge51ag4087gae8eg143de199a097" version="1">Pounce</content>
 	<content contentuid="h219f44f4ga9dag4f80gbb76g2201989c3310" version="2">Leap at a target to bite it and knock it &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d34912iekdj" version="2">Apex Predator</content>
-	<content contentuid="ba8dc90c6dd042ee918bba2f68d349126a998" version="3">When dealing damage to an enemy who is &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, you deal an additional +1d8 damage.</content>
+	<content contentuid="ba8dc90c6dd042ee918bba2f68d349126a998" version="3">When dealing damage to non-allied targets who are &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, you deal an additional +1d8 damage.</content>
 	<content contentuid="h77e5b733ge51ag4087gae8eg143de16a8454" version="2">Leap</content>
 	<content contentuid="h219f44f4ga9dag4f80gbb76g2201986a9878" version="3">Jump exceptionally far due to your Wildshape.</content>
 	<content contentuid="h77e5b733ge51ag4087gae8eg14338f8djfjd" version="2">Prowling</content>
-	<content contentuid="h219f44f4ga9dag4f80gbb76g22sds8f5d997" version="3">Affected creature is &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt;. Their next attack will deal an additional +[1] damage.</content>
+	<content contentuid="h219f44f4ga9dag4f80gbb76g22sds8f5d997" version="3">Affected creature is &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt;. Their next attack against a non-allied target will deal an additional +[1] damage.</content>
 
 	<content contentuid="h36e965fagc281g420ag85c5g270c1c0b4f21" version="2">Wildshape: Owlbear</content>
 	<content contentuid="h64d3e5f1gb8e6g454eg9eebg6b75785fc275" version="2">Take the shape of an owlbear that can &lt;LSTag Type="Spell" Tooltip="Shout_Owlbear_Wildshape_Smash"&gt;Rupture&lt;/LSTag&gt; the ground and become &lt;LSTag Type="Spell" Tooltip="Shout_Owlbear_Wildshape_Enrage"&gt;Enraged&lt;/LSTag&gt;.</content>
@@ -729,10 +721,10 @@
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d349120000n" version="1">Damaging an enemy potentially &lt;LSTag Type="Status" Tooltip="TAUNTED"&gt;Goads&lt;/LSTag&gt; them into attacking you.</content>
 
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d3491200015" version="1">Primal Bloodletter</content>
-	<content contentuid="ba8dc90c6dd042ee918bba2f68d349120000o" version="1">While assuming the form of a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wildshape&lt;/LSTag&gt;, a &lt;LSTag Type="Spell" Tooltip="Shout_ShapeoftheCosmos"&gt;Shape of the Cosmos&lt;/LSTag&gt;, while &lt;LSTag Type="Status" Tooltip="SYMBIOTIC_ENTITY"&gt;Symbiotic Entity&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="TOTEMIST_ELEMENTAL_COMMUNION_BASE"&gt;Elemental Communion&lt;/LSTag&gt; is active, or while your &lt;LSTag Type="Spell" Tooltip="Target_ConjureDryad"&gt;Dryad&lt;/LSTag&gt; is currently summoned, you have a chance to inflict &lt;LSTag Type="Status" Tooltip="GAPING_WOUND"&gt;Gaping Wounds&lt;/LSTag&gt; on your target when damaging them.</content>
+	<content contentuid="ba8dc90c6dd042ee918bba2f68d349120000o" version="1">While assuming the form of a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wildshape&lt;/LSTag&gt;, a &lt;LSTag Type="Spell" Tooltip="Shout_ShapeoftheCosmos"&gt;Shape of the Cosmos&lt;/LSTag&gt;, while &lt;LSTag Type="Status" Tooltip="SYMBIOTIC_ENTITY"&gt;Symbiotic Entity&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="TOTEMIST_ELEMENTAL_COMMUNION_BASE"&gt;Elemental Communion&lt;/LSTag&gt; is active, or while your &lt;LSTag Type="Spell" Tooltip="Target_ConjureDryad"&gt;Dryad&lt;/LSTag&gt; is currently summoned, you have a chance to inflict &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleeding&lt;/LSTag&gt; on your target for three turns when damaging them.</content>
 
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d3491200016" version="1">Primal Surge</content>
-	<content contentuid="ba8dc90c6dd042ee918bba2f68d349120000p" version="1">Deal additional damage to enemies while &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wildshaped&lt;/LSTag&gt; equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="ba8dc90c6dd042ee918bba2f68d349120000p" version="1">Deal additional damage to non-allied targets while &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wildshaped&lt;/LSTag&gt; equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;.</content>
 
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d3491200017" version="1">Primal Takedown</content>
 	<content contentuid="ba8dc90c6dd042ee918bba2f68d349120000q" version="1">While assuming the form of a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wildshape&lt;/LSTag&gt;, a &lt;LSTag Type="Spell" Tooltip="Shout_ShapeoftheCosmos"&gt;Shape of the Cosmos&lt;/LSTag&gt;, while &lt;LSTag Type="Status" Tooltip="SYMBIOTIC_ENTITY"&gt;Symbiotic Entity&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="TOTEMIST_ELEMENTAL_COMMUNION_BASE"&gt;Elemental Communion&lt;/LSTag&gt; is active, or while your &lt;LSTag Type="Spell" Tooltip="Target_ConjureDryad"&gt;Dryad&lt;/LSTag&gt; is currently summoned, you have a chance to knock your target &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; when damaging them.</content>

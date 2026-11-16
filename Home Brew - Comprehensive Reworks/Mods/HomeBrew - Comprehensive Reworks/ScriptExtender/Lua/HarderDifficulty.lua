@@ -12,6 +12,11 @@
 --   * Stats: AC / Attack / Damage / Damage Reduction / Saves / Spell Save DC
 
 local MOD_UUID = "486d1526-3505-4b09-9790-0f6a60f5ac0f"
+local HB_MCMChoiceChannel = Ext.Net.CreateChannel(MOD_UUID, "HB_Difficulty_MCMPresetChoices_V2")
+local HB_MCMChoiceRequestChannel = Ext.Net.CreateChannel(MOD_UUID, "HB_Difficulty_MCMPresetChoices_Request_V1")
+local HB_GameAssetChannel = Ext.Net.CreateChannel(MOD_UUID, "HB_Difficulty_GameAsset_V1")
+local HB_PresetChoiceChannel = Ext.Net.CreateChannel(MOD_UUID, "HB_Difficulty_PresetChoice_V1")
+local HB_CustomEditsChannel = Ext.Net.CreateChannel(MOD_UUID, "HB_Difficulty_CustomEdits_V1")
 
 -- Encounter classification passives
 local PASSIVE_DANGEROUS = "Dangerous_Encounter"
@@ -22,6 +27,10 @@ local SUMMON_EXCLUSION_STATUSES = {
     "SHADOWCURSE_SUMMON_CHECK",
     "UNSUMMON_ABLE",
 }
+local SUMMON_EXCLUSION_LOOKUP = {}
+for _, status in ipairs(SUMMON_EXCLUSION_STATUSES) do
+    SUMMON_EXCLUSION_LOOKUP[status] = true
+end
 
 -- Late combat joiners are processed after a short delay.
 local pendingEnteredCombat = {}
@@ -272,7 +281,10 @@ local isApplyingPreset = false
 local HB_diagnosticHistory = {}
 local function Log(message)
     local value=tostring(message)
-    Ext.Utils.Print(string.format("[HarderDifficulty] %s", value))
+    if _G.HB_DebugConsole == true or value:find('failed',1,true)
+        or value:find('error',1,true) or value:find('unavailable',1,true) then
+        Ext.Utils.Print(string.format("[HarderDifficulty] %s", value))
+    end
     if value:find("save-scoped",1,true) or value:find("Save-specific",1,true)
         or value:find("BG3 difficulty",1,true) or value:find("Deific",1,true)
         or value:find("Legacy save",1,true) or value:find("per-save",1,true)
@@ -283,7 +295,7 @@ local function Log(message)
         or value:find("Single Save",1,true) then
         HB_diagnosticHistory[#HB_diagnosticHistory+1]=value
         if #HB_diagnosticHistory>80 then table.remove(HB_diagnosticHistory,1) end
-        if Ext.IO and Ext.IO.SaveFile then
+        if _G.HB_DebugDiagnostics == true and Ext.IO and Ext.IO.SaveFile then
             pcall(Ext.IO.SaveFile,"HomeBrew/Diagnostics/HB_DifficultyIntegration_Diagnostics.txt",
                 table.concat(HB_diagnosticHistory,"\n").."\n")
         end
@@ -463,12 +475,19 @@ local function HB_PublishMCMPresetUI(force)
         if not ok or result==false then
             Log("Single Save MCM enum update failed: "..tostring(result))
         end
+    elseif MCM == nil then
+        -- MCM is an optional external dependency. During an HB+SE-only
+        -- isolation test no enum API can exist; this is not a failure and
+        -- shouldn't generate a false missing-feature warning. The server
+        -- campaign guard and network broadcast remain unchanged.
     elseif not HB_mcmChoiceWarned then
         HB_mcmChoiceWarned=true
         Log("Single Save enum API unavailable; server guard and MCM menu gate still active")
     end
-    if Ext.Net and Ext.Net.BroadcastMessage then
-        local sent,err=pcall(Ext.Net.BroadcastMessage,"HB_Difficulty_MCMPresetChoices_V1",state)
+    if HB_MCMChoiceChannel then
+        local sent,err=pcall(function()
+            HB_MCMChoiceChannel:Broadcast({State=state})
+        end)
         if not sent or err==false then
             Log("Single Save MCM enum client sync unavailable: "..tostring(err))
         end
@@ -479,13 +498,11 @@ local function HB_PublishMCMPresetUI(force)
     end
     HB_mcmLastChoiceState=state
 end
-if Ext.RegisterNetListener then
-    Ext.RegisterNetListener("HB_Difficulty_MCMPresetChoices_Request_V1",function(_,_,userId)
+HB_MCMChoiceRequestChannel:SetHandler(function(_,userId)
         -- Read-only request: the server independently checks its game-owned
         -- ruleset before broadcasting; the sender never supplies a lock value.
         HB_PublishMCMPresetUI(true)
-    end)
-end
+end)
 if Ext.Vars and Ext.Vars.RegisterModVariable then
     local ok,err=pcall(Ext.Vars.RegisterModVariable,MOD_UUID,HB_SAVE_KEY,
         {Server=true, Client=false, Persistent=true, WriteableOnServer=true, SyncToClient=false})
@@ -533,8 +550,8 @@ local function HB_AuthenticatedHost(userId, event)
 end
 -- The client sends the authoritative game-owned RulesetSelectionPreset asset from
 -- the native difficulty page; this is NOT based on guessed combat modifiers.
-if Ext.RegisterNetListener then
-    Ext.RegisterNetListener("HB_Difficulty_GameAsset_V1",function(_,message,userId)
+HB_GameAssetChannel:SetHandler(function(data,userId)
+    local message=type(data)=="table" and data.Message or nil
         if type(message)~="string" then return end
         local origin,asset=message:match("^(%a+):(.+)$")
         if (origin~="new" and origin~="live") or not HB_DIFFICULTY_ASSETS[asset] then
@@ -609,8 +626,7 @@ if Ext.RegisterNetListener then
         HB_lastGameAsset=asset
         _G.HB_DifficultyAssetToApply=preset
         Log("BG3 difficulty asset received: "..asset.." maps to "..preset)
-    end)
-end
+end)
 if Ext.Events.SessionLoaded then
     Ext.Events.SessionLoaded:Subscribe(function()
         -- A preset request deferred from an old campaign must never reach a
@@ -636,8 +652,8 @@ local DIFFICULTY_PRESETS = Ext.Require("Shared/DifficultyPresetDetails.lua").Pre
 local function HB_IsKnownPreset(preset)
     return type(preset)=="string" and (preset=="Custom" or DIFFICULTY_PRESETS[preset]~=nil)
 end
-if Ext.RegisterNetListener then
-    Ext.RegisterNetListener("HB_Difficulty_PresetChoice_V1",function(_,preset,userId)
+HB_PresetChoiceChannel:SetHandler(function(data,userId)
+    local preset=type(data)=="table" and data.Preset or nil
         if not HB_IsKnownPreset(preset) then
             Log("In-game preset rejected: unknown value="..tostring(preset))
             return
@@ -664,8 +680,7 @@ if Ext.RegisterNetListener then
         end
         _G.HB_DifficultyAssetToApply=preset
         Log("In-game preset requested: "..preset)
-    end)
-end
+end)
 
 -- HELPERS
 
@@ -690,8 +705,11 @@ local function IsExcludedSummon(guid)
 end
 
 local function IsValidNPCTarget(guid)
+    -- IsPlayerCharacter already repeats the IsCharacter query. A full level
+    -- refresh visits hundreds of NPCs across HP/stats/resource routes, so
+    -- perform each native character check only once along this path.
     return IsCharacter(guid)
-        and not IsPlayerCharacter(guid)
+        and Osi.IsPlayer(guid) ~= 1
         and not IsExcludedSummon(guid)
 end
 
@@ -706,16 +724,23 @@ local function HasStatus(guid, status)
         and Osi.HasActiveStatus(guid, status) == 1
 end
 
+-- Positive-only stat cache: every refresh previously retrieved the same
+-- installed status definition for each of hundreds of characters. Do not
+-- cache missing statuses, since another mod may define one later in a session.
+-- StatsLoaded invalidates known entries for a fresh stat registry.
+local hbKnownStatusStats = {}
+if Ext.Events and Ext.Events.StatsLoaded then
+    Ext.Events.StatsLoaded:Subscribe(function() hbKnownStatusStats = {} end)
+end
 local function StatusExists(status)
-    if status == nil or status == "" then
-        return false
-    end
-
-    -- Ext.Stats.Get returns nil when the status is not defined.
-    return Ext.Stats.Get(status) ~= nil
+    if status == nil or status == "" then return false end
+    if hbKnownStatusStats[status] then return true end
+    local found = Ext.Stats.Get(status) ~= nil
+    if found then hbKnownStatusStats[status] = true end
+    return found
 end
 
-local function ApplyStatusPermanent(guid, status)
+local function ApplyStatusPermanent(guid, status, alreadyAbsent)
     if not status or status == "" then
         return
     end
@@ -728,7 +753,7 @@ local function ApplyStatusPermanent(guid, status)
         return
     end
 
-    if not HasStatus(guid, status) then
+    if alreadyAbsent or not HasStatus(guid, status) then
         Osi.ApplyStatus(guid, status, -1, 1, guid)
     end
 end
@@ -744,6 +769,24 @@ local function RemoveStatuses(guid, statuses)
         RemoveStatusIfPresent(guid, status)
     end
 end
+
+-- Combat/level-start reconciliation should not tear down and recreate a
+-- correct boost on every character. This reads exactly the same authoritative
+-- live status state as RemoveStatuses, but issues Osiris writes only for
+-- missing or obsolete boosts. Explicit force=true MCM/preset changes retain
+-- the original remove/reapply behavior for maximum compatibility.
+local function ReconcileStatuses(guid, statuses, wanted)
+    for _, status in ipairs(statuses) do
+        local active = HasStatus(guid, status)
+        local required = wanted[status] == true
+        if active and not required then
+            Osi.RemoveStatus(guid, status)
+        elseif required and not active then
+            ApplyStatusPermanent(guid, status, true)
+        end
+    end
+end
+
 
 local function HasPassive(guid, passive)
     return Osi.HasPassive(guid, passive) == 1
@@ -761,12 +804,30 @@ local function EncounterType(guid)
     return "normal"
 end
 
+-- Only a synchronous loaded-character refresh shares one read-only MCM
+-- snapshot. Event-driven changes outside that refresh always read MCM live.
+-- Reentrant refreshes restore the outer cache; a nil MCM value is cached too.
+local hbRefreshSettings = nil
+-- Derived desired status sets are constant for a given settings table during
+-- a synchronous full refresh. Share at most one per player/NPC encounter
+-- category; never keep these caches after the batch or across MCM edits.
+local hbRefreshStatusSets = nil
+local hbNilSetting = {}
+local function ReadSetting(settingId)
+    if not hbRefreshSettings then return MCM.Get(settingId) end
+    local value = hbRefreshSettings[settingId]
+    if value == nil then
+        value = MCM.Get(settingId)
+        hbRefreshSettings[settingId] = value == nil and hbNilSetting or value
+    end
+    return value == hbNilSetting and nil or value
+end
 local function GetInt(settingId, defaultValue)
     if not (MCM and MCM.Get) then
         return defaultValue
     end
 
-    local value = MCM.Get(settingId)
+    local value = ReadSetting(settingId)
     if type(value) == "number" then
         return math.floor(value)
     end
@@ -779,7 +840,7 @@ local function GetBool(settingId, defaultValue)
         return defaultValue
     end
 
-    local value = MCM.Get(settingId)
+    local value = ReadSetting(settingId)
 
     if type(value) == "boolean" then
         return value
@@ -807,7 +868,7 @@ local function GetString(settingId, defaultValue)
         return defaultValue
     end
 
-    local value = MCM.Get(settingId)
+    local value = ReadSetting(settingId)
     if type(value) == "string" and value ~= "" then
         return value
     end
@@ -819,12 +880,8 @@ local function Clamp(value, minimum, maximum)
     return math.max(minimum, math.min(maximum, value))
 end
 
-local function NormalizeNPCMode(value)
-    local mode = tostring(value or "Extreme")
-    mode = mode:gsub("^%s+", ""):gsub("%s+$", ""):lower()
-    mode = mode:gsub("%s+", "")
-
-    local modeToStatusKey = {
+-- Normalization mapping is static. Avoid constructing it for every NPC.
+local hbNPCModeToStatusKey = {
         standard = "veryeasy",
         formidable = "easy",
         extreme = "normal",
@@ -835,13 +892,12 @@ local function NormalizeNPCMode(value)
         legendary = "legendary",
         ascendant = "ascendant",
         impossible = "impossible",
-    }
-
-    if modeToStatusKey[mode] then
-        return modeToStatusKey[mode]
-    end
-
-    return "normal"
+}
+local function NormalizeNPCMode(value)
+    local mode = tostring(value or "Extreme")
+    mode = mode:gsub("^%s+", ""):gsub("%s+$", ""):lower()
+    mode = mode:gsub("%s+", "")
+    return hbNPCModeToStatusKey[mode] or "normal"
 end
 
 local function NormalizePlayerHPMode(value)
@@ -866,10 +922,44 @@ local function HasAnyStatus(guid, statuses)
     return false
 end
 
+local function WantedStatStatuses(settings, proficiencies)
+    if hbRefreshStatusSets and hbRefreshStatusSets[settings] then
+        return hbRefreshStatusSets[settings]
+    end
+    local wanted = {}
+    for statKey, settingId in pairs(settings) do
+        local status
+        if GetBool(proficiencies[statKey], false) then
+            status = PROFICIENCY_STAT_STATUS[statKey]
+        else
+            local value = Clamp(GetInt(settingId, 0), 0, 10)
+            if value > 0 then status = STAT_STATUS[statKey][value] end
+        end
+        if status then wanted[status] = true end
+    end
+    if hbRefreshStatusSets then hbRefreshStatusSets[settings] = wanted end
+    return wanted
+end
+
+local function WantedResourceStatuses(settings)
+    if hbRefreshStatusSets and hbRefreshStatusSets[settings] then
+        return hbRefreshStatusSets[settings]
+    end
+    local wanted = {}
+    local actions = Clamp(GetInt(settings.actions, 0), 0, 3)
+    local bonusActions = Clamp(GetInt(settings.bonusactions, 0), 0, 3)
+    local reactions = Clamp(GetInt(settings.reactions, 0), 0, 3)
+    if actions > 0 then wanted[ACTION_STATUS[actions]] = true end
+    if bonusActions > 0 then wanted[BONUS_STATUS[bonusActions]] = true end
+    if reactions > 0 then wanted[REACTION_STATUS[reactions]] = true end
+    if hbRefreshStatusSets then hbRefreshStatusSets[settings] = wanted end
+    return wanted
+end
+
 -- NPC SYSTEMS
 
-local function ApplyNPCHP(guid, force)
-    if not IsValidNPCTarget(guid) then
+local function ApplyNPCHP(guid, force, prevalidated)
+    if not prevalidated and not IsValidNPCTarget(guid) then
         RemoveStatuses(guid, ALL_NPC_HP_STATUSES)
         return
     end
@@ -886,18 +976,23 @@ local function ApplyNPCHP(guid, force)
     ApplyStatusPermanent(guid, status)
 end
 
-local function ApplyNPCStats(guid, force)
-    if not IsValidNPCTarget(guid) then
+local function ApplyNPCStats(guid, force, prevalidated, knownEncounter)
+    if not prevalidated and not IsValidNPCTarget(guid) then
         RemoveStatuses(guid, ALL_STAT_STATUSES)
         return
     end
 
-    local encounter = EncounterType(guid)
+    local encounter = knownEncounter or EncounterType(guid)
     local settings = NPC_STATS[encounter]
     local proficiencySettings = NPC_PROFICIENCY[encounter]
 
-    -- Always rebuild this category. This correctly restores individual
-    -- statuses if one was removed while others remained.
+    -- Reconcile during ordinary combat/level-start checks; rebuild when an
+    -- MCM preset explicitly requests a force refresh.
+    if not force and _G.HB_DifficultyLegacyStatusReapply ~= true then
+        ReconcileStatuses(guid, ALL_STAT_STATUSES,
+            WantedStatStatuses(settings, proficiencySettings))
+        return
+    end
     RemoveStatuses(guid, ALL_STAT_STATUSES)
 
     for statKey, settingId in pairs(settings) do
@@ -912,15 +1007,19 @@ local function ApplyNPCStats(guid, force)
     end
 end
 
-local function ApplyNPCResources(guid, force)
-    if not IsValidNPCTarget(guid) then
+local function ApplyNPCResources(guid, force, prevalidated, knownEncounter)
+    if not prevalidated and not IsValidNPCTarget(guid) then
         RemoveStatuses(guid, ALL_RESOURCE_STATUSES)
         return
     end
 
-    local encounter = EncounterType(guid)
+    local encounter = knownEncounter or EncounterType(guid)
     local settings = NPC_RESOURCES[encounter]
 
+    if not force and _G.HB_DifficultyLegacyStatusReapply ~= true then
+        ReconcileStatuses(guid, ALL_RESOURCE_STATUSES, WantedResourceStatuses(settings))
+        return
+    end
     local actions = Clamp(GetInt(settings.actions, 0), 0, 3)
     local bonusActions = Clamp(GetInt(settings.bonusactions, 0), 0, 3)
     local reactions = Clamp(GetInt(settings.reactions, 0), 0, 3)
@@ -942,8 +1041,8 @@ end
 
 -- PLAYER SYSTEMS
 
-local function ApplyPlayerHP(guid, force)
-    if not IsValidPlayerTarget(guid) then
+local function ApplyPlayerHP(guid, force, prevalidated)
+    if not prevalidated and not IsValidPlayerTarget(guid) then
         RemoveStatuses(guid, ALL_PLAYER_HP_STATUSES)
         return
     end
@@ -962,12 +1061,17 @@ local function ApplyPlayerHP(guid, force)
     end
 end
 
-local function ApplyPlayerStats(guid, force)
-    if not IsValidPlayerTarget(guid) then
+local function ApplyPlayerStats(guid, force, prevalidated)
+    if not prevalidated and not IsValidPlayerTarget(guid) then
         RemoveStatuses(guid, ALL_STAT_STATUSES)
         return
     end
 
+    if not force and _G.HB_DifficultyLegacyStatusReapply ~= true then
+        ReconcileStatuses(guid, ALL_STAT_STATUSES,
+            WantedStatStatuses(PLAYER_STATS, PLAYER_PROFICIENCY))
+        return
+    end
     RemoveStatuses(guid, ALL_STAT_STATUSES)
 
     for statKey, settingId in pairs(PLAYER_STATS) do
@@ -982,12 +1086,16 @@ local function ApplyPlayerStats(guid, force)
     end
 end
 
-local function ApplyPlayerResources(guid, force)
-    if not IsValidPlayerTarget(guid) then
+local function ApplyPlayerResources(guid, force, prevalidated)
+    if not prevalidated and not IsValidPlayerTarget(guid) then
         RemoveStatuses(guid, ALL_RESOURCE_STATUSES)
         return
     end
 
+    if not force and _G.HB_DifficultyLegacyStatusReapply ~= true then
+        ReconcileStatuses(guid, ALL_RESOURCE_STATUSES, WantedResourceStatuses(PLAYER_RESOURCES))
+        return
+    end
     local actions = Clamp(GetInt(PLAYER_RESOURCES.actions, 0), 0, 3)
     local bonusActions = Clamp(GetInt(PLAYER_RESOURCES.bonusactions, 0), 0, 3)
     local reactions = Clamp(GetInt(PLAYER_RESOURCES.reactions, 0), 0, 3)
@@ -1035,8 +1143,10 @@ local function ApplyResources(guid, force)
     end
 end
 
-local function ApplyAllSystems(guid, force)
-    if not IsCharacter(guid) then
+local function ApplyAllSystems(guid, force, prevalidated)
+    -- World-wide refresh already checked this UUID in ForEachLoadedCharacter.
+    -- Explicit event callers still validate their own target here.
+    if not prevalidated and not IsCharacter(guid) then
         return
     end
 
@@ -1048,30 +1158,59 @@ local function ApplyAllSystems(guid, force)
         return
     end
 
-    ApplyHP(guid, force)
-    ApplyStats(guid, force)
-    ApplyResources(guid, force)
+    -- ApplyHP/Stats/Resources each independently classify player/NPC and
+    -- repeat IsCharacter, IsPlayer, and summon-status Osiris calls. This
+    -- combined route has already validated and excluded the character, so
+    -- classify exactly once and pass that verified fact to the category
+    -- helpers. HP, then stats, then resources retain the original ordering.
+    if Osi.IsPlayer(guid) == 1 then
+        RemoveStatuses(guid, ALL_NPC_HP_STATUSES)
+        ApplyPlayerHP(guid, force, true)
+        ApplyPlayerStats(guid, force, true)
+        ApplyPlayerResources(guid, force, true)
+    else
+        RemoveStatuses(guid, ALL_PLAYER_HP_STATUSES)
+        ApplyNPCHP(guid, force, true)
+        -- The HP step can trigger status effects, so determine the encounter
+        -- after HP. For nonforced reconciliation, share that classification
+        -- across the two remaining stat/resource passes. Forced refreshes
+        -- keep the legacy independent classification in both helpers.
+        local encounter = not force and EncounterType(guid) or nil
+        ApplyNPCStats(guid, force, true, encounter)
+        ApplyNPCResources(guid, force, true, encounter)
+    end
 end
 
 -- REFRESH
 
 local function ForEachLoadedCharacter(callback)
-    local seen = 0
-
-    for _, entity in pairs(Ext.Entity.GetAllEntitiesWithComponent("ServerCharacter")) do
-        local guid = entity.Uuid and entity.Uuid.EntityUuid
-        if IsCharacter(guid) then
-            seen = seen + 1
-            callback(guid)
+    -- No MCM settings change within this synchronous world refresh. Read each
+    -- setting once per refresh, not for every character. Clear even if a
+    -- malformed entity throws, so the next callback sees the current values.
+    local previous = hbRefreshSettings
+    local previousStatuses = hbRefreshStatusSets
+    hbRefreshSettings = {}
+    hbRefreshStatusSets = {}
+    local ok, result = pcall(function()
+        local seen = 0
+        for _, entity in pairs(Ext.Entity.GetAllEntitiesWithComponent("ServerCharacter")) do
+            local guid = entity.Uuid and entity.Uuid.EntityUuid
+            if IsCharacter(guid) then
+                seen = seen + 1
+                callback(guid)
+            end
         end
-    end
-
-    return seen
+        return seen
+    end)
+    hbRefreshSettings = previous
+    hbRefreshStatusSets = previousStatuses
+    if not ok then error(result, 0) end
+    return result
 end
 
 local function RefreshAllLoaded(reason, force)
     local seen = ForEachLoadedCharacter(function(guid)
-        ApplyAllSystems(guid, force == true)
+        ApplyAllSystems(guid, force == true, true)
     end)
 
     Log(string.format(
@@ -1452,8 +1591,8 @@ local function HB_ApplyNewGameCustom(asset)
     end
     Log("New Game Custom settings restored after character creation: "..count)
 end
-if Ext.RegisterNetListener then
-    Ext.RegisterNetListener("HB_Difficulty_CustomEdits_V1",function(_,message,userId)
+HB_CustomEditsChannel:SetHandler(function(data,userId)
+    local message=type(data)=="table" and data.Message or nil
         if not HB_sessionRestored or not MCM or not MCM.Set then return end
         if not HB_AuthenticatedHost(userId,"In-game custom edits") then return end
         if HB_IsSingleSave()~=false or GetString(DIFFICULTY_PRESET,"Default")~="Custom" then
@@ -1500,8 +1639,7 @@ if Ext.RegisterNetListener then
         HB_WriteSaved("native custom edits")
         RefreshAllLoaded("Native Custom settings",true)
         Log("In-game custom edits committed: "..tostring(count))
-    end)
-end
+end)
 
 Ext.Osiris.RegisterListener("CombatStarted", 1, "after", function(combatGuid)
     RefreshAllLoaded("Combat started: " .. tostring(combatGuid), false)
@@ -1514,13 +1652,8 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(guid, combatGu
 end)
 
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(object, status, causee, storyActionID)
-    if IsCharacter(object) then
-        for _, exclusionStatus in ipairs(SUMMON_EXCLUSION_STATUSES) do
-            if status == exclusionStatus then
-                ApplyAllSystems(object, true)
-                return
-            end
-        end
+    if SUMMON_EXCLUSION_LOOKUP[status] and IsCharacter(object) then
+        ApplyAllSystems(object, true)
     end
 end)
 

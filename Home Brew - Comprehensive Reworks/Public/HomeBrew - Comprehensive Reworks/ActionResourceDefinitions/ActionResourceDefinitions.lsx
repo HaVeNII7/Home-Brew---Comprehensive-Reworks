@@ -212,6 +212,16 @@
                     <attribute id="UUID" type="guid" value="281f289d-3c0b-433a-a7ed-0505be88ec9e" />
 					</node>
         <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h98e3be41aead4b5bb8ee60104126dedgreat" version="1" />
+                    <attribute id="DisplayName" type="TranslatedString" handle="hd3a156cc7fbf4a5c985eef63f0c2b99great" version="1" />
+                    <attribute id="Error" type="TranslatedString" handle="hc45f783f425b4558b9551da613a4f211dd22" version="1" />
+                    <attribute id="MaxLevel" type="uint32" value="0" />
+                    <attribute id="Name" type="FixedString" value="GreaterAttunement" />
+                    <attribute id="ReplenishType" type="FixedString" value="Never" />
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true" />
+                    <attribute id="UUID" type="guid" value="4ed4144c-b93f-4de4-96e3-9a62efc2ea3d" />
+					</node>
+        <node id="ActionResourceDefinition">
                     <attribute id="Description" type="TranslatedString" handle="99523fb3deaa14de1766304e0911fbc49ae99" version="1" />
                     <attribute id="DisplayName" type="TranslatedString" handle="88523fb3deaa14de1766304e0911fbc49ae88" version="3" />
                     <attribute id="MaxLevel" type="uint32" value="0" />

@@ -98,12 +98,15 @@ Ext.Events.Tick:Subscribe(function()
     local now=Ext.Timer.MonotonicTime()
     if queued or now<nextCheck then return end
     nextCheck=now+1000
-    if not VisibleSaveOrLoad() then return end
+    if not Ext.UI or not Ext.UI.Defer then return end
     queued=true
     local function Run()
         queued=false
-        local ok,err=pcall(Scan)
+        local ok,err=pcall(function()
+            if VisibleSaveOrLoad() then Scan() end
+        end)
         if not ok then Record('Inspection error: '..tostring(err))end
     end
-    if Ext.UI.Defer then Ext.UI.Defer(Run) else Run()end
+    local ok=pcall(Ext.UI.Defer,Run)
+    if not ok then queued=false end
 end)

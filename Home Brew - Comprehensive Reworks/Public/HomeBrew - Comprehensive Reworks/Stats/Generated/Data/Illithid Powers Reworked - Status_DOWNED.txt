@@ -10,7 +10,7 @@ data "AnimationLoop" "d7b7cf53-fe71-4a23-8011-9675a6e1d902(STAT_Fallen_Peace_01_
 data "AnimationEnd" "ade4cf7f-a34a-40c4-b810-096f0c186bc2(STAT_Fallen_Peace_01_End)"
 data "StatusPropertyFlags" "DisableCombatlog;DisablePortraitIndicator"
 data "OnApplyFunctors" "RemoveStatus(SURVIVAL_INSTINCT);RegainHitPoints(1,Guaranteed)"
-data "OnRemoveFunctors" "ResetCombatTurn();RestoreResource(Movement, 100%, 0);RestoreResource(BonusActionPoint, 1, 0);RestoreResource(ActionPoint, 1, 0);RestoreResource(ReactionActionPoint, 1, 0)"
+data "OnRemoveFunctors" "ResetCombatTurn();RestoreResource(Movement, 100%, 0);RestoreResource(ActionPoint, 1, 0);RestoreResource(BonusActionPoint, 1, 0);RestoreResource(ReactionActionPoint, 1, 0)"
 data "StatusGroups" "SG_Incapacitated"
 data "ApplyEffect" "f9399640-8e60-49b6-b8a9-49e5ad9207f8"
 data "HideOverheadUI" "1"

@@ -18,7 +18,7 @@ data "DisplayName" "h14bb2ed0gfdfcg41d1g8f4fg7616054f5657;2"
 data "Description" "hbea31881gb41cg4adagbd4cg6fc6bd561bf2;4"
 data "DescriptionParams" "12"
 data "Properties" "OncePerTurn"
-data "Boosts" "IF((IsMeleeWeaponAttack() or IsUnarmedAttack() or IsRangedUnarmedAttack() or IsRangedWeaponAttack()) and IsCritical() and Enemy() and not HasStatus('DOLOR_LIMIT', context.Source)):DamageBonus(12)"
+data "Boosts" "IF((IsMeleeWeaponAttack() or IsUnarmedAttack() or IsRangedUnarmedAttack() or IsRangedWeaponAttack()) and IsCritical() and not Ally() and not HasStatus('DOLOR_LIMIT', context.Source)):DamageBonus(12)"
 data "StatsFunctorContext" "OnDamage"
 data "StatsFunctors" "ApplyStatus(SELF,DOLOR_LIMIT,100,1)"
 

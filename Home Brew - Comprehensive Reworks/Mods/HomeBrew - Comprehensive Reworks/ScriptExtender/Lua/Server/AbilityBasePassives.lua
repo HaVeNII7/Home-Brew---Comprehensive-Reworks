@@ -4,7 +4,7 @@
 local Base = Ext.Require("Shared/AbilityBasePassives.lua")
 local channel, sessions = Base.Channel(), {}
 local REPORT = "HomeBrew/Diagnostics/HB_AbilityBase_ServerPassives.txt"
-local reports, dirty, lastPoll = { "HB ability baseline passives v0.16: scaled costs; maximum base value 20." }, true, -250
+local reports, dirty, lastPoll = { "HB ability baseline passives v0.16: scaled costs; maximum base value 20." }, false, -250
 local LEDGER = "AbilityBasePending_v1"
 local SINGLE_SAVE_RULE = "IRONMAN_MODE_338450d9-d77d-4950-9e1e-0e7f12210bb3"
 local function SingleSaveActive()
@@ -47,8 +47,13 @@ end
 local function Log(message)
     reports[#reports + 1] = message
     if #reports > 160 then table.remove(reports, 2) end
-    dirty = true
-    Ext.Utils.Print("[HB Ability Passives] " .. message)
+    dirty = dirty or _G.HB_DebugDiagnostics == true
+        or message:find('error',1,true) ~= nil
+        or message:find('Error',1,true) ~= nil
+    if _G.HB_DebugConsole == true or message:find('error',1,true)
+        or message:find('Error',1,true) then
+        Ext.Utils.Print("[HB Ability Passives] " .. message)
+    end
 end
 
 local function Component(entity, name)
@@ -313,7 +318,7 @@ Ext.Osiris.RegisterListener("RespecCancelled", 1, "after", function(character)
     end
 end)
 
-Ext.Events.SessionLoaded:Subscribe(function()
+local function RestoreSavedAbilityPassives()
     local ledger = Ext.Vars.GetModVariables(ModuleUUID)[LEDGER] or {}
     for _, saved in pairs(ledger) do
         local avatar = Avatar(saved.User)
@@ -339,9 +344,37 @@ Ext.Events.SessionLoaded:Subscribe(function()
             end
         end
     end
+end
+local pendingSavedAbilityRestore = false
+Ext.Events.SessionLoaded:Subscribe(function()
+    -- SessionLoaded precedes StoryLoaded in SE v33. Osiris AddPassive and
+    -- RemovePassive are forbidden in this restricted initialization context.
+    pendingSavedAbilityRestore = true
 end)
 
+local function FlushReports()
+    if not dirty then return end
+    dirty = false
+    local ok, result = pcall(Ext.IO.SaveFile, REPORT, table.concat(reports, "\n") .. "\n")
+    if not ok or result == false then Ext.Utils.Print("[HB Ability Passives] Could not save server report.") end
+end
+
 Ext.Events.Tick:Subscribe(function()
+    if pendingSavedAbilityRestore then
+        local ready = pcall(function()
+            return Osi.DB_Players:Get(nil)
+        end)
+        if ready then
+            pendingSavedAbilityRestore = false
+            RestoreSavedAbilityPassives()
+        end
+    end
+    -- No clock/native reads or transaction walk when nobody is editing
+    -- ability passives. The SessionLoaded restoration above still runs.
+    if next(sessions) == nil then
+        FlushReports()
+        return
+    end
     local now = Ext.Timer.MonotonicTime()
     if now - lastPoll >= 250 then
         lastPoll = now
@@ -407,10 +440,6 @@ Ext.Events.Tick:Subscribe(function()
             end
         end
     end
-    if dirty then
-        dirty = false
-        local ok, result = pcall(Ext.IO.SaveFile, REPORT, table.concat(reports, "\n") .. "\n")
-        if not ok or result == false then Ext.Utils.Print("[HB Ability Passives] Could not save server report.") end
-    end
+    FlushReports()
 end)
 Log("Passive backend loaded; native score-write probes are disabled by the new loader.")

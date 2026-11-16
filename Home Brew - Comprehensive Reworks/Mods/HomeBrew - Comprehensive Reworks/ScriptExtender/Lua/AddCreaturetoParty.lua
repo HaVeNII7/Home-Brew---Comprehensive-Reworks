@@ -13,6 +13,7 @@ local CLEANUP_RETRY_DELAYS_MS = { 0, 400, 1200, 2500 }
 local SWEEP_INTERVAL_MS = 10000
 
 local Owner = {}
+local sweepGeneration = 0
 
 local function SafeCall(fn, ...)
   local ok, result = pcall(fn, ...)
@@ -98,7 +99,7 @@ local function Recruit(owner, servant)
 
   Owner[servant] = owner
 
-  Ext.Utils.Print("[Recruit/Cleanup] Recruited " .. tostring(servant) .. " to " .. tostring(owner))
+  if _G.HB_DebugConsole == true then Ext.Utils.Print("[Recruit/Cleanup] Recruited " .. tostring(servant) .. " to " .. tostring(owner)) end
 end
 
 local function AttemptRemovePartyFollower(servant)
@@ -123,7 +124,7 @@ end
 local function Cleanup(servant, reason)
   if not servant or servant == "" then return end
 
-  Ext.Utils.Print("[Recruit/Cleanup] Cleanup started for " .. tostring(servant) .. (reason and (" (" .. reason .. ")") or ""))
+  if _G.HB_DebugConsole == true then Ext.Utils.Print("[Recruit/Cleanup] Cleanup started for " .. tostring(servant) .. (reason and (" (" .. reason .. ")") or "")) end
 
   for _, delay in ipairs(CLEANUP_RETRY_DELAYS_MS) do
     Ext.Timer.WaitFor(delay, function()
@@ -143,7 +144,7 @@ local function RebuildOwnersFromPartyFollowers()
 
   local rows = GetPartyFollowerRows()
   if not rows then
-    Ext.Utils.Print("[Recruit/Cleanup] DB_PartyFollowers unavailable during rebuild; skipping.")
+    if _G.HB_DebugConsole == true then Ext.Utils.Print("[Recruit/Cleanup] DB_PartyFollowers unavailable during rebuild; skipping.") end
     return
   end
 
@@ -156,7 +157,7 @@ local function RebuildOwnersFromPartyFollowers()
     end
   end
 
-  Ext.Utils.Print("[Recruit/Cleanup] Rebuilt owner table from DB_PartyFollowers.")
+  if _G.HB_DebugConsole == true then Ext.Utils.Print("[Recruit/Cleanup] Rebuilt owner table from DB_PartyFollowers.") end
 end
 
 local function CleanupInvalidFollowers()
@@ -189,9 +190,10 @@ local function CleanupInvalidFollowers()
   end
 end
 
-local function Sweep()
+local function Sweep(generation)
+  if generation ~= sweepGeneration then return end
   CleanupInvalidFollowers()
-  Ext.Timer.WaitFor(SWEEP_INTERVAL_MS, Sweep)
+  Ext.Timer.WaitFor(SWEEP_INTERVAL_MS, function() Sweep(generation) end)
 end
 
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after",
@@ -234,9 +236,18 @@ Ext.Osiris.RegisterListener("Died", 1, "after",
 )
 
 Ext.Events.SessionLoaded:Subscribe(function()
+  sweepGeneration = sweepGeneration + 1
+  local generation = sweepGeneration
   Ext.Timer.WaitFor(1500, function()
+    if generation ~= sweepGeneration then return end
     RebuildOwnersFromPartyFollowers()
-    CleanupInvalidFollowers()
-    Sweep()
+    -- Sweep() performs CleanupInvalidFollowers() immediately before arming
+    -- the next timer. Calling it separately here doubled all party-follower
+    -- queries and could queue two sets of removal timers for one invalid
+    -- follower at every load.
+    Sweep(generation)
   end)
 end)
+-- The Lua VM is reset on session unloading. SessionLoaded increments
+-- sweepGeneration so old timer callbacks are cancelled on the next session;
+-- SE v33 does not expose a SessionUnloading event.

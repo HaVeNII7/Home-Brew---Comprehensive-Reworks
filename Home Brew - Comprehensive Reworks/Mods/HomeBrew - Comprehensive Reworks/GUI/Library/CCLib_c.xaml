@@ -205,6 +205,18 @@
                 Margin="0,8,0,8" MinWidth="550" Visibility="{Binding HB_FilterOpen, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
                 <ScrollViewer MaxHeight="850" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
                     <StackPanel KeyboardNavigation.DirectionalNavigation="Contained">
+                    <ls:LSButton Content="Action Resource" Command="{Binding HB_ToggleActionMenu}"
+                        Style="{StaticResource HB_SchoolHeadingButton}" Margin="0,6,0,4"/>
+                    <StackPanel Visibility="{Binding HB_ActionMenuOpen, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,4,0,6">
+                            <ls:LSButton Content="Check All" Command="{Binding HB_Action_CheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}" Margin="0,0,12,0"/>
+                            <ls:LSButton Content="Uncheck All" Command="{Binding HB_Action_UncheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}"/>
+                        </StackPanel>
+                        <ls:LSToggleButton Content="Action" Tag="{Binding HB_ActionEnabled_2, Mode=OneWay}" IsChecked="{Binding HB_ActionEnabled_2, Mode=OneWay}"
+                            Command="{Binding HB_Action_2}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        <ls:LSToggleButton Content="Bonus Action" Tag="{Binding HB_ActionEnabled_3, Mode=OneWay}" IsChecked="{Binding HB_ActionEnabled_3, Mode=OneWay}"
+                            Command="{Binding HB_Action_3}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                    </StackPanel>
                     <ls:LSButton Content="Class" Command="{Binding HB_ToggleClasses}"
                         Style="{StaticResource HB_SchoolHeadingButton}" Margin="0,6,0,4"/>
                     <StackPanel Visibility="{Binding HB_ClassesMenuOpen, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
@@ -290,6 +302,34 @@
                             Command="{Binding HB_Damage_14}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
                         <ls:LSToggleButton Grid.Column="1" Grid.Row="6" Content="Non-Damaging" Tag="{Binding HB_DamageNonDamagingEnabled, Mode=OneWay}" IsChecked="{Binding HB_DamageNonDamagingEnabled, Mode=OneWay}"
                             Command="{Binding HB_Damage_NonDamaging}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                        </Grid>
+                    </StackPanel>
+                    <ls:LSButton Content="Roll Type" Command="{Binding HB_ToggleRollMenu}"
+                        Style="{StaticResource HB_SchoolHeadingButton}" Margin="0,6,0,4"/>
+                    <StackPanel Visibility="{Binding HB_RollMenuOpen, Converter={StaticResource BoolToVisibleConverter}, FallbackValue=Collapsed}">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,4,0,6">
+                            <ls:LSButton Content="Check All" Command="{Binding HB_Roll_CheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}" Margin="0,0,12,0"/>
+                            <ls:LSButton Content="Uncheck All" Command="{Binding HB_Roll_UncheckAll}" Style="{StaticResource HB_FilterBulkButtonStyle}"/>
+                        </StackPanel>
+                        <Grid Margin="0,2,0,6">
+                            <Grid.ColumnDefinitions><ColumnDefinition Width="1*"/><ColumnDefinition Width="1*"/></Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                            <ls:LSToggleButton Grid.Column="0" Grid.Row="0" Content="Strength Save" Tag="{Binding HB_RollEnabled_2, Mode=OneWay}" IsChecked="{Binding HB_RollEnabled_2, Mode=OneWay}"
+                                Command="{Binding HB_Roll_2}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                            <ls:LSToggleButton Grid.Column="0" Grid.Row="1" Content="Dexterity Save" Tag="{Binding HB_RollEnabled_3, Mode=OneWay}" IsChecked="{Binding HB_RollEnabled_3, Mode=OneWay}"
+                                Command="{Binding HB_Roll_3}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                            <ls:LSToggleButton Grid.Column="0" Grid.Row="2" Content="Constitution Save" Tag="{Binding HB_RollEnabled_4, Mode=OneWay}" IsChecked="{Binding HB_RollEnabled_4, Mode=OneWay}"
+                                Command="{Binding HB_Roll_4}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                            <ls:LSToggleButton Grid.Column="0" Grid.Row="3" Content="Intelligence Save" Tag="{Binding HB_RollEnabled_5, Mode=OneWay}" IsChecked="{Binding HB_RollEnabled_5, Mode=OneWay}"
+                                Command="{Binding HB_Roll_5}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                            <ls:LSToggleButton Grid.Column="1" Grid.Row="0" Content="Wisdom Save" Tag="{Binding HB_RollEnabled_6, Mode=OneWay}" IsChecked="{Binding HB_RollEnabled_6, Mode=OneWay}"
+                                Command="{Binding HB_Roll_6}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                            <ls:LSToggleButton Grid.Column="1" Grid.Row="1" Content="Charisma Save" Tag="{Binding HB_RollEnabled_7, Mode=OneWay}" IsChecked="{Binding HB_RollEnabled_7, Mode=OneWay}"
+                                Command="{Binding HB_Roll_7}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                            <ls:LSToggleButton Grid.Column="1" Grid.Row="2" Content="Attack Roll" Tag="{Binding HB_RollEnabled_8, Mode=OneWay}" IsChecked="{Binding HB_RollEnabled_8, Mode=OneWay}"
+                                Command="{Binding HB_Roll_8}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
+                            <ls:LSToggleButton Grid.Column="1" Grid.Row="3" Content="No Roll" Tag="{Binding HB_RollEnabled_9, Mode=OneWay}" IsChecked="{Binding HB_RollEnabled_9, Mode=OneWay}"
+                                Command="{Binding HB_Roll_9}" Style="{StaticResource HB_ClassListToggleStyle_v1}"/>
                         </Grid>
                     </StackPanel>
                     <ls:LSButton Content="Spell School" Command="{Binding HB_Toggle}"

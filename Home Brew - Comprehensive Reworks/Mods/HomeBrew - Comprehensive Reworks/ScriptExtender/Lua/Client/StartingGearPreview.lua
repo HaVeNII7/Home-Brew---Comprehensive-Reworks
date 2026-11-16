@@ -12,6 +12,13 @@ local nextCheck = 0
 local nextWrite = 0
 
 local function log(key, message)
+    -- The mannequin preview is event-driven, but each update used to write a
+    -- full diagnostic file even when nothing failed. Keep failure reports and
+    -- optional developer traces, not normal per-selection disk writes.
+    local lower = tostring(message):lower()
+    if _G.HB_DebugDiagnostics ~= true and not lower:find('fail', 1, true)
+        and not lower:find('error', 1, true) and not lower:find('refused', 1, true)
+        and not lower:find('unavailable', 1, true) then return end
     if last[key] == message then return end
     last[key] = message
     lines[#lines + 1] = message

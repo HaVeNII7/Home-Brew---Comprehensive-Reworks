@@ -241,7 +241,7 @@ Ext.Events.Tick:Subscribe(function()
             Ext.Utils.Print("[HB Ability Probe] Inspection stopped; send " .. REPORT)
         end
     end
-    if Ext.UI.Defer then queued = true; Ext.UI.Defer(Run) else Run() end
+    if Ext.UI.Defer then queued = true; Ext.UI.Defer(Run) end
 end)
 
 Ext.Utils.Print("[HB Ability Probe] Loaded. Open the Abilities panel; report saves automatically to " .. REPORT)

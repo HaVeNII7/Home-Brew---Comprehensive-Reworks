@@ -7,13 +7,40 @@ local ITEM='HB_StartingGearItem_v4'
 local state={owner=nil,open=false,slot=1,item=1,choices={},status='',warning='',source=nil,waiting=false,refresh=false}
 local request=nil
 local availableCache={}
-local iconCache={}
 local channel=Ext.Net.CreateChannel(ModuleUUID,'HBStartingEquipment')
 local ticket=0
 local function Read(object,key)
     if not object then return nil end
     local ok,value=pcall(function() return object[key] end)
     if ok then return value end
+end
+local iconCache={}
+-- The SE stats accessor reports a console error when a property is absent,
+-- even if the read is wrapped in pcall. Cache each stat modifier list's
+-- supported attributes before considering its Icon field.
+local iconAttributeSupport={}
+local function HasStatIconAttribute(stats,stat)
+    local modifier=Read(stats,'ModifierList')
+    if modifier~=nil and Ext.Stats and type(Ext.Stats.GetModifierAttributes)=='function' then
+        modifier=tostring(modifier)
+        local supported=iconAttributeSupport[modifier]
+        if supported==nil then
+            local ok,attributes=pcall(Ext.Stats.GetModifierAttributes,modifier)
+            if ok and type(attributes)=='table' then
+                supported=attributes.Icon~=nil and 1 or -1
+            else
+                supported=0 -- Unknown schema; use the old behavior for non-placeholders.
+            end
+            iconAttributeSupport[modifier]=supported
+        end
+        if supported~=0 then return supported==1 end
+    end
+    -- Without trustworthy attribute metadata, never probe known synthetic
+    -- placeholder stats (their missing Icon already generated SE warnings).
+    return not (stat:match('^Helmet_NoValue_%d+$')
+        or stat:match('^Cloak_NoValue_%d+$')
+        or stat:match('^Armour_NoValue_%d+$')
+        or stat:match('^Weapon_NoValue_[%w_]+$'))
 end
 -- Resolve item labels opportunistically, away from the shared preset UI constructor.
 -- Failure or missing localization must not interfere with appearance or equipment controls.
@@ -152,13 +179,13 @@ local function ResolveName(stat)
     return nil,reason
 end
 local function RecordNameResult(stat,result)
-    if nameDiagCount>=130 then return end
+    if _G.HB_DebugDiagnostics ~= true or nameDiagCount>=130 then return end
     nameDiagCount=nameDiagCount+1
     nameDiag[#nameDiag+1]=stat..' = '..(result or 'UNRESOLVED')
     nameDiagDirty=true
 end
 local function FlushNameDiagnostics()
-    if not nameDiagDirty then return end
+    if _G.HB_DebugDiagnostics ~= true or not nameDiagDirty then return end
     nameDiagDirty=false
     if Ext.IO and type(Ext.IO.SaveFile)=='function' then
         pcall(Ext.IO.SaveFile,'HomeBrew/Diagnostics/HB_EquipmentNames.txt',table.concat(nameDiag,'\n'))
@@ -212,6 +239,7 @@ local SOURCE_DIAG='HomeBrew/Diagnostics/HB_StartingEquipment_Client.txt'
 local sourceDiag={'HomeBrew initial creation equipment source v5'}
 local lastSourceSignature=nil
 local function SourceTrace(text)
+    if _G.HB_DebugDiagnostics ~= true then return end
     if text==lastSourceSignature then return end
     lastSourceSignature=text
     sourceDiag[#sourceDiag+1]=text
@@ -274,7 +302,8 @@ channel:SetHandler(function(message)
     state.refresh=true
 end)
 function Gear.Reset()
-    Preview.Reset()
+    -- Reset already clears all preview records; a second pass only repeats
+    -- mannequin entity queries without any visual work left to restore.
     Preview.Reset()
     if state.source and next(state.choices) then Send('Close') end
     state={owner=nil,open=false,slot=1,item=1,choices={},status='',warning='',source=nil,waiting=false,refresh=false}
@@ -339,10 +368,19 @@ function Gear.Populate(vm)
             local icon=iconCache[entry[2]]
             if icon==nil then
                 icon=''
-                local ok,stats=pcall(Ext.Stats.Get,entry[2])
-                if ok and stats then
-                    local found,value=pcall(function() return stats.Icon end)
-                    if found and type(value)=='string' then icon=value end
+                -- Preserve the previous skip for numbered placeholder gear;
+                -- these items have no stat Icon to read in the first place.
+                local knownNoIcon=entry[2]:match('^Helmet_NoValue_%d+$')
+                    or entry[2]:match('^Cloak_NoValue_%d+$')
+                    or entry[2]:match('^Armour_NoValue_%d+$')
+                if not knownNoIcon then
+                    -- Other stat types may also omit Icon (notably weapon
+                    -- stats). Check the declared schema before reading it.
+                    local ok,stats=pcall(Ext.Stats.Get,entry[2])
+                    if ok and stats and HasStatIconAttribute(stats,entry[2]) then
+                        local found,value=pcall(function() return stats.Icon end)
+                        if found and type(value)=='string' then icon=value end
+                    end
                 end
                 iconCache[entry[2]]=icon
             end
@@ -382,6 +420,14 @@ function Gear.Process(vm,allowed,flowIndex,creationContext)
         return refresh
     end
     if not vm then return refresh end
+    -- The character-creation page updates even while this equipment menu is
+    -- closed. Keep preview/name priming and timeouts above, but do not read
+    -- bound controls or reconstruct slot options until it is opened. A
+    -- pending Show/Close still takes the original command path below.
+    if not state.open and request~='show' and request~='close' then
+        request=nil
+        return refresh
+    end
     local index=Read(vm,'HB_Gear_SlotIndex')
     if state.open and type(index)=='number' and index%1==0 and index>=0
         and index<#Catalog.Slots and index~=state.slot-1 then

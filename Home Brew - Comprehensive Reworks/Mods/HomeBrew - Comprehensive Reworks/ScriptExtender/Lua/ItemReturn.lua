@@ -20,17 +20,25 @@ local function IsReturning(it)
       or Osi.HasActiveStatus(it,"RR_THROWING_RETURN_TO_OWNER")  ==1
 end
 
+-- Reuse immutable key sets; this routine also runs on equipment events.
+local CLEAR_INTEGER_KEYS = {V.ACTIVE,V.HAD_OFFHAND}
+local CLEAR_UUID_KEYS = {V.MAIN_TEMPL,V.OFF_TEMPL}
 local function ClearVars(c)
-  for _,k in pairs{V.ACTIVE,V.HAD_OFFHAND} do
-    Osi.SetVarInteger(c,k,0) end
-  for _,k in pairs{V.MAIN_TEMPL,V.OFF_TEMPL} do
-    Osi.SetVarUUID(c,k,NULL_UUID) end
+  for _,key in pairs(CLEAR_INTEGER_KEYS) do Osi.SetVarInteger(c,key,0) end
+  for _,key in pairs(CLEAR_UUID_KEYS) do Osi.SetVarUUID(c,key,NULL_UUID) end
   log("Cleared vars on "..c)
 end
 
 for _,ev in ipairs{"Equipped","Unequipped"} do
   Ext.Osiris.RegisterListener(ev,2,"after",function(_,c)
-    if Osi.GetVarInteger(c,V.ACTIVE)==0 then ClearVars(c)
+    if Osi.GetVarInteger(c,V.ACTIVE)==0 then
+      -- Recover any genuinely stale snapshot, but don't write four native
+      -- variables when they already hold the exact cleared values.
+      if Osi.GetVarInteger(c,V.HAD_OFFHAND) ~= 0
+          or Osi.GetVarUUID(c,V.MAIN_TEMPL) ~= NULL_UUID
+          or Osi.GetVarUUID(c,V.OFF_TEMPL) ~= NULL_UUID then
+        ClearVars(c)
+      end
     else log(ev.." during throw → skip") end
   end)
 end
@@ -38,6 +46,8 @@ end
 Ext.Osiris.RegisterListener("UsingSpell",5,"after",
 function(c,s,st)
   if (s=="Throw_Throw" or s=="Throw_FrenziedThrow") and st=="throw" then
+    -- Clearing first is fail-safe: if an equipment query later errors, the
+    -- previous returning-weapon snapshot cannot remain active.
     ClearVars(c)
 
     local main = Osi.GetEquippedItem(c,"Melee Main Weapon")

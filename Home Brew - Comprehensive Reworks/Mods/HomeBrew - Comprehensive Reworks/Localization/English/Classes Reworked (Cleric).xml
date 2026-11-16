@@ -66,18 +66,18 @@
 	<content contentuid="h3063c312g64f5g4715g9339g241ee234d585" version="1">You nourish your faith on forces that make dealings in death, giving rise to desolate plague and putrid necrosis alike.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Suggested Role(s): Damage</content>
 	
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00001" version="2">Corpse Party</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a670000a" version="2">Gain the ability to detonate nearby corpses, dealing Necrotic damage to all creatures in a [1] radius. This action may also target Undead creatures.&lt;br&gt;&lt;br&gt;When damaging an enemy, this action will always apply one stack of &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt;.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a670000a" version="2">Gain the ability to detonate non &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; corpses or Undead creatures, dealing Necrotic damage to all creatures in a [1] radius. The damage of Bursting Sinew cannot be increased.&lt;br&gt;&lt;br&gt;When damaging an enemy, this action will always apply one stack of &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt;.</content>
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c000z1" version="2">Bursting Sinew</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a67000za" version="2">Detonate a nearby corpse, dealing Necrotic damage to all creatures in a [1] radius. This action may also target Undead creatures.&lt;br&gt;&lt;br&gt;When damaging a creature, this action will always apply one stack of &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt;.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a67000za" version="2">Detonate a non &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; corpse or Undead creature, dealing Necrotic damage to all creatures in a [1] radius. The damage of Bursting Sinew cannot be increased.&lt;br&gt;&lt;br&gt;When damaging a creature, this action will always apply one stack of &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt;.</content>
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00zz2" version="1">Curse of Rot</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a6700zzb" version="2">Affected creature takes [1] at the end of each of their turns for each stack of Curse of Rot they have. At the end of each of their turns, they receive one additional stack. In addition, they are unable to utilize their armours physical &lt;LSTag Type="Status" Tooltip="DAMAGE_REDUCTION"&gt;Damage Reduction&lt;/LSTag&gt;.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a6700zzb" version="2">Affected creature takes [1] at the end of each of their turns for each stack of Curse of Rot they have. At the end of each of their turns, they receive one additional stack.</content>
 
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00002" version="2">Channel Divinity: Proclaim Undeath</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a670000b" version="2">Gain the ability to use a &lt;LSTag Type="ActionResource" Tooltip="ChannelDivinity"&gt;Channel Divinity&lt;/LSTag&gt; charge to &lt;LSTag Type="Status" Tooltip="CURSEOFUNDEATH"&gt;Proclaim&lt;/LSTag&gt; a creature as Undead.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a670000b" version="2">Gain the ability to use a &lt;LSTag Type="ActionResource" Tooltip="ChannelDivinity"&gt;Channel Divinity&lt;/LSTag&gt; charge to &lt;LSTag Type="Status" Tooltip="CURSEOFUNDEATH"&gt;Proclaim&lt;/LSTag&gt; a creature as Undead, granting them &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage.</content>
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c000z2" version="1">Channel Divinity: Proclaim Undeath</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a67000zb" version="2">&lt;LSTag Type="Status" Tooltip="CURSEOFUNDEATH"&gt;Proclaim&lt;/LSTag&gt; a creature as Undead, granting them &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Necrotic damage.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a67000zb" version="2">&lt;LSTag Type="Status" Tooltip="CURSEOFUNDEATH"&gt;Proclaim&lt;/LSTag&gt; a creature as Undead, granting them &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage.</content>
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00ss2" version="1">Proclaimed Undeath</content>
-	<content contentuid="heec87dfbg454fg4550g8622gb200a6700ssb" version="2">Affected creature is considered to be Undead. In addition, they have &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Necrotic damage.</content>
+	<content contentuid="heec87dfbg454fg4550g8622gb200a6700ssb" version="2">Affected creature is considered to be Undead. In addition, they have &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage.</content>
 
 	<content contentuid="h6cc498f5g13a0g4dc1g8c91gff3580c00003" version="1">Harvest</content>
 	<content contentuid="heec87dfbg454fg4550g8622gb200a670000c" version="1">While within [1] of a corpse, they radiate a necrotic aura, dealing [2] to all enemies within [3] at the end of each of their turns and preventing them from recovering &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;In addition, when the aura damages a creature suffering from a &lt;LSTag Type="Status" Tooltip="PLAGUEOFROT"&gt;Curse of Rot&lt;/LSTag&gt;, they receive one additional stack. This can be toggled at any time.</content>
@@ -103,7 +103,7 @@
 	<content contentuid="h3063c312g64f5g471a6sd5f2ef5d4fe5f254" version="1">Your faith sparks divine fire lit within the firmament of your belief, smelted in an act of holy ambition. A raging inferno held in hand to strike true and just.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Suggested Role(s): Damage/Tank</content>
 
 	<content contentuid="h695df0c5g7b1eg47a16se8f5e6f5e8f89801" version="1">Divine Embers</content>
-	<content contentuid="h3063c312g64f5g471a6sd5f2ef5d4fe5f20a" version="1">Gain the ability to call a divine hammer to your hand. As you level within Cleric, it will deal additional damage and gain new effects.&lt;br&gt;&lt;br&gt;In addition, when dealing damage to an enemy, you deal additional Fire damage equal to your levels in Cleric. This bonus does not apply to damage dealt with an off-hand weapon.&lt;br&gt;&lt;br&gt;Furthermore, upon dealing Fire damage to an enemy, you generate one stack of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt;.</content>
+	<content contentuid="h3063c312g64f5g471a6sd5f2ef5d4fe5f20a" version="1">Gain the ability to call a divine hammer to your hand. As you level within Cleric, it will deal additional damage and gain new effects.&lt;br&gt;&lt;br&gt;In addition, when dealing damage to a non-allied target, you deal additional Fire damage equal to your levels in Cleric and generate one stack of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt;. This bonus does not apply to damage dealt with an off-hand weapon.</content>
 	<content contentuid="h695df0c5g7b1eg47a16se8f5e6f5e8f898z1" version="1">Summon Forge Hammer</content>
 	<content contentuid="h3063c312g64f5g471a6sd5f2ef5d4fe5f2za" version="2">Summon a forge hammer, capable of smelting even the hottest of embers. As you level in Cleric, it will deal additional damage and gain new effects.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Summoning your forge hammer may be done at any time as a free action.</content>
 	<content contentuid="h695df0c5g7b1eg47a16se8f5e6f5e8f898y1" version="1">Forge Hammer</content>
@@ -169,7 +169,7 @@
 	<content contentuid="hffe95a98g1b1fg4fdfg9094g8c86867e28ab" version="1">Tasked with the holy edict of preserving the body, mind, and soul, your god grants you a plethora of healing magics.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Suggested Role(s): Healer/Support</content>
 
 	<content contentuid="h67fe33fdg46c1g415bg95c6g20291e26lc01" version="1">Virtuous Touch</content>
-	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc01" version="1">Upon healing a another creature, the target regains additional &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; equal to your level.</content>
+	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc01" version="1">Upon healing another creature, the target regains additional &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; equal to your level.</content>
 
 	<content contentuid="h58347e3dg4eb2g4ed1g9537g4f361e1644db" version="1">Preserve Life</content>
 	<content contentuid="h4104b247g7085g45dbgba71g8734585d95cf" version="7">Evoke a healing radiance which restores your or an ally's &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; by your level multiplied by four.</content>
@@ -183,12 +183,12 @@
 	<content contentuid="h2bcdafc9g89bfg411ega025gc4c99b623e55" version="1">When you or an ally is about to receive elemental damage, halve the attack's damage.</content>
 
 	<content contentuid="h67fe33fdg46c1g415bg95c6g20291e26lc05" version="1">Benevolent Grace</content>
-	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc05" version="1">Creatures within [1] of you regain the maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; possible when healed.</content>
+	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc05" version="1">While in combat, creatures within [1] of you regain the maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; possible when healed.</content>
 	<content contentuid="h67fe33fdg46c1g415bg95c6g20291e26ally" version="1">Benevolent Grace</content>
 	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76ally" version="1">Affected creature will regain the maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; possible when healed while within [1] of the creature who applied this condition.</content>
 
 	<content contentuid="h67fe33fdg46c1g415bg95c6g20291e26lc09" version="1">Divine Presence</content>
-	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc09" version="1">&lt;LSTag Type="Spell" Tooltip="Shout_PreserveLife"&gt;Preserve Life&lt;/LSTag&gt; is now able to target the corpses of fallen allies. Targeting a dead ally with Preserve Life will resurrect them with all of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="hb803dc22g3235g468fgb4c5g4746de76lc09" version="1">&lt;LSTag Type="Spell" Tooltip="Target_PreserveLife"&gt;Preserve Life&lt;/LSTag&gt; is now able to target the corpses of fallen allies. Targeting a dead ally with Preserve Life will resurrect them with all of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">TEMPEST DOMAIN</content>
 
@@ -243,7 +243,7 @@
 	<content contentuid="haf4704d6gba0bg4c46gb1eeg1740b978db08" version="3">Fortified by holy zeal, you brandish an arsenal of sacramental savagery to use against those you deem unrighteous.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Suggested Role(s): Damage</content>
 
 	<content contentuid="h994500d0g1703g421bg8028g0f3a3103c858" version="2">Radiant Strikes</content>
-	<content contentuid="hf729263eg37dcg43fbg923cg24cc642f6773" version="2">When dealing damage to an enemy, you deal an additional [1].</content>
+	<content contentuid="hf729263eg37dcg43fbg923cg24cc642f6773" version="2">When dealing damage to a non-allied target, you deal an additional [1].</content>
 
 	<content contentuid="hef0a183bgbc91g478cg8e70g38f55677ac77" version="2">War God's Blessing</content>
 	<content contentuid="h52cf6bc9gdc15g4852gae20ga2dc3879ffad" version="3">Bestow the glory of your god, using your &lt;LSTag Type="ActionResource" Tooltip="ChannelDivinity"&gt;Channel Divinity&lt;/LSTag&gt; charge to grant either yourself or an ally within [1] a +[2] bonus to an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;.</content>

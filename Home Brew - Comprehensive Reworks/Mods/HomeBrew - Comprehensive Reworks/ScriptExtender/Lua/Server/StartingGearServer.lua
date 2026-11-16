@@ -9,20 +9,28 @@ Ext.Vars.RegisterModVariable(ModuleUUID,LEDGER,{
 local sessions={}
 local rangedStartupChecks={}
 local report={'HomeBrew starting equipment service v5; multiplayer user-scoped creation staging'}
-local dirty=true
+local dirty=false
 local lastDiagnostics={}
+local function NeedReport(line)
+    if _G.HB_DebugDiagnostics == true then return true end
+    local value=tostring(line):lower()
+    for _,tag in ipairs({'error','failed','refused','timeout','unsafe'}) do
+        if value:find(tag,1,true) then return true end
+    end
+    return false
+end
 local function TraceOnce(key,line)
     if lastDiagnostics[key]~=line then
         lastDiagnostics[key]=line
         report[#report+1]=line
         if #report>120 then table.remove(report,2) end
-        dirty=true
+        dirty=dirty or NeedReport(line)
     end
 end
 local function Log(line)
     report[#report+1]=tostring(line)
     if #report>100 then table.remove(report,2) end
-    dirty=true
+    dirty=dirty or NeedReport(line)
 end
 local function Component(e,name)
     if not e then return nil end
@@ -558,7 +566,17 @@ local function CheckRangedStartup(now)
     end
 end
 local lastTick=-500
+local lastRangedPoll=-200
 Ext.Events.Tick:Subscribe(function()
+    -- Neither active creation handoffs nor pending ranged-equipment recovery
+    -- exist during normal exploration. Preserve the report flush below.
+    if not next(sessions) and not next(rangedStartupChecks) then
+        if dirty then
+            dirty=false
+            pcall(Ext.IO.SaveFile,REPORT,table.concat(report,'\n')..'\n')
+        end
+        return
+    end
     local now=Ext.Timer.MonotonicTime()
     if next(sessions) and now-lastTick>=200 then
         lastTick=now
@@ -587,7 +605,8 @@ Ext.Events.Tick:Subscribe(function()
             if not ok then Log('ERROR user='..tostring(user)..' '..tostring(err)) end
         end
     end
-    if next(rangedStartupChecks) then
+    if next(rangedStartupChecks) and now-lastRangedPoll>=200 then
+        lastRangedPoll=now
         local ok,err=pcall(CheckRangedStartup,now)
         if not ok then Log('RANGED_STARTUP_CHECK_FAILED '..tostring(err)) end
     end

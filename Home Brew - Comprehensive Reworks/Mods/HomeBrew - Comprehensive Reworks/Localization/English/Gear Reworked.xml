@@ -85,9 +85,13 @@
 	<content contentuid="hd3a156cc7fbf4a5c985eef63f0c2b99b55g3" version="1">Attunement</content>
 	<content contentuid="h98e3be41aead4b5bb8ee60104126ded4b17d" version="5">Determines your ability to equip magical items. The rarity of the item determines the amount of Attunement required to equip it, with each higher rarity costing more.&lt;br&gt;&lt;br&gt;Uncommon items require one point of Attunement.&lt;br&gt;&lt;br&gt;Rare items require two points of Attunement.&lt;br&gt;&lt;br&gt;Very Rare items require three points of Attunement.&lt;br&gt;&lt;br&gt;Legendary items require four points of Attunement.</content>
 
+<content contentuid="0000000000000000000000000000000000000" version="1">GREATER ATTUNEMENT</content>
+	<content contentuid="hd3a156cc7fbf4a5c985eef63f0c2b99great" version="1">Greater Attunement</content>
+	<content contentuid="h98e3be41aead4b5bb8ee60104126dedgreat" version="5">Allows you to equip a magical item which grants a feat. Only one item which grants a feat may be equipped at any given time.</content>
+
 <content contentuid="0000000000000000000000000000000000000" version="1">SCROLL OF REBIRTH</content>
 	<content contentuid="hd3a156cc7fbf4a5c985eef63f0c2zrebirth" version="1">Scroll of Rebirth</content>
-	<content contentuid="hd3a156cc7fbf4a5c985eef6311124rebirth" version="5">Use in order to trigger a one-time respec for your character.</content>
+	<content contentuid="hd3a156cc7fbf4a5c985eef6311124rebirth" version="5">Use in order to begin a respec for your character.</content>
 	<content contentuid="hd3a156cc7fbf4a5c985w5e41f6524rebirth" version="5">Holding this scroll produces a strange sense of belonging. It's as if nostalgia itself has taken form in your hands.</content>
 	<content contentuid="hd3a156cc7fbsdfsef2ffef6311124rebirth" version="5">Rebirth</content>
 	<content contentuid="hd3a156c6se4fse65e8585e41f6524rebirth" version="5">Born anew, you may change most aspects of yourself.</content>
@@ -179,7 +183,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">DOLOR AMARUS</content>
 	<content contentuid="h14bb2ed0gfdfcg41d1g8f4fg7616054f5657" version="2">Dolor Amarus</content>
-	<content contentuid="hbea31881gb41cg4adagbd4cg6fc6bd561bf2" version="4">Once per turn, when you land a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; with a weapon or unarmed attack, it deals an additional [1] damage.</content>
+	<content contentuid="hbea31881gb41cg4adagbd4cg6fc6bd561bf2" version="4">Once per turn, when you land a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; against a non-allied target with a weapon or unarmed attack, it deals an additional [1] damage.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">VICIOUS SHORTBOW</content>
 	<content contentuid="h14bb2ed0gfdfcg41d1g8f4fg76160522d645" version="2">Vicious Critical</content>
@@ -217,7 +221,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">DARK JUSTICIAR HELMET</content>
 	<content contentuid="he12b7decg4bc8g4e87ga0c0g9c6b17422545" version="2">Critical Darkness</content>
-	<content contentuid="h4a2378c2g9fa5g419dga526g37bd26fss645" version="3">While obscured, the number you need to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 2.</content>
+	<content contentuid="h4a2378c2g9fa5g419dga526g37bd26fss645" version="3">While obscured, the number you need to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">CORELLON'S GRACE</content>
 	<content contentuid="he95f42bcg9f57g4dafg8006gcd54b7a25483" version="5">Unhampered Resistance</content>
@@ -229,7 +233,11 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">MUTILATED CARAPACE</content>
 	<content contentuid="h159ca3a0g3860g4b1cgb6e3gf2cd477765be" version="3">Formless Slaughter</content>
-	<content contentuid="h71e760a4gd030g4016ga747gbfeb973d5b6c" version="2">Gain a +[1] bonus to both &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and Damage Rolls while assuming the form of a Wildshape or &lt;LSTag Type="Spell" Tooltip="Shout_DisguiseSelf"&gt;Disguised&lt;/LSTag&gt;.</content>
+	<content contentuid="h71e760a4gd030g4016ga747gbfeb973d5b6c" version="2">Gain a +[1] bonus to both &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage against a non-allied target while assuming the form of a Wildshape or &lt;LSTag Type="Spell" Tooltip="Shout_DisguiseSelf"&gt;Disguised&lt;/LSTag&gt;.</content>
+	<content contentuid="h45115e34gb43bg4755g9be6ga42284246ad3" version="2">Formless Slaughter</content>
+	<content contentuid="h569ef2cdg7e58g4642gbd1bg5aa74e364b9a" version="4">Affected creature has a +[1] bonus to both &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage against a non-allied target while assuming the form of a Wildshape or &lt;LSTag Type="Spell" Tooltip="Shout_DisguiseSelf"&gt;Disguised&lt;/LSTag&gt;.</content>
+	<content contentuid="hbc85a640g7941g4575ga6bfg675e8c2f3d60" version="3">Faceless Masquerade</content>
+	<content contentuid="h0660ab7agc3a8g41f3ga93bge8eaee0b81b3" version="2">You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Deception and Persuasion based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">AMBUSHER</content>
 	<content contentuid="h5f0a3ebfg6fb0g44f0g9de9g973568b24da3" version="2">Ambusher's Streak</content>
@@ -309,7 +317,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">TITANSTRING BOW</content>
 	<content contentuid="h5d2ad051g524cg4307gb74cge85e1245e5f0" version="2">Titan Weapon</content>
-	<content contentuid="h03946d5bg81a1g4ec9gb7a2g1e6167466678" version="4">This weapon deals additional damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Strength Modifier&lt;/LSTag&gt;, if positive. You also add your Strength Modifier to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made with this weapon.</content>
+	<content contentuid="h03946d5bg81a1g4ec9gb7a2g1e6167466678" version="4">This weapon deals additional damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Strength Modifier&lt;/LSTag&gt; when damaging non-allied targets, if positive. You also add your Strength Modifier to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made with this weapon.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SANGUINE BLADE</content>
 	<content contentuid="h5d2ad051g524cg4307gb74cge8ss645df65d" version="2">Bloodborne</content>
@@ -317,9 +325,9 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">ABYSS BECKONERS</content>
 	<content contentuid="h37507dfdg7da6g467fga0afgd4b3653e3e8d" version="2">Demonspirit Aura</content>
-	<content contentuid="haf729777g05f6g4813ga134gfbfb0694b4f6" version="5">The wearers summoned creatures have &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage.</content>
+	<content contentuid="haf729777g05f6g4813ga134gfbfb0694b4f6" version="5">The wearers summoned creatures gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage.</content>
 	<content contentuid="hf9cf2654gc235g449agb5b2g76b54779291d" version="2">Demonspirit Aura</content>
-	<content contentuid="h9eff33fag47adg46c2gba57g9e62786abe03" version="3">Affected creature's summons have &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage.</content>
+	<content contentuid="h9eff33fag47adg46c2gba57g9e62786abe03" version="3">Affected creature's summoned creatures gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage.</content>
 	<content contentuid="h262759e8gd2b2g44a2g9bf4g26f03a0be73d" version="2">Demonspirit</content>
 	<content contentuid="hc5c7482fg8fc0g430ag9cc5gffac52fc98dc" version="2">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all forms of damage.</content>
 
@@ -472,7 +480,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">RING OF ABSOLUTE FORCE</content>
 	<content contentuid="h2639ffe7g77a9g4dc2gb95cgc219e4f0ca7f" version="2">Absolute Tempest</content>
-	<content contentuid="hd8f5c814gc998g4b5bga85fg28466ae520df" version="3">When dealing Thunder damage, the damage is increased by +[1]. No effect while assuming a &lt;LSTag Type="ActionResource" Tooltip="Wildshape"&gt;Wildshaped&lt;/LSTag&gt;.</content>
+	<content contentuid="hd8f5c814gc998g4b5bga85fg28466ae520df" version="3">When dealing Thunder damage to a non-allied target, the damage is increased by +[1]. No effect while assuming a &lt;LSTag Type="ActionResource" Tooltip="Wildshape"&gt;Wildshaped&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">CAP OF WRATH</content>
 	<content contentuid="hc9ee68f2g9cb1g496cg9dceg0bb5acb2cebe" version="2">Last Stand</content>
@@ -524,7 +532,19 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">ROBE OF SUMMER</content>
 	<content contentuid="hcbc03dafg8aacg4068g808cg1849bsdfd225" version="3">Summer Heat</content>
-	<content contentuid="hc38ef374g8d19g47d5g80d3g0bdd2f5d6f45" version="5">When the wearer casts a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; that deals Fire damage, it deals an additional [1].</content>
+	<content contentuid="hc38ef374g8d19g47d5g80d3g0bdd2f5d6f45" version="5">When the wearer casts a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; that deals Fire damage to a non-allied target, it deals an additional [1].</content>
+
+<content contentuid="0000000000000000000000000000000000000" version="1">SCABBY PUGILIST CIRCLET</content>
+	<content contentuid="he785858ag7691g416ag94f2ga4aa3df93e88" version="1">Martial Bravery</content>
+	<content contentuid="hfe4b3cd8g2225g4ae7g943bgd4a38ab21ccb" version="3">Your weapon and unarmed attacks deal an additional [1] damage to non-allied targets while surrounded by [2] or more foes.</content>
+
+<content contentuid="0000000000000000000000000000000000000" version="1">SERAPHIC PUGILIST GLOVES</content>
+	<content contentuid="h3cfd719agb082g4b70ga4e1gf0c224be0366" version="2">Angelclocker Knuckles</content>
+	<content contentuid="hd5d855e2gea43g4a7fga5fege3db0dd15a51" version="3">Your unarmed attacks deal an additional [1] to non-allied targets.</content>
+
+<content contentuid="0000000000000000000000000000000000000" version="1">SNOW DUSTED MONASTERY GLOVES</content>
+	<content contentuid="h8366edb4g178ag4261g9362gcf23744a9742" version="2">Chilling Strike</content>
+	<content contentuid="h5d287d28g4b8cg4faaga00egabcb80004b36" version="3">Your unarmed attacks deal an additional [1] to non-allied targets.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">PUNCH DRUNK BASTARD</content>
 	<content contentuid="he4a130abgff41g4523gb29eg783ddfb71769" version="2">Tippler's Rage</content>
@@ -594,7 +614,7 @@
 	<content contentuid="hfc8d126dgb4ebg443bg8a5dg19ss5d66s8d7" version="5">The wearer is &lt;LSTag Tooltip="Immune"&gt;Immune&lt;/LSTag&gt; to all forms of Fire based damage.</content>
 
 	<content contentuid="h416d4ca9gedbcg43begaac9g68226d54ds58" version="2">Hellflame's Embrace</content>
-	<content contentuid="hfc8d126dgb4ebg443bg8a5dg19ss5s5d558f" version="5">The wearer deals an additional [1] when dealing damage.</content>
+	<content contentuid="hfc8d126dgb4ebg443bg8a5dg19ss5s5d558f" version="5">The wearer deals an additional [1] when damaging a non-allied target.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">MOON DEVOTION ROBE</content>
 	<content contentuid="hc4fc035dg20a0g4cf1gb88cgedf06ed1c4f5" version="1">Selûne's Protection</content>
@@ -608,7 +628,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SHADOW-CLOAKED RING</content>
 	<content contentuid="h385fb38fg6a1dg4d66g8c7cg9fd7e85648d9" version="3">Shadowthief</content>
-	<content contentuid="h942d72dag919bg4043g9fddge40e57512f8d" version="6">Dealing damage to Lightly or Heavily Obscured creatures deals an additional +[1] damage. This bonus is always active against creatures made of shadow.</content>
+	<content contentuid="h942d72dag919bg4043g9fddge40e57512f8d" version="6">Dealing damage to a non-allied target deals an additional +[1] damage, if your target is obscured.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">CRUEL STING</content>
 	<content contentuid="h7828adecg8b14g492cg98a5g969a28f084dc" version="2">Sting The Helpless</content>
@@ -616,7 +636,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">MOURNING FROST</content>
 	<content contentuid="he93a29eag81eeg443ag9c1cgf090434954be" version="2">Heart of Ice</content>
-	<content contentuid="h65727509g07b2g4c4bg8f32g6c7e48b8c476" version="2">When dealing Cold as your primary source of damage, the wielder deals an additional [1]. All Cold based damage rolls from this weapon are rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; and ignore &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; when dealing damage to an enemy or item.</content>
+	<content contentuid="h65727509g07b2g4c4bg8f32g6c7e48b8c476" version="2">When dealing Cold as your primary source of damage to a non-allied target, the wielder deals an additional [1]. All Cold based damage rolls from this weapon are rolled with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; and ignore &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; when dealing damage to an enemy or item.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">MAGICAL HAND CROSSBOW</content>
 	<content contentuid="h409a130eg0873g41b9gbee5g1142c6cc85a5" version="1">Cunning Combo</content>
@@ -626,7 +646,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SETHAN</content>
 	<content contentuid="h23f0c954gd79bg435fg9cf9g09c5a6118392" version="2">Sethan: Spiritual Greataxe</content>
-	<content contentuid="hae471f22g1856g4c00gad59gb7ab56022520" version="1">Summon six spiritual twins of Sethan at a point you can see.</content>
+	<content contentuid="hae471f22g1856g4c00gad59gb7ab56022520" version="1">Summon six spiritual twins of Sethan at a point you can see. Each twin is considered to be a &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summon.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">STAFF OF CHERISHED NECROMANCY</content>
 	<content contentuid="hc78d53a5g6507g4176ga5begbbc16f57f543" version="2">Life Essence Absorbtion</content>
@@ -674,7 +694,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">ICHOROUS GLOVES</content>
 	<content contentuid="hc9781228g280bg48ecg8017gb067c4eabb41" version="2">Ichorous Corrosion</content>
-	<content contentuid="h1535d6efgfb88g445eg9c62gca3a2abd9e51" version="5">When the wearer deals Acid damage, they also emit &lt;LSTag Type="Status" Tooltip="MAG_ACID_NOXIOUS_FUMES"&gt;Noxious Fumes&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="h1535d6efgfb88g445eg9c62gca3a2abd9e51" version="5">When the wearer damages a non-allied creature, their target becomes coated in &lt;LSTag Type="Status" Tooltip="ACID"&gt;Acid&lt;/LSTag&gt; for one turn.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SURGEONS SUBJUGATION AMULET</content>
 	<content contentuid="h6a9f1a04gba30g4fc4gb789gc608461cdd3b" version="3">Paralysing Critical</content>
@@ -745,11 +765,11 @@
 	<content contentuid="h1f68b02dgf612g434egac26g5ea0d15691f8" version="2">Giant Form</content>
 	<content contentuid="h65909c76g0e8eg4a71g9dd8g19c482632183" version="3">Grow in size and stature. Your main-hand weapons deal an additional +[1] damage and you gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 	<content contentuid="h65fe1647g4738g448eg9b07g1545e4a22d12" version="2">Big Boy!</content>
-	<content contentuid="h38132b22g92d2g43dbg8b48g28e716f33s45" version="4">Affected entity's size is increased. Its main-hand weapon attacks deal an additional +[1] damage. It has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="h38132b22g92d2g43dbg8b48g28e716f33s45" version="4">Affected entity's size is increased. Its main-hand weapon attacks deal an additional +[1] damage when damaging a non-allied target. It has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">DRAKETHROAT GLAIVE</content>
 	<content contentuid="h1cc1a903g3f66g4a95g9763g3e3a2b1ddfed" version="1">Relentless Revenge</content>
-	<content contentuid="h2f240a51g20b4g4f7cg8842gef50ca571e03" version="1">When the wielder has 50% &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; or less, they deal an additional [1] with their main-hand melee weapon.</content>
+	<content contentuid="h2f240a51g20b4g4f7cg8842gef50ca571e03" version="1">When the wielder has 50% &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; or less, they deal an additional [1] with their main-hand melee weapon when damaging a non-allied target.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SHARPENED SNARE CUIRASS</content>
 	<content contentuid="h46ecfcf8g86aag4e80gaa8egf74117d40060" version="2">Sharpened Snare</content>
@@ -793,11 +813,11 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">CALLOUS GLOW RING</content>
 	<content contentuid="hdba9745bg03acg4a09ga574gf94a721dce47" version="2">Callous Glow</content>
-	<content contentuid="h9a6474c3gcb32g406bg9750gc15797688a45" version="4">The wearer deals an additional [1] against undead creatures.</content>
+	<content contentuid="h9a6474c3gcb32g406bg9750gc15797688a45" version="4">The wearer deals an additional [1] when damaging a non-allied, undead creature.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">RING OF FIRE</content>
 	<content contentuid="h3055851eg8844g4076ga079g0a7747b05c55" version="2">Burning Fury</content>
-	<content contentuid="h5e632809g6912g421agaca5g0ea10e320bb6" version="2">When dealing Fire damage to a &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt; enemy, the wearer deals an additional [1].</content>
+	<content contentuid="h5e632809g6912g421agaca5g0ea10e320bb6" version="2">When dealing Fire damage to a non-allied target that is &lt;LSTag Type="Status" Tooltip="BURNING"&gt;Burning&lt;/LSTag&gt;, the wearer deals an additional [1].</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">LIGHT CROSSBOW OF SPEED</content>
 	<content contentuid="h1eb4a116g1e71g4bbbgb343gb1125c02f74a" version="3">Blink-of-an-eye Bolt</content>
@@ -863,8 +883,8 @@
 	<content contentuid="h2772442bgd7c2g4318g9055g48906fc6a454" version="1">Play your instrument to restore one charge of Bardic Inspiration.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">BROODMOTHERS REVENGE</content>
-	<content contentuid="he904e20bgc0c6g4edbg923cg35fff7b53c5b" version="1">Venomous Revenge</content>
-	<content contentuid="h33c858dcg5dbag44acgb81ag7001dc7e7d75" version="3">Whenever the wearer is healed by a Spell, their weapon becomes coated in magic and deals an additional [1] for three turns.</content>
+	<content contentuid="he904e20bgc0c6g4edbg923cg35fff7b53c5b" version="1">Shade Stinger</content>
+	<content contentuid="h33c858dcg5dbag44acgb81ag7001dc7e7d75" version="3">While the wearer is obscured, they deal an additional [1] when damaging a non-allied target.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">BROWBEATEN CIRCLET</content>
 	<content contentuid="hfe3f070dg4227g4d86g82dcgaf99245d150a" version="2">Browbeaten</content>
@@ -898,7 +918,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">STAFF OF SPELL POWER</content>
 	<content contentuid="h978147f5g586dg4572g9b6bg6w65e46s2sdf" version="2">Innate Power</content>
-	<content contentuid="h3c318747gdbe2g4a62g9b06a84we568e5e84" version="4">When dealing damage with a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, you deal additional damage equal to your level.</content>
+	<content contentuid="h3c318747gdbe2g4a62g9b06a84we568e5e84" version="4">When dealing damage with a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; to a non-allied target, you deal additional damage equal to your level.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">TARNISHED CHARM</content>
 	<content contentuid="h978147f5g586dg4572g9b6w6e54fe5f2d585" version="2">Hags Wrath</content>
@@ -916,7 +936,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">DARK JUSTICIAR HELMET</content>
 	<content contentuid="h5f7f6031g7ae9g48a1g9ecdg8a10a7fb9d4f" version="2">Sharran Critical</content>
-	<content contentuid="hcbdf26d1g1f6cg4771gadd5g968db391569b" version="4">While obscured, you deal an additional [1], and the number you need to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1.</content>
+	<content contentuid="hcbdf26d1g1f6cg4771gadd5g968db391569b" version="4">While obscured, you deal an additional [1] when damaging a non-allied target, and the number you need to roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 1.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">COVERT COWL</content>
 	<content contentuid="h5f7f6031g7ae9g48a1g9ecdg8a10a72d525f" version="2">Covert Crits</content>
@@ -924,7 +944,11 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">NECKLACE OF ELEMENTAL AUGMENTATION</content>
 	<content contentuid="hc4ad4d92gba57g4cecgbb82g5b31a68306e9" version="2">Elemental Augmentation</content>
-	<content contentuid="h8325974bg580bg4efdgb968g23048f4c24aa" version="10">When one of your &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; deals Acid, Cold, Fire, Lightning, or Thunder damage as it's primary source of damage, you add your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Modifier&lt;/LSTag&gt; to the damage dealt.</content>
+	<content contentuid="h8325974bg580bg4efdgb968g23048f4c24aa" version="10">When one of your &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; deals Acid, Cold, Fire, Lightning, or Thunder damage as it's primary source of damage to a non-allied target, you add your &lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Modifier&lt;/LSTag&gt; to the damage dealt.</content>
+
+<content contentuid="0000000000000000000000000000000000000" version="1">PLANESLAYER FLAIL</content>
+	<content contentuid="hf510d627ga38ag4d17g84d8g733e553d6a34" version="1">Outer-Entity Slayer</content>
+	<content contentuid="ha990c466g812dg402eg9e2dg760c1b9317cb" version="1">When wielded against non-allied fey, fiends, or undead, this weapon has a +[1] bonus to both &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">DEVILFOIL MASK</content>
 	<content contentuid="h9b3a403egfba1g424ag9bdeg841fa5a4a454" version="2">Devilish Bargain</content>
@@ -976,7 +1000,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">PENUMBRAL ARMOUR</content>
 	<content contentuid="he74289d7gb49eg4180g8ddag8d3a59fe95a3" version="2">Shadow Stalker</content>
-	<content contentuid="hbc70850eg9407g4047g8b8agf61684607d9f" version="4">While obscured, the wearer gains a +[1] bonus to Stealth based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="hbc70850eg9407g4047g8b8agf61684607d9f" version="4">While obscured, the wearer gains a +[1] bonus to Stealth based &lt;LSTag Tooltip="SkillCheck"&gt;Skill Checks&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">PERIAPT OF WOUND CLOSURE</content>
 	<content contentuid="hb5e854fag2d20g4966g9011gbacc8b58de7f" version="2">Wound Closure</content>
@@ -984,7 +1008,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">RING OF FLINGING</content>
 	<content contentuid="h39b7392egfcb1g4e4fg9d03g02ccd334f675" version="2">Send It</content>
-	<content contentuid="h1aa149a9g724ag47c0ga7a4g73b152129063" version="2">The wearer gains a +[1] bonus to damage when &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throwing&lt;/LSTag&gt; creatures or objects.</content>
+	<content contentuid="h1aa149a9g724ag47c0ga7a4g73b152129063" version="2">The wearer gains a +[1] bonus to damage when &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throwing&lt;/LSTag&gt; a non-allied target.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">RING OF MIND SHIELDING</content>
 	<content contentuid="hae3accaagc80eg41a0g8b85g11f9e7087845" version="2">Mental Bastion</content>
@@ -1000,15 +1024,15 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">BLOOD BOUND BLADE</content>
 	<content contentuid="h2ce0bd6fg790cg4832g81afg3464d4d21af1" version="2">Synchronicity</content>
-	<content contentuid="hedcef69fgf78cg469cg901fg33e2f56f43bd" version="5">When making a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, deal additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="hedcef69fgf78cg469cg901fg33e2f56f43bd" version="5">When making a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against a non-allied target, deal additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">REBOUND BATTLEAXE</content>
 	<content contentuid="h353f45b1ge829g47b7g81bcgf328dc10c881" version="2">Thunderous Rebound</content>
-	<content contentuid="had1e58a5g61efg49e6gbd3cg7e0a9fb35a10" version="5">When throwing another creature or object, you deal an additional [1].</content>
+	<content contentuid="had1e58a5g61efg49e6gbd3cg7e0a9fb35a10" version="5">When throwing a non-allied target, you deal an additional [1].</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SHARS SPEAR OF EVENING</content>
 	<content contentuid="h0f958790g6a3bg4ba8g8f18gc48eb59ba5d6" version="2">Shar's Blessing</content>
-	<content contentuid="h02942cf4g33c9g4fa7g859fg850bc24c785e" version="11">While Lightly or Heavily Obscured, you gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; and deal an additional [1] with main-hand weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+	<content contentuid="h02942cf4g33c9g4fa7g859fg850bc24c785e" version="11">While Lightly or Heavily Obscured, you gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; and deal an additional [1] with main-hand weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;. In addition, you gain the ability to see in the dark, both magical and non-magical, up to [2].</content>
 	<content contentuid="h1cf4825bg4e4cg449cga1e5g8eb711e23fbc" version="1">Shar's Blessing</content>
 	<content contentuid="h8da2b13dg87c4g4edeg971bg7fc446d76298" version="1">Affected creature has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; and deals an additional [1] on main-hand weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
 	<content contentuid="h1cf4825bg4e4cg449cga1e5g8e6we54f6we5" version="1">Darkest Night</content>
@@ -1027,11 +1051,15 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SWORDMASTER GLOVES</content>
 	<content contentuid="h0445cfe5g6a60g48e4g84d4g95928d3674f0" version="3">Sword Mastery</content>
-	<content contentuid="h188e2b94g48bag4c27ga2a6g14b1e83dbc9e" version="2">Gain a +2 bonus to your &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage dealt when you have multiple enemies within [1] of you.</content>
+	<content contentuid="h188e2b94g48bag4c27ga2a6g14b1e83dbc9e" version="2">Gain a +2 bonus to your &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage dealt to non-allied targets when you have multiple enemies within [1] of you.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">GLOVES OF THE BALANCED HANDS</content>
 	<content contentuid="h0445cfe5g6a60g48e4g84d4g95928d2ds3d5" version="3">Balanced Strength</content>
-	<content contentuid="h188e2b94g48bag4c27ga2a6g14b1e86s8d85" version="2">When you make an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with your off-hand weapon, add your &lt;LSTag Tooltip="AbilityModifier"&gt;Strength Modifier&lt;/LSTag&gt; to the damage of the attack.</content>
+	<content contentuid="h188e2b94g48bag4c27ga2a6g14b1e86s8d85" version="2">When you make an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; with your off-hand weapon, add your &lt;LSTag Tooltip="AbilityModifier"&gt;Strength Modifier&lt;/LSTag&gt; to the damage of the attack when damaging a non-allied target.</content>
+
+<content contentuid="0000000000000000000000000000000000000" version="1">THUNDERPALM STRIKERS</content>
+	<content contentuid="h84bd4bd4g5221g458egbed5g6c8ff3ab3426" version="2">Booming Blows</content>
+	<content contentuid="h2c941cb9g4754g43c6g9a24g3b684f7a718d" version="2">Your unarmed attacks deal an additional [1] to non-allied targets.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">THE OAK FATHERS EMBRACE</content>
 	<content contentuid="h9efbb201g3e37g4fc4g924ag70a6a9dfe279" version="3">Order of Nature</content>
@@ -1057,7 +1085,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">EVERBURN BLADE</content>
 	<content contentuid="h6d7bd506g0399g40d8g9ccbgf2cbb41ff5d6" version="2">Everburn</content>
-	<content contentuid="h000d4a79ge387g43d7ga7eeg22c52d2ss6f9" version="4">Dealing damage with this weapon potentially causes your target to suffer from a &lt;LSTag Type="Status" Tooltip="CURSEOFHELLFIRE"&gt;Curse of Hellfire&lt;/LSTag&gt; for one turn.</content>
+	<content contentuid="h000d4a79ge387g43d7ga7eeg22c52d2ss6f9" version="4">Dealing damage to an aberration with this weapon afflicts them with a &lt;LSTag Type="Status" Tooltip="CURSEOFHELLFIRE"&gt;Curse of Hellfire&lt;/LSTag&gt; for one turn.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">GLOWING SHIELD</content>
 	<content contentuid="h6f526c99g8a05g4600gbc11g5b2b154981bc" version="2">Loving Protection</content>
@@ -1191,7 +1219,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SPELLMIGHT</content>
 	<content contentuid="h84fdac7ag5a95g4353g89afga173c248e384" version="2">Spellmight</content>
-	<content contentuid="h868f2019ga9c6g45dfgba27gd7a4a396e1e8" version="4">Spells and &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; you cast that require an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; suffer a -[1] penalty to the roll. However, Spells and Cantrips requiring an Attack Roll also deal an additional +[2] damage. This can be toggled at any time.</content>
+	<content contentuid="h868f2019ga9c6g45dfgba27gd7a4a396e1e8" version="4">Spells and &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt; you cast that require an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; suffer a -[1] penalty to the roll. However, Spells and Cantrips requiring an Attack Roll also deal an additional +[2] damage when damaging a non-allied target. This can be toggled at any time.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">HOLLOW'S STAFF</content>
 	<content contentuid="h84fdac7ag5a95g4353g89afga173c2486a98" version="2">Necrotic Roots</content>
@@ -1251,13 +1279,13 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">HARMONIC DUELLER</content>
 	<content contentuid="h4a5a7e3dg9172g413eg9b6ag6431747469d7" version="2">Mellow Harmony</content>
-	<content contentuid="hc6d7c440g00ccg4212g9869g74f234b52ac0" version="8">Grant all your &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; additional damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="hc6d7c440g00ccg4212g9869g74f234b52ac0" version="8">Grant all your &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; additional damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt; when damaging a non-allied target.</content>
 	<content contentuid="h6963f544gbac9g4d92g8f2dg3e7301771781" version="3">Mellow Harmony</content>
-	<content contentuid="ha22e2753g6862g4f4agaf26g396f127b58cf" version="9">Affected creature's &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; deal additional damage equal to their &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="ha22e2753g6862g4f4agaf26g396f127b58cf" version="9">Affected creature's &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; deal additional damage equal to their &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt; when damaging a non-allied target.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">HORNS OF THE BERSERKER</content>
 	<content contentuid="h0633c5c1g0427g4169g8b1fgde5e1605d387" version="1">Blood Thirst</content>
-	<content contentuid="ha0b53930g3ba7g425ag8901g41585c661758" version="4">Physical attacks made with your main-hand will deal an additional [1] while below half of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="ha0b53930g3ba7g425ag8901g41585c661758" version="4">Physical attacks made with your main-hand will deal an additional [1] to non-allied targets while below half of your total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">BRACING BAND</content>
 	<content contentuid="h6c6e1164ge270g44f6gaf88g84fedd3491c5" version="2">Personal Space</content>
@@ -1353,7 +1381,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">ENFORCER HELMET</content>
 	<content contentuid="h35bcf4afg7508g42a9g8e11gdd6badd0d895" version="3">Rejuvenating Takedown</content>
-	<content contentuid="hf29015c3g7fd8g40c9gae6ag0927ce01d32b" version="4">Whenever the wearer knocks a creature &lt;LSTag Type="Status" Tooltip="UNCONSCIOUS"&gt;Unconscious&lt;/LSTag&gt;, the wearer regains [1].</content>
+	<content contentuid="hf29015c3g7fd8g40c9gae6ag0927ce01d32b" version="4">Whenever the wearer kills a non-allied creature, the wearer regains [1].</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">RING OF REGENERATION</content>
 	<content contentuid="hf38111b1ge9afg4034ga7cbg86406451dfa1" version="2">Combat Regeneration</content>
@@ -1436,7 +1464,7 @@
 	<content contentuid="ha21d14a0g455cg41c5gb4dfg6ddc0c6bec13" version="2">Flying Strike</content>
 	<content contentuid="ha787fc9fg3417g4c7agb340gb69c68defff6" version="8">Gain the ability to passively &lt;LSTag Type="Spell" Tooltip="Projectile_Fly"&gt;Fly&lt;/LSTag&gt;. Upon flying, your next main-hand &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; deals an additional [1].</content>
 	<content contentuid="hb6874d86gdf77g46b9g836fg9c25a41e1f14" version="2">Flying Strike</content>
-	<content contentuid="h7f2aa96agb67cg43e4gb13ag0e1004f52b25" version="2">Affected creature has flown this turn. Their next main-hand &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; deals an additional [1].</content>
+	<content contentuid="h7f2aa96agb67cg43e4gb13ag0e1004f52b25" version="2">Affected creature has flown this turn. Their next main-hand &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; deals an additional [1] if made against a non-allied target.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">CEREBRAL CITADEL ARMOUR</content>
 	<content contentuid="h54e52ebcgbd26g43f2gb994g3060f49c37c4" version="2">Illithid Assertion</content>
@@ -1448,7 +1476,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">POISONERS ROBE</content>
 	<content contentuid="hcbc03dafg8aacg4068g808cg1849be085b2f" version="1">Poison Trails</content>
-	<content contentuid="hc38ef374g8d19g47d5g80d3g0bc2665dd615" version="1">When the wearer casts a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; that deals Poison damage, it deals an additional [1].</content>
+	<content contentuid="hc38ef374g8d19g47d5g80d3g0bc2665dd615" version="1">When the wearer casts a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; that deals Poison damage to a non-allied target, it deals an additional [1].</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">CINDERMOTH CLOAK</content>
 	<content contentuid="h4a0a6885g53f5g4a35g8c2egeb3a3b3190fe" version="2">Flaming Shroud</content>
@@ -1502,7 +1530,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">CHAMPIONS CHAIN</content>
 	<content contentuid="hd5fbd06fgc8d3g43e7ga8efgbfd66773daad" version="2">Champion of Spores</content>
-	<content contentuid="hd3d74bb4g16e4g4318ga7c8g17ae023ceae5" version="3">Undead summons within [1] of you deal an additional [2] and learn &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt;.</content>
+	<content contentuid="hd3d74bb4g16e4g4318ga7c8g17ae023ceae5" version="3">Non &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons within [1] of you deal an additional [2] when damaging a non-allied target. In addition, they learn &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">GEMINI GLOVES</content>
 	<content contentuid="h6d630a54ga98bg416fgacf7g3cce6e370e4e" version="2">Two-Handed Casting</content>
@@ -1561,7 +1589,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">VISION OF THE ABSOLUTE</content>
 	<content contentuid="h53ca2dacge8a8g42a3ga31egdf4d4f01e402" version="5">Absolute Night</content>
-	<content contentuid="hd25e7a3bg3808g444cga89fg461418d40823" version="4">Dealing damage with this weapon has the potential to &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blind&lt;/LSTag&gt; your target.</content>
+	<content contentuid="hd25e7a3bg3808g444cga89fg461418d40823" version="4">Dealing damage with this weapon has the potential to &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blind&lt;/LSTag&gt; your target. In addition, while held, the wielder cannot be Blinded.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">WINTERS CLUTCHES</content>
 	<content contentuid="h893f5dafg68e8g44b9gb3efgaf35986c4be7" version="2">Winter's Clutches</content>
@@ -1577,7 +1605,7 @@
 	<content contentuid="h1f68b02dgf612g434egac26g5ea0d1544d54" version="2">Colossal Visage</content>
 	<content contentuid="h65909c76g0e8eg4a71g9dd8g19c48266s645" version="3">Grow to a mountainous size. Your weapons deal an additional [1] damage and your maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; increase by [2]. Additionally, you roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 	<content contentuid="h65fe1647g4738g448eg9b07g1545e4ae5a4b" version="2">Colossal Visage</content>
-	<content contentuid="h38132b22g92d2g43dbg8b48g28e716fb28d7" version="4">Affected creature's size has increased. It's main-hand weapon attacks deal an additional +[1] damage. It has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="h38132b22g92d2g43dbg8b48g28e716fb28d7" version="4">Affected creature's size has increased. It's main-hand weapon attacks deal an additional +[1] damage when damaging a non-allied target. It has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 	<content contentuid="h2c50b3f2g2db0g460agb631gb53efe35d454" version="2">Giantslayer</content>
 	<content contentuid="h669cb72eg4f88g491fgbb79gd0b57bb22545" version="3">You gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against Large, Huge, or Gargantuan creatures.</content>
 
@@ -1641,7 +1669,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">HELMET OF GRIT</content>
 	<content contentuid="h60c7c367g27a1g4974ga2a1g9981f61131f3" version="2">Gritty</content>
-	<content contentuid="hac52787ag9453g4ac7gb7e1g6bc38ba8690d" version="2">When the wearer has 75% &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; or less, they gain &lt;LSTag Type="Status" Tooltip="HASTE_GRITTY"&gt;Hastened Assault&lt;/LSTag&gt;.</content>
+	<content contentuid="hac52787ag9453g4ac7gb7e1g6bc38ba8690d" version="2">When the wearer has 75% &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; or less, they gain &lt;LSTag Type="Status" Tooltip="HASTE_GRITTY"&gt;Heart-Seeker's Boon&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">PELORSUN BLADE</content>
 	<content contentuid="h4b7e93b4g7d69g4ef8g8fa2g69d785cd46e2" version="3">Undead Bane</content>
@@ -1649,9 +1677,9 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">RHAPSODY</content>
 	<content contentuid="h0d3f3041gfa35g4898g9562g0e91d87f6a3f" version="5">Scarlet Remittance</content>
-	<content contentuid="hb24c6636g625bg4ee7gb9cfg91dc96edc089" version="5">Gain a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, Damage, and &lt;LSTag Tooltip="SpellDifficultyClass"&gt;Spell Save DC&lt;/LSTag&gt; for every foe you slay, up to a maximum of +[2].</content>
+	<content contentuid="hb24c6636g625bg4ee7gb9cfg91dc96edc089" version="5">Gain a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, damage against non-allied targets, and &lt;LSTag Tooltip="SpellDifficultyClass"&gt;Spell Save DC&lt;/LSTag&gt; for every foe you slay, up to a maximum of +[2].</content>
 	<content contentuid="h25f51524gab18g4d71g986ag349f91f073ce" version="3">Scarlet Remittance</content>
-	<content contentuid="hf8ab43f1g6229g40e1gb39aga6508ccd5448" version="5">Affected creature has a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, damage, and &lt;LSTag Tooltip="SpellDifficultyClass"&gt;Spell Save DC&lt;/LSTag&gt;.</content>
+	<content contentuid="hf8ab43f1g6229g40e1gb39aga6508ccd5448" version="5">Affected creature has a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, damage against non-allied targets, and &lt;LSTag Tooltip="SpellDifficultyClass"&gt;Spell Save DC&lt;/LSTag&gt;.</content>
 	<content contentuid="h442586a9g8100g4dd7g85b5g07ee8dba8f56" version="2">Sweet Bloodletting</content>
 	<content contentuid="hb4faf792gc195g4d1eg968bg2957185dd0f4" version="10">Inflict &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleeding&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="GAPING_WOUND"&gt;Gaping Wounds&lt;/LSTag&gt; when damaging a creature with this weapon while &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Hidden&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisible&lt;/LSTag&gt;.</content>
 
@@ -1697,7 +1725,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">ILMATERS AID</content>
 	<content contentuid="h7244dcfag1788g4a6bgb1d3g74d963787e0d" version="2">Strength in Suffering</content>
-	<content contentuid="h8ba465d0g1abag4dd6g802egb9222f98184b" version="3">Non-&lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; Spells deal an additional [1] damage when the wearer drops to half their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; or lower.</content>
+	<content contentuid="h8ba465d0g1abag4dd6g802egb9222f98184b" version="3">Non-&lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; Spells deal an additional [1] damage to non-allied targets when the wearer drops to half their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; or lower.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">TREACLEFLOW AMULET</content>
 	<content contentuid="hfb08e2abg4829g43d4g8745ge78ba26bf4cd" version="2">Rampart Aura</content>
@@ -1742,12 +1770,6 @@
 	<content contentuid="h1c85bcf0g946ag4861gbe55gd6d725a5258a" version="3">Chilling Grace</content>
 	<content contentuid="hcff9bc90gae73g4c27gaf4dg913f2c685d47" version="2">When the wearer has 50% &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; or less, they gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage.</content>
 
-<content contentuid="0000000000000000000000000000000000000" version="1">MUTILATED CARAPACE</content>
-	<content contentuid="h45115e34gb43bg4755g9be6ga42284246ad3" version="2">Formless Slaughter</content>
-	<content contentuid="h569ef2cdg7e58g4642gbd1bg5aa74e364b9a" version="4">Affected creature has a +[1] bonus to Attack and Damage rolls while disguised or shapeshifted.</content>
-	<content contentuid="hbc85a640g7941g4575ga6bfg675e8c2f3d60" version="3">Faceless Masquerade</content>
-	<content contentuid="h0660ab7agc3a8g41f3ga93bge8eaee0b81b3" version="2">You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Deception and Persuasion based &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
-
 <content contentuid="0000000000000000000000000000000000000" version="1">MASK OF THE SHAPESHIFTER</content>
 	<content contentuid="h45115e34gb43bg4755g9be6ga4228424fane" version="2">Legacy of Fane</content>
 	<content contentuid="h569ef2cdg7e58g4642gbd1bg5aa74e36fane" version="4">Gain a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; while &lt;LSTag Type="Spell" Tooltip="Shout_DisguiseSelf"&gt;Disguised&lt;/LSTag&gt;.</content>
@@ -1762,26 +1784,26 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">MARKOHESHKIR</content>
 	<content contentuid="hd666e1aag307cg4f2dg8a6dg17bfd76c7bd9" version="2">Flame of Wrath</content>
-	<content contentuid="he7511f2fgac42g4072gae51g374bcd4f26e8" version="2">Embrace Kereska's Flame to gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to fire damage. In addition, your fire Spells deal additional fire damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="he7511f2fgac42g4072gae51g374bcd4f26e8" version="2">Embrace Kereska's Flame to gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to fire damage. In addition, your fire Spells deal additional fire damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; when damaging a non-allied target.</content>
 	<content contentuid="hd8853b0egd4f8g46f6gbd57g4fe58f25201d" version="1">When you deal damage with a Spell, gain [1] turn of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt;. While attuned to Kereska's flame, you can cast &lt;LSTag Type="Spell" Tooltip="Projectile_Fireball"&gt;Fireball&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Wall_WallOfFire"&gt;Wall of Fire&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hc7c7dc68g11e4g4c68g8047g211c012d7d54" version="5">Gripped by Kereska's Flame</content>
-	<content contentuid="h65d71f14g8ed2g4c22g9926g1544d8947b8b" version="2">Affected creature is &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to Fire damage. Their Fire Spells deal additional Fire damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. When it deals damage with a Spell, it gains [1] stack of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt;. While attuned to Kereska's Flame, it can cast &lt;LSTag Type="Spell" Tooltip="Projectile_Fireball"&gt;Fireball&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Wall_WallOfFire"&gt;Wall of Fire&lt;/LSTag&gt;.</content>
+	<content contentuid="h65d71f14g8ed2g4c22g9926g1544d8947b8b" version="2">Affected creature is &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to Fire damage. Their Fire Spells deal additional Fire damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; when damaging a non-allied target. When it deals damage with a Spell, it gains [1] stack of &lt;LSTag Type="Status" Tooltip="MAG_FIRE_HEAT"&gt;Heat&lt;/LSTag&gt;. While attuned to Kereska's Flame, it can cast &lt;LSTag Type="Spell" Tooltip="Projectile_Fireball"&gt;Fireball&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Wall_WallOfFire"&gt;Wall of Fire&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h08292f65gef5fg43b7g9508g935c259693e8" version="3">Conduit of Kereska's Ice</content>
-	<content contentuid="h68a13ab9gfa58g4ffdgb247gc49bb0f2fb8f" version="3">Affected creature is &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to Cold damage. Their Cold Spells deal additional Cold damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. When it deals damage with a Spell, it inflicts [1] stack of &lt;LSTag Type="Status" Tooltip="MAG_FROST"&gt;Frost&lt;/LSTag&gt; upon the target. While attuned to Kereska's Ice, it can cast &lt;LSTag Type="Spell" Tooltip="Zone_ConeOfCold"&gt;Cone of Cold&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Target_IceStorm"&gt;Ice Storm&lt;/LSTag&gt;.</content>
+	<content contentuid="h68a13ab9gfa58g4ffdgb247gc49bb0f2fb8f" version="3">Affected creature is &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to Cold damage. Their Cold Spells deal additional Cold damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; when damaging a non-allied target. When it deals damage with a Spell, it inflicts [1] stack of &lt;LSTag Type="Status" Tooltip="MAG_FROST"&gt;Frost&lt;/LSTag&gt; upon the target. While attuned to Kereska's Ice, it can cast &lt;LSTag Type="Spell" Tooltip="Zone_ConeOfCold"&gt;Cone of Cold&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Target_IceStorm"&gt;Ice Storm&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h342e12f0gf3c0g46aeg80a4g64b3d9b20c76" version="3">Crackling with Kereska's Lightning</content>
-	<content contentuid="h4da5af2fg5242g48a4g8d0egd1629cfbcc48" version="4">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage. Their lightning Spells deal additional Lightning damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.When it deals damage with a Spell, it gains [1] &lt;LSTag Type="Status" Tooltip="MAG_CHARGED_LIGHTNING"&gt;Lightning Charge&lt;/LSTag&gt;. While attuned to Kereska's Lightning, it can cast &lt;LSTag Type="Spell" Tooltip="Projectile_ChainLightning"&gt;Chain Lightning&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Zone_LightningBolt"&gt;Lightning Bolt&lt;/LSTag&gt;.</content>
+	<content contentuid="h4da5af2fg5242g48a4g8d0egd1629cfbcc48" version="4">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Lightning damage. Their lightning Spells deal additional Lightning damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; when damaging a non-allied target. When it deals damage with a Spell, it gains [1] &lt;LSTag Type="Status" Tooltip="MAG_CHARGED_LIGHTNING"&gt;Lightning Charge&lt;/LSTag&gt;. While attuned to Kereska's Lightning, it can cast &lt;LSTag Type="Spell" Tooltip="Projectile_ChainLightning"&gt;Chain Lightning&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Zone_LightningBolt"&gt;Lightning Bolt&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h4b055753g9fb5g4595g8413g9143785a2821" version="3">Rumbling with Kereska's Thunder</content>
-	<content contentuid="h0d2e9d8ag01d4g4c43g84edge054fb811f75" version="2">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Thunder damage. Their thunder Spells deal additional thunder damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. When it deals damage with a Spell, it inflicts [1] stack of &lt;LSTag Type="Status" Tooltip="MAG_THUNDER_REVERBERATION"&gt;Reverberation&lt;/LSTag&gt; upon the target. While attuned to Kereska's Thunder, it can cast &lt;LSTag Type="Spell" Tooltip="Target_Shatter"&gt;Shatter&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Shout_DestructiveWave"&gt;Destructive Wave&lt;/LSTag&gt;.</content>
+	<content contentuid="h0d2e9d8ag01d4g4c43g84edge054fb811f75" version="2">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Thunder damage. Their thunder Spells deal additional thunder damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; when damaging a non-allied target. When it deals damage with a Spell, it inflicts [1] stack of &lt;LSTag Type="Status" Tooltip="MAG_THUNDER_REVERBERATION"&gt;Reverberation&lt;/LSTag&gt; upon the target. While attuned to Kereska's Thunder, it can cast &lt;LSTag Type="Spell" Tooltip="Target_Shatter"&gt;Shatter&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Shout_DestructiveWave"&gt;Destructive Wave&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hcac13032g5513g4b32g8f8eg6e112290234d" version="2">Vessel for Kereska's Poison</content>
-	<content contentuid="h2f2a7608gc1d1g41dfga874g3a1fbb723b07" version="5">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage. Their poison Spells deal additional poison damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. When it deals damage with a Spell, inflict [1] turn of &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt; upon the target. While attuned to Kereska's Poison it can cast &lt;LSTag Type="Spell" Tooltip="Target_Cloudkill"&gt;Cloudkill&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Projectile_RayOfSickness"&gt;Ray of Sickness&lt;/LSTag&gt;.</content>
+	<content contentuid="h2f2a7608gc1d1g41dfga874g3a1fbb723b07" version="5">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Poison damage. Their poison Spells deal additional poison damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; when damaging a non-allied target. When it deals damage with a Spell, inflict [1] turn of &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt; upon the target. While attuned to Kereska's Poison it can cast &lt;LSTag Type="Spell" Tooltip="Target_Cloudkill"&gt;Cloudkill&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Projectile_RayOfSickness"&gt;Ray of Sickness&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hd017cb7ag8508g43eag86degebe84f3e8cc2" version="2">Adrip with Kereska's Acid</content>
-	<content contentuid="h3cffb81dg7c8dg4782g9573g40ff4ba0f3cf" version="3">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Acid damage. Their acid Spells deal additional acid damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. When it deals damage with a Spell, it inflicts [1] turn of &lt;LSTag Type="Status" Tooltip="MAG_ACID_NOXIOUS_FUMES"&gt;Noxious Fumes&lt;/LSTag&gt; upon the target. While attuned to Kereska's Acid it can cast &lt;LSTag Type="Spell" Tooltip="Target_MAG_Legendary_Chromatic_HungerOfHadar"&gt;Hunger of Hadar&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Projectile_MAG_Legendary_Chromatic_MelfAcidArrow"&gt;Melf's Acid Arrow&lt;/LSTag&gt;.</content>
+	<content contentuid="h3cffb81dg7c8dg4782g9573g40ff4ba0f3cf" version="3">Affected creature has &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Acid damage. Their acid Spells deal additional acid damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; when damaging a non-allied target. When it deals damage with a Spell, it inflicts [1] turn of &lt;LSTag Type="Status" Tooltip="MAG_ACID_NOXIOUS_FUMES"&gt;Noxious Fumes&lt;/LSTag&gt; upon the target. While attuned to Kereska's Acid it can cast &lt;LSTag Type="Spell" Tooltip="Target_MAG_Legendary_Chromatic_HungerOfHadar"&gt;Hunger of Hadar&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Projectile_MAG_Legendary_Chromatic_MelfAcidArrow"&gt;Melf's Acid Arrow&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">CEREBRAL CITADEL GLOVES</content>
 	<content contentuid="hdf884ebeg166eg4a72g9b9eg9d54a1123a51" version="2">Illithid Euphoria</content>
@@ -1926,12 +1948,12 @@
 	<content contentuid="hf56a3781ge203g4f68ga4f2gee9818b1ac9c" version="1">Goblin War Banner</content>
 	<content contentuid="h6c751992g41d7g4f44g873ag5270967be0e3" version="1">A small banner carried by a goblin into battle. It invigorates nearby allies with toxic energies.</content>
 	<content contentuid="h8c942f84g5a21g4cefga90eg9b6387fa7fda" version="1">Warcry</content>
-	<content contentuid="h87c08893gb9d9g422bg8fb2gbff604eb96f6" version="1">When dealing damage with a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, deal an additional +1d4 damage.</content>
+	<content contentuid="h87c08893gb9d9g422bg8fb2gbff604eb96f6" version="1">When dealing damage with a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against a non-allied target, deal an additional +1d4 damage.</content>
 
 	<content contentuid="h34928a6ag6133g4798gb825g22fb15f51b11" version="1">Holy Symbol of Kelemvor</content>
 	<content contentuid="hc7f5cd59g17dbg4c01gae23g95151b0c035e" version="1">A small and ancient stone coin with the symbol of Kelemvor engraved on it.</content>
 	<content contentuid="h056322b9g3133g4a74g94fcg870752f5a500" version="1">Balance the Scales</content>
-	<content contentuid="h41345d5eg81deg4336g8edcgbd7b9c2bc9b7" version="1">When dealing damage with a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, deal an additional +1d4 damage.</content>
+	<content contentuid="h41345d5eg81deg4336g8edcgbd7b9c2bc9b7" version="1">When dealing damage with a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; to a non-allied target, deal an additional +1d4 damage.</content>
 
 	<content contentuid="hf0015675gcc57g4b31ga36agebbbae1f8c88" version="1">Holy Symbol of Silvanus</content>
 	<content contentuid="hd0b62233gaec6g4b49g9b23g497b53984317" version="1">A smooth wooden token carved with the symbol of Silvanus on the front.</content>
@@ -2032,7 +2054,7 @@
 	<content contentuid="h3d7ded3eg5c26g4300gadb6g9d2077772869" version="1">Whatever this is meant to represent, it is of great importance to the Illithid.</content>
 	<content contentuid="h7611d9e7g25dfg42a8ga65ag166a225a8a89" version="1">Upon becoming enraged or assuming a &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wildshape&lt;/LSTag&gt;, gain &lt;LSTag Type="Status" Tooltip="JWL_Status_TotemDread"&gt;Thirst for Dominance&lt;/LSTag&gt; for [1] turns.</content>
 	<content contentuid="h33da9203gcb89g40e2g9a52g2801595ccd0a" version="1">Thirst for Dominance</content>
-	<content contentuid="hb1b78ad1gcbe7g4fefg826ag347cb4cd675a" version="1">Affected creature has a bonus to &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; and damage equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="hb1b78ad1gcbe7g4fefg826ag347cb4cd675a" version="1">Affected creature has a bonus to &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt;, and damage dealt to non-allied targets, equal to their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h07ffb6e7g2d7dg421bgb851g1f49cd34aba6" version="1">Corrupted Bloodwell Vial</content>
 	<content contentuid="h44db5c33g5fffg49fdgb98egbc98277cb684" version="1">The blood in this vial is foul but powerful.</content>
@@ -2041,14 +2063,16 @@
 	<content contentuid="h800250a4g649bg43eeg894fg5c510024d01a" version="1">Houndmaster's Whistle</content>
 	<content contentuid="h7d17fa78g9b6dg447bg81degc99462598962" version="1">A metal whistle capable of producing a high pitched whistle used to draw the attention of nearby animals.</content>
 	<content contentuid="ha06bd265gb0cfg4f69g8472gb1caa99461ff" version="1">Training Whistle</content>
-	<content contentuid="h25afced1g24d6g4d9bgb8b6g49f9bea8df40" version="1">The wielders summoned creatures within [1] receive &lt;LSTag Type="Status" Tooltip="JWL_Status_WhistleBeastBuff"&gt;Attentive&lt;/LSTag&gt;, granting them a +[2] bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, and damage. Has no effect on Undead or Constructs.</content>
+	<content contentuid="h25afced1g24d6g4d9bgb8b6g49f9bea8df40" version="1">The wearer's summoned creatures within [1] receive &lt;LSTag Type="Status" Tooltip="JWL_Status_WhistleBeastBuff"&gt;Attentive&lt;/LSTag&gt;, granting them a +[2] bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, and damage dealt to non-allied targets. Has no effect on Undead or Constructs.</content>
 	<content contentuid="h33f3ce24g457dg4d63g96bbg164b0efcd217" version="1">Attentive</content>
-	<content contentuid="hb4d48282g9835g419aga449g0485648971a4" version="1">Affected creature has a +[1] bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, and damage.</content>
+	<content contentuid="hb4d48282g9835g419aga449g0485648971a4" version="1">Affected creature has a +[1] bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, and damage dealt to non-allied targets.</content>
 
 	<content contentuid="h94877d54gbafeg4b2aga23fg88b2f6530037" version="1">Witch's Whistle</content>
 	<content contentuid="h421b2f40g894eg4594g87f4g9c3edd119e54" version="1">A whistle carved from bone. Its screeching sound seems to rouse the undead.</content>
 	<content contentuid="h32c50380g8becg4444g8128g3101e1a61be5" version="1">Banshee Wail</content>
-	<content contentuid="h47d93a72gc85fg4de7gb191g4a504185180c" version="1">The wielders summoned Undead creatures within [1] receive &lt;LSTag Type="Status" Tooltip="JWL_Status_WhistleWitchBuff"&gt;Grave Touch&lt;/LSTag&gt;, adding [2] to their attacks. This effect scales with your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="h47d93a72gc85fg4de7gb191g4a504185180c" version="1">The wielders Undead summoned creatures within [1] receive &lt;LSTag Type="Status" Tooltip="JWL_Status_WhistleWitchBuff"&gt;Grave Touch&lt;/LSTag&gt;, adding [2] to their attacks. This effect scales with your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="h5861773dg99b0g4cd9gb3e6g4b9739fbe6a5" version="1">Grave Touch</content>
+	<content contentuid="haca3a816gc467g4376g829bgf7b568bbd766" version="1">Affected creature's attacks deal an additional [1] when damaging a non-allied target. This effect scales with their summoners &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 
 	<content contentuid="he5b984a1g4c73g4c0dgb275g2a48f01475fe" version="1">Bag of Tricks</content>
 	<content contentuid="h00cfd621ga3abg460bgae62gfeb99d95d55b" version="1">A bag is filled with small round balls. There is seemingly no bottom.</content>
@@ -2164,14 +2188,14 @@
 	<content contentuid="ha631b96bgb447g43a0ga41fg434214b2d294" version="1">Silver Lycan Chime</content>
 	<content contentuid="hc1a8211bg79dag40d1g90eeg1f4f3fdacab9" version="1">The ring of this bell emanates with the weave.</content>
 	<content contentuid="h102b66d2g810dg49c5g89ecg47411d8cf0f5" version="1">Silver Bells</content>
-	<content contentuid="h1dd773ecg5ad7g40cdg9e94gb8bfda9c2f50" version="1">The wielders summoned creatures within [1] receive &lt;LSTag Type="Status" Tooltip="JWL_Status_SilverLycanCharmBuff"&gt;Inspired&lt;/LSTag&gt;, increasing their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by [2] and granting them a +[3] bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, and damage. Has no effect on Undead or Constructs.</content>
+	<content contentuid="h1dd773ecg5ad7g40cdg9e94gb8bfda9c2f50" version="1">The wielders summoned creatures within [1] receive &lt;LSTag Type="Status" Tooltip="JWL_Status_SilverLycanCharmBuff"&gt;Inspired&lt;/LSTag&gt;, increasing their &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by [2] and granting them a +[3] bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, and damage. Has no effect on Undead.</content>
 	<content contentuid="he1479633g5c28g4815g8dd7gedfe502373b9" version="1">Inspired</content>
 	<content contentuid="hf48a6d83g8c5fg4d10g98f9gbc44417438b0" version="1">Affected creature has an additional [1] of &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; and a +[2] bonus to their &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt;, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, and damage.</content>
 
 	<content contentuid="hf5e09b1eg7364g4363gbfb3g462c3cdfca75" version="1">Thayan Femur</content>
 	<content contentuid="h4bea37c5g2aa7g42aegb2dfg5747beb9ca01" version="1">The femur of a once great necromancer.</content>
 	<content contentuid="h992f7657g2d5bg4396ga200gb8c040d932d5" version="1">Constant Chattering</content>
-	<content contentuid="h07f271f9g13e5g4b7aga5a6gffce01cf0f2c" version="1">The wielders summoned Undead creatures within [1] have a chance to &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrify&lt;/LSTag&gt; their targets for 1 turn when dealing damage with a melee attack.</content>
+	<content contentuid="h07f271f9g13e5g4b7aga5a6gffce01cf0f2c" version="1">The wielders non &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; Undead summons within [1] have a chance to &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrify&lt;/LSTag&gt; their targets for 1 turn when dealing damage with a melee attack.</content>
 	<content contentuid="hc263741eg94ceg4e0cg98f0g22ff3a54f314" version="1">Affected creature has a chance to &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrify&lt;/LSTag&gt; their targets when dealing damage with melee attack.</content>
 
 	<content contentuid="hdc3f1921g5680g4b3cg97a3gf500bcbac62e" version="1">Stone of Good Luck</content>
@@ -2195,7 +2219,7 @@
 	<content contentuid="h90d32ee1gb12bg41d6ga445gf7a02b10e858" version="1">Holy Symbol of Eilistraee</content>
 	<content contentuid="h487c6e70gdebfg4f3ag9afbg4e2251c1e9ab" version="1">A small token dedicated to the drow sword goddess of beauty and freedom.</content>
 	<content contentuid="hca2427eag5ae6g4bdfg801cg74eb4646d6e9" version="1">Moon Maiden's Mark</content>
-	<content contentuid="hc6dbc548g719dg4548g871cg674bd40b61a0" version="1">When using your main-hand to deal damage with shortswords, longswords, or greatswords, deal additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; multiplied by two.</content>
+	<content contentuid="hc6dbc548g719dg4548g871cg674bd40b61a0" version="1">When using your main-hand to deal damage to a non-allied target with shortswords, longswords, or greatswords, deal additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; multiplied by two.</content>
 
 	<content contentuid="h7da956f2ga70bg4fe8g988bg4595a7e832a9" version="1">Holy Symbol of Helm</content>
 	<content contentuid="ha116629cg3f8cg4004g830cg4c0fe89f3513" version="1">A worn and weathered copper coin. Despite its age, the symbol of the god Helm is still clearly visible.</content>
@@ -2262,7 +2286,14 @@
 	<content contentuid="h99447434ga47dg41a1g8c22ge46eb37f8600" version="1">When casting &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt;, you fire an additional beam.</content>
 
 	<content contentuid="h1dbb03f8g4e1fg4124g821ag263d5fbee261" version="1">Dragonscale Leather Frog</content>
-	<content contentuid="hecbf2ba5g2932g429dgbe53gf64882290a11" version="1">When making an unarmed attack, deal additional bludgeoning damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="hecbf2ba5g2932g429dgbe53gf64882290a11" version="1">When making an unarmed attack against a non-allied target, deal additional bludgeoning damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+
+	<content contentuid="h9564a937gfec5g47a1gbc7dg7e092e758266" version="2">Dragonfire Fists</content>
+	<content contentuid="h5414bf21g0ebbg4adegaaa3g3d6473f31a25" version="2">Your unarmed attacks deal an additional [1] when damaging a non-allied target.</content>
+
+	<content contentuid="hef04c685gfd96g4d0agb950g926c389af051" version="2">Enervating Suffusion</content>
+	<content contentuid="h182fa9ecg8679g428bg9da8ge25c0b112ca6" version="2">Soul Fist</content>
+	<content contentuid="h4c860630gfa22g4594g8072g8cb631da79db" version="2">Your unarmed attacks deal an additional [1] when damaging a non-allied target.</content>
 
 	<content contentuid="h908a800fg775eg4cf7g8001g0ddb1b7b5611" version="1">Belt of Forbidden Harmony</content>
 	<content contentuid="hecc2d9d5g29d4g4da5g8bf0gaa460828639e" version="1">A belt celebrating the impossible balance between Shar and Selune.</content>
@@ -2278,14 +2309,14 @@
 	<content contentuid="h55a5b521g64d7g4043g9517g4edfcc4355fd" version="1">Cerberus Whistle</content>
 	<content contentuid="ha772e4e1g77c9g4bfeg84ebgce7bf99c847a" version="1">This whistle releases a terrible tone that drives creatures into a frenzy.</content>
 	<content contentuid="ha4e22634g9128g4dddga41cge55c88a6b5d0" version="1">Droning Buzz</content>
-	<content contentuid="h4e389111g119bg46aeg9333gebe4b8e6ac4f" version="1">The wielder's summoned creatures within [1] receive an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;. However, creatures affected by the whistle who leave it's area of effect immediately die.</content>
+	<content contentuid="h4e389111g119bg46aeg9333gebe4b8e6ac4f" version="1">The wielder's non &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons within [1] receive an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;. However, creatures affected by the whistle who leave it's area of effect immediately die.</content>
 	<content contentuid="h56548455g57b5g4339ga161g7005fc45e869" version="1">Frenzied</content>
 	<content contentuid="hbd51fc39g5a09g4b1dgbfdcg85482ebf3e24" version="1">Affected creature has gained an additional &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;. If they move farther than [1] away from their summoner, they will immediately die.</content>
 
 	<content contentuid="he2146d72g3d2eg4389g8222g3e236e5d39a1" version="1">Gibbering Bell</content>
 	<content contentuid="h514b9a04g2741g4db6gb6d8gb49d83eb57ca" version="1">A sentient bell that can telepathically communicate with nearby undead.</content>
 	<content contentuid="h9c228ce1g19fdg4697g87f1g7a6bbd39b11e" version="1">It Tolls For Thee</content>
-	<content contentuid="hba613187gef97g41ecga20cgc383e27dbcf0" version="1">Summoned Undead creatures within [1] of the wearer use the wearer's &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; and have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.</content>
+	<content contentuid="hba613187gef97g41ecga20cgc383e27dbcf0" version="1">Undead summons within [1] of the wearer use the wearer's &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; and have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.</content>
 	<content contentuid="h9bfaa917ge884g4a27ga08fg2cd825b99915" version="1">Affected creature uses their summoners &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; and has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage.</content>
 
 	<content contentuid="h4a5326aaga75ag4348ga87fg51c83fe194ec" version="1">Dealbreaker</content>
@@ -2315,7 +2346,7 @@
 	<content contentuid="hdff40298g8708g4d55ga18cgcff4aba8924a" version="1">Book of Vile Darkness</content>
 	<content contentuid="ha7ed7395g99f2g413bgae55gc66140a0b42b" version="1">A tome of ineffable wickedness, a reference work of evil authored, edited and compiled by some of the most powerful and maleficent entities across the multiverse.</content>
 	<content contentuid="hc0e432eagb51ag49c3g86c4gb430b50db13f" version="1">Infernal Gambit</content>
-	<content contentuid="h922b1f5bg84a6g4e4dgb432g8dd80f67aba9" version="1">While in combat, if you don't deal damage, you take [1] at the end of your turn. Whenever you deal damage to an enemy with a Spell, deal an additional [2] as well.</content>
+	<content contentuid="h922b1f5bg84a6g4e4dgb432g8dd80f67aba9" version="1">While in combat, if you don't deal damage, you take [1] at the end of your turn. When damaging a non-allied target with a Spell, you deal an additional [2].</content>
 	<content contentuid="h64b04b49gcb66g44cdg8d6dg0b2d6419d435" version="1">Unwavering</content>
 	<content contentuid="he8f86af8g35c8g4d95g9637gd9033c8d605a" version="1">The cursed knowledge flowing within you prevents fear from affecting you.</content>
 
@@ -2338,9 +2369,7 @@
 	<content contentuid="hc1c15525gfea2g4421g87bdgd0b2ca6a9881" version="1">Greater Soldier's Boon</content>
 	<content contentuid="h6f918201g54f0g4fc8g9e9fg8cf53338b703" version="1">Dragon Bloodwell Vial: Depleted</content>
 	<content contentuid="h3ad30dfeg74a5g43e1gaed3g0a2bab8e257a" version="1">The &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; granted from the bloodwell vial are depleted. A &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt; will restore them.</content>
-	<content contentuid="h5861773dg99b0g4cd9gb3e6g4b9739fbe6a5" version="1">Grave Touch</content>
-	<content contentuid="haca3a816gc467g4376g829bgf7b568bbd766" version="1">Affected creature's attacks deal an additional [1]. This effect scales with their summoners &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
-	<content contentuid="h6d3375acgb5c5g447ag98c4g0c67e3f905f1" version="1">Affected creature does an additional [1] with attacks.</content>
+	<content contentuid="h6d3375acgb5c5g447ag98c4g0c67e3f905f1" version="1">Affected creature does an additional [1] when damaging a non-allied target.</content>
 	<content contentuid="h9334bf00g0459g4b50gaeb2g0f817b27dadc" version="1">Affected creature has an additional +[2] to weapon &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and deals [3] to enemy attackers after being hit by a melee attack. Secondary effect can only occur once per turn per target.</content>
 	<content contentuid="he70e5d81g1fa0g4991g8621g06ae522c1aec" version="1">Effected creature swells with radiant stability. Only a hit that deals at least [1] damage can damage it.</content>
 	<content contentuid="h9b4251bbgd911g4eddg8fa2g85d893f09538" version="1">Holy Symbol of Corellon: Depleted (Divinity)</content>

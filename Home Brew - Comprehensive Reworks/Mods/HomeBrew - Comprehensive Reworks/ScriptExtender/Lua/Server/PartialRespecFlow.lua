@@ -235,7 +235,7 @@ local function HB_SaveLevelOnePassiveSources(actor, phase)
         .." errors="..tostring(#report.Errors))
 end
 -- This probe is also useful on a clean original save, before any risky edit.
-if Ext.Events and Ext.Events.SessionLoaded then
+if _G.HB_DebugDiagnostics == true and Ext.Events and Ext.Events.SessionLoaded then
     Ext.Events.SessionLoaded:Subscribe(function()
         Ext.Timer.WaitFor(1800,function()
             local host=Osi and Osi.GetHostCharacter and Osi.GetHostCharacter()
@@ -2605,6 +2605,20 @@ local function SendPendingPopup(characterGuid, state, reason)
         return
     end
     local viewer=RespecViewerUser(characterGuid)
+    local handoff=_G.HB_LevelUpBuildHandoff
+    local automated=handoff and handoff.TakeRespec(characterGuid,state.charLevel)
+    if automated then
+        if automated.AlreadySent then return end
+        local sent,sendError=pcall(function()
+            PartialRespecChannel:SendToClient({LevelUpAutoBuildStart=true,
+                Character=characterGuid,RequestId=automated.RequestId,
+                File=automated.File},viewer)
+        end)
+        RespecStartLog('LEVELUP_BUILD_HANDOFF actor='..characterGuid
+            ..' sent='..tostring(sent)..' error='..tostring(sendError))
+        if sent then return end
+        if handoff.Abort then handoff.Abort(characterGuid,'handoff send failed') end
+    end
     local ok,err=pcall(function()
         PartialRespecChannel:SendToClient({Character=characterGuid,
             MaxLevel=state.charLevel,LevelSummaries=state.summaries,Visible=true},viewer)
@@ -2645,6 +2659,16 @@ local function NativePresentationCapture(character)
     end)
     if hpOK and hp and hpMax and hpMax>0 and hp>=0 and hp<=hpMax then
         captured.Health={Hp=hp,MaxHp=hpMax,Abilities=NativePresentationAbilityScores(character)}
+    end
+    -- Record the actual (possibly mod-scaled) pre-respec bonus, not a guessed
+    -- proficiency table. This snapshot is transaction-local and read-only.
+    local profOK,bonus,level=pcall(function()
+        return tonumber(character.Stats and character.Stats.ProficiencyBonus),
+            tonumber(character.EocLevel and character.EocLevel.Level)
+    end)
+    if profOK and bonus and bonus%1==0 and bonus>=1 and bonus<=20
+        and level and level%1==0 and level>=1 and level<=40 then
+        captured.Proficiency={Bonus=bonus,Level=level}
     end
     local barOK,bars=pcall(function()
         local component=character.HotbarContainer
@@ -3020,6 +3044,62 @@ local function NativePresentationTraceHotbar(actor,saved,phase)
     end
 end
 
+-- BG3 may leave Stats.ProficiencyBonus at its native respec level-one value
+-- even after the higher-level CC history has been restored. Repair only the
+-- proven stale +2, using the saved live bonus (including modded scaling).
+local function NativePresentationRestoreProficiency(character,saved,expectedLevel)
+    local old=type(saved)=="table" and saved.Proficiency
+    local level=tonumber(expectedLevel)
+    if type(old)~="table" or not level or level%1~=0 or level<=4
+        or tonumber(old.Level)~=level then
+        return false,"no verified higher-level proficiency baseline"
+    end
+    local expected=tonumber(old.Bonus)
+    if not expected or expected%1~=0 or expected<=2 or expected>20 then
+        return false,"invalid pre-respec proficiency baseline"
+    end
+    local liveLevel=tonumber(character and character.EocLevel
+        and character.EocLevel.Level)
+    if liveLevel~=level then return false,"level changed during refresh" end
+    local rows=character and character.CCLevelUp and character.CCLevelUp.LevelUps
+    local classes=character and character.Classes and character.Classes.Classes
+    if not rows or not classes then return false,"progression unavailable" end
+    local historyOK,count=pcall(function() return #rows end)
+    if not historyOK or count~=level then return false,"history no longer matches" end
+    local classOK,classTotal=pcall(function()
+        local total=0
+        for _,row in pairs(classes) do
+            local n=tonumber(row.Level)
+            if not n or n<1 or n%1~=0 then return nil end
+            total=total+n
+        end
+        return total
+    end)
+    if not classOK or classTotal~=level then return false,"class levels no longer match" end
+    local stats=character and character.Stats
+    if not stats then return false,"Stats component unavailable" end
+    local current=tonumber(stats.ProficiencyBonus)
+    if not current or current%1~=0 or current<1 or current>20 then
+        return false,"invalid live proficiency"
+    end
+    if current~=expected and current~=2 then
+        return false,"unrelated proficiency change: "..current.." expected "..expected
+    end
+    local changed=current==2
+    local okay,reason=pcall(function()
+        if changed then
+            stats.ProficiencyBonus=expected
+            if tonumber(stats.ProficiencyBonus)~=expected then
+                error("Stats proficiency write was not accepted")
+            end
+        end
+        character:MarkChanged("Stats")
+        character:Replicate("Stats")
+    end)
+    if not okay then return false,"Stats refresh failed: "..tostring(reason) end
+    return changed,"before="..current.." after="..expected.." replicated=true"
+end
+
 local function NativePresentationRestoreHealth(character,saved)
     local old=type(saved)=="table" and saved.Health
     if type(old)~="table" or type(old.Abilities)~="table" then
@@ -3289,6 +3369,11 @@ local function NativePresentationAfterAudit(actor,saved,originalLevel,merged,ori
                 .." classChange="..tostring(changingClasses)
                 .." applied="..tostring(healed and healthApplied==true)
                 .." result="..tostring(healed and healthWhy or healthApplied))
+            local profOK,profApplied,profWhy=pcall(
+                NativePresentationRestoreProficiency,current,saved,originalLevel)
+            RespecStartLog("NATIVE_L1_PROFICIENCY_RECONCILE actor="..actor
+                .." applied="..tostring(profOK and profApplied==true)
+                .." result="..tostring(profOK and profWhy or profApplied))
             -- Regression isolation: do NOT rewrite HotbarContainer here.
             -- The Aegis post-audit correction introduced a second full
             -- SpellBook Unserialize/Replicate; this can cause BG3 to rebuild
@@ -3311,6 +3396,15 @@ local function NativePresentationAfterAudit(actor,saved,originalLevel,merged,ori
             Ext.Timer.WaitFor(1500,function()
                 NativePresentationTraceHotbar(actor,saved,"post-audit-plus-1500ms")
                 NativeBuildPresetSpellRankProbe(actor,merged,"post-audit-plus-1500ms")
+                local verified=Ext.Entity.Get(actor)
+                local profOK,bonus=pcall(function()
+                    return verified and verified.Stats
+                        and tonumber(verified.Stats.ProficiencyBonus)
+                end)
+                RespecStartLog("NATIVE_L1_PROFICIENCY_VERIFY actor="..actor
+                    .." bonus="..tostring(profOK and bonus or nil)
+                    .." expected="..tostring(saved.Proficiency
+                        and saved.Proficiency.Bonus))
             end)
             RespecStartLog("NATIVE_L1_HOTBAR_ENGINE_PASSTHROUGH actor="..actor
                 .." captured="..tostring(saved.HotbarEntries or 0)
@@ -3363,6 +3457,8 @@ local function BeginPartialRespec(character, origin)
     if presentOK then state.nativePresentation=presentation end
     RespecStartLog("NATIVE_L1_PRESENTATION_CAPTURE actor="..characterGuid
         .." health="..tostring(presentation and presentation.Health and presentation.Health.MaxHp)
+        .." proficiency="..tostring(presentation and presentation.Proficiency
+            and presentation.Proficiency.Bonus)
         .." hotbar="..tostring(presentation and presentation.HotbarEntries or 0))
     if presentation and presentation.Hotbars then
         RespecStartLog("NATIVE_L1_HOTBAR_CAPTURE_SHAPE actor="..characterGuid
@@ -4140,6 +4236,13 @@ local function ApplyReplay(entity, snapshot, targetLevel, characterGuid, experim
             }, RespecViewerUser(characterGuid))
         end) end
         end)
+        if worked and _G.HB_LoneWolfRefresh then
+            local refreshed,why=pcall(_G.HB_LoneWolfRefresh,characterGuid,"HistoricalReplayCommitted")
+            if not refreshed then
+                RespecStartLog("LONEWOLF_REFRESH_ERROR actor="..characterGuid
+                    .." reason="..tostring(why))
+            end
+        end
         if not worked then
             RespecStartLog("RESPEC_REPLAY_RUNTIME_ERROR actor="..characterGuid
                 .." target="..tostring(targetLevel).." reason="..tostring(replayError))
@@ -4183,6 +4286,10 @@ local function FinishNativeFirstLevelRestore(actor,state)
             if not same and type(foundationReason)=="string"
                 and (foundationReason:find("Starting class differs",1,true)==1
                     or foundationReason:find("Starting subclass differs",1,true)==1) then
+                local handoff=_G.HB_LevelUpBuildHandoff
+                if handoff and handoff.ReplayResult then
+                    handoff.ReplayResult(actor,false,'Level-one class/subclass does not match the assigned build')
+                end
                 RespecStartLog("NATIVE_L1_INTENTIONAL_FULL_RESPEC actor="..actor
                     .." savedLevel="..tostring(target)
                     .." reason="..foundationReason
@@ -4386,6 +4493,10 @@ local function FinishNativeFirstLevelRestore(actor,state)
                             if not okNative then
                                 RespecStartLog("NATIVE_L1_ENGINE_SPELL_DIFF_REFUSED actor="..actor
                                     .." reason="..tostring(whyNative))
+                                local handoff=_G.HB_LevelUpBuildHandoff
+                                if handoff and handoff.ReplayResult then
+                                    handoff.ReplayResult(actor,false,tostring(whyNative))
+                                end
                                 PartialRespecChannel:SendToClient({NativeFirstLevelStatus={
                                     Success=false,Text="Game-owned spell replay could not be verified. Reload the original save. "
                                         ..tostring(whyNative)}},RespecViewerUser(actor))
@@ -4505,6 +4616,10 @@ local function FinishNativeFirstLevelRestore(actor,state)
                         local function RefuseEngineCleanup(reason)
                             RespecStartLog("NATIVE_L1_OSIRIS_GRANT_CLEANUP_REFUSED actor="..actor
                                 .." reason="..tostring(reason))
+                            local handoff=_G.HB_LevelUpBuildHandoff
+                            if handoff and handoff.ReplayResult then
+                                handoff.ReplayResult(actor,false,tostring(reason))
+                            end
                             PartialRespecChannel:SendToClient({NativeFirstLevelStatus={
                                 Success=false,Text="Historical class spell cleanup was not verified. "
                                     .."Reload your original save. "..tostring(reason)}},
@@ -4577,10 +4692,41 @@ local function FinishNativeFirstLevelRestore(actor,state)
                             if passedFinal then
                                 NativePresentationAfterAudit(actor,state.nativePresentation,target,
                                     merged,state.originalSnapshot)
+                                if state.buildPresetDefinition and state.buildPresetFile then
+                                    local owner=Ext.Entity.Get(actor)
+                                    if owner and owner.Vars then
+                                        owner.Vars['HB_LevelUpAssignedBuild_v1']={
+                                            File=state.buildPresetFile,
+                                            Name=state.buildPresetDefinition.Name}
+                                        RespecStartLog('LEVELUP_BUILD_ASSIGNED_FROM_RESPEC actor='..actor
+                                            ..' file='..state.buildPresetFile)
+                                    end
+                                end
+                            end
+                            if passedFinal then
+                                local capture=_G.HB_LevelUpBuildVerifiedNativeClasses
+                                if capture then
+                                    local guarded,why=pcall(capture,actor,target)
+                                    if not guarded then
+                                        RespecStartLog('ENGINE_CLASS_BASELINE_ERROR actor='..actor
+                                            ..' reason='..tostring(why))
+                                    end
+                                end
                             end
                             RespecStartLog("NATIVE_L1_POSTREPLAY_AUDIT actor="..actor
                                 .." successful="..tostring(passedFinal)
                                 .." reason="..tostring(finalReason or ""))
+                            if passedFinal and _G.HB_LoneWolfRefresh then
+                                local refreshed,why=pcall(_G.HB_LoneWolfRefresh,actor,"NativeReplayAudited")
+                                if not refreshed then
+                                    RespecStartLog("LONEWOLF_REFRESH_ERROR actor="..actor
+                                        .." reason="..tostring(why))
+                                end
+                            end
+                            local handoff=_G.HB_LevelUpBuildHandoff
+                            if handoff and handoff.ReplayResult then
+                                handoff.ReplayResult(actor,passedFinal,finalReason)
+                            end
                             PartialRespecChannel:SendToClient({NativeFirstLevelStatus={
                                 Success=passedFinal,RestoredLevel=passedFinal and target or nil,
                                 Text=passedFinal and ("Higher levels restored through level "..target)
@@ -4675,6 +4821,10 @@ local function FinishNativeFirstLevelRestore(actor,state)
                     RespecStartLog("NATIVE_L1_RESTORE_RUNTIME_FAILURE actor="..actor
                         .." reason="..tostring(reason)
                         .." backup="..tostring(state.backupPath))
+                    local handoff=_G.HB_LevelUpBuildHandoff
+                    if handoff and handoff.ReplayResult then
+                        handoff.ReplayResult(actor,false,tostring(reason))
+                    end
                     PartialRespecChannel:SendToClient({NativeFirstLevelStatus={
                         Success=false,Text="Higher-level restoration failed. Reload your original save. "
                         ..tostring(reason)}},RespecViewerUser(actor))
@@ -4690,6 +4840,10 @@ local function FinishNativeFirstLevelRestore(actor,state)
                 and tonumber(actorNow.EocLevel.Level)==1 or false
             -- Vanilla level one has ALREADY finished. Do not pretend this is
             -- transactional or forcibly recreate the original level one.
+            local handoff=_G.HB_LevelUpBuildHandoff
+            if handoff and handoff.ReplayResult then
+                handoff.ReplayResult(actor,false,tostring(why))
+            end
             PartialRespecChannel:SendToClient({NativeFirstLevelStatus={
                 Success=false,FullRespecFallback=safeFullFallback,
                 Text="Saved build not restored: "..tostring(why)
@@ -4717,6 +4871,10 @@ Ext.Osiris.RegisterListener("RespecCompleted", 1, "after", function(character)
         RespecStartLog("NATIVE_L1_COMPLETED actor="..characterGuid
             .." savedLevel="..tostring(state.charLevel))
         FinishNativeFirstLevelRestore(characterGuid,state)
+        local handoff=_G.HB_LevelUpBuildHandoff
+        if handoff and handoff.NativeRespecCommitted then
+            handoff.NativeRespecCommitted(characterGuid)
+        end
         return
     end
 
@@ -4763,6 +4921,8 @@ end)
 
 Ext.Osiris.RegisterListener("RespecCancelled", 1, "after", function(character)
     local characterGuid = Guid(character)
+    local handoff=_G.HB_LevelUpBuildHandoff
+    if handoff and handoff.Abort then handoff.Abort(characterGuid,'native respec cancelled') end
     local state = pendingRespec[characterGuid]
     -- Always deliver UI cleanup, even if a previous rejected commit already
     -- cleared the pending session. The native historical wrapper exists on
@@ -9718,6 +9878,7 @@ local function HandlePartialRespecMessage(message, user)
         state.levelRespec = nil
         state.nativeFirstLevelRestore = nil
         state.buildPresetDefinition = nil
+        state.buildPresetFile = nil
         state.historicalCommitAttempted = nil
         return
     end
@@ -9884,6 +10045,7 @@ local function HandlePartialRespecMessage(message, user)
         state.snapshot=patched
         state.originalSnapshot=base
         state.buildPresetDefinition=directBuild
+        state.buildPresetFile=directBuild and message.BuildPresetFile or nil
         state.charLevel=tonumber(state.charLevel)
         state.nativeFirstLevelRestore=true
         state.nativeFirstLevelSlider=true

@@ -2,7 +2,11 @@ local REPORT = "HomeBrew/Diagnostics/HB_DifficultyMenu_Diagnostics.txt"
 local function SaveReport(text)
     if Ext.IO and Ext.IO.SaveFile then pcall(Ext.IO.SaveFile, REPORT, text) end
 end
-SaveReport("HomeBrew difficulty menu v37: client module entered\nUI API: " .. tostring(Ext.UI ~= nil))
+-- Normal module startup is not a diagnostic failure. Keep the optional
+-- capture without writing a file on every launch.
+if _G.HB_DebugDiagnostics == true then
+    SaveReport("HomeBrew difficulty menu v37: client module entered\nUI API: " .. tostring(Ext.UI ~= nil))
+end
 
 
 
@@ -64,8 +68,22 @@ local HB_activeGameSession=false
 local HB_mcmAccessApplied=nil
 local HB_MCM_ACCESS_SETTING="hb_mcm_campaign_active"
 local function HB_ApplyMCMAccess()
-    if not (MCM and MCM.Set) then return end
+    if not (MCM and MCM.Get and MCM.Set) then return end
     if HB_mcmAccessApplied==HB_mcmCampaignConfirmed then return end
+    -- The blueprint's checkbox already defaults to false on the front end.
+    -- Do not redundantly call MCM.Set during client bootstrap: MCM may try
+    -- to synchronize that unchanged value before an SE server connection
+    -- exists, generating a warning. Recheck the real MCM value on retry.
+    local readOK,current=pcall(MCM.Get,HB_MCM_ACCESS_SETTING)
+    if readOK and current==HB_mcmCampaignConfirmed then
+        HB_mcmAccessApplied=HB_mcmCampaignConfirmed
+        return
+    end
+    -- Before a campaign exists, an unavailable setting means MCM has not
+    -- finished its blueprint initialization. Retry instead of writing early.
+    if not HB_activeGameSession and not HB_mcmCampaignConfirmed
+        and (not readOK or current==nil) then return end
+    -- Preserve the original write when the live value genuinely differs.
     -- No event: internal presentation flag is never a difficulty change.
     local ok,result=pcall(MCM.Set,HB_MCM_ACCESS_SETTING,HB_mcmCampaignConfirmed,nil,false)
     if ok and result~=false then
@@ -100,8 +118,13 @@ local function HB_ApplyMCMChoiceState()
         HB_Trace("MCM preset choices update failed "..tostring(result))
     end
 end
-if Ext.RegisterNetListener then
-    Ext.RegisterNetListener("HB_Difficulty_MCMPresetChoices_V1",function(_,payload)
+local HB_MCMChoiceChannel = Ext.Net.CreateChannel("486d1526-3505-4b09-9790-0f6a60f5ac0f", "HB_Difficulty_MCMPresetChoices_V2")
+local HB_MCMChoiceRequestChannel = Ext.Net.CreateChannel("486d1526-3505-4b09-9790-0f6a60f5ac0f", "HB_Difficulty_MCMPresetChoices_Request_V1")
+local HB_GameAssetChannel = Ext.Net.CreateChannel("486d1526-3505-4b09-9790-0f6a60f5ac0f", "HB_Difficulty_GameAsset_V1")
+local HB_PresetChoiceChannel = Ext.Net.CreateChannel("486d1526-3505-4b09-9790-0f6a60f5ac0f", "HB_Difficulty_PresetChoice_V1")
+local HB_CustomEditsChannel = Ext.Net.CreateChannel("486d1526-3505-4b09-9790-0f6a60f5ac0f", "HB_Difficulty_CustomEdits_V1")
+HB_MCMChoiceChannel:SetHandler(function(data)
+    local payload = type(data) == "table" and data.State or nil
         if type(payload)~="string" then return end
         if payload~="U" and payload~="N" and not (payload:sub(1,2)=="L|"
             and #payload<=100 and (function()
@@ -115,12 +138,12 @@ if Ext.RegisterNetListener then
         HB_mcmChoicesLastApplied=nil
         HB_ApplyMCMAccess()
         HB_ApplyMCMChoiceState()
-    end)
-end
+end)
 local function HB_RequestMCMChoiceState()
-    if Ext.Net and Ext.Net.PostMessageToServer then
-        pcall(Ext.Net.PostMessageToServer,"HB_Difficulty_MCMPresetChoices_Request_V1", "")
-    end
+    -- Avoid issuing network sends from the front-end before the host has
+    -- accepted an extender connection. SessionLoaded retries this request.
+    if not HB_activeGameSession then return end
+    pcall(function() HB_MCMChoiceRequestChannel:SendToServer({Request=true}) end)
 end
 if Ext.ModEvents and Ext.ModEvents.BG3MCM and Ext.ModEvents.BG3MCM.MCM_Window_Opened then
     Ext.ModEvents.BG3MCM.MCM_Window_Opened:Subscribe(function()
@@ -151,6 +174,10 @@ HB_InvalidateMCMAccess()
 local HB_mcmAccessNextRetry=0
 if Ext.Events.Tick and Ext.Timer and Ext.Timer.MonotonicTime then
     Ext.Events.Tick:Subscribe(function()
+        -- This state is already an authoritative early-return inside
+        -- HB_ApplyMCMAccess(). Once synchronized, skip even the idle clock
+        -- read. Session/menu/MCM changes invalidate the flag as before.
+        if HB_mcmAccessApplied==HB_mcmCampaignConfirmed then return end
         local now=Ext.Timer.MonotonicTime()
         if now<HB_mcmAccessNextRetry then return end
         HB_mcmAccessNextRetry=now+1500
@@ -171,7 +198,13 @@ local function HB_NewGameAudit(message)
     local line=tostring(message)
     HB_newGameAudit[#HB_newGameAudit+1]=line
     if #HB_newGameAudit>100 then table.remove(HB_newGameAudit,1) end
-    if Ext.IO and Ext.IO.SaveFile then
+    local lower=line:lower()
+    local issue=lower:find('failed',1,true) or lower:find('refused',1,true)
+        or lower:find('rejected',1,true) or lower:find('unavailable',1,true)
+    -- Retain a bounded history in memory but write to disk only on a genuine
+    -- failure or when explicitly collecting front-end diagnostics. The new
+    -- game handoff and its retried network messages are otherwise unchanged.
+    if (_G.HB_DebugDiagnostics == true or issue) and Ext.IO and Ext.IO.SaveFile then
         pcall(Ext.IO.SaveFile,"HomeBrew/Diagnostics/HB_NewGameCapture_Diagnostics.txt",
             table.concat(HB_newGameAudit,"\n").."\n")
     end
@@ -191,15 +224,17 @@ HB_Trace = function(message)
     local line="DIFFICULTY_INTEGRATION "..tostring(message)
     HB_difficultyTrace[#HB_difficultyTrace+1]=line
     if #HB_difficultyTrace>24 then table.remove(HB_difficultyTrace,1) end
-    SaveReport("HomeBrew difficulty menu v37: diagnostics\n"..table.concat(HB_difficultyTrace,"\n").."\n")
-    Ext.Utils.Print("[HB Difficulty Menu] "..line)
+    if _G.HB_DebugDiagnostics == true then
+        SaveReport("HomeBrew difficulty menu v37: diagnostics\n"..table.concat(HB_difficultyTrace,"\n").."\n")
+    end
+    if _G.HB_DebugConsole == true then Ext.Utils.Print("[HB Difficulty Menu] "..line) end
 end
 local function HB_SendGameAsset(asset,origin,retry)
     origin=origin or "live"
     local signature=origin..":"..tostring(asset)
     if type(asset)~="string" or asset=="difficulty_04" or (signature==HB_assetSent and not retry) then return end
-    if not (asset:match("^difficulty_0[123567]$") and Ext.Net and Ext.Net.PostMessageToServer) then return end
-    local ok, result=pcall(Ext.Net.PostMessageToServer,"HB_Difficulty_GameAsset_V1",signature)
+    if not asset:match("^difficulty_0[123567]$") then return end
+    local ok, result=pcall(function() return HB_GameAssetChannel:SendToServer({Message=signature}) end)
     local sent=ok and result~=false
     if sent then HB_assetSent=signature end
     HB_Trace("send asset="..signature.." retry="..tostring(retry).." posted="..tostring(sent))
@@ -398,6 +433,10 @@ local function HB_MainMenuSingleSaveSelected(widget,asset)
     return Read(check,"HB_Enabled")==true
 end
 
+-- Shared, immutable child accessors for all native difficulty UI traversals.
+-- Creating nested Lua literals in every recursive node adds avoidable GC
+-- pressure to active New Game and difficulty-menu screens.
+local HB_UI_CHILD_ACCESSORS = {{"ChildrenCount", "Child"}, {"VisualChildrenCount", "VisualChild"}}
 local function MenuWidgets()
     local root = Ext.UI.GetRoot()
     if not root then return {}, "No UI root" end
@@ -418,7 +457,7 @@ local function MenuWidgets()
             menus[#menus + 1] = node
             return
         end
-        for _, pair in ipairs({{"ChildrenCount", "Child"}, {"VisualChildrenCount", "VisualChild"}}) do
+        for _, pair in ipairs(HB_UI_CHILD_ACCESSORS) do
             local count = Read(node, pair[1])
             if type(count) == "number" then
                 for index = 1, count do
@@ -631,7 +670,9 @@ if browserAvailable then
     if not registered then
         lastFailure = tostring(reason)
         browserAvailable = false
-        Ext.Utils.Print("[HB Difficulty Browser] Using native menu: " .. tostring(reason))
+        if _G.HB_DebugConsole == true then
+            Ext.Utils.Print("[HB Difficulty Browser] Using native menu: " .. tostring(reason))
+        end
     end
 end
 
@@ -1530,10 +1571,10 @@ local function BindBrowser(state, widget, context, presets)
                 view.Browser.HB_CustomOverlayOpen=false
                 return
             end
-            if not (Ext.Net and Ext.Net.PostMessageToServer) then return end
+            if not HB_CustomEditsChannel then return end
             local okEncode,message=pcall(Ext.Json.Stringify,changes)
             if not okEncode then HB_Trace("Custom serialize failed "..tostring(message));return end
-            local ok,result=pcall(Ext.Net.PostMessageToServer,"HB_Difficulty_CustomEdits_V1",message)
+            local ok,result=pcall(function() return HB_CustomEditsChannel:SendToServer({Message=message}) end)
             if not ok or result==false then
                 HB_Trace("Custom send failed "..tostring(result))
                 return
@@ -1571,11 +1612,11 @@ local function BindBrowser(state, widget, context, presets)
                 HB_Trace("Native preset dialog confirm without valid selection "..tostring(choice))
                 return
             end
-            if not (Ext.Net and Ext.Net.PostMessageToServer) then
+            if not HB_PresetChoiceChannel then
                 HB_Trace("Native preset dialog unable to send: network API missing")
                 return
             end
-            local ok,result=pcall(Ext.Net.PostMessageToServer,"HB_Difficulty_PresetChoice_V1",choice)
+            local ok,result=pcall(function() return HB_PresetChoiceChannel:SendToServer({Preset=choice}) end)
             local sent=ok and result~=false
             HB_Trace("Native preset requested="..choice.." sent="..tostring(sent).." result="..tostring(result))
             -- This only confirms transport submission, not server application.
@@ -1855,6 +1896,11 @@ local lastDiagnostic = ""
 local lastMenuSnapshot = ""
 local nextDiagnostic = 0
 local function DiagnoseMenu()
+    -- Previously a second whole-tree MenuWidgets pass ran each second while
+    -- the difficulty menu was open, even with diagnostics disabled. The
+    -- regular Update already locates the live widget; only run this extra
+    -- read-only exploration when debugging is explicitly requested.
+    if _G.HB_DebugDiagnostics ~= true then return end
     local now = Ext.Timer.MonotonicTime()
     if now < nextDiagnostic then return end
     nextDiagnostic = now + 1000
@@ -1982,7 +2028,7 @@ HB_FreshMainMenuPanel = function()
                 return node,native
             end
         end
-        for _,pair in ipairs({{"ChildrenCount","Child"},{"VisualChildrenCount","VisualChild"}}) do
+        for _,pair in ipairs(HB_UI_CHILD_ACCESSORS) do
             local count=math.min(tonumber(Read(node,pair[1])) or 0,160)
             for i=1,count do
                 local ok,child=pcall(function() return node[pair[2]](node,i) end)
@@ -2046,7 +2092,14 @@ local function HB_ProbeMainMenuHighlight(now)
         end
         HB_mainMenuHighlighted=selected
         HB_mainMenuHighlightAt=now
-        HB_ApplyMainMenuPreview(selected,"main-menu probe")
+        -- The UI thread identifies the highlighted card; MCM/game state is
+        -- updated from the normal client Tick, never while Noesis is locked.
+        local previewAsset=selected
+        Ext.OnNextTick(function()
+            if HB_mainMenuHighlighted==previewAsset then
+                HB_ApplyMainMenuPreview(previewAsset,"main-menu probe")
+            end
+        end)
     end
     if now-HB_probeLastReport>=10000 then
         HB_probeLastReport=now
@@ -2085,7 +2138,7 @@ local function HB_CharacterCreationVisible()
         local file=tostring(Read(node,"FileName") or ""):gsub("\\","/")
         if name=="CharacterCreation" or name=="CharacterCreation_c"
             or file:match("/CharacterCreation(_c)?%.xaml$") then return true end
-        for _,pair in ipairs({{"ChildrenCount","Child"},{"VisualChildrenCount","VisualChild"}}) do
+        for _,pair in ipairs(HB_UI_CHILD_ACCESSORS) do
             local count=math.min(tonumber(Read(node,pair[1])) or 0,160)
             for i=1,count do
                 local ok,child=pcall(function() return node[pair[2]](node,i) end)
@@ -2098,14 +2151,29 @@ local function HB_CharacterCreationVisible()
 end
 local HB_difficultyClosedSince=nil
 local HB_nextMenuWorkTick=0
+local HB_menuUIQueued=false
+local HB_menuUICycle=0
 Ext.Events.Tick:Subscribe(function()
     local now = Ext.Timer.MonotonicTime()
     -- The listener itself remains registered, but avoid UI work each frame
-    -- while no difficulty menu is visible. The 80-ms idle gate preserves the
-    -- existing 160-ms MenuScope cadence and 450-ms New Game probe. When the
-    -- Difficulty page is visible, leave the original 75/80-ms behavior alone.
+    -- while no difficulty menu is visible. Match the existing 160-ms
+    -- closed-menu scope cadence instead of scheduling two redundant Noesis
+    -- callbacks for each idle page check. Visible pages keep 75 ms cadence.
     if now < HB_nextMenuWorkTick then return end
-    HB_nextMenuWorkTick=now+(scopeOpen and 1 or 80)
+    HB_nextMenuWorkTick=now+(scopeOpen and 75 or 160)
+    -- On a confirmed running campaign, the main-menu new-game probe has no
+    -- work and the in-game browser only needs servicing while its page is up.
+    -- Retain the entire original front-end capture path before SessionLoaded.
+    if HB_activeGameSession and not scopeOpen and not HB_mainMenuHighlighted
+        and (not HB_pendingNewGameArmed or HB_postCreationSent)
+        and not HB_newGameCandidate and not MenuScope.MaybeOpen('Difficulty') then return end
+    if HB_menuUIQueued or not defer then return end
+    HB_menuUIQueued=true
+    local cycle=HB_menuUICycle
+    local scheduled,queueError=pcall(defer,function()
+        HB_menuUIQueued=false
+        if cycle~=HB_menuUICycle then return end
+        local safe,why=pcall(function()
     -- Observe the main-menu difficulty independently of the in-game
     -- MenuScope gate; no MCM changes are made while browsing cards.
     HB_ProbeMainMenuHighlight(now)
@@ -2138,17 +2206,20 @@ Ext.Events.Tick:Subscribe(function()
                 if asset then
                     HB_Trace("new character creation closed: handoff "..asset)
                     HB_NewGameAudit("character creation closed; requesting="..asset)
-                    HB_SendGameAsset(asset,"new",true)
                     local expectedGeneration=generation
-                    if Ext.Timer and Ext.Timer.WaitFor then
-                        for _,delay in ipairs({2000,5500,11000,20000}) do
-                            Ext.Timer.WaitFor(delay,function()
-                                if HB_pendingNewGameArmed and expectedGeneration==generation then
-                                    HB_SendGameAsset(asset,"new",true)
-                                end
-                            end)
+                    Ext.OnNextTick(function()
+                        if expectedGeneration~=generation then return end
+                        HB_SendGameAsset(asset,"new",true)
+                        if Ext.Timer and Ext.Timer.WaitFor then
+                            for _,delay in ipairs({2000,5500,11000,20000}) do
+                                Ext.Timer.WaitFor(delay,function()
+                                    if HB_pendingNewGameArmed and expectedGeneration==generation then
+                                        HB_SendGameAsset(asset,"new",true)
+                                    end
+                                end)
+                            end
                         end
-                    end
+                    end)
                 end
             end
         end
@@ -2179,6 +2250,7 @@ Ext.Events.Tick:Subscribe(function()
     queued = true
     local function Run()
         queued = false
+        if cycle~=HB_menuUICycle then return end
         local ok, message = pcall(Update)
         if not ok then
             lastFailure = tostring(message)
@@ -2193,20 +2265,37 @@ Ext.Events.Tick:Subscribe(function()
                 end
             end
         end
-        local diagnosed, diagnosticError = pcall(DiagnoseMenu)
-        if not diagnosed then SaveReport("HomeBrew difficulty menu v37: diagnostic error\n" .. tostring(diagnosticError)) end
+        if _G.HB_DebugDiagnostics == true then
+            local diagnosed, diagnosticError = pcall(DiagnoseMenu)
+            if not diagnosed then SaveReport("HomeBrew difficulty menu v37: diagnostic error\n" .. tostring(diagnosticError)) end
+        end
         if not ok and not updateWarning then
             updateWarning = true
             Ext.Utils.Print("[HB Difficulty Order] UI ordering failed: " .. tostring(message))
         end
     end
-    if defer then defer(Run) else Run() end
+    -- Keep the browser update in a separate UI frame to avoid a long
+    -- rendering stall when New Game and custom menus are both active.
+    local posted,postError=pcall(defer,Run)
+    if not posted then
+        queued=false
+        HB_BrowserError('SAFE_UI_UPDATE_QUEUE_ERROR '..tostring(postError))
+    end
+        end)
+        if not safe then HB_BrowserError('SAFE_UI_POLL_ERROR '..tostring(why)) end
+    end)
+    if not scheduled then
+        HB_menuUIQueued=false
+        HB_BrowserError('SAFE_UI_QUEUE_ERROR '..tostring(queueError))
+    end
 end)
 
 if Ext.Events.SessionLoaded then
     Ext.Events.SessionLoaded:Subscribe(function()
         HB_activeGameSession=true
         HB_nextMenuWorkTick=0
+        HB_menuUICycle=HB_menuUICycle+1
+        HB_menuUIQueued=false
         -- A session transition revokes UI access until the server confirms
         -- the new campaign. Previous-save permissions must never leak.
         HB_InvalidateMCMAccess()

@@ -44,7 +44,6 @@ data "DisplayName" "h946566c4ga493g4f40g839bg168fa4ea1ce6;3"
 data "Description" "h26f21dd8g9317g42e3gacbagcc19abaf9ba6;4"
 data "DescriptionParams" "DealDamage(1d12, Force)"
 data "TooltipSave" "f762efbb-f8f1-493e-b248-2de1567b4bd2"
-data "Icon" "Action_Bash"
 data "Boosts" "UnlockInterrupt(Interrupt_Legendary_ShieldBlow)"
 
 new entry "Interrupt_Legendary_ShieldBlow"

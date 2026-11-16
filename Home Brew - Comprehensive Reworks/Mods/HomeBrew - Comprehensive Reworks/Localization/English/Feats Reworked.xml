@@ -4,7 +4,7 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">ABILITY IMPROVEMENT</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00001" version="1">Ability Improvement</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000a" version="4">Select two &lt;LSTag Tooltip="Abilities"&gt;Abilities&lt;/LSTag&gt;. These abilities increase by an amount equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000a" version="4">Select two &lt;LSTag Tooltip="Abilities"&gt;Abilities&lt;/LSTag&gt;. These abilities increase by an amount equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;. In addition, you gain six additional points of &lt;LSTag Type="ActionResource" Tooltip="Attunement"&gt;Attunement&lt;/LSTag&gt;.</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000a1" version="1">Strength Improvement</content>
 	<content contentuid="8a87461fd8dd4f5b9098dekkdke898ff000a0" version="4">Increase your Strength by an amount equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
@@ -39,7 +39,7 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">ASCENDED SUMMONS</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00004" version="1">Ascended Summons</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000d" version="7">Your summoned creatures gain an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; This passive effect also applies to any creatures that you summon.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000d" version="7">Your non &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons gain an additional &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; and &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">CHARGER</content>
 
@@ -147,27 +147,27 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">ELEMENTAL ADEPT</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00023" version="1">Elemental Adept</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000w" version="1">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to two elemental damage types of your choice. When you deal damage of your chosen types to an enemy, you deal an additional +1d4 damage of that same type.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa0000w" version="1">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to two elemental damage types of your choice. When you deal damage of your chosen types to an enemy, you deal an additional +1d4 damage of that same type.</content>
 	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00001" version="2">Elemental Adept: Acid</content>
-	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000a" version="4">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Acid damage. In addition, when you deal Acid damage to an enemy, you deal an additional +1d4 damage.</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000a" version="4">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Acid damage. In addition, when you deal Acid damage to an enemy, you deal an additional +1d4 damage.</content>
 	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00002" version="2">Elemental Adept: Cold</content>
-	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000b" version="4">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Cold damage. In addition, when you deal Cold damage to an enemy, you deal an additional +1d4 damage.</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000b" version="4">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Cold damage. In addition, when you deal Cold damage to an enemy, you deal an additional +1d4 damage.</content>
 	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00003" version="2">Elemental Adept: Fire</content>
-	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000c" version="4">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Fire damage. In addition, when you deal Fire damage to an enemy, you deal an additional +1d4 damage.</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000c" version="4">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Fire damage. In addition, when you deal Fire damage to an enemy, you deal an additional +1d4 damage.</content>
 	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00004" version="2">Elemental Adept: Force</content>
-	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000d" version="4">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Force damage. In addition, when you deal Force damage to an enemy, you deal an additional +1d4 damage.</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000d" version="4">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Force damage. In addition, when you deal Force damage to an enemy, you deal an additional +1d4 damage.</content>
 	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00005" version="2">Elemental Adept: Lightning</content>
-	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000e" version="4">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Lightning damage. In addition, when you deal Lightning damage to an enemy, you deal an additional +1d4 damage.</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000e" version="4">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Lightning damage. In addition, when you deal Lightning damage to an enemy, you deal an additional +1d4 damage.</content>
 	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00006" version="2">Elemental Adept: Necrotic</content>
-	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000f" version="4">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Necrotic damage. In addition, when you deal Necrotic damage to an enemy, you deal an additional +1d4 damage.</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000f" version="4">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Necrotic damage. In addition, when you deal Necrotic damage to an enemy, you deal an additional +1d4 damage.</content>
 	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00007" version="2">Elemental Adept: Poison</content>
-	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000g" version="4">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Poison damage. In addition, when you deal Poison damage to an enemy, you deal an additional +1d4 damage.</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000g" version="4">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Poison damage. In addition, when you deal Poison damage to an enemy, you deal an additional +1d4 damage.</content>
 	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00008" version="2">Elemental Adept: Psychic</content>
-	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000h" version="4">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Psychic damage. In addition, when you deal Psychic damage to an enemy, you deal an additional +1d4 damage.</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000h" version="4">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Psychic damage. In addition, when you deal Psychic damage to an enemy, you deal an additional +1d4 damage.</content>
 	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00009" version="2">Elemental Adept: Radiant</content>
-	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000i" version="4">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Radiant damage. In addition, when you deal Radiant damage to an enemy, you deal an additional +1d4 damage.</content>
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000i" version="4">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Radiant damage. In addition, when you deal Radiant damage to an enemy, you deal an additional +1d4 damage.</content>
 	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f00010" version="2">Elemental Adept: Thunder</content>
-	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000j" version="4">When dealing damage to an enemy or item, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Thunder damage. In addition, when you deal Thunder damage to an enemy, you deal an additional +1d4 damage.</content>	
+	<content contentuid="hf422d54egcb40g446eg92b8ga8ad74f0000j" version="4">When dealing damage to a non-allied target, you ignore &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; to Thunder damage. In addition, when you deal Thunder damage to an enemy, you deal an additional +1d4 damage.</content>	
 
 <content contentuid="0000000000000000000000000000000000000" version="1">GREATER IMPACT</content>
 
@@ -203,12 +203,12 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">MASONRY OF CHAOS</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00029" version="1">Masonry of Chaos</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000c0" version="4">You have a chance to experience a positive surge of &lt;LSTag Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt; at the beginning and end of combat encounters, at the beginning of each of your turns while in combat, and when dealing or taking damage while in combat.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; This passive effect also applies to any creatures that you summon.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000c0" version="4">You have a chance to experience a positive surge of &lt;LSTag Tooltip="WildMagic"&gt;Wild Magic&lt;/LSTag&gt; at the beginning and end of combat encounters, at the beginning of each of your turns while in combat, and when dealing or taking damage while in combat.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">MELEE EXPERTISE</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00030" version="2">Melee Expertise</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000d0" version="3">Melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; you make with your main-hand add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; multiplied by two when rolling for damage. In addition, you ignore all physical &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; when dealing damage to an enemy or item.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; This passive effect also applies to any creatures that you summon.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000d0" version="3">Melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; you make with your main-hand add your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; multiplied by two when damaging a non-allied target. In addition, you ignore all physical &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; when dealing damage to a non-allied target.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; This passive effect also applies to any creatures that you summon.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">PERFORMER</content>
 
@@ -247,7 +247,7 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">SHARPSHOOTER</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00036" version="3">Sharpshooter</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000j0" version="3">Your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; and ranged Spells do not receive penalties from &lt;LSTag Tooltip="HighGroundRules"&gt;High Ground Rules&lt;/LSTag&gt;, and your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; is added twice when rolling for damage. In addition, you ignore all physical &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; when dealing damage to an enemy or item.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000j0" version="3">Your &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attacks&lt;/LSTag&gt; and ranged Spells do not receive penalties from &lt;LSTag Tooltip="HighGroundRules"&gt;High Ground Rules&lt;/LSTag&gt;, and your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; is added twice when damaging a non-allied target. In addition, you ignore all physical &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunities&lt;/LSTag&gt; when dealing damage to a non-allied target.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SHIELDBEARER</content>
 
@@ -270,7 +270,7 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">TEMPERED BRAWLER</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa00039" version="3">Tempered Brawler</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000m0" version="1">When making an unarmed attack or &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throw&lt;/LSTag&gt;, your &lt;LSTag Tooltip="AbilityModifier"&gt;Strength Modifier&lt;/LSTag&gt; is added to all damage rolls. Additionally, your &lt;LSTag Tooltip="AbilityModifier"&gt;Dexterity Modifier&lt;/LSTag&gt; is added to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Furthermore, melee weapons you equip in your Main-Hand gain the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; property. When thrown, they will return back to you.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="SoftWarning"/&gt; This passive effect also applies to any creatures that you summon.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f6c8aa000m0" version="1">When making an unarmed attack or &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throw&lt;/LSTag&gt;, your &lt;LSTag Tooltip="AbilityModifier"&gt;Strength Modifier&lt;/LSTag&gt; is added to all damage rolls against non-allied targets. Additionally, your &lt;LSTag Tooltip="AbilityModifier"&gt;Dexterity Modifier&lt;/LSTag&gt; is added to all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Furthermore, melee weapons you equip in your Main-Hand gain the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; property. When thrown, they will return back to you.</content>
 	<content contentuid="8a87461fd8dd4f5b9098ded714f55d2f5s677" version="3">Tempered Brawler</content>
 	<content contentuid="8a87461fd8dd4f5b9098ded714fyujjh569f8" version="5">Cause your Main-Hand melee weapon to gain the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; property. When thrown, it will return to you. In addition, your weapon will gain the ability to fire a ranged projectile, which will carry the properties of the weapon.</content>
 	<content contentuid="8a87461fd8dd4f5b9098ded714f6s4f5duu25" version="3">Tempered Brawler</content>
@@ -360,7 +360,7 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">PSIONIC DOMINANCE</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714sdf68878d08" version="2">Psionic Overcharge</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f60d1fd250h" version="3">When dealing damage to an enemy, you deal an additional 1d4 Psychic damage and inflict one stack of &lt;LSTag Type="Status" Tooltip="MAG_PSYCHIC_MENTAL_FATIGUE"&gt;Mental Fatigue&lt;/LSTag&gt;. In addition, Illithid Powers no longer reduce your maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f60d1fd250h" version="3">When dealing damage to non-allied targets, you deal an additional 1d4 Psychic damage and inflict one stack of &lt;LSTag Type="Status" Tooltip="MAG_PSYCHIC_MENTAL_FATIGUE"&gt;Mental Fatigue&lt;/LSTag&gt;. In addition, Illithid Powers no longer reduce your maximum &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">REACTIVE ASSAULT</content>
 
@@ -381,7 +381,7 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">VISAGE OF REFLECTION</content>
 
 	<content contentuid="8a87461fd8dd4f5b9098ded714sdf68878d11" version="2">Visage of Reflection</content>
-	<content contentuid="8a87461fd8dd4f5b9098ded714f60d1fd250k" version="3">Upon receiving physical damage, your aggressor also takes the damage you received as Force damage.</content>
+	<content contentuid="8a87461fd8dd4f5b9098ded714f60d1fd250k" version="3">Upon receiving physical damage, your aggressor takes twice the damage you received as Force damage.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">YOKEBREAKER</content>
 

@@ -1,7 +1,14 @@
-PersistentVars = {
-	
-}
+-- Keep the legacy table until SessionLoaded migrates it into ModVars.
+-- Old saves restore this table before that event; never discard its contents.
+PersistentVars = PersistentVars or {}
+local SavedGameplay = Ext.Require("Server/HBPersistentGameplay.lua")
 
+local equipmentByTemplate = {}
+local distributionListenersRegistered = false
+local function DistributionLog(...)
+    if _G.HB_DebugConsole == true then _P(...) end
+end
+local currentDistributionHandler = nil
 local function OnSessionLoaded()        
 	-- Define the containers to distribute items to.
 	local itemDistArrayDI = {
@@ -469,50 +476,76 @@ local function OnSessionLoaded()
 		}
 	}
 	
-	-- Stringify itemDistArrayDI for easier parsing
-	local json = Ext.Json.Stringify(itemDistArrayDI)
-	-- _P("Printing Discordant Instruments distribution list to console:")
-	-- _P(json)
-	local distArray = Ext.Json.Parse(json)
+	-- This is already a plain Lua table; serializing and parsing it again
+	-- on every session load creates unnecessary allocations.
+	local distArray = itemDistArrayDI
+	equipmentByTemplate = {}
+	for _, item in ipairs(distArray) do
+        item.distributionKey = item.npcName:gsub('%W','') .. item.itemName:gsub('%W','')
+		local matches = equipmentByTemplate[item.itemUUID]
+		if not matches then
+			matches = {}
+			equipmentByTemplate[item.itemUUID] = matches
+		end
+		matches[#matches+1] = item
+	end
 
 	-- Run distribution
 	function OnLevelLoaded()
-		_P("Distributing items for mod: JWL Discordant Instruments")
+        local saved = SavedGameplay.Read()
+        if type(saved) ~= 'table' then
+            DistributionLog('Distribution deferred: save ledger unavailable; no items added')
+            return
+        end
+        local changed = false
+		DistributionLog("Distributing items for mod: JWL Discordant Instruments")
 		for itemCount = 1, #distArray do
 			local item = distArray[itemCount]
-			if PersistentVars[item.npcName:gsub('%W','') .. item.itemName:gsub('%W','')] ~= true and Osi.TemplateIsInInventory(item.itemUUID, item.npcMapKey) ~= nil and Osi.TemplateIsInInventory(item.itemUUID, item.npcMapKey) < 1 then
-				Osi.TemplateAddTo(item.itemUUID, item.npcMapKey, 1)
-				_P(item.itemName, "distributed to inventory of", item.npcName)
-				PersistentVars[item.npcName:gsub('%W','') .. item.itemName:gsub('%W','')] = true
+			local key = item.distributionKey
+			if saved[key] == true then
+				DistributionLog(item.itemName, "has already been distributed to", item.npcName)
 			else
-				-- Just some extra logging for easier debugging
-				if PersistentVars[item.npcName:gsub('%W','') .. item.itemName:gsub('%W','')] == true then
-					_P(item.itemName, "has already been distributed to", item.npcName)
-				end
-				if Osi.TemplateIsInInventory(item.itemUUID, item.npcMapKey) == nil then
-					_P(item.npcName, "cannot be found or is invalid")
+				local inInventory = Osi.TemplateIsInInventory(item.itemUUID, item.npcMapKey)
+				if inInventory ~= nil and inInventory < 1 then
+					Osi.TemplateAddTo(item.itemUUID, item.npcMapKey, 1)
+					DistributionLog(item.itemName, "distributed to inventory of", item.npcName)
+					saved[key] = true
+                    changed = true
+				elseif inInventory == nil then
+					DistributionLog(item.npcName, "cannot be found or is invalid")
 				end
 			end
 		end
-		_P("Distribution complete: saving distributions to PersistentVars")
+        if changed then
+            local stored, why = SavedGameplay.Commit(saved)
+            if not stored then
+                -- These instances are already present in the native inventory.
+                -- A later load checks TemplateIsInInventory before adding again.
+                if Ext.Utils and Ext.Utils.Print then
+                    Ext.Utils.Print('[HB Item Distribution] Save ledger write failed: ' .. tostring(why))
+                end
+            end
+        end
+		DistributionLog("Distribution complete: saved item distribution ledger")
 	end
 	
+	currentDistributionHandler = OnLevelLoaded
+
 	function UnequipExistingItems(target, slot)
 		local slotString = getSlot(slot)
 		local GUID = GetGUID(target)
-		if (GetEquippedItem(GUID,slotString) ~= nil) then
-			item_to_unequip = GetEquippedItem(GUID, slotString)
+        local item_to_unequip = GetEquippedItem(GUID, slotString)
+		if item_to_unequip ~= nil then
 			LockUnequip(item_to_unequip, 0)
 			Unequip(GUID,item_to_unequip)
-		end		
+		end
 	end
 
 	function GetGUID(str)
 		return string.sub(str,-36)
 	end
 
-	function getSlot(slot)
-		local TrinketSlots = {
+    local TrinketSlots = {
 			"Helmet",
 			"Breast",
 			"Cloak",
@@ -532,27 +565,35 @@ local function OnSessionLoaded()
 			"MusicalInstrument",
 			"VanityBody",
 			"VanityBoots"
-		}
+    }
+	function getSlot(slot)
 		return TrinketSlots[slot + 1]
 	end
 
-	Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "after", function (wpn_root, wpn_id, character, useless)
-		for itemCount = 1, #distArray do
-			local item = distArray[itemCount]
-			if item.itemUUID == GetGUID(wpn_root) then
-				if (item.addEquip == true and GetGUID(character) == item.npcMapKey and IsPartyMember(character, 1) == 0) then
-					_P(character, "is attempting to equip trinket")
-					if (IsEquipable(wpn_id) == 1) then
-						local slot = GetEquipmentSlotForItem(wpn_id)          
+	if not distributionListenersRegistered then
+		Ext.Osiris.RegisterListener("TemplateAddedTo", 4, "after", function (wpn_root, wpn_id, character, useless)
+			local matches = equipmentByTemplate[GetGUID(wpn_root)]
+			if not matches then return end
+			local characterGuid = GetGUID(character)
+			for _, item in ipairs(matches) do
+				if item.addEquip == true and characterGuid == item.npcMapKey and IsPartyMember(character, 1) == 0 then
+					DistributionLog(character, "is attempting to equip trinket")
+					if IsEquipable(wpn_id) == 1 then
+						local slot = GetEquipmentSlotForItem(wpn_id)
 						UnequipExistingItems(character, slot)
-						_P(character, "successfully equipped", wpn_root)
+						DistributionLog(character, "successfully equipped", wpn_root)
 						Equip(character, wpn_id)
-					end 
+					end
 				end
 			end
-		end
-	end)
-	Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", OnLevelLoaded)
+		end)
+		-- Keep the current save's distribution table without accumulating
+		-- one extra engine listener on each SessionLoaded event.
+		Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(...)
+			if currentDistributionHandler then currentDistributionHandler(...) end
+		end)
+		distributionListenersRegistered = true
+	end
 end
 
 Ext.Events.SessionLoaded:Subscribe(OnSessionLoaded)

@@ -1,3 +1,5 @@
+-- Register persistent gameplay ModVars before the save is deserialized.
+Ext.Require("Server/HBPersistentGameplay.lua")
 Ext.Require("AddCreaturetoParty.lua")
 Ext.Require("FixHP.lua")
 Ext.Require("HarderDifficulty.lua")

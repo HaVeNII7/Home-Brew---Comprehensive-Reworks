@@ -7,7 +7,7 @@
 	<content contentuid="hfe6be642g5ae0g4e79gaccag91689d25420c" version="3">You gain one Ki Point per level, which are restored upon taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;. Ki Points fuel various techniques as a Monk, allowing you to be more effective and versatile in combat.</content>
 
 	<content contentuid="d03f845e0df8463295a0cc3b6d86442c6a942" version="6">Martial Arts</content>
-	<content contentuid="d03f845e0df8463295a0cc3b6d86442c6a921" version="6">Your weapons and unarmed damage may scale using your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt;, rather than your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt;. This can be toggled at any time.&lt;br&gt;&lt;br&gt;Additionally, you are able to benefit from &lt;LSTag Type="Status" Tooltip="Tooltip_FreeHandling"&gt;Free Handling&lt;/LSTag&gt; while you are unarmed, and you regain &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; each turn equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; minus one.</content>
+	<content contentuid="d03f845e0df8463295a0cc3b6d86442c6a921" version="6">Your weapons and unarmed damage may scale using your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt;, rather than your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt;. This can be toggled at any time.&lt;br&gt;&lt;br&gt;Additionally, you are able to benefit from &lt;LSTag Type="Status" Tooltip="Tooltip_FreeHandling"&gt;Free Handling&lt;/LSTag&gt; while you are unarmed, and you regain &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; each turn equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; minus one.&lt;br&gt;&lt;br&gt;Furthermore, upon reaching character level 9, your weapons deal 1d12 base damage per hit, rather than 1d8, if dual wielding.</content>
 
 	<content contentuid="h69adc5a5ge60ag4affg84a0gd14490176db0" version="1">Unarmed Strike</content>
 	<content contentuid="hefec7f3fg7e34g4a1ag97a4gc4223e9e32b4" version="2">Swiftly strike an enemy.</content>
@@ -59,31 +59,31 @@
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400003" version="2">Martial Elements</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000c" version="6">When dealing damage with a Spell or &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, infuse your spirit with the same element for the rest of your turn. Dealing further damage while infused will deal additional elemental damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400133" version="2">Martial Elements: Bludgeoning</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314001cc" version="6">Affected creature deals an additional +[1] Bludgeoning damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314001cc" version="6">Affected creature deals an additional +[1] Bludgeoning damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400233" version="2">Martial Elements: Slashing</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314002cc" version="6">Affected creature deals an additional +[1] Slashing damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314002cc" version="6">Affected creature deals an additional +[1] Slashing damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400333" version="2">Martial Elements: Piercing</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314003cc" version="6">Affected creature deals an additional +[1] Piercing damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314003cc" version="6">Affected creature deals an additional +[1] Piercing damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400433" version="2">Martial Elements: Acid</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314004cc" version="6">Affected creature deals an additional +[1] Acid damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314004cc" version="6">Affected creature deals an additional +[1] Acid damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400533" version="2">Martial Elements: Cold</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314005cc" version="6">Affected creature deals an additional +[1] Cold damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314005cc" version="6">Affected creature deals an additional +[1] Cold damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400633" version="2">Martial Elements: Fire</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314006cc" version="6">Affected creature deals an additional +[1] Fire damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314006cc" version="6">Affected creature deals an additional +[1] Fire damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400733" version="2">Martial Elements: Force</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314007cc" version="6">Affected creature deals an additional +[1] Force damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314007cc" version="6">Affected creature deals an additional +[1] Force damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400833" version="2">Martial Elements: Lightning</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314008cc" version="6">Affected creature deals an additional +[1] Lightning damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314008cc" version="6">Affected creature deals an additional +[1] Lightning damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400933" version="2">Martial Elements: Necrotic</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314009cc" version="6">Affected creature deals an additional +[1] Necrotic damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314009cc" version="6">Affected creature deals an additional +[1] Necrotic damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401033" version="2">Martial Elements: Poison</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314010cc" version="6">Affected creature deals an additional +[1] Poison damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314010cc" version="6">Affected creature deals an additional +[1] Poison damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401133" version="2">Martial Elements: Psychic</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314011cc" version="6">Affected creature deals an additional +[1] Psychic damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314011cc" version="6">Affected creature deals an additional +[1] Psychic damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401233" version="2">Martial Elements: Radiant</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314012cc" version="6">Affected creature deals an additional +[1] Radiant damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314012cc" version="6">Affected creature deals an additional +[1] Radiant damage to non-allied targets until the beginning of their next turn.</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31401333" version="2">Martial Elements: Thunder</content>
-	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314013cc" version="6">Affected creature deals an additional +[1] Thunder damage until the beginning of their next turn.</content>
+	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c314013cc" version="6">Affected creature deals an additional +[1] Thunder damage to non-allied targets until the beginning of their next turn.</content>
 
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c31400004" version="2">Elemental Overdrive</content>
 	<content contentuid="h5dbeb57bg6089g4fccgb4b1ga71c3140000d" version="6">Spells cast with &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt;, as well as your &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt;, make their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
@@ -301,7 +301,7 @@
 	<content contentuid="a19b576b3c4541089f1d4b0e4ae765050000c" version="1">&lt;LSTag Type="Spell" Tooltip="Target_JudgementCut"&gt;Judgement Cut&lt;/LSTag&gt; now targets creatures within [1] of your original target. In addition, &lt;LSTag Type="Spell" Tooltip="Target_MirageBlade"&gt;Mirage Blade&lt;/LSTag&gt; is now capable of targeting two separate creatures, rather than one. Finally, when dealing damage to an enemy with &lt;LSTag Type="Spell" Tooltip="Target_TemperedStrike"&gt;Tempered Strike&lt;/LSTag&gt;, you roll your damage with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
 	<content contentuid="a19b576b3c4541089f1d4b0e4ae7650500002" version="1">Focused Serenity</content>
-	<content contentuid="a19b576b3c4541089f1d4b0e4ae765050000b" version="1">When dealing damage to an enemy with your main-hand weapon, you add your base unarmed damage to the damage dealt.</content>
+	<content contentuid="a19b576b3c4541089f1d4b0e4ae765050000b" version="1">When dealing damage to non-allied targets with your main-hand weapon, you add your base unarmed damage to the damage dealt.</content>
 
 	<content contentuid="a19b576b3c4541089f1d4b0e4ae7650500005" version="1">Concentration</content>
 	<content contentuid="a19b576b3c4541089f1d4b0e4ae765050000e" version="1">At the start of each turn, you regain one &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Point&lt;/LSTag&gt;. In addition, ending your turn without moving will restore an additional Ki Point.</content>
@@ -351,7 +351,7 @@
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000h" version="6">Gain status immunity to being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;, &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;, or restrained in any way.</content>
 
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a000009" version="6">Harmonious Barrage</content>
-	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000i" version="6">&lt;LSTag Type="Spell" Tooltip="Target_FlurryOfBlows"&gt;Flurry of Blows&lt;/LSTag&gt; deals additional damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000i" version="6">&lt;LSTag Type="Spell" Tooltip="Target_FlurryOfBlows"&gt;Flurry of Blows&lt;/LSTag&gt; deals additional damage to non-allied targets equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Wisdom Modifier&lt;/LSTag&gt;.</content>
 
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a000010" version="6">Harmonious Footwork</content>
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000j" version="6">Gain an additional [1] of &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;.</content>
@@ -368,9 +368,7 @@
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a0000zm" version="6">When an enemy fails to damage you with a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt;, retaliate with a swift &lt;LSTag Type="Spell" Tooltip="Target_UnarmedStrike_Monk"&gt;Unarmed Strike&lt;/LSTag&gt;.</content>
 
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a000014" version="6">Resonance of Body</content>
-	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000n" version="6">While in combat, regenerate one &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Point&lt;/LSTag&gt; every three turns.</content>
-	<content contentuid="4512454c8e254628bd4dc62ea243a2a083iii" version="6">Resonance of Body</content>
-	<content contentuid="4512454c8e254628bd4dc62ea243a2a06a932" version="6">Affected creature will recover one &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Point&lt;/LSTag&gt; when this status expires.</content>
+	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000n" version="6">Gain a bonus to all damage dealt to non-allied targets equal to half of your remaining &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt;, rounded up.</content>
 
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a000015" version="6">Sagacious Resilience</content>
 	<content contentuid="4512454c8e254628bd4dc62ea243a2a00000o" version="6">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="Wisdom"&gt;Wisdom&lt;/LSTag&gt; based &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>

@@ -38,16 +38,16 @@
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000x2" version="1">Quickdraw</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000xb" version="2">When dealing damage with this weapon to an enemy who has yet to take a turn, you deal the maximum damage possible.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000y2" version="1">Look Away, Lenny</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000yb" version="2">While your target is looking away from you, this weapon deals additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000yb" version="2">While a non-allied target is looking away from you, this weapon deals additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt;.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000z2" version="1">Dead Eye</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000zb" version="2">When firing this weapon, you make your &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000x3" version="1">Boots on the Ground</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000xc" version="2">Upon firing this weapon, you deal additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; if you have not moved during your turn.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000xc" version="2">When firing this weapon at a non-allied target, you deal additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; if you have not moved during your turn.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000y3" version="1">Kill Confirmed</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000yc" version="2">Dealing damage with this weapon to an enemy below 33% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; will deal the maximum damage possible.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000yc" version="2">Dealing damage with this weapon to an non-allied target below 33% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; will deal the maximum damage possible.</content>
 	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000z3" version="1">One in the Chamber</content>
-	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000zc" version="2">Dealing damage with this weapon to an enemy below 33% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
+	<content contentuid="h509b8e00gacb9g46e8d5f4e5fee8d5f000zc" version="2">Dealing damage with this weapon to an non-allied target below 33% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; will always roll a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">ARCANIST</content>
 
@@ -178,7 +178,7 @@
 	<content contentuid="52fe1476d95548e2a19d5671c3e150710000d" version="2">You are able to &lt;LSTag Type="Spell" Tooltip="Throw_Throw"&gt;Throw&lt;/LSTag&gt; objects and creatures as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;. This may be toggled at any time.</content>
 
 	<content contentuid="52fe1476d95548e2a19d5671c3e1507100005" version="1">Collateral Damage</content>
-	<content contentuid="52fe1476d95548e2a19d5671c3e150710000e" version="2">Damage from your grenades and explosives can no longer be reduced by a successful &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+	<content contentuid="52fe1476d95548e2a19d5671c3e150710000e" version="2">The initial damage caused by your grenades and explosives can no longer be reduced by a successful &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
 
 	<content contentuid="52fe1476d95548e2a19d5671c3e1507100006" version="1">Grand Detonation</content>
 	<content contentuid="52fe1476d95548e2a19d5671c3e150710000f" version="2">Upon taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;, you gain one Runepowder Vial.</content>
@@ -364,9 +364,9 @@
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50zc" version="2">When an enemy casts a Spell, make a &lt;LSTag Tooltip="RangedWeaponAttack"&gt;Ranged Weapon Attack&lt;/LSTag&gt; against them with your firearm.</content>
 
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f004" version="1">Castle Defense</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500d" version="2">Gain the ability to deploy a turret within [1] of you.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe500d" version="2">Gain the ability to deploy a turret within [1] of you. Conjured turrets are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2f0z4" version="1">Deploy Turret</content>
-	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50zd" version="2">Deploy an arcane turret within [1] of you.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt;.</content>
+	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe50zd" version="2">Deploy an arcane turret within [1] of you. Conjured turrets are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt;.</content>
 	<content contentuid="115fb28f01e84e44b3536f475sd5f4ef2fzz4" version="1">Arcane Missile</content>
 	<content contentuid="115fb28f01e84e44b3536f4741b47sdfe5zzd" version="2">Fire an arcane missile which will seek out a creature of your choosing.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.</content>
 

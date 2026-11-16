@@ -24,7 +24,6 @@ local function ReleaseHooks(page)
         hook.Active = false
         Unsubscribe(hook.Ids)
     end
-    page.Pending = {}
 end
 
 function Preview.Prune(pages)
@@ -37,10 +36,12 @@ function Preview.Prune(pages)
     end
 end
 
+-- Reuse the invisible Unicode mark list in high-frequency native score preview.
+local HB_DIRECTIONAL_MARKS = { "‎", "‏", "‪", "‫", "‬", "‭", "‮", "⁦", "⁧", "⁨", "⁩" }
 local function Normalize(text)
     
     local normalized = text:gsub("−", "-")
-    for _, mark in ipairs({ "‎", "‏", "‪", "‫", "‬", "‭", "‮", "⁦", "⁧", "⁨", "⁩" }) do normalized = normalized:gsub(mark, "") end
+    for _, mark in ipairs(HB_DIRECTIONAL_MARKS) do normalized = normalized:gsub(mark, "") end
     return (normalized:gsub(" ", " "):gsub(" ", " "))
 end
 
@@ -117,51 +118,35 @@ local function Events(object)
     return events
 end
 
-local function RefreshTooltip(token, root)
+-- Noesis object proxies are only valid for their owning UI update. Native
+-- tooltip events can fire after the character page is rebuilt, so the event
+-- must NOT re-enter the saved UIWidget, VMAbility or row proxies. Signal the
+-- owning Abilities scheduler, which resolves all native controls afresh in
+-- Ext.UI.Defer on its next pass. No recurring hover polling is necessary.
+local function RequestTooltipRefresh(token)
     local page = tooltipPages[token]
-    if not page or page.Running then return end
-    local frame = page.Frame
-    page.Running = true
-    local ok, failure = pcall(function()
-        
-        
-        if tostring(frame.Read(frame.Widget, "DataContext")) ~= tostring(frame.Native) then return end
-        Preview.Update(frame.Widget, frame.Native, frame.Key, frame.State,
-            frame.Rows, frame.Base, frame.Read, frame.Walk, frame.Observe, root)
-    end)
-    page.Running = false
-    if not ok then frame.Observe("tooltip-opening-retry:" .. frame.Key,
-        "Tooltip opening preview will retry after UI rebuild: " .. tostring(failure)) end
+    local frame = page and page.Frame
+    if not frame or type(frame.RequestRefresh) ~= 'function' then return end
+    local ok, failure = pcall(frame.RequestRefresh)
+    if not ok and frame.Observe then
+        frame.Observe('tooltip-event-request:' .. tostring(frame.Key),
+            'Tooltip refresh request failed: ' .. tostring(failure))
+    end
 end
 
 local HookTooltip
 local function OpenTooltip(token, root)
-    if not IsObject(root) then return end
     local page = tooltipPages[token]
     if not page then return end
-    
-    
-    HookTooltip(page, root, {"Loaded", "Opened"}, function(target)
-        OpenTooltip(token, target)
-    end)
-    RefreshTooltip(token, root)
-    if not Ext.UI.Defer then return end
-    
-    
-    page.Pending[tostring(root)] = root
-    if page.Queued then return end
-    page.Queued = true
-    local ok = pcall(Ext.UI.Defer, function()
-        page.Queued = false
-        local pending = page.Pending
-        page.Pending = {}
-        if tooltipPages[token] ~= page then return end
-        for tooltipToken, tooltip in pairs(pending) do
-            local hook = page.Hooks[tooltipToken]
-            if hook and hook.Active then RefreshTooltip(token, tooltip) end
-        end
-    end)
-    if not ok then page.Queued, page.Pending = false, {} end
+    -- Routed Loaded / Opened may follow ToolTipOpening after the tooltip has
+    -- actually entered the native visual tree. Keep only event IDs, never a
+    -- UI object or tooltip root across frames.
+    if IsObject(root) then
+        HookTooltip(page, root, {'Loaded', 'Opened'}, function()
+            RequestTooltipRefresh(token)
+        end)
+    end
+    RequestTooltipRefresh(token)
 end
 
 HookTooltip = function(page, object, names, callback)
@@ -296,7 +281,7 @@ function Preview.IsProjected(node, state, read)
     return content and content.Text == previous.Written or false
 end
 
-function Preview.Score(node, state, index, original, value, read, label, range)
+function Preview.Score(node, state, index, original, value, read, label, range, trustedTooltip)
     local content = Content(node, read)
     local shown = content and Number(range and content.Text:sub(range.First, range.Last) or content.Text)
     if shown == nil and label and content then
@@ -309,7 +294,12 @@ function Preview.Score(node, state, index, original, value, read, label, range)
     local previous = state.scoreText[token]
     
     
-    if shown ~= original and not (previous and previous.Index == index and content.Text == previous.Written) then return false end
+    -- Native tooltips can be created from an earlier ability value while the
+    -- character-creation row already has the new value. This guard is still
+    -- strict for all generic numeric UI. Only an *identified* ability tooltip
+    -- header can recover from a stale native number on first presentation.
+    if shown ~= original and not (previous and previous.Index == index and content.Text == previous.Written)
+        and not trustedTooltip then return false end
     local updated
     if range then
         range = {First = range.First, Last = range.Last, Replacement = string.format("%.0f", value)}
@@ -320,18 +310,24 @@ function Preview.Score(node, state, index, original, value, read, label, range)
     return true, content.Mode
 end
 
-function Preview.Update(widget, native, key, state, rows, base, read, walk, observe, tooltipRoot)
+function Preview.Update(widget, native, key, state, rows, base, read, walk, observe, tooltipRoot, requestRefresh)
     local widgetToken = tostring(widget)
     local page
     if not tooltipRoot then
-        page = tooltipPages[widgetToken] or {Hooks = {}, Pending = {}}
+        page = tooltipPages[widgetToken] or {Hooks = {}}
         tooltipPages[widgetToken] = page
-        page.Frame = {Widget = widget, Native = native, Key = key, State = state,
-            Rows = rows, Base = base, Read = read, Walk = walk, Observe = observe}
+        -- Do not persist widget/native/row references beyond this UI frame.
+        page.Frame = {Key = key, Observe = observe, RequestRefresh = requestRefresh}
         page.Seen = {}
         HookTooltip(page, widget, {"ToolTipOpening"}, function(target, args)
-            local source = args and args.Source or target
-            OpenTooltip(widgetToken, read(source, "ToolTip") or read(target, "ToolTip"))
+            -- The opening event is authoritative even if BG3 has not yet
+            -- attached the ToolTip property to the event source.
+            RequestTooltipRefresh(widgetToken)
+            local ok, tooltip = pcall(function()
+                local source = args and args.Source or target
+                return read(source, "ToolTip") or read(target, "ToolTip")
+            end)
+            if ok and tooltip then OpenTooltip(widgetToken, tooltip) end
         end)
     end
     local accepted = state.ackSource and state.lastSource and state.ackSource == state.lastSource.Source
@@ -339,10 +335,18 @@ function Preview.Update(widget, native, key, state, rows, base, read, walk, obse
     for index = 1, 6 do
         
         
-        local original = state.offsets and Number(state.offsets.Scores[index]) or Number(read(rows[index], "Value"))
-        if original then
-            local included = accepted and state.offsets and original == state.offsets.Scores[index] and state.offsets.Applied[index] or 0
-            deltas[index] = accepted and Preview.Delta(original, state.choices[index], included) or 0
+        local reference = state.offsets and Number(state.offsets.Scores[index]) or Number(read(rows[index], "Value"))
+        local current = Number(read(rows[index], "Value"))
+        if reference and current then
+            -- Stats/tooltip VM models may still reflect the last allocation
+            -- even after the selected native row has advanced. Calculate the
+            -- desired modifier from the current row, relative to the model
+            -- snapshot whose skill/save/health numbers we are displaying.
+            local included = accepted and state.offsets and current == state.offsets.Scores[index]
+                and state.offsets.Applied[index] or 0
+            local adjusted = math.max(1, current - included
+                + (accepted and state.choices[index] - 8 or 0))
+            deltas[index] = accepted and (Modifier(adjusted) - Modifier(reference)) or 0
         end
     end
     local targets, visited, schemas, identities, count = {}, {}, {}, {}, 0
@@ -351,7 +355,9 @@ function Preview.Update(widget, native, key, state, rows, base, read, walk, obse
         if hpDelta == nil then return end
         local token = tostring(object)
         targets[token] = targets[token] or {}
-        for _, field in ipairs({ "Value", "Max" }) do
+        -- The live ls.VMRangeStat exposes its max as uppercase MAX,
+        -- not Max. Keep the older spelling as a guarded compatibility read.
+        for _, field in ipairs({ "Value", "MAX", "Max" }) do
             local original = Number(read(object, field))
             if original then targets[token][field] = { Original = original,
                 Value = Preview.HitPoints(original, hpDelta, 1, 1), OnlyNamed = false } end
@@ -368,8 +374,17 @@ function Preview.Update(widget, native, key, state, rows, base, read, walk, obse
         
         local score = ObjectType(object) == "ls.VMAbility" and Number(read(object, "Value"))
         if field ~= "Value" and score then
-            local included = accepted and state.offsets and score == state.offsets.Scores[index] and state.offsets.Applied[index] or 0
-            delta = accepted and Preview.Delta(score, state.choices[index], included) or 0
+            -- A tooltip VM can still describe the previous score after the
+            -- native allocation row has changed. Use the current row as the
+            -- target, but the tooltip VM score as the reference for its
+            -- modifier/roll text. Both values are read-only: only explicitly
+            -- identified visual text is updated, never the underlying VM.
+            local current = Number(read(rows[index], "Value"))
+            local included = current and accepted and state.offsets
+                and current == state.offsets.Scores[index] and state.offsets.Applied[index] or 0
+            local projected = current and math.max(1, current - included
+                + (accepted and state.choices[index] - 8 or 0))
+            delta = accepted and projected and (Modifier(projected) - Modifier(score)) or 0
         end
         targets[token][field] = { Original = original, Value = original + delta, Signed = true,
             OnlyNamed = field ~= "Value" and field ~= "AdditionalValue" and field ~= "Modifier" and field ~= "AbilityModifier"
@@ -513,8 +528,16 @@ function Preview.Update(widget, native, key, state, rows, base, read, walk, obse
         if IsObject(context) and not targets[tostring(context)] then
             local kind = ObjectType(context):lower()
             local id = read(context, "IDString")
+            -- The creation summary can bind a distinct Health VM rather
+            -- than the DummyCharacter.Stats.Health proxy. Recognize only
+            -- a confirmed health-stat model; never guess from the visible
+            -- text or alter the underlying game-owned VM.
+            if hpDelta ~= nil and id == "Health"
+                and (kind == "ls.vmrangestat" or kind == "ls.vmstat") then
+                Inspect(context, "visual:Health", "health", 3, 0)
+            end
             local identity = type(id) == "string" and id ~= "" and identities[kind .. ":" .. id]
-            if identity then
+            if identity and not targets[tostring(context)] then
                 
                 
                 Inspect(context, "visual:" .. tostring(read(node, "Name")), identity.Role, identity.Index, 0)
@@ -607,6 +630,7 @@ function Preview.Update(widget, native, key, state, rows, base, read, walk, obse
         end
         return result
     end
+    local visitingTooltip = false
     local function Header(node, text)
         
         
@@ -620,9 +644,17 @@ function Preview.Update(widget, native, key, state, rows, base, read, walk, obse
             if name ~= "titlevalue" or ObjectType(read(node, "DataContext")) ~= "ls.VMAbility"
                 or not Normalize(text):match("^%s*%(%s*[%+%-]?%d+%.?%d*%s*%)%s*$") then return false end
         end
-        local index
+        local index, identified = nil, false
         for candidate, ability in ipairs(base.Abilities) do
-            if label:lower() == ability:lower() then index = candidate; break end
+            if label:lower() == ability:lower() then
+                index, identified = candidate, true
+                break
+            end
+        end
+        if label == "" then
+            -- Vanilla's split TitleValue has no ability-name text, but has
+            -- a specific, verified VMAbility identity (checked above).
+            identified = true
         end
         index = index or OwnerIndex(node)
         if not index then return false end
@@ -630,7 +662,8 @@ function Preview.Update(widget, native, key, state, rows, base, read, walk, obse
         if not original then return false end
         local included = accepted and state.offsets and original == state.offsets.Scores[index] and state.offsets.Applied[index] or 0
         local _, value = Preview.Delta(original, accepted and state.choices[index] or 8, included)
-        if Preview.Score(node, state, index, original, value, read, true, range) then
+        if Preview.Score(node, state, index, original, value, read, true, range,
+            visitingTooltip and identified) then
             RememberHeader(node, index)
             observe("derived-header:" .. key .. ":" .. tostring(node),
                 "Ability tooltip header: index=" .. index .. "; native=" .. original .. "; shown=" .. value)
@@ -735,6 +768,10 @@ function Preview.Update(widget, native, key, state, rows, base, read, walk, obse
     if tooltipRoot then
         tooltipRoots[1], tooltipSeen[tostring(tooltipRoot)] = tooltipRoot, true
     else walk(widget, SafeVisit, 0, { count = 0 }) end
+    -- A generic page preview must retain the original numeric safety guard.
+    -- Stale-value recovery is permitted only while visiting a real ToolTip
+    -- root found through Noesis, never arbitrary text on the character page.
+    visitingTooltip = true
     for index = 1, math.min(#tooltipRoots, 24) do
         local tooltip = tooltipRoots[index]
         

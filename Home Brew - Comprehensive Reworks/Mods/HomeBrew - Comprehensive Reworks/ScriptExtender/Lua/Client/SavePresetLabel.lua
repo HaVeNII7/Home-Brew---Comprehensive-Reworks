@@ -129,6 +129,6 @@ Ext.Events.Tick:Subscribe(function()
     end
     if Ext.UI.Defer then
         local ok=pcall(Ext.UI.Defer,run)
-        if not ok then run() end
-    else run() end
+        if not ok then busy=false end
+    else busy=false end
 end)

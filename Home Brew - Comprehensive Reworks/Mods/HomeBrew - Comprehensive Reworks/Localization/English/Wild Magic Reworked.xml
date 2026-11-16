@@ -61,9 +61,9 @@
 	<content contentuid="h0ce40ac5g5a47g4ed8g9973g6sdfasdfs6d8" version="3">Affected creature will remain enraged until the end of their current combat encounter.</content>
 
 	<content contentuid="hd26c24a0g76e8g4f02gb71ags5df4sdf85df" version="2">Wild Soul: Mountainous Rampage</content>
-	<content contentuid="h0ce40ac5g5a47g4ed8g9973gs6d4fs98d787" version="3">You shockingly increase in both size and musculature, vastly improving all of your physical capabilities, causing yourself to deal an additional [1] damage with main-hand &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; and while unarmed.</content>
+	<content contentuid="h0ce40ac5g5a47g4ed8g9973gs6d4fs98d787" version="3">You shockingly increase in both size and musculature, vastly improving all of your physical capabilities, causing yourself to, if damaging a non-allied target, deal an additional [1] damage with main-hand &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; and while unarmed.</content>
 	<content contentuid="hd26c24a0g76e8g4f02gb71agf029w38rdffd" version="2">Wild Soul: Mountainous Rampage</content>
-	<content contentuid="h0ce40ac5g5a47g4ed8g9973g623498we8fde" version="3">Affected creature has shockingly increased in both size and musculature, vastly improving all of their physical capabilities and causing them to deal an additional [1] damage with their main-hand &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; and while unarmed.</content>
+	<content contentuid="h0ce40ac5g5a47g4ed8g9973g623498we8fde" version="3">Affected creature has shockingly increased in both size and musculature, vastly improving all of their physical capabilities and causing them to, if damaging a non-allied target, deal an additional [1] damage with their main-hand &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attacks&lt;/LSTag&gt; and while unarmed.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">STANDARD WILD MAGIC EFFECTS</content>
 

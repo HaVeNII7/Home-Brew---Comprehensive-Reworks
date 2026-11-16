@@ -1,3 +1,573 @@
+// All Possible Random Item Drops - Uncommon
+
+
+
+new treasuretable"HomeBrew_All_Uncommon"
+new subtable "-1"
+object category "I_MAG_TheOptimist_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Acrobat_Shoes",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_Frigid_Trident",1,0,0,0,0,0,0,0
+object category "I_MAG_Ambusher_Shortsword",1,0,0,0,0,0,0,0
+object category "I_GOB_DrowCommander_Amulet",1,0,0,0,0,0,0,0
+object category "I_UNI_GOB_SeluneAmulet",1,0,0,0,0,0,0,0
+object category "I_DEN_BearReward_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Harpers_HarpersAmulet",1,0,0,0,0,0,0,0
+object category "I_WPN_Leech",1,0,0,0,0,0,0,0
+object category "I_MAG_Surgeon_Leech",1,0,0,0,0,0,0,0
+object category "I_DEN_CapturedGoblin_MurderDagger",1,0,0,0,0,0,0,0
+object category "I_MAG_ArcaneTrickster_Ring",1,0,0,0,0,0,0,0
+object category "I_GOB_Pens_BeastmasterAmulet",1,0,0,0,0,0,0,0
+object category "I_MAG_CQCaster_GainArcaneChargeOnDamaged_Robe",1,0,0,0,0,0,0,0
+object category "I_MAG_Violence_LowHP_Violence_Clothes",1,0,0,0,0,0,0,0
+object category "I_MAG_Bloodsoaked_Greataxe",1,0,0,0,0,0,0,0
+object category "I_WPN_Bonesaw",1,0,0,0,0,0,0,0
+object category "I_MAG_Surgeon_Bonesaw",1,0,0,0,0,0,0,0
+object category "I_TWN_BootsOfApparentDeath",1,0,0,0,0,0,0,0
+object category "I_MAG_CQCaster_ArcaneChargeAfterDash_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_ElementalGish_MomentumOnElementalDamage_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_TerrainWalkers_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_Thunder_ReverberationOnStatusApply_Boots",1,0,0,0,0,0,0,0
+object category "I_WYR_Circus_TeleportBoots",1,0,0,0,0,0,0,0
+object category "I_MAG_OfAwareness_Bow",1,0,0,0,0,0,0,0
+object category "I_UNI_ARM_OfDefense_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Shove_ACboost_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Psychic_MentalFatigue_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Force_Pike",1,0,0,0,0,0,0,0
+object category "I_MAG_CQCaster_SpellDCBonusWhileThreatened_Circlet",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_PactKeeper_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_MAG_Radiant_DamageBonusOnIlluminatedTarget_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Acid_AcidDamageOnWeaponAttack_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Mobility_SprintForMomentum_ChainShirt",1,0,0,0,0,0,0,0
+object category "I_MAG_Bonded_Shocking_Warhammer",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_HeatOnInflictBurning_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_FogOfCloudDisengage_Cloak",1,0,0,0,0,0,0,0
+object category "I_MAG_ElementalGish_AbsorbElements_Cloak",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_CloakOfProtection_Cloak",1,0,0,0,0,0,0,0
+object category "I_ARM_Cloth_Body_1",1,0,0,0,0,0,0,0
+object category "I_MAG_Frost_GenerateFrostOnStatusApply_Hat",1,0,0,0,0,0,0,0
+object category "I_UNI_RepeatStaff",1,0,0,0,0,0,0,0
+object category "I_MAG_Radiant_RadiatingOrb_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_LuckySeven_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_CQCaster_CloseRangedSpellMastery_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Zhentarim_Swap_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_JusticiarArmor_Gloves",1,0,0,0,0,0,0,0
+object category "I_UND_Justiciar_Helmet_Magic",1,0,0,0,0,0,0,0
+object category "I_UND_Justiciar_Chainshirt_Magic",1,0,0,0,0,0,0,0
+object category "I_UND_Justiciar_Mask_Magic",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_OfEasthaven_Defender_Flail",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_Defender_Greataxe",1,0,0,0,0,0,0,0
+object category "I_MAG_Poison_InflictPoisonHealSelf_Cloak",1,0,0,0,0,0,0,0
+object category "I_UNI_DoomHammer",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_IncreaseSlashingDamageToBurning_Handaxe",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_DragonsBreath_Glaive",1,0,0,0,0,0,0,0
+object category "I_MAG_Enforcer_NonLethalFright_Club",1,0,0,0,0,0,0,0
+object category "I_MAG_Enforcer_RejunevatingKnock_Helmet",1,0,0,0,0,0,0,0
+object category "I_MAG_Enforcer_NonLethalBlessing_Shield",1,0,0,0,0,0,0,0
+object category "I_UND_MushroomHunger_RingOfExploration",1,0,0,0,0,0,0,0
+object category "I_MAG_LowHP_IncreaseSpeed_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_HeatOnTakingFireDamage_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow",1,0,0,0,0,0,0,0
+object category "I_TWN_Tollhouse_TradersRing",1,0,0,0,0,0,0,0
+object category "I_MAG_Mobility_JumpOnDash_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Acid_AcidMeleeCounter_Cloak",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_Fleshrend_Shortsword",1,0,0,0,0,0,0,0
+object category "I_MAG_Frost_Frostbite_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Fighter_ActionSurge_AttackBonus_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_MeleeDebuff_AttackDebuff2_OnDamage_HeavyCrossbow",1,0,0,0,0,0,0,0
+object category "I_MAG_Harpers_ShieldsOfShadows",1,0,0,0,0,0,0,0
+object category "I_UNI_ARM_OfArchery_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_ElementalGish_BaneOnElementalWeaponDamage_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Thunder_Reverberation_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_LowHP_ResistanceFire_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_ApplyBurningOnFireDamage_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Paladin_LayOnHandsSupport_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_OfAutomaton_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_LowHP_TemporaryHP_Shield",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_FireDamage_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_HAG_HagsRing",1,0,0,0,0,0,0,0
+object category "I_MAG_Mobility_MomentumOnCombatStart_Helmet",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_ArcaneAcuityOnFireDamage_Hat",1,0,0,0,0,0,0,0
+object category "I_MAG_Thunder_ArcaneAcuityOnThunderDamage_Hat",1,0,0,0,0,0,0,0
+object category "I_MAG_Druid_Magic_Hide_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_WYR_Hellrider_Longbow",1,0,0,0,0,0,0,0
+object category "I_UNI_ARM_OfTeleportation_Helm",1,0,0,0,0,0,0,0
+object category "I_MAG_ElementalGish_ArcaneAcuity_Helmet",1,0,0,0,0,0,0,0
+object category "I_UND_Myco_Alchemist_HealerGloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Revitalizing_Warpick",1,0,0,0,0,0,0,0
+object category "I_MAG_TheHunters_Dagger",1,0,0,0,0,0,0,0
+object category "I_MAG_Acid_NoxiousFumes_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_LowHP_IncreasedSpellDamage_Amulet",1,0,0,0,0,0,0,0
+object category "I_UND_DuergarRaft_GruesomeHammer",1,0,0,0,0,0,0,0
+object category "I_MAG_Druid_Ironvine_Shield",1,0,0,0,0,0,0,0
+object category "I_GOB_Torturer_Spear",1,0,0,0,0,0,0,0
+object category "I_MAG_LOW_Rat_Keepsake_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Zhentarim_Lockpicking_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_OfSpeed_LightCrossbow",1,0,0,0,0,0,0,0
+object category "I_MAG_OfGreaterSorcery_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Radiant_RadiatingOrb_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_ofMarksmanship_Hat",1,0,0,0,0,0,0,0
+object category "I_MAG_Martial_Exertion_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_MonsterSlayer_Glaive",1,0,0,0,0,0,0,0
+object category "I_MAG_LowHP_IgnoreAttackOfOpportunity_Amulet",1,0,0,0,0,0,0,0
+object category "I_DEN_TunnelStaff",1,0,0,0,0,0,0,0
+object category "I_MAG_MagicMissile_HandCrossbow",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_ChainDevil_Flail",1,0,0,0,0,0,0,0
+object category "I_MAG_Poison_PoisonLethality_Ring",1,0,0,0,0,0,0,0
+object category "I_UNI_StaffOfRain",1,0,0,0,0,0,0,0
+object category "I_MAG_Blindside_Shortsword",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_Fleshred_Longsword",1,0,0,0,0,0,0,0
+object category "I_MAG_Throwable_Pike",1,0,0,0,0,0,0,0
+object category "I_DEN_HarpyMeal_NestRing",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_IncreasedDamage_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Harpers_RingOfProjection",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_OfJumping_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Psychic_MentalOverload_Ring",1,0,0,0,0,0,0,0
+object category "I_ARM_RingOfPoisonResistance",1,0,0,0,0,0,0,0
+object category "I_UND_SocietyOfBrilliance_PullingRing",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_SelfImmolation_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Thunder_InflictDazeOnThunderDamage_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_LowHP_CounterOnDamage_ChainShirt",1,0,0,0,0,0,0,0
+object category "I_MAG_OfRupture_Rapier",1,0,0,0,0,0,0,0
+object category "I_MAG_Safeguard_Shield",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_Sentinel_Shield",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_Battleaxe",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_ShadowBlade_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_Shadowstep_Boots",1,0,0,0,0,0,0,0
+object category "I_TWN_SharDagger",1,0,0,0,0,0,0,0
+object category "I_TWN_NecklaceOfCharming",1,0,0,0,0,0,0,0
+object category "I_MAG_OfShielding_Shield",1,0,0,0,0,0,0,0
+object category "I_UND_Duergar_ShortswordOfFirstBlood",1,0,0,0,0,0,0,0
+object category "I_CHA_OutpostJewelry",1,0,0,0,0,0,0,0
+object category "I_MAG_Healer_DisengageOnHeal_ChainShirt",1,0,0,0,0,0,0,0
+object category "I_PLA_SmugglerRing",1,0,0,0,0,0,0,0
+object category "I_MAG_Frost_GenerateSurfaceOnColdDamage_Ring",1,0,0,0,0,0,0,0
+object category "I_FOR_SpiderstepBoots",1,0,0,0,0,0,0,0
+object category "I_FOR_WebStaff",1,0,0,0,0,0,0,0
+object category "I_MAG_Thunder_ReverberationOnRangeSpellDamage_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Mobility_LowHP_Momentum_Ring",1,0,0,0,0,0,0,0
+object category "I_WYR_Circus_MumblingStaff",1,0,0,0,0,0,0,0
+object category "I_UND_Tower_StaffBlessMystra",1,0,0,0,0,0,0,0
+object category "I_MAG_Steadfast_Maul",1,0,0,0,0,0,0,0
+object category "I_MAG_Gish_PsychicDamageBonusWhileConcentrating_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_BlackTentacle_Amulet",1,0,0,0,0,0,0,0
+object category "I_UND_SocietyOfBrilliance_DarkvisionRing",1,0,0,0,0,0,0,0
+object category "I_MAG_OfSwordmaster_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_ZOC_ForceConduitWhileSurounded_Boots",1,0,0,0,0,0,0,0
+object category "I_ARM_TalismanOfJergal",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_Resistance_Ring",1,0,0,0,0,0,0,0
+object category "I_UNI_MassHealRing",1,0,0,0,0,0,0,0
+object category "I_MAG_Thunder_InflictDazeOnReverberatedCreature_Cloak",1,0,0,0,0,0,0,0
+object category "I_MAG_Dawn_Morningstar",1,0,0,0,0,0,0,0
+object category "I_UND_Tower_AmuletDetectThoughts",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_UndeadSlayer_Crossbow",1,0,0,0,0,0,0,0
+object category "I_WYR_Circus_ThiefGloves",1,0,0,0,0,0,0,0
+object category "I_MAG_CQCaster_TempHPAfterCast_Cloak",1,0,0,0,0,0,0,0
+object category "I_MAG_Healer_HealSelf_Helmet",1,0,0,0,0,0,0,0
+object category "I_TWN_ShieldOfWatcher",1,0,0,0,0,0,0,0
+object category "I_MAG_Frost_GenerateFrostOnDamage_Gloves",1,0,0,0,0,0,0,0
+object category "I_GOB_Pens_Dagger",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_ComfyBackpack",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_SymbolSylvanus",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookGreenArts",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_TotemBeast",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_TriageKit",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_QuiverBrambleheart",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_EndlessMead",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_CuriousCoin",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_MendingRope",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_Whetstone",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_WeaponStrap",1,0,0,0,0,0,0,0
+object category "I_MAG_WPN_ApprenticeWand",1,0,0,0,0,0,0,0
+object category "I_MAG_WPN_BalancedWand",1,0,0,0,0,0,0,0
+object category "I_MAG_WPN_BoughoftheEnsnared",1,0,0,0,0,0,0,0
+object category "I_WPN_EmblazonedScepter",1,0,0,0,0,0,0,0
+
+
+
+// All Possible Random Item Drops - Rare
+
+
+
+new treasuretable"HomeBrew_All_Rare"
+new subtable "-1"
+object category "I_MAG_ChargedLightning_EnsnaringShock_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Healer_HPRestoration_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_EGW_OfTheDrunkard_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_FlamingFist_FlamingBlade",1,0,0,0,0,0,0,0
+object category "I_MAG_Paladin_RestoreChannelDivinity_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_Monk_Magic_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_Combat_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_MAG_Illithid_MindOverload_Weapon_Longsword",1,0,0,0,0,0,0,0
+object category "I_MAG_Illithid_MindOverload_Weapon_Longsword",1,0,0,0,0,0,0,0
+object category "I_MAG_Bard_TempHP_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_Bonded_Lethal_Longsword",1,0,0,0,0,0,0,0
+object category "I_MAG_LowHP_IncreaseDamage_Greataxe",1,0,0,0,0,0,0,0
+object category "I_MAG_Healer_TempHPOnHeal_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_OfTheBanshee_Bow",1,0,0,0,0,0,0,0
+object category "I_MAG_Psychic_MentalFatigue_Cape",1,0,0,0,0,0,0,0
+object category "I_MAG_Critical_CriticalSwiftness_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_Thunder_ThunderClap_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_MAG_Illithid_Carapace_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_SecondChance_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_FlamingFist_BattleWizardGloves",1,0,0,0,0,0,0,0
+object category "I_ARM_CircletOfBlasting",1,0,0,0,0,0,0,0
+object category "I_MAG_Illithid_Regen_Circlet",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_CloakOfDisplacement_Cloak",1,0,0,0,0,0,0,0
+object category "I_ARM_Cloth_Body_2",1,0,0,0,0,0,0,0
+object category "I_MAG_Frost_Offhand_Dagger",1,0,0,0,0,0,0,0
+object category "I_MAG_Critical_CriticalCombo_BattleAxe",1,0,0,0,0,0,0,0
+object category "I_MAG_Corrosive_Flail",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_CriticalBoostWhileObscured_Helmet",1,0,0,0,0,0,0,0
+object category "I_UND_SocietyOfBrilliance_ResonanceStaff",1,0,0,0,0,0,0,0
+object category "I_DEN_Apprentice_DaggerOfShar",1,0,0,0,0,0,0,0
+object category "I_MAG_DarkJusticiar_HalfPlate",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_Cyric_FearImmunity_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Critical_ArcanicCritical_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Zhentarim_SleeperDagger",1,0,0,0,0,0,0,0
+object category "I_ARM_StuddedLeather_Body_Drow",1,0,0,0,0,0,0,0
+object category "I_MAG_Drunken_Cloth",1,0,0,0,0,0,0,0
+object category "I_ARM_Splint_Body_Dwarven",1,0,0,0,0,0,0,0
+object category "I_MAG_Evasive_Shoes",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_BlindImmunity_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_FreeCast_Shortsword",1,0,0,0,0,0,0,0
+object category "I_MAG_BarbMonk_Cloth_Hat_A_1_Late",1,0,0,0,0,0,0,0
+object category "I_PLA_WPN_DreadedSkullsFlail",1,0,0,0,0,0,0,0
+object category "I_MAG_Monk_Magic_Armor_1",1,0,0,0,0,0,0,0
+object category "I_MAG_Gish_ArcaneAcuity_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Monk_Fire_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_OfCrushing_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_OfDexterity_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_OfTheDuelist_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_ZOC_AdvantageOnMeleeAttackWhileSurounded_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Monk_Magic_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Mobility_ExplosionOnJump_Maul",1,0,0,0,0,0,0,0
+object category "I_MAG_Tyrrant_Warhammer",1,0,0,0,0,0,0,0
+object category "I_MAG_Harpers_Harmonizing_Rapier",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_Harmonium_Halberd",1,0,0,0,0,0,0,0
+object category "I_MAG_Harpers_OfWeapons_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_MAG_OfSharpCaster_Hat",1,0,0,0,0,0,0,0
+object category "I_MAG_Monk_Magic_Hat",1,0,0,0,0,0,0,0
+object category "I_MAG_Hat_Circushat",1,0,0,0,0,0,0,0
+object category "I_MAG_Infernal_Hellbeard_Halberd",1,0,0,0,0,0,0,0
+object category "I_MAG_WATCHER_Human_Greataxe",1,0,0,0,0,0,0,0
+object category "I_MAG_Lesser_Infernal_Plate_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_Lesser_Infernal_Metal_Helmet",1,0,0,0,0,0,0,0
+object category "I_UND_FairyRing_AntiCharmHelmet",1,0,0,0,0,0,0,0
+object category "I_MAG_Radiant_Radiating_Helmet",1,0,0,0,0,0,0,0
+object category "I_MAG_Hunting_Shortbow",1,0,0,0,0,0,0,0
+object category "I_MAG_Frost_GenerateFrostOnDamage_Robe",1,0,0,0,0,0,0,0
+object category "I_MAG_FlamingFist_StaffOfFire",1,0,0,0,0,0,0,0
+object category "I_MAG_Infernal_Warhammer",1,0,0,0,0,0,0,0
+object category "I_MAG_Druid_Ironwood_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_Colossal_Greatsword",1,0,0,0,0,0,0,0
+object category "I_WPN_Katana",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_HellishMadness_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Duergar_Sword_KingsKnife",1,0,0,0,0,0,0,0
+object category "I_MAG_Finesse_Longsword",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_Blinding_Bow",1,0,0,0,0,0,0,0
+object category "I_MAG_Radiant_RadiatingOrb_Armor",1,0,0,0,0,0,0,0
+object category "I_UND_Tower_RingArcana",1,0,0,0,0,0,0,0
+object category "I_MAG_BasicEnchanted_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_MAG_Moonlight_Glaive",1,0,0,0,0,0,0,0
+object category "I_MAG_ElementalGish_CantripBooster_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_Nimblefinger_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Heat_Fire_Robe",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_ofPower_Pearl_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_StealthBonusWhileObscured_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_PeriaptofWoundClosure_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Poison_PoisonExposure_Gloves",1,0,0,0,0,0,0,0
+object category "I_FOR_SpiderQueen_Robe",1,0,0,0,0,0,0,0
+object category "I_UND_SocietyOfBrilliance_MagicMissileNecklace",1,0,0,0,0,0,0,0
+object category "I_MAG_TWN_Brewery_Greatclub",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_OfTheFist_MorningStar",1,0,0,0,0,0,0,0
+object category "I_MAG_Rage_TempHPOnExit_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Bonded_Throwing_Battleaxe",1,0,0,0,0,0,0,0
+object category "I_MAG_OfBlink_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_OfFreeAction_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Harpers_RingOfAttraction",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_Ring_Of_Protection",1,0,0,0,0,0,0,0
+object category "I_MAG_Harpers_RingOfTwilight",1,0,0,0,0,0,0,0
+object category "I_MAG_ZOC_ForceConduit_ChainMail",1,0,0,0,0,0,0,0
+object category "I_MAG_RiskyAttack_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_OfArcanicAssault_Robe",1,0,0,0,0,0,0,0
+object category "I_MAG_OfSpellResistance_Robe",1,0,0,0,0,0,0,0
+object category "I_UNI_RobeOfSummer",1,0,0,0,0,0,0,0
+object category "I_MAG_Zhentarim_BloodfeederBlade_Rapier",1,0,0,0,0,0,0,0
+object category "I_MAG_BarbMonk_Leather_Circlet",1,0,0,0,0,0,0,0
+object category "I_MAG_OpenHand_Radiant_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Banites_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Harpers_ArmorOfShadows",1,0,0,0,0,0,0,0
+object category "I_MAG_Druid_Wildshape_Hat",1,0,0,0,0,0,0,0
+object category "I_MAG_Druid_Late_Hide_Armor_2",1,0,0,0,0,0,0,0
+object category "I_CMAG_BG_OfDevotion_Shield",1,0,0,0,0,0,0,0
+object category "I_UND_DuergarBlacksmithHammer",1,0,0,0,0,0,0,0
+object category "I_MAG_Slicing_Shortsword",1,0,0,0,0,0,0,0
+object category "I_MAG_Projectile_Shoes",1,0,0,0,0,0,0,0
+object category "I_MAG_Monk_Cold_Gloves",1,0,0,0,0,0,0,0
+object category "I_ARM_BootsOfDimensionalDoor",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_TheAmplifier_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_MM_Sorcery_SeekingSpell_Gloves",1,0,0,0,0,0,0,0
+object category "I_UNI_Bow_SpellslotRecharge",1,0,0,0,0,0,0,0
+object category "I_MAG_Mobility_MomentumOnDash_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_CQCaster_GainArcaneChargeOnDamage_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_MAG_Stalker_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Jumping_Shoes",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_Shortsword",1,0,0,0,0,0,0,0
+object category "I_MAG_Illithid_MindTax_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Bonded_Baneful_Shortsword",1,0,0,0,0,0,0,0
+object category "I_MAG_Finesse_Glaive",1,0,0,0,0,0,0,0
+object category "I_MAG_Monk_Lightning_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_Longbow",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_Electrocute_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_TempHP_Helmet",1,0,0,0,0,0,0,0
+object category "I_MAG_Wizard_Pointy_Hat",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_BonusAC_Robe",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_StaticDischarge_Shield",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_SpellDCBonusWhileObscured_Circlet",1,0,0,0,0,0,0,0
+object category "I_MAG_ZOC_ForceConduit_Halberd",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_AbilityCheckBoost_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_Trident",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_Dash_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_CHA_CompassSpear",1,0,0,0,0,0,0,0
+object category "I_MAG_ChargedLightning_ElectricSurface_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_HeatOnWeaponDamage_Battleaxe",1,0,0,0,0,0,0,0
+object category "I_MAG_HAV_ThornBlade_Scimitar",1,0,0,0,0,0,0,0
+object category "I_MAG_Monk_Thunder_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_ZOC_Force_Helmet",1,0,0,0,0,0,0,0
+object category "I_MAG_StrongString_Longbow",1,0,0,0,0,0,0,0
+object category "I_MAG_Critical_BolsteringCritical_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_ZOC_RampartAura_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_Invisible_Pike",1,0,0,0,0,0,0,0
+object category "I_MAG_DevilsBlackmith_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_DevilsBlackmith_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_DevilsBlackmith_ScaleMail",1,0,0,0,0,0,0,0
+object category "I_MAG_Vicious_Battleaxe",1,0,0,0,0,0,0,0
+object category "I_MAG_Vicious_Shortbow",1,0,0,0,0,0,0,0
+object category "I_MAG_Gish_TempHPWhileConcentrating_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_Spellbreaker_Battleaxe",1,0,0,0,0,0,0,0
+object category "I_MAG_CKM_SerpenScale_Armor",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_WindFan",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_TotemSpirit",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_WeaponChain",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_QuiverEfficient",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_ShieldingBrooch",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookClearThought",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BloodwellSorcerous",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BookManySpells",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BeltRaidLeader",1,0,0,0,0,0,0,0
+object category "I_UND_Minotaur_BeltAmulet",1,0,0,0,0,0,0,0
+object category "I_TWN_ShortswordOfStealth",1,0,0,0,0,0,0,0
+object category "I_MAG_Druid_Late_Hide_Armor_1",1,0,0,0,0,0,0,0
+object category "I_MAG_Bard_RefreshBardicInspirationSlot_Shoes",1,0,0,0,0,0,0,0
+object category "I_MAG_Bard_HealingBardicInspiration_Hat",1,0,0,0,0,0,0,0
+object category "I_WYR_Circus_HandaxeReturning",1,0,0,0,0,0,0,0
+object category "I_MAG_Critical_Force_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_Darkfire_Shortbow",1,0,0,0,0,0,0,0
+object category "I_MAG_Barbarian_Magic_Armor_1",1,0,0,0,0,0,0,0
+object category "I_SCL_MAG_SkepticalRobber_WifesRing",1,0,0,0,0,0,0,0
+object category "I_PLA_ZhentCave_Gloves",1,0,0,0,0,0,0,0
+object category "I_UNI_ARM_OfMissileSnaring_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_OfTheBalancedHands_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_OfThievery_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Shadow_FogCloud_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_Harold_HeavyCrossbow",1,0,0,0,0,0,0,0
+object category "I_MAG_Paladin_SmiteSpellsSupport_Helmet",1,0,0,0,0,0,0,0
+object category "I_MAG_Frost_IceSurfaceProneImmunity_Boots",1,0,0,0,0,0,0,0
+object category "I_UND_Tower_BootsFeatherFall",1,0,0,0,0,0,0,0
+object category "I_TWN_RatCatcher",1,0,0,0,0,0,0,0
+object category "I_MAG_Radiant_Radiating_Hammer",1,0,0,0,0,0,0,0
+object category "I_FOR_OwlbearCubs_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_Wondrous_Gloves",1,0,0,0,0,0,0,0
+object category "I_LOW_OfWindrider_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_EndGameCaster_Cloak",1,0,0,0,0,0,0,0
+object category "I_MAG_TheDestroyer_Maul",1,0,0,0,0,0,0,0
+object category "I_MAG_Radiant_CrusaderMantle_Cloak",1,0,0,0,0,0,0,0
+object category "I_MAG_Toll_Collector_Cloak",1,0,0,0,0,0,0,0
+object category "I_MAG_Illithid_CharmPerson_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_WPN_ArcWand",1,0,0,0,0,0,0,0
+object category "I_MAG_WPN_InstrumentofBinding",1,0,0,0,0,0,0,0
+object category "I_MAG_WPN_NecroticFetish",1,0,0,0,0,0,0,0
+
+
+
+// All Possible Random Item Drops - Very Rare
+
+
+
+new treasuretable"HomeBrew_All_Epic"
+new subtable "-1"
+object category "I_MAG_Zhentarim_Demonspirit_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_ofGreaterHealth_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_OfTheDevout_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_ArcaneAbsorption_Dagger",1,0,0,0,0,0,0,0
+object category "I_MAG_EndGame_HalfPlate",1,0,0,0,0,0,0,0
+object category "I_MAG_Druid_Land_Magic_Leather_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_Druid_Moon_Magic_Leather_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_EndGame_Plate_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_Druid_Spore_Magic_Leather_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_OfSpeed_Scimitar",1,0,0,0,0,0,0,0
+object category "I_MAG_GleamingSorcery_Hat",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_BlightBringer_Shortbow",1,0,0,0,0,0,0,0
+object category "I_MAG_Barbarian_BoneSpike_Shoes",1,0,0,0,0,0,0,0
+object category "I_MAG_Barbarian_BoneSpike_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_Barbarian_BoneSpike_Helmet",1,0,0,0,0,0,0,0
+object category "I_MAG_EndGame_Metal_Boots",1,0,0,0,0,0,0,0
+object category "I_MAG_ParalyzingRay_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Illithid_Carapace_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_BonusAttack_AgainstMarked_Circlet",1,0,0,0,0,0,0,0
+object category "I_MAG_OfUndeadServant_Ring",1,0,0,0,0,0,0,0
+object category "I_UNI_DarkJusticiar_Helmet",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_DwarvenThrower_Warhammer",1,0,0,0,0,0,0,0
+object category "I_MAG_EndGame_StuddedLeather_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_ElvenChain_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_Greenstone_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_OfAges_Flail",1,0,0,0,0,0,0,0
+object category "I_MAG_FlamingFist_Flame_Armor",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_Gargoyle_Boots",1,0,0,0,0,0,0,0
+object category "I_UNI_ARM_OfGiantHillStrength_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_OfWarMaster_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_Warlock_Twinned_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_PoR_OfVigilance_Halberd",1,0,0,0,0,0,0,0
+object category "I_MAG_LowHP_BonusAction_Helmet",1,0,0,0,0,0,0,0
+object category "I_MAG_EndGameCaster_Hood",1,0,0,0,0,0,0,0
+object category "I_MAG_Hat_Barbarian_Hide",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_Jannath_Hat",1,0,0,0,0,0,0,0
+object category "I_MAG_Critical_CriticalExecution_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_BG_OfTheMasters_Legacy_Gauntlet",1,0,0,0,0,0,0,0
+object category "I_MAG_Cunning_HandCrossbow",1,0,0,0,0,0,0,0
+object category "I_MAG_Monk_SoulPerception_Hat",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_Nymph_Cloak",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_DrowSpider_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_RadiantLight_Rapier",1,0,0,0,0,0,0,0
+object category "I_MAG_CharismaCaster_Robe",1,0,0,0,0,0,0,0
+object category "I_MAG_Fire_BonusActionOnFireSpell_Circlet",1,0,0,0,0,0,0,0
+object category "I_MAG_Warlock_Quickened_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_OfEvasion_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_Myrkulites_RingofMyrkul_Ring",1,0,0,0,0,0,0,0
+object category "I_MAG_OfArcanicDefense_Robe",1,0,0,0,0,0,0,0
+object category "I_MAG_SpiritualStand_Greataxe",1,0,0,0,0,0,0,0
+object category "I_MAG_Critical_HidingCritical_Cloak",1,0,0,0,0,0,0,0
+object category "I_MAG_Bonded_Shield",1,0,0,0,0,0,0,0
+object category "I_MAG_Arcanist_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_Counterspell_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_MAG_OfSpellPower_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_OfTheRam_Quarterstaff",1,0,0,0,0,0,0,0
+object category "I_MAG_Bhaalist_Paralyzing_Dagger",1,0,0,0,0,0,0,0
+object category "I_MAG_Steadfast_Shield",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_OfLifestealing_Shortsword",1,0,0,0,0,0,0,0
+object category "I_MAG_DeadShot_Longbow",1,0,0,0,0,0,0,0
+object category "I_MAG_BarbMonk_Defensive_Cloth",1,0,0,0,0,0,0,0
+object category "I_MAG_TheImpaler_Pike",1,0,0,0,0,0,0,0
+object category "I_MAG_BarbMonk_Offensive_Cloth",1,0,0,0,0,0,0,0
+object category "I_MAG_OfRevivify_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_RadiantLight_Morningstar",1,0,0,0,0,0,0,0
+object category "I_MAG_LC_Wave_Trident",1,0,0,0,0,0,0,0
+object category "I_MAG_Vampiric_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_WYRM_UndeadProtector_Robe",1,0,0,0,0,0,0,0
+object category "I_MAG_Monk_SoulRejunevation_Armor",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_SymbolHelm",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_StoneGoodLuck",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BowlCommandingWater",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_QuiverChaos",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_DragonhideWeaponStrap",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_WatchBadge",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_LuckyDice",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BlackCrystalTablet",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_CharmingEyes",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_SymbolMeilikki",1,0,0,0,0,0,0,0
+object category "I_JWL_DiscordantInstruments_BannerConsecrated",1,0,0,0,0,0,0,0
+object category "I_MAG_WPN_ChaosRod",1,0,0,0,0,0,0,0
+object category "I_MAG_WPN_TalismanoftheSoulKeeper",1,0,0,0,0,0,0,0
+
+
+
+// All Possible Random Item Drops - Legendary
+
+
+
+new treasuretable"HomeBrew_All_Legendary"
+new subtable "-1"
+object category "I_MAG_Giantslayer_Greatsword",1,0,0,0,0,0,0,0
+object category "I_MAG_TheDueller_Rapier",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_OfSoulCatching_Gloves",1,0,0,0,0,0,0,0
+object category "I_MAG_TheVictory_Longbow",1,0,0,0,0,0,0,0
+object category "I_MAG_WYRM_OfBalduran_Helmet",1,0,0,0,0,0,0,0
+object category "I_MAG_TheThorns_Trident",1,0,0,0,0,0,0,0
+object category "I_MAG_PHB_ScarabOfProtection_Amulet",1,0,0,0,0,0,0,0
+object category "I_MAG_TheClover_Scimitar",1,0,0,0,0,0,0,0
+object category "I_MAG_WPN_SplitFate",1,0,0,0,0,0,0,0
+
+
+
+// Special Tables
+
+
+
+new treasuretable "HomeBrew_Special_Low"
+new subtable "-1"
+object category "T_HomeBrew_All_Uncommon",75,0,0,0,0,0,0,0
+object category "T_HomeBrew_All_Rare",20,0,0,0,0,0,0,0
+object category "T_HomeBrew_All_Epic",5,0,0,0,0,0,0,0
+
+
+
+new treasuretable "HomeBrew_Special_Normal"
+new subtable "-1"
+object category "T_HomeBrew_All_Uncommon",20,0,0,0,0,0,0,0
+object category "T_HomeBrew_All_Rare",75,0,0,0,0,0,0,0
+object category "T_HomeBrew_All_Epic",5,0,0,0,0,0,0,0
+
+
+
+new treasuretable "HomeBrew_Special_High"
+new subtable "-1"
+object category "T_HomeBrew_All_Rare",20,0,0,0,0,0,0,0
+object category "T_HomeBrew_All_Epic",75,0,0,0,0,0,0,0
+object category "T_HomeBrew_All_Legendary",5,0,0,0,0,0,0,0
+
+
+
+// HomeBrew Quest Rewards
+
+
+
+new treasuretable "HomeBrew_QuestReward_Low"
+new subtable "-1"
+object category "T_HomeBrew_Special_Low",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "T_HomeBrew_Special_Low",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "T_HomeBrew_Special_Low",1,0,0,0,0,0,0,0
+
+
+
+new treasuretable "HomeBrew_QuestReward_Normal"
+new subtable "-1"
+object category "T_HomeBrew_Special_Normal",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "T_HomeBrew_Special_Normal",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "T_HomeBrew_Special_Normal",1,0,0,0,0,0,0,0
+
+
+
+new treasuretable "HomeBrew_QuestReward_High"
+new subtable "-1"
+object category "T_HomeBrew_Special_High",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "T_HomeBrew_Special_High",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "T_HomeBrew_Special_High",1,0,0,0,0,0,0,0
+
+
+
+// Zees Bag of Gear and Goodies
+
+
+
 new treasuretable "OBJ_Backpack_StartingGear"
 new subtable "1,1"
 object category "I_Weapon_NoValue_Battleaxe",1,0,0,0,0,0,0,0
@@ -274,30 +844,16 @@ object category "I_Boots_NoValue_19",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_Boots_NoValue_20",1,0,0,0,0,0,0,0
 
-new treasuretable "LOW_MusicTrader"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
 
-new treasuretable "JWL_AlfiraTrade"
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+
+
+// Vendor Edits
+
+
+
+// Misc
+
+
 
 new treasuretable "ST_JWL_Trade_CommonTrinkets"
 new subtable "1,1"
@@ -307,22 +863,11 @@ object category "I_JWL_DiscordantInstruments_FaerunMap",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_Crowbar",1,0,0,0,0,0,0,0
 
-new treasuretable "DEN_Volo_Trade"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_MAG_LC_Cyric_FearImmunity_Amulet",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_MAG_Illithid_CharmPerson_Ring",1,0,0,0,0,0,0,0
+
+
+// Druids Grove
+
+
 
 new treasuretable "DEN_Entrance_Trade"
 CanMerge 1
@@ -341,6 +886,8 @@ object category "I_JWL_DiscordantInstruments_QuiverBrambleheart",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_MAG_WPN_ApprenticeWand",1,0,0,0,0,0,0,0
 
+
+
 new treasuretable "DEN_Thieflings_Pickpocket_Trade"
 CanMerge 1
 new subtable "1,1"
@@ -350,38 +897,26 @@ object category "I_JWL_DiscordantInstruments_EndlessMead",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_CuriousCoin",1,0,0,0,0,0,0,0
 
-new treasuretable "UND_SocietyOfBrilliance_Hobgoblin"
-CanMerge 1
-new subtable "1,1"
-object category "I_MAG_WPN_BalancedWand",1,0,0,0,0,0,0,0
 
-new treasuretable "HAV_Thiefling_Trade"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WindFan",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_MendingRope",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_MAG_WPN_SoulWand",1,0,0,0,0,0,0,0
 
-new treasuretable "PLA_ZhentarimTrader_Common"
+new treasuretable "DEN_Volo_Trade"
 CanMerge 1
 new subtable "1,1"
-object category "I_MAG_WPN_ChaosRod",1,0,0,0,0,0,0,0
+object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_LC_Cyric_FearImmunity_Amulet",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_Illithid_CharmPerson_Ring",1,0,0,0,0,0,0,0
 
-new treasuretable "WYR_Thiefling_Trade"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_StoneGoodLuck",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_TotemSpirit",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolHelm",1,0,0,0,0,0,0,0
 
-new treasuretable "WYR_Danthelon_Trader"
-CanMerge 1
-new subtable "1,1"
-object category "I_MAG_WPN_ArcWand",1,0,0,0,0,0,0,0
 
 new treasuretable "DEN_Weaponsmith_Trade"
 CanMerge 1
@@ -392,15 +927,36 @@ object category "I_JWL_DiscordantInstruments_WeaponStrap",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_Whetstone",1,0,0,0,0,0,0,0
 
-new treasuretable "HAV_Weaponsmith_Trade"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WeaponChain",1,0,0,0,0,0,0,0
 
-new treasuretable "HAV_HarperQuarterMaster_Magic_Trade"
+
+new treasuretable "JWL_AlfiraTrade"
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+
+
+
+// Act 1 - Wilderness
+
+
+
+new treasuretable "PLA_ZhentarimTrader_Common"
 CanMerge 1
 new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_QuiverEfficient",1,0,0,0,0,0,0,0
+object category "I_MAG_WPN_ChaosRod",1,0,0,0,0,0,0,0
+
+
+
+// Creche
+
+
 
 new treasuretable "CRE_GithQuartermistress_Trade"
 CanMerge 1
@@ -412,6 +968,140 @@ new subtable "1,1"
 object category "I_MAG_Cunning_HandCrossbow",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_MAG_WPN_PyroWand",1,0,0,0,0,0,0,0
+
+
+
+new treasuretable "HAV_HarperQuarterMaster_Magic_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_QuiverEfficient",1,0,0,0,0,0,0,0
+
+
+
+// Last Light Inn
+
+
+
+new treasuretable "HAV_Thiefling_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WindFan",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_MendingRope",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_WPN_SoulWand",1,0,0,0,0,0,0,0
+
+
+
+new treasuretable "HAV_Weaponsmith_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WeaponChain",1,0,0,0,0,0,0,0
+
+
+
+// Moonrise Towers
+
+
+
+new treasuretable "MOO_BugBearvendor_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_QuiverChaos",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_Toll_Collector_Cloak",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_WPN_NecroticWand",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_ArcaneAbsorption_Dagger",1,0,0,0,0,0,0,0
+
+
+
+// Underdark
+
+
+
+new treasuretable "UND_SocietyOfBrilliance_Hobgoblin"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_WPN_BalancedWand",1,0,0,0,0,0,0,0
+
+
+
+// Wyrms Rock
+
+
+
+new treasuretable "WYR_Circus_KoboldMerchant_Magic"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_CharmingEyes",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolMeilikki",1,0,0,0,0,0,0,0
+
+
+
+new treasuretable "WYR_Danthelon_Trader"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_WPN_ArcWand",1,0,0,0,0,0,0,0
+
+
+
+new treasuretable "WYR_Thiefling_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_StoneGoodLuck",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_TotemSpirit",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_SymbolHelm",1,0,0,0,0,0,0,0
+
+
+
+// Lower City
+
+
+
+new treasuretable "LOW_DevilsFee_Diabolist_Trade_Magic"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_WPN_ChainMaster",1,0,0,0,0,0,0,0
+
+
+
+new treasuretable "LOW_Guildhall_FetchersBrat_Trade_Magic"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_WatchBadge",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_LuckyDice",1,0,0,0,0,0,0,0
+
+
+
+new treasuretable "LOW_MusicTrader"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Drum",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Flute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lute",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Lyre",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_JWL_Instrument_Rare_Violin",1,0,0,0,0,0,0,0
+
+
+
+new treasuretable "LOW_MysticCarrion_Trade_Magic"
+CanMerge 1
+new subtable "1,1"
+object category "I_JWL_DiscordantInstruments_BlackCrystalTablet",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_WPN_BindingWand",1,0,0,0,0,0,0,0
+
+
 
 new treasuretable "LOW_SorcerousSundries_Trade"
 CanMerge 1
@@ -426,16 +1116,7 @@ object category "I_JWL_DiscordantInstruments_BookClearThought",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_MAG_WPN_SplitFate",1,0,0,0,0,0,0,0
 
-new treasuretable "MOO_BugBearvendor_Trade"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_QuiverChaos",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_MAG_Toll_Collector_Cloak",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_MAG_WPN_NecroticWand",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_MAG_ArcaneAbsorption_Dagger",1,0,0,0,0,0,0,0
+
 
 new treasuretable "LOW_SteepsTrader_Armor"
 CanMerge 1
@@ -444,33 +1125,18 @@ object category "I_JWL_DiscordantInstruments_BeltRaidLeader",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_DragonhideWeaponStrap",1,0,0,0,0,0,0,0
 
-new treasuretable "LOW_Guildhall_FetchersBrat_Trade_Magic"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_WatchBadge",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_LuckyDice",1,0,0,0,0,0,0,0
 
-new treasuretable "LOW_MysticCarrion_Trade_Magic"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_BlackCrystalTablet",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_MAG_WPN_BindingWand",1,0,0,0,0,0,0,0
-
-new treasuretable "WYR_Circus_KoboldMerchant_Magic"
-CanMerge 1
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_CharmingEyes",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_JWL_DiscordantInstruments_SymbolMeilikki",1,0,0,0,0,0,0,0
 
 new treasuretable "LOW_StormshoreTabernacle_Guardian"
 CanMerge 1
 new subtable "1,1"
 object category "I_JWL_DiscordantInstruments_BannerConsecrated",1,0,0,0,0,0,0,0
 
-new treasuretable "LOW_DevilsFee_Diabolist_Trade_Magic"
-CanMerge 1
-new subtable "1,1"
-object category "I_MAG_WPN_ChainMaster",1,0,0,0,0,0,0,0
+
+
+new treasuretable "LOW_Sarevok_Treasure"
+new subtable "-1"
+object category "I_MAG_BG_Sarevok_OfChaos_Greatsword",1,0,0,0,0,0,0,0
+object category "I_UNI_ARM_Sarevok_Armor",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_UNI_ARM_Sarevok_Horned_Helmet",1,0,0,0,0,0,0,0

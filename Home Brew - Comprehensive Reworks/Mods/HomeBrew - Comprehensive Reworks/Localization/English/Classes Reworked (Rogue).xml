@@ -126,7 +126,7 @@
 	<content contentuid="c84f670f8f044d128fd7132cc2f848b70000a" version="1">Your weapons and unarmed damage may scale using your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt;, rather than your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt;. This can be toggled at any time.&lt;br&gt;&lt;br&gt;Additionally, while unarmed or dealing damage with a dagger in your main-hand, you gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
 	
 	<content contentuid="c84f670f8f044d128fd7132cc2f848b700002" version="1">Get Over Here</content>
-	<content contentuid="c84f670f8f044d128fd7132cc2f848b70000b" version="1">Gain the ability to throw a grappling hook, pulling a creature [1] closer to you and dealing damage equal to your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; in the process. In addition, when making a melee based unarmed &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, you deal an additional [2].</content>
+	<content contentuid="c84f670f8f044d128fd7132cc2f848b70000b" version="1">Gain the ability to throw a grappling hook, pulling a creature [1] closer to you and dealing damage equal to your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; in the process. In addition, when making a melee based unarmed &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against a non-allied target, you deal an additional [2].</content>
 	<content contentuid="c84f670f8f044d128fd7132cc2f848b7000z2" version="1">Get Over Here</content>
 	<content contentuid="c84f670f8f044d128fd7132cc2f848b7000zb" version="1">Throw a grapling hook and pull a creature [1] closer to you, dealing damage equal to your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; in the process.</content>
 
@@ -166,7 +166,7 @@
 	<content contentuid="hedbd9f3fgf4d8g4f16gb02we68f4s6500011" version="1">Toxic Sneak Attack</content>
 	<content contentuid="hf081aa54g2345s4e6f84s6e2f1e87f40001a" version="2">Deal an extra [1] damage to a creature you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; against. You must be unarmed or wielding a &lt;LSTag Tooltip="Finesse"&gt;Finesse Weapon&lt;/LSTag&gt; in order to trigger Sneak Attack.</content>
 	<content contentuid="hedbd9f3fgf4d8g4f16gb02we68f4s6500021" version="1">Cursed Toxicity</content>
-	<content contentuid="hf081aa54g2345s4e6f84s6e2f1e87f40002a" version="1">Affected creature is afflicted with a cursed toxin, waiting to be activated. The curse renders them unable to utilize their armours physical &lt;LSTag Type="Status" Tooltip="DAMAGE_REDUCTION"&gt;Damage Reduction&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Removed at the end of combat.</content>
+	<content contentuid="hf081aa54g2345s4e6f84s6e2f1e87f40002a" version="1">Affected creature is afflicted with a cursed toxin, waiting to be activated. The curse allows the Rogue who applied it to apply further debilitations by detonating stacks of Cursed Toxicity.&lt;br&gt;&lt;br&gt;Removed at the end of combat.</content>
 	<content contentuid="hedbd9f3fgf4d8g4f16gb02we68f4s6500030" version="1">Detonate Toxicity</content>
 	<content contentuid="hf081aa54g2345s4e6f84s6e2f1e87f400030" version="1">Detonate an enemies &lt;LSTag Type="Status" Tooltip="TOXICITY"&gt;Cursed Toxicity&lt;/LSTag&gt; stacks for various effects.</content>
 	<content contentuid="hedbd9f3fgf4d8g4f16gb02we68f4s6500031" version="1">Detonate Toxicity: Delirium Surge</content>
@@ -177,7 +177,7 @@
 	<content contentuid="hf081aa54g2345s4e6f84s6e2f1e87f40005a" version="1">Overstimulate the toxin within your target, &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoning&lt;/LSTag&gt; them.&lt;br&gt;&lt;br&gt;Your target must have at least three stacks of &lt;LSTag Type="Status" Tooltip="TOXICITY"&gt;Cursed Toxicity&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hedbd9f3fgf4d8g4f16gb02we68f4s6500004" version="2">Poisonous Foothold</content>
-	<content contentuid="hf081aa54g2345s4e6f84s6e2f1e87f40000d" version="3">When dealing damage to an enemy, you deal additional Poison damage equal to your levels in Rogue. This bonus does not apply to damage dealt with an off-hand weapon.</content>
+	<content contentuid="hf081aa54g2345s4e6f84s6e2f1e87f40000d" version="3">When dealing damage to a non-allied target, you deal additional Poison damage equal to your levels in Rogue. This bonus does not apply to damage dealt with an off-hand weapon.</content>
 
 	<content contentuid="hedbd9f3fgf4d8g4f16gb02we68f4s6500003" version="1">Deepened Toxicity</content>
 	<content contentuid="hf081aa54g2345s4e6f84s6e2f1e87f40000c" version="1">Gain the ability to &lt;LSTag Type="Spell" Tooltip="Shout_DetonateToxicity"&gt;Detonate&lt;/LSTag&gt; five stacks of &lt;LSTag Type="Status" Tooltip="TOXICITY"&gt;Cursed Toxicity&lt;/LSTag&gt; at once in order to trigger one of three new effects.</content>
@@ -277,7 +277,7 @@
 	<content contentuid="dfd64ed09bb241db9f6107f73591ee26zzzzz" version="1">A single wound is all you require. What begins as a scratch soon festers into ruin as virulent corruption courses through your victim.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Suggested Role(s): Damage</content>
 
 	<content contentuid="dfd64ed09bb241db9f6107f73591ee2600001" version="1">Virulent Edge</content>
-	<content contentuid="dfd64ed09bb241db9f6107f73591ee260000a" version="1">Your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; deals Acid damage. In addition, when dealing damage to an enemy, you deal additional Acid damage equal to your levels in Rogue. This bonus does not apply to damage dealt with an off-hand weapon.</content>
+	<content contentuid="dfd64ed09bb241db9f6107f73591ee260000a" version="1">Your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; deals Acid damage. In addition, when dealing damage to a non-allied target, you deal additional Acid damage equal to your levels in Rogue. This bonus does not apply to damage dealt with an off-hand weapon.</content>
 	<content contentuid="dfd64ed09bb241db9f6107f73591ee26000z1" version="1">Virulent Sneak Attack</content>
 	<content contentuid="dfd64ed09bb241db9f6107f73591ee26000za" version="2">Deal an extra [1] damage to a creature you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; against. You must be unarmed or wielding a &lt;LSTag Tooltip="Finesse"&gt;Finesse Weapon&lt;/LSTag&gt; in order to trigger Sneak Attack.</content>
 
@@ -294,7 +294,7 @@
 	<content contentuid="dfd64ed09bb241db9f6107f73591ee260000e" version="1">When targeting a creature coated in &lt;LSTag Type="Status" Tooltip="ACID"&gt;Acid&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="CORRODED"&gt;Corrosion&lt;/LSTag&gt;, you make all &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and Damage Rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
 
 	<content contentuid="dfd64ed09bb241db9f6107f73591ee2600006" version="1">Terminal Exposure</content>
-	<content contentuid="dfd64ed09bb241db9f6107f73591ee260000f" version="1">When dealing physical damage to a &lt;LSTag Type="Status" Tooltip="CORRODED"&gt;Corroded&lt;/LSTag&gt; enemy with your main-hand weapon, you deal additional damage equal to your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt;. Upon dealing this bonus damage, Corrosion is immediately removed from your target.</content>
+	<content contentuid="dfd64ed09bb241db9f6107f73591ee260000f" version="1">When dealing physical damage with your main-hand weapon to a non-allied target that is &lt;LSTag Type="Status" Tooltip="CORRODED"&gt;Corroded&lt;/LSTag&gt;, you deal additional damage equal to your &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt;. Upon dealing this bonus damage, Corrosion is immediately removed from your target.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">PASSIVES</content>
 

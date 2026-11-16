@@ -15,7 +15,7 @@ local queued = false
 local signalled = false
 local generation = 0
 local defer = Ext.UI.Defer
-local channel = "HB_NormalGameOver_v3"
+local channel = Ext.Net.CreateChannel("486d1526-3505-4b09-9790-0f6a60f5ac0f", "HB_NormalGameOver_v4")
 
 local function Read(object, property)
     local ok, value = pcall(function() return object[property] end)
@@ -65,7 +65,7 @@ local function Update()
     local signals, panelOpen = Scan()
     if panelOpen then
         Reset(signals)
-        Ext.Utils.Print("[HB Game Over] Normal defeat panel opened.")
+        if _G.HB_DebugConsole == true then Ext.Utils.Print("[HB Game Over] Normal defeat panel opened.") end
         return
     end
     local now = Ext.Timer.MonotonicTime()
@@ -85,11 +85,12 @@ local function Update()
     if selected then
         selected.element.Opacity = 1
         signalled = true
-        Ext.Utils.Print("[HB Game Over] Sent HB_OpenNormalGameOver UI event.")
+        if _G.HB_DebugConsole == true then Ext.Utils.Print("[HB Game Over] Sent HB_OpenNormalGameOver UI event.") end
     end
 end
 
-Ext.RegisterNetListener(channel, function(_, payload)
+channel:SetHandler(function(data)
+    local payload = type(data) == "table" and data.Payload or nil
     if payload == lastPayload then return end
     lastPayload = payload
     if pending then return end
@@ -97,7 +98,7 @@ Ext.RegisterNetListener(channel, function(_, payload)
     signalled = false
     generation = generation + 1
     started = Ext.Timer.MonotonicTime()
-    Ext.Utils.Print("[HB Game Over] Client received non-Ironman defeat request.")
+    if _G.HB_DebugConsole == true then Ext.Utils.Print("[HB Game Over] Client received non-Ironman defeat request.") end
 end)
 
 Ext.Events.SessionLoaded:Subscribe(function()
@@ -126,6 +127,6 @@ Ext.Events.Tick:Subscribe(function()
         end
     end
     
-    if defer then defer(Run) else Run() end
+    if defer then defer(Run) else queued=false end
 end)
-Ext.Utils.Print("[HB Game Over] Client panel listener loaded.")
+if _G.HB_DebugConsole == true then Ext.Utils.Print("[HB Game Over] Client panel listener loaded.") end

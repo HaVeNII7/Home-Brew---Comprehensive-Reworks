@@ -1567,6 +1567,76 @@
 							</children>
 						</node>
 						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/GreaterAttunement.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="80" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="80" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/GreaterAttunement.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="80" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="80" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/CC/icons_resources/GreaterAttunement.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="80" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="80" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Highlight/GreaterAttunement.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="48" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="48" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Missing/GreaterAttunement.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="48" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="48" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Used/GreaterAttunement.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="48" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="48" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
+							<attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/GreaterAttunement.png" />
+							<children>
+								<node id="entries">
+									<attribute id="h" type="int16" value="48" />
+									<attribute id="mipcount" type="int8" value="1" />
+									<attribute id="w" type="int16" value="48" />
+								</node>
+							</children>
+						</node>
+						<node id="Object">
 							<attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/Attunement.png" />
 							<children>
 								<node id="entries">

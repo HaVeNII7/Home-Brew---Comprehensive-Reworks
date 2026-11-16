@@ -1,0 +1,158 @@
+Version 1
+SubGoalCombiner SGC_AND
+
+INITSECTION
+
+KBSECTION
+
+// The existing 3-turn, turn-aware cooldown remains unchanged.
+IF
+    UseFinished(_Character, (ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, 1)
+THEN
+    PROC_HB_AdamantineForgeLever_StartCooldown();
+
+IF
+    AnimationEvent(_Hammer, "UND_AdamantineForge_HammerHit", 0)
+THEN
+    PROC_HB_AdamantineForgeLever_StartCooldown();
+
+PROC
+    PROC_HB_AdamantineForgeLever_StartCooldown()
+    AND
+    NOT DB_HB_AdamantineForgeLever_Cooldown(1)
+THEN
+    DB_HB_AdamantineForgeLever_Cooldown(1);
+    ApplyStatus((ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, "LEVER_JAMMED", 18.0, 1);
+    ObjectTimerLaunch((ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, "HB_AdamantineForgeLever_ThreeTurns", 18000, 1);
+
+// Keep the lever clickable while jammed, but intercept normal use.
+// An available Action is required for each DC 30 Strength attempt.
+// Charge the Action before the roll, whether it succeeds or fails.
+PROC
+    PROC_BlockUseOfItem(_Char, (ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, _RequestID)
+    AND
+    DB_HB_AdamantineForgeLever_Cooldown(1)
+    AND
+    NOT DB_HB_AdamantineForgeLever_RollPending(1)
+    AND
+    GetActionResourceValuePersonal(_Char, "ActionPoint", 0, _Actions)
+    AND
+    _Actions >= 1.0
+THEN
+    DB_CustomUseItemResponse(_Char, (ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, 0);
+    DB_HB_AdamantineForgeLever_RollPending(1);
+    ApplyStatus(_Char, "LEVER_JAMMED_ACTION_COST", 1.0, 1);
+    RequestActiveRoll(_Char, (GUIDSTRING)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, "RawAbility", "Strength", (DIFFICULTYCLASS)Act3_NearlyImpossible_7bf230a0-b68a-4c79-a785-79b498d6c36b, 0, "HB_AdamantineForgeLever_Force");
+
+// Insufficient Actions: block interaction without starting a roll.
+PROC
+    PROC_BlockUseOfItem(_Char, (ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, _RequestID)
+    AND
+    DB_HB_AdamantineForgeLever_Cooldown(1)
+    AND
+    NOT DB_HB_AdamantineForgeLever_RollPending(1)
+    AND
+    GetActionResourceValuePersonal(_Char, "ActionPoint", 0, _Actions)
+    AND
+    _Actions < 1.0
+THEN
+    DB_CustomUseItemResponse(_Char, (ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, 0);
+    ShowError(_Char, "NotEnoughAP");
+
+// Additional clicks during an unresolved roll must not activate the lever.
+PROC
+    PROC_BlockUseOfItem(_Char, (ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, _RequestID)
+    AND
+    DB_HB_AdamantineForgeLever_Cooldown(1)
+    AND
+    DB_HB_AdamantineForgeLever_RollPending(1)
+THEN
+    DB_CustomUseItemResponse(_Char, (ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, 0);
+
+// DC 30 Strength success: free the mechanism, then use it once normally.
+// The successful use will start a new cooldown as usual.
+IF
+    RollResult("HB_AdamantineForgeLever_Force", _Char, (GUIDSTRING)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, 1, 1, _)
+    AND
+    DB_HB_AdamantineForgeLever_RollPending(1)
+    AND
+    DB_HB_AdamantineForgeLever_Cooldown(1)
+THEN
+    PROC_HB_AdamantineForgeLever_EndCooldown();
+    Use(_Char, (ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, "HB_AdamantineForgeLever_ForcedUse");
+
+// Failed or cancelled rolls do not affect the jam or its remaining duration.
+IF
+    RollResult("HB_AdamantineForgeLever_Force", _Char, (GUIDSTRING)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, _Result, 1, _)
+    AND
+    _Result != 1
+    AND
+    DB_HB_AdamantineForgeLever_RollPending(1)
+THEN
+    NOT DB_HB_AdamantineForgeLever_RollPending(1);
+
+// Grease spell on/near the lever. This does not require an SE listener.
+// The spell has a 4-metre grease surface radius.
+IF
+    UsingSpellAtPosition(_Caster, _X, _Y, _Z, "Target_Grease", _, _, _)
+    AND
+    DB_HB_AdamantineForgeLever_Cooldown(1)
+    AND
+    GetDistanceToPosition((ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, _X, _Y, _Z, _Distance)
+    AND
+    _Distance <= 4.0
+THEN
+    PROC_HB_AdamantineForgeLever_EndCooldown();
+
+// Also catches cases where a Grease spell creates the surface at the lever
+// but the target-position event did not match (e.g., unusual casting paths).
+IF
+    CastedSpell(_Caster, "Target_Grease", _, _, _)
+    AND
+    DB_HB_AdamantineForgeLever_Cooldown(1)
+    AND
+    GetSurfaceGroundAt((ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, "SurfaceGrease")
+THEN
+    PROC_HB_AdamantineForgeLever_EndCooldown();
+
+// Vanilla grease bottle root template. The bottle lands within its 3-metre
+// grease radius of the lever; no periodic position checks are necessary.
+IF
+    OnThrown(_Bottle, (ROOT)GRN_GreaseBottle_A_e2968a2e-bc83-4d50-99ef-39ce78d2d630, _Thrower, _StoryActionID, _X, _Y, _Z)
+    AND
+    DB_HB_AdamantineForgeLever_Cooldown(1)
+    AND
+    GetDistanceToPosition((ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, _X, _Y, _Z, _Distance)
+    AND
+    _Distance <= 3.0
+THEN
+    PROC_HB_AdamantineForgeLever_EndCooldown();
+
+// Ordinary expiration is the same object timer as in the working build.
+IF
+    ObjectTimerFinished((GUIDSTRING)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, "HB_AdamantineForgeLever_ThreeTurns")
+    AND
+    DB_HB_AdamantineForgeLever_Cooldown(1)
+THEN
+    PROC_HB_AdamantineForgeLever_EndCooldown();
+
+// Clearing the timer is essential: an old timer must never release a new jam.
+PROC
+    PROC_HB_AdamantineForgeLever_EndCooldown()
+    AND
+    DB_HB_AdamantineForgeLever_Cooldown(1)
+THEN
+    NOT DB_HB_AdamantineForgeLever_Cooldown(1);
+    ObjectTimerCancel((GUIDSTRING)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, "HB_AdamantineForgeLever_ThreeTurns");
+    RemoveStatus((ITEM)S_UND_AdamantineForge_Lever_21e51504-13c0-49c2-93aa-dbc113503297, "LEVER_JAMMED");
+
+PROC
+    PROC_HB_AdamantineForgeLever_EndCooldown()
+    AND
+    DB_HB_AdamantineForgeLever_RollPending(1)
+THEN
+    NOT DB_HB_AdamantineForgeLever_RollPending(1);
+
+EXITSECTION
+
+ENDEXITSECTION

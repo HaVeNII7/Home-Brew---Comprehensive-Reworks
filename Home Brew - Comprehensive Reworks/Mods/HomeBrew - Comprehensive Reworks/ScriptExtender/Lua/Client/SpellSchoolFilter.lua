@@ -6,6 +6,11 @@ local HOST_NAME = "HB_SpellFilterResources"
 local HEADER_NAME = "HB_SchoolFilterRoot"
 local NATIVE_HEADER_NAME = "HB_NativeSchoolFilterRoot"
 local INTERVAL_MS = 350
+-- A native left-section check is much cheaper than traversing the spell picker.
+-- While a *verified non-spell* section is selected, check it frequently so
+-- returning to Spells/Cantrips has no noticeable activation delay.
+local NAV_IDLE_INTERVAL_MS = 85
+local nextCheckInterval = INTERVAL_MS
 local MAX_CLASS_ROWS = 5
 local ClassSpellIndex = Ext.Require("Shared/HB_ClassSpellIndex.lua")
 
@@ -20,9 +25,90 @@ local DAMAGE_TYPES = {
     "All Damage Types", "Acid", "Bludgeoning", "Cold", "Fire", "Force",
     "Lightning", "Necrotic", "Piercing", "Poison", "Psychic", "Radiant", "Slashing", "Thunder",
 }
+-- Casting-action resource filters. Both choices are enabled by default,
+-- so they never exclude reaction/free/uncategorized spells until used.
+local ACTION_RESOURCES = { "All Actions", "Action", "Bonus Action" }
+local function ActionTypesFromCosts(costs)
+    local types = {}
+    if type(costs) ~= "string" then return types, false end
+    -- Match exact resource tokens: ReactionActionPoint is NOT ActionPoint,
+    -- and SpellSlot / SorceryPoint are not casting action resources.
+    for cost in costs:gmatch("[^;]+") do
+        local resource, amount = cost:match("^%s*([%w_]+)%s*:%s*([%d%.]+)")
+        if amount and tonumber(amount) and tonumber(amount) > 0 then
+            if resource == "ActionPoint" then types.Action = true
+            elseif resource == "BonusActionPoint" then types["Bonus Action"] = true end
+        end
+    end
+    return types, true
+end
+local actionLookup = {}
+
+local ROLL_TYPES = {
+    "All Rolls", "Strength", "Dexterity", "Constitution", "Intelligence",
+    "Wisdom", "Charisma", "Attack Roll", "No Roll",
+}
+local ROLL_ABILITIES = {
+    strength = "Strength", dexterity = "Dexterity", constitution = "Constitution",
+    intelligence = "Intelligence", wisdom = "Wisdom", charisma = "Charisma",
+}
+-- Verified spell identities override mixed child/variant roll metadata.
+-- Hex's ability choice affects ability checks, not saving throws. Only
+-- override these exact installed stat IDs, never presentation names/icons.
+local VERIFIED_ROLL_TYPES = {
+    Projectile_FireBolt = "Attack Roll",
+    Projectile_RayOfFrost = "Attack Roll",
+    Target_CreateorExtinguishFlames = "No Roll",
+    Target_TrueStrike = "No Roll",
+    Target_Banishment = "Charisma",
+    Target_Hex = "No Roll",
+    Projectile_ChromaticOrb = "Attack Roll",
+    Projectile_ChromaticOrb_Acid = "Attack Roll",
+    Projectile_ChromaticOrb_Cold = "Attack Roll",
+    Projectile_ChromaticOrb_Fire = "Attack Roll",
+    Projectile_ChromaticOrb_Lightning = "Attack Roll",
+    Projectile_ChromaticOrb_Poison = "Attack Roll",
+    Projectile_ChromaticOrb_Thunder = "Attack Roll",
+    Target_EnlargeReduce = "Constitution",
+    Target_Enlarge = "Constitution",
+    Target_Reduce = "Constitution",
+}
+-- Exact selectable IDs from HomeBrew's Global - Cantrips SpellList
+-- ffad33d2-e725-4655-ba80-0bc91e8002b3. These are casting actions,
+-- not inherited, enemy or child-variant stat entries sharing an icon/name.
+-- Only the Roll Type identity resolver uses this additional canonical pool;
+-- concentration, damage and actual spell eligibility remain unchanged.
+local GLOBAL_CANTRIP_ROLL_POOL = {}
+local globalCantripSpells = [[
+    Projectile_AcidSplash;Projectile_ArcaneBarrage;Projectile_ArcaneSpheres;Shout_BladeSurge;Shout_BladeWard;
+    Target_ChillTouch;Projectile_Cragrain;Target_CreateorDestroyWater;Target_CreateorExtinguishFlames;Shout_DisguiseSelf;
+    Shout_Druidcraft;Projectile_FireBolt;Target_Friends;Target_Frostbite;Target_GreenFlameBlade;
+    Target_Guidance;Target_Light;Target_MageHand;Target_MindSliver;Projectile_PiercingTorrent;
+    Projectile_PoisonSpray;Shout_Prestidigitation;Target_PrimalSavagery;Shout_ProduceFlame;Rush_PsionicCharge;
+    Projectile_RayOfFrost;Target_Resistance;Target_SacredFlame;Target_ShockingGrasp;Target_SpareTheDying;
+    Target_SparkSurge;Shout_Shillelagh;Throw_TelekineticHurl;Target_ThornWhip;Shout_Thunderclap;
+    Target_ThunderousStrike;Target_TollTheDead;Target_TrueStrike;Projectile_Warpstone;Shout_WordOfRadiance;
+]]
+for id in globalCantripSpells:gmatch("[^;%s]+") do
+    GLOBAL_CANTRIP_ROLL_POOL[id] = true
+end
+
+local rollLookup = {}
+
 local DAMAGE_NAMES = {}
 for index = 2, #DAMAGE_TYPES do DAMAGE_NAMES[DAMAGE_TYPES[index]:lower()] = DAMAGE_TYPES[index] end
 
+
+-- These exact casting actions do not directly deal damage. In particular,
+-- child effects (Hex's extra damage) and shared presentation icons must not
+-- classify the parent casting action as a damaging spell.
+local VERIFIED_NON_DAMAGING = {
+    Target_Hex = true,
+    Target_Banishment = true,
+    Target_EnlargeReduce = true,
+    Target_Enlarge = true,
+    Target_Reduce = true,
+}
 
 local MANUAL_DAMAGE_TYPES = {
     Projectile_ChromaticOrb = {
@@ -59,6 +145,9 @@ local PREPARATION_LIST_NAMES = {
     ClassSpellAvailableItemsControl = true, availableSpells = true,
     HB_SchoolAvailableItemsControl = true,
 }
+local QUICK_PICKER_NAMES = {
+    'ClassSpellAvailableItemsControl', 'availableSpells', 'HB_SchoolAvailableItemsControl'
+}
 
 local catalog = {}
 local catalogReady = false
@@ -80,15 +169,24 @@ local deferredUI = Ext.UI and Ext.UI.Defer
 
 
 local function DispatchUI(callback)
-    if deferredUI then deferredUI(callback) else callback() end
+    if deferredUI then deferredUI(callback) end
 end
 
 local function Log(message)
     local line = "[HB Spell Filter] " .. message
-    Ext.Utils.Print(line)
+    -- Routine navigation and successful status transitions are silent in
+    -- production. Preserve opt-in console debugging and actionable errors.
+    if _G.HB_DebugConsole == true
+        or message:find('failed',1,true) or message:find('ERROR',1,true) then
+        Ext.Utils.Print(line)
+    end
     diagnosticLines[#diagnosticLines + 1] = line
     if #diagnosticLines > 80 then table.remove(diagnosticLines, 1) end
-    diagnosticDirty = true
+    -- Do not write a diagnostics file on each normal tab transition.
+    -- Retain on-demand/debug capture and failure recording.
+    diagnosticDirty = diagnosticDirty or _G.HB_DebugDiagnostics == true
+        or message:find('failed',1,true) ~= nil
+        or message:find('ERROR',1,true) ~= nil
 end
 
 
@@ -184,6 +282,63 @@ local function IsConcentrationSpell(flags)
     return false
 end
 
+local function RollSignature(types)
+    local names = {}
+    for name in pairs(types) do names[#names + 1] = name end
+    table.sort(names)
+    return table.concat(names, ";")
+end
+
+-- Installed SpellRoll is the primary proof; TooltipAttackSave is the
+-- game's own tooltip descriptor and also covers native variants that do not
+-- expose a usable SpellRoll string.  An empty roll with an empty tooltip is
+-- a direct "No Roll" only if no subordinate spell provides another roll.
+local function RollFromStats(value, tooltip, origin)
+    local types, unknown = {}, false
+    local function ParseRoll(raw)
+        if raw == nil then return end
+        if type(raw) ~= "string" then unknown = true; return end
+        if raw:match("^%s*$") or raw:match("^%s*[Nn]one%s*$") then return end
+        local recognized = false
+        for ability in raw:gmatch("SavingThrow%s*%(%s*Ability%.([%a]+)") do
+            local name = ROLL_ABILITIES[ability:lower()]
+            if name then types[name] = true; recognized = true end
+        end
+        if raw:find("%f[%a]Attack%s*%(") then
+            types["Attack Roll"] = true
+            recognized = true
+        end
+        if not recognized then unknown = true end
+    end
+    ParseRoll(value)
+    ParseRoll(origin)
+    if type(tooltip) == "string" and tooltip ~= "" and tooltip:lower() ~= "none" then
+        local desc = tooltip:lower():gsub("%s+", "")
+        local recognized = false
+        for ability, name in pairs(ROLL_ABILITIES) do
+            if desc:find(ability .. "savingthrow", 1, true)
+                or desc == ability or desc == "ability." .. ability then
+                types[name] = true
+                recognized = true
+            end
+        end
+        if desc:find("attack", 1, true) and not desc:find("savingthrow", 1, true) then
+            types["Attack Roll"] = true
+            recognized = true
+        end
+        -- Some mods provide a custom tooltip descriptor. Don't let it
+        -- invalidate an otherwise proven SpellRoll classification.
+        if not recognized and next(types) == nil then unknown = true end
+    end
+    if next(types) ~= nil then return types, true end
+    if unknown then return types, false end
+    types["No Roll"] = true
+    return types, true
+end
+
+-- Immutable spell-stat field list: BuildCatalog visits thousands of spells.
+-- Avoid a fresh Lua table allocation for each spell's tooltip metadata.
+local HB_TOOLTIP_DAMAGE_FIELDS = {"TooltipDamageList", "TooltipOnSave", "TooltipOnMiss"}
 local function BuildCatalog()
     local entries, details, names, icons = {}, {}, {}, {}
     local withSchool, withDamage = 0, 0
@@ -203,10 +358,15 @@ local function BuildCatalog()
             local name = DAMAGE_NAMES[primary:lower()]
             if name then types[name] = true end
             local unknown = primary ~= "" and primary:lower() ~= "none" and not name
-            for _, field in ipairs({ "TooltipDamageList", "TooltipOnSave", "TooltipOnMiss" }) do
+            for _, field in ipairs(HB_TOOLTIP_DAMAGE_FIELDS) do
                 if DamageFromTooltip(stats[field], types) then unknown = true end
             end
+            local rollTypes, rollKnown = RollFromStats(
+                stats.SpellRoll, stats.TooltipAttackSave, stats.OriginSpellRoll)
+            local actionTypes, actionKnown = ActionTypesFromCosts(stats.UseCosts)
             local entry = {
+                actionTypes = actionTypes, actionKnown = actionKnown,
+                rollTypes = rollTypes, rollKnown = rollKnown,
                 id = id, school = entries[id], level = stats.Level, icon = stats.Icon,
                 primaryType = name, types = types, unknown = unknown, known = not unknown and (primary ~= "" or next(types) ~= nil),
                 children = stats.ContainerSpells, displayHandle = NameHandle(stats.DisplayName),
@@ -224,18 +384,49 @@ local function BuildCatalog()
         if active[entry.id] then return false end
         active[entry.id] = true
         if type(entry.children) == "string" and entry.children ~= "" then
-            local known = true
+            local known, rollKnown = true, entry.rollKnown
+            local childActionTypes, childActionsKnown, allChildrenKnown = {}, false, true
+            local rollTypes = {}
+            for name in pairs(entry.rollTypes) do
+                if name ~= "No Roll" then rollTypes[name] = true end
+            end
             for id in entry.children:gmatch("[^;]+") do
                 id = id:match("^%s*(.-)%s*$")
                 local child = details[id]
                 if child and Resolve(child, active) ~= false then
                     for name in pairs(child.types) do entry.types[name] = true end
                     if not child.known then known = false end
-                else known = false end
+                    for name in pairs(child.rollTypes) do
+                        if name ~= "No Roll" then rollTypes[name] = true end
+                    end
+                    if not child.rollKnown then rollKnown = false end
+                    if child.actionKnown then
+                        childActionsKnown = true
+                        for action in pairs(child.actionTypes) do childActionTypes[action] = true end
+                    else
+                        allChildrenKnown = false
+                    end
+                else
+                    known, rollKnown, allChildrenKnown = false, false, false
+                end
+            end
+            -- A container with no direct Action/Bonus cost uses its
+            -- selectable children's casting cost, not arbitrary spell-slot
+            -- or reaction costs. An explicit parent action cost takes priority.
+            if not next(entry.actionTypes) then
+                if next(childActionTypes) then
+                    entry.actionTypes, entry.actionKnown = childActionTypes, true
+                elseif not entry.actionKnown then
+                    entry.actionKnown = childActionsKnown and allChildrenKnown
+                end
             end
             entry.known = not entry.unknown and known
+            entry.rollKnown = rollKnown
+            if next(rollTypes) == nil and rollKnown then rollTypes["No Roll"] = true end
+            entry.rollTypes = rollTypes
         end
         active[entry.id] = nil
+        entry.rollSignature = RollSignature(entry.rollTypes)
         entry.signature = DamageSignature(entry.types)
         entry.done = true
         return true
@@ -245,6 +436,16 @@ local function BuildCatalog()
     
     
     for _, entry in pairs(details) do
+        -- A container may inherit unrelated subordinate roll metadata.
+        -- Override only the verified parent spell's own cast category, after
+        -- resolving its children, without changing other stats or spell IDs.
+        local fixedRoll = VERIFIED_ROLL_TYPES[entry.id]
+        if fixedRoll then
+            entry.rollTypes = { [fixedRoll] = true }
+            entry.rollKnown = true
+            entry.rollSignature = RollSignature(entry.rollTypes)
+            entry.verifiedRoll = fixedRoll
+        end
         if entry.primaryType and not entry.known then
             entry.types = { [entry.primaryType] = true }
             entry.known = true
@@ -262,7 +463,28 @@ local function BuildCatalog()
             entry.known = true
             entry.signature = DamageSignature(entry.types)
         end
+        -- Apply after container/tooltip resolution, so subordinate attack or
+        -- damage effects cannot leak into these verified parent cast actions.
+        if VERIFIED_NON_DAMAGING[entry.id] then
+            entry.types = {}
+            entry.unknown = false
+            entry.known = true
+            entry.primaryType = nil
+            entry.verifiedNonDamaging = true
+            entry.signature = ""
+        end
         if next(entry.types) then withDamage = withDamage + 1 end
+    end
+    local rollStatsKnown, rollStatsUnknown, rollStatTypes = 0, 0, {}
+    for _, entry in pairs(details) do
+        if entry.rollKnown then
+            rollStatsKnown = rollStatsKnown + 1
+            for rollType in pairs(entry.rollTypes) do
+                rollStatTypes[rollType] = (rollStatTypes[rollType] or 0) + 1
+            end
+        else
+            rollStatsUnknown = rollStatsUnknown + 1
+        end
     end
     local poolIds = {}
     for _, pool in ipairs(ClassSpellIndex.GetOptions()) do
@@ -270,12 +492,28 @@ local function BuildCatalog()
             if details[id] then poolIds[id] = true end
         end
     end
+    local savingStats = 0
+    for _, name in pairs(ROLL_ABILITIES) do
+        savingStats = savingStats + (rollStatTypes[name] or 0)
+    end
+    local poolKnown, poolUnknown = 0, 0
+    for id in pairs(poolIds) do
+        if details[id].rollKnown then poolKnown = poolKnown + 1
+        else poolUnknown = poolUnknown + 1 end
+    end
     concentrationPoolIds = poolIds
     catalog, damageCatalog, byName, byIcon, damageLookup = entries, details, names, icons, {}
+    rollLookup = {}
+    actionLookup = {}
     localizedNameCache = {}
     catalogSchoolCount, catalogDamageCount, catalogReady = withSchool, withDamage, true
     Log("Spell catalog ready: " .. #ids .. " loaded spell stats; " .. withSchool
-        .. " have recognized schools; " .. withDamage .. " have explicit damage types.")
+        .. " have recognized schools; " .. withDamage .. " have explicit damage types."
+        .. " Roll stats known=" .. rollStatsKnown .. " unknown=" .. rollStatsUnknown
+        .. " (save/attack/no roll=" .. savingStats .. "/"
+        .. tostring(rollStatTypes["Attack Roll"] or 0) .. "/"
+        .. tostring(rollStatTypes["No Roll"] or 0) .. ")"
+        .. " class-pool-known=" .. poolKnown .. " class-pool-unknown=" .. poolUnknown)
 end
 
 local ID_FIELDS = { "PrototypeID", "PrototypeId", "SpellId", "SpellID", "StatsId", "StatsID", "Id", "ID" }
@@ -315,6 +553,10 @@ local function SchoolForReference(reference)
     return nil, false
 end
 
+-- Declared here because native tile damage resolution needs the same
+-- localized-name disambiguation as the existing Roll Type filter below.
+local SearchableName
+
 local function DamageForReference(reference)
     local spell = Read(reference, "Spell")
     if type(spell) == "string" then
@@ -339,26 +581,63 @@ local function DamageForReference(reference)
             end
         end
     end
-    local name, icon = Read(spell, "Name"), Read(spell, "Icon")
-    local school, level = NormalizeSchool(Read(spell, "SpellSchool")), Read(spell, "Level")
-    if type(name) ~= "string" then name = nil else name = NameHandle(name) end
-    if type(icon) ~= "string" then icon = nil end
-    if type(level) ~= "number" then level = nil end
-    local key = table.concat({ name or "", icon or "", school or "", tostring(level or "") }, "\31")
+    local rawName = Read(spell, "Name") or Read(reference, "Name")
+    local handle = NameHandle(rawName)
+    local visibleName = SearchableName(rawName)
+    local icon = Read(spell, "Icon") or Read(reference, "Icon")
+    local school = NormalizeSchool(Read(spell, "SpellSchool") or Read(reference, "SpellSchool"))
+    local level = tonumber(Read(spell, "Level") or Read(reference, "Level"))
+    if type(icon) ~= "string" or icon == "" then icon = nil end
+    local key = table.concat({ handle or "", visibleName or "", icon or "", school or "", tostring(level or "") }, "\31")
     local cached = damageLookup[key]
     if cached ~= nil then return cached and cached.types or nil, cached and cached.known or false end
-    local candidates = (name and byName[name]) or (icon and byIcon[icon])
-    local matches, iconMatches = {}, {}
+    local candidates = (handle and byName[handle]) or (icon and byIcon[icon])
+    local matches, canonical, distinctNames = {}, {}, {}
     for _, entry in ipairs(candidates or {}) do
-        if (not school or entry.school == school) and (not level or tonumber(entry.level) == level) then
+        local candidateName = SearchableName(entry.displayHandle)
+        local sameName = not visibleName or (candidateName and candidateName == visibleName)
+        if handle and entry.displayHandle == handle then sameName = true end
+        if sameName and (not icon or entry.icon == icon)
+            and (not school or entry.school == school)
+            and (not level or tonumber(entry.level) == level) then
             matches[#matches + 1] = entry
-            if icon and entry.icon == icon then iconMatches[#iconMatches + 1] = entry end
+            distinctNames[candidateName or entry.displayHandle or entry.id] = true
+            if concentrationPoolIds[entry.id] then canonical[#canonical + 1] = entry end
         end
     end
-    if #iconMatches > 0 then matches = iconMatches end
+    -- An icon without a matching name is insufficient to assign a verified
+    -- non-damaging identity when different spells reuse that same artwork.
+    if not visibleName and not (handle and byName[handle]) then
+        local count = 0
+        for _ in pairs(distinctNames) do count = count + 1 end
+        if count ~= 1 then
+            damageLookup[key] = false
+            return nil, false
+        end
+    end
+
+    -- Native spell rows often expose presentation VMs instead of stat IDs.
+    -- Prefer verified non-damaging class-list entries to unrelated inherited
+    -- variants of the same spell. Never override a conflicting known damaging
+    -- canonical entry, or classify a different spell based on its icon alone.
+    local trusted = #canonical > 0 and canonical or matches
+    local verified, conflictingDamage = false, false
+    for _, entry in ipairs(trusted) do
+        if entry.verifiedNonDamaging then
+            verified = true
+        elseif entry.known and next(entry.types) then
+            conflictingDamage = true
+        end
+    end
+    if verified and not conflictingDamage then
+        local result = { types = {}, known = true }
+        damageLookup[key] = result
+        return result.types, true
+    end
+
+    -- Preserve the existing conservative consensus/manual damage fallback for
+    -- all other spells. An unresolved entry is not labeled Non-Damaging.
     local result = matches[1]
-    
-    
     local primary = result and result.primaryType
     local samePrimary = primary ~= nil
     for _, entry in ipairs(matches) do
@@ -368,9 +647,6 @@ local function DamageForReference(reference)
         if not entry.known or entry.signature ~= result.signature then result = nil; break end
     end
     if not result then
-        
-        
-        
         local forced = {}
         for _, entry in ipairs(matches) do
             for _, name in ipairs(entry.manualTypes or {}) do forced[name] = true end
@@ -390,7 +666,7 @@ end
 
 -- Search the name the player actually sees, rather than an internal spell stat ID.
 -- Localized names are cached so typing never repeatedly translates the entire list.
-local function SearchableName(value)
+SearchableName = function(value)
     local handle = NameHandle(value)
     if type(handle) ~= "string" or handle == "" then return nil end
     local cached = localizedNameCache[handle]
@@ -411,6 +687,210 @@ local function SearchableName(value)
     end
     localizedNameCache[handle] = name and name:lower() or false
     return localizedNameCache[handle] or nil
+end
+
+-- Native character-creation tiles carry presentation names and icons, not
+-- necessarily installed SpellData IDs. Try exact installed identity first,
+-- then the already verified name/icon/school/level matching mechanism.
+-- Variant groups with different rolls are an inclusive union rather than a
+-- failed lookup: a spell offering an Attack *and* a Save belongs in both.
+local function RollForReference(reference)
+    local spell = Read(reference, "Spell")
+    if type(spell) == "string" then
+        local entry = damageCatalog[spell]
+        if entry then return entry.rollTypes, entry.rollKnown, "exact" end
+    end
+    for _, object in ipairs({ spell or false, reference or false }) do
+        if object and type(object) ~= "string" then
+            for _, field in ipairs(ID_FIELDS) do
+                local id = Read(object, field)
+                local entry = type(id) == "string" and damageCatalog[id]
+                if entry then return entry.rollTypes, entry.rollKnown, "exact" end
+            end
+            for field in pairs(Properties(object)) do
+                local lower = field:lower()
+                if lower:find("spell", 1, true) or lower:find("prototype", 1, true)
+                    or lower:find("stat", 1, true) or lower:match("id$") then
+                    local id = object[field]
+                    local entry = type(id) == "string" and damageCatalog[id]
+                    if entry then return entry.rollTypes, entry.rollKnown, "exact" end
+                end
+            end
+        end
+    end
+
+    local rawName = Read(spell, "Name") or Read(reference, "Name")
+    local handle = NameHandle(rawName)
+    local visibleName = SearchableName(rawName)
+    local icon = Read(spell, "Icon") or Read(reference, "Icon")
+    local school = NormalizeSchool(Read(spell, "SpellSchool") or Read(reference, "SpellSchool"))
+    local level = tonumber(Read(spell, "Level") or Read(reference, "Level"))
+    if type(icon) ~= "string" or icon == "" then icon = nil end
+    local key = table.concat({ handle or "", visibleName or "", icon or "", school or "", tostring(level or "") }, "\31")
+    local cached = rollLookup[key]
+    if cached then return cached.rollTypes, cached.rollKnown, cached.source end
+    local function Unknown(reason)
+        rollLookup[key] = { rollKnown = false, source = reason }
+        return nil, false, reason
+    end
+    local candidates = (handle and byName[handle]) or (icon and byIcon[icon])
+    if not candidates then return Unknown("unresolved") end
+    local matched, canonical, distinctNames = {}, {}, {}
+    for _, entry in ipairs(candidates) do
+        local candidateName = SearchableName(entry.displayHandle)
+        local sameName = not visibleName or (candidateName and candidateName == visibleName)
+        if handle and entry.displayHandle == handle then sameName = true end
+        if sameName and (not icon or entry.icon == icon)
+            and (not school or entry.school == school)
+            and (not level or tonumber(entry.level) == level) then
+            matched[#matched + 1] = entry
+            distinctNames[candidateName or entry.displayHandle or entry.id] = true
+            if concentrationPoolIds[entry.id] or GLOBAL_CANTRIP_ROLL_POOL[entry.id] then
+                canonical[#canonical + 1] = entry
+            end
+        end
+    end
+    if #matched == 0 then return Unknown("unresolved") end
+    if not visibleName and not (handle and byName[handle]) then
+        local count = 0
+        for _ in pairs(distinctNames) do count = count + 1 end
+        if count ~= 1 then return Unknown("ambiguous-name") end
+    end
+    local function GroupRollTypes(entries, preferVerified)
+        -- When an canonical class-pool or global-cantrip spell is among visually identical stat
+        -- variants, trust its verified roll instead of merging incidental
+        -- enemy/child variants that have different rolls. Do not use this
+        -- special case without canonical spell-list provenance.
+        if preferVerified then
+            local fixed
+            local conflict = false
+            for _, entry in ipairs(entries) do
+                if entry.verifiedRoll then
+                    if fixed and fixed ~= entry.verifiedRoll then conflict = true end
+                    fixed = entry.verifiedRoll
+                end
+            end
+            if fixed and not conflict then return { [fixed] = true }, true end
+        end
+        local types, known = {}, 0
+        for _, entry in ipairs(entries) do
+            if entry.rollKnown then
+                known = known + 1
+                for name in pairs(entry.rollTypes) do types[name] = true end
+            end
+        end
+        -- Do not call an ambiguous presentation spell "No Roll" when another
+        -- matching, explicitly catalogued variant has a positive roll.
+        if next(types) and (known > 0) then
+            for name in pairs(types) do
+                if name ~= "No Roll" then types["No Roll"] = nil; break end
+            end
+            return types, true
+        end
+        return nil, false
+    end
+    -- Canonical class-list entries beat incidental upcasts, inherited
+    -- subspells and enemy variants of the same presentation spell.
+    local types, known = GroupRollTypes(#canonical > 0 and canonical or matched, #canonical > 0)
+    -- Some class-list stat aliases have no explicit roll; if so, try the
+    -- compatible non-canonical spell variants instead of rejecting the tile.
+    local source = #canonical > 0 and "spell-pool" or "stat-variants"
+    if not known and #canonical > 0 then
+        types, known = GroupRollTypes(matched)
+        source = "stat-fallback"
+    end
+    if not known then return Unknown("unclassified-variants") end
+    rollLookup[key] = { rollTypes = types, rollKnown = true, source = source }
+    return types, true, source
+end
+
+-- Apply the same proven native spell-tile identity resolution as Roll Type.
+-- Use exact SpellData UseCosts where available, then compatible installed
+-- class-list/cantrip stats. Don't infer action costs from school or spell names.
+local function ActionForReference(reference)
+    local spell = Read(reference, "Spell")
+    if type(spell) == "string" then
+        local entry = damageCatalog[spell]
+        if entry then return entry.actionTypes, entry.actionKnown, "exact" end
+    end
+    for _, object in ipairs({ spell or false, reference or false }) do
+        if object and type(object) ~= "string" then
+            for _, field in ipairs(ID_FIELDS) do
+                local id = Read(object, field)
+                local entry = type(id) == "string" and damageCatalog[id]
+                if entry then return entry.actionTypes, entry.actionKnown, "exact" end
+            end
+            for field in pairs(Properties(object)) do
+                local lower = field:lower()
+                if lower:find("spell", 1, true) or lower:find("prototype", 1, true)
+                    or lower:find("stat", 1, true) or lower:match("id$") then
+                    local id = object[field]
+                    local entry = type(id) == "string" and damageCatalog[id]
+                    if entry then return entry.actionTypes, entry.actionKnown, "exact" end
+                end
+            end
+        end
+    end
+
+    local rawName = Read(spell, "Name") or Read(reference, "Name")
+    local handle = NameHandle(rawName)
+    local visibleName = SearchableName(rawName)
+    local icon = Read(spell, "Icon") or Read(reference, "Icon")
+    local school = NormalizeSchool(Read(spell, "SpellSchool") or Read(reference, "SpellSchool"))
+    local level = tonumber(Read(spell, "Level") or Read(reference, "Level"))
+    if type(icon) ~= "string" or icon == "" then icon = nil end
+    local key = table.concat({ handle or "", visibleName or "", icon or "", school or "", tostring(level or "") }, "\31")
+    local cached = actionLookup[key]
+    if cached then return cached.types, cached.known, cached.source end
+    local function Unknown(reason)
+        actionLookup[key] = { known = false, source = reason }
+        return nil, false, reason
+    end
+    local candidates = (handle and byName[handle]) or (icon and byIcon[icon])
+    if not candidates then return Unknown("unresolved") end
+    local matched, canonical, distinctNames = {}, {}, {}
+    for _, entry in ipairs(candidates) do
+        local candidateName = SearchableName(entry.displayHandle)
+        local sameName = not visibleName or (candidateName and candidateName == visibleName)
+        if handle and entry.displayHandle == handle then sameName = true end
+        if sameName and (not icon or entry.icon == icon)
+            and (not school or entry.school == school)
+            and (not level or tonumber(entry.level) == level) then
+            matched[#matched + 1] = entry
+            distinctNames[candidateName or entry.displayHandle or entry.id] = true
+            if concentrationPoolIds[entry.id] or GLOBAL_CANTRIP_ROLL_POOL[entry.id] then
+                canonical[#canonical + 1] = entry
+            end
+        end
+    end
+    if #matched == 0 then return Unknown("unresolved") end
+    if not visibleName and not (handle and byName[handle]) then
+        local count = 0
+        for _ in pairs(distinctNames) do count = count + 1 end
+        if count ~= 1 then return Unknown("ambiguous-name") end
+    end
+    local function GroupActions(entries)
+        local types, known = {}, false
+        for _, entry in ipairs(entries) do
+            if entry.actionKnown then
+                known = true
+                for action in pairs(entry.actionTypes) do types[action] = true end
+            end
+        end
+        return types, known
+    end
+    local types, known = GroupActions(#canonical > 0 and canonical or matched)
+    local source = #canonical > 0 and "spell-pool" or "stat-variants"
+    -- An alias with empty UseCosts can still have a selectable child with
+    -- an explicit action cost. Prefer proven positive costs over that alias.
+    if #canonical > 0 and not next(types) then
+        local fallback, fallbackKnown = GroupActions(matched)
+        if next(fallback) then types, known, source = fallback, true, "stat-fallback"
+        elseif not known then types, known, source = fallback, fallbackKnown, "stat-fallback" end
+    end
+    if not known then return Unknown("unclassified-variants") end
+    actionLookup[key] = { types = types, known = true, source = source }
+    return types, true, source
 end
 
 local function NameForReference(reference)
@@ -654,6 +1134,14 @@ local function NewFilterVM(key)
                 end
                 Assign("HB_ConcentrationEnabled", state.concentrationOnly == true)
                 Assign("HB_NotConcentrationEnabled", state.nonConcentrationOnly == true)
+                for index = 2, #ACTION_RESOURCES do
+                    Assign("HB_ActionEnabled_" .. index,
+                        CategoryEnabled(state.actionEnabled, ACTION_RESOURCES[index]))
+                end
+                for index = 2, #ROLL_TYPES do
+                    Assign("HB_RollEnabled_" .. index,
+                        CategoryEnabled(state.rollEnabled, ROLL_TYPES[index]))
+                end
             end)
             -- Mounted UI can be replaced during level navigation; the regular
             -- refresh will attach the new VM without inventing a checkbox state.
@@ -664,12 +1152,12 @@ local function NewFilterVM(key)
         local state = states[key]
         if state then
             state.index, state.damageIndex, state.searchText = 1, 1, ""
-            state.schoolEnabled, state.damageEnabled = {}, {}
+            state.schoolEnabled, state.damageEnabled, state.rollEnabled, state.actionEnabled = {}, {}, {}, {}
             state.disabledClasses = {}
-            state.concentrationOnly, state.nonConcentrationOnly = false, false
+            state.concentrationOnly, state.nonConcentrationOnly = true, true
             state.filterOpen = false
             state.menuOpen, state.damageMenuOpen = false, false
-            state.classMenuOpen, state.concentrationMenuOpen = false, false
+            state.classMenuOpen, state.concentrationMenuOpen, state.rollMenuOpen, state.actionMenuOpen = false, false, false, false
             state.damageUnavailable = false
             state.hasFiltered = true
         end
@@ -849,8 +1337,74 @@ local function NewFilterVM(key)
         end
         lastUpdate = 0
     end)
-    vm.HB_ConcentrationEnabled = false
-    vm.HB_NotConcentrationEnabled = false
+    vm.HB_ToggleActionMenu:SetHandler(function()
+        local state = states[key]
+        if state then state.actionMenuOpen = not state.actionMenuOpen end
+        lastUpdate = 0
+    end)
+    local function SetAllActions(checked)
+        local state = states[key]
+        if state then
+            state.actionEnabled = checked and {} or { Action = false, ["Bonus Action"] = false }
+            state.hasFiltered = true
+            PublishCheckboxes(state)
+        end
+        lastUpdate = 0
+    end
+    vm.HB_Action_CheckAll:SetHandler(function() SetAllActions(true) end)
+    vm.HB_Action_UncheckAll:SetHandler(function() SetAllActions(false) end)
+    for index = 2, #ACTION_RESOURCES do
+        local action = ACTION_RESOURCES[index]
+        vm["HB_Action_" .. index]:SetHandler(function()
+            local state = states[key]
+            if state then
+                state.actionEnabled = state.actionEnabled or {}
+                state.actionEnabled[action] = not CategoryEnabled(state.actionEnabled, action)
+                state.hasFiltered = true
+                PublishCheckboxes(state)
+            end
+            lastUpdate = 0
+        end)
+        vm["HB_ActionEnabled_" .. index] = true
+    end
+    vm.HB_ActionMenuOpen = false
+    vm.HB_ToggleRollMenu:SetHandler(function()
+        local state = states[key]
+        if state then state.rollMenuOpen = not state.rollMenuOpen end
+        lastUpdate = 0
+    end)
+    local function SetAllRolls(checked)
+        local state = states[key]
+        if state then
+            local enabled = {}
+            if not checked then
+                for index = 2, #ROLL_TYPES do enabled[ROLL_TYPES[index]] = false end
+            end
+            state.rollEnabled = enabled
+            state.hasFiltered = true
+            PublishCheckboxes(state)
+        end
+        lastUpdate = 0
+    end
+    vm.HB_Roll_CheckAll:SetHandler(function() SetAllRolls(true) end)
+    vm.HB_Roll_UncheckAll:SetHandler(function() SetAllRolls(false) end)
+    for index = 2, #ROLL_TYPES do
+        local rollName = ROLL_TYPES[index]
+        vm["HB_Roll_" .. index]:SetHandler(function()
+            local state = states[key]
+            if state then
+                state.rollEnabled = state.rollEnabled or {}
+                state.rollEnabled[rollName] = not CategoryEnabled(state.rollEnabled, rollName)
+                state.hasFiltered = true
+                PublishCheckboxes(state)
+            end
+            lastUpdate = 0
+        end)
+        vm["HB_RollEnabled_" .. index] = true
+    end
+    vm.HB_RollMenuOpen = false
+    vm.HB_ConcentrationEnabled = true
+    vm.HB_NotConcentrationEnabled = true
     vm.HB_ClassesHeader="Class"
     vm.HB_ClassesMenuOpen=false
     vm.HB_ConcentrationMenuOpen=false
@@ -1011,7 +1565,7 @@ local function UpdateWidget(widget, template, seen, detectedName)
     local key = name .. ":" .. tostring(widget.PlayerId)
     seen[key] = true
     local state = states[key]
-    if not state then state = { index = 1, damageIndex = 1, searchText = "", menuOpen = false, damageMenuOpen = false, classMenuOpen = false, disabledClasses = {}, concentrationOnly = false, nonConcentrationOnly = false, schoolEnabled = {}, damageEnabled = {}, filterOpen = false, concentrationMenuOpen = false }; states[key] = state end
+    if not state then state = { index = 1, damageIndex = 1, searchText = "", menuOpen = false, damageMenuOpen = false, classMenuOpen = false, disabledClasses = {}, concentrationOnly = true, nonConcentrationOnly = true, schoolEnabled = {}, damageEnabled = {}, rollEnabled = {}, actionEnabled = {}, filterOpen = false, concentrationMenuOpen = false, rollMenuOpen = false, actionMenuOpen = false }; states[key] = state end
     local dc = Read(widget, "DataContext")
     -- Historical Level Respec has its own independent School/Damage filters.
     -- This vanilla-only filter runs once a second and explicitly Collapses
@@ -1028,9 +1582,11 @@ local function UpdateWidget(widget, template, seen, detectedName)
         states[key] = { historicalSkipped=true }
         return
     elseif state.historicalSkipped then
-        state = {index=1, damageIndex=1, searchText="", menuOpen=false, damageMenuOpen=false, classMenuOpen=false, disabledClasses={},concentrationOnly=false,nonConcentrationOnly=false,schoolEnabled={},damageEnabled={},filterOpen=false,concentrationMenuOpen=false}
+        state = {index=1, damageIndex=1, searchText="", menuOpen=false, damageMenuOpen=false, classMenuOpen=false, disabledClasses={},concentrationOnly=true,nonConcentrationOnly=true,schoolEnabled={},damageEnabled={},rollEnabled={},actionEnabled={},filterOpen=false,concentrationMenuOpen=false,rollMenuOpen=false,actionMenuOpen=false}
         states[key]=state
     end
+    -- Preserve original spell-picker discovery. Never block the functioning
+    -- filter on an unverified native-section signal.
     local lists, headers = CachedTargets(widget, state.targets, dc)
     if not lists then
         lists, headers = {}, {}
@@ -1059,21 +1615,24 @@ local function UpdateWidget(widget, template, seen, detectedName)
         state.targets = #lists > 0 and targets or nil
     end
     if #lists == 0 then
-        
-        
+        state.pickerActive = false
+        -- Spell selection is absent on most character-creation tabs. Avoid
+        -- doing this full widget scan at the active-picker cadence while
+        -- editing race, appearance, ability scores, etc.
         if state.selectorToken then state.navigationPending = true end
         return
     end
+    state.pickerActive = true
     local selectorToken = SelectorToken(widget, lists)
     if state.navigationPending or (state.selectorToken and state.selectorToken ~= selectorToken) then
         state.selectorToken = selectorToken
         state.navigationPending = false
         state.index, state.damageIndex, state.searchText = 1, 1, ""
-        state.schoolEnabled, state.damageEnabled = {}, {}
+        state.schoolEnabled, state.damageEnabled, state.rollEnabled, state.actionEnabled = {}, {}, {}, {}
         state.disabledClasses, state.classOptions = {}, nil
-        state.concentrationOnly, state.nonConcentrationOnly = false, false
+        state.concentrationOnly, state.nonConcentrationOnly = true, true
         state.menuOpen, state.damageMenuOpen, state.classMenuOpen = false, false, false
-        state.concentrationMenuOpen, state.filterOpen = false, false
+        state.concentrationMenuOpen, state.filterOpen, state.rollMenuOpen, state.actionMenuOpen = false, false, false, false
         state.metadataUnavailable, state.damageUnavailable = false, false
         state.resetSearchPending = true
         state.searchSource = nil
@@ -1151,10 +1710,17 @@ local function UpdateWidget(widget, template, seen, detectedName)
         end
     end
     local classFiltering=disabledCount>0
-    -- Both boxes checked means both categories are included (no concentration
-    -- restriction).  Only one checked requests an exclusive category.
-    local concentrationFiltering = (state.concentrationOnly == true) ~= (state.nonConcentrationOnly == true)
-    local requestedConcentration = state.concentrationOnly == true
+    -- Both boxes checked include both categories. One checked includes only
+    -- its category; neither checked hides all spells, like other filter groups.
+    local rollDisabled = CategoryCountDisabled(state.rollEnabled, ROLL_TYPES)
+    local rollFiltering = rollDisabled > 0
+    local actionDisabled = CategoryCountDisabled(state.actionEnabled, ACTION_RESOURCES)
+    local actionFiltering = actionDisabled > 0
+    local concentrationSelected = state.concentrationOnly == true
+    local nonConcentrationSelected = state.nonConcentrationOnly == true
+    local concentrationNoneSelected = not (concentrationSelected or nonConcentrationSelected)
+    local concentrationFiltering = not (concentrationSelected and nonConcentrationSelected)
+    local requestedConcentration = concentrationSelected
     local groups = {}
     local availableCount, knownCount, renderedCount, nativeCount, damageKnownCount = 0, 0, 0, 0, 0
     
@@ -1168,7 +1734,7 @@ local function UpdateWidget(widget, template, seen, detectedName)
     local damageAnySelected = AnyDamageSelected(state)
     local schoolAnySelected = schoolDisabled < (#SCHOOLS - 1)
     local scanItems = schoolFiltering or damageFiltering or query ~= ""
-        or classFiltering or concentrationFiltering or state.hasFiltered
+        or classFiltering or concentrationFiltering or rollFiltering or actionFiltering or state.hasFiltered
         or state.metadataUnavailable or state.damageUnavailable
     local checkDamage = damageFiltering or state.damageUnavailable
     for _, list in ipairs(lists) do
@@ -1204,12 +1770,16 @@ local function UpdateWidget(widget, template, seen, detectedName)
         or damageKnownCount > 0 or (renderedCount > 0 and availableCount == 0)
     
     
-    if schoolFiltering or damageFiltering or query ~= "" or classFiltering or concentrationFiltering then state.hasFiltered = true end
+    if schoolFiltering or damageFiltering or query ~= "" or classFiltering or concentrationFiltering or rollFiltering or actionFiltering then state.hasFiltered = true end
     local visibleCount = 0
     local classHidden, classUnmatched, classUnmatchedSamples = 0, 0, {}
     local concentrationKnown, concentrationUnknown, concentrationHidden = 0, 0, 0
     local concentrationPoolMatches, concentrationExactMatches = 0, 0
     local concentrationUnknownSamples = {}
+    local rollKnown, rollUnknown, rollHidden = 0, 0, 0
+    local rollUnknownSamples = {}
+    local actionKnown, actionUnknown, actionHidden = 0, 0, 0
+    local actionUnknownSamples = {}
     for _, group in ipairs(groups) do
         for _, item in ipairs(group.containers) do
             local excludedByClass = false
@@ -1245,7 +1815,10 @@ local function UpdateWidget(widget, template, seen, detectedName)
                 end
             end
             local matchesConcentration = true
-            if concentrationFiltering then
+            if concentrationNoneSelected then
+                matchesConcentration = false
+                concentrationHidden = concentrationHidden + 1
+            elseif concentrationFiltering then
                 local ok, value, source = pcall(ConcentrationForReference, item.reference)
                 if not ok then
                     if not state.concentrationReadWarning then
@@ -1271,6 +1844,80 @@ local function UpdateWidget(widget, template, seen, detectedName)
                 end
                 if not matchesConcentration then concentrationHidden = concentrationHidden + 1 end
             end
+            local matchesRoll = true
+            if rollFiltering then
+                local ok, types, known, source = pcall(RollForReference, item.reference)
+                if not ok then
+                    if not state.rollReadWarning then
+                        state.rollReadWarning = true
+                        Log("SpellRoll lookup failed: " .. tostring(types))
+                    end
+                    types, known, source = nil, false, "lookup-error"
+                end
+                if not known then
+                    rollUnknown = rollUnknown + 1
+                    -- The filter cannot exclude an unclassified spell on the
+                    -- basis of a saving throw it has not identified. Preserve
+                    -- it unless the player deliberately unchecked ALL rolls.
+                    matchesRoll = rollDisabled < (#ROLL_TYPES - 1)
+                    if #rollUnknownSamples < 4 then
+                        local spell = Read(item.reference, "Spell")
+                        rollUnknownSamples[#rollUnknownSamples + 1] =
+                            tostring(Read(spell, "Name") or Read(spell, "Icon") or spell)
+                            .. " (" .. tostring(source or "unknown") .. ")"
+                    end
+                else
+                    rollKnown = rollKnown + 1
+                    matchesRoll = false
+                    for rollType in pairs(types or {}) do
+                        if CategoryEnabled(state.rollEnabled, rollType) then
+                            matchesRoll = true
+                            break
+                        end
+                    end
+                end
+                if not matchesRoll then rollHidden = rollHidden + 1 end
+            end
+            local matchesAction = true
+            if actionFiltering then
+                if actionDisabled == (#ACTION_RESOURCES - 1) then
+                    -- Uncheck All is an explicit empty result, including
+                    -- reaction/free/unknown-cost spells.
+                    matchesAction = false
+                else
+                    local ok, types, known, source = pcall(ActionForReference, item.reference)
+                    if not ok then
+                        if not state.actionReadWarning then
+                            state.actionReadWarning = true
+                            Log("Action Resource UseCosts lookup failed: " .. tostring(types))
+                        end
+                        types, known, source = nil, false, "lookup-error"
+                    end
+                    if not known then
+                        actionUnknown = actionUnknown + 1
+                        -- Preserve unresolved native spell tiles rather than
+                        -- repeating the original Roll Type disappear-all bug.
+                        -- A known reaction/free spell, by contrast, is not
+                        -- classified as Action or Bonus Action.
+                        if #actionUnknownSamples < 4 then
+                            local spell = Read(item.reference, "Spell")
+                            actionUnknownSamples[#actionUnknownSamples + 1] =
+                                tostring(Read(spell, "Name") or Read(spell, "Icon") or spell)
+                                .. " (" .. tostring(source or "unknown") .. ")"
+                        end
+                    else
+                        actionKnown = actionKnown + 1
+                        matchesAction = false
+                        for action in pairs(types or {}) do
+                            if CategoryEnabled(state.actionEnabled, action) then
+                                matchesAction = true
+                                break
+                            end
+                        end
+                    end
+                end
+                if not matchesAction then actionHidden = actionHidden + 1 end
+            end
             -- School / damage selections are inclusive within each category;
             -- class-list exclusions, concentration and search narrow further.
             local schoolMatch = not schoolFiltering or (schoolAnySelected
@@ -1292,7 +1939,7 @@ local function UpdateWidget(widget, template, seen, detectedName)
                         damageMatch = CategoryEnabled(state.damageEnabled, "Non-Damaging")
                     end
                 end
-                -- An unresolved damage reference is left visible rather than
+                -- Unknown damage metadata is left visible rather than
                 -- being misclassified as non-damaging. If all boxes are off,
                 -- every spell is hidden, regardless of metadata availability.
             end
@@ -1300,7 +1947,7 @@ local function UpdateWidget(widget, template, seen, detectedName)
                 and schoolMatch and damageMatch
                 and (query == "" or (item.searchName and item.searchName:find(query, 1, true) ~= nil))
                 and not excludedByClass
-                and matchesConcentration
+                and matchesConcentration and matchesRoll and matchesAction
             local visibility = visible and "Visible" or "Collapsed"
             if state.hasFiltered and Read(item.element, "Visibility") ~= visibility then
                 item.element.Visibility = visibility
@@ -1332,11 +1979,11 @@ local function UpdateWidget(widget, template, seen, detectedName)
         state.classCoverageDiagnostic=nil
     end
     if concentrationFiltering then
-        local signature = tostring(requestedConcentration) .. ":" .. tostring(renderedCount)
+        local signature = (concentrationNoneSelected and "none" or tostring(requestedConcentration)) .. ":" .. tostring(renderedCount)
         if state.concentrationDiagnostic ~= signature then
             state.concentrationDiagnostic = signature
             Log(name .. " player=" .. tostring(widget.PlayerId)
-                .. "; concentration=" .. (requestedConcentration and "only" or "excluded")
+                .. "; concentration=" .. (concentrationNoneSelected and "none" or (requestedConcentration and "only" or "excluded"))
                 .. "; recognized=" .. tostring(concentrationKnown)
                 .. "; exact=" .. tostring(concentrationExactMatches)
                 .. "; canonical=" .. tostring(concentrationPoolMatches)
@@ -1346,6 +1993,40 @@ local function UpdateWidget(widget, template, seen, detectedName)
         end
     else
         state.concentrationDiagnostic = nil
+    end
+    if rollFiltering then
+        local disabledTypes = {}
+        for index = 2, #ROLL_TYPES do
+            if not CategoryEnabled(state.rollEnabled, ROLL_TYPES[index]) then
+                disabledTypes[#disabledTypes + 1] = ROLL_TYPES[index]
+            end
+        end
+        local signature = table.concat(disabledTypes, ",") .. ":" .. tostring(renderedCount)
+        if state.rollDiagnostic ~= signature then
+            state.rollDiagnostic = signature
+            Log(name .. " player=" .. tostring(widget.PlayerId)
+                .. "; excluded rolls=" .. table.concat(disabledTypes, ",")
+                .. "; recognized=" .. rollKnown .. "; unmatched=" .. rollUnknown
+                .. "; hidden=" .. rollHidden .. "; unknown samples="
+                .. table.concat(rollUnknownSamples, ", "))
+        end
+    else
+        state.rollDiagnostic = nil
+    end
+    if actionFiltering then
+        local selected = (CategoryEnabled(state.actionEnabled, "Action") and "A" or "-")
+            .. (CategoryEnabled(state.actionEnabled, "Bonus Action") and "B" or "-")
+            .. ":" .. tostring(renderedCount)
+        if state.actionDiagnostic ~= selected then
+            state.actionDiagnostic = selected
+            Log(name .. " player=" .. tostring(widget.PlayerId)
+                .. "; action resource selected=" .. selected
+                .. "; recognized=" .. actionKnown .. "; unmatched=" .. actionUnknown
+                .. "; hidden=" .. actionHidden .. "; unknown samples="
+                .. table.concat(actionUnknownSamples, ", "))
+        end
+    else
+        state.actionDiagnostic = nil
     end
     local status = ""
     if scanItems then
@@ -1360,7 +2041,11 @@ local function UpdateWidget(widget, template, seen, detectedName)
         status = "Some spell schools could not be identified."
     elseif state.damageUnavailable and damageFiltering then
         status = "Some damage types could not be identified."
-    elseif (schoolFiltering or damageFiltering or query ~= "" or classFiltering or concentrationFiltering) and visibleCount == 0 and availableCount > 0 then
+    elseif rollFiltering and rollUnknown > 0 then
+        status = "Some spell rolls could not be identified."
+    elseif actionFiltering and actionUnknown > 0 then
+        status = "Some spell action costs could not be identified."
+    elseif (schoolFiltering or damageFiltering or query ~= "" or classFiltering or concentrationFiltering or rollFiltering or actionFiltering) and visibleCount == 0 and availableCount > 0 then
         status = "No matching Spells."
     end
     state.appliedIndex = state.index
@@ -1394,6 +2079,16 @@ local function UpdateWidget(widget, template, seen, detectedName)
         SetField(vm, "HB_ConcentrationMenuOpen", state.concentrationMenuOpen == true)
         SetField(vm, "HB_ConcentrationEnabled", state.concentrationOnly == true)
         SetField(vm, "HB_NotConcentrationEnabled", state.nonConcentrationOnly == true)
+        SetField(vm, "HB_ActionMenuOpen", state.actionMenuOpen == true)
+        for index = 2, #ACTION_RESOURCES do
+            SetField(vm, "HB_ActionEnabled_" .. index,
+                CategoryEnabled(state.actionEnabled, ACTION_RESOURCES[index]))
+        end
+        SetField(vm, "HB_RollMenuOpen", state.rollMenuOpen == true)
+        for index = 2, #ROLL_TYPES do
+            SetField(vm, "HB_RollEnabled_" .. index,
+                CategoryEnabled(state.rollEnabled, ROLL_TYPES[index]))
+        end
         SetField(vm,"HB_ClassesMenuOpen",state.classMenuOpen==true)
         for row=1,MAX_CLASS_ROWS do
             local option=classOptions[row]
@@ -1472,33 +2167,114 @@ local function UpdateWidget(widget, template, seen, detectedName)
     end
 end
 
+-- Read-only navigation probe. The vanilla CCLib keyboard/controller templates
+-- update gameplaySubPanel.Tag and DataContext on native listbox selection.
+-- Resolve these nested names only when the already-existing picker state or
+-- selector identity changes. Never use the probe to gate filtering.
+local pickerProbeState = {}
+local navigationPaths = {}
+local navGateIdle = {}
+local function ProbePickerSection(widget, key, active, selectorToken)
+    local signature = (active and 'active:' .. tostring(selectorToken or '') or 'inactive')
+    if pickerProbeState[key] == signature then return end
+    pickerProbeState[key] = signature
+    local function FieldText(object, property)
+        -- Read() legitimately returns *zero* values for missing native fields.
+        -- Assign first so tostring() always receives precisely one argument.
+        local ok, value = pcall(Read, object, property)
+        if not ok then return '<unreadable>' end
+        return tostring(value)
+    end
+    local function TypeText(object)
+        if not object then return 'nil' end
+        return FieldText(object, 'Type')
+    end
+    -- widget:Find only searches its own namescope. Native tabs live in nested
+    -- templates. Capture their *paths* once on transitions, never stale
+    -- UIWidget/Noesis proxy references. ResolvePath validates each path before
+    -- the cheap inactive-section check can suppress a full filter update.
+    local panel, spellTabs, tabs
+    local records = {}
+    Walk(widget, function(child, path)
+        local childName = Read(child, 'Name')
+        if childName == 'gameplaySubPanel' and not panel then
+            panel = child
+            records.panel = RecordPath(widget, path, child)
+        elseif childName == 'subTabsSpellsList' and not spellTabs then
+            spellTabs = child
+            records.spellTabs = RecordPath(widget, path, child)
+        elseif childName == 'gameplayTabs' and not tabs then
+            tabs = child
+            records.tabs = RecordPath(widget, path, child)
+        end
+    end, 0)
+    navigationPaths[key] = (records.panel and records.spellTabs and records.tabs)
+        and records or nil
+    local selected = Read(panel, 'DataContext')
+    Log('SECTION_NAV picker=' .. (active and 'active' or 'inactive')
+        .. ' player=' .. FieldText(widget, 'PlayerId')
+        .. ' panelFound=' .. tostring(panel ~= nil)
+        .. ' panelTag=' .. FieldText(panel, 'Tag')
+        .. ' panelDataType=' .. TypeText(selected)
+        .. ' selectorCantrips=' .. FieldText(selected, 'IsCantrips')
+        .. ' selectorActions=' .. FieldText(selected, 'IsActions')
+        .. ' spellTabsFound=' .. tostring(spellTabs ~= nil)
+        .. ' spellSelectedIndex=' .. FieldText(spellTabs, 'SelectedIndex')
+        .. ' gameplayTabsFound=' .. tostring(tabs ~= nil)
+        .. ' gameplaySelectedIndex=' .. FieldText(tabs, 'SelectedIndex'))
+end
+
+-- The in-game SECTION_NAV probe established that the selected native
+-- gameplaySubPanel.DataContext exposes IsCantrips=true/false and IsActions=false
+-- for both spell selectors. Other sections report no IsCantrips selector and
+-- a nonnegative gameplayTabs.SelectedIndex. This check is conservative:
+-- missing/rebuilt/ambiguous native controls ALWAYS fall back to UpdateWidget.
+local function NativeSpellSection(widget, records)
+    if not records then return nil end
+    local panel = ResolvePath(widget, records.panel)
+    local tabs = ResolvePath(widget, records.tabs)
+    local spellTabs = ResolvePath(widget, records.spellTabs)
+    if not panel or not tabs or not spellTabs then return nil end
+    local selected = Read(panel, 'DataContext')
+    local cantrips = Read(selected, 'IsCantrips')
+    local actions = Read(selected, 'IsActions')
+    if (cantrips == true or cantrips == false) and actions == false then
+        return 'spell'
+    end
+    local index = Read(tabs, 'SelectedIndex')
+    local spellIndex = Read(spellTabs, 'SelectedIndex')
+    -- Only skip when BG3 positively selects a different main tab and
+    -- deselects its spell selectors. A mismatching/incomplete UI falls back.
+    if type(index) == 'number' and index >= 0
+        and spellIndex == -1 and cantrips == nil then
+        return 'other'
+    end
+end
+
 local function Update()
     local root = Ext.UI.GetRoot()
     if not root then return end
     local widgets, host, candidateNames = {}, nil, {}
-    
-    
-    local content = root:Find("ContentRoot")
+    local content = root:Find('ContentRoot')
     if not content then
-        if rootDiagnostic ~= "no-content-root" then
-            rootDiagnostic = "no-content-root"
-            Log("ContentRoot not found; waiting for UI state pages.")
+        if rootDiagnostic ~= 'no-content-root' then
+            rootDiagnostic = 'no-content-root'
+            Log('ContentRoot not found; waiting for UI state pages.')
         end
         return
     end
     for index = 1, content.ChildrenCount do
         local child = content:Child(index)
         if child then
-            local name = Read(child, "Name")
-            local filename
-            if child.Type:match("UIWidget$") then
-                filename = child.FileName
-                if type(filename) == "string" then
-                    local fromFile = filename:gsub("\\", "/"):match("([^/]+)%.xaml$")
+            local name = Read(child, 'Name')
+            if child.Type:match('UIWidget$') then
+                local filename = child.FileName
+                if type(filename) == 'string' then
+                    local fromFile = filename:gsub('\\', '/'):match('([^/]+)%.xaml$')
                     if WIDGET_NAMES[fromFile] or fromFile == HOST_NAME then name = fromFile end
                 end
                 if #candidateNames < 12 then
-                    candidateNames[#candidateNames + 1] = tostring(name) .. " [" .. tostring(filename) .. "]"
+                    candidateNames[#candidateNames + 1] = tostring(name) .. ' [' .. tostring(filename) .. ']'
                 end
             end
             if name == HOST_NAME then host = child end
@@ -1506,22 +2282,77 @@ local function Update()
         end
     end
     local seen = {}
+    local confirmedOther = 0
     if #widgets > 0 then
         local template = host and host:Resource(TEMPLATE_KEY, true)
-        if not template then
-            if not resourceWarning then
-                Log("Fallback resource host is missing. Native school headings can still initialize; check the UI state merge for replacement pages.")
-                resourceWarning = true
+        if not template and not resourceWarning then
+            Log('Fallback resource host is missing. Native school headings can still initialize; check the UI state merge for replacement pages.')
+            resourceWarning = true
+        end
+        for _, widget in ipairs(widgets) do
+            local key = widget.name .. ':' .. tostring(widget.node.PlayerId)
+            local state = states[key]
+            local navStatus
+            -- Noesis objects can be rebuilt without a character-data change;
+            -- failed path resolution is NOT proof that Spells is inactive.
+            if state and not state.historicalSkipped and navigationPaths[key] then
+                local ok, result = pcall(NativeSpellSection, widget.node, navigationPaths[key])
+                if ok then navStatus = result end
+                if not ok or not result then
+                    navigationPaths[key] = nil
+                    pickerProbeState[key] = nil
+                end
+            end
+            if navStatus == 'other' and state then
+                confirmedOther = confirmedOther + 1
+                seen[key] = true
+                -- Preserve the original exit/return state transitions even
+                -- though we no longer traverse the inactive spell picker.
+                state.pickerActive = false
+                if state.selectorToken then state.navigationPending = true end
+                if not navGateIdle[key] then
+                    navGateIdle[key] = true
+                    Log('SECTION_GATE inactive player=' .. tostring(widget.node.PlayerId)
+                        .. '; skipped full spell-picker traversal')
+                end
+                -- Existing transition diagnostics still observe tab changes;
+                -- they are deliberately isolated from the functional filter.
+                if pickerProbeState[key] ~= 'inactive' then
+                    local probeOk, probeError = pcall(ProbePickerSection, widget.node, key,
+                        false, state.selectorToken)
+                    if not probeOk then Log('SECTION_PROBE_ERROR ' .. tostring(probeError)) end
+                end
+            else
+                if navGateIdle[key] then
+                    navGateIdle[key] = nil
+                    Log('SECTION_GATE resumed player=' .. tostring(widget.node.PlayerId)
+                        .. '; native spell selector or fallback discovery')
+                end
+                UpdateWidget(widget.node, template, seen, widget.name)
+                state = states[key]
+                -- Probe diagnostics and navigation-path capture are isolated:
+                -- a probe failure never blocks the original filter update.
+                local probeOk, probeError = pcall(ProbePickerSection, widget.node, key,
+                    state and state.pickerActive == true, state and state.selectorToken)
+                if not probeOk then Log('SECTION_PROBE_ERROR ' .. tostring(probeError)) end
             end
         end
-        for _, widget in ipairs(widgets) do UpdateWidget(widget.node, template, seen, widget.name) end
     end
-    local rootSignature = #widgets .. ":" .. table.concat(candidateNames, "; ")
+    nextCheckInterval = #widgets > 0 and confirmedOther == #widgets
+        and NAV_IDLE_INTERVAL_MS or INTERVAL_MS
+    local rootSignature = #widgets .. ':' .. table.concat(candidateNames, '; ')
     if rootDiagnostic ~= rootSignature then
         rootDiagnostic = rootSignature
-        Log("Detected character pages=" .. #widgets .. "; UI pages=" .. table.concat(candidateNames, "; "))
+        Log('Detected character pages=' .. #widgets .. '; UI pages=' .. table.concat(candidateNames, '; '))
     end
-    for key in pairs(states) do if not seen[key] then states[key] = nil end end
+    for key in pairs(states) do
+        if not seen[key] then
+            states[key] = nil
+            pickerProbeState[key] = nil
+            navigationPaths[key] = nil
+            navGateIdle[key] = nil
+        end
+    end
 end
 
 if not Ext.UI or not Ext.UI.GetRoot or not Ext.UI.RegisterType or not Ext.UI.Instantiate then
@@ -1567,6 +2398,14 @@ local vmFields = {
     HB_NotConcentrationEnabled = { Type = "Bool", Notify = true },
     HB_ToggleConcentration = { Type = "Command" },
     HB_ToggleNotConcentration = { Type = "Command" },
+    HB_ActionMenuOpen = { Type = "Bool", Notify = true },
+    HB_ToggleActionMenu = { Type = "Command" },
+    HB_Action_CheckAll = { Type = "Command" },
+    HB_Action_UncheckAll = { Type = "Command" },
+    HB_RollMenuOpen = { Type = "Bool", Notify = true },
+    HB_ToggleRollMenu = { Type = "Command" },
+    HB_Roll_CheckAll = { Type = "Command" },
+    HB_Roll_UncheckAll = { Type = "Command" },
 }
 for row=1,MAX_CLASS_ROWS do
     vmFields["HB_ClassName_"..row]={Type="String",Notify=true}
@@ -1582,9 +2421,17 @@ for index in ipairs(DAMAGE_TYPES) do
     vmFields["HB_Damage_" .. index] = { Type = "Command" }
     if index > 1 then vmFields["HB_DamageEnabled_" .. index] = { Type = "Bool", Notify = true } end
 end
+for index = 2, #ACTION_RESOURCES do
+    vmFields["HB_Action_" .. index] = { Type = "Command" }
+    vmFields["HB_ActionEnabled_" .. index] = { Type = "Bool", Notify = true }
+end
+for index = 2, #ROLL_TYPES do
+    vmFields["HB_Roll_" .. index] = { Type = "Command" }
+    vmFields["HB_RollEnabled_" .. index] = { Type = "Bool", Notify = true }
+end
 Ext.UI.RegisterType(FILTER_TYPE, vmFields)
 
-Log("Loaded spell school + damage + name + class pools + concentration filters v5.16 (nested multiselect concentration-match repair; SE 32 compatible); UI mode="
+Log("Loaded spell school + damage + name + class pools + concentration + saving throw/attack + action resource filters v5.21 (SE 32 compatible); UI mode="
     .. (deferredUI and "deferred" or "client Tick") .. "; waiting for spell stats and character UI.")
 
 Ext.Events.StatsLoaded:Subscribe(function()
@@ -1600,21 +2447,16 @@ Ext.Events.SessionLoaded:Subscribe(function()
         .." HB class pools="..tostring(info.HBPools or 0))
     Log("Class list filter groups="..#ClassSpellIndex.GetOptions().."; exact SpellLists.lsx pools, 80 IDs each")
     states = {}
+    pickerProbeState = {}
+    navigationPaths = {}
+    navGateIdle = {}
+    nextCheckInterval = INTERVAL_MS
     propertyCache = {}
     lastUpdate = 0
 end)
 local MenuScope = Ext.Require("Client/MenuScope.lua")
-local lastScopePoll, scopeOpen = -100000, false
-local function CharacterMenuVisible(now)
-    if now - lastScopePoll >= (scopeOpen and 300 or 950) then
-        lastScopePoll, scopeOpen = now, MenuScope.IsOpen('Character')
-    end
-    return scopeOpen
-end
 
 Ext.Events.Tick:Subscribe(function()
-    
-    
     if diagnosticDirty and Ext.IO and Ext.IO.SaveFile then
         diagnosticDirty = false
         local ok, saved = pcall(Ext.IO.SaveFile, "HomeBrew/Diagnostics/HB_SpellFilter_Diagnostics.txt", table.concat(diagnosticLines, "\n") .. "\n")
@@ -1632,25 +2474,27 @@ Ext.Events.Tick:Subscribe(function()
             end)
         end
     end
-    if not catalogReady or queued then return end
+    if not catalogReady or queued or not MenuScope.MaybeOpen('Character') then return end
     local now = Ext.Timer.MonotonicTime()
-    if not CharacterMenuVisible(now) then return end
-    if now - lastUpdate < INTERVAL_MS then return end
+    if now - lastUpdate < nextCheckInterval then return end
     lastUpdate = now
+    if not deferredUI then return end
     queued = true
-    DispatchUI(function()
+    local ok, err = pcall(deferredUI, function()
         queued = false
-        local ok, message = pcall(Update)
-        if not ok and not updateWarning then
-            Log("UI update failed: " .. tostring(message))
+        local worked, why = pcall(Update)
+        if not worked and not updateWarning then
+            Log('SAFE_UI_RECOVERY_ERROR ' .. tostring(why))
             updateWarning = true
         end
     end)
+    if not ok then queued = false; Log('SAFE_UI_QUEUE_ERROR ' .. tostring(err)) end
 end)
-
 
 Ext.RegisterConsoleCommand("hb_spellfilter_dump", function()
     consoleJobs[#consoleJobs + 1] = function()
+        -- Explicit support request: persist collected diagnostic lines once.
+        diagnosticDirty = true
         local root = Ext.UI.GetRoot()
         if not root then Log("No UI root."); return end
         Walk(root, function(widget)

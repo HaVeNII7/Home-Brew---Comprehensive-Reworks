@@ -1,0 +1,317 @@
+<ls:UIWidget x:Name="CombatLog_c"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:ls="clr-namespace:ls;assembly=Code"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:noesis="clr-namespace:NoesisGUIExtensions;assembly=Noesis.GUI.Extensions"
+             Template="{StaticResource Hud.Root}"
+             mc:Ignorable="d"
+             d:DesignHeight="2160" d:DesignWidth="3840"
+             d:DataContext="{d:DesignInstance {x:Type ls:Widget}, IsDesignTimeCreatable=True}">
+    <ls:UIWidget.ContentTemplate>
+        <DataTemplate DataType="{x:Type ls:Widget}">
+            <DataTemplate.Resources>
+                <Style x:Key="CombatFeed.Entry.Text" TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="{StaticResource ScaledMediumFontSize}" />
+                    <Setter Property="LineHeight" Value="{StaticResource ScaledMediumFontSizeLineHeight}" />
+                    <Setter Property="LineStackingStrategy" Value="BlockLineHeight" />
+                    <Setter Property="Foreground" Value="{DynamicResource CombatLog.DefaultTextColor}" />
+                    <Setter Property="TextWrapping" Value="Wrap" />
+                    <Setter Property="TextAlignment" Value="Right" />
+                    <Setter Property="HorizontalAlignment" Value="Right" />
+                    <Setter Property="VerticalAlignment" Value="Center" />
+                    <Setter Property="noesis:Text.Stroke" Value="{StaticResource LS_TextOutlineColor}" />
+                    <Setter Property="noesis:Text.StrokeThickness" Value="4" />
+                    <Setter Property="Margin" Value="0,0,0,20" />
+                    <Setter Property="TextBlock.Effect">
+                        <Setter.Value>
+                            <DropShadowEffect Direction="270" Color="{StaticResource LS_PrimaryColorDropShadowColor}" ShadowDepth="3.0" BlurRadius="0.0"/>
+                        </Setter.Value>
+                    </Setter>
+
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding DataContext.Layout, ElementName=CombatLog_c}" Value="Left">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="FontSize" Value="{StaticResource ScaledSmallishFontSize}" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding DataContext.Layout, ElementName=CombatLog_c}" Value="Right">
+                            <Setter Property="TextAlignment" Value="Right"/>
+                            <Setter Property="HorizontalAlignment" Value="Right"/>
+                            <Setter Property="FontSize" Value="{StaticResource ScaledSmallishFontSize}" />
+                        </DataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding DataContext.Layout, ElementName=CombatLog_c}" Value="Left"/>
+                                <Condition Binding="{Binding DataContext.Data.LocalPlayers[1].UIData.InPlayerPanels, ElementName=CombatLog_c}" Value="True"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextAlignment" Value="Right"/>
+                            <Setter Property="HorizontalAlignment" Value="Right"/>
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding DataContext.Layout, ElementName=CombatLog_c}" Value="Right"/>
+                                <Condition Binding="{Binding DataContext.Data.LocalPlayers[0].UIData.InPlayerPanels, ElementName=CombatLog_c}" Value="True"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="HorizontalAlignment" Value="Left"/>
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding DataContext.Layout, ElementName=CombatLog_c}" Value="Left"/>
+                                <Condition Binding="{Binding DataContext.Data.LocalPlayers[1].SelectedCharacter.CharacterMode, ElementName=CombatLog_c}" Value="InDialogue"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextAlignment" Value="Right"/>
+                            <Setter Property="HorizontalAlignment" Value="Right"/>
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding DataContext.Layout, ElementName=CombatLog_c}" Value="Right"/>
+                                <Condition Binding="{Binding DataContext.Data.LocalPlayers[0].SelectedCharacter.CharacterMode, ElementName=CombatLog_c}" Value="InDialogue"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="HorizontalAlignment" Value="Left"/>
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding DataContext.Layout, ElementName=CombatLog_c}" Value="Common" />
+                                <Condition Binding="{Binding DataContext.CurrentPlayer.PlayerId, ElementName=CombatLog_c}" Value="2"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="HorizontalAlignment" Value="Left"/>
+                        </MultiDataTrigger>
+                    </Style.Triggers>
+
+                </Style>
+            </DataTemplate.Resources>
+            <ItemsControl x:Name="CombatFeed" Tag="False" ItemsSource="{Binding FilteredItems, ElementName=CombatFeedMessages}" AlternationCount="{Binding FilteredItems.Count, ElementName=CombatFeedMessages}" Height="600" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="90,0,90,500" MaxWidth="1200">
+                <b:Interaction.Behaviors>
+                    <ls:CollectionFilterBehavior x:Name="CombatFeedMessages" ItemsSource="{Binding Data.CombatLog.EntryGroups}" Predicate="{Binding DataContext.Data.CombatFeedMessagesPredicate, ElementName=CombatLog_c}"/>
+                </b:Interaction.Behaviors>
+                <ItemsControl.OpacityMask>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#00FFFFFF" Offset="0"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="0.1"/>
+                    </LinearGradientBrush>
+                </ItemsControl.OpacityMask>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel VerticalAlignment="Bottom"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="{x:Type ls:CombatLogGroupedEntries}">
+                        <!-- Tag True == storyboard for this template finished -->
+
+                        <Grid x:Name="GroupContainer" Opacity="1" Tag="False">
+
+                            <Grid.Resources>
+                                <KeyTime x:Key="AnimFadeStart">0:0:4.75</KeyTime>
+                                <KeyTime x:Key="AnimEnd">0:0:5</KeyTime>
+
+                                <Storyboard x:Key="FadeStoryBoard">
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity">
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0" Value="1"/>
+                                        <EasingDoubleKeyFrame KeyTime="{StaticResource AnimFadeStart}" Value="1"/>
+                                        <EasingDoubleKeyFrame KeyTime="{StaticResource AnimEnd}" Value="0"/>
+                                    </DoubleAnimationUsingKeyFrames>
+
+                                    <!-- Setting tag to announce end of /this/ storyboard as StoryboardCompletedTrigger will trigger if /any/ instance of FadeStoryBoard finishes -->
+                                    <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="Tag">
+                                        <DiscreteBooleanKeyFrame KeyTime="0:0:0" Value="False"/>
+                                        <DiscreteBooleanKeyFrame KeyTime="{StaticResource AnimEnd}" Value="True"/>
+                                    </BooleanAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </Grid.Resources>
+                            <b:Interaction.Triggers>
+                                <b:EventTrigger EventName="Loaded">
+                                    <b:ControlStoryboardAction Storyboard="{StaticResource FadeStoryBoard}"/>
+                                    <b:InvokeCommandAction Command="{Binding EnableTooltipOnUIElementCommand, ElementName=CombatLog_c}"/>
+                                </b:EventTrigger>
+                                <b:EventTrigger EventName="Unloaded">
+                                    <b:InvokeCommandAction Command="{Binding DataContext.MarkCombatLogGroupEntrySeen, ElementName=CombatLog_c}" CommandParameter="{Binding .}"/>
+                                </b:EventTrigger>
+                                <b:PropertyChangedTrigger Binding="{Binding Tag, ElementName=GroupContainer}">
+                                    <b:Interaction.Behaviors>
+                                        <b:ConditionBehavior>
+                                            <b:ConditionalExpression>
+                                                <b:ComparisonCondition LeftOperand="{Binding Tag, ElementName=GroupContainer}" Operator="Equal" RightOperand="True"/>
+                                            </b:ConditionalExpression>
+                                        </b:ConditionBehavior>
+                                    </b:Interaction.Behaviors>
+                                    <b:InvokeCommandAction Command="{Binding DataContext.MarkCombatLogGroupEntrySeen, ElementName=CombatLog_c}" CommandParameter="{Binding .}"/>
+                                </b:PropertyChangedTrigger>
+                            </b:Interaction.Triggers>
+                            <ContentPresenter x:Name="EntryPresenter" Content="{Binding Entries[0]}">
+                                <ContentPresenter.Resources>
+                                    <Style x:Key="TextStyle" TargetType="TextBlock" BasedOn="{StaticResource CombatFeed.Entry.Text}"/>
+                                </ContentPresenter.Resources>
+                            </ContentPresenter>
+                        </Grid>
+
+                        <DataTemplate.Triggers>
+                            <!-- HomeBrew: capped XP only, the live feed; historic log untouched. -->
+                            <MultiDataTrigger>
+                                <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding Entries[0], Converter={StaticResource TypeConverter}}" Value="ls.VMXpGainedEntry" />
+                                    <Condition Binding="{Binding Tag, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Value="True" />
+                                </MultiDataTrigger.Conditions>
+                                <Setter TargetName="GroupContainer" Property="Visibility" Value="Collapsed" />
+                            </MultiDataTrigger>
+                            <DataTrigger Binding="{Binding CtxTransText, Converter={StaticResource NullToBoolFalseConverter}, ConverterParameter='EmptyString' }" Value="True">
+                                <Setter TargetName="EntryPresenter" Property="Content" Value="{Binding .}"/>
+                                <Setter TargetName="EntryPresenter" Property="ContentTemplate" Value="{StaticResource CombatLogGenericTemplate}"/>
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <DataTemplate.Triggers>
+
+                <!-- Reposition the combat log for splitscreen-->
+                <DataTrigger Binding="{Binding Layout}" Value="Left">
+                    <Setter TargetName="CombatFeed" Property="Margin" Value="0,0,-300,300"/>
+                    <Setter TargetName="CombatFeed" Property="Height" Value="600"/>
+                    <Setter TargetName="CombatFeed" Property="Width" Value="600"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding CurrentPlayer.PlayerId}" Value="2">
+                    <Setter TargetName="CombatFeed" Property="HorizontalAlignment" Value="Left"/>
+                </DataTrigger>
+
+
+                <!-- Show combat log in single player when the showCombatFeed is set to true-->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Layout}" Value="Common"/>
+                        <Condition Binding="{Binding Data.LocalPlayers.Count, Converter={StaticResource GreaterThanConverter}, ConverterParameter=1}" Value="False"/>
+                        <Condition Binding="{Binding CurrentPlayer.UIOptions.ShowCombatFeed}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Visible"/>
+                </MultiDataTrigger>
+
+                <!--Show combat log in single player when the ShowCombatFeedSplitScreen is set to true-->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Data.LocalPlayers.Count, Converter={StaticResource GreaterThanConverter}, ConverterParameter=1}" Value="True"/>
+                        <Condition Binding="{Binding CurrentPlayer.UIOptions.ShowCombatFeedSplitScreen}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Visible"/>
+                </MultiDataTrigger>
+
+                <DataTrigger Binding="{Binding CurrentPlayer.PlayerId}" Value="1">
+                    <Setter TargetName="CombatFeed" Property="HorizontalAlignment" Value="Right"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Layout}" Value="Right">
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Collapsed"/>
+                </DataTrigger>
+                <!-- Triggers to hide the combat log-->
+
+                <!-- Show only one combat log in merged splitscreen during shared initiative when the fullscreen shared initiative option is on-->
+                <!-- Hides Player 1's combat log on Player2's turn-->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Data.IsFullScreenSharedInitiativeEnabled}" Value="True"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[0].SelectedCharacter.InTurnBasedMode}" Value="True"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[1].SelectedCharacter.InTurnBasedMode}" Value="True"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[1].SelectedCharacter.IsOwnerActiveInSplitscreenFullscreenTurn}" Value="True"/>
+                        <Condition Binding="{Binding Layout}" Value="Common" />
+                        <Condition Binding="{Binding CurrentPlayer.PlayerId}" Value="1"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Collapsed"/>
+                </MultiDataTrigger>
+                <!-- Hides Player 2's combat logit on Player1's turn-->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Data.IsFullScreenSharedInitiativeEnabled}" Value="True"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[0].SelectedCharacter.InTurnBasedMode}" Value="True"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[1].SelectedCharacter.InTurnBasedMode}" Value="True"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[1].SelectedCharacter.IsOwnerActiveInSplitscreenFullscreenTurn}" Value="False"/>
+                        <Condition Binding="{Binding Layout}" Value="Common" />
+                        <Condition Binding="{Binding CurrentPlayer.PlayerId}" Value="2"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Collapsed"/>
+                </MultiDataTrigger>
+
+                <!-- Show only one combat log in merged splitscreen during enemy turns when the fullscreen shared initiative option is off-->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Data.IsFullScreenSharedInitiativeEnabled}" Value="False"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[0].SelectedCharacter.InTurnBasedMode}" Value="True"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[1].SelectedCharacter.InTurnBasedMode}" Value="True"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[1].SelectedCharacter.IsCurrentTurn}" Value="False"/>
+                        <Condition Binding="{Binding Layout}" Value="Common" />
+                        <Condition Binding="{Binding CurrentPlayer.PlayerId}" Value="2"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Collapsed"/>
+                </MultiDataTrigger>
+
+                <!-- Hide combat log in splitscreen if the player opens their radial-->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Layout}" Value="Left"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[1].UIData.InPlayerPanels}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="CombatFeed" Property="Margin" Value="0,0,40,300"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Layout}" Value="Right"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[0].UIData.InPlayerPanels}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="CombatFeed" Property="Margin" Value="40,0,0,300"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Layout}" Value="Left"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[1].SelectedCharacter.CharacterMode}" Value="InDialogue"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="CombatFeed" Property="Margin" Value="0,0,40,300"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Layout}" Value="Right"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[0].SelectedCharacter.CharacterMode}" Value="InDialogue"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="CombatFeed" Property="Margin" Value="40,0,0,300"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Layout}" Value="Left"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[1].UIData.InPlayerPanels}" Value="True"/>
+                        <Condition Binding="{Binding CurrentPlayer.UIData.AreRadialsOpen}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Collapsed"/>
+                </MultiDataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Layout}" Value="Right"/>
+                        <Condition Binding="{Binding Data.LocalPlayers[0].UIData.InPlayerPanels}" Value="True"/>
+                        <Condition Binding="{Binding CurrentPlayer.UIData.AreRadialsOpen}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Collapsed"/>
+                </MultiDataTrigger>
+
+                <!-- Hide combat log if HUD is turned off-->
+                <DataTrigger Binding="{Binding CurrentPlayer.UIData.ShowHud}" Value="False">
+                    <Setter TargetName="CombatFeed" Property="Visibility" Value="Collapsed"/>
+                </DataTrigger>
+
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Layout}" Value="Common"/>
+                        <Condition Binding="{Binding Data.LocalPlayers.Count, Converter={StaticResource GreaterThanConverter}, ConverterParameter=1}" Value="False"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter TargetName="CombatFeed" Property="Margin" Value="90,0,90,450"/>
+                </MultiDataTrigger>
+
+            </DataTemplate.Triggers>
+        </DataTemplate>
+    </ls:UIWidget.ContentTemplate>
+</ls:UIWidget>

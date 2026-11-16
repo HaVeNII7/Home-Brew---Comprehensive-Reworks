@@ -289,6 +289,11 @@
                     <attribute id="Text" type="TranslatedString" handle="35e3a6591ef947a99ac80db4c248a7e645455" version="3"/>
                     <attribute id="UUID" type="guid" value="35e3a659-1ef9-47a9-9ac8-0db4c248a7e1"/>
                 </node>
+                <node id="TooltipUpcastDescriptions">
+                    <attribute id="Name" type="FixedString" value="Create Additional Camp Supplies per Level"/>
+                    <attribute id="Text" type="TranslatedString" handle="e5afeb3802b74f0eaa330d71fbe7abc8kdiek" version="3"/>
+                    <attribute id="UUID" type="guid" value="e80f3f00-a2d6-4697-96c9-e020e902cce4"/>
+                </node>
             </children>
         </node>
     </region>

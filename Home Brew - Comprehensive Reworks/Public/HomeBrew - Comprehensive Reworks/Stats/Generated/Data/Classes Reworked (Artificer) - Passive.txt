@@ -103,7 +103,7 @@ data "Description" "h509b8e00gacb9g46e8d5f4e5fee8d5f000yb;1"
 data "DescriptionParams" "DealDamage(LevelMapValue(D8Cantrip),Force);Distance(3)"
 data "Icon" "Passive_ArcaneFirearm"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "IF(HasDamageDoneForType(DamageType.Piercing,context.Target) and not FacingMe() and Enemy()):DamageBonus(ProficiencyBonus)"
+data "Boosts" "IF(HasDamageDoneForType(DamageType.Piercing,context.Target) and not FacingMe() and not Ally()):DamageBonus(ProficiencyBonus)"
 
 new entry "DeadEye"
 type "PassiveData"

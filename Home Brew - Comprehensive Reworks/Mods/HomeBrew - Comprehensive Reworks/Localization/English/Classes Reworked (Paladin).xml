@@ -54,7 +54,7 @@
 	<content contentuid="fe6f4159abae42539029e284001d12de11111" version="3">Oath Broken</content>
 	<content contentuid="fe6f4159abae42539029e284001d12de22222" version="3">Gain &lt;LSTag Type="Spell" Tooltip="CTarget_Smite_Oathbroken"&gt;Oathbroken Smite&lt;/LSTag&gt;.</content>
 	<content contentuid="h940c3156gad0fg4a92g8573gff26b0433333" version="1">Oathbroken Smite</content>
-	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c944444" version="2">Shatter the mind of your target with necrotic wrath, afflicting them with &lt;LSTag Type="Status" Tooltip="SPITEFUL_SUFFERING_1"&gt;Spiteful Suffering&lt;/LSTag&gt;. This action always rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Targeting a corpse during combat will instead immediately raise a Shadow servant until the end of your current combat encounter.</content>
+	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c944444" version="2">Shatter the mind of your target with necrotic wrath, afflicting them with &lt;LSTag Type="Status" Tooltip="SPITEFUL_SUFFERING_1"&gt;Spiteful Suffering&lt;/LSTag&gt;. This action always rolls with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Targeting a corpse during combat will instead immediately raise a Shadow servant until the end of your current combat encounter. Shadows are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 	<content contentuid="h940c3156gad0fg4a92g8573gff26b0455555" version="1">Oathbroken Smite</content>
 	<content contentuid="he9150fbcg1b55g49aegaa3egc4717c966666" version="2">Shatter the mind of your target with necrotic wrath, afflicting them with &lt;LSTag Type="Status" Tooltip="SPITEFUL_SUFFERING_1"&gt;Spiteful Suffering&lt;/LSTag&gt;.</content>
 	<content contentuid="h5b946111g68b0g402dg8509g7e0582a72f04" version="1">Oathbroken Smite: Critical</content>
@@ -168,7 +168,7 @@
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100002" version="2">To the Sun</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000b" version="2">Using &lt;LSTag Type="Spell" Tooltip="Target_PhoenixLanding"&gt;Phoenix Landing&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Target_SearingProtection"&gt;Searing Protection&lt;/LSTag&gt; grants you &lt;LSTag Type="Status" Tooltip="SUNSCORCHED"&gt;Sun Scorched&lt;/LSTag&gt; for three turns. In addition, you gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Fire damage.</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000s2" version="2">Sun Scorched</content>
-	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000sb" version="2">Affected creature deals an additional [1] for every 10% of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; they are missing.</content>
+	<content contentuid="hf8d923abg2aeeg446agac9dgbb27081000sb" version="2">Affected creature deals an additional [1] to all targets for every 10% of their &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; they are missing.</content>
 
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb2708100003" version="2">Turn the Aberrant</content>
 	<content contentuid="hf8d923abg2aeeg446agac9dgbb270810000c" version="2">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby enemies, dealing damage to them in the process. They are forced to flee and cannot come close to you. Aberrations take twice as much damage from this action.</content>
@@ -200,7 +200,7 @@
 	<content contentuid="h21e0c285g77d7g4573g8b55gfb72243328a1" version="1">Affected creature is protected by a vengeful aura. &lt;br&gt;&lt;br&gt;Aggressors recieve three stacks of &lt;LSTag Type="Status" Tooltip="MAG_RADIANT_RADIATING_ORB"&gt;Radiating Orb&lt;/LSTag&gt; when they damage the creature with a melee attack.</content>
 
 	<content contentuid="h15927ab8ga1f6g48dcga9abgfae62d3dff49" version="1">Sacred Weapon</content>
-	<content contentuid="ha966a6f3g23bdg4601ga9a9g19aef4128526" version="2">Illuminate your weapon with a holy radiance. It will have a higher chance of hitting, and emit a bright light across [1].</content>
+	<content contentuid="ha966a6f3g23bdg4601ga9a9g19aef4128526" version="2">Illuminate your weapon with a holy radiance. It will receive a bonus to &lt;LSTag Tooltip="AbilityModifier"&gt;Attack Rolls&lt;/LSTag&gt; equal to the wielders &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt; and emit a bright light across [1].</content>
 	<content contentuid="h4ac2da0fgc744g47c7gabb3gdaca2aed57cf" version="1">Sacred Weapon</content>
 	<content contentuid="h35572396g0398g4fa5g9a19ga44db89fe53f" version="1">Affected weapon adds its wielders &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt; to &lt;LSTag Tooltip="AbilityModifier"&gt;Attack Rolls&lt;/LSTag&gt;. It has become magical and emits radiant light across [1].</content>
 
@@ -221,7 +221,7 @@
 	<content contentuid="h883a2333g00cag41c3gbc95g563f6c765164" version="4">Has &lt;LSTag Type="Status" Tooltip="HEROISM"&gt;Heroism&lt;/LSTag&gt; as well as &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to all fear based status effects while within [1] of the Paladin responsible for this status.</content>
 
 	<content contentuid="h298b9a29g5657g4aa9gaad6gad22d3d1f1d5" version="1">Pure Radiance</content>
-	<content contentuid="hb2400634gf3e4g46f1gb93dg136s6d5f4d54" version="3">When making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against a creature afflicted with stacks of &lt;LSTag Type="Status" Tooltip="MAG_RADIANT_RADIATING_ORB"&gt;Radiating Orb&lt;/LSTag&gt;, you roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; and deal an additional [1]. This bonus does not apply to damage dealt with your off-hand weapon.</content>
+	<content contentuid="hb2400634gf3e4g46f1gb93dg136s6d5f4d54" version="3">When making an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against a creature afflicted with stacks of &lt;LSTag Type="Status" Tooltip="MAG_RADIANT_RADIATING_ORB"&gt;Radiating Orb&lt;/LSTag&gt;, you roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; and deal an additional [1] if they are a non-allied target. This bonus does not apply to damage dealt with your off-hand weapon.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">OATHBOUND CRUSADER</content>
 
@@ -240,7 +240,7 @@
 	<content contentuid="h05f4d72eg41c6g4570g8acdg4c3ec6779276" version="6">&lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frighten&lt;/LSTag&gt; an enemy.</content>
 
 	<content contentuid="hb27de5a4g2331g490cgbbd5g86sd2f5d6f58" version="1">Sanctified Commands</content>
-	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5sdf56d8f7" version="3">Both &lt;LSTag Type="Spell" Tooltip="Target_AbjureEnemy"&gt;Abjure Enemy&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Target_InquisitorsMight"&gt;Inquisitor's Might&lt;/LSTag&gt; may now be cast for a single &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charge.</content>
+	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5sdf56d8f7" version="3">&lt;LSTag Type="Spell" Tooltip="Target_AbjureEnemy"&gt;Abjure Enemy&lt;/LSTag&gt; may now be cast without expending your &lt;LSTag Tooltip="Action"&gt;Action&lt;/LSTag&gt;. In addition, &lt;LSTag Type="Spell" Tooltip="Target_InquisitorsMight"&gt;Inquisitor's Might&lt;/LSTag&gt; may now be cast without expending your &lt;LSTag Tooltip="BonusAction"&gt;Bonus Action&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hb27de5a4g2331g490cgbbd5g86200d7asdf9" version="1">Turn the Damned</content>
 	<content contentuid="h3961da1bg0e72g49a3gb0c0g2e5d38a234dd" version="3">&lt;LSTag Type="Status" Tooltip="TURNED"&gt;Turn&lt;/LSTag&gt; nearby enemies, dealing damage to them in the process. They are forced to flee and cannot come close to you. Undead creatures take twice as much damage from this action.</content>
@@ -273,9 +273,9 @@
 	<content contentuid="hd7ff90f2gdbe7g475aga57ege03e858ceb9f" version="1">Affected creature has had their will bent by an Oathbreaker, influencing it to attack its allies indescriminately.</content>
 
 	<content contentuid="hbe9433acg21f7g450fg8e4dg52d76d77c680" version="1">Spiteful Suffering</content>
-	<content contentuid="hd646ac32g6ba7g4baagb3beg2ddef1a43dac" version="2">Submit your target to a malicious onslaught of spite, filling them with a sense of imposing dread. All &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them will roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon dying, your target's dread will then manifest as a shadow under your command.&lt;br&gt;&lt;br&gt;Targeting a corpse during combat will instead immediately raise a Shadow servant until the end of your current combat encounter.</content>
+	<content contentuid="hd646ac32g6ba7g4baagb3beg2ddef1a43dac" version="2">Submit your target to a malicious onslaught of spite, filling them with a sense of imposing dread. All &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them will roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon dying, your target's dread will then manifest as a shadow under your command.&lt;br&gt;&lt;br&gt;Targeting a corpse during combat will instead immediately raise a Shadow servant until the end of your current combat encounter. Shadows are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 	<content contentuid="h32f822f1g557fg4f77g9e90gbe3d36acc9eb" version="1">Spiteful Suffering</content>
-	<content contentuid="h058b7513g6ddcg4f92gafc7gd608373e8c13" version="1">Affected creature suffers from an imposing sense of dread. &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon dying, the affected creature's dread will then manifest as a shadow, allied to whomever applied this condition.</content>
+	<content contentuid="h058b7513g6ddcg4f92gafc7gd608373e8c13" version="1">Affected creature suffers from an imposing sense of dread. &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; made against them roll with &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;. Upon dying, the affected creature's dread will then manifest as a shadow, allied to whomever applied this condition. Shadows are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 
 	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8afasdfs" version="1">Vicious Condemnation</content>
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4d2398u" version="3">Upon killing a target, you inflict upon them a terrible curse, shattering their mind into fragments which become trapped within your equipped weapons and cause you to deal an additional [1]. While their mind remains trapped in your weapon, dealing damage with it may &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frighten&lt;/LSTag&gt; other creatures.</content>
@@ -293,11 +293,11 @@
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1sdfsdddfsdd" version="3">&lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; enemies deal the maximum amount of damage possible when dealing damage to another creature.</content>
 
 	<content contentuid="h927a9140g56d3g460fg9314g40fbd232b361" version="2">Aura of Hate</content>
-	<content contentuid="h0c2bc9a2g8e6bg4550ga8b9gfba7b2e8462d" version="7">During combat, you emit an aura which grants yourself, &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; creatures, and allied Undead a bonus to all damage dealt equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="h0c2bc9a2g8e6bg4550ga8b9gfba7b2e8462d" version="7">During combat, you emit an aura which grants yourself, &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; creatures, and allied Undead a bonus to all damage dealt to non-allied targets equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
 	<content contentuid="h8aa4cdf9ga9e7g46d5gb7a1gb32901defe3c" version="2">Aura of Hate</content>
-	<content contentuid="h1b60bee0geb62g4184ga679g1e7f6de42926" version="3">Affected creature is emitting an aura across [1] which grants this creature, &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; creatures, and allied Undead an additional [2] to all damage dealt.</content>
+	<content contentuid="h1b60bee0geb62g4184ga679g1e7f6de42926" version="3">Affected creature is emitting an aura across [1] which grants this creature, &lt;LSTag Type="Status" Tooltip="UNHOLY_SUBJUGATION"&gt;Subjugated&lt;/LSTag&gt; creatures, and allied Undead an additional [2] to all damage dealt to non-allied targets.</content>
 	<content contentuid="hfa4ad8dfge9efg4f7fg8bc2g664c49a83964" version="2">Aura of Hate</content>
-	<content contentuid="hb90cac90gf224g4f5dg85aeg85fb08a983d9" version="3">Deals an additional [2] while within [1] of the Paladin responsible for this status.</content>
+	<content contentuid="hb90cac90gf224g4f5dg85aeg85fb08a983d9" version="3">Deals an additional [2] to non-allied targets while within [1] of the Paladin responsible for this status.</content>
 
 	<content contentuid="h298b9a29g5657g4aa9gaad6gad3a8af1a141" version="1">Oathbreaker Supreme</content>
 	<content contentuid="hb2400634gf3e4g46f1gb93dg1330e4asd141" version="3">Afflicting a creature with &lt;LSTag Type="Status" Tooltip="SPITEFUL_SUFFERING_1"&gt;Spiteful Suffering&lt;/LSTag&gt; now &lt;LSTag Type="Status" Tooltip="FEARED"&gt;Terrifies&lt;/LSTag&gt; them for one turn.</content>
@@ -415,10 +415,10 @@
 	<content contentuid="fe6f4159abae42539029e284001d12de0000d" version="3">Upon taking damage, become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to that type of damage for three turns.</content>
 
 	<content contentuid="fe6f4159abae42539029e284001d12de00005" version="3">Holy Smites</content>
-	<content contentuid="fe6f4159abae42539029e284001d12de0000e" version="3">Once per turn, upon damaging another creature with one of your Smites, holy energy erupts around you, healing allies within [1] of you. The amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; restored scales with the strength of your Smites.</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de0000e" version="3">Upon damaging another creature with one of your Smites, holy energy erupts around you, healing allies within [1] of you. The amount of &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; restored scales with the strength of your Smites.</content>
 
 	<content contentuid="fe6f4159abae42539029e284001d12de00006" version="3">Holy Wrath</content>
-	<content contentuid="fe6f4159abae42539029e284001d12de0000f" version="3">Once per turn, upon damaging another creature with one of your Smites, gain &lt;LSTag Type="Status" Tooltip="DIVINE_FAVOR"&gt;Divine Favor&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="SHIELD_OF_FAITH"&gt;Shield of Faith&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de0000f" version="3">Upon damaging another creature with one of your Smites, gain &lt;LSTag Type="Status" Tooltip="DIVINE_FAVOR"&gt;Divine Favor&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="SHIELD_OF_FAITH"&gt;Shield of Faith&lt;/LSTag&gt; for three turns.</content>
 
 	<content contentuid="fe6f4159abae42539029e284001d12de00007" version="3">Infallible Beacon</content>
 	<content contentuid="fe6f4159abae42539029e284001d12de0000g" version="3">During combat, emit an aura across [1], forcing a -5 penalty on enemy &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; when made against anyone but you. While active, you are considered to be a preferred target.</content>
@@ -447,7 +447,7 @@
 	<content contentuid="fe6f4159abae42539029e284001d12deafiow" version="3">Affected creature will recover one &lt;LSTag Type="ActionResource" Tooltip="ChannelOath"&gt;Channel Oath&lt;/LSTag&gt; charge when this status expires.</content>
 
 	<content contentuid="fe6f4159abae42539029e284001d12de00010" version="3">Principle of Belief</content>
-	<content contentuid="fe6f4159abae42539029e284001d12de0000j" version="3">When dealing damage to Aberrations, Fey, Fiends, or Undead, you deal an additional +12 damage. This bonus does not apply to damage dealt with your off-hand weapon.</content>
+	<content contentuid="fe6f4159abae42539029e284001d12de0000j" version="3">When dealing damage to non-allied Aberrations, Fey, Fiends, or Undead, you deal an additional +12 damage. This bonus does not apply to damage dealt with your off-hand weapon.</content>
 
 	<content contentuid="h3e63e6aag19b0g400agb559g2e125483261f" version="3">Repel the Damned</content>
 	<content contentuid="h90dc6c92g4bdag440cg8119g6a95df4567cf" version="3">All enemies within [1] of you take damage at the start of their turns equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;. The type of damage dealt changes depending on your choice of subclass.</content>

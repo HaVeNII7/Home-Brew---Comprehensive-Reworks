@@ -751,6 +751,17 @@ data "SpellType" "Shout"
 using "Shout_MirrorImage"
 data "SpellAnimation" "5e57443f-284e-47b2-915e-5b6417db269c,,;d8b7f668-db2b-43b0-9707-5da2ed2cf27e,,;7521e279-1bb3-4105-b32d-8206234836a3,,;d172e037-7041-4352-9a20-5f4b185f9ef1,,;,,;,,;,,;,,;,,"
 
+new entry "Shout_FOR_Ogre_Blur"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Blur"
+data "Cooldown" "OncePerCombat"
+data "CastTextEvent" "Cast"
+data "SpellAnimation" "5e57443f-284e-47b2-915e-5b6417db269c,,;d8b7f668-db2b-43b0-9707-5da2ed2cf27e,,;7521e279-1bb3-4105-b32d-8206234836a3,,;d172e037-7041-4352-9a20-5f4b185f9ef1,,;,,;,,;,,;,,;,,"
+data "SpellAnimationIntentType" "Aggressive"
+data "Sheathing" "DontChange"
+data "AIFlags" "CanNotUse"
+
 <!--ORTHON-->
 
 new entry "Shout_InvisibilityField_Orthon"
@@ -819,6 +830,31 @@ data "SpellAnimationIntentType" "Aggressive"
 data "Requirements" ""
 data "CastEffect" "1d671f4e-0a90-4e01-a2c9-e76743e207d9"
 data "Sheathing" "Sheathed"
+
+<!--SHAPE SHIFTER-->
+
+new entry "Shout_Shapechanger"
+type "SpellData"
+data "SpellType" "Shout"
+data "Icon" "PassiveFeature_Shapechanger"
+data "SpellAnimation" "dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;7c194893-2879-4afe-84dc-9ea842fe0a43,,;a000af58-a7c7-48d4-a746-c19242ef00ac,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,,"
+data "VerbalIntent" "Utility"
+data "SpellStyleGroup" "Class"
+data "AIFlags" "CanNotUse"
+
+new entry "Shout_Shapechanger_Imp"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Shapechanger"
+data "Sheathing" "Sheathed"
+data "AIFlags" "CanNotUse"
+
+new entry "Shout_Shapechanger_Werewolf"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Shapechanger"
+data "Sheathing" "DontChange"
+data "AIFlags" "CanNotUse"
 
 <!--SHADOW MASTIFF-->
 

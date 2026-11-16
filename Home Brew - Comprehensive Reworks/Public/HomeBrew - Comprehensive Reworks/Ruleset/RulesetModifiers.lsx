@@ -243,10 +243,61 @@
                 </node>
                 <node id="RulesetModifier">
                     <attribute id="Default" type="LSString" value="false"/>
+                    <attribute id="Description" type="TranslatedString" handle="hb80200a7g8e69g4f66gbc18gs6666dcustom" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h5e2183f0g1d9ag4726g86ffg832d5fcustom" version="5"/>
+                    <attribute id="EditableDuringGame" type="bool" value="true"/>
                     <attribute id="LoadModule" type="LSString" value="Mythic"/>
                     <attribute id="Name" type="LSString" value="MYTHIC_STATS"/>
                     <attribute id="RulesetModifierType" type="uint8" value="4"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
                     <attribute id="UUID" type="guid" value="b843263f-869c-4a21-960d-867091e8bd04"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="false"/>
+                    <attribute id="Description" type="TranslatedString" handle="hb80200a7g8e69g4f66gbc18gs6666dcdeath" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h5e2183f0g1d9ag4726g86ffg832d5fcdeath" version="5"/>
+                    <attribute id="EditableDuringGame" type="bool" value="true"/>
+                    <attribute id="LoadModule" type="LSString" value="Mythic"/>
+                    <attribute id="Name" type="LSString" value="MYTHIC_DEATH"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="4"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="7b71f512-6622-4b12-a33b-72cc76491de6"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="12"/>
+                    <attribute id="Description" type="TranslatedString" handle="hafff5523g8fbag49c3g98fcg54f1levelcap" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h748905a7g11d7g46a7ga281g5141levelcap" version="1"/>
+                    <attribute id="Max" type="float" value="20"/>
+                    <attribute id="Min" type="float" value="1"/>
+                    <attribute id="Name" type="LSString" value="MAX_LEVEL_ACT_1"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="2"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="Step" type="float" value="1"/>
+                    <attribute id="UUID" type="guid" value="2661c101-4f1f-46f9-86fd-ac21bc85611c"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="12"/>
+                    <attribute id="Description" type="TranslatedString" handle="hafff5523g8fbag49c3g98fcg54f2levelcap" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h748905a7g11d7g46a7ga281g5142levelcap" version="1"/>
+                    <attribute id="Max" type="float" value="20"/>
+                    <attribute id="Min" type="float" value="1"/>
+                    <attribute id="Name" type="LSString" value="MAX_LEVEL_ACT_2"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="2"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="Step" type="float" value="1"/>
+                    <attribute id="UUID" type="guid" value="8bfb10d9-de41-4c89-9912-76f22cac71fe"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="12"/>
+                    <attribute id="Description" type="TranslatedString" handle="hafff5523g8fbag49c3g98fcg54f3levelcap" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h748905a7g11d7g46a7ga281g5143levelcap" version="1"/>
+                    <attribute id="Max" type="float" value="20"/>
+                    <attribute id="Min" type="float" value="1"/>
+                    <attribute id="Name" type="LSString" value="MAX_LEVEL_ACT_3"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="2"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="Step" type="float" value="1"/>
+                    <attribute id="UUID" type="guid" value="69c018a6-a20e-4cd2-a18e-d37065097cf9"/>
                 </node>
             </children>
         </node>

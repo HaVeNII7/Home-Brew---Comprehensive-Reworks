@@ -36,9 +36,12 @@ local function Find(widget,name)
     if ok and v then return v end
     return nil
 end
+-- This traversal is intentionally strict about save ownership; reuse only
+-- immutable child-accessor metadata, not UI objects or campaign identities.
+local HB_SAVE_CHILD_ACCESSORS={{'ChildrenCount','Child'},{'VisualChildrenCount','VisualChild'}}
 local function Children(widget)
     local items,seen={},{}
-    for _,spec in ipairs({{'ChildrenCount','Child'},{'VisualChildrenCount','VisualChild'}}) do
+    for _,spec in ipairs(HB_SAVE_CHILD_ACCESSORS) do
         local n=math.min(tonumber(Read(widget,spec[1])) or 0,150)
         for i=0,n do
             local ok,child=pcall(function() return widget[spec[2]](widget,i) end)
@@ -227,7 +230,10 @@ local function Scan()
     local button=FindDeep(widget,'OverwriteSaveBtn') or FindDeep(widget,'OverwriteBtn')
     if not button then
         if last~='overwrite button not found' then
-            last='overwrite button not found';pcall(Ext.IO.SaveFile,'HomeBrew/Diagnostics/HB_SaveOverwriteGuard_Diagnostics.txt',last)
+            last='overwrite button not found'
+            if _G.HB_DebugDiagnostics == true then
+                pcall(Ext.IO.SaveFile,'HomeBrew/Diagnostics/HB_SaveOverwriteGuard_Diagnostics.txt',last)
+            end
         end
         return
     end
@@ -260,8 +266,12 @@ local function Scan()
     if signature~=last then
         last=signature
         local detail='HB overwrite guard: '..signature
-        pcall(Ext.IO.SaveFile,'HomeBrew/Diagnostics/HB_SaveOverwriteGuard_Diagnostics.txt',detail)
-        if Ext.Utils and Ext.Utils.Print then Ext.Utils.Print('[HB Save] '..detail) end
+        if _G.HB_DebugDiagnostics == true then
+            pcall(Ext.IO.SaveFile,'HomeBrew/Diagnostics/HB_SaveOverwriteGuard_Diagnostics.txt',detail)
+        end
+        if _G.HB_DebugConsole == true and Ext.Utils and Ext.Utils.Print then
+            Ext.Utils.Print('[HB Save] '..detail)
+        end
     end
 end
 Ext.Events.Tick:Subscribe(function()
@@ -277,12 +287,16 @@ Ext.Events.Tick:Subscribe(function()
         if not ok and tostring(err)~=lastLog then
             lastLog=tostring(err)
             pcall(Ext.IO.SaveFile,'HomeBrew/Diagnostics/HB_SaveOverwriteGuard_Diagnostics.txt','Guard error (overwrite kept locked): '..lastLog)
+            if Ext.Utils and Ext.Utils.Print then
+                Ext.Utils.Print('[HB Save] Guard error (overwrite kept locked): '..lastLog)
+            end
         end
     end
-    if Ext.UI.Defer then
+    -- Never fall back to non-deferred native UI traversal on Tick.
+    if Ext.UI and Ext.UI.Defer then
         local ok=pcall(Ext.UI.Defer,Execute)
-        if not ok then Execute() end
+        if not ok then busy=false end
     else
-        Execute()
+        busy=false
     end
 end)

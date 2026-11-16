@@ -39,7 +39,7 @@
 	<content contentuid="hfcae7ee4ga159g4d66g9b6fgfc08e6598fe4" version="2">Displace: Falling Damage</content>
 	<content contentuid="hf74ce2cdg109cg4ceega38eg80c841a052e8" version="3">Creatures suffering falling damage because of your actions take an additional [1].</content>
 	<content contentuid="h8a26487cg5e85g4e73ga897gcc99388233ca" version="2">Displace</content>
-	<content contentuid="he841314egb916g4777g8923gd16483742d23" version="6">Creatures suffering falling damage because of the actions of who applied this status take an additional [1].</content>
+	<content contentuid="he841314egb916g4777g8923gd16483742d23" version="6">Creatures suffering falling damage because of the actions of whoever applied this status take an additional [1].</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">REPULSOR</content>
 	<content contentuid="h00edf05cgb29cg4037g9f2cg780dfce80b7a" version="1">Repulsor</content>
@@ -120,7 +120,7 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">CULL THE WEAK</content>
 	<content contentuid="h4c2ba204g19acg477cg98e9g1d755242996e" version="2">Cull the Weak</content>
-	<content contentuid="hfd385480ga7c4g4d30gbaffg29423289561e" version="7">When you bring a creature down to fewer &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; than your number of chosen Illithid Powers multiplied by four, it instantly dies.</content>
+	<content contentuid="hfd385480ga7c4g4d30gbaffg29423289561e" version="7">When you bring a creature down to &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; equal to your number of chosen Illithid Powers multiplied by four or less, it instantly dies.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">DEVOURED REGENERATION</content>
 	<content contentuid="h342ffc0cg4abcg43e1g864eg78baa65ec337" version="2">Devoured Regeneration</content>
@@ -132,11 +132,11 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">PSIONIC OVERLOAD</content>
 	<content contentuid="h2d18417cgc993g4e52g914cgf1e205a824cb" version="2">Psionic Overload</content>
-	<content contentuid="h74504e19g746bg4867gb7d5g63a74cd99dd0" version="4">When dealing damage, you deal an additional [1].</content>
+	<content contentuid="h74504e19g746bg4867gb7d5g63a74cd99dd0" version="4">When dealing damage to a non-allied target, you deal an additional [1].</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">MIND SANCTUARY</content>
 	<content contentuid="h3557fe72g2249g4b24ga497gb05417249e82" version="2">Mind Sanctuary</content>
-	<content contentuid="hb86adc61g8cefg4121gb8cbgfa8d79b09208" version="5">Once per combat, sculpt a magical nexus that &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hastens&lt;/LSTag&gt; creatures within it.</content>
+	<content contentuid="hb86adc61g8cefg4121gb8cbgfa8d79b09208" version="5">Once per combat, sculpt a magical nexus that &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hastens&lt;/LSTag&gt; creatures within it for one turn.</content>
 	<content contentuid="h1eae02fagf8eeg4f63g9b3bgd031a52eb312" version="2">Mind Sanctuary Aura</content>
 	<content contentuid="hda4eb1b3gce2ag443cg93c7gdaea828b2f72" version="6">Anyone within the &lt;LSTag Type="Spell" Tooltip="Target_TAD_MindSanctuary"&gt;Mind Sanctuary&lt;/LSTag&gt; becomes &lt;LSTag Type="Status" Tooltip="HASTE"&gt;Hastened&lt;/LSTag&gt;.</content>
 	<content contentuid="hfbc71a17g062dg4270gb5c9g389f726c3a12" version="3">Within the Mind Sanctuary</content>
@@ -144,19 +144,17 @@
 
 <content contentuid="0000000000000000000000000000000000000" version="1">SHIELD OF THRALLS</content>
 	<content contentuid="hf667134dge956g466dg8ba4g0834c024ffd2" version="2">Shield of Thralls</content>
-	<content contentuid="hce1927d0g93e8g40b1gb53age1c909f8815c" version="7">Once per combat, conjure a volatile shield around yourself or an ally, granting the target 24 &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
-	<content contentuid="h3fb319d8ge95bg4f3eg903cgf68aef23ccaa" version="2">Volatile Shield</content>
-	<content contentuid="hd7897ac2g249fg406fg9fffg07555bc94fe0" version="3">Affected creature is wreathed in a volitile shield providing &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
+	<content contentuid="hce1927d0g93e8g40b1gb53age1c909f8815c" version="7">Once per combat, conjure a shield around yourself or an ally, granting the target 24 &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
+	<content contentuid="h3fb319d8ge95bg4f3eg903cgf68aef23ccaa" version="2">Shield of Thralls</content>
+	<content contentuid="hd7897ac2g249fg406fg9fffg07555bc94fe0" version="3">Affected creature is wreathed in a shield providing &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
 	<content contentuid="h89a62919g2161g4ebbga62bg62838323dd9b" version="1">Empowered Shield of Thralls</content>
-	<content contentuid="hc713e9d7g2933g4fecg8fafg45d64d301d7e" version="1">Conjure a volatile shield around yourself or an ally, granting the target 24 &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
+	<content contentuid="hc713e9d7g2933g4fecg8fafg45d64d301d7e" version="1">Conjure a shield around yourself or an ally, granting the target 24 &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hit Points&lt;/LSTag&gt;. Upon losing them, the shield bursts, &lt;LSTag Type="Status" Tooltip="STUNNED"&gt;Stunning&lt;/LSTag&gt; enemies within [1].</content>
 	
 <content contentuid="0000000000000000000000000000000000000" version="1">PERILOUS STAKES</content>
 	<content contentuid="h97567157gea8eg43f4g942cgd98961fd7adb" version="2">Perilous Stakes</content>
-	<content contentuid="h443d376dg292ag4338g9fb4g8383b67db13b" version="3">Once per combat, strip a creature of all &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; for three turns. In addition, they are immediately stripped of their &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION"&gt;Lockdown Immunity&lt;/LSTag&gt;, if it is currently active.</content>
-	<content contentuid="h714ed70fg1c3dg4f80g8a54g776ff1697fcb" version="2">Perilous Stakes</content>
-	<content contentuid="hbb769d0dg2061g433fga434gd0f9792a2950" version="2">Affected creature has been stripped of all &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt;.</content>
+	<content contentuid="h443d376dg292ag4338g9fb4g8383b67db13b" version="3">Once per combat, strip a creature of their &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION"&gt;Lockdown Immunity&lt;/LSTag&gt;, if it is currently active.</content>
 	<content contentuid="hd9f7c754g438bg4488gafcegeded1ce68a1d" version="1">Empowered Perilous Stakes</content>
-	<content contentuid="h80c4be40g2711g45b6g8ef5g73c4fb2e7293" version="7">Strip a creature of all &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; for three turns.</content>
+	<content contentuid="h80c4be40g2711g45b6g8ef5g73c4fb2e7293" version="7">Strip a creature of their &lt;LSTag Type="Status" Tooltip="LOCKDOWN_CONDITION"&gt;Lockdown Immunity&lt;/LSTag&gt;, if it is currently active.</content>
 
 <content contentuid="0000000000000000000000000000000000000" version="1">FLAY MIND</content>
 	<content contentuid="ha002841dg16b3g4217g8a6cg4bf54d1f9133" version="2">Flay Mind</content>

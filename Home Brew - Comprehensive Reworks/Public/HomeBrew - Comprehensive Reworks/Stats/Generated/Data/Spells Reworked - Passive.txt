@@ -6,7 +6,7 @@ new entry "ShortResting"
 type "PassiveData"
 data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnShortRest"
-data "StatsFunctors" "IF(CheckRulesetModifier('1d9a608a-3885-4d48-8816-458e40d1136e', false)):RegainHitPoints(MaxHP/2);IF(CheckRulesetModifier('1d9a608a-3885-4d48-8816-458e40d1136e', true)):RegainHitPoints(MaxHP);RemoveStatus(GAINSORCERYPOINT_1);RemoveStatus(GAINSORCERYPOINT_2);RemoveStatus(GAINSORCERYPOINT_3);RemoveStatus(GAINSORCERYPOINT_4);RemoveStatus(GAINSORCERYPOINT_5);RemoveStatus(GAINSORCERYPOINT_6);RemoveStatus(LOSESORCERYPOINT_1);RemoveStatus(LOSESORCERYPOINT_2);RemoveStatus(LOSESORCERYPOINT_3);RemoveStatus(LOSESORCERYPOINT_4);RemoveStatus(LOSESORCERYPOINT_5);RemoveStatus(LOSESORCERYPOINT_6);RemoveStatus(GAINSPELLSLOT_1);RemoveStatus(GAINSPELLSLOT_2);RemoveStatus(GAINSPELLSLOT_3);RemoveStatus(GAINSPELLSLOT_4);RemoveStatus(GAINSPELLSLOT_5);RemoveStatus(GAINSPELLSLOT_6);RemoveStatus(LOSESPELLSLOT_1);RemoveStatus(LOSESPELLSLOT_2);RemoveStatus(LOSESPELLSLOT_3);RemoveStatus(LOSESPELLSLOT_4);RemoveStatus(LOSESPELLSLOT_5);RemoveStatus(LOSESPELLSLOT_6);RemoveStatus(SORCERYPOINTS_1);RemoveStatus(SORCERYPOINTS_2);RemoveStatus(PHILOSOPHERS_STONE_USED);RemoveStatus(EXHAUSTION_1);RemoveStatus(EXHAUSTION_2);RemoveStatus(EXHAUSTION_3);RemoveStatus(EXHAUSTION_4);RemoveStatus(EXHAUSTION_5);RemoveStatus(EXHAUSTION_6);RemoveStatus(EXHAUSTION_7);RemoveStatus(EXHAUSTION_8);RemoveStatus(EXHAUSTION_9);RemoveStatus(EXHAUSTION_10);RemoveStatus(STRESS_1);RemoveStatus(STRESS_2);RemoveStatus(STRESS_3);RemoveStatus(STRESS_4);RemoveStatus(STRESS_5);RemoveStatus(STRESS_6);RemoveStatus(STRESS_7);RemoveStatus(STRESS_8);RemoveStatus(STRESS_9);RemoveStatus(STRESS_10);RemoveStatus(TOXICITY_1);RemoveStatus(TOXICITY_2);RemoveStatus(TOXICITY_3);RemoveStatus(TOXICITY_4);RemoveStatus(TOXICITY_5);RemoveStatus(TOXICITY_6);RemoveStatus(TOXICITY_7);RemoveStatus(TOXICITY_8);RemoveStatus(TOXICITY_9);RemoveStatus(TOXICITY_10)"
+data "StatsFunctors" "ResetCooldowns(UntilShortRest);ResetCooldowns(UntilShortRestPerItem);ResetCooldowns(OncePerShortRestPerItem);IF(CheckRulesetModifier('1d9a608a-3885-4d48-8816-458e40d1136e', false)):RegainHitPoints(MaxHP/2);IF(CheckRulesetModifier('1d9a608a-3885-4d48-8816-458e40d1136e', true)):RegainHitPoints(MaxHP);RestoreResource(WeaponActionPoint,100%,0);RestoreResource(Rage,100%,0);RestoreResource(BardicInspiration,100%,0);RestoreResource(ChannelDivinity,100%,0);RestoreResource(WildShape,100%,0);RestoreResource(LuckPointCat,100%,0);RestoreResource(WildShapeRage,100%,0);RestoreResource(FungalInfestationCharge,100%,0);RestoreResource(StarMapPoint,100%,0);RestoreResource(CosmicOmen,100%,0);RestoreResource(SuperiorityDie,100%,0);RestoreResource(KiPoint,100%,0);RestoreResource(ChannelOath,100%,0);RestoreResource(WarPriestActionPoint,100%,0);RestoreResource(NaturalRecoveryPoint,100%,0);RestoreResource(LuckPoint,100%,0);RestoreResource(SorceryPoint,100%,0);RestoreResource(WarlockSpellSlot,100%,1);RestoreResource(WarlockSpellSlot,100%,2);RestoreResource(WarlockSpellSlot,100%,3);RestoreResource(WarlockSpellSlot,100%,4);RestoreResource(WarlockSpellSlot,100%,5);RestoreResource(WarlockSpellSlot,100%,6);RestoreResource(ArcaneRecoveryPoint,100%,0);RestoreResource(FirearmAmmo,100%,0);RestoreResource(InfusionSlots,100%,0);RestoreResource(DualWield,100%,0);RestoreResource(Shieldbearer,100%,0);RestoreResource(Interrupt_TAD_PsionicDominance_Charge,100%,0);RestoreResource(Interrupt_LuckOfTheFarRealms_Charge,100%,0);RestoreResource(FlameArrows,100%,0);RestoreResource(MinuteMeteors,100%,0);RemoveStatus(EXHAUSTION_1);RemoveStatus(EXHAUSTION_2);RemoveStatus(EXHAUSTION_3);RemoveStatus(EXHAUSTION_4);RemoveStatus(EXHAUSTION_5);RemoveStatus(EXHAUSTION_6);RemoveStatus(EXHAUSTION_7);RemoveStatus(EXHAUSTION_8);RemoveStatus(EXHAUSTION_9);RemoveStatus(EXHAUSTION_10);RemoveStatus(STRESS_1);RemoveStatus(STRESS_2);RemoveStatus(STRESS_3);RemoveStatus(STRESS_4);RemoveStatus(STRESS_5);RemoveStatus(STRESS_6);RemoveStatus(STRESS_7);RemoveStatus(STRESS_8);RemoveStatus(STRESS_9);RemoveStatus(STRESS_10);RemoveStatus(TOXICITY_1);RemoveStatus(TOXICITY_2);RemoveStatus(TOXICITY_3);RemoveStatus(TOXICITY_4);RemoveStatus(TOXICITY_5);RemoveStatus(TOXICITY_6);RemoveStatus(TOXICITY_7);RemoveStatus(TOXICITY_8);RemoveStatus(TOXICITY_9);RemoveStatus(TOXICITY_10)"
 
 <!---------------------------------------------------------------------------------------------------CONDITIONS--------------------------------------------------------------------------------------------------->
 
@@ -755,7 +755,7 @@ new entry "MAG_ChargedLightning_LightningDamage_Passive"
 type "PassiveData"
 data "DisplayName" "h32201734g34b3g4abbgab21gb325fd183200;2"
 data "Properties" "IsHidden"
-data "Boosts" "IF(Enemy() and HasDamageDoneForType(DamageType.Lightning,context.Target) and not HasStatus('MAG_CHARGED_LIGHTNING_LIGHTNING_DISCHARGE_ONCE_TECHNICAL', context.Source)):DamageBonus(1d4, Lightning)"
+data "Boosts" "IF(not Ally() and HasDamageDoneForType(DamageType.Lightning,context.Target) and not HasStatus('MAG_CHARGED_LIGHTNING_LIGHTNING_DISCHARGE_ONCE_TECHNICAL', context.Source)):DamageBonus(1d4, Lightning)"
 
 new entry "MAG_ChargedLightning_LightningDischarge_Passive"
 type "PassiveData"
@@ -799,7 +799,7 @@ data "Description" "hf9a3c136gfa53g4170g9eeega20ced9c9111;4"
 data "DescriptionParams" "DealDamage(4, Necrotic)"
 data "Icon" "Action_Monster_Bulette_Bite"
 data "Properties" "Highlighted"
-data "Boosts" "UnlockSpell(Target_LOW_Astarion_VampireAscendant);UnlockSpell(Shout_LOW_MistyEscape_Astarion);IF(Enemy() and not HasStatus('MULTIHIT_BLOCKER', context.Source) and IsSpell() and not IsCantrip()):DamageBonus(4,Necrotic);Resistance(Necrotic,Immune)"
+data "Boosts" "UnlockSpell(Target_LOW_Astarion_VampireAscendant);UnlockSpell(Shout_LOW_MistyEscape_Astarion);IF(not Ally() and not HasStatus('MULTIHIT_BLOCKER', context.Source) and IsSpell() and not IsCantrip()):DamageBonus(4,Necrotic);Resistance(Necrotic,Immune)"
 
 <!--VOLOS EYE-->
 
@@ -808,8 +808,10 @@ type "PassiveData"
 data "DisplayName" "h232cc24ega0f9g4f4dgb5d3g46ab59579d4b;2"
 data "Description" "h9d8550edg6d54g4113gbbdcge6d99b8b2a2f;4"
 data "Icon" "Item_DEN_VoloOperation_ErsatzEye"
+data "Properties" "Highlighted"
+data "Boosts" "IF(CheckRulesetModifier('7b71f512-6622-4b12-a33b-72cc76491de6', true)):RollBonus(Attack,-1d4)"
 data "StatsFunctorContext" "OnCreate;OnLongRest"
-data "StatsFunctors" "IF(not HasStatus('SEE_INVISIBILITY', context.Source)):ApplyStatus(SELF,SEE_INVISIBILITY,100,-1)"
+data "StatsFunctors" "IF(not HasStatus('SEE_INVISIBILITY', context.Source)):ApplyStatus(SELF,SEE_INVISIBILITY,100,-1);IF(not HasStatus('SEE_INVISIBILITY', context.Source)):ApplyStatus(SELF,SEE_INVISIBILITY,100,-1)"
 
 <!---------------------------------------------------------------------------------------------------CANTRIPS--------------------------------------------------------------------------------------------------->
 
@@ -874,10 +876,10 @@ new entry "Feline_Frenzy"
 type "PassiveData"
 data "DisplayName" "39f18b02804848b18a0b8dbbf2c3861300z5;1"
 data "Description" "39f18b02804848b18a0b8dbbf2c3861300ze;4"
-data "Icon" "Spell_Conjuration_FlockOfFamiliars"
+data "Icon" "Elemental_Cats"
 data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnDamage"
-data "Conditions" "IsKillingBlow() and Character() and not Self() and not Summon() and not SpellId('Projectile_FlamingFrenzy') and not SpellId('Projectile_FlamingFrenzy_2') and not SpellId('Projectile_FlamingFrenzy_3') and not SpellId('Projectile_FlamingFrenzy_4') and not SpellId('Projectile_FlamingFrenzy_5') and not SpellId('Projectile_FlamingFrenzy_6')"
+data "Conditions" "IsKillingBlow() and Character() and not Self() and not Summon() and not SpellId('Projectile_FlamingFrenzy') and not SpellId('Projectile_FlamingFrenzy_2') and not SpellId('Projectile_FlamingFrenzy_3') and not SpellId('Projectile_FlamingFrenzy_4') and not SpellId('Projectile_FlamingFrenzy_5') and not SpellId('Projectile_FlamingFrenzy_6') and not SpellId('Projectile_ShockingFrenzy') and not SpellId('Projectile_ShockingFrenzy_2') and not SpellId('Projectile_ShockingFrenzy_3') and not SpellId('Projectile_ShockingFrenzy_4') and not SpellId('Projectile_ShockingFrenzy_5') and not SpellId('Projectile_ShockingFrenzy_6') and not SpellId('Projectile_FreezingFrenzy') and not SpellId('Projectile_FreezingFrenzy_2') and not SpellId('Projectile_FreezingFrenzy_3') and not SpellId('Projectile_FreezingFrenzy_4') and not SpellId('Projectile_FreezingFrenzy_5') and not SpellId('Projectile_FreezingFrenzy_6')"
 data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
 
 new entry "Feline_Frenzy_2"
@@ -904,6 +906,66 @@ new entry "Feline_Frenzy_6"
 type "PassiveData"
 using "Feline_Frenzy"
 data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_6,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Lightning"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_LIGHTNING,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Lightning_2"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_LIGHTNING_2,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Lightning_3"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_LIGHTNING_3,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Lightning_4"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_LIGHTNING_4,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Lightning_5"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_LIGHTNING_5,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Lightning_6"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_LIGHTNING_6,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Cold"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_COLD,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Cold_2"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_COLD_2,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Cold_3"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_COLD_3,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Cold_4"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_COLD_4,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Cold_5"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_COLD_5,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
+
+new entry "Feline_Frenzy_Cold_6"
+type "PassiveData"
+using "Feline_Frenzy"
+data "StatsFunctors" "GROUND:Summon(174c3568-18f3-403d-b24c-55d84f5d45d1, UntilLongRest,,,,FELINEFRENZY_DEATH_COLD_6,SHADOWCURSE_SUMMON_CHECK,UNSUMMON_ABLE)"
 
 <!--FIND FAMILIAR-->
 
@@ -1229,6 +1291,18 @@ type "PassiveData"
 using "Frostflame_ArmamentFire"
 data "StatsFunctors" "CreateExplosion(Projectile_FrostflameFire_6, context.Target)"
 data "DescriptionParams" "DealDamage(6d12,Fire);Distance(3)"
+
+<!--GAPING WOUNDS-->
+
+new entry "GapingWound_Passive"
+type "PassiveData"
+data "DisplayName" "h6c59bf1dg68d1g42baga2d0gda475d321741;3"
+data "Description" "h158578d5gc1feg4b37g848fg1bd3a81f2ab1;4"
+data "DescriptionParams" "DealDamage(1, Piercing)"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "IsAttack() and (HasAttackDamageDoneForType(DamageType.Bludgeoning) or HasAttackDamageDoneForType(DamageType.Piercing) or HasAttackDamageDoneForType(DamageType.Slashing))"
+data "StatsFunctors" "ApplyStatus(GAPING_WOUND_DAMAGE, 100, 0);ApplyStatus(PASSIVE_GAPING_WOUND_ATTACK,100,0)"
 
 <!--HASTE-->
 

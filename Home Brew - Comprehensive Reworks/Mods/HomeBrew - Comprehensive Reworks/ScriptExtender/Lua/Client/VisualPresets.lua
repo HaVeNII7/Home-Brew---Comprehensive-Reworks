@@ -11,6 +11,7 @@ local raw,revision,queued,nextUpdate=nil,0,false,0
 local request,pendingWrite,verification
 local state={Mode='',Name='',Selected=-1,Status='',Confirm=false,Notice='',NoticeUntil=0}
 local messages={'HomeBrew visual presets v53 - Magic Mirror host + native page discovery'}
+local reportDirty, nextReportWrite = false, 0
 local defer=Ext.UI and Ext.UI.Defer
 local settledOwner,settledPasses,lastDiscovery=nil,0,nil
 local presetPageActive=false
@@ -30,7 +31,20 @@ local function Log(message,context)
         end
     end
     while #messages>100 do table.remove(messages,2) end
-    pcall(Ext.IO.SaveFile,REPORT,table.concat(messages,'\n'))
+    -- Keep detailed logs available without synchronously rewriting the
+    -- diagnostic file on every ordinary UI update. LastLoad is still written
+    -- explicitly when a preset load completes or verification fails.
+    reportDirty = true
+end
+
+local function LipLog(label,context,preset)
+    local ok,result=pcall(Data.LipTrace,context,preset)
+    Log(label..' '..tostring(ok and result or ('unavailable: '..result)))
+end
+
+local function HornLog(label,context,preset)
+    local ok,result=pcall(Data.HornTrace,context,preset)
+    Log(label..' '..tostring(ok and result or ('unavailable: '..result)))
 end
 
 local function ChinTrace(context)
@@ -98,7 +112,53 @@ end
 if #missing>0 then Log('Preset controls cannot start; missing: '..table.concat(missing,', '));return end
 Log(defer and 'Using deferred UI updates.' or 'Using SE32 client-tick UI updates (same scheduling as HB difficulty controls).')
 
+local CHILD_ACCESSORS={{'ChildrenCount','Child'},{'VisualChildrenCount','VisualChild'}}
+
+-- Normal CC/MM state widgets are direct children of ContentRoot. Check
+-- those first, without a recursive Lua walk or retained native references.
+-- Retain the old complete traversal when a modded/controller layout mounts
+-- any of the three widgets deeper in the visual tree.
+local function DirectMountedWidgets(root)
+    local content=Data.Read(root,'ContentRoot')
+    if not content and root then
+        local ok,found=pcall(function() return root:Find('ContentRoot') end)
+        if ok then content=found end
+    end
+    if not content then return end
+    local total=Data.Read(content,'ChildrenCount')
+    if type(total)~='number' or total<3 or total>500 then return end
+    local pages,hosts,footers={},{},{}
+    for index=1,total do
+        local ok,node=pcall(function() return content:Child(index) end)
+        if ok and node and Data.Read(node,'IsVisible')~=false then
+            local name=Data.Read(node,'Name')
+            if name=='HB_VisualPresets' then hosts[#hosts+1]=node
+            elseif name=='HB_VisualPresetFooter' then footers[#footers+1]=node
+            elseif name=='CharacterCreation' or name=='CharacterCreation_c'
+                or name=='CharacterChangeAppearance' or name=='CharacterChangeAppearance_c' then
+                pages[#pages+1]=node
+            end
+        end
+    end
+    if #pages==1 and #hosts==1 and #footers<=1 then
+        -- The preset footer normally belongs to HUDTop, not ContentRoot.
+        -- Resolve it through native Find rather than forcing an expensive
+        -- Lua traversal of the entire visual tree on every UI refresh.
+        if #footers==0 then
+            local ok,found=pcall(function() return root:Find('HB_VisualPresetFooter') end)
+            if ok and found and Data.Read(found,'IsVisible')~=false then
+                footers[1]=found
+            end
+        end
+        -- If this tree does not expose the footer to native Find, preserve
+        -- the original exhaustive fallback to discover it in modded layouts.
+        if #footers==1 then return pages[1],hosts[1],footers[1] end
+    end
+end
+
 local function Walk(root)
+    local page,host,footer=DirectMountedWidgets(root)
+    if page then return page,host,footer end
     local pages,hosts,footers,visited,count={},{},{},{},0
     local function Visit(node,depth)
         if not node or depth>65 or count>6500 then return end
@@ -113,7 +173,7 @@ local function Walk(root)
             or name=='CharacterChangeAppearance' or name=='CharacterChangeAppearance_c' then
             pages[#pages+1]=node;return
         end
-        for _,pair in ipairs({{'ChildrenCount','Child'},{'VisualChildrenCount','VisualChild'}}) do
+        for _,pair in ipairs(CHILD_ACCESSORS) do
             local length=Data.Read(node,pair[1]) or 0
             for index=1,length do
                 local got,child=pcall(function() return node[pair[2]](node,index) end)
@@ -221,6 +281,8 @@ local function QueueWrite(context)
     local id=old and old.Id or 1
     if not old then for _,entry in ipairs(presets) do id=math.max(id,entry.Id+1) end end
     local appearance=Data.Capture(context)
+    LipLog('LIP_SAVE',context,appearance)
+    HornLog('HORN_SAVE',context,appearance)
     local entry={Id=id,Name=name,RaceLabel=DisplayLabel(Data.Read(context,'SelectedRace')) or '',
         SubRaceLabel=DisplayLabel(Data.Read(context,'SelectedSubRace')) or '',Appearance=appearance}
     local nextList={}
@@ -268,14 +330,20 @@ local function Act(action,page,context)
         if state.DeleteId then return end
         local entry=PresetSelected()
         if not entry then error('Choose a saved preset.') end
+        Log('PRESET_LOAD_STARTED '..tostring(entry.Name))
+        pcall(Ext.IO.SaveFile,'HomeBrew/Diagnostics/HB_VisualPresets_LastLoad.txt',table.concat(messages,'\n'))
         local savedChin=entry.Appearance.Selections and entry.Appearance.Selections.SelectedChin
         Log('CHIN_PRELOAD preset='..entry.Name..'; saved='..(savedChin==nil and 'legacy missing' or
             (savedChin.None==true and 'None' or 'identity'))..'; '..ChinTrace(context))
+        LipLog('LIP_PRELOAD',context,entry.Appearance)
+        HornLog('HORN_PRELOAD',context,entry.Appearance)
         local applied=Data.ApplyAvailable(context,entry.Appearance)
         Log('CHIN_POSTAPPLY '..ChinTrace(context))
+        LipLog('LIP_POSTAPPLY',context,entry.Appearance)
+        HornLog('HORN_POSTAPPLY',context,entry.Appearance)
         verification={Owner=tostring(page),Result=applied,Name=entry.Name,
-            Due=Ext.Timer.MonotonicTime()+750}
-        state.Status='Applying preset…'
+            Preset=entry.Appearance,Due=Ext.Timer.MonotonicTime()+750}
+        state.Status='Applying preset...'
     end
 end
 
@@ -339,13 +407,66 @@ local function Update()
     if verification and Ext.Timer.MonotonicTime()>=verification.Due then
         local pending=verification;verification=nil
         if pending.Owner==tostring(page) then
+            local lip=Data.LipSubset(pending.Preset)
+            local horn=Data.HornSubset(pending.Preset)
+            local function Check(subset)
+                if not subset then return true,nil end
+                local ok,matched,reason=pcall(Data.Matches,context,subset)
+                if not ok then return false,matched end
+                return matched,reason
+            end
+            local lipMatch,lipReason=Check(lip)
+            local hornMatch,hornReason=Check(horn)
+            local retried=false
+            if lip and not lipMatch and not pending.LipRetried then
+                LipLog('LIP_DELAYED_MISMATCH '..tostring(lipReason),context,pending.Preset)
+                local reapplied,why=pcall(Data.ApplyAvailable,context,lip)
+                if reapplied then
+                    pending.LipRetried=true
+                    retried=true
+                    LipLog('LIP_RETRY',context,pending.Preset)
+                else
+                    Log('LIP_RETRY_FAILED '..tostring(why))
+                end
+            end
+            if horn and not hornMatch and not pending.HornRetried then
+                HornLog('HORN_DELAYED_MISMATCH '..tostring(hornReason),context,pending.Preset)
+                local reapplied,why=pcall(Data.ApplyAvailable,context,horn)
+                if reapplied then
+                    pending.HornRetried=true
+                    retried=true
+                    HornLog('HORN_RETRY',context,pending.Preset)
+                else
+                    Log('HORN_RETRY_FAILED '..tostring(why))
+                end
+            end
+            if retried then
+                pending.Due=Ext.Timer.MonotonicTime()+750
+                verification=pending
+                return
+            end
+            lipMatch,lipReason=Check(lip)
+            hornMatch,hornReason=Check(horn)
             local success,retained,skipped=pcall(Data.VerifyAvailable,context,pending.Result)
             Log('CHIN_DELAYED_VERIFY '..ChinTrace(context))
+            LipLog('LIP_DELAYED_VERIFY matched='..tostring(lipMatch)
+                ..'; reason='..tostring(lipReason),context,pending.Preset)
+            HornLog('HORN_DELAYED_VERIFY matched='..tostring(hornMatch)
+                ..'; reason='..tostring(hornReason),context,pending.Preset)
+            -- A saved preset may include horn/lip controls unavailable for
+            -- the current race or creation step.  Keep retry/verification and
+            -- diagnostic evidence, but do not strand the Load dialog on a
+            -- cosmetic partial mismatch when other settings were restored.
+            if not lipMatch then Log('LIP_UNRESTORED '..tostring(lipReason)) end
+            if not hornMatch then Log('HORN_UNRESTORED '..tostring(hornReason)) end
             if success and retained>0 then
                 state.Mode='';state.Status='';Notice('Preset Loaded')
                 Log('Loaded preset '..pending.Name..'; retained settings='..retained
-                    ..'; skipped='..#skipped..(#skipped>0 and '\n'..table.concat(skipped,'\n') or ''))
+                    ..'; skipped='..#skipped..(#skipped>0 and '\n'..table.concat(skipped,'\n') or '')
+                    ..'; lipMatched='..tostring(lipMatch)..'; hornMatched='..tostring(hornMatch))
             else
+                -- A genuinely unverifiable load still reports a failure;
+                -- do not claim success when nothing can be confirmed.
                 state.Status='No saved appearance settings could be verified. Available changes were kept.'
                 Log('Preset verification: '..tostring(success and table.concat(skipped,'; ') or retained),context)
             end
@@ -361,10 +482,10 @@ local function Update()
     local isMirrorNow=(pageNameNow=='CharacterChangeAppearance' or pageNameNow=='CharacterChangeAppearance_c'
         or (type(pageFileNow)=='string' and pageFileNow:find('CharacterChangeAppearance',1,true)~=nil))
     local flowStep=nil
+    local flowControl=nil
     if not isMirrorNow then
-        local flow=nil
-        pcall(function() flow=page:Find('flowPage') end)
-        local current=Data.Read(flow,'SelectedItem')
+        pcall(function() flowControl=page:Find('flowPage') end)
+        local current=Data.Read(flowControl,'SelectedItem')
         flowStep=Data.Read(current,'Content')
         if type(flowStep)=='userdata' then flowStep=Data.Read(flowStep,'Content') end
         if flowStep~=nil then flowStep=tostring(flowStep) end
@@ -407,8 +528,7 @@ local function Update()
     if gearObservation~=lastGearVisibility then lastGearVisibility=gearObservation;Log(gearObservation) end
     local gearFlowIndex=nil
     if not isMirrorNow then
-        local flowControl=nil
-        pcall(function() flowControl=page:Find('flowPage') end)
+        -- Reuse the flow control already located during this UI update.
         gearFlowIndex=Data.Read(flowControl,'SelectedIndex')
     end
     if Gear.Process(vm,gearAllowed,gearFlowIndex,context) then
@@ -536,30 +656,45 @@ local function PresetMenuVisible(now)
     return scopeOpen
 end
 
+local scopeWorkQueued=false
+local nextScopeWork=0
 Ext.Events.Tick:Subscribe(function()
     Persist()
     local now=Ext.Timer.MonotonicTime()
-    -- Leave pending explicit save/delete writes intact, but don't mount/
-    -- inspect creation presets during unrelated in-world gameplay.
-    local visible=PresetMenuVisible(now)
-    if not visible and not presetPageActive then return end
-    if queued or now<nextUpdate then return end
-    -- Preset controls only exist in creation/Mirror. Outside those screens,
-    -- avoid repeated whole-UI traversal in ordinary gameplay.
-    nextUpdate=now+(presetPageActive and 150 or 1400);queued=true
-    local function Run()
-        queued=false
-        local success,err=pcall(Update)
-        if not success then
-            -- Release the blocking modal if any unexpected refresh error occurs.
-            state.Mode='';state.Confirm=false;state.Selected=-1;request=nil
-            pcall(function()
-                local _,host=Walk(Ext.UI.GetRoot())
-                local vm=Data.Read(host,'DataContext')
-                if vm then vm.HB_Open=false end
-            end)
-            Log('UI update error (preset window closed): '..tostring(err))
-        end
+    if reportDirty and now>=nextReportWrite then
+        nextReportWrite=now+1000
+        local ok,saved=pcall(Ext.IO.SaveFile,REPORT,table.concat(messages,'\n'))
+        reportDirty=not ok or saved==false
     end
-    if defer then defer(Run) else Run() end
+    if scopeWorkQueued or now<nextScopeWork or not defer then return end
+    nextScopeWork=now+(presetPageActive and 150 or scopeOpen and 250 or 950)
+    scopeWorkQueued=true
+    local ok,err=pcall(defer,function()
+        scopeWorkQueued=false
+        local worked,why=pcall(function()
+            local visible=PresetMenuVisible(now)
+            if not visible and not presetPageActive then return end
+            if queued or now<nextUpdate then return end
+            nextUpdate=now+(presetPageActive and 150 or 1400)
+            queued=true
+            local function Run()
+                queued=false
+                local success,message=pcall(Update)
+                if not success then
+                    state.Mode='';state.Confirm=false;state.Selected=-1;request=nil
+                    pcall(function()
+                        local _,host=Walk(Ext.UI.GetRoot())
+                        local vm=Data.Read(host,'DataContext')
+                        if vm then vm.HB_Open=false end
+                    end)
+                    Log('UI update error (preset window closed): '..tostring(message))
+                end
+            end
+            -- A separate deferred update preserves the previous UI cadence.
+            local posted=pcall(defer,Run)
+            if not posted then queued=false end
+        end)
+        if not worked then Log('SAFE_UI_SCOPE_ERROR '..tostring(why)) end
+    end)
+    if not ok then scopeWorkQueued=false;Log('SAFE_UI_SCOPE_QUEUE_ERROR '..tostring(err)) end
 end)

@@ -5,9 +5,10 @@ function IsEldritchBlastVariant()
     | SpellId('Zone_EldritchLance') | SpellId('Zone_EldritchLance_2') | SpellId('Zone_EldritchLance_3')
     | SpellId('Zone_EldritchLance_4') | SpellId('Zone_EldritchLance_5') | SpellId('Zone_EldritchLance_6')
     | SpellId('Projectile_EldritchBlastStrike') | SpellId('Projectile_EldritchBlast_Demon') | SpellId('Projectile_SeveringEldritchBlast')
+    | SpellId('Projectile_SeveringEldritchBlast_AOE')
 end
 
-function IsEldritchBlastVariantNoLance()
+function IsEldritchBlastVariantNoAoE()
     return SpellId('Projectile_EldritchBlast') | SpellId('Projectile_EldritchBlast_Penumbral_Necrotic') | SpellId('Projectile_EldritchBlast_Penumbral_Radiant')
     | SpellId('Projectile_EldritchBlastStrike') | SpellId('Projectile_EldritchBlast_Demon') | SpellId('Projectile_SeveringEldritchBlast')
 end

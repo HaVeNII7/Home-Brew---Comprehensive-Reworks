@@ -1,0 +1,340 @@
+<ls:UIWidget
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:System="clr-namespace:System;assembly=mscorlib"
+    xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ls="clr-namespace:ls;assembly=Code"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:noesis="clr-namespace:NoesisGUIExtensions;assembly=Noesis.GUI.Extensions"
+    x:Name="OverheadInfo"
+    d:DataContext="{d:DesignInstance {x:Type ls:DCOverheads},
+                                     IsDesignTimeCreatable=True}"
+    d:DesignHeight="2160"
+    d:DesignWidth="3840"
+    ls:UIWidget.ContextName="Overheads"
+    Template="{StaticResource Hud.Root}"
+    mc:Ignorable="d">
+
+    <ls:UIWidget.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Core;component/Library/OverheadPassives.xaml" />
+                <ResourceDictionary Source="/Core;component/Library/WorldTextTemplates.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--  passive rolls  -->
+            <System:Double x:Key="Overhead.PassiveRolls.IconWidth">72</System:Double>
+            <System:Double x:Key="Overhead.PassiveRolls.IconWidthOffset">-52</System:Double>
+            <System:Double x:Key="Overhead.PassiveRolls.IconHeight">84</System:Double>
+            <Style x:Key="Overhead.PassiveRolls.Text" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="{Binding DataContext.CurrentPlayer.UIOptions.OverheadFontSizeModifier, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}, Converter={StaticResource AddConverter}, ConverterParameter={StaticResource MediumFontSize}}" />
+                <Setter Property="Foreground" Value="{DynamicResource LS_PrimaryColor}" />
+                <Setter Property="noesis:Text.Stroke" Value="{StaticResource Dialogue.Stroke}" />
+                <Setter Property="noesis:Text.StrokeThickness" Value="4" />
+            </Style>
+
+            <Storyboard x:Key="FadeOutSubtitles">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="InnerDialogSubtitle" Storyboard.TargetProperty="Opacity">
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0" />
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <Storyboard x:Key="FadeInSubtitles">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="InnerDialogSubtitle" Storyboard.TargetProperty="Opacity">
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1" />
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+        </ResourceDictionary>
+    </ls:UIWidget.Resources>
+    <ls:UIWidget.ContentTemplate>
+        <DataTemplate>
+            <Grid>
+                <Grid
+                    x:Name="InnerDialogSubtitle"
+                    Margin="0,0,0,620"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Opacity="0">
+                    <Rectangle Grid.ColumnSpan="2">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="0" Color="#00000000" />
+                                <GradientStop Offset="0.15" Color="#6F000000" />
+                                <GradientStop Offset="0.85" Color="#6F000000" />
+                                <GradientStop Offset="1" Color="#00000000" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                        <Rectangle.OpacityMask>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Offset="0" Color="#00000000" />
+                                <GradientStop Offset="0.05" Color="#FF000000" />
+                                <GradientStop Offset="0.95" Color="#FF000000" />
+                                <GradientStop Offset="1" Color="#00000000" />
+                            </LinearGradientBrush>
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+
+                    <TextBlock
+                        VerticalAlignment="Bottom" 
+                        Margin="20,0" 
+                        noesis:Text.StrokeThickness="{DynamicResource TextOutlineThickness}"
+                        FontSize="{Binding DataContext.CurrentPlayer.UIOptions.OverheadFontSizeModifier, RelativeSource={RelativeSource AncestorType={x:Type ls:UIWidget}}, Converter={StaticResource AddConverter}, ConverterParameter={StaticResource TitleFontSize}}"
+                        TextAlignment="Center"
+                        MaxWidth="1600"
+                        TextWrapping="Wrap"
+                        Foreground="{StaticResource LS_accent100TxtColor}"
+                        Effect="{StaticResource HUD.DropShadow}">
+                        <TextBlock.Inlines>
+                            <Run x:Name="speakerName">
+                                <Run.Text>
+                                    <Binding
+                                        Mode="OneWay"
+                                        Path="CurrentSpeaker"
+                                        StringFormat="{}{0}: " />
+                                </Run.Text>
+                            </Run><Span ls:TextBlockFormatter.SourceText="{Binding CurrentSubtitle}" />
+                        </TextBlock.Inlines>
+                        <noesis:Text.Stroke>
+                            <SolidColorBrush Opacity="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=TextBlock}, Path=Foreground.Opacity}" Color="{DynamicResource TextOutlineColor}" />
+                        </noesis:Text.Stroke>
+                    </TextBlock>
+
+                </Grid>
+                <!--  show all the overheads for this player (to support split-screen)  -->
+                <ItemsControl ItemsSource="{Binding CurrentPlayer.Overheads}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style TargetType="ContentPresenter">
+                            <!--  position "over head"  -->
+                            <Setter Property="Canvas.Left" Value="{Binding Position.X}" />
+                            <Setter Property="Canvas.Top" Value="{Binding Position.Y}" />
+                            <Setter Property="Visibility" Value="Visible" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsOnScreen}" Value="False">
+                                    <Setter Property="Visibility" Value="Collapsed" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate DataType="{x:Type ls:LocalPlayerEntityOverheads}">
+                            <Canvas Height="4">
+                                <StackPanel
+                                    Canvas.Left="-1024"
+                                    Canvas.Bottom="0"
+                                    Width="2048"
+                                    VerticalAlignment="Bottom">
+                                    <ItemsControl
+                                        MaxWidth="1500"
+                                        ItemTemplate="{StaticResource TextTemplate}"
+                                        ItemsPanel="{StaticResource StackedOverheadsPanel}"
+                                        ItemsSource="{Binding EntityOverheads.Dialogues}" />
+                                    <!-- HomeBrew: hide ONLY capped-region experience overhead messages.
+                                         Damage numbers, dialogue and other message types remain unchanged. -->
+                                    <ItemsControl x:Name="HB_ActXP_XAML_KeyboardOverhead" Tag="False" ItemsSource="{Binding EntityOverheads.Messages}"
+                                                  ItemTemplate="{StaticResource TextTemplate}"
+                                                  ItemsPanel="{StaticResource StackedOverheadsPanel}">
+                                        <ItemsControl.ItemContainerStyle>
+                                            <Style TargetType="ContentPresenter">
+                                                <Style.Triggers>
+                                                    <MultiDataTrigger>
+                                                        <MultiDataTrigger.Conditions>
+                                                            <Condition Binding="{Binding Type}" Value="Experience" />
+                                                            <Condition Binding="{Binding Tag, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Value="True" />
+                                                        </MultiDataTrigger.Conditions>
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                    </MultiDataTrigger>
+                                                    <MultiDataTrigger>
+                                                        <MultiDataTrigger.Conditions>
+                                                            <Condition Binding="{Binding Type}" Value="ExperienceOverflow" />
+                                                            <Condition Binding="{Binding Tag, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Value="True" />
+                                                        </MultiDataTrigger.Conditions>
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                    </MultiDataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </ItemsControl.ItemContainerStyle>
+                                    </ItemsControl>
+                                    <ItemsControl
+                                        ItemTemplate="{StaticResource TextTemplate}"
+                                        ItemsPanel="{StaticResource StackedOverheadsPanel}"
+                                        ItemsSource="{Binding EntityOverheads.Damages}" />
+
+                                    <!--  Targeting overhead when aiming that entity  -->
+                                    <DockPanel
+                                        Grid.Row="1"
+                                        HorizontalAlignment="Center"
+                                        Visibility="{Binding EntityOverheads.Target.IsTargeted, Converter={StaticResource BoolToVisibleConverter}}">
+                                        <!--  Set size to 0 if needs to be collapsed so no empty space over the head if no targeting  -->
+
+                                        <!--<TextBlock ls:TextBlockFormatter.SourceText="{Binding EntityOverheads.Target}"/>-->
+                                        <Image
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            DockPanel.Dock="Left"
+                                            Stretch="None">
+                                            <Image.Style>
+                                                <Style TargetType="Image">
+                                                    <Setter Property="Source" Value="{x:Null}" />
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding EntityOverheads.Target.AttackType}" Value="Acid">
+                                                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/Overhead/ico_actionAcid.png" />
+                                                        </DataTrigger>
+
+                                                        <DataTrigger Binding="{Binding EntityOverheads.Target.AttackType}" Value="Cold">
+                                                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/Overhead/ico_actionCold.png" />
+                                                        </DataTrigger>
+
+                                                        <DataTrigger Binding="{Binding EntityOverheads.Target.AttackType}" Value="Fire">
+                                                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/Overhead/ico_actionFire.png" />
+                                                        </DataTrigger>
+
+                                                        <DataTrigger Binding="{Binding EntityOverheads.Target.AttackType}" Value="Force">
+                                                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/Overhead/ico_actionForce.png" />
+                                                        </DataTrigger>
+
+                                                        <DataTrigger Binding="{Binding EntityOverheads.Target.AttackType}" Value="Lightning">
+                                                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/Overhead/ico_actionLightening.png" />
+                                                        </DataTrigger>
+
+                                                        <DataTrigger Binding="{Binding EntityOverheads.Target.AttackType}" Value="Necrotic">
+                                                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/Overhead/ico_actionNecrotic.png" />
+                                                        </DataTrigger>
+
+                                                        <DataTrigger Binding="{Binding EntityOverheads.Target.AttackType}" Value="Target">
+                                                            <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/Overhead/ico_actionTarget.png" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+                                        <Grid Height="100">
+                                            <Image
+                                                Grid.Row="0"
+                                                Margin="-16,0,0,0"
+                                                HorizontalAlignment="Center"
+                                                Stretch="None">
+                                                <Image.Style>
+                                                    <Style TargetType="Image">
+                                                        <Setter Property="Source" Value="{x:Null}" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding EntityOverheads.Target.BuffType}" Value="-1">
+                                                                <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/Overhead/ico_debuffed.png" />
+                                                                <Setter Property="VerticalAlignment" Value="Bottom" />
+                                                            </DataTrigger>
+
+                                                            <DataTrigger Binding="{Binding EntityOverheads.Target.BuffType}" Value="1">
+                                                                <Setter Property="Source" Value="pack://application:,,,/Core;component/Assets/Overhead/ico_buffed.png" />
+                                                                <Setter Property="VerticalAlignment" Value="Top" />
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                            <TextBlock
+                                                HorizontalAlignment="Stretch"
+                                                VerticalAlignment="Center"
+                                                ls:TextBlockFormatter.SourceText="{Binding EntityOverheads.Target.Text}"
+                                                noesis:Text.StrokeThickness="{DynamicResource TextOutlineThickness}"
+                                                FontSize="{StaticResource BigFontSize}"
+                                                FontWeight="Bold">
+                                                <noesis:Text.Stroke>
+                                                    <SolidColorBrush Opacity="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=TextBlock}, Path=Foreground.Opacity}" Color="{DynamicResource TextOutlineColor}" />
+                                                </noesis:Text.Stroke>
+                                                <TextBlock.Style>
+                                                    <Style TargetType="TextBlock">
+                                                        <Setter Property="Foreground" Value="{DynamicResource LS_PrimaryColor}" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding EntityOverheads.Target.BuffType}" Value="-1">
+                                                                <Setter Property="Foreground" Value="{DynamicResource LS_DebuffedTextColor}" />
+                                                            </DataTrigger>
+
+                                                            <DataTrigger Binding="{Binding EntityOverheads.Target.BuffType}" Value="1">
+                                                                <Setter Property="Foreground" Value="{DynamicResource LS_BuffedTextColor}" />
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </TextBlock.Style>
+                                            </TextBlock>
+                                        </Grid>
+                                    </DockPanel>
+
+                                    <!--  Passive rolls  -->
+                                    <ItemsControl
+                                        ItemTemplate="{StaticResource Overhead.PassiveRoll}"
+                                        ItemsPanel="{StaticResource StackedOverheadsPanel}"
+                                        ItemsSource="{Binding EntityOverheads.PassiveRolls}">
+                                        <ItemsControl.ItemContainerStyle>
+                                            <Style TargetType="ContentPresenter">
+                                                <Style.Triggers>
+                                                    <MultiDataTrigger>
+                                                        <MultiDataTrigger.Conditions>
+                                                            <Condition Binding="{Binding DataContext.EntityOverheads.TargetObject.Combat, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}, Converter={StaticResource NullToBoolFalseConverter}}" Value="True" />
+                                                            <Condition Binding="{Binding Type}" Value="SavingThrow" />
+                                                            <Condition Binding="{Binding Successful}" Value="False" />
+                                                            <Condition Binding="{Binding IsSkillCheck}" Value="False" />
+                                                        </MultiDataTrigger.Conditions>
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                    </MultiDataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </ItemsControl.ItemContainerStyle>
+                                    </ItemsControl>
+
+                                    <!--  Death Saving Thow  -->
+                                    <ContentControl
+                                        HorizontalAlignment="Center"
+                                        DataContext="{Binding EntityOverheads.DeathSavingThrow}"
+                                        Template="{StaticResource Overhead.DeathSavingThrow}">
+                                        <ContentControl.Style>
+                                            <Style TargetType="ContentControl">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding DeathSavingThrowInfo.Active}" Value="True">
+                                                        <Setter Property="Visibility" Value="Visible" />
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding TimeRemaining, Converter={StaticResource GreaterThanConverter}, ConverterParameter=0}" Value="True">
+                                                        <Setter Property="Visibility" Value="Visible" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </ContentControl.Style>
+                                    </ContentControl>
+                                </StackPanel>
+                            </Canvas>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+            <DataTemplate.Triggers>
+                <DataTrigger Binding="{Binding CurrentSpeaker}" Value="">
+                    <Setter TargetName="speakerName" Property="Text" Value="" />
+                </DataTrigger>
+                <DataTrigger Value="False">
+                    <DataTrigger.Binding>
+                        <MultiBinding Converter="{StaticResource EqualConverter}">
+                            <Binding Path="CurrentSubtitle" />
+                            <Binding Source="" />
+                        </MultiBinding>
+                    </DataTrigger.Binding>
+                    <DataTrigger.EnterActions>
+                        <StopStoryboard BeginStoryboardName="FadeOutSubtitlesStoryBoard" />
+                        <BeginStoryboard x:Name="FadeInSubtitlesStoryBoard" Storyboard="{StaticResource FadeInSubtitles}" />
+                    </DataTrigger.EnterActions>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding CurrentSubtitleDuration, Converter={StaticResource GreaterThanConverter}, ConverterParameter=0.3}" Value="False">
+                    <DataTrigger.EnterActions>
+                        <StopStoryboard BeginStoryboardName="FadeInSubtitlesStoryBoard" />
+                        <BeginStoryboard x:Name="FadeOutSubtitlesStoryBoard" Storyboard="{StaticResource FadeOutSubtitles}" />
+                    </DataTrigger.EnterActions>
+                </DataTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>
+    </ls:UIWidget.ContentTemplate>
+</ls:UIWidget>

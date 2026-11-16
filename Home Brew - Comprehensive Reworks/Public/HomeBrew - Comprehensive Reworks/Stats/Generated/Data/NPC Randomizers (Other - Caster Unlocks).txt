@@ -762,7 +762,7 @@ data "RemoveConditions" "Party(context.Source) and not HasPassive('NPCConcentrat
 data "RemoveEvents" "OnApply;OnTurn;OnMove"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
 data "StackType" "Ignore"
-data "Boosts" "UnlockSpell(Projectile_AcidSplash);UnlockSpell(Shout_Thunderclap);UnlockSpell(Target_Blur,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_Confusion,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_DissonantWhispers,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_ArcaneVortex,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Throw_Telekinesis,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Zone_TelekineticWave,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)"
+data "Boosts" "UnlockSpell(Projectile_AcidSplash);UnlockSpell(Shout_Thunderclap);UnlockSpell(Target_Blur,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Zone_ColorSpray,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_Confusion,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Target_CrownOfMadness,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Projectile_Implode,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf);UnlockSpell(Zone_TelekineticWave,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)"
 
 <!--WARLOCK-->
 

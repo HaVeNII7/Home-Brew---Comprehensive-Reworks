@@ -2,6 +2,7 @@
 -- On failure, reusable scroll tools and both equipment ingredients remain untouched.
 
 local PREFIX = '[HB Scroll Transmog] '
+local SavedGameplay = Ext.Require('Server/HBPersistentGameplay.lua')
 local LOG_PATH = 'HomeBrew/Diagnostics/HB_ScrollTransmog_Test.txt'
 local RESOURCE_STAT = 'OBJ_Scroll_ScrollofTransmogrification'
 local REVERSION_STAT = 'OBJ_Scroll_ScrollofReversion'
@@ -31,7 +32,12 @@ end
 local function report(message)
     records[#records + 1] = tostring(message)
     if #records > 110 then table.remove(records, 2) end
-    pcall(function() Ext.IO.SaveFile(LOG_PATH, table.concat(records, '\n') .. '\n') end)
+    local value=tostring(message):lower()
+    if _G.HB_DebugDiagnostics == true or value:find('error',1,true)
+        or value:find('failed',1,true) or value:find('refused',1,true)
+        or value:find('timeout',1,true) then
+        pcall(function() Ext.IO.SaveFile(LOG_PATH, table.concat(records, '\n') .. '\n') end)
+    end
 end
 
 local function read(container, field)
@@ -161,6 +167,294 @@ local function scalarSignature(value, level, seen)
     end
     seen[value] = nil
     return '{' .. table.concat(out, ';') .. '}'
+end
+
+-- Visual-only replacement v1. A disposable replacement MUST be spawned from the
+-- SOURCE root. The donor supplies ONLY its serialized Equipment.Visuals.
+-- `CreateCacheTemplate` is called on the destination first; never write a shared
+-- root template or mutate the donor's own visual object/proxy.
+local function donorVisualData(donorRoot)
+    if type(donorRoot) ~= 'string' then return nil, 'no-donor-root' end
+    local ok, template = pcall(Ext.Template.GetRootTemplate, donorRoot)
+    if not ok or not template then return nil, 'donor-root-unavailable' end
+    local equipment = read(template, 'Equipment')
+    local visualData = snapshot(read(equipment, 'Visuals'))
+    if not visualData or not scalarSignature(visualData) then
+        return nil, 'donor-visuals-not-serializable'
+    end
+    return visualData
+end
+
+local function itemVisualSignature(item)
+    local entity = entityFor(item)
+    local serverItem = component(entity, 'ServerItem')
+    local visualData = snapshot(read(read(read(serverItem, 'Template'), 'Equipment'), 'Visuals'))
+    return visualData and scalarSignature(visualData) or nil
+end
+
+local function transplantDonorVisuals(cache, donorRoot)
+    local equipment = read(cache, 'Equipment')
+    if not equipment then return false, 'source-equipment-template-missing' end
+    local sourceEquipment = snapshot(equipment)
+    if not sourceEquipment or not scalarSignature(sourceEquipment) then
+        return false, 'source-equipment-unserializable'
+    end
+    local originalVisuals = sourceEquipment.Visuals
+    if type(originalVisuals) ~= 'table' then
+        return false, 'source-visuals-not-in-serialized-equipment'
+    end
+    local donorVisuals, err = donorVisualData(donorRoot)
+    if not donorVisuals then return false, err end
+    local expectedSignature = scalarSignature(donorVisuals)
+    if not expectedSignature then return false, 'donor-visual-signature-invalid' end
+    -- Serialize creates standalone Lua tables; do not assign a live C++ donor
+    -- proxy, and do not alter other Equipment fields. A full parent readback
+    -- proves that only the Visuals child changed.
+    local desired = snapshot(equipment)
+    if not desired or not scalarSignature(desired) then
+        return false, 'source-equipment-resnapshot-failed'
+    end
+    desired.Visuals = donorVisuals
+    local ok, result = pcall(Ext.Types.Unserialize, equipment, desired)
+    if not ok or result == false then return false, 'instance-visual-write-refused:' .. tostring(result) end
+    local after = snapshot(read(cache, 'Equipment'))
+    if not after or scalarSignature(after) ~= scalarSignature(desired) then
+        return false, 'instance-equipment-readback-differs'
+    end
+    local visualNow = snapshot(read(read(cache, 'Equipment'), 'Visuals'))
+    if not visualNow or scalarSignature(visualNow) ~= expectedSignature then
+        return false, 'donor-visual-readback-mismatch'
+    end
+    -- Do not mistake an unmodified source visual for a successful donor change.
+    -- Identical source/donor visual data is allowed; it is already visually exact.
+    return true, expectedSignature
+end
+
+-- BG3 builds equipped visuals from its live visual ECS state, not merely
+-- ServerItem.Template.Equipment.Visuals. Keep the mechanical source item/root
+-- unchanged; change only the visual component's presentation template and
+-- replicate that one component. This is an experimental renderer cue, not a
+-- claim that template readback proves the on-screen model has changed.
+local function cueDonorVisualRoot(itemId, sourceRoot, donorRoot)
+    local e = entityFor(itemId)
+    if not e then return false, 'visual-owner-not-resolved' end
+    local visual = component(e, 'GameObjectVisual')
+    if not visual then return false, 'game-object-visual-not-present' end
+    local old = snapshot(visual)
+    if not old or not scalarSignature(old) then
+        return false, 'game-object-visual-not-serializable'
+    end
+    local originalVisualRoot = tostring(read(visual, 'RootTemplateId') or '')
+    -- Refuse foreign presentation overrides. Source item and donor appearance
+    -- are the only two identities that may be present in this transaction.
+    if originalVisualRoot ~= sourceRoot and originalVisualRoot ~= donorRoot then
+        return false, 'unexpected-current-visual-root:' .. originalVisualRoot
+    end
+    if originalVisualRoot ~= donorRoot then
+        local wrote, err = pcall(function() visual.RootTemplateId = donorRoot end)
+        if not wrote or tostring(read(visual, 'RootTemplateId')) ~= donorRoot then
+            return false, 'visual-root-write-refused:' .. tostring(err)
+        end
+    end
+    local after = snapshot(visual)
+    if not after or tostring(after.RootTemplateId) ~= donorRoot then
+        return false, 'visual-root-readback-failed'
+    end
+    old.RootTemplateId = donorRoot
+    if scalarSignature(old) ~= scalarSignature(after) then
+        return false, 'other-visual-component-fields-changed'
+    end
+    local replicated, reason = pcall(function() e:Replicate('GameObjectVisual') end)
+    if not replicated then return false, 'visual-component-replication-failed:' .. tostring(reason) end
+    -- Mechanical root and stat are validated by the outer transaction before
+    -- and after this cue, independently of GameObjectVisual.RootTemplateId.
+    return true, originalVisualRoot
+end
+
+local function sourceRootIdentityMatches(item, sourceRoot, sourceStat)
+    return type(sourceRoot) == 'string' and sourceRoot ~= ''
+        and root(item) == sourceRoot
+        and stat(item) == sourceStat
+        and installedStat(item) == sourceStat
+end
+
+-- The item Stats entry defines the expected proficiency group, but the donor
+-- root may leave the runtime ECS proficiency component in its donor category.
+-- Osiris IsEquipmentWithProficiency is a query that can fail when a group is
+-- not matched; it is NOT a reliable four-category fingerprint, and MUST NOT
+-- be used to gate the recipe. Use the authoritative source stat plus its
+-- actual native item components instead. Do not clone engine-owned components.
+-- BG3SE exposes ProficiencyGroupFlags stat fields as Lua arrays of flag names,
+-- not necessarily strings. tostring(table) produces a different pointer-like
+-- value on separate reads; comparing those pointers previously caused every
+-- recipe to be rolled back as "source-group-drift" even when the flags matched.
+-- Canonicalize the actual enum values, independent of table identity and order.
+local function normalizeProficiencyFlags(value)
+    if value == nil then return '', nil end
+    local kind = type(value)
+    if kind == 'userdata' then
+        value = snapshot(value)
+        kind = type(value)
+    end
+    local names = {}
+    local count = 0
+    local function add(name)
+        if type(name) ~= 'string' then return false end
+        name = name:match('^%s*(.-)%s*$')
+        if name == '' or name == 'None' then return true end
+        if not name:match('^[%a_][%w_]*$') then return false end
+        if not names[name] then
+            count = count + 1
+            if count > 64 then return false end
+            names[name] = true
+        end
+        return true
+    end
+    if kind == 'string' then
+        for name in (value .. ';'):gmatch('(.-);') do
+            if not add(name) then return nil, 'invalid-proficiency-flag-string' end
+        end
+    elseif kind == 'table' then
+        for key, flag in pairs(value) do
+            if type(key) == 'number' and type(flag) == 'string' then
+                if not add(flag) then return nil, 'invalid-proficiency-array-entry' end
+            elseif type(key) == 'string' and type(flag) == 'boolean' then
+                if flag and not add(key) then return nil, 'invalid-proficiency-set-entry' end
+            else
+                return nil, 'unknown-proficiency-flag-representation'
+            end
+        end
+    else
+        return nil, 'unreadable-proficiency-flags:' .. kind
+    end
+    local sorted = {}
+    for name in pairs(names) do sorted[#sorted + 1] = name end
+    table.sort(sorted)
+    return table.concat(sorted, ';'), nil
+end
+
+local function statsProficiency(statsId)
+    if type(statsId) ~= 'string' or statsId == '' then
+        return nil, 'missing-item-stat'
+    end
+    local ok, object = pcall(Ext.Stats.Get, statsId)
+    if not ok or not object then return nil, 'item-stats-unavailable:' .. statsId end
+    local value = read(object, 'Proficiency Group')
+    return normalizeProficiencyFlags(value)
+end
+
+local function proficiencySignature(item)
+    if not itemExists(item) then return nil, 'item-unavailable' end
+    local itemStat = installedStat(item)
+    if not itemStat then return nil, 'item-runtime-stat-unavailable' end
+    return statsProficiency(itemStat)
+end
+
+-- Fingerprint only scalar/serializable flag data. If the native type cannot be
+-- meaningfully read, refuse rather than claim we proved item classification.
+local function nativeFlagsSignature(flags)
+    if flags == nil then return nil end
+    local kind = type(flags)
+    if kind == 'string' or kind == 'number' or kind == 'boolean' then
+        return kind .. ':' .. tostring(flags)
+    end
+    local serialized = snapshot(flags)
+    if serialized then return scalarSignature(serialized) end
+    local value = tostring(flags)
+    -- Avoid comparing heap pointer strings from opaque userdata proxies.
+    if value:find('0x%x+') then return nil end
+    if value ~= '' then return value end
+end
+
+local function sameProficiency(original, replacement, expected)
+    local source, sourceErr = proficiencySignature(original)
+    if not source then return false, 'source:' .. tostring(sourceErr) end
+    if expected and source ~= expected then return false, 'source-group-drift:' .. source end
+    local target, targetErr = proficiencySignature(replacement)
+    if not target then return false, 'output:' .. tostring(targetErr) end
+    if source ~= target then
+        return false, 'stat-proficiency-mismatch:source=' .. source .. ':output=' .. target
+    end
+    local oldEntity, newEntity = entityFor(original), entityFor(replacement)
+    local oldComponent = component(oldEntity, 'ProficiencyGroup')
+    local newComponent = component(newEntity, 'ProficiencyGroup')
+    if (oldComponent == nil) ~= (newComponent == nil) then
+        return false, 'native-proficiency-component-presence-mismatch'
+    end
+    if oldComponent and newComponent then
+        local oldSig = nativeFlagsSignature(read(oldComponent, 'Flags'))
+        local newSig = nativeFlagsSignature(read(newComponent, 'Flags'))
+        if not oldSig or not newSig then return false, 'native-proficiency-flags-unreadable' end
+        if oldSig ~= newSig then
+            return false, 'native-proficiency-flags-mismatch:source=' .. oldSig .. ':output=' .. newSig
+        end
+    end
+    local originalServer = component(oldEntity, 'ServerProficiencyGroupStats')
+    local outputServer = component(newEntity, 'ServerProficiencyGroupStats')
+    if (originalServer == nil) ~= (outputServer == nil) then
+        return false, 'native-proficiency-stats-component-presence-mismatch'
+    end
+    if originalServer and outputServer then
+        local sourceServerStat = read(originalServer, 'Stats')
+        local outputServerStat = read(outputServer, 'Stats')
+        if tostring(sourceServerStat) ~= tostring(outputServerStat) then
+            return false, 'native-proficiency-stats-mismatch'
+        end
+    end
+    return true, source
+end
+
+local function synchronizeNativeProficiency(original, replacement, statsId)
+    if not original or not replacement or type(statsId) ~= 'string' then
+        return false, 'missing-source-target-or-stat'
+    end
+    local sourceGroup, groupErr = statsProficiency(statsId)
+    if not sourceGroup then return false, groupErr end
+    local originalGroup = component(original, 'ProficiencyGroup')
+    local outputGroup = component(replacement, 'ProficiencyGroup')
+    if (originalGroup == nil) ~= (outputGroup == nil) then
+        return false, 'required-native-proficiency-component-missing'
+    end
+    if originalGroup then
+        local sourceFlags = read(originalGroup, 'Flags')
+        local expectedSig = nativeFlagsSignature(sourceFlags)
+        if not expectedSig then return false, 'source-proficiency-flags-unreadable' end
+        -- Assign individual scalar/flag field; do not Unserialize the component.
+        local written, writeErr = pcall(function() outputGroup.Flags = sourceFlags end)
+        local currentSig = nativeFlagsSignature(read(outputGroup, 'Flags'))
+        if not written or currentSig ~= expectedSig then
+            return false, 'native-proficiency-flags-write-refused:' .. tostring(writeErr)
+        end
+        local replicated, replicateErr = pcall(function()
+            replacement:Replicate('ProficiencyGroup')
+        end)
+        if not replicated then
+            return false, 'native-proficiency-replication-failed:' .. tostring(replicateErr)
+        end
+    elseif sourceGroup ~= '' then
+        return false, 'armour-proficiency-component-missing'
+    end
+    local oldServerStats = component(original, 'ServerProficiencyGroupStats')
+    local newServerStats = component(replacement, 'ServerProficiencyGroupStats')
+    if (oldServerStats == nil) ~= (newServerStats == nil) then
+        return false, 'native-proficiency-stat-component-missing'
+    end
+    if newServerStats then
+        local sourceValue = read(oldServerStats, 'Stats')
+        if sourceValue == nil then return false, 'source-native-proficiency-stat-unreadable' end
+        local ok, err = pcall(function() newServerStats.Stats = sourceValue end)
+        if not ok or tostring(read(newServerStats, 'Stats')) ~= tostring(sourceValue) then
+            return false, 'native-proficiency-stat-write-refused:' .. tostring(err)
+        end
+    end
+    return true, 'native-proficiency-fields-synchronized:' .. tostring(sourceGroup)
+end
+
+local function donorRootIdentityMatches(item, donorRoot, sourceStat)
+    local e = entityFor(item)
+    local template = read(component(e, 'ServerItem'), 'Template')
+    return root(item) == donorRoot and installedStat(item) == sourceStat
+        and template and tostring(read(template, 'Stats')) == sourceStat
 end
 
 -- Clone only explicit gameplay components, not identity, template, physics or owner records.
@@ -540,8 +834,11 @@ local function settleCraft(tx, spawnedId)
         or not sameOwner(tx.actor, tx.scroll, tx.original, tx.appearance) then
         return finishDenied(tx, 'settle-owner-mismatch')
     end
-    if installedStat(spawnedId) ~= tx.originalStat then
-        return finishDenied(tx, 'settle-mechanics-drift')
+    if not donorRootIdentityMatches(spawnedId, tx.donorRoot, tx.originalStat) then
+        return finishDenied(tx, 'settle-source-root-or-stats-drift')
+    end
+    if itemVisualSignature(spawnedId) ~= tx.appliedVisualSignature then
+        return finishDenied(tx, 'settle-appearance-not-retained')
     end
     if not verifiedNativeResult(tx) then
         return finishDenied(tx, 'native-transmog-token-result-not-confirmed')
@@ -578,9 +875,12 @@ local function settleCraft(tx, spawnedId)
         end
         if not itemExists(tx.original) or not itemExists(tx.appearance)
             or not itemExists(tx.scroll) or not ownedBy(tx.actor, spawnedId)
-            or installedStat(spawnedId) ~= tx.originalStat then
+            or not donorRootIdentityMatches(spawnedId, tx.donorRoot, tx.originalStat)
+            or itemVisualSignature(spawnedId) ~= tx.appliedVisualSignature then
             return finishDenied(tx, 'final-readback-failed')
         end
+        local groupOK, groupWhy = sameProficiency(tx.original, spawnedId, tx.sourceProficiency)
+        if not groupOK then return finishDenied(tx, 'equipped-proficiency-mismatch:' .. tostring(groupWhy)) end
         -- Treat original-item storage as a separate, audited phase. Never
         -- retire the native result until the protected original is stored.
         if not verifiedNativeResult(tx) then
@@ -613,9 +913,12 @@ local function settleCraft(tx, spawnedId)
             if not stored or not equipped or not itemExists(tx.appearance)
                 or not verifiedNativeResult(tx)
                 or not itemExists(tx.scroll) or not ownedBy(tx.actor, spawnedId)
-                or installedStat(spawnedId) ~= tx.originalStat then
+                or not donorRootIdentityMatches(spawnedId, tx.donorRoot, tx.originalStat)
+                or itemVisualSignature(spawnedId) ~= tx.appliedVisualSignature then
                 return finishDenied(tx, 'escrow-or-equipment-settlement-failed')
             end
+            local groupOK, groupWhy = sameProficiency(tx.original, spawnedId, tx.sourceProficiency)
+            if not groupOK then return finishDenied(tx, 'escrow-proficiency-mismatch:' .. tostring(groupWhy)) end
             -- The native result is a UI-success artifact, NOT a new free tool.
             -- Delete only its exact captured entity, never an existing token or scroll.
             if not verifiedNativeResult(tx) or not itemExists(tx.scroll)
@@ -642,6 +945,10 @@ local function settleCraft(tx, spawnedId)
                     .. ' cloneEquipped=' .. tostring(stillEquipped)
                     .. ' cloneStat=' .. tostring(installedStat(spawnedId)))
                 if not resultRemoved then return finishDenied(tx, 'native-result-remains-after-cleanup') end
+                if not donorRootIdentityMatches(spawnedId, tx.donorRoot, tx.originalStat)
+                    or itemVisualSignature(spawnedId) ~= tx.appliedVisualSignature then
+                    return finishDenied(tx, 'post-craft-source-identity-or-appearance-drift')
+                end
                 if not toolRetained or not sourceStored or not stillEquipped
                     or not itemExists(tx.appearance) then
                     -- The original remains recoverable in escrow, and the
@@ -649,14 +956,21 @@ local function settleCraft(tx, spawnedId)
                     report('ESCROW_CRITICAL_V15 post-result-cleanup-integrity-failed; do-not-save')
                     return
                 end
-                local state = PersistentVars or {}
-                state.HBScrollTransmogRecords = state.HBScrollTransmogRecords or {}
-                state.HBScrollTransmogRecords[spawnedId] = {
-                    Original=tx.original, DonorRoot=tx.donorRoot,
-                    SourceStats=tx.originalStat, Actor=tx.actor,
-                    Escrow=tx.escrow, Slot=tx.slot, Trial=true
-                }
-                PersistentVars = state
+                local groupOK, groupWhy = sameProficiency(tx.original, spawnedId, tx.sourceProficiency)
+                if not groupOK then return finishDenied(tx, 'final-proficiency-mismatch:' .. tostring(groupWhy)) end
+                local saved, saveReason = SavedGameplay.AddTransmog(spawnedId, {
+                    Original=tx.original, DonorRoot=tx.donorRoot, SourceRoot=tx.sourceRoot,
+                    VisualMode='DonorRootProficiencyV2',
+                    SourceStats=tx.originalStat, SourceProficiency=tx.sourceProficiency,
+                    Actor=tx.actor, Escrow=tx.escrow, Slot=tx.slot, Trial=true
+                })
+                if not saved then
+                    -- Critical: a verified native transmog must have a saved
+                    -- provenance record to permit future safe reversal.
+                    -- Do not clear the transaction or advertise completion.
+                    report('ESCROW_CRITICAL_V19 ledger-persist-failed:' .. tostring(saveReason) .. ';do-not-save')
+                    return
+                end
                 report('CRAFT_REUSABLE_VERIFIED_V15 request=' .. tostring(tx.request)
                     .. ' tool=' .. tostring(tx.scroll)
                     .. ' nativeResultRetired=' .. tostring(tx.nativeResult)
@@ -697,18 +1011,20 @@ local function applyCraft(tx, spawnedId)
     if not made then return finishDenied(tx, 'per-instance-template-refused') end
     local cache = read(serverItem, 'Template')
     if not cache then return finishDenied(tx, 'per-instance-template-missing') end
-    local donorVisuals = read(read(cache, 'Equipment'), 'Visuals')
-    local donorBefore = snapshot(donorVisuals)
-    local donorSignature = donorBefore and scalarSignature(donorBefore)
-    if not donorSignature then return finishDenied(tx, 'donor-appearance-unreadable') end
-    local changed, setError = pcall(function() cache.Stats = tx.originalStat end)
-    if not changed or tostring(read(cache, 'Stats')) ~= tx.originalStat then
-        report('STAT_OVERRIDE_ERROR ' .. tostring(setError))
-        return finishDenied(tx, 'source-stats-not-accepted')
+    -- Use the donor's actual root for its original worn visuals, as in the
+    -- previously in-game-proven transmog path. The cache is item-specific.
+    local donorBefore = snapshot(read(read(cache, 'Equipment'), 'Visuals'))
+    tx.appliedVisualSignature = donorBefore and scalarSignature(donorBefore)
+    if not tx.appliedVisualSignature or root(spawnedId) ~= tx.donorRoot then
+        return finishDenied(tx, 'donor-root-appearance-or-template-unavailable')
     end
-    local after = snapshot(read(read(cache, 'Equipment'), 'Visuals'))
-    if not after or scalarSignature(after) ~= donorSignature then
-        return finishDenied(tx, 'donor-appearance-changed-unexpectedly')
+    local wrote, statErr = pcall(function() cache.Stats = tx.originalStat end)
+    if not wrote or tostring(read(cache, 'Stats')) ~= tx.originalStat then
+        return finishDenied(tx, 'source-stat-instance-override-refused:' .. tostring(statErr))
+    end
+    if not donorRootIdentityMatches(spawnedId, tx.donorRoot, tx.originalStat)
+        or itemVisualSignature(spawnedId) ~= tx.appliedVisualSignature then
+        return finishDenied(tx, 'donor-visual-or-source-stat-readback-failed')
     end
     for _, name in ipairs(REQUIRED) do
         local componentIsPresent = component(original, name) ~= nil
@@ -722,6 +1038,12 @@ local function applyCraft(tx, spawnedId)
         report('COMPONENT ' .. name .. '=' .. why)
         if not ok then return finishDenied(tx, why) end
     end
+    local profOk, profWhy = synchronizeNativeProficiency(original, newItem, tx.originalStat)
+    if not profOk then return finishDenied(tx, 'proficiency-sync-refused:' .. tostring(profWhy)) end
+    local groupsOk, groupsWhy = sameProficiency(tx.original, spawnedId, tx.sourceProficiency)
+    if not groupsOk then return finishDenied(tx, 'proficiency-pre-equip:' .. tostring(groupsWhy)) end
+    report('PROFICIENCY_NATIVE_PREFLIGHT source=' .. tx.sourceProficiency
+        .. ' output=' .. tostring(groupsWhy))
     if tx.oldEquipped then
         local un = pcall(Osi.Unequip, tx.actor, tx.original)
         if not un then return finishDenied(tx, 'unequip-refused') end
@@ -867,16 +1189,25 @@ local function startCraft(actor, scroll, target, donor, request)
         return finishDenied(tx, 'runtime-and-root-stats-disagree')
     end
     tx.originalStat = originalStat
+    tx.sourceProficiency = proficiencySignature(target)
+    if not tx.sourceProficiency then
+        return finishDenied(tx, 'source-proficiency-stats-unavailable')
+    end
+    tx.sourceRoot = root(target)
     tx.donorRoot = root(donor)
-    if not tx.donorRoot or tx.donorRoot == root(target) then
+    if not tx.sourceRoot or not tx.donorRoot or tx.donorRoot == tx.sourceRoot then
         return finishDenied(tx, 'same-appearance-or-invalid-template')
     end
+    -- Require donor visuals before approving the native recipe, avoiding
+    -- an avoidable post-approval failure on exotic/modded armor.
+    local visuals, visualReason = donorVisualData(tx.donorRoot)
+    if not visuals then return finishDenied(tx, 'donor-visual-preflight:' .. tostring(visualReason)) end
     local escrow, escrowReason = escrowHolder(actor)
     report('ESCROW_PREFLIGHT_V8 request=' .. tostring(request)
         .. ' holder=' .. tostring(escrow) .. ' source=' .. tostring(escrowReason))
     if not escrow then return finishDenied(tx, 'no-verified-escrow-holder:' .. tostring(escrowReason)) end
     tx.escrow = escrow
-    local ledger = PersistentVars and PersistentVars.HBScrollTransmogRecords
+    local ledger = SavedGameplay.TransmogRecords()
     if ledger then
         if ledger[target] or ledger[donor] then
             return finishDenied(tx, 'already-transmogged-item-used-as-ingredient')
@@ -957,7 +1288,7 @@ end
 -- All input Transform values MUST be None in the author's ItemCombos.txt.
 local function startRevert(actor, scroll, output, request)
     if waiting then return respond(actor, request, false) end
-    local ledger = PersistentVars and PersistentVars.HBScrollTransmogRecords
+    local ledger = SavedGameplay.TransmogRecords()
     local record = type(ledger) == 'table' and ledger[output] or nil
     if not record then
         report('REVERT_REFUSED_V12 reason=not-a-recorded-transmog')
@@ -968,7 +1299,10 @@ local function startRevert(actor, scroll, output, request)
         or not ownedBy(actor, output) or not itemExists(actor)
         or not itemExists(record.Original) or not itemExists(record.Escrow)
         or not heldBy(record.Escrow, record.Original)
-        or tostring(root(output)):lower() ~= tostring(record.DonorRoot):lower()
+        or (record.VisualMode == 'SourceRootVisualOnlyV1'
+            and (not record.SourceRoot or root(output) ~= record.SourceRoot))
+        or (record.VisualMode ~= 'SourceRootVisualOnlyV1'
+            and tostring(root(output)):lower() ~= tostring(record.DonorRoot):lower())
     then
         report('REVERT_REFUSED_V13 reason=token-type-count-owner-or-escrow-invalid')
         return respond(actor, request, false)
@@ -1215,7 +1549,8 @@ Ext.Osiris.RegisterListener('TemplateAddedTo', 4, 'after', function(template, sp
         if stageNativeCandidate(tx, spawned, 'TemplateAddedTo') then return end
     end
     if not sameEntity(owner, tx.actor) then return end
-    if tx.kind ~= 'craft' or root(spawned) ~= tx.donorRoot then return end
+    if tx.kind ~= 'craft' or root(spawned) ~= tx.donorRoot
+        or sameEntity(spawned, tx.original) or sameEntity(spawned, tx.appearance) then return end
     if not itemExists(spawned) then return end
     local ok, err = pcall(applyCraft, tx, spawned)
     if not ok then
@@ -1289,7 +1624,15 @@ local function restoreOutputFromSource(output, record, origin)
     if not itemExists(record.Escrow) or not heldBy(record.Escrow, record.Original) then
         return false, 'protected-original-not-in-escrow'
     end
-    if root(output) ~= record.DonorRoot then return false, 'output-no-longer-donor-root' end
+    local visualOnly = record.VisualMode == 'SourceRootVisualOnlyV1'
+    if visualOnly then
+        if type(record.SourceRoot) ~= 'string' or root(output) ~= record.SourceRoot
+            or root(record.Original) ~= record.SourceRoot then
+            return false, 'source-root-record-identity-mismatch'
+        end
+    elseif root(output) ~= record.DonorRoot then
+        return false, 'legacy-output-no-longer-donor-root'
+    end
     local oldRootStat = stat(record.Original)
     if oldRootStat ~= record.SourceStats or installedStat(record.Original) ~= record.SourceStats then
         return false, 'protected-original-stat-disagrees-with-ledger'
@@ -1319,12 +1662,76 @@ local function restoreOutputFromSource(output, record, origin)
         or not component(original, 'Armor') then
         return false, 'saved-armour-slot-or-type-mismatch'
     end
-    -- Only repair the naturally reverted donor stat or the already-restored
-    -- original stat. A third stat suggests an unrelated edit; fail closed.
-    local donorBaseStat = stat(output)
+    -- Compatibility: pre-v1 donor-root records are not safe by the new
+    -- mechanical standard. Preserve their EXACT previous restoration behavior
+    -- and their verified Scroll of Reversion, rather than silently damaging
+    -- an existing campaign. They must be reverted/retransmogged to gain the
+    -- new source-root mechanics. Do not claim they have been converted.
+    if not visualOnly then
+        if record.VisualMode ~= 'DonorRootProficiencyV2' then
+            report('LEGACY_DONOR_ROOT_NEEDS_REVERSION output=' .. tostring(output)
+                .. ' retainedOldRestore=true mechanicsNotGuaranteed=true')
+        end
+        -- Only repair the naturally reverted donor stat or the already-restored
+        -- original stat. A third stat suggests an unrelated edit; fail closed.
+        local donorBaseStat = stat(output)
+        local before = installedStat(output)
+        if before ~= donorBaseStat and before ~= record.SourceStats then
+            return false, 'replacement-has-unrecognized-runtime-stat:' .. tostring(before)
+        end
+        local serverItem = component(replacement, 'ServerItem')
+        if not serverItem or type(read(serverItem, 'CreateCacheTemplate')) ~= 'function' then
+            return false, 'saved-server-item-cannot-create-instance-template'
+        end
+        local made, makeError = pcall(function() serverItem:CreateCacheTemplate() end)
+        if not made then return false, 'saved-template-create-failed:' .. tostring(makeError) end
+        local cache = read(serverItem, 'Template')
+        if not cache then return false, 'saved-instance-template-missing' end
+        -- Preserve the donor's visuals unchanged. Only restore the source stats.
+        local visuals = snapshot(read(read(cache, 'Equipment'), 'Visuals'))
+        local signature = visuals and scalarSignature(visuals)
+        if not signature then return false, 'saved-donor-visuals-unreadable' end
+        local wrote, writeError = pcall(function() cache.Stats = record.SourceStats end)
+        if not wrote or tostring(read(cache, 'Stats')) ~= record.SourceStats then
+            return false, 'saved-stat-override-refused:' .. tostring(writeError)
+        end
+        local after = snapshot(read(read(cache, 'Equipment'), 'Visuals'))
+        if not after or scalarSignature(after) ~= signature then
+            return false, 'saved-visuals-changed-while-restoring-stats'
+        end
+        for _, name in ipairs(REQUIRED) do
+            if not component(original, name) then return false, 'protected-original-lacks:' .. name end
+            local ok, why = syncComponent(original, replacement, name)
+            if not ok then return false, 'restore-' .. name .. ':' .. tostring(why) end
+        end
+        for _, name in ipairs(OPTIONAL) do
+            local ok, why = syncComponent(original, replacement, name)
+            if not ok then return false, 'restore-' .. name .. ':' .. tostring(why) end
+        end
+        if record.VisualMode == 'DonorRootProficiencyV2' then
+            if type(record.SourceProficiency) ~= 'string' then
+                return false, 'new-record-missing-source-group'
+            end
+            local profOk, profWhy = synchronizeNativeProficiency(original, replacement, record.SourceStats)
+            if not profOk then return false, 'saved-proficiency-sync-refused:' .. tostring(profWhy) end
+            local matchOK, matchWhy = sameProficiency(record.Original, output, record.SourceProficiency)
+            if not matchOK then return false, 'saved-proficiency-mismatch:' .. tostring(matchWhy) end
+        end
+        local got = installedStat(output)
+        report('LOAD_COMPONENTS_V10 origin=' .. tostring(origin)
+            .. ' output=' .. output .. ' previousStat=' .. tostring(before)
+            .. ' donorStat=' .. tostring(donorBaseStat)
+            .. ' restoredStat=' .. tostring(got)
+            .. ' originalStat=' .. record.SourceStats)
+        if got ~= record.SourceStats then return false, 'restored-stat-engine-readback-mismatch' end
+        return true, before ~= record.SourceStats
+    end
+    -- New source-root output is mechanically the original equipment. Never
+    -- overwrite Stats or any gameplay component on load. A source-root stat
+    -- mismatch is a genuine integrity failure, not an invitation to patch it.
     local before = installedStat(output)
-    if before ~= donorBaseStat and before ~= record.SourceStats then
-        return false, 'replacement-has-unrecognized-runtime-stat:' .. tostring(before)
+    if before ~= record.SourceStats or stat(output) ~= record.SourceStats then
+        return false, 'source-root-output-stat-drift'
     end
     local serverItem = component(replacement, 'ServerItem')
     if not serverItem or type(read(serverItem, 'CreateCacheTemplate')) ~= 'function' then
@@ -1334,35 +1741,22 @@ local function restoreOutputFromSource(output, record, origin)
     if not made then return false, 'saved-template-create-failed:' .. tostring(makeError) end
     local cache = read(serverItem, 'Template')
     if not cache then return false, 'saved-instance-template-missing' end
-    -- Preserve the donor's visuals unchanged. Only restore the source stats.
-    local visuals = snapshot(read(read(cache, 'Equipment'), 'Visuals'))
-    local signature = visuals and scalarSignature(visuals)
-    if not signature then return false, 'saved-donor-visuals-unreadable' end
-    local wrote, writeError = pcall(function() cache.Stats = record.SourceStats end)
-    if not wrote or tostring(read(cache, 'Stats')) ~= record.SourceStats then
-        return false, 'saved-stat-override-refused:' .. tostring(writeError)
+    local visualOK, signature = transplantDonorVisuals(cache, record.DonorRoot)
+    if not visualOK then return false, 'saved-visual-only-transfer-refused:' .. tostring(signature) end
+    if not sourceRootIdentityMatches(output, record.SourceRoot, record.SourceStats)
+        or itemVisualSignature(output) ~= signature then
+        return false, 'saved-visual-only-readback-mismatch'
     end
-    local after = snapshot(read(read(cache, 'Equipment'), 'Visuals'))
-    if not after or scalarSignature(after) ~= signature then
-        return false, 'saved-visuals-changed-while-restoring-stats'
+    local cueOK, cueResult = cueDonorVisualRoot(output, record.SourceRoot, record.DonorRoot)
+    if not cueOK then return false, 'saved-visual-renderer-cue-refused:' .. tostring(cueResult) end
+    if not sourceRootIdentityMatches(output, record.SourceRoot, record.SourceStats) then
+        return false, 'saved-visual-cue-changed-mechanical-identity'
     end
-    for _, name in ipairs(REQUIRED) do
-        if not component(original, name) then return false, 'protected-original-lacks:' .. name end
-        local ok, why = syncComponent(original, replacement, name)
-        if not ok then return false, 'restore-' .. name .. ':' .. tostring(why) end
-    end
-    for _, name in ipairs(OPTIONAL) do
-        local ok, why = syncComponent(original, replacement, name)
-        if not ok then return false, 'restore-' .. name .. ':' .. tostring(why) end
-    end
-    local got = installedStat(output)
-    report('LOAD_COMPONENTS_V10 origin=' .. tostring(origin)
-        .. ' output=' .. output .. ' previousStat=' .. tostring(before)
-        .. ' donorStat=' .. tostring(donorBaseStat)
-        .. ' restoredStat=' .. tostring(got)
-        .. ' originalStat=' .. record.SourceStats)
-    if got ~= record.SourceStats then return false, 'restored-stat-engine-readback-mismatch' end
-    return true, before ~= record.SourceStats
+    report('LOAD_SOURCE_ROOT_VISUAL_ONLY_V1 origin=' .. tostring(origin)
+        .. ' output=' .. tostring(output) .. ' stat=' .. tostring(before)
+        .. ' sourceRoot=' .. tostring(record.SourceRoot)
+        .. ' appearanceRoot=' .. tostring(record.DonorRoot))
+    return true, false
 end
 
 -- Applying stat and component values restores the item's saved mechanics, but
@@ -1387,7 +1781,9 @@ local function performRestore(recordId, record, trigger)
             .. ' originalOwner=' .. tostring(type(record)=='table' and inventoryOwner(record.Original) or nil)
             .. ' originalCharacterOwner=' .. tostring(type(record)=='table' and firstCharacterOwner(record.Original) or nil)
             .. ' outputStat=' .. tostring(installedStat(recordId))
-            .. ' action=do-not-overwrite-this-save')
+            .. (type(record)=='table' and record.VisualMode ~= 'SourceRootVisualOnlyV1'
+                and record.VisualMode ~= 'DonorRootProficiencyV2'
+                and ' action=legacy-donor-root-please-revert' or ' action=do-not-overwrite-this-save'))
         return
     end
     if not equippedSlot(record.Actor, recordId) then
@@ -1460,6 +1856,10 @@ local function performRestore(recordId, record, trigger)
                 and installedStat(recordId) == record.SourceStats
                 and itemExists(record.Original) and heldBy(record.Escrow, record.Original)
                 and ownedBy(record.Actor, recordId)
+                and (record.VisualMode ~= 'SourceRootVisualOnlyV1'
+                    or sourceRootIdentityMatches(recordId, record.SourceRoot, record.SourceStats))
+                and (record.VisualMode ~= 'DonorRootProficiencyV2'
+                    or (select(1, sameProficiency(record.Original, recordId, record.SourceProficiency))))
             report('LOAD_RESTORED_V10 output=' .. recordId
                 .. ' stat=' .. tostring(installedStat(recordId))
                 .. ' equipped=' .. tostring(equippedSlot(record.Actor, recordId))
@@ -1498,13 +1898,9 @@ local function reopenLoadBatch(serial)
         loadBatchPending = false
     end
 end
-if Ext.Events and Ext.Events.SessionUnloading then
-    Ext.Events.SessionUnloading:Subscribe(function()
-        loadBatchSerial = loadBatchSerial + 1
-        loadBatchPending = false
-        loadBatchClosed = false
-    end)
-end
+-- SE v33 has no SessionUnloading event. The Lua VM resets at unload,
+-- and the existing 5.5-second gate reopens across repeated load notifications.
+-- Do not subscribe to an unavailable lifecycle event.
 
 local function queueLoadRestore(trigger)
     if loadBatchPending or loadBatchClosed then
@@ -1526,11 +1922,11 @@ local function queueLoadRestore(trigger)
             report('LOAD_RESTORE_SKIPPED_V11 reason=craft-or-revert-active trigger=' .. tostring(trigger))
             return
         end
-        local ledger = PersistentVars and PersistentVars.HBScrollTransmogRecords
+        local ledger = SavedGameplay.TransmogRecords()
         local count = 0
         if type(ledger) == 'table' then for _ in pairs(ledger) do count = count + 1 end end
         report('LOAD_LEDGER_V11 trigger=' .. tostring(trigger)
-            .. ' persistentVars=' .. type(PersistentVars)
+            .. ' storage=' .. (SavedGameplay.Ready() and 'ModVars' or 'legacy-fallback')
             .. ' ledger=' .. type(ledger)
             .. ' records=' .. tostring(count))
         if type(ledger) ~= 'table' then return end

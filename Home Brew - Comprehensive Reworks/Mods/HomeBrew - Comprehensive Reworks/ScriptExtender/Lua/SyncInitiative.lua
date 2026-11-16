@@ -38,7 +38,9 @@ local function SyncInitiative(summon)
     end
 
     if ownerRoll ~= nil and summonRoll ~= nil and ownerRoll ~= summonRoll then
-        print("Adjusting " .. Osi.ResolveTranslatedString(Osi.GetDisplayName(summon)) .. "'s initiative roll from " .. summonRoll .. " to " .. ownerRoll .. ".")
+        if _G.HB_DebugConsole == true then
+            print("Adjusting " .. Osi.ResolveTranslatedString(Osi.GetDisplayName(summon)) .. "'s initiative roll from " .. summonRoll .. " to " .. ownerRoll .. ".")
+        end
         summonEntity.CombatantJoinEvent.Initiative = ownerRoll
     end
 end

@@ -15,6 +15,7 @@ M.Selections = {
     {'SelectedHornColour','SelectableHornColours'}, {'SelectedHornTipColour','SelectableHornTipColours'},
     {'SelectedPassiveColour','SelectablePassiveColours'}, {'SelectedHeterochromiaEyeColour','SelectableEyeColours'},
 }
+M.EmptyChoices = {SelectedTopOfHead='SelectableTopOfHead',SelectedChin='SelectableChin',SelectedJaw='SelectableJaw'}
 M.Groups = {'ApperanceScalarAge','ApperanceScalarFreckles','ApperanceScalarFrecklesIntensity','ApperanceScalarVitiligo',
     'AppearanceHairGraying','AppearanceHairHighlights','AppearanceHornColor','AppearanceHornTipColor',
     'AppearanceLipsMakeup','AppearanceMakeup','AppearancePassive','AppearanceScars','AppearanceTattoos'}
@@ -23,6 +24,7 @@ function M.Read(object, key)
     if object == nil then return nil end
     local ok, value = pcall(function() return object[key] end)
     if ok then return value end
+    return nil
 end
 
 function M.Count(object)
@@ -30,6 +32,15 @@ function M.Count(object)
     local ok, result = pcall(function() return #object end)
     if ok and type(result) == 'number' then return result end
     return M.Read(object,'Count') or 0
+end
+
+local function LipOptionCount(options)
+    local count=M.Count(options)
+    local native=M.Read(options,'Count')
+    if type(native)=='number' and native%1==0 and native>=0 and native<=512 and native>count then
+        return native
+    end
+    return count
 end
 
 local function Atom(value)
@@ -165,8 +176,15 @@ local function SameDescriptor(a,b)
     return true
 end
 
-local function Catalogue(collection)
-    local count=M.Count(collection)
+local function OptionCount(collection,label)
+    if label=='SelectedHornColour' or label=='SelectedHornTipColour' or M.EmptyChoices[label] then
+        return LipOptionCount(collection)
+    end
+    return M.Count(collection)
+end
+
+local function Catalogue(collection,label)
+    local count=OptionCount(collection,label)
     if type(count)~='number' or count<1 or count>512 or count%1~=0 then
         error('The appearance option list is too large to disambiguate safely.')
     end
@@ -176,7 +194,7 @@ local function Catalogue(collection)
 end
 
 local function CheckChoice(collection,choice,label)
-    local count=M.Count(collection)
+    local count=OptionCount(collection,label)
     if type(choice)~='table' or type(choice.Index)~='number' or choice.Index%1~=0
         or choice.Index<1 or choice.Index>count or type(choice.Catalogue)~='table'
         or #choice.Catalogue~=count or count>512 then
@@ -192,7 +210,7 @@ end
 
 local function CaptureChoice(collection,selected,identity,label)
     local matches={}
-    for i=1,M.Count(collection) do
+    for i=1,OptionCount(collection,label) do
         local candidate=M.Read(collection,i)
         if SameIdentity(candidate,identity) then
             matches[#matches+1]={Index=i,Item=candidate,Identity=M.Identity(candidate) or identity}
@@ -206,7 +224,7 @@ local function CaptureChoice(collection,selected,identity,label)
     -- saved identity from that catalogue entry.
     if #matches==0 then
         local raw,byEquality={},{ }
-        for i=1,M.Count(collection) do
+        for i=1,OptionCount(collection,label) do
             local candidate=M.Read(collection,i)
             if rawequal(candidate,selected) then raw[#raw+1]={Index=i,Item=candidate,Identity=M.Identity(candidate) or identity} end
             if SameObject(candidate,selected) then byEquality[#byEquality+1]={Index=i,Item=candidate,Identity=M.Identity(candidate) or identity} end
@@ -214,7 +232,7 @@ local function CaptureChoice(collection,selected,identity,label)
         matches=#raw==1 and raw or byEquality
         if #matches~=1 then error('An appearance option is still loading. Try saving again.') end
         local resolved=matches[1]
-        return resolved.Identity, {Index=resolved.Index,Catalogue=Catalogue(collection)}
+        return resolved.Identity, {Index=resolved.Index,Catalogue=Catalogue(collection,label)}
     end
 
     if #matches==1 then return matches[1].Identity, nil end
@@ -228,15 +246,14 @@ local function CaptureChoice(collection,selected,identity,label)
         if rawequal(candidate.Item,selected) then raw[#raw+1]=candidate end
         if SameObject(candidate.Item,selected) then byEquality[#byEquality+1]=candidate end
     end
-    local resolved=(#raw==1 and raw[1]) or (#byEquality==1 and byEquality[1]) or nil
-    if not resolved then
-        error('More than one appearance option matches this preset ('..tostring(label)
-            ..'; '..#matches..' entries; selected native option cannot be identified uniquely).')
-    end
-    return resolved.Identity, {Index=resolved.Index,Catalogue=Catalogue(collection)}
+    -- When native selection identity cannot distinguish duplicate options,
+    -- save the first matching catalogue entry rather than blocking the preset.
+    -- Its index and full catalogue are recorded to make replay deterministic.
+    local resolved=(#raw==1 and raw[1]) or (#byEquality==1 and byEquality[1]) or matches[1]
+    return resolved.Identity, {Index=resolved.Index,Catalogue=Catalogue(collection,label)}
 end
 
-function M.Find(collection, identity, label, choice)
+function M.Find(collection, identity, label, choice, optionCount)
     if choice~=nil then
         local candidate=CheckChoice(collection,choice,label)
         if not SameIdentity(candidate,identity) then
@@ -245,7 +262,7 @@ function M.Find(collection, identity, label, choice)
         return candidate
     end
     local match, matches=nil,0
-    for i=1,M.Count(collection) do
+    for i=1,(optionCount or OptionCount(collection,label)) do
         local candidate=M.Read(collection,i)
         if SameIdentity(candidate,identity) then
             matches=matches+1
@@ -287,7 +304,32 @@ function M.Compatible(context, preset)
     return true
 end
 
+-- Existing human presets may contain hidden native horn-colour defaults.
+-- When the active Human appearance VM exposes *no* live horn colour,
+-- selectable horn palette or horn-colour settings, these stored values are
+-- inapplicable rather than failed appearance choices.  Do not skip actual
+-- colours or available options, even for a modded Human with horns.
+function M.HornColoursUnavailable(context)
+    local race=M.Read(context,'SelectedRace')
+    if M.Read(race,'IDString')~='Human' then return false end
+    for _,entry in ipairs({
+        {'SelectedHornColour','SelectableHornColours','AppearanceHornColor'},
+        {'SelectedHornTipColour','SelectableHornTipColours','AppearanceHornTipColor'},
+    }) do
+        if M.Read(context,entry[1])~=nil then return false end
+        if M.Count(M.Read(context,entry[2]))>0 then return false end
+        if M.Count(M.Read(M.Read(context,entry[3]),'ColorOptions'))>0 then return false end
+    end
+    return true
+end
+
+local function HornColourKey(key)
+    return key=='SelectedHornColour' or key=='SelectedHornTipColour'
+end
+
 local function ActiveGroup(context,name)
+    if (name=='AppearanceHornColor' or name=='AppearanceHornTipColor')
+        and M.HornColoursUnavailable(context) then return false end
     if name~='AppearancePassive' then return true end
     if M.Read(context,'IsDragonborn')==true then return true end
     local scales=M.Read(context,'SelectedScales')
@@ -315,12 +357,20 @@ function M.Capture(context)
     if subrace then result.SubRace=Descriptor(subrace,'subrace') end
     local heterochromia = M.Read(context,'HeterochromiaEnabled')
     if type(heterochromia)=='boolean' then result.Heterochromia=heterochromia end
+    local hiddenHornColours=M.HornColoursUnavailable(context)
     for _, pair in ipairs(M.Selections) do
+        if not (hiddenHornColours and HornColourKey(pair[1])) then
         local selected, source = M.Read(context,pair[1]), M.Read(context,pair[2])
-        -- Chin is normally absent on vanilla characters. Record that absence
-        -- explicitly so a modded Chin slot can be cleared when a preset loads.
-        if pair[1]=='SelectedChin' and (not selected or M.Read(selected,'IsNull')==true) then
-            result.Selections.SelectedChin={Source=pair[2],None=true}
+        if pair[1]=='SelectedLipsMakeupColour' and not selected and LipOptionCount(source)>0 then
+            error('Lip tint is still loading. Wait a moment and save again.')
+        end
+        if (pair[1]=='SelectedHornColour' or pair[1]=='SelectedHornTipColour') and not selected
+            and M.Read(context,'SelectedHorn')~=nil and M.Read(M.Read(context,'SelectedHorn'),'IsNull')~=true
+            and LipOptionCount(source)>0 then
+            error('Horn colors are still loading. Wait a moment and save again.')
+        end
+        if M.EmptyChoices[pair[1]] and (not selected or M.Read(selected,'IsNull')==true) then
+            result.Selections[pair[1]]={Source=pair[2],None=true}
         elseif selected and (pair[1]~='SelectedHeterochromiaEyeColour' or heterochromia) then
             local identity=Descriptor(selected,pair[1])
             identity,choice=CaptureChoice(source,selected,identity,pair[1])
@@ -329,6 +379,7 @@ function M.Capture(context)
                 result.BodyOptions[#result.BodyOptions+1]={Source=pair[2],Identity=identity,Choice=choice}
             end
         end
+        end -- Ignore only unavailable Human horn-colour defaults.
     end
     if not next(result.Selections) then error('Appearance options are not ready yet.') end
     for _, name in ipairs(M.Groups) do
@@ -338,13 +389,20 @@ function M.Capture(context)
             local value=M.Read(group,'Value')
             if Primitive(value) then saved.Value=value end
             local options=M.Read(group,'ColorOptions')
-            for i=1,M.Count(options) do
+            local count=(name=='AppearanceLipsMakeup' or name=='AppearanceHornColor'
+                or name=='AppearanceHornTipColor') and LipOptionCount(options) or M.Count(options)
+            local recorded=0
+            for i=1,count do
                 local option=M.Read(options,i)
                 local current=M.Read(option,'Value')
                 if Primitive(current) then
                     saved.Options[#saved.Options+1]={Identity=M.Identity(option),Index=i,Value=current,
                         Kind=Atom(M.Read(option,'ListItemType'))}
+                    recorded=recorded+1
                 end
+            end
+            if name=='AppearanceLipsMakeup' and count>0 and recorded==0 then
+                error('Lip tint intensity is not ready. Wait a moment and save again.')
             end
             local empty=M.Read(group,'EmptyMaterialSelected')
             if name=='AppearancePassive' and M.Read(context,'IsDragonborn')==true and type(empty)=='boolean' then saved.EmptyMaterial=empty end
@@ -356,7 +414,7 @@ end
 
 local function Option(group, saved)
     local options=M.Read(group,'ColorOptions')
-    if saved.Identity then return M.Find(options,saved.Identity,'appearance group option') end
+    if saved.Identity then return M.Find(options,saved.Identity,'appearance group option',nil,LipOptionCount(options)) end
     local candidate=M.Read(options,saved.Index)
     if candidate and Atom(M.Read(candidate,'ListItemType'))==saved.Kind then return candidate end
 end
@@ -382,8 +440,8 @@ function M.Validate(context, preset)
         if type(selection)~='table' or not known[key] or selection.Source~=known[key] then
             error('An appearance option used by this preset is unavailable.')
         end
-        if key=='SelectedChin' and selection.None==true then
-            if selection.Identity~=nil then error('Invalid empty Chin selection.') end
+        if M.EmptyChoices[key] and selection.None==true then
+            if selection.Identity~=nil or selection.Choice~=nil then error('Invalid empty appearance selection.') end
         elseif type(selection.Identity)~='table' or not next(selection.Identity)
             or not M.Find(M.Read(context,selection.Source),selection.Identity,key,selection.Choice) then
             error('An appearance option used by this preset is unavailable.')
@@ -410,36 +468,43 @@ local function Execute(context, name, parameter)
     if parameter~=nil then command:Execute(parameter) else command:Execute() end
 end
 
--- A missing SelectedChin in existing v1 presets means it was not selected
--- when saved. Never treat the first modded option as an implicit None.
-local function ChinSelection(preset)
-    local selection=preset.Selections.SelectedChin
-    if selection==nil and preset.Version==M.Version then
-        return {Source='SelectableChin',None=true}
+local function EmptySelection(preset,key)
+    local selection=preset.Selections[key]
+    if selection==nil and not preset.ColorSubset and preset.Version==M.Version and M.EmptyChoices[key] then
+        return {Source=M.EmptyChoices[key],None=true}
     end
     return selection
 end
 
-local function SetEmptyChin(context)
-    local options=M.Read(context,'SelectableChin')
+local function EmptyOption(context,key)
+    local options=M.Read(context,M.EmptyChoices[key])
     local empty
-    for i=1,M.Count(options) do
+    for i=1,OptionCount(options,key) do
         local candidate=M.Read(options,i)
         if M.Read(candidate,'IsNull')==true then
-            if empty then error('Multiple empty Chin options; cannot safely restore None.') end
+            if empty then error('Multiple empty '..key..' options; cannot safely restore None.') end
             empty=candidate
         end
     end
-    if empty then
-        -- Prefer a game-owned empty entry if this mod supplies one.
-        context.SelectedChin=empty
-    else
-        local current=M.Read(context,'SelectedChin')
-        if current~=nil and M.Read(current,'IsNull')~=true then
-            -- No proven game-owned None item to assign. Do not fabricate a
-            -- null native pointer or gamble on setting a C++ property to nil.
-            error('No engine-owned empty Chin option is exposed; Chin was not changed.')
-        end
+    return empty
+end
+
+local function IsEmptyChoice(context,key)
+    local current=M.Read(context,key)
+    if current==nil or M.Read(current,'IsNull')==true then return true end
+    if not M.EmptyChoices[key] or EmptyOption(context,key) then return false end
+    local first=M.Read(M.Read(context,M.EmptyChoices[key]),1)
+    return first~=nil and SameObject(current,first)
+end
+
+local function SetEmptyChoice(context,key)
+    if IsEmptyChoice(context,key) then return end
+    local empty=EmptyOption(context,key)
+    local target=empty or M.Read(M.Read(context,M.EmptyChoices[key]),1)
+    if not target then error('No engine-owned neutral '..key..' option is available.') end
+    context[key]=target
+    if not IsEmptyChoice(context,key) then
+        error('The game did not select the neutral '..key..' option.')
     end
 end
 
@@ -462,10 +527,10 @@ local function ApplyValues(context,preset)
     end
     if preset.Heterochromia~=nil then context.HeterochromiaEnabled=preset.Heterochromia end
     for _,pair in ipairs(M.Selections) do
-        local selection=pair[1]=='SelectedChin' and ChinSelection(preset) or preset.Selections[pair[1]]
+        local selection=EmptySelection(preset,pair[1])
         if selection then
-            if pair[1]=='SelectedChin' and selection.None==true then
-                SetEmptyChin(context)
+            if M.EmptyChoices[pair[1]] and selection.None==true then
+                SetEmptyChoice(context,pair[1])
             else
                 local option=M.Find(M.Read(context,selection.Source),selection.Identity,pair[1],selection.Choice)
                 if not option then error('An appearance option changed while loading the preset.') end
@@ -508,10 +573,11 @@ function M.Matches(context,preset)
         if type(a)=='number' and type(b)=='number' then return math.abs(a-b)<0.0001 end
         return a==b
     end
+    local hiddenHornColours=M.HornColoursUnavailable(context)
     for key,selection in pairs(preset.Selections) do
-        if key=='SelectedChin' and selection.None==true then
-            local current=M.Read(context,'SelectedChin')
-            if current~=nil and M.Read(current,'IsNull')~=true then return false,key end
+        if not (hiddenHornColours and HornColourKey(key)) then
+        if M.EmptyChoices[key] and selection.None==true then
+            if not IsEmptyChoice(context,key) then return false,key end
         else
             local selected=M.Read(context,key)
             if not SameIdentity(selected,selection.Identity) then return false,key end
@@ -520,6 +586,7 @@ function M.Matches(context,preset)
                 if not SameObject(selected,expected) then return false,key end
             end
         end
+        end -- This obsolete saved field cannot be represented by the Human VM.
     end
     if preset.Heterochromia~=nil and M.Read(context,'HeterochromiaEnabled')~=preset.Heterochromia then
         return false,'HeterochromiaEnabled'
@@ -535,6 +602,111 @@ function M.Matches(context,preset)
         end
     end
     return true
+end
+
+function M.FaceSubset(preset)
+    local selections={}
+    for _,key in ipairs({'SelectedTopOfHead','SelectedChin','SelectedJaw'}) do
+        local selected=EmptySelection(preset,key)
+        if selected then selections[key]=selected end
+    end
+    if not next(selections) then return nil end
+    return {Version=preset.Version,Race=preset.Race,SubRace=preset.SubRace,
+        Body=preset.Body,ColorSubset=true,Selections=selections,Groups={}}
+end
+
+function M.FaceTrace(context,preset)
+    local parts={}
+    for _,key in ipairs({'SelectedTopOfHead','SelectedChin','SelectedJaw'}) do
+        local source=M.EmptyChoices[key]
+        local options=M.Read(context,source)
+        local first=M.Read(options,1)
+        local saved=EmptySelection(preset,key)
+        local selected=M.Read(context,key)
+        local id=M.Identity(selected) or {}
+        parts[#parts+1]=key..' saved='..tostring(saved and (saved.None and 'None' or
+            (saved.Identity and (saved.Identity.Name or saved.Identity.Guid or saved.Identity.IDString or 'identity'))) or 'absent')
+            ..'; selected='..tostring(selected==nil and 'nil' or
+                (M.Read(selected,'IsNull')==true and 'IsNull' or (id.Name or id.Guid or id.IDString or 'option')))
+            ..'; firstIsNull='..tostring(M.Read(first,'IsNull'))
+            ..'; firstIsSelected='..tostring(SameObject(first,selected))
+            ..'; isDefault='..tostring(IsEmptyChoice(context,key))
+            ..'; count='..tostring(M.Count(options))..'/'..tostring(M.Read(options,'Count'))
+    end
+    return table.concat(parts,'; ')
+end
+
+function M.LipSubset(preset)
+    local selection=preset and preset.Selections and preset.Selections.SelectedLipsMakeupColour
+    local group=preset and preset.Groups and preset.Groups.AppearanceLipsMakeup
+    if not selection and not group then return nil end
+    return {Version=preset.Version,Race=preset.Race,SubRace=preset.SubRace,Body=preset.Body,
+        ColorSubset=true,Selections=selection and {SelectedLipsMakeupColour=selection} or {},
+        Groups=group and {AppearanceLipsMakeup=group} or {}}
+end
+
+function M.LipTrace(context,preset)
+    local chosen=M.Identity(M.Read(context,'SelectedLipsMakeupColour')) or {}
+    local selection=preset and preset.Selections and preset.Selections.SelectedLipsMakeupColour
+    local stored=selection and selection.Identity or {}
+    local group=M.Read(context,'AppearanceLipsMakeup')
+    local options=M.Read(group,'ColorOptions')
+    local savedGroup=preset and preset.Groups and preset.Groups.AppearanceLipsMakeup
+    local function Values(items)
+        local values={}
+        for i,entry in ipairs(items or {}) do
+            values[#values+1]=tostring(i)..'='..tostring(entry.Value)
+        end
+        return table.concat(values,',')
+    end
+    local live={}
+    for i=1,math.min(LipOptionCount(options),16) do
+        live[#live+1]={Value=M.Read(M.Read(options,i),'Value')}
+    end
+    return 'savedColour='..tostring(stored.Name or stored.Guid or stored.IDString or (selection and '?' or 'absent'))
+        ..'; liveColour='..tostring(chosen.Name or chosen.Guid or chosen.IDString or 'absent')
+        ..'; savedSliders='..(savedGroup and Values(savedGroup.Options) or 'absent')
+        ..'; liveSliders='..Values(live)
+        ..'; nativeSliderCount='..tostring(M.Read(options,'Count'))
+        ..'; luaSliderCount='..tostring(M.Count(options))
+end
+
+function M.HornSubset(preset)
+    local selections=preset and preset.Selections or {}
+    local groups=preset and preset.Groups or {}
+    local result={Version=preset and preset.Version,Race=preset and preset.Race,
+        SubRace=preset and preset.SubRace,Body=preset and preset.Body,
+        ColorSubset=true,Selections={},Groups={}}
+    for _,key in ipairs({'SelectedHornColour','SelectedHornTipColour'}) do
+        if selections[key] then result.Selections[key]=selections[key] end
+    end
+    for _,name in ipairs({'AppearanceHornColor','AppearanceHornTipColor'}) do
+        if groups[name] then result.Groups[name]=groups[name] end
+    end
+    if not next(result.Selections) and not next(result.Groups) then return nil end
+    return result
+end
+
+function M.HornTrace(context,preset)
+    local parts={}
+    for _,slot in ipairs({{'SelectedHornColour','SelectableHornColours','AppearanceHornColor'},
+        {'SelectedHornTipColour','SelectableHornTipColours','AppearanceHornTipColor'}}) do
+        local key,source,name=slot[1],slot[2],slot[3]
+        local saved=preset and preset.Selections and preset.Selections[key]
+        local expected=saved and saved.Identity or {}
+        local actual=M.Identity(M.Read(context,key)) or {}
+        local options=M.Read(context,source)
+        local group=preset and preset.Groups and preset.Groups[name]
+        local live=M.Read(M.Read(context,name),'ColorOptions')
+        local function Summary(value)
+            return tostring(value.Name or value.Guid or value.IDString or value.UUID or 'absent')
+        end
+        parts[#parts+1]=key..' saved='..Summary(expected)..'; live='..Summary(actual)
+            ..'; listCount='..tostring(M.Count(options))..'/'..tostring(M.Read(options,'Count'))
+            ..'; savedSettings='..tostring(group and type(group.Options)=='table' and #group.Options or 'absent')
+            ..'; liveSettings='..tostring(M.Count(live))..'/'..tostring(M.Read(live,'Count'))
+    end
+    return table.concat(parts,'; ')
 end
 
 -- Partial loading retains each setting independently. Race/body remain mandatory.
@@ -582,14 +754,16 @@ function M.ApplyAvailable(context,preset)
             if preset.Heterochromia==false then Execute(context,'DisableHeterochromia') end
         end)
     end
+    local hiddenHornColours=M.HornColoursUnavailable(context)
     for _,pair in ipairs(M.Selections) do
-        local selection=pair[1]=='SelectedChin' and ChinSelection(preset) or preset.Selections[pair[1]]
+        if not (hiddenHornColours and HornColourKey(pair[1])) then
+        local selection=EmptySelection(preset,pair[1])
         if selection~=nil then
             Try(pair[1],{Selections={[pair[1]]=selection},Groups={}},function()
                 if type(selection)~='table' or selection.Source~=pair[2] then error('Invalid appearance option') end
-                if pair[1]=='SelectedChin' and selection.None==true then
-                    if selection.Identity~=nil then error('Invalid empty Chin selection') end
-                    SetEmptyChin(context)
+                if M.EmptyChoices[pair[1]] and selection.None==true then
+                    if selection.Identity~=nil or selection.Choice~=nil then error('Invalid empty appearance selection') end
+                    SetEmptyChoice(context,pair[1])
                 else
                     if type(selection.Identity)~='table' or not next(selection.Identity) then error('Invalid appearance option') end
                     local target=M.Find(M.Read(context,pair[2]),selection.Identity,pair[1],selection.Choice)
@@ -598,6 +772,7 @@ function M.ApplyAvailable(context,preset)
                 end
             end)
         end
+        end -- Do not attempt to assign unavailable Human horn-colour defaults.
     end
     for _,name in ipairs(M.Groups) do
         local saved=preset.Groups[name]

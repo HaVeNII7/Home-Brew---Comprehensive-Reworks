@@ -1,6 +1,15 @@
 new entry "MOO_WulbrenHammer"
 type "Weapon"
-using "WPN_LightHammer_1"
-data "WeaponFunctors" "IF(Item()):DealDamage(999,Force)"
+using "WPN_LightHammer_2"
+data "RootTemplate" "b6925b99-4b14-48a1-89ca-eb328bb746df"
+data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT);WeaponEnchantment(2)"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "ValueOverride" "1250"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "AllintheWrist;Alchemist"
 data "Unique" "1"
-data "DefaultBoosts" "Tag(ORI_GALE_CONSUMABLEARTEFACT);WeaponEnchantment(1)"
+data "UseCosts" "ReactionActionPoint:1;GreaterAttunement:1;Attunement:3"
+data "StatusOnEquip" "GREATER_ATTUNEMENT;ATTUNEMENT3"
+data "WeaponFunctors" "IF(Item()):DealDamage(999,Force)"
+
+<!--ITEM VARIANT - FEAT REWORK-->

@@ -89,7 +89,7 @@
 	<content contentuid="h94981fe3g720cg4a5dga655g1191bf400005" version="1">Bloodstorm Serration</content>
 	<content contentuid="hf318c6dcg5444g4c2ag86b7g55b8ad90000e" version="1">Upon damaging a &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleeding&lt;/LSTag&gt; creature with a weapon, you gain a stack of &lt;LSTag Type="Status" Tooltip="BLOODSTORMSERRATION"&gt;Force Serration&lt;/LSTag&gt;.</content>
 	<content contentuid="h94981fe3g720cg4a5dga655g1191bf4000z5" version="1">Force Serration</content>
-	<content contentuid="hf318c6dcg5444g4c2ag86b7g55b8ad9000ze" version="1">Affected creature deals an additional [1] with all weapon attacks.</content>
+	<content contentuid="hf318c6dcg5444g4c2ag86b7g55b8ad9000ze" version="1">Affected creature deals an additional [1] with all weapon attacks made against non-allied targets.</content>
 
 	<content contentuid="h94981fe3g720cg4a5dga655g1191bf400006" version="1">Razor Wind Sortilege</content>
 	<content contentuid="hf318c6dcg5444g4c2ag86b7g55b8ad90000f" version="1">While &lt;LSTag Type="Status" Tooltip="WINDSOFTHEARCBLADE"&gt;Winds of the Arcblade&lt;/LSTag&gt; is active, &lt;LSTag Type="Spell" Tooltip="Projectile_SteelWindStrike"&gt;Steel-Wind Strike&lt;/LSTag&gt; will always roll as a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>
@@ -178,7 +178,7 @@
 	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c6s6d50005a" version="6">Upon casting a Spell, restore one of your &lt;LSTag Type="ActionResource" Tooltip="ArcaneRecoveryPoint"&gt;Arcane Recovery&lt;/LSTag&gt; charges. A &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; must be consumed in order for this effect to trigger.</content>
 
 	<content contentuid="h9aee3403g58c0g4c53g8ca6g38914f4f8164" version="2">Evoke the Weave</content>
-	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c5b855d728f" version="4">You add your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt; to the Damage Rolls of all Spells you cast when damaging an enemy.</content>
+	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c5b855d728f" version="4">You add your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt; to the damage of all Spells you cast when damaging a non-allied target.</content>
 
 	<content contentuid="h9aee3403g58c0g4c53g8ca6g3891666d454d" version="2">Explosive Understanding</content>
 	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c5b22d5f978" version="4">When damaging an enemy with a Spell, all enemies within [1] of your target take Force damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt;.</content>
@@ -316,7 +316,7 @@
 	<content contentuid="h882cb4d7g2c6ag47d3g998dgaca2f619e3e7" version="2">Amidst depraved conjurations, you walk comfortably within the shadow of death, making your home there in spite of the living.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Suggested Role(s): Summoner</content>
 
 	<content contentuid="h89c2a75ag2f4fg4d83g9e66g81575b95f1c4" version="2">Necromantic Apprentice</content>
-	<content contentuid="h699f408ag3943g45bcga13cg10548238165a" version="2">Dealing damage to an enemy will permanently apply &lt;LSTag Type="Status" Tooltip="CRAWLING_GNAW_SWITCH"&gt;Crawling Gnaw&lt;/LSTag&gt; to your target. No effect when damaging Constructs, Elementals, Plants, Ooze, or Undead.</content>
+	<content contentuid="h699f408ag3943g45bcga13cg10548238165a" version="2">Dealing damage to an enemy will permanently apply &lt;LSTag Type="Status" Tooltip="CRAWLING_GNAW_SWITCH"&gt;Crawling Gnaw&lt;/LSTag&gt; to your target. No effect when damaging Constructs, Elementals, Plants, Ooze, or Undead. Zombies born from Crawling Gnaw are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 
 	<content contentuid="h2f479431gb8d1g41e5g890dg59ddd0becf9c" version="2">Lifedrinker</content>
 	<content contentuid="he6ee1384geb80g45fbg8d56gbf7262d63153" version="1">When you deal damage with a Spell, you recover &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; equal to half of the total damage dealt.</content>
@@ -332,7 +332,7 @@
 	<content contentuid="h699f408ag3943g45bcga13cg1054823000za" version="1">Affected creature has been reanimated by a nearby Necromancer. Their soul is now bound to their new owner.</content>
 
 	<content contentuid="hcaab1c71g330cg4860g8ceeg443b4a5b3fd6" version="2">Apostle of the Risen Dead</content>
-	<content contentuid="h2ad29575gfd7cg4566g8445g7594ca37780e" version="1">All allied Undead within [1] gain a bonus to their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt; during combat.</content>
+	<content contentuid="h2ad29575gfd7cg4566g8445g7594ca37780e" version="1">All allied Undead within [1] gain a bonus to their &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and damage dealt to non-allied targets equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Intelligence Modifier&lt;/LSTag&gt; during combat.</content>
 
 	<content contentuid="h9aee3403g58c0g4c53g8ca6g3803922d6f45" version="6">Dominion Over Death</content>
 	<content contentuid="hcbb5a5cfg7df0g412cga4a4g3c6s6ddd69f8" version="6">Your &lt;LSTag Type="Status" Tooltip="ZOMBIE_DECAY"&gt;Newborn Zombies&lt;/LSTag&gt; now last until the end of combat, rather than for three turns.</content>
@@ -426,10 +426,10 @@
 	<content contentuid="772cd70f49274c7596988bf90e992ca80000k" version="6">You ignore elemental &lt;LSTag Tooltip="Resistant"&gt;Resistances&lt;/LSTag&gt; when dealing damage to an enemy or item.</content>
 
 	<content contentuid="772cd70f49274c7596988bf90e992ca800012" version="6">Potent Cantrips</content>
-	<content contentuid="772cd70f49274c7596988bf90e992ca80000l" version="6">When dealing damage with a &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, deal additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; multiplied by two.</content>
+	<content contentuid="772cd70f49274c7596988bf90e992ca80000l" version="6">When dealing damage to non-allied targets with a &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt;, deal additional damage equal to your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; multiplied by two.</content>
 
 	<content contentuid="772cd70f49274c7596988bf90e992ca800013" version="6">Potent Spells</content>
-	<content contentuid="772cd70f49274c7596988bf90e992ca80000m" version="6">Spells you cast gain a damage bonus equal to 4 multiplied by the level of &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; used.</content>
+	<content contentuid="772cd70f49274c7596988bf90e992ca80000m" version="6">Spells you cast gain a damage bonus equal to 4 multiplied by the level of &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; used when damaging a non-allied target.</content>
 
 	<content contentuid="772cd70f49274c7596988bf90e992ca800014" version="6">Spellblade</content>
 	<content contentuid="772cd70f49274c7596988bf90e992ca80000n" version="6">Gain the ability to create an &lt;LSTag Type="Spell" Tooltip="Shout_WeaponBond"&gt;Arcane Bond&lt;/LSTag&gt; between you and your weapons, restoring one charge of &lt;LSTag Type="ActionResource" Tooltip="ArcaneRecoveryPoint"&gt;Arcane Recovery&lt;/LSTag&gt; on every killing blow or &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;.</content>

@@ -44,7 +44,7 @@
 	<content contentuid="06ccff5b74f84871a26d66436d5da6d500011" version="1">Mind Sliver</content>
 	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000k" version="1">Deal Psychic damage to a creature, potentially &lt;LSTag Type="Status" Tooltip="MIND_SLIVER"&gt;Fracturing&lt;/LSTag&gt; their ability to think clearly.</content>
 	<content contentuid="06ccff5b74f84871a26d66436d5da6d500a11" version="1">Mind Fracture</content>
-	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000ak" version="1">Affected creature suffers a -1d4 penalty to their next &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;. In addition, they are unable to utilize their armours elemental &lt;LSTag Type="Status" Tooltip="DAMAGE_REDUCTION"&gt;Damage Reduction&lt;/LSTag&gt;.</content>
+	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e59000ak" version="1">Affected creature suffers a -1d4 penalty to their next &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
 
 	<content contentuid="06ccff5b74f84871a26d66436d5da6d500012" version="1">Mud Mantle</content>
 	<content contentuid="aa20553d362b4ff6b5d95c70e4e37e590000l" version="1">Coat yourself in magically hardened &lt;LSTag Type="Status" Tooltip="MUD_MANTLE"&gt;Mud&lt;/LSTag&gt;, perfectly contoured to the shape of your body.&lt;Br&gt;&lt;br&gt;This &lt;LSTag Tooltip="Cantrip"&gt;Cantrip&lt;/LSTag&gt; may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt;.</content>
@@ -220,16 +220,32 @@
 	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzzd" version="1">Soothe the wounds of a nearby creature, healing it.</content>
 
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130005" version="1">Feline Bombardment</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000e" version="1">Upon landing a killing blow, call forth a feline familiar. Upon death, the familiar will erupt in a blazing inferno, dealing [1] to all creatures within [2]. At the end of each of their turns, the familiar takes [3].&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2ff5s8d5f45" version="1">Blazing Bombadier</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c38613yyye" version="1">Increase the damage of the inferno by [1] per Spell Slot.</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c386upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Increase the damage of the inferno by [1] per Spell Slot.</content>
+	<content contentuid="hb391dafa1f8c5314a969b5d561435f05cat" version="1">After landing a killing blow, summon a Fire, Ice, or Lightning based feline familiar. The familiar takes elemental damage at the end of each of its turns, then explodes when it dies.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386upcast" version="1">&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; &lt;LSTag Tooltip="SpellSlot"&gt;Upcast Info&lt;/LSTag&gt;:&lt;br&gt;Increase the damage of the explosion by [1] per Spell Slot.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613yyye" version="1">Increase the damage of the explosion by [1] per Spell Slot.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2ff5s8d5f45" version="1">Elemental Bombadier</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300z5" version="1">Feline Bombardment</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300ze" version="1">Affected creature will call forth a feline familiar upon landing a killing blow.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300ze" version="1">Call forth an elemental bombadier upon landing a killing blow.</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zz5" version="1">Feline Bombardment</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zze" version="1">Affected creature is taking [1] per turn. Upon death, it will erupt in a blazing inferno, scorching everything within [2] for [3].</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c38613yzz5" version="1">Feline Bombardment</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c38613yzze" version="1">Erupt in a blazing inferno.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386130zze" version="1">Affected creature is taking [1] per turn. Upon death, it will erupt in an explosion, damaging everything within [2] for [3].</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613fire" version="1">Feline Bombardment (Fire)</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861dfire" version="1">Upon landing a killing blow, call forth a blazing feline familiar. Upon death, the familiar will erupt in an inferno, dealing [1] to all creatures within [2]. At the end of each of their turns, the familiar takes [3].&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861zfire" version="1">Feline Bombardment (Fire)</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386dzfire" version="1">Affected creature will call forth a blazing feline familiar upon landing a killing blow. Upon death, the familiar will erupt in an inferno, dealing [1] to all creatures within [2]. At the end of each of their turns, the familiar takes [3].</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613yzz5" version="1">Blazing Bombardment</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613yzze" version="1">Detonate in a blazing inferno.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861shock" version="1">Feline Bombardment (Lightning)</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386cshock" version="1">Upon landing a killing blow, call forth a feline familiar. Upon death, the familiar releases an electrical discharge, dealing [1] to all creatures within [2]. At the end of each of its turns, the familiar takes [3].&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386zshock" version="1">Feline Bombardment (Lightning)</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38zdshock" version="1">Affected creature will call forth a crackling feline familiar upon landing a killing blow. Upon death, the familiar releases an electrical discharge, dealing [1] to all creatures within [2]. At the end of each of their turns, the familiar takes [3].</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861light" version="1">Crackling Bombardment</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386dlight" version="1">Detonate in a burst of uncontrollable lightning.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c38613cold" version="1">Feline Bombardment (Cold)</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861dcold" version="1">Upon landing a killing blow, call forth a feline familiar. Upon death, the familiar releases an tundral blast, dealing [1] to all creatures within [2]. At the end of each of its turns, the familiar takes [3].&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861zcold" version="1">Feline Bombardment (Cold)</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c386dzcold" version="1">Affected creature will call forth a feline familiar. Upon death, the familiar releases an tundral blast, dealing [1] to all creatures within [2]. At the end of each of its turns, the familiar takes [3].</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3detocold" version="1">Tundral Bombardment</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2czdetocold" version="1">Detonate in a blast of freezing cold.</content>
 
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130006" version="1">Kinetic Permeation</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000f" version="1">You and other creatures within [1] of you become &lt;LSTag Type="Status" Tooltip="KINETIC_JAUNT_WALKTHROUGH"&gt;Permeable&lt;/LSTag&gt;, allowing them to be moved through.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Rogues&lt;br&gt;Sorcerers&lt;br&gt;Wizards</content>
@@ -252,7 +268,7 @@
 	<content contentuid="39f18b02804848b18a0b8dbbf2c386130008" version="1">Mind Spike</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c38613000h" version="1">Speak a spike of psychic pain into the mind of another creature. While &lt;LSTag Tooltip="Concentration"&gt;Concentrating&lt;/LSTag&gt;, you may drive weaker Mind Spikes into your target without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Fighters&lt;br&gt;Rogues&lt;br&gt;Warlocks&lt;br&gt;Wizards</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300z8" version="1">Mind Spike</content>
-	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zh" version="1">Affected creature is unable to utilize their armours elemental &lt;LSTag Type="Status" Tooltip="DAMAGE_REDUCTION"&gt;Damage Reduction&lt;/LSTag&gt;.</content>
+	<content contentuid="39f18b02804848b18a0b8dbbf2c3861300zh" version="1">Affected creature's mind has been invaded. The caster who applied this condition may creature additional spikes to continually damage them.</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzz8" version="1">Drive Mind Spike</content>
 	<content contentuid="39f18b02804848b18a0b8dbbf2c38613zzzh" version="1">Drive the Mind Spike deeper into your targets psyche.</content>
 
@@ -301,9 +317,9 @@
 	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000b" version="1">Billowing dragon flames erupt from your feet in a [1] radius, granting explosive speed that allows you to &lt;LSTag Type="Status" Tooltip="DASH"&gt;Dash&lt;/LSTag&gt; without provoking &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt;.</content>
 
 	<content contentuid="39f1898f9sdfosdoifsodofsofd994940003" version="1">Catnap</content>
-	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000c" version="1">Make a calming gesture that forces allies within [1] of you to fall asleep. Upon waking, they will have recovered their class based resources.&lt;Br&gt;&lt;br&gt;Once affected by this Spell, a creature cannot benefit from it again until it finishes a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000c" version="1">Make a calming gesture that forces allies within [1] of you to fall asleep. Upon waking, they will have received the benefits of a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.&lt;Br&gt;&lt;br&gt;Once affected by this Spell, a creature cannot benefit from it again until it finishes a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.&lt;Br&gt;&lt;br&gt;This Spell may be cast while &lt;LSTag Type="Status" Tooltip="HEAVILY_SILENCED"&gt;Silenced&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="SILENCED"&gt;Muted&lt;/LSTag&gt; and will not break &lt;LSTag Type="Status" Tooltip="SNEAKING"&gt;Stealth&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Learned By:&lt;br&gt;Barbarians&lt;br&gt;Druids&lt;br&gt;Rangers&lt;br&gt;Sorcerers</content>
 	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400z3" version="1">Catnap</content>
-	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zc" version="1">Affected creature has recovered their class based resources due to a quick nap.</content>
+	<content contentuid="39f1898f9sdfosdoifsodofsofd9949400zc" version="1">Affected creature has received the benefits of a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt; due to a quick nap.</content>
 
 	<content contentuid="39f1898f9sdfosdoifsodofsofd994940004" version="1">Enemies Abound</content>
 	<content contentuid="39f1898f9sdfosdoifsodofsofd99494000d" version="1">Whisper a hex unto a creature, filling them with bouts of paranoia and forcing them to see nearby friends as foes.</content>

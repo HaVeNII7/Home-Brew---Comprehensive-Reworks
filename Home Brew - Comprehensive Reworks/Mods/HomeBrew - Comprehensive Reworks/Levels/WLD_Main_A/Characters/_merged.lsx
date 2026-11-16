@@ -1349,7 +1349,7 @@
 					<attribute id="MapKey" type="FixedString" value="cde6e700-9c2a-4dec-9081-689881198639" />
 					<attribute id="Name" type="LSString" value="S_DEN_GoblinRaider_Bugbear_01" />
 					<attribute id="Stats" type="FixedString" value="Ogre" />
-					<attribute id="TemplateName" type="FixedString" value="3065382b-a148-4294-b1e9-1a34875db3ba" />
+					<attribute id="TemplateName" type="FixedString" value="bc9fb0ff-18f1-4622-8260-d872e21a5b75" />
 					<attribute id="Type" type="FixedString" value="character" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
 					<children>

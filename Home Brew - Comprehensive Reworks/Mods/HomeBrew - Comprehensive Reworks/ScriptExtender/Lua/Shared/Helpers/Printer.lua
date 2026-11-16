@@ -1,7 +1,7 @@
 PRPrinter = VolitionCabinetPrinter:New {
     Prefix = "Partial Respec",
     ApplyColor = true,
-    DebugLevel = MCMLoaded and MCM.Get("debug_level") or 0,
+    DebugLevel = 0,
 }
 
 if MCMLoaded then
@@ -17,6 +17,7 @@ end
 ---@param debugLevel integer
 ---@param ... unknown
 function PRPrint(debugLevel, ...)
+    if _G.HB_DebugConsole ~= true then return end
     PRPrinter:SetFontColor(0, 255, 255)
     PRPrinter:Print(debugLevel, ...)
 end

@@ -8,8 +8,8 @@ data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
 data "ValueOverride" "1250"
 data "Rarity" "VeryRare"
 data "PassivesOnEquip" "CurvedFrame;WarCaster_Display_Item;WarCaster_Bonuses_Item;WarCaster_OpportunitySpell_Item;WarCaster_Recharge_Item;WarCaster_Recharge_Ranged_Item"
-data "UseCosts" "ReactionActionPoint:1;Attunement:3"
-data "StatusOnEquip" "ATTUNEMENT3"
+data "UseCosts" "ReactionActionPoint:1;GreaterAttunement:1;Attunement:3"
+data "StatusOnEquip" "GREATER_ATTUNEMENT;ATTUNEMENT3"
 data "Unique" "1"
 
 <!--ITEM VARIANT - FEAT REWORK-->

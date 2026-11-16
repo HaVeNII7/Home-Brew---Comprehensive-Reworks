@@ -284,7 +284,7 @@
 <content contentuid="0000000000000000000000000000000000000" version="1">ARTIFICER</content>
 
 	<content contentuid="b49c3124e7874170aba1fd51aac8cf5d000z1" version="1">Yokebreaker - Arcanist</content>
-	<content contentuid="b49c3124e7874170aba1fd51aac8cf5d000za" version="2">Gain &lt;LSTag Type="Status" Tooltip="Tooltip_TheRightToolsfortheJob"&gt;The Right Tools for the Job&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="Tooltip_MysticReload"&gt;Mystic Reload&lt;/LSTag&gt;</content>
+	<content contentuid="b49c3124e7874170aba1fd51aac8cf5d000za" version="2">Caster Subclass: Gain two &lt;LSTag Tooltip="Cantrip"&gt;Cantrips&lt;/LSTag&gt;, three Spells, and four Level One &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slots&lt;/LSTag&gt; &lt;br&gt;&lt;br&gt;Gain &lt;LSTag Type="Status" Tooltip="Tooltip_TheRightToolsfortheJob"&gt;The Right Tools for the Job&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="Tooltip_MysticReload"&gt;Mystic Reload&lt;/LSTag&gt;</content>
 
 	<content contentuid="b49c3124e7874170aba1fd51aac8cf5d000z2" version="1">Yokebreaker - Artillerist</content>
 	<content contentuid="b49c3124e7874170aba1fd51aac8cf5d000zb" version="2">Gain &lt;LSTag Type="Status" Tooltip="Tooltip_ArmourPiercingRounds"&gt;Armour Piercing Rounds&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="Tooltip_AntiMaterialExplosiveAmmunition"&gt;Anti-Material Explosive Ammunition&lt;/LSTag&gt;</content>

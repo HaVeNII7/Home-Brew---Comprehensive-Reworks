@@ -46,7 +46,8 @@ local HB_PASSIVE_PAIR_ALLOWED = {
 local function NavigationLog(message)
     navEvents[#navEvents + 1] = tostring(message)
     if #navEvents > 100 then table.remove(navEvents, 1) end
-    if Ext.IO and Ext.IO.SaveFile then
+    if (_G.HB_DebugDiagnostics == true or tostring(message):find('ERROR',1,true)
+        or tostring(message):find('FAILED',1,true)) and Ext.IO and Ext.IO.SaveFile then
         pcall(Ext.IO.SaveFile, "HomeBrew/Diagnostics/HB_RespecNavigation_Diagnostics.txt",
             table.concat(navEvents, "\n") .. "\n")
     end
@@ -448,7 +449,7 @@ end
 ---@param name string
 ---@param depth integer
 ---@return NoesisObject|nil
-local function FindVisualChild(widget, name, depth)
+local function FindVisualChild(widget, name, depth, alternate, firstAlternate)
     if not widget or depth > 12 then return nil end
 
     local childCount = widget.VisualChildrenCount
@@ -459,8 +460,11 @@ local function FindVisualChild(widget, name, depth)
         if child then
             local childName = child.Name
             if childName == name then return child end
+            if alternate and childName == alternate and not firstAlternate[1] then
+                firstAlternate[1] = child
+            end
 
-            local nested = FindVisualChild(child, name, depth + 1)
+            local nested = FindVisualChild(child, name, depth + 1, alternate, firstAlternate)
             if nested then return nested end
         end
     end
@@ -470,12 +474,14 @@ end
 
 ---@param name string
 ---@return NoesisObject|nil
-local function FindWidget(name)
+local function FindWidget(name, alternate)
     local root = Ext.UI.GetRoot()
     if not root then return nil end
     local contentRoot = root:Find("ContentRoot")
     if not contentRoot then return nil end
-    return FindVisualChild(contentRoot, name, 0)
+    local firstAlternate = alternate and {} or nil
+    return FindVisualChild(contentRoot, name, 0, alternate, firstAlternate)
+        or (firstAlternate and firstAlternate[1])
 end
 
 ---@return ViewModel|nil
@@ -2740,17 +2746,19 @@ end
 ---@param levelCount integer|nil
 ---@param attemptsLeft integer
 local function ShowToastWhenMounted(classes, levelCount, attemptsLeft)
-    if PR.ShowToast(classes, levelCount) then return end
-    if attemptsLeft <= 0 then
-        PRWarn(0, "Partial respec toast widget did not mount")
-        return
-    end
-
-    Ext.OnNextTick(function()
-        ShowToastWhenMounted(classes, levelCount, attemptsLeft - 1)
+    if not Ext.UI or not Ext.UI.Defer then return end
+    Ext.UI.Defer(function()
+        local ok,shown=pcall(PR.ShowToast,classes,levelCount)
+        if ok and shown then return end
+        if attemptsLeft <= 0 then
+            PRWarn(0, "Partial respec toast widget did not mount")
+            return
+        end
+        Ext.OnNextTick(function()
+            ShowToastWhenMounted(classes, levelCount, attemptsLeft - 1)
+        end)
     end)
 end
-
 --- ImpUI declares CharacterRespec with Override, wiping our Extend widget when it loads after us.
 local function WarnOnceOnBadLoadOrder()
     if loadOrderWarned then return end
@@ -2766,51 +2774,74 @@ local function WarnOnceOnBadLoadOrder()
     end
 end
 
+-- UI callbacks cannot safely traverse the visual tree from a regular Tick
+-- or an incoming network handler. Never fall back to direct native access.
+local function QueueRespecUI(work)
+    if not Ext.UI or not Ext.UI.Defer then return false end
+    local ok,why=pcall(Ext.UI.Defer,function()
+        local ran,err=pcall(work)
+        if not ran then NavigationLog('RESPEC_SAFE_UI_ERROR '..tostring(err)) end
+    end)
+    if not ok then NavigationLog('RESPEC_SAFE_UI_QUEUE_ERROR '..tostring(why)) end
+    return ok
+end
 ---@param character string
 ---@param characterLevel integer
 ---@param levelSummaries table<integer, table>
 ---@param generation integer
 local function ShowWhenMounted(character, characterLevel, levelSummaries, generation)
     CancelPopupRetry()
-    if generation ~= popupShowGeneration then return end
-    local shown,successOrError=pcall(PR.Show,character,characterLevel,levelSummaries)
-    if shown and successOrError then return end
-    NavigationLog("RESPEC_POPUP_FIRST_ATTEMPT actor="..tostring(character)
-        .." mounted="..tostring(FindWidget("PR_RespecChoice")~=nil)
-        .." native="..tostring(FindWidget("CharacterRespec")~=nil)
-        .." success="..tostring(shown).." detail="..tostring(successOrError))
-    WarnOnceOnBadLoadOrder()
-    local ticksPassed = 0
-    local failedAttempts=0
-    popupRetryEventId = Ext.Events.Tick:Subscribe(function()
-        if generation ~= popupShowGeneration then
-            CancelPopupRetry()
-            return
-        end
-
-        ticksPassed = ticksPassed + 1
-        if ticksPassed < POPUP_BIND_RETRY_TICKS then return end
-
-        ticksPassed = 0
-        failedAttempts=failedAttempts+1
-        local done,successOrError=pcall(PR.Show,character,characterLevel,levelSummaries)
-        if done and successOrError then
-            NavigationLog("RESPEC_POPUP_RETRY_OK attempt="..failedAttempts)
-            CancelPopupRetry()
-        elseif failedAttempts==1 or failedAttempts%30==0 then
-            NavigationLog("RESPEC_POPUP_RETRY_FAILED attempt="..failedAttempts
-                .." widget="..tostring(FindWidget("PR_RespecChoice")~=nil)
-                .." native="..tostring(FindWidget("CharacterRespec")~=nil)
-                .." result="..tostring(successOrError))
-        end
-        if failedAttempts>=MAX_POPUP_BIND_RETRIES then
-            NavigationLog("RESPEC_POPUP_RETRY_EXHAUSTED actor="..tostring(character)
-                .." attempts="..failedAttempts
-                .." custom="..tostring(FindWidget("PR_RespecChoice")~=nil)
-                .." native="..tostring(FindWidget("CharacterRespec")~=nil)
-                .." reason=no mounted respec screen; refusing unbounded retries")
-            CancelPopupRetry()
-        end
+    QueueRespecUI(function()
+        if generation ~= popupShowGeneration then return end
+        local shown,successOrError=pcall(PR.Show,character,characterLevel,levelSummaries)
+        if shown and successOrError then return end
+        NavigationLog("RESPEC_POPUP_FIRST_ATTEMPT actor="..tostring(character)
+            .." mounted="..tostring(FindWidget("PR_RespecChoice")~=nil)
+            .." native="..tostring(FindWidget("CharacterRespec")~=nil)
+            .." success="..tostring(shown).." detail="..tostring(successOrError))
+        WarnOnceOnBadLoadOrder()
+        local ticksPassed = 0
+        local failedAttempts=0
+        local retryQueued=false
+        Ext.OnNextTick(function()
+          if generation ~= popupShowGeneration then return end
+          popupRetryEventId = Ext.Events.Tick:Subscribe(function()
+            if generation ~= popupShowGeneration then
+                CancelPopupRetry()
+                return
+            end
+            ticksPassed=ticksPassed+1
+            if ticksPassed < POPUP_BIND_RETRY_TICKS or retryQueued then return end
+            ticksPassed=0
+            retryQueued=true
+            if not QueueRespecUI(function()
+                retryQueued=false
+                if generation ~= popupShowGeneration then
+                    Ext.OnNextTick(CancelPopupRetry)
+                    return
+                end
+                failedAttempts=failedAttempts+1
+                local done,result=pcall(PR.Show,character,characterLevel,levelSummaries)
+                if done and result then
+                    NavigationLog("RESPEC_POPUP_RETRY_OK attempt="..failedAttempts)
+                    Ext.OnNextTick(CancelPopupRetry)
+                elseif failedAttempts==1 or failedAttempts%30==0 then
+                    NavigationLog("RESPEC_POPUP_RETRY_FAILED attempt="..failedAttempts
+                        .." widget="..tostring(FindWidget("PR_RespecChoice")~=nil)
+                        .." native="..tostring(FindWidget("CharacterRespec")~=nil)
+                        .." result="..tostring(result))
+                end
+                if failedAttempts>=MAX_POPUP_BIND_RETRIES then
+                    NavigationLog("RESPEC_POPUP_RETRY_EXHAUSTED actor="..tostring(character)
+                        .." attempts="..failedAttempts
+                        .." custom="..tostring(FindWidget("PR_RespecChoice")~=nil)
+                        .." native="..tostring(FindWidget("CharacterRespec")~=nil)
+                        .." reason=no mounted respec screen; refusing unbounded retries")
+                    Ext.OnNextTick(CancelPopupRetry)
+                end
+            end) then retryQueued=false end
+          end)
+        end)
     end)
 end
 
@@ -2823,6 +2854,7 @@ local recoveryPollCounter=0
 -- layouts where ImprovedUI mounts CharacterRespec below another container.
 local MenuScope=Ext.Require("Client/MenuScope.lua")
 local recoveryDeepPageMounted=false
+local recoveryUIQueued=false
 Ext.Events.Tick:Subscribe(function()
     if not PartialRespecEnabled then return end
     if partialPendingRequestId then
@@ -2832,13 +2864,15 @@ Ext.Events.Tick:Subscribe(function()
             local actor=partialPendingCharacter
             ClearPartialPending()
             NavigationLog("PARTIAL_COMMIT_TIMEOUT id="..tostring(expiredId))
-            local vm=CurrentVM()
-            if vm then
-                vm.PR_EditorBusy=false
-                vm.PR_BuildBusy=false
-                vm.PR_BuildStatus='Build load timed out before confirmation. No automatic respec was started.'
-                vm.PR_ModeHelp="The server did not acknowledge the backup. No automatic respec was started. You can retry or go Back."
-            end
+            QueueRespecUI(function()
+                local vm=CurrentVM()
+                if vm then
+                    vm.PR_EditorBusy=false
+                    vm.PR_BuildBusy=false
+                    vm.PR_BuildStatus='Build load timed out before confirmation. No automatic respec was started.'
+                    vm.PR_ModeHelp="The server did not acknowledge the backup. No automatic respec was started. You can retry or go Back."
+                end
+            end)
             if actor then
                 PartialRespecChannel:SendToServer({Character=actor,Cancelled=true,
                     RequestId=expiredId})
@@ -2846,15 +2880,27 @@ Ext.Events.Tick:Subscribe(function()
         end
     end
     recoveryPollCounter=recoveryPollCounter+1
-    if recoveryPollCounter % 30 ~= 0 then return end
+    if recoveryPollCounter % 30 ~= 0 or recoveryUIQueued then return end
+    -- The normal entry point is event-driven. Recover missing popups only
+    -- while a native respec page is actually present. Optional deep fallback
+    -- remains available for unsupported nested third-party UI layouts.
+    if not recoveryDeepPageMounted and not MenuScope.MaybeOpen('Respec')
+        and not (_G.HB_EnableNestedMenuFallback == true
+            and recoveryPollCounter % 180 == 0) then return end
+    recoveryUIQueued=true
+    local recoveryCheckTick=recoveryPollCounter
+    if not QueueRespecUI(function()
+    recoveryUIQueued=false
+    if not PartialRespecEnabled then return end
     local shallowMounted=MenuScope.IsOpen("Respec")
     if not shallowMounted and not recoveryDeepPageMounted
-        and recoveryPollCounter % 180 ~= 0 then
+        and not (_G.HB_EnableNestedMenuFallback == true
+            and recoveryCheckTick % 180 == 0) then
         -- No respec UI present: skip the twice-per-second deep traversal.
         return
     end
     local ok,native=pcall(function()
-        return FindWidget("CharacterRespec") or FindWidget("CharacterRespec_c")
+        return FindWidget("CharacterRespec", "CharacterRespec_c")
     end)
     local mounted=false
     if ok and native then
@@ -2895,7 +2941,12 @@ Ext.Events.Tick:Subscribe(function()
     respecRecoveryRequested=true
     NavigationLog("RESPEC_RECOVERY_REQUEST: native screen mounted without a popup after "
         ..tostring(respecRecoveryTicks).." ticks")
-    PartialRespecChannel:SendToServer({RecoverRespecMenu=true})
+    Ext.OnNextTick(function()
+        if respecRecoveryRequested then
+            PartialRespecChannel:SendToServer({RecoverRespecMenu=true})
+        end
+    end)
+    end) then recoveryUIQueued=false end
 end)
 
 PartialRespecChannel:SetHandler(function(message)
@@ -2904,6 +2955,24 @@ PartialRespecChannel:SetHandler(function(message)
         return
     end
 
+    if message.LevelUpAutoBuildStart==true then
+        if type(message.Character)~='string' or type(message.File)~='string'
+            or type(message.RequestId)~='string' or partialPendingRequestId then
+            NavigationLog('LEVELUP_BUILD_HANDOFF_REJECT invalid_or_busy')
+            return
+        end
+        partialConfirmSequence=partialConfirmSequence+1
+        partialPendingRequestId=message.RequestId
+        partialPendingCharacter=message.Character
+        partialAckWaitTicks=0
+        respecPopupReceivedThisScreen=true
+        NavigationLog('LEVELUP_BUILD_HANDOFF_RECEIVED actor='..message.Character
+            ..' file='..message.File)
+        PartialRespecChannel:SendToServer({Character=message.Character,
+            NativeFirstLevelSlider=true,BuildPresetAutoApply=true,
+            BuildPresetFile=message.File,RequestId=message.RequestId})
+        return
+    end
     if message.BuildPresetResult==true then
         local active=CurrentVM()
         if active then

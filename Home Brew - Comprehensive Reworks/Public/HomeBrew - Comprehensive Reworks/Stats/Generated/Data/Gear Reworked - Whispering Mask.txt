@@ -18,7 +18,7 @@ data "DisplayName" "he25a2005g0569g423cg8adega4b4eb6a59ae;3"
 data "Description" "hdab5ba67g83a1g4162g937bgee603c87c79a;2"
 data "Icon" "PassiveFeature_Generic_Tactical"
 data "StatsFunctorContext" "OnDamaged"
-data "StatsFunctors" "TriggerRandomCast(SELF,20,,WildMagicPositive);TriggerRandomCast(SELF,20,,WildMagicNegative)"
+data "StatsFunctors" "TriggerRandomCast(20,,WildMagic)"
 data "Boosts" "IF(HasPassive('CreaturePassive_Hag', context.Source)):Disadvantage(AttackTarget)"
 
 new entry "HAG_MASK"

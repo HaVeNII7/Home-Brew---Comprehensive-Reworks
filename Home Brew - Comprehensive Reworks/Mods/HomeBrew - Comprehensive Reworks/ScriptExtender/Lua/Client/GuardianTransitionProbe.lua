@@ -145,10 +145,15 @@ local function Probe(now)
     if #other>0 then parts[#parts+1]='other='..table.concat(other,',') end
     return true, table.concat(parts,' | ')
 end
+local uiProbeQueued=false
 Ext.Events.Tick:Subscribe(function()
     local now=Ext.Timer.MonotonicTime()
-    if now-lastProbe<750 then return end
+    if now-lastProbe<750 or uiProbeQueued or not Ext.UI or not Ext.UI.Defer then return end
     lastProbe=now
+    uiProbeQueued=true
+    local posted,queueError=pcall(Ext.UI.Defer,function()
+      uiProbeQueued=false
+      local success,reason=pcall(function()
     local ok,isOpen,summary=pcall(Probe,now)
     if not ok then
         if active and (lastSignature~= 'ERROR:'..tostring(isOpen) or now-lastHeartbeat>5000) then
@@ -171,13 +176,15 @@ Ext.Events.Tick:Subscribe(function()
         end
         if now-lastEntityProbe>=2400 then
             lastEntityProbe=now
-            local got,entities=pcall(EntitySummary)
-            if not got then entities='ENTITY_ERROR '..tostring(entities) end
-            if entities~=lastEntitySummary then
-                lastEntitySummary=entities;write(now,'ENTITY_CHANGE '..entities)
-            elseif now-lastHeartbeat<1100 then
-                write(now,'ENTITY_STILL '..entities)
-            end
+            Ext.OnNextTick(function()
+                local got,entities=pcall(EntitySummary)
+                if not got then entities='ENTITY_ERROR '..tostring(entities) end
+                if entities~=lastEntitySummary then
+                    lastEntitySummary=entities;write(now,'ENTITY_CHANGE '..entities)
+                elseif now-lastHeartbeat<1100 then
+                    write(now,'ENTITY_STILL '..entities)
+                end
+            end)
         end
     elseif active then
         if not lastClosedAt then lastClosedAt=now;write(now,'CREATION_UI_UNSEEN '..summary) end
@@ -185,5 +192,12 @@ Ext.Events.Tick:Subscribe(function()
             write(now,'CREATION_UI_EXITED '..summary)
             active=false;lastSignature=nil;lastEntitySummary=nil;lastClosedAt=nil
         end
+    end
+      end)
+      if not success then write(now,'SAFE_UI_PROBE_ERROR '..tostring(reason)) end
+    end)
+    if not posted then
+        uiProbeQueued=false
+        write(now,'SAFE_UI_PROBE_QUEUE_ERROR '..tostring(queueError))
     end
 end)

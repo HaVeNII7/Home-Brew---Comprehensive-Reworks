@@ -448,6 +448,9 @@
 	<content contentuid="h94ea441fgd54dg4307g9f73g027a971f44c3" version="2">Adamantine Reverberation</content>
 	<content contentuid="h77c37c0bg14d4g4852g8eb4g0f4a7b745d35" version="2">Affected creature has gained [1]. Immediately after losing these temporary hit points, the creature knocks back foes [2] backward with a shockwave that deals [3].</content>
 
+	<content contentuid="89c8645708ad4f0e93c14f0e8d436fbfojamm" version="3">Jammed</content>
+	<content contentuid="89c8645708ad4f0e93c14f0e8d436fbdojamm" version="7">Affected lever is jammed and can't be pulled!</content>
+
 <content contentuid="0000000000000000000000000000000000000" version="1">HOOK HORRORS</content>
 
 	<content contentuid="h3344d3e6gb749g4bd5ga9e9g75f0de1c9cca" version="5">Hooked on Horror</content>
@@ -462,6 +465,16 @@
 	<content contentuid="h026a1e68g1348g404bg9339gb1a4124great" version="2">Spectator's Domination</content>
 	<content contentuid="h63d6411ege12fg45e1ga23fg2bffb77great" version="3">An overwhelming sense of domination prevents this creature from attacking the Spectator.</content>
 
+	<content contentuid="ha067159ag0de6g4c68ga38egc38ff75dcb7f" version="2">Paranoid Dreams</content>
+	<content contentuid="h95c7453fg7a8fg41e9g8dbegb337ee38a048" version="2">Affected creature dreams in fear when damaged. After [1] Paranoid Dreams, it will spend a Legendary Action to cast &lt;LSTag Type="Spell" Tooltip="Shout_EyebeamNova_Spectator"&gt;Ocular Nightmare&lt;/LSTag&gt;. If the Spectator uses one of its Eye Rays, it loses one Paranoid Dream. </content>
+	<content contentuid="h64a6c3f7g65c7g43a8gb186g288e9b29b032" version="2">Paranoid Dreams: 1</content>
+	<content contentuid="h15e11ac2g3933g488fg9159g15d140f4a76a" version="3">Affected creature dreams in fear when damaged. After [1] Paranoid Dreams, it will spend a Legendary Action to cast &lt;LSTag Type="Spell" Tooltip="Shout_EyebeamNova_Spectator"&gt;Ocular Nightmare&lt;/LSTag&gt;. If the Spectator uses one of its Eye Rays, it loses one Paranoid Dream. </content>
+	<content contentuid="hf82df152g3116g4d99g9802gd01b812ab592" version="2">Paranoid Dreams: 2</content>
+	<content contentuid="h45f25cf1g6a09g49cag9658g50dab0c0c458" version="2">Paranoid Dreams: 3</content>
+	<content contentuid="h0e390a56g8bf8g490cg8ce6g2e2e6414b602" version="2">Paranoid Dreams: 4</content>
+	<content contentuid="he1afeac3g9657g422bg8215gae7beabfacdf" version="2">Paranoid Dreams: 5</content>
+	<content contentuid="hb3e4f0cbg5e49g44abgad8bgf456256f7241" version="2">Affected creature has had [1] paranoid dreams - when it is next attacked it will spend a Legendary Action to cast &lt;LSTag Type="Spell" Tooltip="Shout_EyebeamNova_Spectator"&gt;Ocular Nightmare&lt;/LSTag&gt;. If the Spectator uses one of its Eye Rays, it loses one Paranoid Dream. </content>
+
 	<content contentuid="h4b7c2703ge1a8g4a6s54df6942s341f4s85e" version="2">Mino-Tourism</content>
 	<content contentuid="6e8d6rf93g166eg4d2bga330g5f64s2dfse8f" version="2">Gain status immunity to all conditions which would restrain you. In addition, you are unaffected by &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;.</content>
 	<content contentuid="h8b1e4382g54b9g4448g8ac8g0e405a387872" version="2">Brutal Leap</content>
@@ -473,7 +486,7 @@
 	<content contentuid="h3344d3e6gb749g4bd5ga9e9g75f0desd5f21" version="5">Displacement</content>
 	<content contentuid="h38d3f000g4a2eg4682g9wsefe845de868545" version="1">While unubscured, Displacer Beasts may cause their targets to go &lt;LSTag Type="Status" Tooltip="MADNESS"&gt;Mad&lt;/LSTag&gt; when dealing damage to them.</content>
 	<content contentuid="ha87e063cg90aag4085g94bbg77b7f89b339e" version="5">Illusory Copy</content>
-	<content contentuid="h50825fb4g9c1ag4146g9efeg7164023ebf01" version="1">Create an illusory Displacer Beast at a location you can see. Upon taking damage, the illusion will immediately fade.</content>
+	<content contentuid="h50825fb4g9c1ag4146g9efeg7164023ebf01" version="1">Create an illusory Displacer Beast at a location you can see. Upon taking damage, the illusion will immediately fade. Your illusory Displacer Beasts are considered to be &lt;LSTag Type="Status" Tooltip="SUMMONING_SICKNESS"&gt;Horde-Based&lt;/LSTag&gt; summons.</content>
 	<content contentuid="ha87e063cg90aag4085g94bbg77b7f2d5f6e2" version="5">Illusory Displacement</content>
 	<content contentuid="h50825fb4g9c1ag4146g9efeg716406s8e6f8" version="1">Teleport a creature to an area you can see, rending their mind in the process. Allies will take no damage from this action. If your destination target is also a creature, your two targets will swap places.</content>
 
@@ -570,9 +583,6 @@
 	<content contentuid="h69a228a2g3139g4535g916fg1289243752da" version="2">You gain an additional &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;. When attacked, you can use a Reaction in order to counterattack, making a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against your aggressor which deals an additional [1].</content>
 	<content contentuid="h2acfbc1eg90f9g4afaga8ccg5e21a8b131e2" version="2">Vengeful Strike</content>
 	<content contentuid="he80cb46ag72abg490cga94dg954b02d56888" version="2">Make a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; against your aggressor which deals an additional [1].</content>
-
-	<content contentuid="hf68573edgb5f3g4027gb92cgd55a096d74b3" version="1">Radiant Retort</content>
-	<content contentuid="hf6737e4eg1692g42acgb65ag23edf956cbad" version="1">While obscured in darkness, you reflect all Radiant damage back at your attacker twofold as Force damage.</content>
 
 	<content contentuid="hf8723df2g1884g46aagb114g523ea75da964" version="4">Blessing of Moonfire</content>
 	<content contentuid="h9705bf5dg6a89g4205g9a88gaf5c5aecb5db" version="2">Surround yourself in a pillar of Selûne's light, dealing damage to and afflicting nearby creatures with &lt;LSTag Type="Status" Tooltip="BURNING_HOLY"&gt;Holy Flames&lt;/LSTag&gt;.</content>

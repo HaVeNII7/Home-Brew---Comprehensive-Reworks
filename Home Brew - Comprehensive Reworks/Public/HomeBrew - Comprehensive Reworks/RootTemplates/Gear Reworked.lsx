@@ -11547,6 +11547,144 @@
 						</node>
 					</children>
 				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h0496d826gfd8dg4ac2gbab7gf8d8bf831be0" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hd3f607a8gbd0fg4b9aga683g965c06fb6055" version="1" />
+					<attribute id="DropSound" type="FixedString" value="f55dc72a-13b8-6e3d-7500-559a5d1f3031" />
+					<attribute id="EquipmentTypeID" type="guid" value="2d85d633-d496-44a1-a643-0e95ef879a6d" />
+					<attribute id="Icon" type="FixedString" value="Item_QUEST_FOR_SussurDagger" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="8733edb7-f04e-4b6d-ad48-7d49fb782bef" />
+					<attribute id="Name" type="LSString" value="QUEST_FOR_SussurDagger" />
+					<attribute id="ParentTemplateId" type="FixedString" value="569b0f3d-abcd-4b01-aaf0-979091288163" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="8ac37274-b0d9-484b-e10d-c7780f674d9f" />
+					<attribute id="PickupSound" type="FixedString" value="28ea7a9f-b66a-3410-7985-d7cd5cb896f0" />
+					<attribute id="Stats" type="FixedString" value="FOR_IncompleteMasterwork_SussurDagger" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="e3914979-3da4-6d51-39d7-58c63c07ea56" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144537400540921856" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0374908" />
+									<attribute id="Max" type="fvec3" value="0.07255268 0.030913964 0.19064903" />
+									<attribute id="Min" type="fvec3" value="-0.08224723 -0.008343428 -0.3625664" />
+									<attribute id="Radius" type="float" value="0.0833395" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0374908" />
+									<attribute id="Max" type="fvec3" value="0.07255268 0.030913964 0.19064903" />
+									<attribute id="Min" type="fvec3" value="-0.08224723 -0.008343428 -0.3625664" />
+									<attribute id="Radius" type="float" value="0.166679" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0374908" />
+									<attribute id="Max" type="fvec3" value="0.07255268 0.030913964 0.19064903" />
+									<attribute id="Min" type="fvec3" value="-0.08224723 -0.008343428 -0.3625664" />
+									<attribute id="Radius" type="float" value="0.166679" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h76b3b60fg8606g4204g83d2g925db719d5cc" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="he11cbd50gad99g4f4dgb6edg82b0174e0de2" version="1" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="Icon" type="FixedString" value="Item_QUEST_FOR_SussurGreatsword" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="44dedec0-df82-4ed3-b9ca-147bd830e312" />
+					<attribute id="Name" type="LSString" value="QUEST_FOR_SussurGreatsword" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ecfb9f69-5bc3-402e-acd8-c91d57e28403" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="74eb44d4-f1a9-c08c-fd8a-4cc98285f2c2" />
+					<attribute id="Stats" type="FixedString" value="FOR_IncompleteMasterwork_SussurGreatsword" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="7884a137-2365-2bee-c218-e75c88c7e28b" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144537400540921856" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0783766" />
+									<attribute id="Max" type="fvec3" value="0.21514219 0.047554806 0.35112882" />
+									<attribute id="Min" type="fvec3" value="-0.22098804 -0.008609086 -1.523746" />
+									<attribute id="Radius" type="float" value="0.2330765" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0783766" />
+									<attribute id="Max" type="fvec3" value="0.21514219 0.047554806 0.35112882" />
+									<attribute id="Min" type="fvec3" value="-0.22098804 -0.008609086 -1.523746" />
+									<attribute id="Radius" type="float" value="0.466153" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0783766" />
+									<attribute id="Max" type="fvec3" value="0.21514219 0.047554806 0.35112882" />
+									<attribute id="Min" type="fvec3" value="-0.22098804 -0.008609086 -1.523746" />
+									<attribute id="Radius" type="float" value="0.466153" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h4dfb7163gf3f5g42e4ga39ege8e25bd316dd" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hf9d58539gc31fg4b02gb3d6g36f0134571b8" version="1" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="Icon" type="FixedString" value="Item_QUEST_FOR_SussurSickle" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="6b95bb45-41c3-4954-ac2f-ef1aa169b0b6" />
+					<attribute id="Name" type="LSString" value="QUEST_FOR_SussurSickle" />
+					<attribute id="ParentTemplateId" type="FixedString" value="50d677ed-3a0e-40e9-8291-ee6823af5672" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="653a28d0-111c-be3d-78d0-3a21f5ed6988" />
+					<attribute id="ReadinessFlags" type="uint32" value="16" />
+					<attribute id="Stats" type="FixedString" value="FOR_IncompleteMasterwork_SussurSickle" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="95eff74b-1dc2-bbd4-85d3-ba2a0c4ed2e6" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144537400540921856" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0374908" />
+									<attribute id="Max" type="fvec3" value="0.21458146 0.06110602 0.18579999" />
+									<attribute id="Min" type="fvec3" value="-0.108311206 -0.009765528 -0.4110826" />
+									<attribute id="Radius" type="float" value="0.0833395" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0374908" />
+									<attribute id="Max" type="fvec3" value="0.21458146 0.06110602 0.18579999" />
+									<attribute id="Min" type="fvec3" value="-0.108311206 -0.009765528 -0.4110826" />
+									<attribute id="Radius" type="float" value="0.166679" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.0374908" />
+									<attribute id="Max" type="fvec3" value="0.21458146 0.06110602 0.18579999" />
+									<attribute id="Min" type="fvec3" value="-0.108311206 -0.009765528 -0.4110826" />
+									<attribute id="Radius" type="float" value="0.166679" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

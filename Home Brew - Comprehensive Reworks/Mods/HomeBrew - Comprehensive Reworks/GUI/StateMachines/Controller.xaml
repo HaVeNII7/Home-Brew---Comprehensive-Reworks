@@ -20,7 +20,7 @@
         <ls:State Name="CharacterCreation" ModType="Extend">
             <ls:State.Widgets>
                 <ls:StateWidget Filename="HB_VisualPresets.xaml" Layer="MessageBox"/>
-                <ls:StateWidget Filename="HB_VisualPresetFooter.xaml" Layer="HUDTop"/>
+                <ls:StateWidget Filename="HB_VisualPresetFooter_CC.xaml" Layer="Default"/>
                 <ls:StateWidget Filename="HB_AbilityBaseMenu.xaml" Layer="MessageBox"/>
                 <ls:StateWidget Filename="HB_SpellFilterResources.xaml" Layer="HUD" IgnoreHitTest="True"/>
             </ls:State.Widgets>
@@ -36,6 +36,7 @@
 
         <ls:State Name="CharacterLevelUp" ModType="Extend">
             <ls:State.Widgets>
+                <ls:StateWidget Filename="HB_LevelUpBuild.xaml" Layer="MessageBox"/>
                 <ls:StateWidget Filename="HB_NativeHistoricalPreview.xaml" Layer="MessageBox"/>
                 <ls:StateWidget Filename="HB_SpellFilterResources.xaml" Layer="HUD" IgnoreHitTest="True"/>
             </ls:State.Widgets>

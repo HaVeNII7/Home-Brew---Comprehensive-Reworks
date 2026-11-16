@@ -29,7 +29,7 @@ data "DescriptionParams" "Distance(9)"
 data "Icon" "PassiveFeature_UndeadThralls_BetterSummons"
 data "StackId" "JWL_Status_GibberingBellAura"
 data "AuraRadius" "9"
-data "AuraStatuses" "IF(not HasStatus('SITOUT_ONCOMBATSTART_APPLIER_TECHNICAL',context.Source) and not HasStatus('SITOUT_ONCOMBATSTART_DOONCE_TECHNICAL',context.Source) and not HasStatus('BANISHED',context.Source) and not HasStatus('BANISHED_FINALSTAND',context.Source) and Tagged('SUMMON') and Tagged('UNDEAD') and SummonOwner(context.Target, context.Source)):ApplyStatus(JWL_Status_GibberingBellBuff)"
+data "AuraStatuses" "IF(Tagged('SUMMON') and Tagged('UNDEAD') and SummonOwner(context.Target, context.Source)):ApplyStatus(JWL_Status_GibberingBellBuff)"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
 new entry "JWL_Status_GibberingBellBuff"

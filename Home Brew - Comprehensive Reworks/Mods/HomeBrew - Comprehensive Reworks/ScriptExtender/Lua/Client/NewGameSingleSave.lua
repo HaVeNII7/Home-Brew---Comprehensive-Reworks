@@ -19,7 +19,17 @@ local queued, warning, scanReady = false, nil, false
 local getData = Ext.StaticData.Get or Ext.StaticData.GetGuidResource
 local getAll = Ext.StaticData.GetAll or Ext.StaticData.GetAllGuidResources
 
+local expiredWidgetRetries = 0
 local function Report(message)
+    message = tostring(message)
+    -- One transient expired Noesis widget during menu teardown is expected:
+    -- the queued UI refresh will reacquire the mounted page on its next pass.
+    -- Do not hide a repeated failure: after three consecutive misses, report
+    -- it to SE like any other actionable UI problem.
+    if message:find("ui::UIWidget whose lifetime has expired", 1, true) then
+        expiredWidgetRetries = expiredWidgetRetries + 1
+        if expiredWidgetRetries < 3 then return end
+    end
     if warning == message then return end
     warning = message
     Ext.Utils.Print("[HB Single Save] " .. message)
@@ -30,9 +40,10 @@ local function OnUI(callback)
     local function Run()
         if expected ~= generation then return end
         local ok, reason = pcall(callback)
-        if not ok then Report(tostring(reason)) end
+        if not ok then Report(tostring(reason))
+        else expiredWidgetRetries = 0 end
     end
-    if Ext.UI.Defer then Ext.UI.Defer(Run) else Run() end
+    if Ext.UI.Defer then Ext.UI.Defer(Run) end
 end
 
 local function Read(object, property)
@@ -288,11 +299,27 @@ local function DifficultyMenuVisible(now)
     return scopeOpen
 end
 
+local scopeUIQueued=false
 Ext.Events.Tick:Subscribe(function()
+    -- During ordinary gameplay, there are no native difficulty controls or
+    -- pending ruleset jobs. Leave the main-thread Tick without clock reads.
+    if not scopeOpen and not MenuScope.MaybeOpen('Difficulty')
+        and next(jobs) == nil then return end
     local now = Ext.Timer.MonotonicTime()
-    -- Apply already queued explicit clicks, but do not poll static resources
-    -- or refresh the new-game UI while that screen is closed.
-    local menuVisible = DifficultyMenuVisible(now)
+    -- Only the deferred UI callback may read MenuScope's Noesis widgets.
+    if (scopeOpen or MenuScope.MaybeOpen('Difficulty'))
+        and not scopeUIQueued and now-lastScopePoll >= (scopeOpen and 250 or 950)
+        and Ext.UI and Ext.UI.Defer then
+        scopeUIQueued=true
+        local ok,why=pcall(Ext.UI.Defer,function()
+            scopeUIQueued=false
+            local worked,err=pcall(DifficultyMenuVisible,now)
+            if not worked then Report('SAFE_UI_SCOPE_ERROR '..tostring(err)) end
+        end)
+        if not ok then scopeUIQueued=false;Report('SAFE_UI_SCOPE_QUEUE_ERROR '..tostring(why)) end
+    end
+    -- Keep gameplay-stat changes and ruleset jobs on the normal Tick.
+    local menuVisible = scopeOpen
     if not menuVisible and next(jobs)==nil then return end
     if menuVisible then
         local ok, reason = pcall(ScanResources, now)
@@ -309,12 +336,13 @@ Ext.Events.Tick:Subscribe(function()
                 errors[job.Asset] = "Honour Mode could not be applied. Toggle it off to keep the current setting."
             else
                 applied[job.Asset], errors[job.Asset] = job.Enabled, nil
-                OnUI(function()
-                    for _, state in pairs(states) do
-                        local check = state.Checks[job.Asset]
-                        if check then check.HB_Applied = job.Enabled end
-                    end
-                end)
+                -- A difficulty screen can be destroyed between the server-
+                -- independent ruleset write and this deferred callback. Old
+                -- state.Checks contain expired Noesis VMs at that point.
+                -- RefreshFooter reads applied[] and updates only the current
+                -- live checkbox during the next ordinary deferred UI update.
+                -- No stale VM is accessed from this Tick callback.
+                lastUpdate = -150
             end
         end
     end
@@ -326,9 +354,13 @@ Ext.Events.Tick:Subscribe(function()
         if expected ~= generation then return end
         queued = false
         local updated, failure = pcall(Update)
-        if not updated then Report(tostring(failure)) end
+        if not updated then Report(tostring(failure))
+        else expiredWidgetRetries = 0 end
     end
-    if Ext.UI.Defer then Ext.UI.Defer(Run) else Run() end
+    if Ext.UI.Defer then
+        local ok=pcall(Ext.UI.Defer,Run)
+        if not ok then queued=false end
+    else queued=false end
 end)
 
 Ext.Events.SessionLoaded:Subscribe(function()

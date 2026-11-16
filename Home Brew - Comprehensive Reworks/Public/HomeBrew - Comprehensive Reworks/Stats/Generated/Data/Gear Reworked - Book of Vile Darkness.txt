@@ -19,7 +19,7 @@ data "Icon" "PassiveFeature_Generic_Tactical"
 data "DisplayName" "hc0e432eagb51ag49c3g86c4gb430b50db13f;1"
 data "Description" "h922b1f5bg84a6g4e4dgb432g8dd80f67aba9;1"
 data "DescriptionParams" "DealDamage(12, Fire);DealDamage(12, Fire)"
-data "Boosts" "IF(Enemy() and not HasStatus('MULTIHIT_BLOCKER', context.Source) and IsSpell() and not IsCantrip()):DamageBonus(12, Fire)"
+data "Boosts" "IF(not Ally() and not HasStatus('MULTIHIT_BLOCKER', context.Source) and IsSpell() and not IsCantrip()):DamageBonus(12, Fire)"
 data "StatsFunctorContext" "OnDamage"
 data "StatsFunctors" "ApplyStatus(SELF,JWL_Status_BookeVileDarkness_DidDamage,100,1)"
 

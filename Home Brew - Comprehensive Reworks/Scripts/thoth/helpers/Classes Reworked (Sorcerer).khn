@@ -17,14 +17,14 @@ function DamagingSpellCheck()
 end
 
 function DistantSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & TargetRadiusGreaterThan(1.5)
+    return HasSpellFlag(SpellFlags.Spell) & TargetRadiusGreaterThan(1.5) & ~SpellTypeIs(SpellType.Shout) & ~SpellTypeIs(SpellType.Wall) & ~SpellTypeIs(SpellType.Zone)
 		| SpellId('Projectile_ElementalFletching_Acid') | SpellId('Projectile_ElementalFletching_Cold') | SpellId('Projectile_ElementalFletching_Fire') | SpellId('Projectile_ElementalFletching_Lightning') | SpellId('Projectile_ElementalFletching_Necrotic') | SpellId('Projectile_ElementalFletching_Poison') | SpellId('Projectile_ElementalFletching_Psychic') | SpellId('Projectile_ElementalFletching_Radiant') | SpellId('Projectile_ElementalFletching_Thunder')
 		| SpellId('Projectile_ElementalFletching_Acid_Focused') | SpellId('Projectile_ElementalFletching_Cold_Focused') | SpellId('Projectile_ElementalFletching_Fire_Focused') | SpellId('Projectile_ElementalFletching_Lightning_Focused') | SpellId('Projectile_ElementalFletching_Necrotic_Focused') | SpellId('Projectile_ElementalFletching_Poison_Focused') | SpellId('Projectile_ElementalFletching_Psychic_Focused') | SpellId('Projectile_ElementalFletching_Radiant_Focused') | SpellId('Projectile_ElementalFletching_Thunder_Focused')
 		| SpellId('Projectile_FocusedWeave')
 end
 
 function DistantTouchSpellCheck()
-    return HasSpellFlag(SpellFlags.Spell) & TargetRadiusGreaterThan(0) & IsMelee()
+    return HasSpellFlag(SpellFlags.Spell) & ~TargetRadiusGreaterThan(9) & ~SpellTypeIs(SpellType.Shout) & ~SpellTypeIs(SpellType.Wall) & ~SpellTypeIs(SpellType.Zone)
 end
 
 function ExtendedSpellCheck()

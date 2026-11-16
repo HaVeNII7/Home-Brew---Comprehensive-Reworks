@@ -30,7 +30,8 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
 data "TickType" "EndTurn"
-data "RemoveEvents" "OnCombatEnded"
+data "RemoveConditions" "not Combat()"
+data "RemoveEvents" "OnTurn;OnCombatEnded"
 
 <!--SMITE REWORKS-->
 
@@ -767,7 +768,7 @@ data "DescriptionParams" "Distance(9);DealDamage(max(1,Cause.CharismaModifier), 
 data "Icon" "Action_Paladin_AuraOfHate"
 data "StackId" "AURA_OF_HATE"
 data "StackPriority" "5"
-data "Boosts" "IF(Enemy() and not HasStatus('MULTIHIT_BLOCKER', context.Source)):DamageBonusDamageBonus(max(1, Cause.CharismaModifier), Necrotic)"
+data "Boosts" "IF(not Ally() and not HasStatus('MULTIHIT_BLOCKER', context.Source)):DamageBonusDamageBonus(max(1, Cause.CharismaModifier), Necrotic)"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "ApplyEffect" "d21494e5-5c30-4a69-85ef-75a785e71105"

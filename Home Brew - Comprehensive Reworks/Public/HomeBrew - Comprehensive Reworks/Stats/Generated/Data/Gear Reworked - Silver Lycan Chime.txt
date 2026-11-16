@@ -29,7 +29,7 @@ data "DescriptionParams" "Distance(9);Distance(9);2"
 data "Icon" "PassiveFeature_BestialFury"
 data "StackId" "JWL_Status_SilverLycanCharmAura"
 data "AuraRadius" "9"
-data "AuraStatuses" "IF(not HasStatus('SITOUT_ONCOMBATSTART_APPLIER_TECHNICAL',context.Source) and not HasStatus('SITOUT_ONCOMBATSTART_DOONCE_TECHNICAL',context.Source) and not HasStatus('BANISHED',context.Source) and not HasStatus('BANISHED_FINALSTAND',context.Source) and Tagged('SUMMON') and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and SummonOwner(context.Target, context.Source)):ApplyStatus(JWL_Status_SilverLycanCharmBuff)"
+data "AuraStatuses" "IF(Tagged('SUMMON') and not Tagged('UNDEAD') and SummonOwner(context.Target, context.Source)):ApplyStatus(JWL_Status_SilverLycanCharmBuff)"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
 new entry "JWL_Status_SilverLycanCharmBuff"

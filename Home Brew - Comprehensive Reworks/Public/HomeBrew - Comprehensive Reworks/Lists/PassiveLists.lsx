@@ -8,6 +8,10 @@
                     <attribute id="Passives" type="LSString" value="Personality_None,Personality_Barbarian,Personality_Bard,Personality_Cleric,Personality_Druid,Personality_Fighter,Personality_Monk,Personality_Ranger,Personality_Rogue,Personality_Sorcerer,Personality_Warlock,Personality_Wizard" />
                     <attribute id="UUID" type="guid" value="cf44a7c1-3fcb-4fb6-8624-45dd433c11b1" />
 					</node>
+		<node id="PassiveList">
+					<attribute id="Passives" type="LSString" value="Deity_None,Deity_Bahamut,Deity_Eilistraee,Deity_Gruumsh,Deity_Helm,Deity_Ilmater,Deity_Kelemvor,Deity_Lathander,Deity_Lolth,Deity_Moradin,Deity_Mystra,Deity_Oghma,Deity_Selune,Deity_Shar,Deity_Talos,Deity_Tempus,Deity_Tiamat,Deity_Tymora,Deity_Tyr,Deity_Vlaakith" />
+					<attribute id="UUID" type="guid" value="90ef5746-b90d-4c75-a0a0-9ff4e6b63597" />
+					</node>
         <node id="PassiveList">
                     <attribute id="Passives" type="LSString" value="CT_None,CT_AdrenalineSurge,CT_BlindEmotions,CT_BloodyResults,CT_BorrowedTime,CT_BreatheDeep,CT_ConfidentlyIncorrect,CT_CriticalLoss,CT_Crybaby,CT_DelusionsintheDark,CT_Gambler,CT_GentleGiant,CT_GildedPilfer,CT_GlassCannon,CT_HandsofCalamity,CT_HastyReflexes,CT_Haymaker,CT_HealthyChills,CT_HeavyHanded,CT_Hyperfixation,CT_Ironbourne,CT_ImmovableBoulder,CT_Lefty,CT_LetMeSoloThem,CT_LoneWolf,CT_Narcoleptic,CT_NaturalMedium,CT_Overcharged,CT_OverlyDifficult,CT_Packing,CT_PlanarSkipping,CT_ReactiveLoss,CT_Reckless,CT_SlowRoller,CT_SplitFocus,CT_Stinky,CT_SunlightAversion,CT_Unhinged,CT_UnstableSource,CT_WaningImmortality,CT_Wretch" />
                     <attribute id="UUID" type="guid" value="15eff335-46df-4268-9eea-aabcb6c13025" />

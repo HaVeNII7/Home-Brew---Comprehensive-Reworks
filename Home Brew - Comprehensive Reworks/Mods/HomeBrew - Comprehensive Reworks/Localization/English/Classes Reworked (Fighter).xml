@@ -221,7 +221,7 @@
 	<content contentuid="hb737d83fg2e33g4664g98a6g3c2381c29b0a" version="1">You are a warrior of spell and sword, weaving incantations that supplement your extensive martial expertise.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Suggested Role(s): Damage</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a69asd9" version="1">Call of the Old One</content>
-	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9288rd" version="8">When making a melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, deal additional damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9288rd" version="8">When making a melee based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against a non-allied target, deal additional damage equal to your &lt;LSTag Tooltip="AbilityModifier"&gt;Charisma Modifier&lt;/LSTag&gt;.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f5asdff" version="1">Ex Oblivione</content>
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f565495" version="3">Using a manoeuvre restores one of your &lt;LSTag Tooltip="WarlockSpellSlot"&gt;Warlock Spell Slots&lt;/LSTag&gt;.</content>
@@ -234,9 +234,9 @@
 	<content contentuid="h53277800gd3a4g4984gbff6g0af5689ed568" version="1">Channel Eldritch energy into your main-hand weapon and strike a target.&lt;br&gt;&lt;br&gt;Upon landing a blow with Eldritch Strike, you erupt with Eldritch energy, firing an &lt;LSTag Type="Spell" Tooltip="Projectile_EldritchBlast"&gt;Eldritch Blast&lt;/LSTag&gt; at an enemy within [1].</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a63iujf" version="1">Mountainous Madness</content>
-	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9jifdd" version="8">After casting a Spell, you may make a &lt;LSTag Tooltip="MeleeWeaponAttack"&gt;Melee Weapon Attack&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9jifdd" version="8">After casting a Spell, you may make a weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;. This can be toggled at any time.</content>
 	<content contentuid="hb5a027a4g2934g40bfga5e1g7cb9ad528a54" version="1">Mountainous Madness</content>
-	<content contentuid="h87a4cfdbg2ba1g4a61gbbe7g5403a658a966" version="2">Affected creature may make a weapon attack as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
+	<content contentuid="h87a4cfdbg2ba1g4a61gbbe7g5403a658a966" version="2">Affected creature may make a weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23209a6sd09f" version="1">Lurking Fear</content>
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204a9a9sd8" version="8">When damaging a target, you have a chance to &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frighten&lt;/LSTag&gt; them.</content>
@@ -463,7 +463,7 @@
 	<content contentuid="0e3d63a2603a455a9f70a7874a87c2b4zzzzz" version="1">The best offense is a good defense, and you've taken the adage to heart. Shield in hand, you march forward, ready to bash any who challenge you into a fine mist.&lt;br&gt;&lt;br&gt;&lt;LSTag Type="Image" Info="TutorialLearnSpell"/&gt; Suggested Role(s): Damage/Tank</content>
 			
 	<content contentuid="0e3d63a2603a455a9f70a7874a87c2b400001" version="1">Reinforced Strikes</content>
-	<content contentuid="0e3d63a2603a455a9f70a7874a87c2b40000a" version="1">Dealing damage to an enemy with a shield deals additional damage equal to your &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt;.</content>
+	<content contentuid="0e3d63a2603a455a9f70a7874a87c2b40000a" version="1">Dealing damage to a non-allied target with a shield deals additional damage equal to your &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt;.</content>
 
 	<content contentuid="0e3d63a2603a455a9f70a7874a87c2b400002" version="1">Projected Bulwark</content>
 	<content contentuid="0e3d63a2603a455a9f70a7874a87c2b40000b" version="1">&lt;LSTag Type="Spell" Tooltip="Target_ShieldBlow_Daze"&gt;Dazing Bash&lt;/LSTag&gt; is now capable of targeting creatures within [1] of you.</content>
@@ -666,7 +666,7 @@
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000l" version="3">When dealing damage to an enemy or item, you ignore Slashing &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt;. In addition, your &lt;LSTag Type="Passive" Tooltip="FocusedWeave"&gt;Focused Fletchings&lt;/LSTag&gt; ignore all Elemental based Resistances.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500013" version="1">Merciless</content>
-	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000m" version="3">When making a weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against an enemy with less than 25% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; remaining, deal additional damage equal to your levels in Fighter multiplied by two. This bonus does not apply to damage dealt with an off-hand weapon.</content>
+	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000m" version="3">When making a weapon based &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; against against a non-allied target with less than 25% of their total &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; remaining, deal additional damage equal to your levels in Fighter multiplied by two. This bonus does not apply to damage dealt with an off-hand weapon.</content>
 
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f500014" version="1">Natural Born Leader</content>
 	<content contentuid="439cb1c55ce44da8b8f3ccd2e23204f50000n" version="3">Once per turn, upon rolling a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, immediately &lt;LSTag Type="Status" Tooltip="RALLY"&gt;Rally&lt;/LSTag&gt; all allies within [1].</content>

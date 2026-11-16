@@ -6,6 +6,18 @@
     ls:UIWidget.UseCustomDC="True" ls:UIWidget.ContextName="HB_AbilityBaseMenu">
     <ls:UIWidget.Resources>
         <ResourceDictionary>
+            <!-- A locked native ability row may temporarily render an empty
+                 AbilityDisplayName on first Honour Mode entry. This direct,
+                 read-only name uses the row's own native Ability value; it
+                 has no HB command, edit state, or retained Noesis VM. -->
+            <ControlTemplate x:Key="HB_AbilityBaseReadOnlyNameTemplate" TargetType="Control">
+                <TextBlock x:Name="HB_BaseReadOnlyName" Text="{Binding Ability}"
+                    FontFamily="{TemplateBinding FontFamily}"
+                    FontSize="{TemplateBinding FontSize}"
+                    FontWeight="{TemplateBinding FontWeight}"
+                    Foreground="{TemplateBinding Foreground}"
+                    HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </ControlTemplate>
             <ControlTemplate x:Key="HB_AbilityBaseNameTemplate" TargetType="Control">
                 <ls:LSButton x:Name="HB_AbilityBaseButton" DataContext="{x:Null}"
                     Command="{Binding HB_Open}" IsEnabled="{Binding HB_Ready, FallbackValue=False}"
